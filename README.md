@@ -62,7 +62,7 @@ Lints JavaScript files
 
 Validates HTML files
 
-## Inspiration
+## Inspiration and Thanks
 
 [Barebones] (http://barebones.paulrobertlloyd.com/) by [Paul Robert Lloyd] (http://paulrobertlloyd.com/)
 
