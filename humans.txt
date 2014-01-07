@@ -18,7 +18,7 @@
 
     Last Update: 2014/12/07
     Standards: HTML5, CSS3
-    Components: Normalize.css, jQuery, LESS
+    Components: jQuery, LESS, Normalize.css
 
        __              ____        __    ___
       / /___  ___     / __ \__  __/ /_  / (_)____
