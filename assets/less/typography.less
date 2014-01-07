@@ -1,0 +1,644 @@
+/* ==========================================================================
+   $TABLE OF CONTENTS
+   ========================================================================== */
+
+/**
+ * BASE
+ * FONTS
+ * HEADINGS
+ * ANCHORS
+ * TEXT
+ * LISTS
+ * TABLES
+ * FIGURES
+ * UTILITIES
+ * LEGACY SUPPORT
+ */
+
+
+
+
+
+/* ==========================================================================
+   $BASE
+   ========================================================================== */
+
+/**
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ */
+
+::-moz-selection {
+    background: @colour-blue;
+    color: @colour-white;
+    text-shadow: none;
+}
+
+::selection {
+    background: @colour-blue;
+    color: @colour-white;
+    text-shadow: none;
+}
+
+/**
+ *  Default font colour, size and line height
+ */
+
+html {
+    color: @colour-grey-dark;
+    font: 100%/1.6 @font-family-droid-sans;
+}
+
+
+
+
+
+/* ==========================================================================
+   $FONTS
+   ========================================================================== */
+
+/**
+ * Font Families
+ */
+
+/* Droid Sans */
+.font-droid-sans {
+    font-family: @font-family-droid-sans;
+}
+
+/* Droid Serif */
+.font-droid-serif {
+    font-family: @font-family-droid-serif;
+}
+
+/**
+ * Font Weights
+ */
+
+/* Bold */
+.fw-bold {
+    font-weight: @fw-bold;
+}
+
+/* Semi-bold */
+.fw-semi-bold {
+    font-weight: @fw-semi-bold;
+}
+
+/* Normal */
+.fw-normal {
+    font-weight: @fw-normal;
+}
+
+
+
+
+
+/* ==========================================================================
+   $HEADINGS
+   ========================================================================== */
+
+/* Alpha */
+h1, .alpha {
+    font-size: 2.250em; /* 36 / 16 */
+    line-height: 1.1;
+
+    @media all and (min-width: @bp-largest) {
+        font-size: 3.75em; /* 60 / 16 */
+    }
+}
+
+/* Beta */
+h2, .beta {
+    font-size: 1.875em; /* 30 / 16 */
+    line-height: 1.1;
+
+    @media all and (min-width: @bp-largest) {
+        font-size: 3em; /* 48 / 16 */
+    }
+}
+
+/* Gamma */
+h3, .gamma {
+    font-size: 1.500em; /* 24 / 16 */
+    line-height: 1.1;
+
+    @media all and (min-width: @bp-largest) {
+        font-size: 2.25em; /* 36 / 16 */
+    }
+}
+
+/* Delta */
+h4, .delta {
+    font-size: 1.250em; /* 20 / 16 */
+    line-height: 1.4;
+
+    @media all and (min-width: @bp-largest) {
+        font-size: 1.5em; /* 24 / 16 */
+    }
+}
+
+/* Epsilon */
+h5, .epsilon {
+    font-size: 1.125em; /* 18 / 16 */
+    line-height: 1.4;
+
+    @media all and (min-width: @bp-largest) {
+        font-size: 1.313em; /* 21 / 16 */
+    }
+}
+
+/* Zeta */
+h6, .zeta {
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.4;
+
+    @media all and (min-width: @bp-largest) {
+        font-size: 1.125em; /* 18 / 16 */
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $ANCHORS
+   ========================================================================== */
+
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsilon,
+h6, .zeta {
+
+    a {
+        color: inherit;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $TEXT
+   ========================================================================== */
+
+/**
+ * Blockquotes
+ */
+
+.blockquote {
+
+    /* Quote */
+    p {
+        font-style: italic;
+    }
+
+    /* Citation */
+    cite {
+
+        /* Anchor */
+        a {
+            color: @colour-blue-dark;
+            text-decoration: underline;
+            .transition(color 0.25s ease);
+
+            &:focus,
+            &:hover {
+                color: @colour-blue;
+            }
+        }
+    }
+}
+
+/**
+ * Paragraphs
+ */
+
+p {
+
+    /* Very Large */
+    &.very-large {
+        font-size: 1.250em; /* 20 / 16 */
+
+        @media all and (min-width: @bp-largest) {
+            font-size: 1.5em; /* 24 / 16 */
+        }
+    }
+
+    /* Large */
+    &.large {
+        font-size: 1.125em; /* 18 / 16 */
+
+        @media all and (min-width: @bp-largest) {
+            font-size: 1.313em; /* 21 / 16 */
+        }
+    }
+
+    /* Anchor */
+    a {
+        color: @colour-blue-dark;
+        .transition(color 0.2s ease);
+
+        &:focus,
+        &:hover {
+            color: @colour-blue;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $LISTS
+   ========================================================================== */
+
+/**
+ * Breadcrumbs List
+ */
+
+.list-breadcrumbs {
+
+    li {
+        color: @colour-grey;
+
+        /* Separator */
+        &+ li {
+
+            &:before {
+                color: @colour-silver;
+            }
+        }
+
+        a {
+            color: @colour-blue-dark;
+            text-decoration: none;
+            .transition(color 0.25s ease);
+
+            &:focus,
+            &:hover {
+                color: @colour-blue;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/**
+ * Description List
+ */
+
+dl {
+
+    /* Term */
+    dt {
+        font-weight: @fw-bold;
+    }
+}
+
+/**
+ * Pagination List
+ */
+
+.list-pagination {
+
+    li {
+
+        /* Current */
+        &.current {
+
+            /* Anchor */
+            a {
+                color: @colour-blue;
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-blue-dark;
+            text-decoration: none;
+            .transition(all 0.25s ease);
+
+            &:focus,
+            &:hover {
+                color: @colour-blue;
+            }
+        }
+    }
+}
+
+/**
+ * Posts List
+ */
+
+.list-posts {
+
+    li {
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                color: @colour-blue-dark;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $TABLES
+   ========================================================================== */
+
+/**
+ * Default Table
+ */
+
+.table {
+
+    /* Table Caption */
+    caption {
+        font-style: italic;
+        text-align: left;
+    }
+
+    /* Table Header */
+    thead {
+
+        th {
+            text-align: left;
+            vertical-align: top;
+        }
+    }
+
+    /* Table Body */
+    tbody {
+
+        td {
+            vertical-align: top;
+        }
+    }
+
+    /* Table Footer */
+    tfoot {
+
+        td {
+            font-weight: @fw-bold;
+        }
+    }
+
+    /**
+     * Table with row hover
+     */
+
+    &.table-hover {
+
+        tbody {
+
+            tr {
+
+                &:focus,
+                &:hover {
+
+                    td {
+                        color: @colour-blue-dark;
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Table with alternate row background colour
+     */
+
+    &.table-striped {
+
+        tbody {
+
+            tr {
+
+                &:nth-child(even) {
+
+                    td {
+                        color: @colour-grey-light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $BUTTONS
+   ========================================================================== */
+
+/**
+ * Default Button
+ */
+
+.btn {
+    color: @colour-grey;
+    text-align: center;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        color: @colour-black;
+    }
+
+    /* Alternative */
+    &.btn-alt {
+        color: @colour-white-dark;
+
+        &:focus,
+        &:hover {
+            color: @colour-white;
+        }
+    }
+
+    /* Disabled */
+    &.btn-disabled {
+        color: @colour-silver;
+
+        &:focus,
+        &:hover {
+            color: @colour-silver;
+        }
+    }
+
+    /* Icon */
+    i {
+        font-size: 0.85em;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $FIGURES
+   ========================================================================== */
+
+figcaption {
+    font-style: italic;
+}
+
+
+
+
+
+/* ==========================================================================
+   $UTILITIES
+   ========================================================================== */
+
+/**
+ * Text Transform
+ */
+
+/* Capitalize */
+.tf-capitalize {
+    text-transform: uppercase;
+}
+
+/* Uppercase */
+.tf-uppercase {
+    text-transform: capitalize;
+}
+
+/**
+ * Text Align
+ */
+
+/* Left */
+.ta-left {
+    text-align: left;
+}
+
+/* Center */
+.ta-center {
+    text-align: center;
+}
+
+/* Right */
+.ta-right {
+    text-align: right;
+}
+
+
+
+
+
+/* ==========================================================================
+   $COLOURS
+   ========================================================================== */
+
+/**
+ * Foreground Colours
+ */
+
+.black {
+    color: @colour-black;
+}
+
+.grey-dark {
+    color: @colour-grey-dark;
+}
+
+.grey {
+    color: @colour-grey;
+}
+
+.grey-light {
+    color: @colour-grey-light;
+}
+
+.silver-dark {
+    color: @colour-silver;
+}
+
+.silver {
+    color: @colour-silver;
+}
+
+.white-dark {
+    color: @colour-white-dark;
+}
+
+.white {
+    color: @colour-white;
+}
+
+.red-dark {
+    color: @colour-red-dark;
+}
+
+.red {
+    color: @colour-red;
+}
+
+.red-light {
+    color: @colour-red-light;
+}
+
+.green-dark {
+    color: @colour-green-dark;
+}
+
+.green {
+    color: @colour-green;
+}
+
+.green-light {
+    color: @colour-green-light;
+}
+
+.yellow-dark {
+    color: @colour-yellow-dark;
+}
+
+.yellow {
+    color: @colour-yellow;
+}
+
+.yellow-light {
+    color: @colour-yellow-light;
+}
+
+
+
+
+
+/* ==========================================================================
+   $LEGACY SUPPORT
+   ========================================================================== */
+
+/**
+ * Browse Happy prompt to upgrade
+ */
+
+.browsehappy {
+    color: @colour-grey;
+
+    a {
+        color: @colour-blue;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

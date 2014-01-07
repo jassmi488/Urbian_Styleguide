@@ -1,0 +1,27 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Michael Thorne -- @mikkelz_za
+
+# THANKS
+
+    Brad Frost -- @brad_frost
+    Chris Coyier -- @chriscoyier
+    HTML5 Boilerplate -- @h5bp
+    Jeffrey Zeldman -- @zeldman
+    Paul Irish -- @paul_irish
+    Roger Johansson -- @rogerjohansson
+
+# SITE
+
+    Last Update: 2014/12/07
+    Standards: HTML5, CSS3
+    Components: Normalize.css, jQuery, LESS
+
+   __  __              _  __
+  / / / /_______  ____| |/ /
+ / / / / ___/ _ \/ ___/   /
+/ /_/ (__  )  __/ /  /   |
+\____/____/\___/_/  /_/|_|

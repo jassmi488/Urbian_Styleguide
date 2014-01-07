@@ -1,0 +1,465 @@
+/* ==========================================================================
+   $TABLE OF CONTENTS
+   ========================================================================== */
+
+/**
+ * BASE
+ * FORMS
+ * FIELDSET
+ * LEGEND
+ * LABEL
+ * INPUT
+ * PROGRESS
+ * LEGACY SUPPORT
+ */
+
+
+
+
+
+/* ==========================================================================
+   $BASE
+   ========================================================================== */
+
+/**
+ * Remove default fieldset styles
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Allow only vertical resizing of textareas
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   $FORMS
+   ========================================================================== */
+
+/**
+ * Default Form (Vertical)
+ */
+
+.form {
+    padding-bottom: 1px;
+
+    /* Label */
+    .label {
+
+        /* Button */
+        &+ .btn {
+            margin-top: 1.5em;
+            width: 100%;
+
+            @media all and (min-width: @bp-smaller) {
+                width: auto;
+            }
+        }
+    }
+
+    /**
+     * Horizontal Form
+     */
+
+    &.form-horizontal {
+
+        /* Label */
+        > .label {
+
+            @media all and (min-width: @bp-small) {
+                float: left;
+                text-align: right;
+                padding-top: 0.5em;
+                padding-right: 1em;
+                width: 25%;
+
+                /* Radio Button or Checkbox Option */
+                &.label-option {
+                    margin-left: 25%;
+                    padding-top: 0;
+                    text-align: left;
+                    width: 75%;
+                }
+            }
+        }
+
+        /* Fieldset */
+        .fieldset {
+
+            @media all and (min-width: @bp-small) {
+                width: 75%;
+            }
+        }
+
+        /* Input */
+        .input {
+
+            @media all and (min-width: @bp-small) {
+                width: 75%;
+            }
+        }
+
+        /* Button */
+        .btn {
+
+            @media all and (min-width: @bp-small) {
+                margin-left: 25%;
+            }
+        }
+    }
+
+    /**
+     * Inline Form
+     */
+
+    &.form-inline {
+
+        @media all and (min-width: @bp-medium) {
+            overflow: hidden;
+        }
+
+        /* Label */
+        .label {
+
+            @media all and (min-width: @bp-medium) {
+                float: left;
+                margin-right: 1em;
+                margin-bottom: 0;
+                padding-top: 0.5em;
+                width: auto;
+            }
+        }
+
+        /* Input */
+        .input {
+
+            @media all and (min-width: @bp-medium) {
+                float: left;
+                margin-right: 0.5em;
+                margin-bottom: 0;
+                width: auto;
+            }
+        }
+
+        /* Button */
+        .btn {
+
+            @media all and (min-width: @bp-medium) {
+                float: left;
+                margin-top: 0;
+                margin-bottom: 0;
+                width: auto;
+            }
+        }
+    }
+
+    /**
+     * Search Form
+     */
+
+    &.form-search {
+        position: relative;
+        padding-right: 1px;
+        padding-left: 3px;
+
+        @media all and (min-width: @bp-smaller) {
+            float: right;
+        }
+
+        /* Label */
+        .label {
+            line-height: 2.4;
+            margin-right: 1em;
+            margin-bottom: 0;
+            width: auto;
+        }
+
+        /* Input */
+        .input {
+            .border-top-right-radius(0);
+            .border-bottom-right-radius(0);
+            margin-left: -3px;
+            margin-bottom: 0;
+            padding-right: 3em;
+
+            &:focus,
+            &:hover {
+                border-right-color: @colour-white;
+            }
+        }
+
+        /* Button */
+        .btn {
+            .border-top-left-radius(0);
+            .border-bottom-left-radius(0);
+            position: absolute;
+            right: 1px;
+            top: 0;
+
+            &:active {
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $FIELDSET
+   ========================================================================== */
+
+.fieldset {
+    margin-bottom: 1.5em;
+
+    /* Legend */
+    .legend {
+        margin-bottom: 0.5em;
+    }
+
+    /**
+     * Bordered Fieldset
+     */
+
+    &.fieldset-border {
+        border: 1px @colour-silver solid;
+        padding: 1em;
+
+        /* Legend */
+        .legend {
+            padding: 0 0.5em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $LEGEND
+   ========================================================================== */
+
+.legend {
+    color: @colour-grey;
+}
+
+
+
+
+
+/* ==========================================================================
+   $LABEL
+   ========================================================================== */
+
+.label {
+    color: @colour-grey;
+    display: block;
+    margin-bottom: 0.25em;
+
+    /* Radio Button or Checkbox Option */
+    &.label-option {
+
+        /* Input */
+        input {
+            margin-right: 0.25em;
+        }
+    }
+
+    /* Inline */
+    &.label-inline {
+        float: left;
+        margin-right: 1.5em;
+        margin-bottom: 0.75em;
+        width: auto;
+
+        @media all and (min-width: @bp-small) {
+            margin-bottom: 0;
+        }
+
+        // Select
+        .input-select {
+            margin-top: 0.25em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $INPUT
+   ========================================================================== */
+
+input[type="color"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea {
+    -webkit-appearance: none; // Disable the default inner shadow of search inputs
+}
+
+/**
+ * Default inputs
+ */
+
+.input {
+    border: 1px @colour-silver solid;
+    .border-radius(2px);
+    color: @colour-grey-dark;
+    display: block;
+    margin-bottom: 1.5em;
+    padding: 0.6em;
+    .transition(border 0.25s ease);
+    vertical-align: middle;
+    width: 100%;
+
+    &:focus,
+    &:hover {
+        border: 1px @colour-grey-light solid;
+    }
+
+    /* Disabled */
+    &[disabled="disabled"] {
+
+        &:focus,
+        &:hover {
+            border: 1px @colour-silver solid;
+        }
+    }
+
+    /* Color */
+    &.input-color {
+        padding: 0;
+    }
+
+    /* File */
+    &.input-file {
+        border: 0;
+        margin-top: 0.6em;
+        padding: 0;
+        width: auto;
+    }
+
+    /* Select */
+    &.input-select {
+        color: @colour-grey-dark;
+        height: 2.5em;
+
+        /* Option Group */
+        optgroup {
+            color: @colour-grey-dark;
+            font-family: @font-family-droid-sans;
+            font-size: 100%;
+            font-style: normal;
+            font-weight: @fw-bold;
+        }
+
+        /* Option */
+        option {
+            color: @colour-grey-dark;
+            font-family: @font-family-droid-sans;
+            font-size: 100%;
+        }
+    }
+
+    /* Textarea */
+    &.input-textarea {
+        line-height: 1.6;
+    }
+}
+
+/**
+ * Search
+ */
+
+input[type="search"] {
+    .box-sizing(border-box); // Override normalize.css
+}
+
+
+
+
+
+/* ==========================================================================
+   $PROGRESS
+   ========================================================================== */
+
+.progress {
+    display: block;
+    margin-bottom: 1.5em;
+    width: 100%;
+}
+
+
+
+
+
+/* ==========================================================================
+   $LEGACY SUPPORT
+   =========================================================================== */
+
+/**
+ * IE7 and below
+ */
+
+.lt-ie8 {
+
+    .form {
+
+        &.form-horizontal {
+
+            > .label {
+
+                @media all and (min-width: @bp-small) {
+                    float: none;
+                    text-align: left;
+                    padding-top: 0;
+                    padding-right: 0;
+                    width: 100%;
+
+                    &.label-option {
+                        margin-left: 0%;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .fieldset {
+
+                @media all and (min-width: @bp-small) {
+                    width: 100%;
+                }
+            }
+
+            .input {
+
+                @media all and (min-width: @bp-small) {
+                    width: 100%;
+                }
+            }
+
+            .btn {
+
+                @media all and (min-width: @bp-small) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "starsat-templates",
+    "version": "0.0.0",
+    "description": "Front-end HTML templates",
+    "author": "Michael Thorne",
+    "license": "MIT",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-csslint": "~0.1.2",
+        "grunt-contrib-cssmin": "~0.6.2",
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-contrib-less": "~0.7.0",
+        "grunt-html-validation": "~0.1.5"
+    }
+}

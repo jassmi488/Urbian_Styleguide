@@ -1,0 +1,348 @@
+/* ==========================================================================
+   $TABLE OF CONTENTS
+   ========================================================================== */
+
+/**
+ * CONTAINERS
+ * SECTIONS
+ * TEXT
+ * LISTS
+ * SOURCE CODE
+ * GRID
+ * COLOURS
+ */
+
+
+
+
+
+/* ==========================================================================
+   $CONTAINERS
+   ========================================================================== */
+
+/**
+ * Header
+ */
+
+.sg-header {
+    overflow: hidden;
+
+    /* Home Icon */
+    .sg-home {
+        color: @colour-white;
+        font-size: 1.375em; /* 22 / 16 */
+        line-height: 1;
+        text-decoration: none;
+        .transition(color 0.5s ease);
+
+        @media all and (min-width: @bp-largest) {
+            font-size: 1.563em; /* 25 / 16 */
+        }
+
+        &:focus,
+        &:hover {
+            color: @colour-blue;
+        }
+    }
+
+    /* Navigation Toggle */
+    .sg-nav-toggle {
+        color: @colour-silver;
+        font-size: 1.375em; /* 22 / 16 */
+        line-height: 1;
+        text-decoration: none;
+        .transition(color 0.5s ease);
+
+        @media all and (min-width: @bp-largest) {
+            font-size: 1.9375em; /* 31 / 16 */
+        }
+
+        /* Active */
+        &.is-active {
+            color: @colour-white;
+        }
+
+        &:focus,
+        &:hover {
+            color: @colour-white;
+        }
+    }
+
+    /* Heading */
+    h1, .delta {
+        line-height: 1;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $SECTIONS
+   ========================================================================== */
+
+/**
+ * Section Primary Heading
+ */
+
+.sg-section-heading-primary {
+
+    /* Anchor */
+    a {
+        color: @colour-grey;
+        font-size: 0.571em; /* 12 / 21 */
+        text-decoration: none;
+        vertical-align: middle;
+        .transition(color 0.5s ease);
+
+        &:focus,
+        &:hover {
+            color: @colour-blue;
+        }
+    }
+}
+
+/**
+ * Section Secondary Heading
+ */
+
+.sg-section-heading-secondary {
+
+    /* Anchor */
+    a {
+        color: @colour-grey-dark;
+        font-size: 0.67em; /* 12 / 18 */
+        text-decoration: none;
+        vertical-align: middle;
+        .transition(color 0.5s ease);
+
+        &:focus,
+        &:hover {
+            color: @colour-blue;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $TEXT
+   ========================================================================== */
+
+.sg-text {
+
+    /* Anchor */
+    a {
+        color: @colour-blue-dark;
+        .transition(color 0.5s ease);
+
+        &:focus,
+        &:hover {
+            color: @colour-blue;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $BUTTONS
+   ========================================================================== */
+
+/**
+ * Default Button
+ */
+
+.sg-btn {
+    color: @colour-white-dark;
+    font-size: 0.85em; /* 16 / 14 */
+    text-align: center;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        color: @colour-white;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $LISTS
+   ========================================================================== */
+
+.sg-list {
+
+    /* Anchor */
+    a {
+        color: @colour-black;
+        text-decoration: none;
+        .transition(color 0.5s ease);
+
+        &:focus,
+        &:hover {
+            color: @colour-blue;
+            text-decoration: underline;
+        }
+    }
+
+    /**
+     * Colours List
+     */
+
+    &.sg-list-colours {
+
+        li {
+
+            /* Hexadecimal colour value */
+            .hex {
+                color: @colour-black;
+                font-family: monospace, serif;
+                font-size: 0.75em; /* 16 / 12 */
+                line-height: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    /**
+     * Icons List
+     */
+
+    &.sg-list-icons {
+
+        li {
+
+            /* Icon */
+            i {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    /**
+     * Navigation List
+     */
+
+    &.sg-list-nav {
+
+        li {
+
+            /* Anchor */
+            a {
+                color: @colour-silver;
+                .transition(color 0.5s ease);
+
+                &:focus,
+                &:hover {
+                    color: @colour-white;
+                    text-decoration: none;
+                }
+
+                /* Icon */
+                i {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    /**
+     * Table of Contents List
+     */
+
+    &.sg-list-table-of-contents {
+
+        li {
+
+            /* Anchor */
+            a {
+                font-weight: @fw-bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $COLOURS
+   ========================================================================== */
+
+/**
+ * Foreground Colours
+ */
+
+.black {
+    color: @colour-black;
+}
+
+.grey-dark {
+    color: @colour-grey-dark;
+}
+
+.grey {
+    color: @colour-grey;
+}
+
+.grey-light {
+    color: @colour-grey-light;
+}
+
+.silver {
+    color: @colour-silver;
+}
+
+.white-dark {
+    color: @colour-white-dark;
+}
+
+.white {
+    color: @colour-white;
+}
+
+.red-dark {
+    color: @colour-red-dark;
+}
+
+.red {
+    color: @colour-red;
+}
+
+.red-light {
+    color: @colour-red-light;
+}
+
+.green-dark {
+    color: @colour-green-dark;
+}
+
+.green {
+    color: @colour-green;
+}
+
+.green-light {
+    color: @colour-green-light;
+}
+
+.yellow-dark {
+    color: @colour-yellow-dark;
+}
+
+.yellow {
+    color: @colour-yellow;
+}
+
+.yellow-light {
+    color: @colour-yellow-light;
+}

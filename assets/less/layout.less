@@ -1,0 +1,881 @@
+/* ==========================================================================
+   $TABLE OF CONTENTS
+   ========================================================================== */
+
+/**
+ * BASE
+ * HEADINGS
+ * TEXT
+ * LISTS
+ * HORIZONTAL RULES
+ * TABLES
+ * BUTTONS
+ * MEDIA
+ * GRID
+ * VISIBILITY
+ * COLOURS
+ * LEGACY SUPPORT
+ */
+
+
+
+
+
+/* ==========================================================================
+   $BASE
+   ========================================================================== */
+
+/**
+ * Apply a natural box layout model to all elements
+ */
+
+*,
+:before,
+:after {
+    .box-sizing(border-box);
+}
+
+/**
+ * Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+
+
+
+
+/* ==========================================================================
+   $HEADINGS
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5em 0;
+}
+
+
+
+
+
+/* ==========================================================================
+   $TEXT
+   ========================================================================== */
+
+/**
+ * Paragraphs
+ */
+
+p {
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+
+    & + p {
+        margin-top: 1em;
+    }
+}
+
+/**
+ * Blockquotes
+ */
+
+.blockquote {
+    border-left: 2px @colour-silver solid;
+    margin: 0 0 0 1em;
+    overflow: hidden;
+    padding: 0 1em;
+
+    /* Quote */
+    p {
+        margin-top: 0;
+
+        /* Citation */
+        & + footer {
+            margin-top: 1em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $LISTS
+   ========================================================================== */
+
+/**
+ * Default List
+ */
+
+.list {
+    margin: 0 0 0 2em;
+    padding: 0;
+
+    li {
+        margin-bottom: 0.5em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Nested Lists */
+        ol, ul {
+            margin-top: 0.5em;
+        }
+    }
+}
+
+/**
+ * Breadcrumbs List
+ */
+
+.list-breadcrumbs {
+    background-color: @colour-white-dark;
+    .border-radius(3px);
+    list-style: none;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 0.5em 1em 0 1em;
+
+    li {
+        float: left;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+
+        &:last-child {
+            margin-right: 0;
+            margin-bottom: 0.5em;
+        }
+
+        /* Separator */
+        &+ li {
+
+            &:before {
+                content: "/";
+                padding-right: 0.5em;
+            }
+        }
+    }
+}
+
+/**
+ * Counter List
+ */
+
+.list-counter {
+    counter-reset: item;
+    list-style: none;
+    margin-left: 0.6em;
+
+    /* Nested */
+    ol {
+        counter-reset: item;
+        list-style: none;
+    }
+
+    li {
+
+        &:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item;
+            padding-right: 0.4em;
+        }
+    }
+}
+
+/**
+ * Description List
+ */
+
+dl {
+
+    /* Description */
+    dd {
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/**
+ * Alternative List
+ */
+
+.list-alt {
+    list-style: none;
+    margin-left: 0.6em;
+
+    /* Nested */
+    ol, ul {
+        list-style: none;
+    }
+
+    li {
+
+        /* Icon */
+        i {
+            margin-right: 0.2em;
+        }
+    }
+}
+
+/**
+ * Pagination List
+ */
+
+.list-pagination {
+    .border-radius(3px);
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    overflow: hidden;
+    padding-left: 1px;
+    width: 100%;
+
+    @media all and (min-width: @bp-smaller) {
+        width: auto;
+    }
+
+    li {
+        border: 1px @colour-silver solid;
+        display: none;
+        float: left;
+        margin-bottom: 0;
+        margin-left: -1px;
+        visibility: hidden;
+
+        @media all and (min-width: @bp-smaller) {
+            display: block;
+            visibility: visible;
+        }
+
+        /* Controls */
+        &.control {
+            display: block;
+            visibility: visible;
+
+            /* Previous */
+            &.page-prev {
+                float: left;
+            }
+
+            /* Next */
+            &.page-next {
+                float: right;
+            }
+
+            @media all and (min-width: @bp-smaller) {
+                float: none;
+            }
+        }
+
+        /* Current */
+        &.current {
+
+            /* Anchor */
+            a {
+                background-color: @colour-white-dark;
+            }
+        }
+
+        /* Disabled */
+        &.disabled {
+            padding: 0.5em 1em;
+        }
+
+        /* Anchor */
+        a {
+            display: block;
+            padding: 0.5em 1em;
+
+            &:focus,
+            &:hover {
+                color: @colour-blue;
+            }
+        }
+    }
+}
+
+/**
+ * Posts List
+ */
+
+.list-posts {
+    list-style: none;
+    margin: 0;
+
+    li {
+        margin-bottom: 4em;
+        overflow: hidden;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Thumbnail */
+        .thumb {
+            float: left;
+            margin-right: 1em;
+            margin-bottom: 1em;
+            width: 100%;
+
+            @media all and (min-width: @bp-smaller) {
+                width: inherit;
+            }
+
+            img {
+                display: block;
+                height: auto;
+                width: 100%;
+
+                @media all and (min-width: @bp-smaller) {
+                    width: inherit;
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+   $HORIZONTAL RULES
+   ========================================================================== */
+
+.hr {
+    background-color: @colour-silver;
+    border: 0;
+    height: 2px;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+
+
+
+
+/* ==========================================================================
+   $TABLES
+   ========================================================================== */
+
+
+/**
+ * Default Table
+ */
+
+.table {
+
+    /* Table Caption */
+    caption {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    /* Table Header */
+    thead {
+        border-bottom: 2px @colour-silver solid;
+
+        th {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+        }
+    }
+
+    /* Table Body */
+    tbody {
+
+        td {
+            border-bottom: 1px @colour-white-dark solid;
+            padding: 0.5em 3em 0.5em 0.5em;
+        }
+    }
+
+    /* Table Footer */
+    tfoot {
+
+        td {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em;
+        }
+    }
+
+    /**
+     * Table with borders
+     */
+
+    &.table-bordered {
+        border: 1px @colour-silver solid;
+
+        /* Table Header */
+        thead {
+
+            th {
+                border-right: 1px @colour-silver solid;
+            }
+        }
+
+        /* Table Body */
+        tbody {
+
+            td {
+                border-right: 1px @colour-silver solid;
+                border-bottom: 1px @colour-silver solid;
+            }
+        }
+
+        /* Table Footer */
+        tfoot {
+
+            td {
+                border-right: 1px @colour-silver solid;
+            }
+        }
+    }
+
+    /**
+     * Table with row hover
+     */
+
+    &.table-hover {
+
+        tbody {
+
+            tr {
+
+                &:focus,
+                &:hover {
+                    background-color: @colour-yellow-light;
+                }
+            }
+        }
+    }
+
+    /**
+     * Table with alternate row background colour
+     */
+
+    &.table-striped {
+
+        tbody {
+
+            tr {
+
+                &:nth-child(even) {
+                    background-color: @colour-white-dark;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Scrollable table on narrow viewports
+ */
+
+.scrollable {
+    overflow-x: auto;
+
+    &.has-scroll {
+        position: relative;
+        overflow: hidden;
+
+        &:after {
+            .border-radius(~"10px 0 0 10px / 50% 0 0 50%");
+            .box-shadow(-4px 0 12px @colour-silver);
+            content: '';
+            height: 100%;
+            left: 100%;
+            position: absolute;
+            top: 0;
+            width: 50px;
+        }
+
+        & > div {
+            overflow-x: auto;
+        }
+    }
+
+    /* Scroll bar */
+    & > div::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    & > div::-webkit-scrollbar-track {
+        background: @colour-white-dark;
+    }
+
+    & > div::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: @colour-silver;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $BUTTONS
+   ========================================================================== */
+
+/**
+ * Default Button
+ */
+
+.btn {
+    background-color: @colour-silver;
+    border: 1px @colour-silver solid;
+    .border-radius(2px);
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    .transition(all 0.25s ease);
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    &:focus,
+    &:hover {
+        border: 1px @colour-grey-light solid;
+    }
+
+    /**
+     * Alternative Button
+     */
+
+    &.btn-alt {
+        background-color: @colour-grey-light;
+        border: 1px @colour-grey-light solid;
+        padding: 0.3em 0.8em;
+
+        &:focus,
+        &:hover {
+            border: 1px @colour-black solid;
+        }
+    }
+
+    /**
+     * Disabled Button
+     */
+
+    &.btn-disabled {
+        background-color: @colour-white-dark;
+        border: 1px @colour-white-dark solid;
+        cursor: default;
+
+        &:active {
+            position: inherit;
+            top: 0;
+        }
+
+        &:focus,
+        &:hover {
+            border: 1px @colour-white-dark solid;
+        }
+    }
+
+    /**
+     * Icon-only Button
+     */
+
+    &.btn-icon {
+        padding: 0.6em 0.8em;
+
+        /* Icon */
+        i {
+            margin-right: 0;
+        }
+    }
+
+    /* Icon */
+    i {
+        margin-right: 0.5em;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $MEDIA
+   ========================================================================== */
+
+/**
+ * Figure
+ */
+
+figure {
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    figcaption {
+        margin-top: 1em;
+    }
+}
+
+/**
+ * Responsive embedding of iframes, objects, embeds
+ */
+
+.fluid-embed {
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    iframe,
+    object,
+    embed {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $GRID
+   ========================================================================== */
+
+.g {
+    overflow: hidden;
+
+    /**
+     * One Up
+     */
+
+    &.g-1-up {
+
+        /* Grid Item */
+        .gi {
+
+            @media all and (min-width: @bp-medium) {
+                width: 100%;
+            }
+        }
+    }
+
+    /**
+     * Two Up
+     */
+
+    &.g-2-up {
+
+        /* Grid Item */
+        .gi {
+
+            @media all and (min-width: @bp-medium) {
+                width: 50%;
+            }
+        }
+    }
+
+    /**
+     * Three Up
+     */
+
+    &.g-3-up {
+
+        /* Grid Item */
+        .gi {
+
+            @media all and (min-width: @bp-medium) {
+                width: 33.333%;
+            }
+        }
+    }
+
+    /**
+     * Four Up
+     */
+
+    &.g-4-up {
+
+        /* Grid Item */
+        .gi {
+
+            @media all and (min-width: @bp-medium) {
+                width: 25%;
+            }
+        }
+    }
+
+    /* Grid Item */
+    .gi {
+        width: 100%;
+
+        @media all and (min-width: @bp-medium) {
+            float: left;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $VISIBILITY
+   ========================================================================== */
+
+@media all and (max-width: @bp-medium) {
+
+    /* Small */
+    .hide-small {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media all and (min-width: @bp-medium) and (max-width: @bp-large) {
+
+    /* Medium */
+    .hide-med {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    /* Large */
+    .hide-large {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $COLOURS
+   ========================================================================== */
+
+/**
+ * Background colours
+ */
+
+.bg-colour-black {
+    background-color: @colour-black;
+}
+
+.bg-colour-grey-dark {
+    background-color: @colour-grey-dark;
+}
+
+.bg-colour-grey {
+    background-color: @colour-grey;
+}
+
+.bg-colour-grey-light {
+    background-color: @colour-grey-light;
+}
+
+.bg-colour-silver-dark {
+    background-color: @colour-silver-dark;
+}
+
+.bg-colour-silver {
+    background-color: @colour-silver;
+}
+
+.bg-colour-white-dark {
+    background-color: @colour-white-dark;
+}
+
+.bg-colour-white {
+    background-color: @colour-white;
+}
+
+.bg-colour-red-dark {
+    background-color: @colour-red-dark;
+}
+
+.bg-colour-red {
+    background-color: @colour-red;
+}
+
+.bg-colour-red-light {
+    background-color: @colour-red-light;
+}
+
+.bg-colour-green-dark {
+    background-color: @colour-green-dark;
+}
+
+.bg-colour-green {
+    background-color: @colour-green;
+}
+
+.bg-colour-green-light {
+    background-color: @colour-green-light;
+}
+
+.bg-colour-blue-dark {
+    background-color: @colour-blue-dark;
+}
+
+.bg-colour-blue {
+    background-color: @colour-blue;
+}
+
+.bg-colour-blue-light {
+    background-color: @colour-blue-light;
+}
+
+.bg-colour-yellow-dark {
+    background-color: @colour-yellow-dark;
+}
+
+.bg-colour-yellow {
+    background-color: @colour-yellow;
+}
+
+.bg-colour-yellow-light {
+    background-color: @colour-yellow-light;
+}
+
+
+
+
+
+/* ==========================================================================
+   $LEGACY SUPPORT
+   ========================================================================== */
+
+/**
+ * Browse Happy prompt to upgrade
+ */
+
+.browsehappy {
+    background-color: @colour-silver;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0;
+    text-align: center;
+    width: 100%;
+}

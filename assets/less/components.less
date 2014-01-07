@@ -1,0 +1,419 @@
+/* ==========================================================================
+   $TABLE OF CONTENTS
+   ========================================================================== */
+
+/**
+ * ACCORDION
+ * NAVIGATION
+ * TABS
+ * LEGACY SUPPORT
+ */
+
+
+
+
+
+/* ==========================================================================
+   $ACCORDION
+   ========================================================================== */
+
+.accordion {
+    .border-radius(3px);
+    border: 1px @colour-silver solid;
+
+    /* Accordion Item Header */
+    .accordion-item-header {
+        background-color: @colour-white;
+        border-bottom: 1px @colour-white-dark solid;
+        overflow: hidden;
+
+        /* Active */
+        &.is-active {
+
+            /* Anchor */
+            a {
+                background-color: @colour-white-dark;
+                color: @colour-blue;
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-blue-dark;
+            display: block;
+            font-size: 1em;
+            line-height: 1.5;
+            text-decoration: none;
+            padding: 0.5em 0.75em;
+            .transition(color 0.25s ease);
+
+            &:focus,
+            &:hover {
+                background-color: @colour-white-dark;
+                color: @colour-blue;
+            }
+
+            /* Icon */
+            i {
+                float: left;
+                line-height: 1.5;
+                margin-right: 0.5em;
+                text-align: center;
+                vertical-align: middle;
+                width: 1em;
+            }
+        }
+    }
+
+    /* Accordion Item Contents */
+    .accordion-item-contents {
+        background-color: @colour-white;
+        border-bottom: 1px @colour-white-dark solid;
+        max-height: 30em;
+        .opacity(1);
+        overflow: hidden;
+        padding: 1em 1.25em;
+        .transition(max-height 0.5s);
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+
+        /* Hidden */
+        &.is-hidden {
+            border-bottom: 0;
+            height: 0;
+            max-height: 0;
+            .opacity(0);
+            padding: 0;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $NAVIGATION
+   ========================================================================== */
+
+/**
+ * Horizontal Navigation
+ */
+
+.nav-horizontal {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    /* List */
+    .list-nav {
+        float: left;
+        max-height: 0;
+        overflow: hidden;
+        .transition(max-height 0.5s);
+
+        @media all and (min-width: @bp-large) {
+            max-height: 100%;
+        }
+
+        /* Hidden */
+        &.is-visible {
+            max-height: @bp-smaller;
+        }
+    }
+
+    /* Toggle */
+    .nav-toggle {
+        clear: both;
+        color: @colour-blue-dark;
+        display: block;
+        float: right;
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        .transition(color 0.25s ease);
+        visibility: visible;
+
+        @media all and (min-width: @bp-large) {
+            display: none;
+            visibility: hidden;
+        }
+
+        &:hover {
+            color: @colour-blue
+        }
+    }
+
+}
+
+/**
+ * Off-canvas Navigation
+ */
+
+/* Canvas Wrapper */
+.wrapper-canvas {
+    overflow: hidden;
+    position: relative;
+
+    /* Navigation */
+    .nav-canvas {
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    /* Canvas Contents */
+    .contents-canvas {
+        background-color: @colour-white;
+        position: relative;
+        .transform(translate(13em, 0));
+        .transition(all 0.5s);
+        z-index: 1;
+
+        /* Visible */
+        &.is-visible {
+            .transform(translate(0, 0));
+        }
+
+        /* Canvas Header */
+        .header-canvas {
+            background-color: @colour-white-dark;
+            height: 3.5em;
+            margin-bottom: 1em;
+            padding-top: 0.6em;
+        }
+
+        /* Toggle */
+        .toggle-canvas {
+            color: @colour-blue-dark;
+            display: inline-block;
+            font-size: 1.5em;
+            margin-left: 1em;
+            .transition(color 0.25s ease);
+
+            &:hover {
+                color: @colour-blue
+            }
+        }
+    }
+}
+
+/**
+ * Navigation Lists
+ */
+
+/* List */
+.list-nav {
+    .border-radius(3px);
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+
+    /* Vertical */
+    &.list-nav-vertical {
+        border: 1px @colour-silver solid;
+
+        li {
+            border-bottom: 1px @colour-silver solid;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    /* Horizontal */
+    &.list-nav-horizontal {
+        width: 100%;
+
+        li {
+            border-top: 1px @colour-silver solid;
+            border-right: 1px @colour-silver solid;
+            border-left: 1px @colour-silver solid;
+            width: 100%;
+
+            @media all and (min-width: @bp-large) {
+                border-right: 0;
+                border-bottom: 1px @colour-silver solid;
+                float: left;
+                width: auto;
+            }
+
+            &:last-child {
+                border-bottom: 1px @colour-silver solid;
+
+                @media all and (min-width: @bp-large) {
+                    border-right: 1px @colour-silver solid;
+                }
+            }
+        }
+    }
+
+    li {
+        background-color: @colour-white;
+        margin-bottom: 0;
+
+        /* Anchor */
+        a {
+            color: @colour-blue-dark;
+            display: block;
+            padding: 0.5em 0.75em;
+            text-decoration: none;
+            .transition(all 0.25s ease);
+
+            &:focus,
+            &:hover {
+                background-color: @colour-white-dark;
+                color: @colour-blue;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $TABS
+   ========================================================================== */
+
+/* Tabs Wrapper */
+.tabs {
+    overflow: hidden;
+}
+
+/* Tabs Navigation */
+.tabs-navigation {
+    list-style: none;
+    margin: 0 0 0.5em 0;
+    overflow: hidden;
+    padding: 1px 0 0 0;
+
+    @media all and (min-width: @bp-smaller) {
+        margin-bottom: 0;
+    }
+
+    li {
+
+        @media all and (min-width: @bp-smaller) {
+            float: left;
+
+            &:first-child {
+
+                /* Anchor */
+                a {
+                    .border-top-left-radius(3px);
+                }
+            }
+
+            &:last-child {
+
+                /* Anchor */
+                a {
+                    .border-top-right-radius(3px);
+                    margin-right: 0;
+                }
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-blue-dark;
+            display: block;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-right: 0.25em;
+            text-decoration: none;
+            padding: 0.5em 0.75em;
+            .transition(~"color 0.25s ease, background-color 0.25s ease");
+
+            @media all and (min-width: @bp-smaller) {
+                .border-top-right-radius(3px);
+                .border-top-left-radius(3px);
+                border: 1px @colour-white solid;
+                border-bottom: 0;
+            }
+
+            /* Active */
+            &.is-active {
+                background-color: @colour-white;
+                color: @colour-blue;
+
+                @media all and (min-width: @bp-smaller) {
+                    border: 1px @colour-silver solid;
+                    border-bottom-color: @colour-white;
+
+                    &:focus,
+                    &:hover {
+                        background-color: @colour-white;
+                        border-top: 1px @colour-silver solid;
+                        border-bottom: 1px @colour-white solid;
+                    }
+                }
+            }
+
+            &:focus,
+            &:hover {
+                background-color: @colour-white-dark;
+                color: @colour-blue;
+
+                @media all and (min-width: @bp-smaller) {
+                    border-top: 1px @colour-white-dark solid;
+                    border-bottom: 1px @colour-silver solid;
+                }
+            }
+        }
+    }
+}
+
+/* Tabs Content */
+.tabs-content {
+    .border-radius(3px);
+    border: 1px @colour-silver solid;
+    margin-top: -1px;
+
+    @media all and (min-width: @bp-smaller) {
+        .border-top-right-radius(0);
+        .border-top-left-radius(0);
+    }
+
+    /* Individual Tab Content */
+    .tab-content {
+        overflow: hidden;
+        padding: 1em 1.25em;
+
+        /* Hidden */
+        &.is-hidden {
+            display: none;
+            visibility: hidden;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $LEGACY SUPPORT
+   =========================================================================== */
+
+/**
+ * IE9 and below
+ */
+
+.lt-ie10 {
+
+    .wrapper-canvas {
+
+        .contents-canvas {
+            margin-left: 13em;
+
+            &.is-visible {
+                margin-left: 0;
+            }
+        }
+    }
+}
