@@ -88,8 +88,25 @@ p {
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 
+    /* Adjacent paragraphs */
     & + p {
         margin-top: 1em;
+    }
+
+    /* Inline images */
+    img {
+
+        /* Right */
+        &.pull-left {
+            margin-right: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Left */
+        &.pull-right {
+            margin-left: 1em;
+            margin-bottom: 0.5em;
+        }
     }
 }
 
@@ -337,7 +354,7 @@ dl {
             width: 100%;
 
             @media all and (min-width: @bp-smaller) {
-                width: inherit;
+                width: auto;
             }
 
             img {
@@ -346,7 +363,7 @@ dl {
                 width: 100%;
 
                 @media all and (min-width: @bp-smaller) {
-                    width: inherit;
+                    width: auto;
                 }
             }
         }
