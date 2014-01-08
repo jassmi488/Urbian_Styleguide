@@ -98,14 +98,28 @@ p {
 
         /* Right */
         &.pull-left {
-            margin-right: 1em;
+            display: block;
+            float: none;
             margin-bottom: 0.5em;
+
+            @media all and (min-width: @bp-small) {
+                display: inline-block;
+                float: left;
+                margin-right: 1em;
+            }
         }
 
         /* Left */
         &.pull-right {
-            margin-left: 1em;
+            display: block;
+            float: none;
             margin-bottom: 0.5em;
+
+            @media all and (min-width: @bp-small) {
+                display: inline-block;
+                float: right;
+                margin-left: 1em;
+            }
         }
     }
 }
