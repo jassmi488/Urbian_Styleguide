@@ -9,6 +9,8 @@
 
     Brad Frost -- @brad_frost
     Chris Coyier -- @chriscoyier
+    Eric Meyer -- @meyerweb
+    Harry Roberts -- @csswizardry
     HTML5 Boilerplate -- @h5bp
     Jeffrey Zeldman -- @zeldman
     Paul Irish -- @paul_irish
@@ -16,9 +18,9 @@
 
 # SITE
 
-    Last Update: 2014/12/07
+    Last Update: 2014/12/08
     Standards: HTML5, CSS3
-    Components: jQuery, LESS, Normalize.css
+    Components: Font Awesome, jQuery, LESS, Normalize.css
 
        __              ____        __    ___
       / /___  ___     / __ \__  __/ /_  / (_)____

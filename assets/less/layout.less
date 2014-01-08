@@ -36,6 +36,14 @@
 }
 
 /**
+ *  Keep the page centred in all browsers regardless of content height
+ */
+
+html {
+    overflow-y: scroll;
+}
+
+/**
  * Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440
  */
 
@@ -438,6 +446,41 @@ dl {
 
             td {
                 border-right: 1px @colour-silver solid;
+            }
+        }
+    }
+
+    /**
+     * Table with condensed padding
+     */
+
+    &.table-condensed {
+
+        /* Table Header */
+        thead {
+
+            th {
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+                padding-left: 0.25em;
+            }
+        }
+
+        /* Table Body */
+        tbody {
+
+            td {
+                padding: 0.25em 1.5em 0.25em 0.25em;
+            }
+        }
+
+        /* Table Footer */
+        tfoot {
+
+            td {
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+                padding-left: 0.25em;
             }
         }
     }
