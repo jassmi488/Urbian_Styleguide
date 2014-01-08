@@ -100,12 +100,16 @@ p {
         &.pull-left {
             display: block;
             float: none;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
+            height: auto;
+            width: 100%;
 
             @media all and (min-width: @bp-small) {
                 display: inline-block;
                 float: left;
                 margin-right: 1em;
+                margin-bottom: 0.5em;
+                width: auto;
             }
         }
 
@@ -113,12 +117,16 @@ p {
         &.pull-right {
             display: block;
             float: none;
-            margin-bottom: 0.5em;
+            margin-bottom: 1em;
+            height: auto;
+            width: 100%;
 
             @media all and (min-width: @bp-small) {
                 display: inline-block;
                 float: right;
                 margin-left: 1em;
+                margin-bottom: 0.5em;
+                width: auto;
             }
         }
     }
