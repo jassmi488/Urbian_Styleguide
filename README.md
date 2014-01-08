@@ -1,6 +1,6 @@
 # [Style Guide] (http://joepublicn.com/style-guide/)
 
-The style guide is a system of [elements] (http://joepublicn.com/style-guide/elements.html), [modules] (http://joepublicn.com/style-guide/modules.html) and [components] (http://joepublicn.com/style-guide/components.html) which are used to create the unique templates and individual pages for this website. It includes form [input types] (http://joepublicn.com/style-guide/forms.html#sg-form-elements) along with common layout [patterns] (http://joepublicn.com/style-guide/forms.html#sg-form-default). There is also a basic [grid] (http://joepublicn.com/style-guide/grid.html) system.
+The style guide is a system of [elements] (http://joepublicn.com/style-guide/elements.html), [modules] (http://joepublicn.com/style-guide/modules.html) and [components] (http://joepublicn.com/style-guide/components.html) which are used to create the unique templates and individual pages for this website. It includes form [input types] (http://joepublicn.com/style-guide/forms.html#sg-form-input-types) along with common layout [patterns] (http://joepublicn.com/style-guide/forms.html#sg-form-layout-default). There is also a basic [grid] (http://joepublicn.com/style-guide/grid.html) system.
 
 ## Standards
 
