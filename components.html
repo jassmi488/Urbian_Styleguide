@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans:400,600,700" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/main.css?v=0.2.2" />
-    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.2.2" />
+    <link rel="stylesheet" href="assets/css/main.css?v=0.2.3" />
+    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.2.3" />
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
@@ -237,27 +237,51 @@
             <section class="sg-section">
                 <h5 class="epsilon sg-section-heading-primary">Navigation <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Vertical <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
-                <nav role="navigation">
-                    <ul class="list list-nav list-nav-vertical">
+                <h6 class="zeta grey-light sg-section-heading-secondary">Drop&ndash;down <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <nav role="navigation" class="nav-horizontal" data-component="nav-horizontal">
+					<div class="header-toggle-nav">
+                        <a href="components.html#sg-navigation" class="nav-toggle" data-action="nav-toggle"><i class="fa fa-bars"></i></a>
+					</div>
+                    <ul class="list list-nav list-nav-horizontal has-drop-down" data-component="nav-drop-down">
                         <li><a href="components.html#sg-navigation">Lorem ipsum dolor</a></li>
                         <li><a href="components.html#sg-navigation">Sit amet consectetur</a></li>
-                        <li><a href="components.html#sg-navigation">Adipisicing elit</a></li>
+                        <li data-drop-down="true">
+                            <a href="components.html#sg-navigation">Adipisicing elit <i class="fa fa-caret-down"></i></a>
+                            <ul class="list list-nav list-nav-drop-down">
+                                <li><a href="components.html#sg-navigation">Lorem ipsum dolor</a></li>
+                                <li><a href="components.html#sg-navigation">Ducimus qui</a></li>
+                                <li><a href="components.html#sg-navigation">Magni dolores eos</a></li>
+                                <li><a href="components.html#sg-navigation">Autem quibusdam</a></li>
+                            </ul>
+                        </li>
                         <li><a href="components.html#sg-navigation">Sed do eiusmod</a></li>
-                        <li><a href="components.html#sg-navigation">Tempor incididunt</a></li>
+                        <li data-drop-down="true">
+                            <a href="components.html#sg-navigation">Tempor incididunt <i class="fa fa-caret-down"></i></a>
+                            <ul class="list list-nav list-nav-drop-down">
+                                <li><a href="components.html#sg-navigation">Neque porro quisquam</a></li>
+                                <li><a href="components.html#sg-navigation">Sed do eiusmod</a></li>
+                            </ul>
+                        </li>
                         <li><a href="components.html#sg-navigation">Ut labore</a></li>
                     </ul>
                 </nav>
-                <!-- Navigation (Vertical) -->
+                <!-- Navigation (Drop–down) -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;nav role="navigation"&gt;
-    &lt;ul class="list list-nav list-nav-vertical"&gt;
+<code class="prettyprint linenums">&lt;nav role="navigation" class="nav-horizontal" data-component="nav-horizontal"&gt;
+    &lt;div class="header-toggle-nav"&gt;
+        &lt;a href="#" class="nav-toggle" data-action="nav-toggle"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;ul class="list list-nav list-nav-horizontal has-drop-down" data-component="nav-drop-down"&gt;
         &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Sit amet consectetur&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Adipisicing elit&lt;/a&gt;&lt;/li&gt;
+        &lt;li data-drop-down="true"&gt;
+            &lt;a href="#"&gt;Adipisicing elit &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;ul class="list list-nav list-nav-drop-down"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Ducimus qui&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code>
@@ -286,7 +310,7 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;nav role="navigation" class="nav-horizontal" data-component="nav-horizontal"&gt;
     &lt;div class="header-toggle-nav"&gt;
-        &lt;a href="components.html#sg-navigation" class="nav-toggle" data-action="nav-toggle"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a href="#" class="nav-toggle" data-action="nav-toggle"&gt;&lt;i class="fa fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;
     &lt;/div>
 	&lt;ul class="list list-nav list-nav-horizontal"&gt;
 		&lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/li&gt;
@@ -351,6 +375,34 @@
     &lt;!-- // Canvas --&gt;
 &lt;/div&gt;
 </code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey-light sg-section-heading-secondary">Vertical <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <nav role="navigation">
+                    <ul class="list list-nav list-nav-vertical">
+                        <li><a href="components.html#sg-navigation">Lorem ipsum dolor</a></li>
+                        <li><a href="components.html#sg-navigation">Sit amet consectetur</a></li>
+                        <li><a href="components.html#sg-navigation">Adipisicing elit</a></li>
+                        <li><a href="components.html#sg-navigation">Sed do eiusmod</a></li>
+                        <li><a href="components.html#sg-navigation">Tempor incididunt</a></li>
+                        <li><a href="components.html#sg-navigation">Ut labore</a></li>
+                    </ul>
+                </nav>
+                <!-- Navigation (Vertical) -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+                        <code class="prettyprint linenums">&lt;nav role="navigation"&gt;
+                            &lt;ul class="list list-nav list-nav-vertical"&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Lorem ipsum dolor&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Sit amet consectetur&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Adipisicing elit&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                            &lt;/nav&gt;
+                        </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
@@ -525,7 +577,7 @@
                 <small><b>Last Modified</b>: <time datetime="2013-11-30" data-component="last-modified">November 30, 2013</time></small>
             </p>
             <p>
-                <small><b>Version</b>: 0.2.2</small>
+                <small><b>Version</b>: 0.2.3</small>
             </p>
         </div>
     </footer>
@@ -533,10 +585,10 @@
 
     <!-- JavaScript -->
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=0.2.2"></script>
-    <script src="assets/js/main.js?v=0.2.2"></script>
-    <script src="assets/js/style-guide/prettify.js?v=0.2.2"></script>
-    <script src="assets/js/style-guide/main.js?v=0.2.2"></script>
+    <script src="assets/js/plugins.js?v=0.2.3"></script>
+    <script src="assets/js/main.js?v=0.2.3"></script>
+    <script src="assets/js/style-guide/prettify.js?v=0.2.3"></script>
+    <script src="assets/js/style-guide/main.js?v=0.2.3"></script>
     <script>main.init();</script>
     <script>style_guide.init();</script>
 

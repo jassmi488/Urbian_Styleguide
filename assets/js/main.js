@@ -246,6 +246,75 @@ var components = {
 
     navigation: function ()
     {
+
+        /*
+         * Drop–down
+         */
+
+        var component_nav_drop_down = $('[data-component="nav-drop-down"]');
+
+        if (component_nav_drop_down.length > 0)
+        {
+            // Find all list items that are drop-downs
+            var drop_downs = $('[data-drop-down="true"]', component_nav_drop_down);
+
+            if (drop_downs.length > 0)
+            {
+                // Loop over each drop-down
+                drop_downs.each(function()
+                {
+                    var drop_down = $(this);
+                    var drop_down_anchor = $('> a', drop_down); // Get the anchor within the list item
+                    var drop_down_menu = $('.list-nav-drop-down', drop_down); // Get the drop-down menu
+
+                    drop_down_anchor.on('click', function(e)
+                    {
+                        e.preventDefault();
+
+                        // Toggle the `is-active` class of the anchor
+                        $(this).toggleClass('is-active');
+
+                        // Toggle the `is-visible` class of the list
+                        drop_down_menu.toggleClass('is-visible');
+                    });
+                });
+            }
+        }
+
+        /*
+         * Horizontal
+         */
+
+        var component_nav_horizontal = $('[data-component="nav-horizontal"]');
+
+        if (component_nav_horizontal.length > 0)
+        {
+            // Loop over all horizontal navigation elements
+            component_nav_horizontal.each(function ()
+            {
+                var nav_horizontal = $(this);
+                var nav_toggle = $('[data-action="nav-toggle"]', nav_horizontal);
+                var nav_list = $('> .list-nav', nav_horizontal);
+
+                // Toggle the `is-visible` class of the list
+                nav_list.removeClass('is-visible');
+
+                if (nav_toggle.length > 0)
+                {
+                    nav_toggle.on('click', function (e)
+                    {
+                        e.preventDefault();
+
+                        // Toggle the `is-active` class of navigation toggle
+                        nav_toggle.toggleClass('is-active');
+
+                        // Toggle the `is-visible` class of the list
+                        nav_list.toggleClass('is-visible');
+                    });
+                }
+            });
+        }
+
         /*
          * Off-canvas
          */
@@ -270,34 +339,6 @@ var components = {
 
                     // Toggle the `is-visible` class of the canvas
                     canvas.toggleClass('is-visible');
-                });
-            }
-        }
-
-        /*
-         * Horizontal
-         */
-
-        var component_nav_horizontal = $('[data-component="nav-horizontal"]');
-
-        if (component_nav_horizontal.length > 0)
-        {
-            var nav_toggle = $('[data-action="nav-toggle"]', component_nav_horizontal);
-            var nav_list = $('.list', component_nav_horizontal);
-
-            nav_list.removeClass('is-visible');
-
-            if (nav_toggle.length > 0)
-            {
-                nav_toggle.on('click', function (e)
-                {
-                    e.preventDefault();
-
-                    // Toggle the `is-active` class of navigation toggle
-                    nav_toggle.toggleClass('is-active');
-
-                    // Toggle the `is-visible` class of the list
-                    nav_list.toggleClass('is-visible');
                 });
             }
         }

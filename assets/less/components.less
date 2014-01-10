@@ -68,7 +68,7 @@
     .accordion-item-contents {
         background-color: @colour-white;
         border-bottom: 1px @colour-white-dark solid;
-        max-height: 30em;
+        max-height: @bp-smaller;
         .opacity(1);
         overflow: hidden;
         padding: 1em 1.25em;
@@ -121,6 +121,139 @@
 }
 
 /**
+ * Navigation Lists
+ */
+
+/* List */
+.list-nav {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+        background-color: @colour-white;
+        margin-bottom: 0;
+
+        /* Anchor */
+        a {
+            color: @colour-blue-dark;
+            display: block;
+            padding: 0.5em 0.75em;
+            text-decoration: none;
+            .transition(all 0.25s);
+            white-space: nowrap;
+
+            &:focus,
+            &:hover {
+                background-color: @colour-white-dark;
+                color: @colour-blue;
+            }
+
+            &.is-active {
+                color: @colour-blue;
+            }
+
+            /* Icon */
+            i {
+                margin-left: 0.5em;
+            }
+        }
+    }
+
+    /* List with drop-down menu items */
+    &.has-drop-down {
+        overflow: visible;
+
+        li {
+            position: relative;
+        }
+    }
+
+    /* Drop–down */
+    &.list-nav-drop-down {
+        margin-top: 0;
+        max-height: 0;
+        overflow: hidden;
+        .transition(max-height 0.5s);
+        width: 100%;
+
+        @media all and (min-width: @bp-large) {
+            left: -1px;
+            position: absolute;
+            top: 100%;
+            width: auto;
+        }
+
+        &.is-visible {
+            max-height: @bp-smaller;
+        }
+
+        li {
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+
+            @media all and (min-width: @bp-large) {
+                border-top: 1px @colour-silver solid;
+                border-right: 1px @colour-silver solid;
+                border-left: 1px @colour-silver solid;
+
+                &:last-child {
+                    border-bottom: 1px @colour-silver solid;
+                }
+            }
+        }
+    }
+
+    /* Horizontal */
+    &.list-nav-horizontal {
+        margin-top: 0;
+        width: 100%;
+
+        > li {
+            border-top: 1px @colour-silver solid;
+            border-right: 1px @colour-silver solid;
+            border-left: 1px @colour-silver solid;
+            width: 100%;
+
+            @media all and (min-width: @bp-large) {
+                border-right: 0;
+                border-bottom: 1px @colour-silver solid;
+                float: left;
+                width: auto;
+            }
+
+            &:last-child {
+                border-bottom: 1px @colour-silver solid;
+
+                @media all and (min-width: @bp-large) {
+                    border-right: 1px @colour-silver solid;
+                }
+            }
+        }
+    }
+
+    /* Vertical */
+    &.list-nav-vertical {
+        margin-top: 0;
+        width: 100%;
+
+        @media all and (min-width: @bp-smaller) {
+            width: auto;
+        }
+
+        li {
+            border-top: 1px @colour-silver solid;
+            border-right: 1px @colour-silver solid;
+            border-left: 1px @colour-silver solid;
+
+            &:last-child {
+                border-bottom: 1px @colour-silver solid;
+            }
+        }
+    }
+}
+
+/**
  * Horizontal Navigation
  */
 
@@ -129,11 +262,14 @@
     position: relative;
     width: 100%;
 
+    @media all and (min-width: @bp-large) {
+        overflow: visible;
+    }
+
     /* List */
-    .list-nav {
+    .list-nav-horizontal {
         float: left;
         max-height: 0;
-        overflow: hidden;
         .transition(max-height 0.5s);
 
         @media all and (min-width: @bp-large) {
@@ -142,7 +278,7 @@
 
         /* Hidden */
         &.is-visible {
-            max-height: @bp-smaller;
+            max-height: @bp-small;
         }
     }
 
@@ -223,82 +359,6 @@
             /* Active */
             &.is-active {
                 color: @colour-blue
-            }
-        }
-    }
-}
-
-/**
- * Navigation Lists
- */
-
-/* List */
-.list-nav {
-    display: inline-block;
-    list-style: none;
-    margin-left: 0;
-
-    /* Vertical */
-    &.list-nav-vertical {
-        border: 1px @colour-silver solid;
-        width: 100%;
-
-        @media all and (min-width: @bp-smaller) {
-            width: auto;
-        }
-
-        li {
-            border-bottom: 1px @colour-silver solid;
-
-            &:last-child {
-                border-bottom: 0;
-            }
-        }
-    }
-
-    /* Horizontal */
-    &.list-nav-horizontal {
-        width: 100%;
-
-        li {
-            border-top: 1px @colour-silver solid;
-            border-right: 1px @colour-silver solid;
-            border-left: 1px @colour-silver solid;
-            width: 100%;
-
-            @media all and (min-width: @bp-large) {
-                border-right: 0;
-                border-bottom: 1px @colour-silver solid;
-                float: left;
-                width: auto;
-            }
-
-            &:last-child {
-                border-bottom: 1px @colour-silver solid;
-
-                @media all and (min-width: @bp-large) {
-                    border-right: 1px @colour-silver solid;
-                }
-            }
-        }
-    }
-
-    li {
-        background-color: @colour-white;
-        margin-bottom: 0;
-
-        /* Anchor */
-        a {
-            color: @colour-blue-dark;
-            display: block;
-            padding: 0.5em 0.75em;
-            text-decoration: none;
-            .transition(all 0.25s);
-
-            &:focus,
-            &:hover {
-                background-color: @colour-white-dark;
-                color: @colour-blue;
             }
         }
     }
