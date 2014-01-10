@@ -265,6 +265,9 @@ var components = {
                 {
                     e.preventDefault();
 
+                    // Toggle the `is-active` class of navigation toggle
+                    canvas_toggle.toggleClass('is-active');
+
                     // Toggle the `is-visible` class of the canvas
                     canvas.toggleClass('is-visible');
                 });
@@ -281,6 +284,7 @@ var components = {
         {
             var nav_toggle = $('[data-action="nav-toggle"]', component_nav_horizontal);
             var nav_list = $('.list', component_nav_horizontal);
+
             nav_list.removeClass('is-visible');
 
             if (nav_toggle.length > 0)
@@ -288,6 +292,9 @@ var components = {
                 nav_toggle.on('click', function (e)
                 {
                     e.preventDefault();
+
+                    // Toggle the `is-active` class of navigation toggle
+                    nav_toggle.toggleClass('is-active');
 
                     // Toggle the `is-visible` class of the list
                     nav_list.toggleClass('is-visible');

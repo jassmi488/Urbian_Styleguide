@@ -19,7 +19,6 @@
 
 .modal {
     background-color: @colour-white;
-    .border-radius(3px);
     .box-shadow(0 0 10px @colour-grey-dark);
     display: none;
     max-height: @bp-smallest;
@@ -61,7 +60,7 @@
         i {
             color: @colour-silver;
             font-size: 1.5em;
-            .transition(color 0.25s ease);
+            .transition(color 0.25s);
 
             &:focus,
             &:hover {
@@ -75,7 +74,6 @@
 .modal-spinner {
     background: @colour-black no-repeat center center;
     background-image: url('../images/general/spinner.gif');
-    .border-radius(3px);
     display: none;
     height: 64px;
     left: 50%;
@@ -177,7 +175,7 @@ html[xmlns] .slides {
 
 .flex-viewport {
     max-height: 2000px;
-    .transition(all 1s ease);
+    .transition(all 1s);
 }
 
 .loading .flex-viewport {
@@ -202,7 +200,6 @@ html[xmlns] .slides {
 
 .flex-direction-nav a {
     background-color: rgba(255, 255, 255, 0.1);
-    .border-radius(2px);
     color: @colour-white;
     cursor: pointer;
     display: block;
@@ -215,7 +212,7 @@ html[xmlns] .slides {
     text-align: center;
     text-decoration: none;
     top: 48%;
-    .transition(all 0.25s ease);
+    .transition(all 0.25s);
     width: 40px;
     z-index: 10;
 
@@ -264,7 +261,7 @@ html[xmlns] .slides {
 
 .flex-direction-nav .flex-disabled {
     cursor: default;
-    .opacity(0);
+    .opacity(0) !important;
 }
 
 .flex-direction-nav a:before {
@@ -341,13 +338,12 @@ html[xmlns] .slides {
 
 .flex-control-paging li a {
     background-color: @colour-silver;
-    .border-radius(20px);
     cursor: pointer;
     display: block;
     height: 20px;
     .opacity(0.8);
     text-indent: -9999px;
-    .transition(all 0.25s ease);
+    .transition(all 0.25s);
     width: 20px;
 }
 
@@ -468,7 +464,6 @@ html[xmlns] .slides {
 
 .tooltip-inner {
     background-color: @colour-black;
-    .border-radius(3px);
     color: @colour-white-dark;
     max-width: 200px;
     padding: 1.25em 1em;
