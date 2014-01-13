@@ -260,6 +260,10 @@ var components = {
 
             if (drop_downs.length > 0)
             {
+                var drop_down_icon;
+                var icon_up = 'fa-caret-up';
+                var icon_down = 'fa-caret-down';
+
                 // Loop over each drop-down
                 drop_downs.each(function()
                 {
@@ -271,8 +275,22 @@ var components = {
                     {
                         e.preventDefault();
 
+                        drop_down_icon = $('i', $(this)); // Get the icon within the anchor
+
                         // Toggle the `is-active` class of the anchor
                         $(this).toggleClass('is-active');
+
+                        // Toggle the icon class of the anchor
+                        if (drop_down_icon.hasClass(icon_down))
+                        {
+                            drop_down_icon.removeClass(icon_down);
+                            drop_down_icon.addClass(icon_up);
+                        }
+                        else
+                        {
+                            drop_down_icon.removeClass(icon_up);
+                            drop_down_icon.addClass(icon_down);
+                        }
 
                         // Toggle the `is-visible` class of the list
                         drop_down_menu.toggleClass('is-visible');
