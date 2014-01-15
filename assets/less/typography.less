@@ -165,6 +165,7 @@ h6, .zeta {
    $ANCHORS
    ========================================================================== */
 
+/* Headings with anchors */
 h1, .alpha,
 h2, .beta,
 h3, .gamma,
@@ -172,9 +173,15 @@ h4, .delta,
 h5, .epsilon,
 h6, .zeta {
 
+    /* Anchor */
     a {
         color: inherit;
     }
+}
+
+/* Anchor */
+a {
+    .transition(color 0.25s);
 }
 
 
@@ -203,7 +210,6 @@ h6, .zeta {
         a {
             color: @colour-blue-dark;
             text-decoration: underline;
-            .transition(color 0.25s);
 
             &:focus,
             &:hover {
@@ -291,7 +297,6 @@ p {
         a {
             color: @colour-blue-dark;
             text-decoration: none;
-            .transition(color 0.25s);
 
             &:focus,
             &:hover {
@@ -526,12 +531,12 @@ figcaption {
 
 /* Capitalize */
 .tf-capitalize {
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 /* Uppercase */
 .tf-uppercase {
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 /**
