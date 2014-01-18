@@ -294,6 +294,15 @@ var components = {
 
                         // Toggle the `is-visible` class of the list
                         drop_down_menu.toggleClass('is-visible');
+
+                        // Hide all other drop-down containers
+                        $('.list-nav-drop-down').not(drop_down_menu).removeClass('is-visible');
+
+                        // Reset all other drop-down anchors
+                        $('[data-drop-down="true"] > a').not(drop_down_anchor).removeClass('is-active');
+
+                        // Reset all other drop-down icons
+                        $('[data-drop-down="true"] > a > i').not(drop_down_icon).removeClass(icon_up).addClass(icon_down);
                     });
                 });
             }
