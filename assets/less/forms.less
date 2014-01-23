@@ -335,6 +335,9 @@ textarea {
 
     /* Disabled */
     &[disabled="disabled"] {
+        background-color: @colour-white-dark;
+        border: 1px @colour-silver solid;
+        color: @colour-silver;
 
         &:focus,
         &:hover {
@@ -359,6 +362,18 @@ textarea {
     &.input-select {
         color: @colour-grey-dark;
         height: 2.5em;
+
+        /* Disabled */
+        &[disabled="disabled"] {
+            background-color: @colour-white-dark;
+            border: 1px @colour-silver solid;
+            color: @colour-silver;
+
+            &:focus,
+            &:hover {
+                border: 1px @colour-silver solid;
+            }
+        }
 
         /* Option Group */
         optgroup {
