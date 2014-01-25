@@ -27,7 +27,7 @@ These are only applicable to Internet Explorer 8 and below.
 
 * [jQuery Modal](https://github.com/kylefox/jquery-modal) v0.5.4
 * [Bootstrap Tooltip](http://getbootstrap.com) v3.0.2
-* [FlexSlider](https://github.com/woothemes/flexslider) v2.2.0
+* [FlexSlider](https://github.com/woothemes/flexslider) v2.2.2
 * [Placeholder](https://github.com/mathiasbynens/jquery-placeholder) v2.0.7
 
 ## Grunt
