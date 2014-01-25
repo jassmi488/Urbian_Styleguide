@@ -11,7 +11,7 @@ The style guide is a system of [elements](http://joepublicn.com/style-guide/elem
 
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/) v4.0.3
 * [jQuery](http://jquery.com/) v1.11.0
-* [LESS](http://lesscss.org/) v1.6.0
+* [LESS](http://lesscss.org/) v1.6.1
 * [Normalize.css](http://necolas.github.io/normalize.css/) v2.1.3
 
 ## Polyfills
