@@ -9,7 +9,6 @@
  * LISTS
  * SOURCE CODE
  * GRID
- * COLOURS
  */
 
 
@@ -132,7 +131,11 @@
     width: 90%;
 
     @media all and (min-width: @bp-largest) {
-        width: 75%;
+        width: 80%;
+    }
+
+    @media all and (min-width: @bp-xxl) {
+        width: 70%;
     }
 }
 
@@ -506,52 +509,4 @@
             text-align: center;
         }
     }
-}
-
-
-
-
-
-/* ==========================================================================
-   $COLOURS
-   ========================================================================== */
-
-/**
- * Background Colours
- */
-
-.sg-bg-colour-black {
-    background-color: @colour-sg-black;
-}
-
-.sg-bg-colour-grey-dark {
-    background-color: @colour-sg-grey-dark;
-}
-
-.sg-bg-colour-grey {
-    background-color: @colour-sg-grey;
-}
-
-.sg-bg-colour-grey-light {
-    background-color: @colour-sg-grey-light;
-}
-
-.sg-bg-colour-silver {
-    background-color: @colour-sg-silver;
-}
-
-.sg-bg-colour-white-dark {
-    background-color: @colour-sg-white-dark;
-}
-
-.sg-bg-colour-white {
-    background-color: @colour-sg-white;
-}
-
-.sg-bg-colour-blue-dark {
-    background-color: @colour-sg-blue-dark;
-}
-
-.sg-bg-colour-blue {
-    background-color: @colour-sg-blue;
 }

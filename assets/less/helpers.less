@@ -3,16 +3,251 @@
    ========================================================================== */
 
 /**
- * HELPERS
+ * CLEARFIX
+ * COLOURS
+ * .....BACKGROUND
+ * .....FOREGROUND
+ * HIDDEN
+ * VISIBILITY
  */
 
 
 
 
 
+/* ==========================================================================
+   $CLEARFIX
+   ========================================================================== */
+
+/**
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $COLOURS
+\* -------------------------------------------------------------------------- */
 
 /* ==========================================================================
-   $HELPERS
+   $BACKGROUND COLOURS
+   ========================================================================== */
+
+.bg-colour-black {
+    background-color: @colour-black;
+}
+
+.bg-colour-grey-dark {
+    background-color: @colour-grey-dark;
+}
+
+.bg-colour-grey {
+    background-color: @colour-grey;
+}
+
+.bg-colour-grey-light {
+    background-color: @colour-grey-light;
+}
+
+.bg-colour-silver-dark {
+    background-color: @colour-silver-dark;
+}
+
+.bg-colour-silver {
+    background-color: @colour-silver;
+}
+
+.bg-colour-white-dark {
+    background-color: @colour-white-dark;
+}
+
+.bg-colour-white {
+    background-color: @colour-white;
+}
+
+.bg-colour-red-dark {
+    background-color: @colour-red-dark;
+}
+
+.bg-colour-red {
+    background-color: @colour-red;
+}
+
+.bg-colour-red-light {
+    background-color: @colour-red-light;
+}
+
+.bg-colour-green-dark {
+    background-color: @colour-green-dark;
+}
+
+.bg-colour-green {
+    background-color: @colour-green;
+}
+
+.bg-colour-green-light {
+    background-color: @colour-green-light;
+}
+
+.bg-colour-blue-dark {
+    background-color: @colour-blue-dark;
+}
+
+.bg-colour-blue {
+    background-color: @colour-blue;
+}
+
+.bg-colour-blue-light {
+    background-color: @colour-blue-light;
+}
+
+.bg-colour-yellow-dark {
+    background-color: @colour-yellow-dark;
+}
+
+.bg-colour-yellow {
+    background-color: @colour-yellow;
+}
+
+.bg-colour-yellow-light {
+    background-color: @colour-yellow-light;
+}
+
+/**
+ * Social Media
+ */
+
+.bg-colour-facebook {
+    background-color: @colour-facebook;
+}
+
+.bg-colour-twitter {
+    background-color: @colour-twitter;
+}
+
+
+
+
+
+/* ==========================================================================
+   $FOREGROUND COLOURS
+   ========================================================================== */
+
+.black {
+    color: @colour-black;
+}
+
+.grey-dark {
+    color: @colour-grey-dark;
+}
+
+.grey {
+    color: @colour-grey;
+}
+
+.grey-light {
+    color: @colour-grey-light;
+}
+
+.silver-dark {
+    color: @colour-silver;
+}
+
+.silver {
+    color: @colour-silver;
+}
+
+.white-dark {
+    color: @colour-white-dark;
+}
+
+.white {
+    color: @colour-white;
+}
+
+.red-dark {
+    color: @colour-red-dark;
+}
+
+.red {
+    color: @colour-red;
+}
+
+.red-light {
+    color: @colour-red-light;
+}
+
+.green-dark {
+    color: @colour-green-dark;
+}
+
+.green {
+    color: @colour-green;
+}
+
+.green-light {
+    color: @colour-green-light;
+}
+
+.yellow-dark {
+    color: @colour-yellow-dark;
+}
+
+.yellow {
+    color: @colour-yellow;
+}
+
+.yellow-light {
+    color: @colour-yellow-light;
+}
+
+/**
+ * Social Media
+ */
+
+.facebook {
+    color: @colour-facebook;
+}
+
+.twitter {
+    color: @colour-twitter;
+}
+
+
+
+
+
+/* ==========================================================================
+   $HIDDEN
    ========================================================================== */
 
 /**
@@ -54,41 +289,49 @@
     width: auto;
 }
 
+
+
+
+
+/* ==========================================================================
+   $VISIBILITY
+   ========================================================================== */
+
+/**
+ * Toggle element visibility based on screen width
+ */
+
+@media all and (max-width: @bp-medium) {
+
+    /* Hidden on small screens */
+    .hide-small {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media all and (min-width: @bp-medium) and (max-width: @bp-large) {
+
+    /* Hidden on medium screens */
+    .hide-med {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    /* Hidden on large screens */
+    .hide-large {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
 /**
  * Hide visually and from screenreaders, but maintain layout
  */
 
 .invisible {
     visibility: hidden;
-}
-
-/**
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
 }

@@ -4,16 +4,16 @@
 
 /**
  * BASE
- * HEADINGS
- * TEXT
- * LISTS
- * HORIZONTAL RULES
- * TABLES
- * BUTTONS
+ * ELEMENTS
+ * .....HEADINGS
+ * .....TEXT
+ * .....LISTS
+ * .....HORIZONTAL RULES
+ * .....TABLES
+ * .....BUTTONS
  * MEDIA
  * GRID
  * VISIBILITY
- * COLOURS
  * LEGACY SUPPORT
  */
 
@@ -57,6 +57,10 @@ video {
 
 
 
+
+/* -------------------------------------------------------------------------- *\
+   $ELEMENTS
+\* -------------------------------------------------------------------------- */
 
 /* ==========================================================================
    $HEADINGS
@@ -414,7 +418,6 @@ dl {
 /* ==========================================================================
    $TABLES
    ========================================================================== */
-
 
 /**
  * Default Table
@@ -821,150 +824,11 @@ figure {
 
 
 /* ==========================================================================
-   $VISIBILITY
-   ========================================================================== */
-
-@media all and (max-width: @bp-medium) {
-
-    /* Small */
-    .hide-small {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-@media all and (min-width: @bp-medium) and (max-width: @bp-large) {
-
-    /* Medium */
-    .hide-med {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-@media all and (min-width: @bp-large) {
-
-    /* Large */
-    .hide-large {
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
-
-
-
-/* ==========================================================================
-   $COLOURS
-   ========================================================================== */
-
-/**
- * Background colours
- */
-
-.bg-colour-black {
-    background-color: @colour-black;
-}
-
-.bg-colour-grey-dark {
-    background-color: @colour-grey-dark;
-}
-
-.bg-colour-grey {
-    background-color: @colour-grey;
-}
-
-.bg-colour-grey-light {
-    background-color: @colour-grey-light;
-}
-
-.bg-colour-silver-dark {
-    background-color: @colour-silver-dark;
-}
-
-.bg-colour-silver {
-    background-color: @colour-silver;
-}
-
-.bg-colour-white-dark {
-    background-color: @colour-white-dark;
-}
-
-.bg-colour-white {
-    background-color: @colour-white;
-}
-
-.bg-colour-red-dark {
-    background-color: @colour-red-dark;
-}
-
-.bg-colour-red {
-    background-color: @colour-red;
-}
-
-.bg-colour-red-light {
-    background-color: @colour-red-light;
-}
-
-.bg-colour-green-dark {
-    background-color: @colour-green-dark;
-}
-
-.bg-colour-green {
-    background-color: @colour-green;
-}
-
-.bg-colour-green-light {
-    background-color: @colour-green-light;
-}
-
-.bg-colour-blue-dark {
-    background-color: @colour-blue-dark;
-}
-
-.bg-colour-blue {
-    background-color: @colour-blue;
-}
-
-.bg-colour-blue-light {
-    background-color: @colour-blue-light;
-}
-
-.bg-colour-yellow-dark {
-    background-color: @colour-yellow-dark;
-}
-
-.bg-colour-yellow {
-    background-color: @colour-yellow;
-}
-
-.bg-colour-yellow-light {
-    background-color: @colour-yellow-light;
-}
-
-/**
- * Social Media
- */
-
-.bg-colour-facebook {
-    background-color: @colour-facebook;
-}
-
-.bg-colour-twitter {
-    background-color: @colour-twitter;
-}
-
-
-
-
-
-/* ==========================================================================
    $LEGACY SUPPORT
    ========================================================================== */
 
 /**
- * Browse Happy prompt to upgrade
+ * Browse Happy prompt to upgrade browser
  */
 
 .browsehappy {
