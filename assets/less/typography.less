@@ -307,6 +307,11 @@ p {
 
     li {
         color: @colour-blue;
+        font-size: 0.875em; /* 14 / 16 */
+
+        @media all and (min-width: @bp-small) {
+            font-size: 1em; /* 16 / 16 */
+        }
 
         /* Separator */
         &+ li {
@@ -406,7 +411,7 @@ dl {
 
             &:focus,
             &:hover {
-                color: @colour-navy;
+                color: @colour-blue;
                 text-decoration: underline;
             }
         }
