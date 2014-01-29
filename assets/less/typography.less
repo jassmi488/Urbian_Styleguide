@@ -203,17 +203,15 @@ a {
 
 .blockquote {
 
-    /* Quote */
-    p {
-        font-style: italic;
-    }
+    /**
+     * Citation
+     */
 
-    /* Citation */
     cite {
 
         /* Anchor */
         a {
-            color: @colour-blue-dark;
+            color: @colour-navy;
             text-decoration: underline;
 
             &:focus,
@@ -221,6 +219,14 @@ a {
                 color: @colour-blue;
             }
         }
+    }
+
+    /**
+     * Quote
+     */
+
+    p {
+        font-style: italic;
     }
 }
 
@@ -262,15 +268,26 @@ p {
         }
     }
 
-    /* Anchor */
+    /**
+     * Anchor
+     */
+
     a {
-        color: @colour-blue-dark;
+        color: @colour-navy;
         .transition(color 0.2s);
 
         &:focus,
         &:hover {
             color: @colour-blue;
         }
+    }
+
+    /**
+     * Mark
+     */
+
+    mark {
+        color: @colour-grey-dark;
     }
 }
 
@@ -289,7 +306,7 @@ p {
 .list-breadcrumbs {
 
     li {
-        color: @colour-grey;
+        color: @colour-blue;
 
         /* Separator */
         &+ li {
@@ -300,7 +317,7 @@ p {
         }
 
         a {
-            color: @colour-blue-dark;
+            color: @colour-navy;
             text-decoration: none;
 
             &:focus,
@@ -333,7 +350,7 @@ dl {
     li {
 
         a {
-            color: @colour-blue-dark;
+            color: @colour-navy;
             text-decoration: none;
 
             &:focus,
@@ -358,19 +375,19 @@ dl {
 
             /* Anchor */
             a {
-                color: @colour-blue;
+                color: @colour-white;
             }
         }
 
         /* Anchor */
         a {
-            color: @colour-blue-dark;
+            color: @colour-grey-dark;
             text-decoration: none;
             .transition(all 0.25s);
 
             &:focus,
             &:hover {
-                color: @colour-blue;
+                color: @colour-white;
             }
         }
     }
@@ -389,7 +406,7 @@ dl {
 
             &:focus,
             &:hover {
-                color: @colour-blue-dark;
+                color: @colour-navy;
                 text-decoration: underline;
             }
         }
@@ -455,7 +472,7 @@ dl {
                 &:hover {
 
                     td {
-                        color: @colour-blue-dark;
+                        color: @colour-navy;
                     }
                 }
             }
@@ -475,7 +492,7 @@ dl {
                 &:nth-child(even) {
 
                     td {
-                        color: @colour-grey-light;
+                        color: @colour-grey;
                     }
                 }
             }
@@ -496,10 +513,11 @@ dl {
  */
 
 .btn {
-    color: @colour-grey;
+    color: @colour-grey-dark;
     line-height: 1.6;
     text-align: center;
     text-decoration: none;
+    .transition(~"background-color 0.25s, border 0.25s");
 
     &:focus,
     &:hover {
@@ -511,11 +529,11 @@ dl {
      */
 
     &.btn-alt {
-        color: @colour-white-dark;
+        color: @colour-grey-dark;
 
         &:focus,
         &:hover {
-            color: @colour-white;
+            color: @colour-grey-dark;
         }
     }
 

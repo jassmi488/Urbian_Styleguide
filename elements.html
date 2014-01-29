@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans:400,600,700" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/main.css?v=0.2.4" />
-    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.2.4" />
+    <link rel="stylesheet" href="assets/css/main.css?v=0.2.5" />
+    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.2.5" />
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
@@ -50,9 +50,9 @@
 <body class="sg-body" data-component="prettyprint">
     <header class="sg-header" role="banner">
         <div class="sg-wrapper">
-            <a href="index.html" class="sg-home"><i class="fa fa-home"></i></a>
+            <a href="index.html" class="sg-home"><span aria-hidden="true" class="icon fa fa-home"></span></a>
             <h1 class="delta white">Elements</h1>
-            <a href="elements.html#sg-table-of-contents" class="sg-nav-toggle" data-action="sg-nav-toggle"><i class="fa fa-bars"></i></a>
+            <a href="elements.html#sg-table-of-contents" class="sg-nav-toggle" data-action="sg-nav-toggle"><span aria-hidden="true" class="icon fa fa-bars"></span></a>
         </div>
     </header>
     <!-- // Header -->
@@ -60,19 +60,19 @@
     <nav class="sg-nav" data-container="sg-nav" role="navigation">
         <div class="sg-wrapper">
             <ol class="sg-list sg-list-nav">
-                <li><a href="#sg-colours"><i class="fa fa-caret-right"></i> Colours</a></li>
-                <li><a href="#sg-fonts"><i class="fa fa-caret-right"></i> Fonts</a></li>
-                <li><a href="#sg-headings"><i class="fa fa-caret-right"></i> Headings</a></li>
-                <li><a href="#sg-paragraphs"><i class="fa fa-caret-right"></i> Paragraphs</a></li>
-                <li><a href="#sg-block-quotes"><i class="fa fa-caret-right"></i> Block Quotes</a></li>
-                <li><a href="#sg-horizontal-rules"><i class="fa fa-caret-right"></i> Horizontal Rules</a></li>
-                <li><a href="#sg-inline-elements"><i class="fa fa-caret-right"></i> Inline Elements</a></li>
-                <li><a href="#sg-lists"><i class="fa fa-caret-right"></i> Lists</a></li>
-                <li><a href="#sg-tables"><i class="fa fa-caret-right"></i> Tables</a></li>
-                <li><a href="#sg-btns"><i class="fa fa-caret-right"></i> Buttons</a></li>
-                <li><a href="#sg-icons"><i class="fa fa-caret-right"></i> Icons</a></li>
-                <li><a href="#sg-media"><i class="fa fa-caret-right"></i> Media</a></li>
-                <li><a href="#sg-visibility"><i class="fa fa-caret-right"></i> Visibility</a></li>
+                <li><a href="#sg-colours"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Colours</a></li>
+                <li><a href="#sg-fonts"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Fonts</a></li>
+                <li><a href="#sg-headings"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Headings</a></li>
+                <li><a href="#sg-paragraphs"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Paragraphs</a></li>
+                <li><a href="#sg-block-quotes"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Block Quotes</a></li>
+                <li><a href="#sg-horizontal-rules"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Horizontal Rules</a></li>
+                <li><a href="#sg-inline-elements"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Inline Elements</a></li>
+                <li><a href="#sg-lists"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Lists</a></li>
+                <li><a href="#sg-tables"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Tables</a></li>
+                <li><a href="#sg-btns"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Buttons</a></li>
+                <li><a href="#sg-icons"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Icons</a></li>
+                <li><a href="#sg-media"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Media</a></li>
+                <li><a href="#sg-visibility"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Visibility</a></li>
             </ol>
         </div>
     </nav>
@@ -87,7 +87,7 @@
             <![endif]-->
 
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Colours <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Colours <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <ul class="sg-list sg-list-colours">
                     <li class="bg-colour-black">
@@ -97,16 +97,10 @@
                         <div class="hex">#111</div>
                     </li>
                     <li class="bg-colour-grey">
-                        <div class="hex">#333</div>
-                    </li>
-                    <li class="bg-colour-grey-light">
-                        <div class="hex">#717274</div>
-                    </li>
-                    <li class="bg-colour-silver-dark">
                         <div class="hex">#aaa</div>
                     </li>
                     <li class="bg-colour-silver">
-                        <div class="hex">#ccc</div>
+                        <div class="hex">#ddd</div>
                     </li>
                     <li class="bg-colour-white-dark">
                         <div class="hex">#f0f0f0</div>
@@ -114,41 +108,44 @@
                     <li class="bg-colour-white">
                         <div class="hex">#fff</div>
                     </li>
-                    <li class="bg-colour-red-dark">
-                        <div class="hex">#8c2318</div>
+                    <li class="bg-colour-maroon">
+                        <div class="hex">#85144b</div>
+                    </li>
+                    <li class="bg-colour-purple">
+                        <div class="hex">#b10dC9</div>
+                    </li>
+                    <li class="bg-colour-fuchsia">
+                        <div class="hex">#f012be</div>
                     </li>
                     <li class="bg-colour-red">
-                        <div class="hex">#c11515</div>
+                        <div class="hex">#ff4136</div>
                     </li>
-                    <li class="bg-colour-red-light">
-                        <div class="hex">#ff3333</div>
+                    <li class="bg-colour-orange">
+                        <div class="hex">#ff851b</div>
                     </li>
-                    <li class="bg-colour-green-dark">
-                        <div class="hex">#519548</div>
+                    <li class="bg-colour-yellow">
+                        <div class="hex">#ffdc00</div>
+                    </li>
+                    <li class="bg-colour-olive">
+                        <div class="hex">#3d9970</div>
                     </li>
                     <li class="bg-colour-green">
                         <div class="hex">#88c425</div>
                     </li>
-                    <li class="bg-colour-green-light">
-                        <div class="hex">#bef202</div>
+                    <li class="bg-colour-lime">
+                        <div class="hex">#01ff70</div>
                     </li>
-                    <li class="bg-colour-blue-dark">
-                        <div class="hex">#0b486b</div>
+                    <li class="bg-colour-aqua">
+                        <div class="hex">#7fdbff</div>
+                    </li>
+                    <li class="bg-colour-teal">
+                        <div class="hex">#39cccc</div>
                     </li>
                     <li class="bg-colour-blue">
                         <div class="hex">#196dff</div>
                     </li>
-                    <li class="bg-colour-blue-light">
-                        <div class="hex">#69d2e7</div>
-                    </li>
-                    <li class="bg-colour-yellow-dark">
-                        <div class="hex">#f7cf0a</div>
-                    </li>
-                    <li class="bg-colour-yellow">
-                        <div class="hex">#fff400</div>
-                    </li>
-                    <li class="bg-colour-yellow-light">
-                        <div class="hex">#f7f972</div>
+                    <li class="bg-colour-navy">
+                        <div class="hex">#001f3f</div>
                     </li>
                 </ul>
             </section>
@@ -156,7 +153,7 @@
 
             <a id="sg-fonts" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Fonts <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Fonts <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <p class="large ff-droid-sans">Primary font: "Droid Sans", Arial, sans-serif</p>
                 <p class="large ff-droid-serif">Secondary font: "Droid Serif", Georgia, serif</p>
@@ -165,7 +162,7 @@
 
             <a id="sg-headings" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Headings <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Headings <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <h1 class="alpha">Duis aute <a href="elements.html#sg-headings">irure dolor</a> in lorem</h1>
                 <h2 class="beta">Duis aute <a href="elements.html#sg-headings">irure dolor</a> in lorem</h2>
@@ -192,7 +189,7 @@
 
             <a id="sg-paragraphs" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Paragraphs <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Paragraphs <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <p class="very-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -215,7 +212,7 @@
 
             <a id="sg-block-quotes" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Block Quotes <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Block Quotes <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <blockquote class="blockquote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -242,7 +239,7 @@
 
             <a id="sg-inline-elements" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Inline Elements <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Inline Elements <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <p><a href="#">This is a text link</a></p>
                 <p><strong>Strong is used to indicate strong importance</strong>.</p>
@@ -297,7 +294,7 @@
 
             <a id="sg-horizontal-rules" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Horizontal Rules <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Horizontal Rules <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <hr class="hr" />
 
@@ -313,9 +310,9 @@
 
             <a id="sg-lists" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Lists <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Lists <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Ordered <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Ordered <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <ol class="list">
                     <li>Lorem ipsum dolor sit amet</li>
@@ -351,7 +348,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Counter <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Counter <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <ol class="list list-counter">
                     <li>Lorem ipsum dolor sit amet</li>
@@ -401,7 +398,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Unordered <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Unordered <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <ul class="list">
                     <li>Lorem ipsum dolor sit amet</li>
@@ -437,7 +434,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Description <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Description <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <dl class="list">
                     <dt>Lorem ipsum dolor</dt>
@@ -465,7 +462,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Horizontal <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Horizontal <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
                 <ul class="list list-horizontal">
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Consectetur adipisicing elit</li>
@@ -486,7 +483,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Horizontal Links <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Horizontal Links <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
                 <ul class="list list-horizontal list-links">
                     <li><a href="elements.html#sg-lists">Lorem ipsum dolor sit amet</a></li>
                     <li><a href="elements.html#sg-lists">Consectetur adipisicing elit</a></li>
@@ -507,7 +504,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Vertical <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Vertical <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
                 <ul class="list list-vertical">
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Consectetur adipisicing elit</li>
@@ -528,7 +525,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Vertical Links <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Vertical Links <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
                 <ul class="list list-vertical list-links">
                     <li><a href="elements.html#sg-lists">Lorem ipsum dolor sit amet</a></li>
                     <li><a href="elements.html#sg-lists">Consectetur adipisicing elit</a></li>
@@ -553,9 +550,9 @@
 
             <a id="sg-tables" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Tables <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Tables <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Default <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Default <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <table class="table">
                     <caption>Caption of Table</caption>
@@ -645,7 +642,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Bordered <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Bordered <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <table class="table table-bordered">
                     <caption>Caption of Table</caption>
@@ -735,7 +732,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Condensed <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Condensed <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <table class="table table-condensed">
                     <caption>Caption of Table</caption>
@@ -825,7 +822,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Hover <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Hover <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <table class="table table-hover">
                     <caption>Caption of Table</caption>
@@ -915,7 +912,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Striped <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Striped <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <table class="table table-striped">
                     <caption>Caption of Table</caption>
@@ -1005,7 +1002,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <h6 class="zeta grey-light sg-section-heading-secondary">Scrollable <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta grey-light sg-section-heading-secondary">Scrollable <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <div class="scrollable" data-component="scrollable-table">
                     <div>
@@ -1144,11 +1141,11 @@
 
             <a id="sg-btns" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Buttons <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Buttons <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <p><a href="elements.html#sg-btns" class="btn" role="button">Default</a></p>
-                <p><a href="elements.html#sg-btns" class="btn" role="button"><i class="fa fa-check"></i> Icon</a></p>
-                <p><a href="elements.html#sg-btns" class="btn btn-icon" role="button"><i class="fa fa-search"></i></a></p>
+                <p><a href="elements.html#sg-btns" class="btn" role="button"><span aria-hidden="true" class="icon fa fa-check"></span> Icon</a></p>
+                <p><a href="elements.html#sg-btns" class="btn btn-icon" role="button"><span aria-hidden="true" class="icon fa fa-search"></span></a></p>
                 <p><a class="btn btn-disabled" role="button">Disabled</a></p>
                 <p><a href="elements.html#sg-btns" class="btn btn-alt" role="button">Alternate</a></p>
 
@@ -1156,7 +1153,7 @@
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;a href="#" class="btn" role="button"&gt;Default&lt;/a&gt;
-&lt;a href="#" class="btn" role="button"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt; Icon&lt;/a&gt;
+&lt;a href="#" class="btn" role="button"&gt;&lt;span aria-hidden="true" class="icon fa fa-check"&gt;&lt;/span&gt; Icon&lt;/a&gt;
 &lt;a class="btn btn-disabled" role="button"&gt;Disabled&lt;/a&gt;
 &lt;a href="#" class="btn btn-alt" role="button"&gt;Alternate&lt;/a&gt;
 </code>
@@ -1168,40 +1165,40 @@
 
             <a id="sg-icons" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Icons <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Icons <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
                 <ul class="sg-list sg-list-icons">
-                    <li><i class="fa fa-envelope"></i></li>
-                    <li><i class="fa fa-envelope-o"></i></li>
-                    <li><i class="fa fa-map-marker"></i></li>
-                    <li><i class="fa fa-mobile"></i></li>
-                    <li><i class="fa fa-phone"></i></li>
-                    <li><i class="fa fa-facebook"></i></li>
-                    <li><i class="fa fa-facebook-square"></i></li>
-                    <li><i class="fa fa-google-plus"></i></li>
-                    <li><i class="fa fa-google-plus-square"></i></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-twitter-square"></i></li>
-                    <li><i class="fa fa-youtube"></i></li>
-                    <li><i class="fa fa-youtube-square"></i></li>
+                    <li><span aria-hidden="true" class="icon fa fa-envelope"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-envelope-o"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-map-marker"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-mobile"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-phone"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-facebook"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-facebook-square"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-google-plus"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-google-plus-square"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-twitter"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-twitter-square"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-youtube"></span></li>
+                    <li><span aria-hidden="true" class="icon fa fa-youtube-square"></span></li>
                 </ul>
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;
-&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt;
-&lt;i class="fa fa-map-marker"&gt;&lt;/i&gt;
-&lt;i class="fa fa-mobile"&gt;&lt;/i&gt;
-&lt;i class="fa fa-phone"&gt;&lt;/i&gt;
-&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
-&lt;i class="fa fa-facebook-square"&gt;&lt;/i&gt;
-&lt;i class="fa fa-google-plus"&gt;&lt;/i&gt;
-&lt;i class="fa fa-google-plus-square"&gt;&lt;/i&gt;
-&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
-&lt;i class="fa fa-twitter-square"&gt;&lt;/i&gt;
-&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;
-&lt;i class="fa fa-youtube-square"&gt;&lt;/i&gt;
+<code class="prettyprint linenums">&lt;span aria-hidden="true" class="icon fa fa-envelope"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-envelope-o"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-map-marker"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-mobile"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-phone"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-facebook"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-facebook-square"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-google-plus"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-google-plus-square"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-twitter"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-twitter-square"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-youtube"&gt;&lt;/span&gt;
+&lt;span aria-hidden="true" class="icon fa fa-youtube-square"&gt;&lt;/span&gt;
 </code>
                     </div>
                 </div>
@@ -1211,9 +1208,9 @@
 
             <a id="sg-media" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Media <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Media <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
-                <h6 class="zeta sg-section-heading-secondary">Figure <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta sg-section-heading-secondary">Figure <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <figure>
                     <img src="http://placekitten.com/680/400" alt="Caption of the Figure" />
@@ -1233,7 +1230,7 @@
                 </div>
                 <!-- // Source Code -->
 
-				<h6 class="zeta sg-section-heading-secondary">Audio <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+				<h6 class="zeta sg-section-heading-secondary">Audio <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
 				<audio src="http://upload.wikimedia.org/wikipedia/commons/f/f2/Median_test.ogg" controls="controls">
 					Your browser does not support the <code>audio</code> element.
@@ -1251,7 +1248,7 @@
 				</div>
 				<!-- // Source Code -->
 
-                <h6 class="zeta sg-section-heading-secondary">Video <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta sg-section-heading-secondary">Video <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <div class="fluid-embed"><iframe src="//www.youtube.com/embed/7E0fVfectDo?wmode=opaque" allowfullscreen></iframe></div>
                 <!-- // Video -->
@@ -1271,14 +1268,14 @@
 
             <a id="sg-visibility" class="sg-section-link"></a>
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Visibility <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Visibility <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
-                <p class="hide-small silver"><i class="fa fa-times"></i> This text is hidden on smaller screens</p>
-                <p class="hide-med hide-large"><i class="fa fa-check"></i> <em>This text is only visible on smaller screens</em></p>
-                <p class="hide-med silver"><i class="fa fa-times"></i> This text is hidden on medium screens only</p>
-                <p class="hide-small hide-large"><i class="fa fa-check"></i> <em>This text is only visible on medium screens</em></p>
-                <p class="hide-large silver"><i class="fa fa-times"></i> This text is hidden on large screens</p>
-                <p class="hide-small hide-med"><i class="fa fa-check"></i> <em>This text is only visible on large screens</em></p>
+                <p class="hide-small silver"><span aria-hidden="true" class="icon fa fa-times"></span> This text is hidden on smaller screens</p>
+                <p class="hide-med hide-large"><span aria-hidden="true" class="icon fa fa-check"></span> <em>This text is only visible on smaller screens</em></p>
+                <p class="hide-med silver"><span aria-hidden="true" class="icon fa fa-times"></span> This text is hidden on medium screens only</p>
+                <p class="hide-small hide-large"><span aria-hidden="true" class="icon fa fa-check"></span> <em>This text is only visible on medium screens</em></p>
+                <p class="hide-large silver"><span aria-hidden="true" class="icon fa fa-times"></span> This text is hidden on large screens</p>
+                <p class="hide-small hide-med"><span aria-hidden="true" class="icon fa fa-check"></span> <em>This text is only visible on large screens</em></p>
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
@@ -1298,7 +1295,7 @@
 
             <a id="sg-table-of-contents" class="sg-section-link js-hidden"></a>
             <section class="sg-section js-hidden">
-                <h6 class="zeta sg-section-heading-primary">Table of Contents <a href="#top" data-action="sg-back-to-top">Back to Top <i class="fa fa-arrow-up"></i></a></h6>
+                <h6 class="zeta sg-section-heading-primary">Table of Contents <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <ul class="sg-list sg-list-table-of-contents">
                     <li><a href="#sg-colours">Colours</a></li>
@@ -1327,7 +1324,7 @@
                 <small><b>Last Modified</b>: <time datetime="2013-11-30" data-component="last-modified">November 30, 2013</time></small>
             </p>
             <p>
-                <small><b>Version</b>: 0.2.4</small>
+                <small><b>Version</b>: 0.2.5</small>
             </p>
         </div>
     </footer>
@@ -1335,10 +1332,10 @@
 
     <!-- JavaScript -->
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=0.2.4"></script>
-    <script src="assets/js/main.js?v=0.2.4"></script>
-    <script src="assets/js/style-guide/prettify.js?v=0.2.4"></script>
-    <script src="assets/js/style-guide/main.js?v=0.2.4"></script>
+    <script src="assets/js/plugins.js?v=0.2.5"></script>
+    <script src="assets/js/main.js?v=0.2.5"></script>
+    <script src="assets/js/style-guide/prettify.js?v=0.2.5"></script>
+    <script src="assets/js/style-guide/main.js?v=0.2.5"></script>
     <script>main.init();</script>
     <script>style_guide.init();</script>
 

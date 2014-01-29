@@ -80,8 +80,8 @@ var components = {
 
                     if (!header.hasClass('is-active')) // Displayed by default
                     {
-                        $('i', header).removeClass(icon_class_opened);
-                        $('i', header).addClass(icon_class_closed);
+                        $('.icon', header).removeClass(icon_class_opened);
+                        $('.icon', header).addClass(icon_class_closed);
                     }
                 });
 
@@ -99,7 +99,7 @@ var components = {
 
                         if (typeof accordion_current_contents !== 'undefined' && accordion_current_contents !== '')
                         {
-                            accordion_current_header_icon = $('i', accordion_current_header);
+                            accordion_current_header_icon = $('.icon', accordion_current_header);
 
                             // Update current header
                             accordion_current_header.toggleClass('is-active');
@@ -275,7 +275,7 @@ var components = {
                     {
                         e.preventDefault();
 
-                        drop_down_icon = $('i', $(this)); // Get the icon within the anchor
+                        drop_down_icon = $('.icon', $(this)); // Get the icon within the anchor
 
                         // Toggle the `is-active` class of the anchor
                         $(this).toggleClass('is-active');
@@ -302,7 +302,7 @@ var components = {
                         $('[data-drop-down="true"] > a').not(drop_down_anchor).removeClass('is-active');
 
                         // Reset all other drop-down icons
-                        $('[data-drop-down="true"] > a > i').not(drop_down_icon).removeClass(icon_up).addClass(icon_down);
+                        $('[data-drop-down="true"] > a > .icon').not(drop_down_icon).removeClass(icon_up).addClass(icon_down);
                     });
                 });
             }

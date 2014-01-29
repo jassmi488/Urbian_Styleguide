@@ -90,7 +90,8 @@
     /* Anchor */
     a {
         color: @colour-sg-grey;
-        font-size: 0.571em; /* 12 / 21 */
+        font-size: 0.619em; /* 13 / 21 */
+        font-weight: @fw-normal;
         text-decoration: none;
         vertical-align: middle;
         .transition(color 0.25s);
@@ -111,7 +112,8 @@
     /* Anchor */
     a {
         color: @colour-sg-grey-dark;
-        font-size: 0.67em; /* 12 / 18 */
+        font-size: 0.722em; /* 13 / 18 */
+        font-weight: @fw-normal;
         text-decoration: none;
         vertical-align: middle;
         .transition(color 0.25s);
@@ -135,7 +137,7 @@
 
     /* Anchor */
     a {
-        color: @colour-sg-blue-dark;
+        color: @colour-sg-navy;
         .transition(color 0.25s);
 
         &:focus,
@@ -203,8 +205,7 @@
             /* Hexadecimal colour value */
             .hex {
                 color: @colour-sg-black;
-                font-family: monospace, serif;
-                font-size: 0.75em; /* 16 / 12 */
+                font-size: 0.875em; /* 14 / 16 */
                 line-height: 1;
                 text-align: center;
             }
@@ -220,7 +221,7 @@
         li {
 
             /* Icon */
-            i {
+            .icon {
                 font-size: 1.5em;
             }
         }
@@ -236,17 +237,17 @@
 
             /* Anchor */
             a {
-                color: @colour-sg-silver;
+                color: @colour-sg-grey-dark;
                 .transition(color 0.25s);
 
                 &:focus,
                 &:hover {
-                    color: @colour-sg-white;
+                    color: @colour-sg-blue;
                     text-decoration: none;
                 }
 
                 /* Icon */
-                i {
+                .icon {
                     font-size: 1em;
                 }
             }

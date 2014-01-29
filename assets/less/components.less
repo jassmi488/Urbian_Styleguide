@@ -18,12 +18,12 @@
    ========================================================================== */
 
 .accordion {
-    border: 1px @colour-silver solid;
+    border-top: 1px @colour-silver solid;
 
     /* Accordion Item Header */
     .accordion-item-header {
         background-color: @colour-white;
-        border-bottom: 1px @colour-white-dark solid;
+        border-bottom: 1px @colour-silver solid;
         overflow: hidden;
 
         /* Active */
@@ -38,7 +38,7 @@
 
         /* Anchor */
         a {
-            color: @colour-blue-dark;
+            color: @colour-navy;
             display: block;
             font-size: 1em;
             line-height: 1.5;
@@ -53,7 +53,7 @@
             }
 
             /* Icon */
-            i {
+            .icon {
                 float: left;
                 line-height: 1.5;
                 margin-right: 0.5em;
@@ -67,16 +67,12 @@
     /* Accordion Item Contents */
     .accordion-item-contents {
         background-color: @colour-white;
-        border-bottom: 1px @colour-white-dark solid;
+        border-bottom: 1px @colour-silver solid;
         max-height: @bp-smaller;
         .opacity(1);
         overflow: hidden;
         padding: 1em 1.25em;
         .transition(max-height 0.25s);
-
-        &:last-of-type {
-            border-bottom: 0;
-        }
 
         /* Hidden */
         &.is-hidden {
@@ -126,12 +122,12 @@
     margin-left: 0;
 
     li {
-        background-color: @colour-white;
+        background-color: @colour-white-dark;
         margin-bottom: 0;
 
         /* Anchor */
         a {
-            color: @colour-blue-dark;
+            color: @colour-navy;
             display: block;
             padding: 0.5em 0.75em;
             text-decoration: none;
@@ -140,16 +136,17 @@
 
             &:focus,
             &:hover {
-                background-color: @colour-white-dark;
-                color: @colour-blue;
+                background-color: @colour-blue;
+                color: @colour-white;
             }
 
             &.is-active {
-                color: @colour-blue;
+                background-color: @colour-blue;
+                color: @colour-white;
             }
 
             /* Icon */
-            i {
+            .icon {
                 margin-left: 0.5em;
             }
         }
@@ -185,18 +182,14 @@
         }
 
         li {
-            border-top: 0;
-            border-right: 0;
-            border-left: 0;
+            border-bottom: 1px @colour-silver solid;
 
-            @media all and (min-width: @bp-large) {
+            &:first-child {
                 border-top: 1px @colour-silver solid;
-                border-right: 1px @colour-silver solid;
-                border-left: 1px @colour-silver solid;
+            }
 
-                &:last-child {
-                    border-bottom: 1px @colour-silver solid;
-                }
+            &:last-child {
+                border-bottom: 0;
             }
         }
     }
@@ -216,14 +209,12 @@
         width: 100%;
 
         > li {
-            border-top: 1px @colour-silver solid;
-            border-right: 1px @colour-silver solid;
-            border-left: 1px @colour-silver solid;
+            border-bottom: 1px @colour-silver solid;
             width: 100%;
 
             @media all and (min-width: @bp-large) {
-                border-right: 0;
-                border-bottom: 1px @colour-silver solid;
+                border-right: 1px @colour-silver solid;
+                border-bottom: 0;
                 float: left;
                 width: auto;
             }
@@ -232,7 +223,8 @@
                 border-bottom: 1px @colour-silver solid;
 
                 @media all and (min-width: @bp-large) {
-                    border-right: 1px @colour-silver solid;
+                    border-right: 0;
+                    border-bottom: 0;
                 }
             }
         }
@@ -249,12 +241,10 @@
         }
 
         li {
-            border-top: 1px @colour-silver solid;
-            border-right: 1px @colour-silver solid;
-            border-left: 1px @colour-silver solid;
+            border-bottom: 1px @colour-silver solid;
 
             &:last-child {
-                border-bottom: 1px @colour-silver solid;
+                border-bottom: 0;
             }
         }
     }
@@ -291,20 +281,29 @@
 
     /* Toggle */
     .nav-toggle {
+        background-color: @colour-white-dark;
+        border: 2px @colour-navy solid;
         clear: both;
-        color: @colour-blue-dark;
+        color: @colour-navy;
         float: right;
-        font-size: 1.5em;
-        margin-right: 1em;
-        .transition(color 0.25s);
+        font-weight: @fw-bold;
+        margin-right: 0.75em;
+        padding: 0.25em 0.5em 0.15em 0.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+        .transition(~"border-color 0.25s, color 0.25s");
 
         &:hover {
-            color: @colour-blue
+            background-color: @colour-blue;
+            border: 2px @colour-blue solid;
+            color: @colour-white-dark
         }
 
         /* Active */
         &.is-active {
-            color: @colour-blue
+            background-color: @colour-blue;
+            border: 2px @colour-blue solid;
+            color: @colour-white-dark
         }
     }
 }
@@ -349,19 +348,29 @@
 
         /* Toggle */
         .toggle-canvas {
-            color: @colour-blue-dark;
+            background-color: @colour-white-dark;
+            border: 2px @colour-navy solid;
+            color: @colour-navy;
             display: inline-block;
-            font-size: 1.5em;
-            margin-left: 1em;
-            .transition(color 0.25s);
+            font-size: 1em;
+            font-weight: @fw-bold;
+            margin-left: 0.75em;
+            padding: 0.25em 0.5em 0.15em 0.5em;
+            text-decoration: none;
+            text-transform: uppercase;
+            .transition(~"border-color 0.25s, color 0.25s");
 
             &:hover {
-                color: @colour-blue
+                background-color: @colour-blue;
+                border: 2px @colour-blue solid;
+                color: @colour-white-dark
             }
 
             /* Active */
             &.is-active {
-                color: @colour-blue
+                background-color: @colour-blue;
+                border: 2px @colour-blue solid;
+                color: @colour-white-dark
             }
         }
     }
@@ -396,19 +405,10 @@
         @media all and (min-width: @bp-smaller) {
             float: left;
 
-            &:first-child {
-
-                /* Anchor */
-                a {
-                    .border-top-left-radius(3px);
-                }
-            }
-
             &:last-child {
 
                 /* Anchor */
                 a {
-                    .border-top-right-radius(3px);
                     margin-right: 0;
                 }
             }
@@ -416,44 +416,44 @@
 
         /* Anchor */
         a {
-            color: @colour-blue-dark;
+            background-color: @colour-white;
+            color: @colour-navy;
             display: block;
             font-size: 1em;
             line-height: 1.5;
             margin-right: 0.25em;
             text-decoration: none;
             padding: 0.5em 0.75em;
-            .transition(~"color 0.25s, background-color 0.25s");
+            .transition(~"background-color 0.25s, color 0.25s");
 
             @media all and (min-width: @bp-smaller) {
-                .border-top-right-radius(3px);
-                .border-top-left-radius(3px);
-                border: 1px @colour-white solid;
+                border: 1px @colour-white-dark solid;
                 border-bottom: 0;
             }
 
             /* Active */
             &.is-active {
-                background-color: @colour-white;
+                background-color: @colour-white-dark;
                 color: @colour-blue;
+                font-weight: @fw-bold;
 
                 @media all and (min-width: @bp-smaller) {
                     border: 1px @colour-silver solid;
-                    border-bottom-color: @colour-white;
+                    border-bottom-color: @colour-white-dark;
 
                     &:focus,
                     &:hover {
-                        background-color: @colour-white;
+                        background-color: @colour-white-dark;
                         border-top: 1px @colour-silver solid;
-                        border-bottom: 1px @colour-white solid;
+                        border-bottom: 1px @colour-white-dark solid;
                     }
                 }
             }
 
             &:focus,
             &:hover {
-                background-color: @colour-white-dark;
-                color: @colour-blue;
+                background-color: @colour-silver;
+                color: @colour-navy;
 
                 @media all and (min-width: @bp-smaller) {
                     border-top: 1px @colour-white-dark solid;
@@ -466,13 +466,9 @@
 
 /* Tabs Content */
 .tabs-content {
+    background-color: @colour-white-dark;
     border: 1px @colour-silver solid;
     margin-top: -1px;
-
-    @media all and (min-width: @bp-smaller) {
-        .border-top-right-radius(0);
-        .border-top-left-radius(0);
-    }
 
     /* Individual Tab Content */
     .tab-content {

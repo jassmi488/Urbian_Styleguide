@@ -57,8 +57,8 @@
         }
 
         /* Icon */
-        i {
-            color: @colour-silver;
+        .icon {
+            color: @colour-grey;
             font-size: 1.5em;
             .transition(color 0.25s);
 
@@ -96,7 +96,7 @@ input,
 textarea {
 
     &.placeholder {
-        color: @colour-silver-dark !important;
+        color: @colour-grey !important;
     }
 }
 
@@ -339,22 +339,23 @@ html[xmlns] .slides {
 
 .flex-control-paging li a {
     background-color: @colour-silver;
+    .border-radius(25px);
     cursor: pointer;
     display: block;
-    height: 20px;
+    height: 15px;
     .opacity(0.8);
     text-indent: -9999px;
     .transition(all 0.25s);
-    width: 20px;
+    width: 15px;
 }
 
 .flex-control-paging li a:hover {
-    background-color: @colour-grey-light;
+    background-color: @colour-silver;
     .opacity(1);
 }
 
 .flex-control-paging li a.flex-active {
-    background-color: @colour-grey;
+    background-color: @colour-blue;
     cursor: default;
     .opacity(1);
 }
@@ -427,7 +428,7 @@ html[xmlns] .slides {
 
 .tooltip {
     display: block;
-    font-size: 0.75em;
+    font-size: 0.875em; /* 14 / 16 */
     line-height: 1.4;
     .opacity(0);
     position: absolute;

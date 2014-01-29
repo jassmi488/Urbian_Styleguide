@@ -84,6 +84,27 @@ h6 {
    ========================================================================== */
 
 /**
+ * Blockquotes
+ */
+
+.blockquote {
+    border-left: 2px @colour-silver solid;
+    margin: 0 0 0 1em;
+    overflow: hidden;
+    padding: 0 1em;
+
+    /* Quote */
+    p {
+        margin-top: 0;
+
+        /* Citation */
+        & + footer {
+            margin-top: 1em;
+        }
+    }
+}
+
+/**
  * Paragraphs
  */
 
@@ -97,7 +118,10 @@ p {
         margin-top: 1em;
     }
 
-    /* Inline images */
+    /**
+     * Inline images
+     */
+
     img {
 
         /* Right */
@@ -134,26 +158,13 @@ p {
             }
         }
     }
-}
 
-/**
- * Blockquotes
- */
+    /**
+     * Mark
+     */
 
-.blockquote {
-    border-left: 2px @colour-silver solid;
-    margin: 0 0 0 1em;
-    overflow: hidden;
-    padding: 0 1em;
-
-    /* Quote */
-    p {
-        margin-top: 0;
-
-        /* Citation */
-        & + footer {
-            margin-top: 1em;
-        }
+    mark {
+        background-color: @colour-yellow;
     }
 }
 
@@ -293,7 +304,7 @@ dl {
     li {
 
         /* Icon */
-        i {
+        .icon {
             margin-right: 0.5em;
         }
     }
@@ -304,47 +315,23 @@ dl {
  */
 
 .list-pagination {
+    background-color: @colour-white-dark;
     display: inline-block;
     list-style: none;
     margin-left: 0;
     overflow: hidden;
-    padding-left: 1px;
-    width: 100%;
-
-    @media all and (min-width: @bp-smaller) {
-        width: auto;
-    }
 
     li {
-        border: 1px @colour-silver solid;
-        display: none;
+        border-right: 1px @colour-silver solid;
         float: left;
         margin-bottom: 0;
-        margin-left: -1px;
-        visibility: hidden;
 
-        @media all and (min-width: @bp-smaller) {
-            display: block;
-            visibility: visible;
-        }
-
-        /* Controls */
-        &.control {
-            display: block;
-            visibility: visible;
-
-            /* Previous */
-            &.page-prev {
-                float: left;
-            }
-
-            /* Next */
-            &.page-next {
-                float: right;
-            }
+        &:last-child {
+            border-right: 0;
+            border-left: 1px @colour-silver solid;
 
             @media all and (min-width: @bp-smaller) {
-                float: none;
+                border-left: 0;
             }
         }
 
@@ -353,19 +340,32 @@ dl {
 
             /* Anchor */
             a {
-                background-color: @colour-white-dark;
+                background-color: @colour-blue;
             }
         }
 
         /* Disabled */
         &.disabled {
-            padding: 0.5em 1em;
+            padding: 0.125em 0.5em;
+
+            @media all and (min-width: @bp-smaller) {
+                padding: 0.5em 1em;
+            }
         }
 
         /* Anchor */
         a {
             display: block;
-            padding: 0.5em 1em;
+            padding: 0.125em 0.5em;
+
+            @media all and (min-width: @bp-smaller) {
+                padding: 0.5em 1em;
+            }
+
+            &:focus,
+            &:hover {
+                background-color: @colour-blue;
+            }
         }
     }
 }
@@ -556,7 +556,7 @@ dl {
 
                 &:focus,
                 &:hover {
-                    background-color: @colour-yellow-light;
+                    background-color: @colour-yellow;
                 }
             }
         }
@@ -635,11 +635,11 @@ dl {
  */
 
 .btn {
-    background-color: @colour-silver;
-    border: 1px @colour-silver solid;
+    background-color: @colour-grey;
+    border: 1px @colour-grey solid;
     display: inline-block;
     padding: 0.563em 1.25em;
-    .transition(~"border 0.25s, background-color 0.25s");
+    .transition(~"background-color 0.25s, border 0.25s");
 
     &:active {
         position: relative;
@@ -648,7 +648,7 @@ dl {
 
     &:focus,
     &:hover {
-        border: 1px @colour-grey-light solid;
+        border: 1px @colour-grey-dark solid;
     }
 
     /**
@@ -656,13 +656,13 @@ dl {
      */
 
     &.btn-alt {
-        background-color: @colour-grey-light;
-        border: 1px @colour-grey-light solid;
+        background-color: @colour-silver;
+        border: 1px @colour-silver solid;
         padding: 0.3em 0.8em;
 
         &:focus,
         &:hover {
-            border: 1px @colour-black solid;
+            border: 1px @colour-grey-dark solid;
         }
     }
 
@@ -695,13 +695,13 @@ dl {
         padding-left: 0.875em;
 
         /* Icon */
-        i {
+        .icon {
             margin-right: 0;
         }
     }
 
     /* Icon */
-    i {
+    .icon {
         margin-right: 0.5em;
     }
 }
