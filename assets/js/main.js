@@ -478,24 +478,16 @@ var components = {
 
         if (component_tabs.length > 0)
         {
-            var tab;
-            var tab_navigation;
-            var tab_content;
-            var anchor;
-            var content;
-            var tab_current_id;
-            var tab_current;
-
             component_tabs.each(function ()
             {
-                tab = $(this);
-                tab_navigation = $('.tabs-navigation');
-                tab_content = $('.tab-content', tab);
+                var tab = $(this);
+                var tab_navigation = $('.tabs-navigation');
+                var tab_content = $('.tab-content', tab);
 
                 // Hide contents
                 tab_content.each(function ()
                 {
-                    content = $(this);
+                    var content = $(this);
 
                     if (!content.hasClass('is-visible')) // Displayed by default
                     {
@@ -507,10 +499,10 @@ var components = {
                 {
                     e.preventDefault();
 
-                    anchor = $(this);
+                    var anchor = $(this);
 
                     // Get the ID of the current tab
-                    tab_current_id = anchor.data('tab-id');
+                    var tab_current_id = anchor.data('tab-id');
 
                     // Remove `active` class from all other anchors
                     $('a.is-active', tab_navigation).removeClass('is-active');
@@ -522,7 +514,7 @@ var components = {
                     if (typeof tab_current_id !== 'undefined' || tab_current_id !== '')
                     {
                         // Get the current tab
-                        tab_current = $('[data-tab="' + tab_current_id + '"]');
+                        var tab_current = $('[data-tab="' + tab_current_id + '"]');
 
                         if (typeof tab_current !== 'undefined' || tab_current !== '')
                         {
