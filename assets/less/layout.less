@@ -276,12 +276,15 @@ dl {
     list-style: none;
     overflow: hidden;
 
-    li {
-        float: left;
-        margin-right: 1em;
+    @media all and (min-width: @bp-medium) {
 
-        &:last-of-type {
-            margin-right: 0;
+        li {
+            float: left;
+            margin-right: 1em;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -765,61 +768,52 @@ figure {
 .g {
     overflow: hidden;
 
-    /**
-     * One Up
-     */
+    @media all and (min-width: @bp-medium) {
 
-    &.g-1-up {
+        /**
+         * One Up
+         */
 
-        /* Grid Item */
-        .gi {
+        &.g-1-up {
 
-            @media all and (min-width: @bp-medium) {
+            /* Grid Item */
+            .gi {
                 width: 100%;
             }
         }
-    }
 
-    /**
-     * Two Up
-     */
+        /**
+         * Two Up
+         */
 
-    &.g-2-up {
+        &.g-2-up {
 
-        /* Grid Item */
-        .gi {
-
-            @media all and (min-width: @bp-medium) {
+            /* Grid Item */
+            .gi {
                 width: 50%;
             }
         }
-    }
 
-    /**
-     * Three Up
-     */
+        /**
+         * Three Up
+         */
 
-    &.g-3-up {
+        &.g-3-up {
 
-        /* Grid Item */
-        .gi {
-
-            @media all and (min-width: @bp-medium) {
+            /* Grid Item */
+            .gi {
                 width: 33.333%;
             }
         }
-    }
 
-    /**
-     * Four Up
-     */
+        /**
+         * Four Up
+         */
 
-    &.g-4-up {
+        &.g-4-up {
 
-        /* Grid Item */
-        .gi {
-
-            @media all and (min-width: @bp-medium) {
+            /* Grid Item */
+            .gi {
                 width: 25%;
             }
         }
