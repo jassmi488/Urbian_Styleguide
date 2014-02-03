@@ -490,23 +490,26 @@
 
 .sg-body {
 
-    /**
-     * Grid Item
-     */
+    .sg-g {
 
-    .gi {
-        background-color: @colour-sg-silver;
+        /**
+         * Grid Item
+         */
 
-        &:nth-child(even) {
-            background-color: @colour-sg-grey;
-        }
+        .gi {
+            background-color: @colour-sg-silver;
 
-        /* Label */
-        p {
-            display: block;
-            margin: 0;
-            padding: 1em;
-            text-align: center;
+            &:nth-child(even) {
+                background-color: @colour-sg-grey;
+            }
+
+            /* Label */
+            p {
+                display: block;
+                margin: 0;
+                padding: 1em;
+                text-align: center;
+            }
         }
     }
 }
