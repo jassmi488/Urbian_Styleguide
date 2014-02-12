@@ -60,10 +60,7 @@
     <nav class="sg-nav" data-container="sg-nav" role="navigation">
         <div class="sg-wrapper">
             <ol class="sg-list sg-list-nav">
-                <li><a href="#sg-grid-one-up"><span aria-hidden="true" class="icon fa fa-caret-right"></span> One Up</a></li>
-                <li><a href="#sg-grid-two-up"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Two Up</a></li>
-                <li><a href="#sg-grid-three-up"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Three Up</a></li>
-                <li><a href="#sg-grid-four-up"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Four Up</a></li>
+                <li><a href="#sg-grid-default"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Default</a></li>
             </ol>
         </div>
     </nav>
@@ -71,155 +68,140 @@
 
     <main id="top" class="sg-main" role="main">
         <div class="sg-wrapper">
-            <a id="sg-grid-one-up" class="sg-section-link"></a>
+            <a id="sg-grid-default" class="sg-section-link"></a>
 
             <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
 
             <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">One Up <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
+                <h5 class="epsilon sg-section-heading-primary">Grid <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
 
-				<div class="g sg-g g-1-up">
-					<div class="gi">
-						<p>1/1</p>
-					</div>
-				</div>
-				<!-- // One Up -->
+                <div class="row">
+                    <div class="sg-col col">
+                        <p>1/1</p>
+                    </div>
+                </div>
+                <!-- // Row: 1/1 -->
 
-				<div class="sg-source-code">
-					<a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-					<div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="g g-1-up"&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 1/1 --&gt;
-	&lt;/div&gt;
-&lt;/div>
+                <div class="row">
+                    <div class="sg-col col col-1-3">
+                        <p>1/3</p>
+                    </div>
+                    <div class="sg-col col col-2-3">
+                        <p>2/3</p>
+                    </div>
+                </div>
+                <!-- // Row: 1/1, 2/3 -->
+
+                <div class="row">
+                    <div class="sg-col col col-2-4">
+                        <p>2/4</p>
+                    </div>
+                    <div class="sg-col col col-2-4">
+                        <p>2/4</p>
+                    </div>
+                </div>
+                <!-- // Row: 2/4, 2/4 -->
+
+                <div class="row">
+                    <div class="sg-col col col-1-3">
+                        <p>1/3</p>
+                    </div>
+                    <div class="sg-col col col-1-3">
+                        <p>1/3</p>
+                    </div>
+                    <div class="sg-col col col-1-3">
+                        <p>1/3</p>
+                    </div>
+                </div>
+                <!-- // Row: 1/3, 1/3, 1/3 -->
+
+                <div class="row">
+                    <div class="sg-col col col-1-4">
+                        <p>1/4</p>
+                    </div>
+                    <div class="sg-col col col-1-4">
+                        <p>1/4</p>
+                    </div>
+                    <div class="sg-col col col-1-4">
+                        <p>1/4</p>
+                    </div>
+                    <div class="sg-col col col-1-4">
+                        <p>1/4</p>
+                    </div>
+                </div>
+                <!-- // Row: 1/4, 1/4, 1/4, 1/4 -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+        &lt;p&gt;1/1&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Row: 1/1 --&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="col col-1-3"&gt;
+        &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-2-3"&gt;
+        &lt;p&gt;2/3&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Row: 1/1, 2/3 --&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="col col-2-4"&gt;
+        &lt;p&gt;2/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-2-4"&gt;
+        &lt;p&gt;2/4&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Row: 2/4, 2/4 --&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="col col-1-3"&gt;
+        &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-1-3"&gt;
+        &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-1-3"&gt;
+        &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Row: 1/3, 1/3, 1/3 --&gt;
+
+&lt;div class="row"&gt;
+    &lt;div class="col col-1-4"&gt;
+        &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-1-4"&gt;
+        &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-1-4"&gt;
+        &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="col col-1-4"&gt;
+        &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- // Row: 1/4, 1/4, 1/4, 1/4 --&gt;
 </code>
-					</div>
-				</div>
-				<!-- // Source Code -->
-            </section>
-
-			<a id="sg-grid-two-up" class="sg-section-link"></a>
-            <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Two Up <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
-
-				<div class="g sg-g g-2-up">
-					<div class="gi">
-						<p>1/2</p>
-					</div>
-					<div class="gi">
-						<p>2/2</p>
-					</div>
-				</div>
-				<!-- // Two Up -->
-
-				<div class="sg-source-code">
-					<a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-					<div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="g g-2-up"&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 1/2 --&gt;
-	&lt;/div&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 2/2 --&gt;
-	&lt;/div&gt;
-&lt;/div>
-</code>
-					</div>
-				</div>
-				<!-- // Source Code -->
-            </section>
-
-			<a id="sg-grid-three-up" class="sg-section-link"></a>
-            <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Three Up <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
-
-				<div class="g sg-g g-3-up">
-					<div class="gi">
-						<p>1/2</p>
-					</div>
-					<div class="gi">
-						<p>2/3</p>
-					</div>
-					<div class="gi">
-						<p>3/3</p>
-					</div>
-				</div>
-				<!-- // Three Up -->
-
-				<div class="sg-source-code">
-					<a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-					<div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="g g-3-up"&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 1/3 --&gt;
-	&lt;/div&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 2/3 --&gt;
-	&lt;/div&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 3/3 --&gt;
-	&lt;/div&gt;
-&lt;/div>
-</code>
-					</div>
-				</div>
-				<!-- // Source Code -->
-            </section>
-
-			<a id="sg-grid-four-up" class="sg-section-link"></a>
-            <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Four Up <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
-
-				<div class="g sg-g g-4-up">
-					<div class="gi">
-						<p>1/2</p>
-					</div>
-					<div class="gi">
-						<p>2/4</p>
-					</div>
-					<div class="gi">
-						<p>3/4</p>
-					</div>
-					<div class="gi">
-						<p>4/4</p>
-					</div>
-				</div>
-				<!-- // Four Up -->
-
-				<div class="sg-source-code">
-					<a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-					<div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="g g-4-up"&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 1/4 --&gt;
-	&lt;/div&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 2/4 --&gt;
-	&lt;/div&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 3/4 --&gt;
-	&lt;/div&gt;
-	&lt;div class="gi"&gt;
-		&lt;!-- 4/4 --&gt;
-	&lt;/div&gt;
-&lt;/div>
-</code>
-					</div>
-				</div>
-				<!-- // Source Code -->
+                    </div>
+                </div>
+                <!-- // Source Code -->
             </section>
 
             <a id="sg-table-of-contents" class="sg-section-link js-hidden"></a>
             <section class="sg-section js-hidden">
                 <h6 class="zeta sg-section-heading-primary">Table of Contents <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
                 <ul class="sg-list sg-list-table-of-contents">
-                    <li><a href="#sg-grid-one-up">One Up</a></li>
-                    <li><a href="#sg-grid-two-up">Two Up</a></li>
-                    <li><a href="#sg-grid-three-up">Three Up</a></li>
-                    <li><a href="#sg-grid-four-up">Four Up</a></li>
+                    <li><a href="#sg-grid-default">Default</a></li>
                 </ul>
             </section>
             <!-- // Table of Contents -->
