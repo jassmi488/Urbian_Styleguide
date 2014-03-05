@@ -83,35 +83,35 @@
                 <h6 class="epsilon sg-section-heading-primary">Input Types <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 
                 <label for="input-a" class="label">Text Input <abbr title="Required" class="red">*</abbr></label>
-                <input type="text" id="input-a" class="input" required="required" placeholder="I&rsquo;m placeholder text" />
+                <input type="text" id="input-a" name="input-a" class="input" required="required" placeholder="I&rsquo;m placeholder text" />
                 <!-- // Text -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Text Input &lt;abbr title="Required"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-&lt;input type="text" id="input" class="input" required="required" placeholder="I&rsquo;m placeholder text" /&gt;
+&lt;input type="text" id="input" name="name" class="input" required="required" placeholder="I&rsquo;m placeholder text" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-r" class="label">Disabled Text Input</label>
-                <input type="text" id="input-r" class="input" required="required" disabled="disabled" aria-disabled="true" />
+                <input type="text" id="input-r" name="input-r" class="input" required="required" disabled="disabled" aria-disabled="true" />
                 <!-- // Text Input (Disabled) -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Text Input (Disabled)&lt;/label&gt;
-&lt;input type="text" id="input" class="input" required="required" disabled="disabled" aria-disabled="true" /&gt;
+&lt;input type="text" id="input" name="name" class="input" required="required" disabled="disabled" aria-disabled="true" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-h" class="label">Password</label>
-                <input type="password" id="input-h" class="input" />
+                <input type="password" id="input-h" name="input-h" class="input" />
                 <span class="input-help">This is supplementary text related to this input.</span>
                 <!-- // Password -->
 
@@ -119,7 +119,7 @@
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Password&lt;/label&gt;
-&lt;input type="password" id="input" class="input" /&gt;
+&lt;input type="password" id="input" name="name" class="input" /&gt;
 &lt;span class="input-help"&gt;This is supplementary text related to this input.&lt;/span&gt;
 </code>
                     </div>
@@ -127,28 +127,28 @@
                 <!-- // Source Code -->
 
                 <label for="input-d" class="label">Email Address</label>
-                <input type="email" id="input-d" class="input" placeholder="example@domain.com" />
+                <input type="email" id="input-d" name="input-d" class="input" placeholder="example@domain.com" />
                 <!-- // Email Address -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Email Address&lt;/label&gt;
-&lt;input type="email" id="input" class="input" placeholder="example@domain.com" /&gt;
+&lt;input type="email" id="input" name="name" class="input" placeholder="example@domain.com" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-l" class="label">File Upload</label>
-                <input type="file" id="input-l" class="input input-file" />
+                <input type="file" id="input-l" name="input-l" class="input input-file" />
                 <!-- // File -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;File Upload&lt;/label&gt;
-&lt;input type="file" id="input" class="input input-file" /&gt;
+&lt;input type="file" id="input" name="name" class="input input-file" /&gt;
 </code>
                     </div>
                 </div>
@@ -306,17 +306,17 @@
                     <!-- // Legend -->
 
                     <label for="checkbox-1" class="label label-option">
-                        <input type="checkbox" id="checkbox-1" value="Choice 1" /> Choice 1
+                        <input type="checkbox" id="checkbox-1" name="checkbox-1" value="Choice 1" /> Choice 1
                     </label>
                     <!-- // Checkbox -->
 
                     <label for="checkbox-2" class="label label-option">
-                        <input type="checkbox" id="checkbox-2" value="Choice 2" /> Choice 2
+                        <input type="checkbox" id="checkbox-2" name="checkbox-2" value="Choice 2" /> Choice 2
                     </label>
                     <!-- // Checkbox -->
 
                     <label for="checkbox-3" class="label label-option">
-                        <input type="checkbox" id="checkbox-3" value="Choice 3" /> Choice 3
+                        <input type="checkbox" id="checkbox-3" name="checkbox-3" value="Choice 3" /> Choice 3
                     </label>
                     <!-- // Checkbox -->
                 </fieldset>
@@ -329,15 +329,15 @@
     &lt;legend class="legend"&gt;Checkboxes&lt;/legend&gt;
 
     &lt;label for="checkbox" class="label label-option"&gt;
-        &lt;input type="checkbox" id="checkbox" value="Choice 1" /&gt; Choice 1
+        &lt;input type="checkbox" id="checkbox" name="checkbox" value="Choice 1" /&gt; Choice 1
     &lt;/label&gt;
 
     &lt;label for="checkbox" class="label label-option"&gt;
-        &lt;input type="checkbox" id="checkbox" value="Choice 2" /&gt; Choice 2
+        &lt;input type="checkbox" id="checkbox" name="checkbox" value="Choice 2" /&gt; Choice 2
     &lt;/label&gt;
 
     &lt;label for="checkbox" class="label label-option"&gt;
-        &lt;input type="checkbox" id="checkbox" value="Choice 3" /&gt; Choice 3
+        &lt;input type="checkbox" id="checkbox" name="checkbox" value="Choice 3" /&gt; Choice 3
     &lt;/label&gt;
 &lt;/fieldset&gt;
 </code>
@@ -350,17 +350,17 @@
                     <!-- // Legend -->
 
                     <label for="checkbox-4" class="label label-option label-inline">
-                        <input type="checkbox" id="checkbox-4" value="Choice 1" /> Choice 1
+                        <input type="checkbox" id="checkbox-4" name="checkbox-4" value="Choice 1" /> Choice 1
                     </label>
                     <!-- // Checkbox -->
 
                     <label for="checkbox-5" class="label label-option label-inline">
-                        <input type="checkbox" id="checkbox-5" value="Choice 2" /> Choice 2
+                        <input type="checkbox" id="checkbox-5" name="checkbox-5" value="Choice 2" /> Choice 2
                     </label>
                     <!-- // Checkbox -->
 
                     <label for="checkbox-6" class="label label-option label-inline">
-                        <input type="checkbox" id="checkbox-6" value="Choice 3" /> Choice 3
+                        <input type="checkbox" id="checkbox-6" name="checkbox-6" value="Choice 3" /> Choice 3
                     </label>
                     <!-- // Checkbox -->
                 </fieldset>
@@ -373,15 +373,15 @@
     &lt;legend class="legend"&gt;Checkboxes&lt;/legend&gt;
 
     &lt;label for="checkbox" class="label label-option label-inline"&gt;
-        &lt;input type="checkbox" id="checkbox" value="Choice 1" /&gt; Choice 1
+        &lt;input type="checkbox" id="checkbox" name="name" value="Choice 1" /&gt; Choice 1
     &lt;/label&gt;
 
     &lt;label for="checkbox" class="label label-option label-inline"&gt;
-        &lt;input type="checkbox" id="checkbox" value="Choice 2" /&gt; Choice 2
+        &lt;input type="checkbox" id="checkbox" name="name" value="Choice 2" /&gt; Choice 2
     &lt;/label&gt;
 
     &lt;label for="checkbox" class="label label-option label-inline"&gt;
-        &lt;input type="checkbox" id="checkbox" value="Choice 3" /&gt; Choice 3
+        &lt;input type="checkbox" id="checkbox" name="name" value="Choice 3" /&gt; Choice 3
     &lt;/label&gt;
 &lt;/fieldset&gt;
 </code>
@@ -478,112 +478,112 @@
                 <!-- // Source Code -->
 
                 <label for="input-e" class="label">URL</label>
-                <input type="url" id="input-e" class="input" placeholder="http://mysite.com" />
+                <input type="url" id="input-e" name="input-e" class="input" placeholder="http://mysite.com" />
                 <!-- // URL -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;URL&lt;/label&gt;
-&lt;input type="url" id="input" class="input" placeholder="http://mysite.com" /&gt;
+&lt;input type="url" id="input" name="name" class="input" placeholder="http://mysite.com" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-k" class="label">Telephone</label>
-                <input type="tel" id="input-k" class="input" />
+                <input type="tel" id="input-k" name="input-k" class="input" />
                 <!-- // Telephone -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Telephone&lt;/label&gt;
-&lt;input type="tel" id="input" class="input" /&gt;
+&lt;input type="tel" id="input" name="name" class="input" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-f" class="label">Number</label>
-                <input type="number" id="input-f" class="input" value="1" min="1" max="10" step="1" />
+                <input type="number" id="input-f" name="input-f" class="input" value="1" min="1" max="10" step="1" />
                 <!-- // Number -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Number&lt;/label&gt;
-&lt;input type="number" id="input" class="input" value="1" min="1" max="10" step="1" /&gt;
+&lt;input type="number" id="input" name="name" class="input" value="1" min="1" max="10" step="1" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-g" class="label">Range</label>
-                <input type="range" id="input-g" class="input" value="0" min="1" max="10" />
+                <input type="range" id="input-g" name="input-g" class="input" value="0" min="1" max="10" />
                 <!-- // Range -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Range&lt;/label&gt;
-&lt;input type="range" id="input" class="input" value="0" min="1" max="10" /&gt;
+&lt;input type="range" id="input" name="name" class="input" value="0" min="1" max="10" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-j" class="label">Search</label>
-                <input type="search" id="input-j" class="input" placeholder="Enter search term&hellip;" />
+                <input type="search" id="input-j" name="input-j" class="input" placeholder="Enter search term&hellip;" />
                 <!-- // Search -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Search&lt;/label&gt;
-&lt;input type="search" id="input" class="input" placeholder="Enter search term&hellip;" /&gt;
+&lt;input type="search" id="input" name="name" class="input" placeholder="Enter search term&hellip;" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-c" class="label">Date</label>
-                <input type="date" id="input-c" class="input" />
+                <input type="date" id="input-c" name="input-c" class="input" />
                 <!-- // Date -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Date&lt;/label&gt;
-&lt;input type="date" id="input" class="input" /&gt;
+&lt;input type="date" id="input" name="name" class="input" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <label for="input-q" class="label">Color</label>
-                <input type="color" id="input-q" class="input input-color" />
+                <input type="color" id="input-q" name="input-q" class="input input-color" />
                 <!-- // Color -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Color&lt;/label&gt;
-&lt;input type="color" id="input" class="input input-color" /&gt;
+&lt;input type="color" id="input" name="name" class="input input-color" /&gt;
 </code>
                     </div>
                 </div>
                 <!-- // Source Code -->
 
                 <span class="label">Progress</span>
-                <progress id="progress" class="progress" value="50" max="100">50 %</progress>
+                <progress id="progress" name="progress" class="progress" value="50" max="100">50 %</progress>
                 <!-- // Progress -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Progress&lt;/label&gt;
-&lt;progress id="progress" class="progress" value="50" max="100"&gt;50 %&lt;/progress&gt;
+&lt;progress id="progress" name="progress" class="progress" value="50" max="100"&gt;50 %&lt;/progress&gt;
 </code>
                     </div>
                 </div>
@@ -602,13 +602,13 @@
                 <!-- // Source Code -->
 
                 <span class="label">Submit</span>
-                <input type="submit" value="Submit" class="btn" />
+                <input type="submit" id="submit" type="submit" value="Submit" class="btn" />
                 <!-- // Submit -->
 
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;input type="submit" value="Submit" class="btn" /&gt;</code>
+<code class="prettyprint linenums">&lt;input type="submit" id="submit" type="submit" value="Submit" class="btn" /&gt;</code>
                     </div>
                 </div>
                 <!-- // Source Code -->
@@ -623,7 +623,7 @@
 
                 <div class="validation validation-success">
                     <label for="input-w" class="label">Text Input</label>
-                    <input type="text" id="input-w" class="input" required="required" placeholder="Everything looks good here." />
+                    <input type="text" id="input-w" name="input-w" class="input" required="required" placeholder="Everything looks good here." />
                     <!-- // Validation (Success) -->
                 </div>
 
@@ -632,7 +632,7 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;div class="validation validation-success"&gt;
     &lt;label for="input" class="label validation validation-success"&gt;Text Input&lt;/label&gt;
-    &lt;input type="text" id="input" class="input validation validation-success" required="required" placeholder="" /&gt;
+    &lt;input type="text" id="input" name="name" class="input validation validation-success" required="required" placeholder="" /&gt;
 &lt;/div&gt;
 </code>
                     </div>
@@ -643,7 +643,7 @@
 
                 <div class="validation validation-warning">
                     <label for="input-x" class="label">Text Input</label>
-                    <input type="text" id="input-x" class="input" required="required" placeholder="Are you sure you want to enter this?" />
+                    <input type="text" id="input-x" name="input-x" class="input" required="required" placeholder="Are you sure you want to enter this?" />
                     <!-- // Validation (Warning) -->
                 </div>
 
@@ -652,7 +652,7 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;div class="validation validation-warning"&gt;
     &lt;label for="input" class="label validation validation-warning"&gt;Text Input&lt;/label&gt;
-    &lt;input type="text" id="input" class="input validation validation-warning" required="required" placeholder="" /&gt;
+    &lt;input type="text" id="input" name="name" class="input validation validation-warning" required="required" placeholder="" /&gt;
 &lt;/div&gt;
 </code>
                     </div>
@@ -663,7 +663,7 @@
 
                 <div class="validation validation-error">
                     <label for="input-y" class="label">Text Input</label>
-                    <input type="text" id="input-y" class="input" required="required" placeholder="This isn&rsquo;t right. You need to fix it!" />
+                    <input type="text" id="input-y" name="input-y" class="input" required="required" placeholder="This isn&rsquo;t right. You need to fix it!" />
                     <!-- // Validation (Error) -->
                 </div>
 
@@ -672,7 +672,7 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;div class="validation validation-error"&gt;
     &lt;label for="input" class="label validation validation-error"&gt;Text Input&lt;/label&gt;
-    &lt;input type="text" id="input" class="input validation validation-error" required="required" placeholder="" /&gt;
+    &lt;input type="text" id="input" name="name" class="input validation validation-error" required="required" placeholder="" /&gt;
 &lt;/div&gt;
 </code>
                     </div>
@@ -689,19 +689,19 @@
 
                 <form action="forms.html#sg-form-layout-default" method="post" class="form" role="form">
                     <label for="input-a1" class="label">Email Address</label>
-                    <input type="email" id="input-a1" class="input" placeholder="example@domain.com" />
+                    <input type="email" id="input-a1" name="input-a1" class="input" placeholder="example@domain.com" />
                     <!-- // Email Address -->
 
                     <label for="input-a2" class="label">Password</label>
-                    <input type="password" id="input-a2" class="input" />
+                    <input type="password" id="input-a2" name="input-a2" class="input" />
                     <!-- // Password -->
 
                     <label for="input-a3" class="label label-option">
-                        <input type="checkbox" id="input-a3" value="Choice 1" /> Remember me
+                        <input type="checkbox" id="input-a3" name="input-a3" value="Choice 1" /> Remember me
                     </label>
                     <!-- // Checkbox -->
 
-                    <input type="submit" class="btn" value="Log In" />
+                    <input type="submit" id="submit-1" name="submit-1" class="btn" value="Log In" />
                     <!-- // Submit -->
                 </form>
                 <!-- // Default Form -->
@@ -711,16 +711,16 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;form action="forms.html" method="post" class="form"&gt;
     &lt;label for="input-1" class="label"&gt;Email Address&lt;/label&gt;
-    &lt;input type="email" id="input-1" class="input" placeholder="example@domain.com" /&gt;
+    &lt;input type="email" id="input" name="name" class="input" placeholder="example@domain.com" /&gt;
 
     &lt;label for="input-2" class="label"&gt;Password&lt;/label&gt;
-    &lt;input type="password" id="input-2" class="input" /&gt;
+    &lt;input type="password" id="input" name="name" class="input" /&gt;
 
     &lt;label for="input-3" class="label label-option"&gt;
-        &lt;input type="checkbox" id="input-3" value="Choice 1" /&gt; Remember me
+        &lt;input type="checkbox" id="input" name="name" value="Choice 1" /&gt; Remember me
     &lt;/label&gt;
 
-    &lt;input type="submit" class="btn" value="Log In" /&gt;
+    &lt;input type="submit" id="submit" name="submit" class="btn" value="Log In" /&gt;
 &lt;/form&gt;
 </code>
                     </div>
@@ -732,19 +732,19 @@
 
                 <form action="forms.html#sg-form-layout-inline" method="post" class="form form-inline" role="form">
                     <label for="input-b1" class="label visuallyhidden">Email Address</label>
-                    <input type="email" id="input-b1" class="input" placeholder="Email Address" />
+                    <input type="email" id="input-b1" name="input-b1" class="input" placeholder="Email Address" />
                     <!-- // Email Address -->
 
                     <label for="input-b2" class="label visuallyhidden">Password</label>
-                    <input type="password" id="input-b2" class="input" placeholder="Password" />
+                    <input type="password" id="input-b2" name="input-b2" class="input" placeholder="Password" />
                     <!-- // Password -->
 
                     <label for="input-b3" class="label label-option">
-                        <input type="checkbox" id="input-b3" value="Choice 1" /> Remember me
+                        <input type="checkbox" id="input-b3" name="input-b3" value="Choice 1" /> Remember me
                     </label>
                     <!-- // Checkbox -->
 
-                    <input type="submit" class="btn" value="Log In" />
+                    <input type="submit" id="submit-2" name="submit-2" class="btn" value="Log In" />
                     <!-- // Submit -->
                 </form>
                 <!-- // Inline Form -->
@@ -775,15 +775,15 @@
 
                 <form action="forms.html#sg-form-layout-horizontal" method="post" class="form form-horizontal" role="form">
                     <label for="input-c1" class="label">Email Address</label>
-                    <input type="email" id="input-c1" class="input" placeholder="example@domain.com" />
+                    <input type="email" id="input-c1" name="input-c1" class="input" placeholder="example@domain.com" />
                     <!-- // Email Address -->
 
                     <label for="input-c2" class="label">Password</label>
-                    <input type="password" id="input-c2" class="input" />
+                    <input type="password" id="input-c2" name="input-c2" class="input" />
                     <!-- // Password -->
 
                     <label for="input-c3" class="label">Country</label>
-                    <select id="input-c3" class="input input-select">
+                    <select id="input-c3" name="input-c3" class="input input-select">
                         <option value="Australia">Australia</option>
                         <option value="South Africa">South Africa</option>
                         <option value="United Kingdom">United Kingdom</option>
@@ -792,11 +792,11 @@
                     <!-- // Select -->
 
                     <label for="input-c4" class="label label-option">
-                        <input type="checkbox" id="input-c4" value="Choice 1" /> Remember me
+                        <input type="checkbox" id="input-c4" name="input-c4" value="Choice 1" /> Remember me
                     </label>
                     <!-- // Checkbox -->
 
-                    <input type="submit" class="btn" value="Log In" />
+                    <input type="submit" id="submit" name="submit" class="btn" value="Log In" />
                     <!-- // Submit -->
                 </form>
                 <!-- // Horizontal Form -->
@@ -835,7 +835,7 @@
 
                 <form action="forms.html#sg-form-layout-search" method="post" class="form form-search" role="search">
                     <label for="search" class="label visuallyhidden">Search</label>
-                    <input type="search" id="search" class="input" placeholder="Search&hellip;" />
+                    <input type="search" id="search" name="search" class="input" placeholder="Search&hellip;" />
                     <button class="btn btn-icon" aria-label="Search"><span aria-hidden="true" class="icon fa fa-search"></span></button>
                 </form>
                 <!-- // Search Form -->
@@ -846,7 +846,7 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;form action="forms.html" method="post" class="form form-search"&gt;
     &lt;label for="search" class="label visuallyhidden"&gt;Search&lt;/label&gt;
-    &lt;input type="search" id="search" class="input" placeholder="Search&hellip;" /&gt;
+    &lt;input type="search" id="search" name="search" class="input" placeholder="Search&hellip;" /&gt;
     &lt;button class="btn btn-icon" aria-label="Search"&gt;&lt;span aria-hidden="true" class="icon fa fa-search"&gt;&lt;/span&gt;&lt;/button&gt;
 &lt;/form&gt;
 </code>
