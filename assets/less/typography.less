@@ -12,6 +12,7 @@
  * .....LISTS
  * .....TABLES
  * .....FIGURES
+ * FEEDBACK
  * UTILITIES
  * LEGACY SUPPORT
  */
@@ -566,6 +567,111 @@ dl {
 
 figcaption {
     font-style: italic;
+}
+
+
+
+
+
+/* ==========================================================================
+   $FEEDBACK
+   ========================================================================== */
+
+/**
+ * Feedback
+ */
+
+.feedback {
+
+    /* Heading */
+    h6, .zeta {
+        color: @colour-grey-dark;
+    }
+
+    /* Message */
+    p {
+        color: @colour-grey-dark;
+    }
+
+    /**
+     * Success
+     */
+    &.feedback-success {
+
+        /* Icon */
+        .icon {
+
+            &:after {
+                color: @colour-green;
+                content: "\f058";
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-green;
+        }
+    }
+
+    /**
+     * Information
+     */
+    &.feedback-info {
+
+        /* Icon */
+        .icon {
+
+            &:after {
+                color: @colour-blue;
+                content: "\f05a";
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-blue;
+        }
+    }
+
+    /**
+     * Warning
+     */
+    &.feedback-warning {
+
+        /* Icon */
+        .icon {
+
+            &:after {
+                color: @colour-orange;
+                content: "\f06a";
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-orange;
+        }
+    }
+
+    /**
+     * Error
+     */
+    &.feedback-error {
+
+        /* Icon */
+        .icon {
+
+            &:after {
+                color: @colour-red;
+                content: "\f057";
+            }
+        }
+
+        /* Anchor */
+        a {
+            color: @colour-red;
+        }
+    }
 }
 
 

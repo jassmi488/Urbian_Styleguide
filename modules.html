@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans:400,600,700" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/main.css?v=0.2.5" />
-    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.2.5" />
+    <link rel="stylesheet" href="assets/css/main.css?v=0.0.0" />
+    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.0.0" />
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
@@ -61,6 +61,8 @@
         <div class="sg-wrapper">
             <ol class="sg-list sg-list-nav">
                 <li><a href="#sg-breadcrumbs"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Breadcrumbs</a></li>
+                <li><a href="#sg-button-group"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Button Group</a></li>
+                <li><a href="#sg-feedback"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Feedback</a></li>
                 <li><a href="#sg-inline-images"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Inline Images</a></li>
                 <li><a href="#sg-pagination"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Pagination</a></li>
                 <li><a href="#sg-posts"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Posts</a></li>
@@ -105,6 +107,138 @@
                 <!-- // Source Code -->
             </section>
             <!-- // Breadcrumbs -->
+
+            <a id="sg-button-group" class="sg-section-link"></a>
+            <section class="sg-section">
+                <h5 class="epsilon sg-section-heading-primary">Button Group <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
+
+                <h6 class="zeta grey sg-section-heading-secondary">Default <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="button-group">
+                    <a href="modules.html#sg-button-group" class="btn">Nemo Enim</a>
+                    <a href="modules.html#sg-button-group" class="btn">Lorem Ipsum</a>
+                </div>
+                <!-- // Button Group (Default) -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="button-group"&gt;
+    &lt;a href="#" class="btn"&gt;Nemo Enim&lt;/a&gt;
+    &lt;a href="#" class="btn"&gt;Lorem Ipsum&lt;/a&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey sg-section-heading-secondary">Right&ndash;aligned <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="button-group right">
+                    <button type="submit" class="btn">Lorem Ipsum</button>
+                    <input type="submit" class="btn" value="Nemo Enim" />
+                </div>
+                <!-- // Button Group (Right–aligned) -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="button-group right"&gt;
+    &lt;button type="submit" class="btn"&gt;Lorem Ipsum&lt;/button&gt;
+    &lt;input type="submit" class="btn" value="Nemo Enim" /&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+            </section>
+            <!-- // Button Group -->
+
+            <a id="sg-feedback" class="sg-section-link"></a>
+            <section class="sg-section">
+                <h5 class="epsilon sg-section-heading-primary">Feedback <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
+
+                <h6 class="zeta grey sg-section-heading-secondary">Success <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="feedback feedback-success">
+                    <h6 class="zeta"><span aria-hidden="true" class="icon fa"></span>Lorem ipsum dolor sit amet, consectetur</h6>
+                    <p>Sed ut <a href="modules.html#sg-feedback">perspiciatis unde omnis iste natus</a> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <!-- // Success -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="feedback feedback-success"&gt;
+    &lt;h6 class="zeta"&gt;&lt;span aria-hidden="true" class="icon fa"&gt;&lt;/span&gt;Lorem ipsum dolor sit amet, consectetur&lt;/h6&gt;
+    &lt;p&gt;Sed ut &lt;a href="#"&gt;perspiciatis unde omnis iste natus&lt;/a&gt; error sit voluptatem accusantium doloremque laudantium&hellip;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey sg-section-heading-secondary">Information <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="feedback feedback-info">
+                    <h6 class="zeta"><span aria-hidden="true" class="icon fa"></span>Lorem ipsum dolor sit amet, consectetur</h6>
+                    <p>Sed ut <a href="modules.html#sg-feedback">perspiciatis unde omnis iste natus</a> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <!-- // Information -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="feedback feedback-info"&gt;
+    &lt;h6 class="zeta"&gt;&lt;span aria-hidden="true" class="icon fa"&gt;&lt;/span&gt;Lorem ipsum dolor sit amet, consectetur&lt;/h6&gt;
+    &lt;p&gt;Sed ut &lt;a href="#"&gt;perspiciatis unde omnis iste natus&lt;/a&gt; error sit voluptatem accusantium doloremque laudantium&hellip;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey sg-section-heading-secondary">Warning <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="feedback feedback-warning">
+                    <h6 class="zeta"><span aria-hidden="true" class="icon fa"></span>Lorem ipsum dolor sit amet, consectetur</h6>
+                    <p>Sed ut <a href="modules.html#sg-feedback">perspiciatis unde omnis iste natus</a> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <!-- // Warning -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="feedback feedback-warning"&gt;
+    &lt;h6 class="zeta"&gt;&lt;span aria-hidden="true" class="icon fa"&gt;&lt;/span&gt;Lorem ipsum dolor sit amet, consectetur&lt;/h6&gt;
+    &lt;p&gt;Sed ut &lt;a href="#"&gt;perspiciatis unde omnis iste natus&lt;/a&gt; error sit voluptatem accusantium doloremque laudantium&hellip;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey sg-section-heading-secondary">Error <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="feedback feedback-error">
+                    <h6 class="zeta"><span aria-hidden="true" class="icon fa"></span>Lorem ipsum dolor sit amet, consectetur</h6>
+                    <p>Sed ut <a href="modules.html#sg-feedback">perspiciatis unde omnis iste natus</a> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <!-- // Error -->
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="feedback feedback-error"&gt;
+    &lt;h6 class="zeta"&gt;&lt;span aria-hidden="true" class="icon fa"&gt;&lt;/span&gt;Lorem ipsum dolor sit amet, consectetur&lt;/h6&gt;
+    &lt;p&gt;Sed ut &lt;a href="#"&gt;perspiciatis unde omnis iste natus&lt;/a&gt; error sit voluptatem accusantium doloremque laudantium&hellip;&lt;/p&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+            </section>
+            <!-- // Feedback -->
 
             <a id="sg-inline-images" class="sg-section-link"></a>
             <section class="sg-section">
@@ -227,6 +361,8 @@
 				<h6 class="zeta sg-section-heading-primary">Table of Contents <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
 				<ul class="sg-list sg-list-table-of-contents">
 					<li><a href="#sg-breadcrumbs">Breadcrumbs</a></li>
+                    <li><a href="#sg-button-group">Button Group</a></li>
+                    <li><a href="#sg-feedback">Feedback</a></li>
 					<li><a href="#sg-inline-images">Inline Images</a></li>
 					<li><a href="#sg-pagination">Pagination</a></li>
 					<li><a href="#sg-posts">Posts</a></li>
@@ -243,7 +379,7 @@
                 <small><b>Last Modified</b>: <time datetime="2013-11-30" data-component="last-modified">November 30, 2013</time></small>
             </p>
             <p>
-                <small><b>Version</b>: 0.2.5</small>
+                <small><b>Version</b>: 0.0.0</small>
             </p>
         </div>
     </footer>
@@ -251,10 +387,10 @@
 
     <!-- JavaScript -->
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=0.2.5"></script>
-    <script src="assets/js/main.js?v=0.2.5"></script>
-    <script src="assets/js/style-guide/prettify.js?v=0.2.5"></script>
-    <script src="assets/js/style-guide/main.js?v=0.2.5"></script>
+    <script src="assets/js/plugins.js?v=0.0.0"></script>
+    <script src="assets/js/main.js?v=0.0.0"></script>
+    <script src="assets/js/style-guide/prettify.js?v=0.0.0"></script>
+    <script src="assets/js/style-guide/main.js?v=0.0.0"></script>
     <script>main.init();</script>
     <script>style_guide.init();</script>
 

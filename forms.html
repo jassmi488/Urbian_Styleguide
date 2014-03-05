@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans:400,600,700" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/main.css?v=0.2.5" />
-    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.2.5" />
+    <link rel="stylesheet" href="assets/css/main.css?v=0.0.0" />
+    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=0.0.0" />
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
@@ -61,6 +61,7 @@
         <div class="sg-wrapper">
             <ol class="sg-list sg-list-nav">
                 <li><a href="#sg-form-input-types"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Input Types</a></li>
+                <li><a href="#sg-form-validation"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Validation</a></li>
                 <li><a href="#sg-form-layout-default"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Default Layout</a></li>
                 <li><a href="#sg-form-layout-inline"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Inline Layout</a></li>
                 <li><a href="#sg-form-layout-horizontal"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Horizontal Layout</a></li>
@@ -111,6 +112,7 @@
 
                 <label for="input-h" class="label">Password</label>
                 <input type="password" id="input-h" class="input" />
+                <span class="input-help">This is supplementary text related to this input.</span>
                 <!-- // Password -->
 
                 <div class="sg-source-code">
@@ -118,6 +120,7 @@
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
 <code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Password&lt;/label&gt;
 &lt;input type="password" id="input" class="input" /&gt;
+&lt;span class="input-help"&gt;This is supplementary text related to this input.&lt;/span&gt;
 </code>
                     </div>
                 </div>
@@ -342,7 +345,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <fieldset class="fieldset">
+                <fieldset class="fieldset fieldset-border">
                     <legend class="legend">Inline Checkboxes</legend>
                     <!-- // Legend -->
 
@@ -366,7 +369,7 @@
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;fieldset class="fieldset"&gt;
+<code class="prettyprint linenums">&lt;fieldset class="fieldset fieldset-border"&gt;
     &lt;legend class="legend"&gt;Checkboxes&lt;/legend&gt;
 
     &lt;label for="checkbox" class="label label-option label-inline"&gt;
@@ -430,7 +433,7 @@
                 </div>
                 <!-- // Source Code -->
 
-                <fieldset class="fieldset">
+                <fieldset class="fieldset fieldset-border">
                     <legend class="legend">Inline Radio Buttons</legend>
                     <!-- // Legend -->
 
@@ -454,7 +457,7 @@
                 <div class="sg-source-code">
                     <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
                     <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;fieldset class="fieldset"&gt;
+<code class="prettyprint linenums">&lt;fieldset class="fieldset fieldset-border"&gt;
     &lt;legend class="legend"&gt;Radio Buttons&lt;/legend&gt;
 
     &lt;label for="radio" class="label label-option label-inline"&gt;
@@ -611,6 +614,72 @@
                 <!-- // Source Code -->
             </section>
             <!-- // Input Types -->
+
+            <section class="sg-section">
+                <a id="sg-form-validation" class="sg-section-link"></a>
+                <h5 class="epsilon sg-section-heading-primary">Validation <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
+
+                <h6 class="zeta grey sg-section-heading-secondary">Success <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="validation validation-success">
+                    <label for="input-w" class="label">Text Input</label>
+                    <input type="text" id="input-w" class="input" required="required" placeholder="Everything looks good here." />
+                    <!-- // Validation (Success) -->
+                </div>
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="validation validation-success"&gt;
+    &lt;label for="input" class="label validation validation-success"&gt;Text Input&lt;/label&gt;
+    &lt;input type="text" id="input" class="input validation validation-success" required="required" placeholder="" /&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey sg-section-heading-secondary">Warning <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="validation validation-warning">
+                    <label for="input-x" class="label">Text Input</label>
+                    <input type="text" id="input-x" class="input" required="required" placeholder="Are you sure you want to enter this?" />
+                    <!-- // Validation (Warning) -->
+                </div>
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="validation validation-warning"&gt;
+    &lt;label for="input" class="label validation validation-warning"&gt;Text Input&lt;/label&gt;
+    &lt;input type="text" id="input" class="input validation validation-warning" required="required" placeholder="" /&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+
+                <h6 class="zeta grey sg-section-heading-secondary">Error <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
+
+                <div class="validation validation-error">
+                    <label for="input-y" class="label">Text Input</label>
+                    <input type="text" id="input-y" class="input" required="required" placeholder="This isn&rsquo;t right. You need to fix it!" />
+                    <!-- // Validation (Error) -->
+                </div>
+
+                <div class="sg-source-code">
+                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
+                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
+<code class="prettyprint linenums">&lt;div class="validation validation-error"&gt;
+    &lt;label for="input" class="label validation validation-error"&gt;Text Input&lt;/label&gt;
+    &lt;input type="text" id="input" class="input validation validation-error" required="required" placeholder="" /&gt;
+&lt;/div&gt;
+</code>
+                    </div>
+                </div>
+                <!-- // Source Code -->
+            </section>
+            <!-- // Validation -->
 
             <section class="sg-section">
                 <h5 class="epsilon sg-section-heading-primary">Forms <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
@@ -792,6 +861,7 @@
                 <h6 class="zeta sg-section-heading-primary">Table of Contents <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
                 <ul class="sg-list sg-list-table-of-contents">
                     <li><a href="#sg-form-input-types">Input Types</a></li>
+                    <li><a href="#sg-form-validation">Validation</a></li>
                     <li><a href="#sg-form-layout-default">Default Layout</a></li>
                     <li><a href="#sg-form-layout-inline">Inline Layout</a></li>
                     <li><a href="#sg-form-layout-horizontal">Horizontal Layout</a></li>
@@ -809,7 +879,7 @@
                 <small><b>Last Modified</b>: <time datetime="2013-11-30" data-component="last-modified">November 30, 2013</time></small>
             </p>
             <p>
-                <small><b>Version</b>: 0.2.5</small>
+                <small><b>Version</b>: 0.0.0</small>
             </p>
         </div>
     </footer>
@@ -817,10 +887,10 @@
 
     <!-- JavaScript -->
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=0.2.5"></script>
-    <script src="assets/js/main.js?v=0.2.5"></script>
-    <script src="assets/js/style-guide/prettify.js?v=0.2.5"></script>
-    <script src="assets/js/style-guide/main.js?v=0.2.5"></script>
+    <script src="assets/js/plugins.js?v=0.0.0"></script>
+    <script src="assets/js/main.js?v=0.0.0"></script>
+    <script src="assets/js/style-guide/prettify.js?v=0.0.0"></script>
+    <script src="assets/js/style-guide/main.js?v=0.0.0"></script>
     <script>main.init();</script>
     <script>style_guide.init();</script>
 

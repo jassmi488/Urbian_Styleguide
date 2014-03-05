@@ -10,6 +10,7 @@
  * LABEL
  * INPUT
  * PROGRESS
+ * VALIDATION
  * LEGACY SUPPORT
  */
 
@@ -107,6 +108,14 @@ textarea {
 
             @media all and (min-width: @bp-small) {
                 width: 75%;
+            }
+        }
+
+        /* Help Text */
+        .input-help {
+
+            @media all and (min-width: @bp-small) {
+                margin-left: 25%;
             }
         }
 
@@ -237,10 +246,11 @@ textarea {
 
     &.fieldset-border {
         border: 1px @colour-silver solid;
-        padding: 1em;
+        padding: 1em 1.5em 0.5em 1.5em;
 
         /* Legend */
         .legend {
+            margin-bottom: 0;
             padding: 0 0.5em;
         }
     }
@@ -273,6 +283,7 @@ textarea {
 
     /* Radio Button or Checkbox Option */
     &.label-option {
+        margin-bottom: 0.5em;
 
         /* Input */
         input {
@@ -284,12 +295,8 @@ textarea {
     &.label-inline {
         float: left;
         margin-right: 1.5em;
-        margin-bottom: 0.75em;
+        margin-bottom: 1em;
         width: auto;
-
-        @media all and (min-width: @bp-small) {
-            margin-bottom: 0;
-        }
 
         /* Select */
         .input-select {
@@ -410,6 +417,50 @@ input[type="search"] {
     .box-sizing(border-box); // Override normalize.css
 }
 
+/**
+ * Help Text
+ */
+
+.input-help {
+    color: @colour-grey;
+    display: block;
+    font-size: 0.875em; /* 14 / 16 */
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+
+    /* Align text to the right */
+    &.right {
+
+        @media all and (min-width: @bp-small) {
+            padding-right: 1px;
+            text-align: right;
+        }
+    }
+
+    /* Anchor */
+    a {
+        color: @colour-grey;
+        text-decoration: underline;
+
+        &:focus,
+        &:hover {
+            color: @colour-grey-dark;
+        }
+    }
+
+    /* Label */
+    &+ .label {
+
+        /* Radio Button or Checkbox Option */
+        &.label-option {
+
+            @media all and (min-width: @bp-small) {
+                margin-top: -1.5em;
+            }
+        }
+    }
+}
+
 
 
 
@@ -422,6 +473,75 @@ input[type="search"] {
     display: block;
     margin-bottom: 1.5em;
     width: 100%;
+}
+
+
+
+
+
+/* ==========================================================================
+   $VALIDATION
+   =========================================================================== */
+
+/**
+ * Validation
+ */
+
+/* Success */
+.validation-success {
+
+    /* Input */
+    .input {
+        border-color: @colour-green;
+    }
+
+    /* Label */
+    .label {
+        color: @colour-green;
+    }
+
+    /* Help Text */
+    .input-help {
+        color: @colour-green;
+    }
+}
+
+/* Warning */
+.validation-warning {
+
+    /* Input */
+    .input {
+        border-color: @colour-orange;
+    }
+
+    /* Label */
+    .label {
+        color: @colour-orange;
+    }
+
+    /* Help Text */
+    .input-help {
+        color: @colour-orange;
+    }
+}
+
+/* Error */
+.validation-error {
+
+    /* Input */
+    .input {
+        border-color: @colour-red;
+    }
+
+    /* Label */
+    .label {
+        color: @colour-red;
+    }
+
+    /* Help Text */
+    .input-help {
+        color: @colour-red;
+    }
 }
 
 
