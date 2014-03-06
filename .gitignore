@@ -39,3 +39,9 @@ Thumbs.db
 # PhpStorm #
 ###########
 *.idea
+
+# Node / Grunt #
+################
+node_modules
+validation-report.json
+validation-status.json
