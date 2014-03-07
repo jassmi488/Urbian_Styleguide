@@ -636,7 +636,7 @@ dl {
    ========================================================================== */
 
 /**
- * Default Button
+ * Primary Button
  */
 
 .btn {
@@ -662,18 +662,25 @@ dl {
     }
 
     /**
-     * Alternative Button
+     * Secondary Button
      */
 
-    &.btn-alt {
+    &.btn-secondary {
         background-color: @colour-silver;
         border: 1px @colour-silver solid;
-        padding: 0.3em 0.8em;
 
         &:focus,
         &:hover {
-            border: 1px @colour-grey-dark solid;
+            border: 1px @colour-grey solid;
         }
+    }
+
+    /**
+     * Small Button
+     */
+
+    &.btn-small {
+        padding: 0.3em 0.8em;
     }
 
     /**
