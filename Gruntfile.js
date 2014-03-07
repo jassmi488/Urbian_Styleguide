@@ -24,7 +24,7 @@ module.exports = function (grunt) {
                     port: 21,
                     authKey: 'joepublicn'
                 },
-                src: 'H:\\WWW\\joepublicn\\style-guide',
+                src: './',
                 dest: '/public_html/style-guide',
                 exclusions: [
                     '.idea',
