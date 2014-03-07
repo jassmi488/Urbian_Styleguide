@@ -11,8 +11,8 @@ The style guide is a system of [elements](http://joepublicn.com/style-guide/elem
 
 * [Font Awesome](http://fortawesome.github.io/Font-Awesome/) v4.0.3
 * [jQuery](http://jquery.com/) v1.11.0
-* [LESS](http://lesscss.org/) v1.6.1
-* [Normalize.css](http://necolas.github.io/normalize.css/) v2.1.3
+* [LESS](http://lesscss.org/) v1.6.3
+* [Normalize.css](http://necolas.github.io/normalize.css/) v3.0.0
 
 ## Polyfills
 
@@ -21,12 +21,12 @@ These are only applicable to Internet Explorer 8 and below.
 * [HTML5 Shiv](https://github.com/aFarkas/html5shiv) v3.7.0
 * [selectivizr](https://github.com/keithclark/selectivizr) v1.0.3b
 * [matchMedia()](https://github.com/scottjehl/Respond)
-* [Respond.js](https://github.com/scottjehl/Respond) v1.3.0
+* [Respond.js](https://github.com/scottjehl/Respond) v1.4.2
 
 ## Plugins (optional)
 
-* [jQuery Modal](https://github.com/kylefox/jquery-modal) v0.5.4
-* [Bootstrap Tooltip](http://getbootstrap.com) v3.0.2
+* [jQuery Modal](https://github.com/kylefox/jquery-modal) v0.5.5
+* [Bootstrap Tooltip](http://getbootstrap.com) v3.1.1
 * [FlexSlider](https://github.com/woothemes/flexslider) v2.2.2
 * [Placeholder](https://github.com/mathiasbynens/jquery-placeholder) v2.0.7
 
