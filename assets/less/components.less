@@ -69,18 +69,18 @@
         background-color: @colour-white;
         border-bottom: 1px @colour-silver solid;
         max-height: @bp-smaller;
-        .opacity(1);
         overflow: hidden;
-        padding: 1em 1.25em;
         .transition(max-height 0.25s);
 
         /* Hidden */
         &.is-hidden {
             border-bottom: 0;
-            height: 0;
             max-height: 0;
-            .opacity(0);
-            padding: 0;
+        }
+
+        /* Accordion Inner */
+        .accordion-inner {
+            padding: 1em 1.25em;
         }
     }
 }

@@ -264,8 +264,13 @@
 
             /* Anchor */
             a {
+                font-size: 0.875em; /* 14 / 16 */
                 font-weight: @fw-bold;
                 text-decoration: underline;
+
+                @media all and (min-width: @bp-largest) {
+                    font-size: 1em; /* 16 / 16 */
+                }
             }
         }
     }
