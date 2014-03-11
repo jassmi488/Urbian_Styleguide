@@ -25,7 +25,7 @@ module.exports = function (grunt) {
                     authKey: 'joepublicn'
                 },
                 src: './',
-                dest: '/public_html/style-guide',
+                dest: 'public_html/style-guide',
                 exclusions: [
                     '.editorconfig',
                     '.ftppass',
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
                     'apple-touch-icon-precomposed.png',
                     'favicon.ico',
                     'Gruntfile.js',
-                    'package.json',,
+                    'package.json',
                     'README.md',
                     'robots.txt',
                     'less',
