@@ -27,20 +27,21 @@ module.exports = function (grunt) {
                 src: './',
                 dest: '/public_html/style-guide',
                 exclusions: [
-                    '.idea',
+                    '.editorconfig',
+                    '.ftppass',
                     '.git',
+                    '.gitignore',
+                    '.htaccess',
+                    '.idea',
                     '*.less',
-                    'less',
-                    'node_modules',
                     'apple-touch-icon-precomposed.png',
                     'favicon.ico',
-                    '.htaccess',
                     'Gruntfile.js',
-                    'package.json',
-                    '.ftppass',
-                    '.gitignore',
+                    'package.json',,
                     'README.md',
-                    'robots.txt'
+                    'robots.txt',
+                    'less',
+                    'node_modules'
                 ]
             }
         },
