@@ -57,7 +57,7 @@ module.exports = function (grunt) {
         },
         validation: {
             files: {
-                src: ['*.html']
+                src: ['*.html', 'templates/**/*.html']
             }
         }
     });
