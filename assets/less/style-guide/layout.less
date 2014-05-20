@@ -1,6 +1,6 @@
-/* ==========================================================================
+/* -------------------------------------------------------------------------- *\
    $TABLE OF CONTENTS
-   ========================================================================== */
+\* -------------------------------------------------------------------------- */
 
 /**
  * CONTAINERS
@@ -32,7 +32,8 @@
  */
 
 .sg-header {
-    background-color: @colour-sg-grey-dark;
+    background-color: @colour-sg-white-dark;
+    border-bottom: 1px solid @colour-sg-silver;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
     width: 100%;
@@ -87,7 +88,9 @@
  */
 
 .sg-nav {
-    background-color: @colour-sg-silver;
+    background-color: @colour-sg-white;
+    border-bottom: 1px solid @colour-sg-silver;
+    .box-shadow(inset 0 0 10px @colour-sg-silver);
     left: 0;
     max-height: 0;
     overflow: hidden;
@@ -171,7 +174,7 @@
  */
 
 .sg-section-heading-primary {
-    border-bottom: 1px @colour-sg-silver solid;
+    border-bottom: 1px @colour-sg-grey solid;
     margin-bottom: 1em;
     overflow: hidden;
     padding-top: 2em;
@@ -196,7 +199,7 @@
  */
 
 .sg-section-heading-secondary {
-    border-bottom: 1px @colour-sg-silver solid;
+    border-bottom: 1px @colour-sg-grey dotted;
     margin-top: 4em;
     margin-bottom: 2em;
     overflow: hidden;
@@ -250,12 +253,12 @@
  */
 
 .sg-btn {
-    background-color: @colour-sg-blue;
+    background-color: @colour-sg-silver;
     .border-radius(3px);
-    border-bottom: 3px @colour-sg-navy solid;
+    border-bottom: 3px @colour-sg-grey solid;
     display: inline-block;
     .opacity(0.85);
-    padding: 0.4em 0.8em;
+    padding: 0.5em 0.8em 0.4em 0.8em;
     .transition(~"color 0.25s, opacity 0.25s");
 
     &:active {

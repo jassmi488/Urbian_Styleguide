@@ -1,20 +1,38 @@
-module.exports = function (grunt) {
-
+module.exports = function (grunt)
+{
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        cssmin: {
-            minify: {
-                files: {
-                    'assets/css/main.css': ['assets/css/main.css']
+        connect: {
+            server: {
+                options: {
+                    hostname: 'localhost',
+                    livereload: true,
+                    open: true,
+                    port: 1337,
+                    useAvailablePort: true
                 }
             }
         },
         csslint: {
             strict: {
+                src: ['assets/css/main.css'],
                 options: {
                     import: 2
+                }
+            }
+        },
+        jshint: {
+            files: ['assets/js/main.js']
+        },
+        less: {
+            build: {
+                files: {
+                    'assets/css/main.css': 'assets/less/main.less',
+                    'assets/css/style-guide/main.css': 'assets/less/style-guide/main.less'
                 },
-                src: ['assets/css/main.css']
+                options: {
+                    cleancss: true
+                }
             }
         },
         'ftp-deploy': {
@@ -45,37 +63,39 @@ module.exports = function (grunt) {
                 ]
             }
         },
-        jshint: {
-            files: ['assets/js/main.js']
-        },
-        less: {
-            default: {
-                files: {
-                    'assets/css/main.css': 'assets/less/main.less'
-                }
-            }
-        },
         validation: {
             files: {
                 src: ['*.html', 'templates/**/*.html']
+            }
+        },
+        watch: {
+            build: {
+                files: [
+                    'assets/js/**',
+                    'assets/less/**',
+                    '*.html'
+                ],
+                tasks: ['less'],
+                options: {
+                    livereload: true
+                }
             }
         }
     });
 
     var defaultTasks = [
-        'less',
-        'cssmin',
         'csslint',
         'jshint',
+        'less',
         'validation'
     ];
 
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-csslint');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-html-validation');
-    grunt.loadNpmTasks('grunt-ftp-deploy');
-
     grunt.registerTask('default', defaultTasks);
+    grunt.registerTask('serve', ['less', 'connect', 'watch']);
 };

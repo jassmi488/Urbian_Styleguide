@@ -1,6 +1,6 @@
-/* ==========================================================================
+/* -------------------------------------------------------------------------- *\
    $TABLE OF CONTENTS
-   ========================================================================== */
+\* -------------------------------------------------------------------------- */
 
 /**
  * CONTAINERS
@@ -28,7 +28,7 @@
 
     /* Home Icon */
     .sg-home {
-        color: @colour-sg-white;
+        color: @colour-sg-grey-dark;
         font-size: 1.375em; /* 22 / 16 */
         line-height: 1;
         text-decoration: none;
@@ -46,7 +46,7 @@
 
     /* Navigation Toggle */
     .sg-nav-toggle {
-        color: @colour-sg-silver;
+        color: @colour-sg-grey-dark;
         font-size: 1.375em; /* 22 / 16 */
         line-height: 1;
         text-decoration: none;
@@ -58,17 +58,18 @@
 
         /* Active */
         &.is-active {
-            color: @colour-sg-white;
+            color: @colour-sg-blue;
         }
 
         &:focus,
         &:hover {
-            color: @colour-sg-white;
+            color: @colour-sg-blue;
         }
     }
 
     /* Heading */
     h1, .delta {
+        color: @colour-sg-grey-dark;
         line-height: 1;
     }
 }
@@ -86,14 +87,17 @@
  */
 
 .sg-section-heading-primary {
+    color: @colour-sg-grey-dark;
+    text-transform: uppercase;
 
     /* Anchor */
     a {
-        color: @colour-sg-grey;
+        color: @colour-sg-grey-dark;
         font-size: 12px;
         font-weight: @fw-normal;
         text-decoration: none;
         vertical-align: middle;
+        text-transform: capitalize;
         .transition(color 0.25s);
 
         &:focus,
@@ -160,14 +164,14 @@
  */
 
 .sg-btn {
-    color: @colour-sg-white-dark;
+    color: @colour-sg-grey-dark;
     font-size: 0.85em; /* 16 / 14 */
     text-align: center;
     text-decoration: none;
 
     &:focus,
     &:hover {
-        color: @colour-sg-white;
+        color: @colour-sg-black;
     }
 }
 

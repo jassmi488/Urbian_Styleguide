@@ -1,25 +1,13 @@
-/* ==========================================================================
-   $TABLE OF CONTENTS
-   ========================================================================== */
-
-/**
- * BASE
- */
-
-
-
-
-
-/* ==========================================================================
-   $BASE
-   ========================================================================== */
+/* -------------------------------------------------------------------------- *\
+   $PRINT
+\* -------------------------------------------------------------------------- */
 
 @media print {
 
     * {
         background: transparent !important;
-        color: @colour-black !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
         text-shadow: none !important;
     }
 
@@ -40,7 +28,6 @@
      * Don't show links for images, or JavaScript/internal links
      */
 
-    .ir a:after,
     a[href^="javascript:"]:after,
     a[href^="#"]:after {
         content: "";
@@ -63,10 +50,6 @@
 
     img {
         max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
     }
 
     p,
