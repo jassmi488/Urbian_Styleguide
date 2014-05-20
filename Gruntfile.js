@@ -95,6 +95,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-html-validation');
     grunt.registerTask('default', defaultTasks);
     grunt.registerTask('serve', ['less', 'connect', 'watch']);
