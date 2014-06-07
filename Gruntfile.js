@@ -5,9 +5,11 @@ module.exports = function (grunt)
         connect: {
             server: {
                 options: {
-                    hostname: 'localhost',
+                    hostname: '*',
                     livereload: true,
-                    open: true,
+                    open: {
+                        target: 'http:127.0.0.1:1337'
+                    },
                     port: 1337,
                     useAvailablePort: true
                 }
