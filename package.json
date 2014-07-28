@@ -6,7 +6,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/connectjoepublic/style-guide.git"
+        "url": "https://github.com/connectjoepublic/styleguide.git"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
