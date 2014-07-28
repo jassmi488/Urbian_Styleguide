@@ -1,0 +1,40 @@
+/* -------------------------------------------------------------------------- *\
+   $MEDIA
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Place any image and text content side-by-side, as per:
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ *
+ * E.g.:
+ *
+   <div class="media">
+       <img class="media__img" src="" alt="" />
+       <p class="media__body"></p>
+   </div>
+ *
+ */
+
+.media {
+    .clearfix();
+
+    .media__img {
+        float: left;
+        margin-right: 1em;
+
+        /* Reverse image placement (right instead of left) */
+        &.media__img--rev {
+            float: right;
+            margin-right: 0;
+            margin-left: 1em;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .media__body {
+        overflow: hidden;
+    }
+}

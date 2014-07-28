@@ -1,0 +1,316 @@
+/**
+ * HELPERS
+ */
+
+/* -------------------------------------------------------------------------- *\
+   $TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * CLEARFIX
+ * COLORS
+ * DISPLAY
+ * .....Hidden
+ * .....Invisible
+ * .....Media Queries
+ * EMBED
+ * FLOATS
+ * FONT
+ * .....Family
+ * .....Weight
+ * TEXT
+ */
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $CLEARFIX
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $COLORS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Background
+ */
+
+.bg-navy       { background-color: @color-navy; }
+.bg-blue       { background-color: @color-blue; }
+.bg-aqua       { background-color: @color-aqua; }
+.bg-teal       { background-color: @color-teal; }
+.bg-olive      { background-color: @color-olive; }
+.bg-green      { background-color: @color-green; }
+.bg-lime       { background-color: @color-lime; }
+.bg-yellow     { background-color: @color-yellow; }
+.bg-orange     { background-color: @color-orange; }
+.bg-red        { background-color: @color-red; }
+.bg-fuchsia    { background-color: @color-fuchsia; }
+.bg-purple     { background-color: @color-purple; }
+.bg-maroon     { background-color: @color-maroon; }
+.bg-white      { background-color: @color-white; }
+.bg-white-dark { background-color: @color-white-dark; }
+.bg-silver     { background-color: @color-silver; }
+.bg-gray       { background-color: @color-gray; }
+.bg-gray-dark  { background-color: @color-gray-dark; }
+.bg-black      { background-color: @color-black; }
+
+/**
+ * Foreground
+ */
+
+.navy          { color: @color-navy; }
+.blue          { color: @color-blue; }
+.aqua          { color: @color-aqua; }
+.teal          { color: @color-teal; }
+.olive         { color: @color-olive; }
+.green         { color: @color-green; }
+.lime          { color: @color-lime; }
+.yellow        { color: @color-yellow; }
+.orange        { color: @color-orange; }
+.red           { color: @color-red; }
+.fuchsia       { color: @color-fuchsia; }
+.purple        { color: @color-purple; }
+.maroon        { color: @color-maroon; }
+.white         { color: @color-white; }
+.white-dark    { color: @color-white-dark; }
+.silver        { color: @color-silver; }
+.gray          { color: @color-gray; }
+.gray-dark     { color: @color-gray-dark; }
+.black         { color: @color-black; }
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $DISPLAY
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $Hidden
+   ========================================================================== */
+
+/**
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/**
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/**
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Invisible
+   ========================================================================== */
+
+/**
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible { visibility: hidden; }
+
+
+
+
+
+/* ==========================================================================
+   $Media Queries
+   ========================================================================== */
+
+/**
+ * Small Screens
+ */
+
+@media all and (max-width: @bp-small) {
+
+    .hide-small {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/**
+ * Medium Screens
+ */
+
+@media all and (min-width: @bp-medium) and (max-width: @bp-large) {
+
+    .hide-medium {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+/**
+ * Large Screens
+ */
+
+@media all and (min-width: @bp-large) {
+
+    .hide-large {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $EMBED
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Embed Responsively, as per: http://embedresponsively.com
+ */
+
+.fluid-embed {
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    embed,
+    iframe,
+    object {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $FLOATS
+\* -------------------------------------------------------------------------- */
+
+.pull-left  { float: left !important; }
+.pull-right { float: right !important; }
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $FONT
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $Family
+   ========================================================================== */
+
+.font-secondary { font-family: @font-secondary; }
+
+
+
+
+
+/* ==========================================================================
+   $Weight
+   ========================================================================== */
+
+.weight-bold      { font-weight: 700; }
+.weight-semi-bold { font-weight: 600; }
+.weight-normal    { font-weight: 400; }
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $TEXT
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $Align
+   ========================================================================== */
+
+.align-right  { text-align: right; }
+.align-center { text-align: center; }
+.align-left   { text-align: left; }
+
+
+
+
+
+/* ==========================================================================
+   $Transform
+   ========================================================================== */
+
+.transform-uppercase  { text-transform: uppercase; }
+.transform-lowercase  { text-transform: lowercase; }
+.transform-capitalize { text-transform: capitalize; }
+
+
+
+

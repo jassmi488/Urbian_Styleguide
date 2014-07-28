@@ -1,0 +1,29 @@
+# humanstxt.org
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Michael Thorne -- Front-end Web Developer -- @mikkelz_za
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    Adam Kaplan -- @helloadamkaplan
+    Bootstrap -- @twbootstrap
+    Brad Frost -- @brad_frost
+    CSS-Tricks -- @Real_CSS_Tricks
+    Dave Olsen -- @dmolsen
+    Harry Roberts -- @csswizardry
+    Jeffrey Zeldman -- @zeldman
+    John Resig -- @jeresig
+    Nicolas Gallagher -- @necolas
+    Paul Irish -- @paul_irish
+    Roger Johansson -- @rogerjohansson
+    Scott Jehl -- @scottjehl
+    <name> -- <twitter>
+
+# SITE
+
+    Last Update: 2014/07/17
+    Standards: HTML5, CSS3
+    Components: Font Awesome, jQuery, LESS, Normalize.css
