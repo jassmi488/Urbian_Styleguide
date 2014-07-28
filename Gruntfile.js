@@ -17,7 +17,10 @@ module.exports = function (grunt)
         },
         csslint: {
             strict: {
-                src: ['assets/css/style.css'],
+                src: [
+                    'assets/css/style.css',
+                    'assets/css/styleguide.css'
+                ],
                 options: {
                     import: 2
                 }
@@ -29,7 +32,8 @@ module.exports = function (grunt)
         less: {
             build: {
                 files: {
-                    'assets/css/style.css': 'assets/less/style.less'
+                    'assets/css/style.css': 'assets/less/style.less',
+                    'assets/css/styleguide.css': 'assets/less/styleguide.less'
                 },
                 options: {
                     cleancss: true
@@ -52,7 +56,10 @@ module.exports = function (grunt)
         },
         validation: {
             files: {
-                src: ['*.html']
+                src: [
+                    'templates/**/*.html',
+                    '*.html'
+                ]
             }
         },
         watch: {
@@ -60,6 +67,7 @@ module.exports = function (grunt)
                 files: [
                     'assets/js/**',
                     'assets/less/**',
+                    'templates/**/*.html',
                     '*.html'
                 ],
                 tasks: ['less'],

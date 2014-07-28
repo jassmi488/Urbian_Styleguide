@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=0.0.0" />
+    <link rel="stylesheet" href="assets/css/styleguide.css?v=0.0.0" />
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
@@ -23,24 +24,104 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="header" role="banner">
-
+    <header class="sg-header sg-header--primary" role="banner">
+        <a href="index.html" title="Company Name" class="logo"><img src="http://placehold.it/100x40" width="100" height="40" alt="Company Name Logo" /></a>
+        <nav class="sg-nav sg-nav--primary" role="navigation">
+            <ol class="sg-list">
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="templates">Templates</a></li>
+            </ol>
+        </nav>
+        <button class="sg-btn sg-btn--nav" data-toggle="nav"><span class="icon fa fa-bars" aria-hidden="true"></span>Menu</button>
     </header>
 
-    <main class="main" role="main">
-        <h1>Hello world!</h1>
-        <a href="404.html">404</a>
+    <main class="sg-main sg-main--full" role="main">
+        <section class="sg-section sg-section--intro">
+            <header class="sg-header sg-header--main">
+                <h1 class="gamma hN">Style Guide</h1>
+            </header>
+
+            <p class="sg-paragraph">The style guide is a living set of HTML documents that defines the design and coding rules to determine how the website is structured today, as well as to ensure consistency for future updates.</p>
+            <p class="sg-paragraph">If you have any questions, <a class="sg-anchor" href="https://github.com/connectjoepublic/style-guide/issues/new">submit an issue in our GitHub repo</a>.</p>
+        </section>
+
+        <div class="row">
+            <div class="col col-1-4">
+                <section class="sg-section sg-section--block sg-section--bordered">
+                    <header class="sg-header sg-header--section">
+                        <h2 class="epsilon hN"><span class="icon fa fa-cube" aria-hidden="true"></span>Elements</h2>
+                    </header>
+
+                    <p class="sg-paragraph">These are the smallest building blocks for an interface, such as headings, buttons, form input fields
+                        and icons.</p>
+
+                    <p class="sg-paragraph">More abstract elements like the font stack and color palette are also included here.</p>
+
+                    <a href="elements.html" class="sg-btn" role="button">Explore</a>
+                </section>
+            </div>
+
+            <div class="col col-1-4">
+                <section class="sg-section sg-section--block sg-section--bordered">
+                    <header class="sg-header sg-header--section">
+                        <h2 class="epsilon hN"><span class="icon fa fa-cubes" aria-hidden="true"></span>Patterns</h2>
+                    </header>
+
+                    <p class="sg-paragraph">These are groups of elements, that when combined, function together as a unit.</p>
+
+                    <p class="sg-paragraph">Examples of these common snippets of markup are navigation, tabs or a list of articles.</p>
+
+                    <a href="patterns.html" class="sg-btn" role="button">Explore</a>
+                </section>
+            </div>
+
+            <div class="col col-1-4">
+                <section class="sg-section sg-section--block sg-section--bordered">
+                    <header class="sg-header sg-header--section">
+                        <h2 class="epsilon hN"><span class="icon fa fa-file-text-o" aria-hidden="true"></span>Forms</h2>
+                    </header>
+
+                    <p class="sg-paragraph">These are combinations of normal content and controls such as labels, inputs, and checkboxes.</p>
+
+                    <p class="sg-paragraph">For example, a search form consisting of a label, text input and submit button.</p>
+
+                    <a href="forms.html" class="sg-btn" role="button">Explore</a>
+                </section>
+            </div>
+
+            <div class="col col-1-4">
+                <section class="sg-section sg-section--block sg-section--bordered">
+                    <header class="sg-header sg-header--section">
+                        <h2 class="epsilon hN"><span class="icon fa fa-th" aria-hidden="true"></span>Grid</h2>
+                    </header>
+
+                    <p class="sg-paragraph">This is a combination of containers and columns which provides structure for content.</p>
+
+                    <p class="sg-paragraph">Column sizes are specified in fractions and take up the full width available on narrow screens.</p>
+
+                    <a href="grid.html" class="sg-btn" role="button">Explore</a>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer" role="contentinfo">
-
+    <footer class="sg-footer sg-footer--full" role="contentinfo">
+        <ol class="sg-list">
+            <li><b>Version</b>: 0.0.0</li>
+            <li><b>Last Modified</b>: <span data-last-modified="true">28 July, 2014</span></li>
+        </ol>
     </footer>
 
     <!-- JavaScript -->
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/styleguide.js?v=0.0.0"></script>
     <script>UTIL.init();</script>
+    <script>STYLEGUIDE_UTIL.init();</script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
