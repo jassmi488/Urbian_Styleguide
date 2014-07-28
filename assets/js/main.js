@@ -9,20 +9,20 @@
 
         init: function ()
         {
-            // application-wide code
+
         }
     },
 
-    users: {
+    controller: {
 
         init: function ()
         {
-            // controller-wide code
+
         },
 
-        show: function ()
+        view: function ()
         {
-            // action-specific code
+
         }
     }
 };
