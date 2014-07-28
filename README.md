@@ -3,7 +3,7 @@
 ## [Style Guide](http://joepublicn.com/styleguide/v2)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
-[![NPM Dependencies](https://david-dm.org/connectjoepublic/style-guide.png)](https://david-dm.org)
+[![NPM Dependencies](https://david-dm.org/connectjoepublic/styleguide.png)](https://david-dm.org)
 
 ### Requirements
 
@@ -14,8 +14,8 @@ Ensure that the following are installed on your computer:
 
 ### Getting Started
 
-1. Clone the repository: `git clone git@github.com:connectjoepublic/style-guide.git`
-2. Change to the directory you cloned the repository into: e.g. `cd style-guide`
+1. Clone the repository: `git clone git@github.com:connectjoepublic/styleguide.git`
+2. Change to the directory you cloned the repository into: e.g. `cd styleguide`
 3. Run the node install command which downloads the required Grunt plugins: `npm install`
 4. Start the local server and watch task: `grunt serve`
 
