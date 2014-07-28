@@ -1,8 +1,8 @@
 [![Connect Joe Public](http://connectjoepublic.com/github.png)](http://connectjoepublic.com)
 
-## [Style Guide](http://joepublicn.com/style-guide)
+## [Style Guide](http://joepublicn.com/styleguide/v1)
 
-The style guide is a system of [elements](http://joepublicn.com/style-guide/elements.html), [modules](http://joepublicn.com/style-guide/modules.html) and [components](http://joepublicn.com/style-guide/components.html) which are used to create the unique templates and individual pages for this website. It includes form [input types](http://joepublicn.com/style-guide/forms.html#sg-form-input-types) along with common layout [patterns](http://joepublicn.com/style-guide/forms.html#sg-form-layout-default). There is also a basic [grid](http://joepublicn.com/style-guide/grid.html) system.
+The style guide is a system of [elements](http://joepublicn.com/styleguide/v1/elements.html), [modules](http://joepublicn.com/styleguide/v1/modules.html) and [components](http://joepublicn.com/styleguide/v1/components.html) which are used to create the unique templates and individual pages for this website. It includes form [input types](http://joepublicn.com/styleguide/v1/forms.html#sg-form-input-types) along with common layout [patterns](http://joepublicn.com/styleguide/v1/forms.html#sg-form-layout-default). There is also a basic [grid](http://joepublicn.com/styleguide/v1/grid.html) system.
 
 ### Requirements
 
