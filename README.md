@@ -1,4 +1,6 @@
-## Style Guide
+[![Connect Joe Public](http://connectjoepublic.com/github.png)](http://connectjoepublic.com)
+
+## [Style Guide](http://joepublicn.com/styleguide/v2)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 [![NPM Dependencies](https://david-dm.org/connectjoepublic/style-guide.png)](https://david-dm.org)

@@ -26,6 +26,34 @@ module.exports = function (grunt)
                 }
             }
         },
+        'ftp-deploy': {
+            build: {
+                auth: {
+                    host: 'joepublicn.com',
+                    port: 21,
+                    authKey: 'joepublicn'
+                },
+                src: './',
+                dest: 'public_html/styleguide/v2',
+                exclusions: [
+                    '.editorconfig',
+                    '.ftppass',
+                    '.git',
+                    '.gitignore',
+                    '.htaccess',
+                    '.idea',
+                    '*.less',
+                    'apple-touch-icon-precomposed.png',
+                    'favicon.ico',
+                    'Gruntfile.js',
+                    'package.json',
+                    'README.md',
+                    'robots.txt',
+                    'less',
+                    'node_modules'
+                ]
+            }
+        },
         jshint: {
             files: ['assets/js/main.js']
         },
@@ -90,6 +118,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-html-validation');
     grunt.loadNpmTasks('grunt-pagespeed');
     grunt.registerTask('default', defaultTasks);
