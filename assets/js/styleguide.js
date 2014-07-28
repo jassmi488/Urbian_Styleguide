@@ -13,9 +13,9 @@ STYLEGUIDE = {
                Back to Top
                ========================================================================== */
 
-            var back_to_top = $('[data-action="back-to-top"]');
+            var $back_to_top = $('[data-action="back-to-top"]');
 
-            back_to_top.on('click', function ()
+            $back_to_top.on('click', function ()
             {
                 scrollToTop();
             });
@@ -32,7 +32,7 @@ STYLEGUIDE = {
                Last Modified
                ========================================================================== */
 
-            var last_modified = $('[data-last-modified="true"]');
+            var $last_modified = $('[data-last-modified="true"]');
             var last_modified_date = new Date(document.lastModified); // Get the last modified date of the document
             var months = [ "January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
             var last_modified_day = last_modified_date.getDate();
@@ -40,7 +40,7 @@ STYLEGUIDE = {
             var last_modified_year = last_modified_date.getFullYear();
 
             // Display the last modified date
-            last_modified.html(months[last_modified_month] + ' ' + last_modified_day + ', ' + last_modified_year);
+            $last_modified.html(months[last_modified_month] + ' ' + last_modified_day + ', ' + last_modified_year);
 
             /* ==========================================================================
                Scroll
@@ -48,7 +48,6 @@ STYLEGUIDE = {
 
             var scrolled = 0;
             var scrolled_last = 0;
-            var body = $('body');
             var header_height = $('.sg-header--primary').height();
 
             $(window).on('scroll', function ()
@@ -57,21 +56,21 @@ STYLEGUIDE = {
 
                 if (scrolled > header_height)
                 {
-                    if (!aside.hasClass('is-fixed'))
+                    if (!$aside.hasClass('is-fixed'))
                     {
-                        aside.addClass('is-fixed');
+                        $aside.addClass('is-fixed');
                     }
 
-                    back_to_top.fadeIn();
+                    $back_to_top.fadeIn();
                 }
                 else
                 {
-                    if (aside.hasClass('is-fixed'))
+                    if ($aside.hasClass('is-fixed'))
                     {
-                        aside.removeClass('is-fixed');
+                        $aside.removeClass('is-fixed');
                     }
 
-                    back_to_top.fadeOut();
+                    $back_to_top.fadeOut();
                 }
 
                 scrolled_last = scrolled;
@@ -81,9 +80,9 @@ STYLEGUIDE = {
                Sticky
                ========================================================================== */
 
-            var aside = $('[data-action="sticky"]');
+            var $aside = $('[data-action="sticky"]');
 
-            $('li a', aside).on('click', function (e)
+            $('li a', $aside).on('click', function (e)
             {
                 e.preventDefault();
 
@@ -111,21 +110,21 @@ STYLEGUIDE = {
                Toggle Navigation
                ========================================================================== */
 
-            var toggle_nav = $('[data-toggle="nav"]');
+            var $toggle_nav = $('[data-toggle="nav"]');
 
-            toggle_nav.on('click', function ()
+            $toggle_nav.on('click', function ()
             {
                 $('.sg-nav--primary').toggleClass('is-open');
-                toggle_nav.toggleClass('is-active');
+                $toggle_nav.toggleClass('is-active');
             });
 
             /* ==========================================================================
                Toggle Style Guide View
                ========================================================================== */
 
-            var toggle_styleguide = $('[data-toggle="styleguide"]');
+            var $toggle_styleguide = $('[data-toggle="styleguide"]');
 
-            toggle_styleguide.each(function ()
+            $toggle_styleguide.each(function ()
             {
                 $(this).on('click', function ()
                 {
