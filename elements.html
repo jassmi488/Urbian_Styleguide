@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="sg-html">
+<head>
+    <meta charset="utf-8" />
+    <title>Elements &ndash; Style Guide</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="assets/css/style.css?v=0.0.0" />
+    <link rel="stylesheet" href="assets/css/styleguide.css?v=0.0.0" />
+
+    <!-- Google+ -->
+    <link rel="publisher" href="https://plus.google.com/1234567890" />
+
+    <!--[if lt IE 9]>
+    <script src="assets/js/vendor/polyfills.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="sg-header sg-header--primary" role="banner">
+        <a href="index.html" title="Company Name" class="logo"><img src="http://placehold.it/100x40" width="100" height="40" alt="Company Name Logo" /></a>
+        <nav class="sg-nav sg-nav--primary" role="navigation">
+            <ol class="sg-list">
+                <li class="is-active"><a href="elements.html">Elements</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="templates">Templates</a></li>
+            </ol>
+        </nav>
+        <button class="sg-btn sg-btn--nav" data-toggle="nav"><span class="icon fa fa-bars" aria-hidden="true"></span>Menu</button>
+    </header>
+
+    <main class="sg-main" role="main">
+        <div id="sg-patchwork" class="sg-section sg-section--well is-hidden">
+            <p class="sg-paragraph sg-paragraph--intro">
+                <span class="icon sg-icon fa fa-info-circle" aria-hidden="true"></span>This is the patchwork view which doesn't include the markup preview and usage examples. This view is particularly useful for device testing because it shows elements at full-width, presented on the page as they would appear on the site.
+            </p>
+            <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-reply" aria-hidden="true"></span>Style Guide</button>
+        </div>
+
+        <section id="sg-color-palette" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Color Palette</h1>
+            </header>
+
+            <h2 class="zeta sg-heading sg-heading--spacer">Primary</h2>
+            <ol class="sg-list sg-list--colors ">
+                <li class="bg-navy">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#001f3f</code>
+                        <code class="sg-code__value">@color-navy</code>
+                    </div>
+                </li>
+                <li class="bg-blue">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#0074d9</code>
+                        <code class="sg-code__value">@color-blue</code>
+                    </div>
+                </li>
+                <li class="bg-aqua">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#7fdbff</code>
+                        <code class="sg-code__value">@color-aqua</code>
+                    </div>
+                </li>
+                <li class="bg-teal">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#39cccc</code>
+                        <code class="sg-code__value">@color-teal</code>
+                    </div>
+                </li>
+                <li class="bg-olive">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#3d9970</code>
+                        <code class="sg-code__value">@color-olive</code>
+                    </div>
+                </li>
+                <li class="bg-green">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#2ecc40</code>
+                        <code class="sg-code__value">@color-green</code>
+                    </div>
+                </li>
+                <li class="bg-lime">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#01ff70</code>
+                        <code class="sg-code__value">@color-lime</code>
+                    </div>
+                </li>
+                <li class="bg-yellow">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#ffdc00</code>
+                        <code class="sg-code__value">@color-yellow</code>
+                    </div>
+                </li>
+                <li class="bg-orange">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#ff851b</code>
+                        <code class="sg-code__value">@color-orange</code>
+                    </div>
+                </li>
+                <li class="bg-red">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#ff4136</code>
+                        <code class="sg-code__value">@color-red</code>
+                    </div>
+                </li>
+                <li class="bg-fuchsia">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#f012be</code>
+                        <code class="sg-code__value">@color-fuchsia</code>
+                    </div>
+                </li>
+                <li class="bg-purple">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#b10dc9</code>
+                        <code class="sg-code__value">@color-purple</code>
+                    </div>
+                </li>
+                <li class="bg-maroon">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#85144b</code>
+                        <code class="sg-code__value">@color-maroon</code>
+                    </div>
+                </li>
+            </ol>
+
+            <h2 class="zeta sg-heading sg-heading--spacer">Secondary</h2>
+            <ol class="sg-list sg-list--colors ">
+                <li class="bg-black">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#222</code>
+                        <code class="sg-code__value">@color-black</code>
+                    </div>
+                </li>
+                <li class="bg-gray-dark">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#555</code>
+                        <code class="sg-code__value">@color-gray-dark</code>
+                    </div>
+                </li>
+                <li class="bg-gray">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#aaa</code>
+                        <code class="sg-code__value">@color-gray</code>
+                    </div>
+                </li>
+                <li class="bg-silver">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#ddd</code>
+                        <code class="sg-code__value">@color-silver</code>
+                    </div>
+                </li>
+                <li class="bg-white-dark">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#f6f6f6</code>
+                        <code class="sg-code__value">@color-white-dark</code>
+                    </div>
+                </li>
+                <li class="bg-white">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#fff</code>
+                        <code class="sg-code__value">@color-white</code>
+                    </div>
+                </li>
+            </ol>
+
+            <h2 class="zeta sg-heading sg-heading--spacer">Social</h2>
+            <ol class="sg-list sg-list--colors ">
+                <li class="bg-facebook">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#3b5998</code>
+                        <code class="sg-code__value">@color-facebook</code>
+                    </div>
+                </li>
+                <li class="bg-google-plus">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#dd4b39</code>
+                        <code class="sg-code__value">@color-google-plus</code>
+                    </div>
+                </li>
+                <li class="bg-twitter">
+                    <div class="sg-code">
+                        <code class="sg-code__value">#55acee</code>
+                        <code class="sg-code__value">@color-twitter</code>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="sg-font-stacks" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Font Stacks</h1>
+            </header>
+
+            <p class="sg-paragraph">Primary font: Roboto, sans-serif</p>
+            <p class="sg-paragraph"><em>Primary font italic: Roboto, sans-serif</em></p>
+            <p class="sg-paragraph"><strong>Primary font bold: Roboto, sans-serif</strong></p>
+            <p class="sg-paragraph font-secondary">Secondary font: Arial, sans-serif</p>
+            <p class="sg-paragraph font-secondary"><em>Secondary font italic: Arial, sans-serif</em></p>
+            <p class="sg-paragraph font-secondary"><strong>Secondary font bold: Arial, sans-serif</strong></p>
+        </section>
+
+        <section id="sg-headings" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Headings</h1>
+            </header>
+
+            <code class="sg-code">h1, .alpha</code>
+            <h1 class="alpha">The quick brown fox jumps over the lazy dog</h1>
+
+            <code class="sg-code">h2, .beta</code>
+            <h2 class="beta">The quick brown fox jumps over the lazy dog</h2>
+
+            <code class="sg-code">h3, .gamma</code>
+            <h3 class="gamma">The quick brown fox jumps over the lazy dog</h3>
+
+            <code class="sg-code">h4, .delta</code>
+            <h4 class="delta">The quick brown fox jumps over the lazy dog</h4>
+
+            <code class="sg-code">h5, .epsilon</code>
+            <h5 class="epsilon">The quick brown fox jumps over the lazy dog</h5>
+
+            <code class="sg-code">h6, .zeta</code>
+            <h6 class="zeta">The quick brown fox jumps over the lazy dog</h6>
+        </section>
+
+        <section id="sg-paragraph" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Paragraph</h1>
+            </header>
+
+            <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+        </section>
+
+        <section id="sg-blockquote" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Block Quote</h1>
+            </header>
+
+            <blockquote class="blockquote">
+                <p class="blockquote__quote">The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation (see Notes for how to change it). A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the <code>&lt;cite&gt;</code> element.</p>
+                <cite class="blockquote__cite">
+                    &mdash; <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">MDN</a>
+                </cite>
+            </blockquote>
+        </section>
+
+        <section id="sg-horizontal-rule" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Horizontal Rule</h1>
+            </header>
+
+            <hr />
+        </section>
+
+        <section id="sg-inline-elements" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Inline Elements</h1>
+            </header>
+
+            <div class="sg-example">
+                <p><a href="elements.html#sg-inline-elements">This is a text link</a></p>
+            </div>
+            <div class="sg-example">
+                <p><strong>Strong is used to indicate strong importance</strong></p>
+            </div>
+            <div class="sg-example">
+                <p><em>This text has added emphasis</em></p>
+            </div>
+            <div class="sg-example">
+                <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+            </div>
+            <div class="sg-example">
+                <p>The <i>i element</i> is text that is set off from the normal text</p>
+            </div>
+            <div class="sg-example">
+                <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+            </div>
+            <div class="sg-example">
+                <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+            </div>
+            <div class="sg-example">
+                <p><s>This text has a strikethrough</s></p>
+            </div>
+            <div class="sg-example">
+                <p>Superscript<sup>®</sup></p>
+            </div>
+            <div class="sg-example">
+                <p>Subscript for things like H<sub>2</sub>O</p>
+            </div>
+            <div class="sg-example">
+                <p><small>This small text is small for for fine print, etc.</small></p>
+            </div>
+            <div class="sg-example">
+                <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+            </div>
+            <div class="sg-example">
+                <p>Keybord input: <kbd>Cmd</kbd></p>
+            </div>
+            <div class="sg-example">
+                <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+            </div>
+            <div class="sg-example">
+                <p><cite>This is a citation</cite></p><p>The <dfn>dfn element</dfn> indicates a definition</p>
+            </div>
+            <div class="sg-example">
+                <p>The <mark>mark element</mark> indicates a highlight</p>
+            </div>
+            <div class="sg-example">
+                <p><code>This is what inline code looks like.</code></p>
+            </div>
+            <div class="sg-example">
+                <p><samp>This is sample output from a computer program</samp></p>
+            </div>
+            <div class="sg-example">
+                <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+            </div>
+        </section>
+
+        <section id="sg-preformatted-text" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Preformatted Text</h1>
+            </header>
+
+            <pre>P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~ </pre>
+        </section>
+
+        <section id="sg-address" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Address</h1>
+            </header>
+
+            <div class="vcard">
+                <div class="fn org">Company Name</div>
+                <div class="adr">
+                    <div class="street-address">169 University Avenue</div>
+                    <div class="locality">San Francisco, <abbr class="region" title="California">CA</abbr></div>
+                    <div class="postal-code">94301</div>
+                    <div class="country-name">USA</div>
+                </div>
+                <div class="tel">+1-650-289-4040</div>
+            </div>
+        </section>
+
+        <section id="sg-time" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Time</h1>
+            </header>
+
+            <time datetime="2014-01-01">January 1, 2014</time>
+        </section>
+
+        <section id="sg-list-description" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">List &ndash; Description</h1>
+            </header>
+
+            <dl>
+                <dt>The quick brown fox jumps over the lazy dog</dt>
+                <dd>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</dd>
+                <dt>The quick brown fox jumps over the lazy dog</dt>
+                <dd>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</dd>
+                <dt>The quick brown fox jumps over the lazy dog</dt>
+                <dd>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</dd>
+            </dl>
+        </section>
+
+        <section id="sg-list-ordered" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">List &ndash; Ordered</h1>
+            </header>
+
+            <ol>
+                <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
+                <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
+                <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
+            </ol>
+        </section>
+
+        <section id="sg-list-unordered" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">List &ndash; Unordered</h1>
+            </header>
+
+            <h2 class="zeta sg-heading sg-heading--spacer">Unordered</h2>
+            <ul>
+                <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
+                <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
+                <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
+            </ul>
+        </section>
+
+        <section id="sg-table" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Table</h1>
+            </header>
+
+            <table class="table">
+                <caption class="table__caption">The Greatest Movie Actors of All Time</caption>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Movie</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Marlon</td>
+                    <td>Brando</td>
+                    <td>The Godfather</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jack</td>
+                    <td>Nicholson</td>
+                    <td>The Shining</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>James</td>
+                    <td>Stewart</td>
+                    <td>Rear Window</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Humphrey</td>
+                    <td>Bogart</td>
+                    <td>Casablanca</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4">Source: <a href="http://www.imdb.com/list/ls050720698">IMDB</a></td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="sg-table-bordered" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Table &ndash; Bordered</h1>
+            </header>
+
+            <table class="table table--bordered">
+                <caption class="table__caption">The Greatest Movie Actors of All Time</caption>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Movie</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Marlon</td>
+                    <td>Brando</td>
+                    <td>The Godfather</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jack</td>
+                    <td>Nicholson</td>
+                    <td>The Shining</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>James</td>
+                    <td>Stewart</td>
+                    <td>Rear Window</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Humphrey</td>
+                    <td>Bogart</td>
+                    <td>Casablanca</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4">Source: <a href="http://www.imdb.com/list/ls050720698">IMDB</a></td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="sg-table-striped" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Table &ndash; Striped</h1>
+            </header>
+
+            <table class="table table--striped">
+                <caption class="table__caption">The Greatest Movie Actors of All Time</caption>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Movie</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Marlon</td>
+                    <td>Brando</td>
+                    <td>The Godfather</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jack</td>
+                    <td>Nicholson</td>
+                    <td>The Shining</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>James</td>
+                    <td>Stewart</td>
+                    <td>Rear Window</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Humphrey</td>
+                    <td>Bogart</td>
+                    <td>Casablanca</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4">Source: <a href="http://www.imdb.com/list/ls050720698">IMDB</a></td>
+                </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="sg-form-control-input" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form Control &ndash; Input</h1>
+            </header>
+
+            <div class="sg-example">
+                <input class="input" type="text" placeholder="Placeholder text&hellip;" />
+            </div>
+        </section>
+
+        <section id="sg-form-control-textarea" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form Control &ndash; Textarea</h1>
+            </header>
+
+            <div class="sg-example">
+                <textarea class="input input--textarea" placeholder="Placeholder text&hellip;"></textarea>
+            </div>
+        </section>
+
+        <section id="sg-figure" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Figure</h1>
+            </header>
+
+            <figure class="figure">
+                <img class="figure__image" src="http://placehold.it/600x400" alt="" />
+                <figcaption class="figure__caption">This is a placeholder image with a supporting caption.</figcaption>
+            </figure>
+        </section>
+
+        <section id="sg-buttons" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Buttons</h1>
+            </header>
+
+            <div class="sg-example">
+                <button class="btn">Button<span class="icon fa fa-chevron-right" aria-hidden="true"></span></button>
+                <a href="elements.html#sg-buttons" class="btn" role="button">Button</a>
+            </div>
+        </section>
+
+        <section id="sg-buttons-secondary" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Buttons &ndash; Secondary</h1>
+            </header>
+
+            <div class="sg-example">
+                <button class="btn btn--secondary">Button<span class="icon fa fa-chevron-right" aria-hidden="true"></span></button>
+                <a href="elements.html#sg-buttons" class="btn btn--secondary" role="button">Button</a>
+            </div>
+        </section>
+
+        <section id="sg-buttons-text" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Buttons &ndash; Text</h1>
+            </header>
+
+            <div class="sg-example">
+                <a href="elements.html#sg-buttons" class="btn btn--text">Button</a>
+                <button class="btn btn--text">Button<span class="icon fa fa-chevron-down" aria-hidden="true"></span></button>
+                <button class="btn btn--text is-loading">Button<span class="icon fa fa-chevron-down fa-spin" aria-hidden="true"></span></button>
+            </div>
+            <div class="sg-example">
+                <a href="elements.html#sg-buttons" class="btn btn--text btn--secondary">Button</a>
+                <button class="btn btn--text btn--secondary">Button<span class="icon fa fa-chevron-down" aria-hidden="true"></span></button>
+                <button class="btn btn--text btn--secondary is-loading">Button<span class="icon fa fa-chevron-down fa-spin" aria-hidden="true"></span></button>
+            </div>
+        </section>
+
+        <section id="sg-buttons-icon" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Buttons &ndash; Icon</h1>
+            </header>
+
+            <div class="sg-example">
+                <a href="elements.html#sg-buttons" class="btn btn--icon"><span class="icon fa fa-search" aria-hidden="true"></span></a>
+            </div>
+            <div class="sg-example">
+                <a href="elements.html#sg-buttons" class="btn btn--icon btn--secondary"><span class="icon fa fa-search" aria-hidden="true"></span></a>
+            </div>
+        </section>
+
+        <section id="sg-icons" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Icons</h1>
+            </header>
+
+            <ol class="sg-list sg-list--icons">
+                <li>
+                    <span class="icon fa fa-facebook-square" title="Facebook" aria-hidden="true"></span>
+                    <code class="sg-code">fa-facebook-square</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-twitter-square" title="Twitter" aria-hidden="true"></span>
+                    <code class="sg-code">fa-twitter-square</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-google-plus-square" title="Google+" aria-hidden="true"></span>
+                    <code class="sg-code">fa-google-plus-square</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-chevron-right" title="Chevron Right" aria-hidden="true"></span>
+                    <code class="sg-code">fa-chevron-right</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-chevron-down" title="Chevron Down" aria-hidden="true"></span>
+                    <code class="sg-code">fa-chevron-down</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-th" title="Boxed" aria-hidden="true"></span>
+                    <code class="sg-code">fa-th</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-comment" title="Comment" aria-hidden="true"></span>
+                    <code class="sg-code">fa-comment</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-envelope" title="Envelope" aria-hidden="true"></span>
+                    <code class="sg-code">fa-envelope</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-search" title="Search" aria-hidden="true"></span>
+                    <code class="sg-code">fa-search</code>
+                </li>
+            </ol>
+        </section>
+
+        <section id="sg-media-html5-audio" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Media &ndash; HTML5 Audio</h1>
+            </header>
+
+            <audio controls="controls">
+                <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />
+                <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />
+                <p>Your user agent does not support the HTML5 Audio element.</p>
+            </audio>
+        </section>
+
+        <section id="sg-media-html5-video" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Media &ndash; HTML5 Video</h1>
+            </header>
+
+            <video poster="assets/images/general/poster-video.jpg" controls="controls" preload="auto">
+                <source id="ogv" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg" />
+                <source id="mp4" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4" />
+                <p>Your user agent does not support the HTML5 Video element.</p>
+            </video>
+        </section>
+
+        <section id="sg-media-youtube" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Media &ndash; YouTube</h1>
+            </header>
+
+            <div class="fluid-embed">
+                <iframe src="http://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+        </section>
+
+        <section id="sg-map" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Map</h1>
+            </header>
+
+            <div class="map" data-component="map" data-url-static="https://maps.google.com/maps/api/staticmap?center=-26.1024839,28.056027&amp;zoom=15&amp;markers=-26.1024839,28.056027&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3582.8907753825415!2d28.056027!3d-26.1024839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95732e5d160f03%3A0xc67c0c32b083df1!2s5+Gwen+Ln!5e0!3m2!1sen!2sza!4v1403596213562">
+                <img class="map__img" src="https://maps.google.com/maps/api/staticmap?center=-26.1024839,28.056027&amp;zoom=15&amp;markers=-26.1024839,28.056027&amp;size=400x400&amp;sensor=false" alt="Primedia House, 2nd Floor, 5 Gwen Lane, Sandton" />
+                <iframe class="map__canvas is-hidden"></iframe>
+                <a href="https://www.google.com/maps/place/5+Gwen+Ln/@-26.102484,28.056027,18z" class="map__btn btn btn--secondary">View on Google Maps<span class="icon fa fa-external-link" aria-hidden="true"></span></a>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sg-aside" data-action="sticky">
+        <header class="sg-header sg-header--section">
+            <h3 class="epsilon hN"><a href="index.html"><span class="icon fa fa-reply" aria-hidden="true"></span></a>Table of Contents</h3>
+        </header>
+
+        <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-desktop" aria-hidden="true"></span>View as Patchwork</button>
+
+        <nav class="sg-nav sg-nav--secondary">
+            <ol class="sg-list">
+                <li><a href="elements.html#sg-color-palette">Color Palette</a></li>
+                <li><a href="elements.html#sg-font-stacks">Font Stacks</a></li>
+                <li><a href="elements.html#sg-headings">Headings</a></li>
+                <li><a href="elements.html#sg-paragraph">Paragraph</a></li>
+                <li><a href="elements.html#sg-blockquote">Block Quote</a></li>
+                <li><a href="elements.html#sg-horizontal-rule">Horizontal Rule</a></li>
+                <li><a href="elements.html#sg-inline-elements">Inline Elements</a></li>
+                <li><a href="elements.html#sg-preformatted-text">Preformatted Text</a></li>
+                <li><a href="elements.html#sg-address">Address</a></li>
+                <li><a href="elements.html#sg-time">Time</a></li>
+                <li><a href="elements.html#sg-list-description">List &ndash; Description</a></li>
+                <li><a href="elements.html#sg-list-ordered">List &ndash; Ordered</a></li>
+                <li><a href="elements.html#sg-list-unordered">List &ndash; Unordered</a></li>
+                <li><a href="elements.html#sg-table">Table</a></li>
+                <li><a href="elements.html#sg-table-bordered">Table &ndash; Bordered</a></li>
+                <li><a href="elements.html#sg-table-striped">Table &ndash; Striped</a></li>
+                <li><a href="elements.html#sg-figure">Figure</a></li>
+                <li><a href="elements.html#sg-form-control-input">Form Control &ndash; Input</a></li>
+                <li><a href="elements.html#sg-form-control-textarea">Form Control &ndash; Textarea</a></li>
+                <li><a href="elements.html#sg-buttons">Buttons</a></li>
+                <li><a href="elements.html#sg-buttons-secondary">Buttons &ndash; Secondary</a></li>
+                <li><a href="elements.html#sg-buttons-text">Buttons &ndash; Text</a></li>
+                <li><a href="elements.html#sg-buttons-icon">Buttons &ndash; Icon</a></li>
+                <li><a href="elements.html#sg-icons">Icons</a></li>
+                <li><a href="elements.html#sg-media-html5-audio">Media &ndash; HTML5 Audio</a></li>
+                <li><a href="elements.html#sg-media-html5-video">Media &ndash; HTML5 Video</a></li>
+                <li><a href="elements.html#sg-media-youtube">Media &ndash; YouTube</a></li>
+                <li><a href="elements.html#sg-map">Map</a></li>
+            </ol>
+        </nav>
+    </aside>
+
+    <button class="sg-btn sg-btn--top" data-action="back-to-top" title="Back to Top"><span class="icon fa fa-arrow-circle-up" aria-hidden="true"></span></button>
+
+    <footer class="sg-footer" role="contentinfo">
+        <ol class="sg-list">
+            <li><b>Version</b>: 0.0.0</li>
+            <li><b>Last Modified</b>: <div data-last-modified="true">28 July, 2014</div></li>
+        </ol>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/plugins.js?v=0.0.0"></script>
+    <script src="assets/js/main.js?v=0.0.0"></script>
+    <script src="assets/js/styleguide.js?v=0.0.0"></script>
+    <script>UTIL.init();</script>
+    <script>STYLEGUIDE_UTIL.init();</script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>

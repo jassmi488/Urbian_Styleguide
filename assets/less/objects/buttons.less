@@ -1,0 +1,112 @@
+/* -------------------------------------------------------------------------- *\
+   $BUTTONS
+\* -------------------------------------------------------------------------- */
+
+.btn {
+    background-color: @color-navy;
+    border: 1px solid transparent;
+    color: @color-white;
+    display: inline-block;
+    font-family: @font-secondary;
+    font-size: 1em;
+    font-weight: @weight-bold;
+    height: 2.8125em; /* 45 / 16 */
+    line-height: normal;
+    padding: 0.75em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    .transition(background-color 0.25s, border-color 0.25s, color 0.25s, top 0.25s;);
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &[disabled="disabled"] {
+
+        &:active {
+            top: 0;
+        }
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: @color-blue;
+            border-color: @color-silver;
+            color: @color-white;
+        }
+    }
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    &.is-active,
+    &:focus,
+    &:hover {
+        background-color: @color-white;
+        border-color: @color-silver;
+        color: @color-blue;
+        outline: none;
+    }
+
+    /**
+     * Secondary
+     */
+
+    &.btn--secondary {
+        font-size: 0.875em;
+        height: 2.286em; /* 32 / 14 */
+        padding: 0.5em 0.75em;
+    }
+
+    /**
+     * Text
+     */
+
+    &.btn--text {
+        background-color: @color-white;
+        background-color: transparent;
+        border-color: @color-white-dark;
+        color: @color-gray;
+
+        &:focus,
+        &:hover {
+            border-color: @color-silver;
+        }
+
+        &.is-loading {
+
+            .icon {
+
+                &:before {
+                    content: "\f021";
+                }
+            }
+        }
+    }
+
+    /**
+     * Icon
+     */
+
+    &.btn--icon {
+
+        .icon {
+            margin-left: 0;
+        }
+    }
+
+    .icon {
+        font-size: 0.875em; /* 14 / 16 */
+        margin-left: 0.75em;
+
+        &.icon--first {
+            margin-right: 0.75em;
+            margin-left: 0;
+        }
+
+        &.icon--weather {
+            font-size: 1.125em; /* 18 / 16 */
+        }
+    }
+}

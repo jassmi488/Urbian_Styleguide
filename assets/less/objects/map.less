@@ -1,0 +1,52 @@
+/* -------------------------------------------------------------------------- *\
+   $MAP
+\* -------------------------------------------------------------------------- */
+
+.map {
+    height: 100%;
+    width: 100%;
+
+    .map__img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        visibility: visible;
+
+        &.is-hidden {
+            display: none;
+            visibility: visible;
+        }
+    }
+
+    .map__canvas {
+        border: 0;
+        display: block;
+        height: 100%;
+        visibility: visible;
+        width: 100%;
+
+        &.is-hidden {
+            display: none;
+            visibility: visible;
+        }
+    }
+
+    .map__btn {
+        margin-top: 1em;
+        visibility: visible;
+
+        &.is-hidden {
+            display: none;
+            visibility: visible;
+        }
+    }
+}
+
+@media all and (min-width: @bp-medium) {
+
+    .map {
+        background-color: @color-white-dark;
+        margin-bottom: 1em;
+        max-height: 22.5em; /* 360 / 16 */
+    }
+}

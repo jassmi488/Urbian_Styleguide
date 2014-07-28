@@ -1,0 +1,85 @@
+/* -------------------------------------------------------------------------- *\
+   $FORMS
+\* -------------------------------------------------------------------------- */
+
+.form {
+
+    /**
+     * Search
+     */
+
+    &.form--search {
+        position: relative;
+
+        .input {
+            padding-right: 2.75em;
+        }
+
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+@media all and (min-width: @bp-medium) {
+
+    .form {
+
+        &.form--search {
+
+            .input {
+                min-width: 20em; /* 320 / 16 */
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Input
+   ========================================================================== */
+
+input[type="color"],
+input[type="date"],
+input[type="email"],
+input[type="file"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea {
+
+    &.input {
+        border: 1px solid @color-silver;
+        border-radius: 0;
+        color: @color-gray-dark;
+        font-family: @font;
+        font-size: 1.125em; /* 18 / 16 */
+        height: 2.5em; /* 45 / 18 */
+        padding: 0.375em 0.75em;
+        .transition(border-color 0.25s);
+        width: 100%;
+
+        &[disabled="disabled"] {
+            background-color: @color-white-dark;
+            border-color: @color-white-dark;
+            color: @color-white-dark;
+        }
+
+        &:focus,
+        &:hover {
+            border-color: @color-gray-dark;
+        }
+    }
+
+    &.input--textarea {
+        height: inherit;
+    }
+}
