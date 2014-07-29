@@ -41,13 +41,48 @@
 
 
 /* ==========================================================================
+   $Fieldset
+   ========================================================================== */
+
+.fieldset {
+    margin-bottom: 1em;
+
+    &.fieldset--bordered {
+        border: 1px solid @color-silver;
+        padding: 0.25em 1em;
+
+        .legend {
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Fieldset
+   ========================================================================== */
+
+.legend {
+    color: @color-gray-dark;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+/* ==========================================================================
    $Label
    ========================================================================== */
 
 .label {
     color: @color-gray-dark;
     display: block;
-    margin-bottom: 0.375em;
+    margin-bottom: 0.5em;
 }
 
 
@@ -77,6 +112,7 @@ textarea {
         color: @color-gray-dark;
         font-family: @font;
         height: 2.5em; /* 40 / 16 */
+        margin-top: 0.375em;
         padding: 0.5em 0.75em 0.5625em 0.75em;
         .transition(border-color 0.25s);
         width: 100%;
@@ -93,6 +129,10 @@ textarea {
         }
     }
 
+    &.input--select {
+        padding-top: 0.4375em;
+    }
+
     &.input--textarea {
         height: inherit;
     }
@@ -100,17 +140,5 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-    margin-right: 0.25em;
-}
-
-
-
-
-
-/* ==========================================================================
-   $Select
-   ========================================================================== */
-
-select {
-    padding-top: 0.4375em;
+    margin-right: 0.375em;
 }

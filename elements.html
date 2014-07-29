@@ -578,23 +578,27 @@ p q r s t u v w x y z { | } ~ </pre>
             </header>
 
             <div class="sg-example">
-                <label for="input-text" class="label">Text</label>
-                <input id="input-text" class="input" type="text" placeholder="Placeholder text&hellip;" />
+                <label for="input-text" class="label">
+                    Text <input id="input-text" class="input" type="text" placeholder="Placeholder text&hellip;" />
+                </label>
             </div>
 
             <div class="sg-example">
-                <label for="input-email" class="label">Email</label>
-                <input id="input-email" class="input" type="email" placeholder="user@domain.com" />
+                <label for="input-email" class="label">
+                    Email <input id="input-email" class="input" type="email" placeholder="user@domain.com" />
+                </label>
             </div>
 
             <div class="sg-example">
-                <label for="input-password" class="label">Password</label>
-                <input id="input-password" class="input" type="password" />
+                <label for="input-password" class="label">
+                    Password <input id="input-password" class="input" type="password" />
+                </label>
             </div>
 
             <div class="sg-example">
-                <label for="input-url" class="label">URL</label>
-                <input id="input-url" class="input" type="url" placeholder="http://www.google.com" />
+                <label for="input-url" class="label">
+                    URL <input id="input-url" class="input" type="url" placeholder="http://www.google.com" />
+                </label>
             </div>
         </section>
 
@@ -603,13 +607,15 @@ p q r s t u v w x y z { | } ~ </pre>
                 <h1 class="epsilon hN">Form Control &ndash; Select</h1>
             </header>
 
-            <label for="select" class="label">Select</label>
-            <select id="select" class="input input--select">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-                <option value="4">Option 4</option>
-            </select>
+            <label for="select" class="label">
+                Select
+                <select id="select" class="input input--select">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </label>
         </section>
 
         <section id="sg-form-control-checkboxes" class="sg-section">
@@ -617,15 +623,18 @@ p q r s t u v w x y z { | } ~ </pre>
                 <h1 class="epsilon hN">Form Control &ndash; Checkboxes</h1>
             </header>
 
-            <label for="checkbox-1" class="label">
-                <input id="checkbox-1" type="checkbox" name="checkbox" value="1" /> Choice 1
-            </label>
-            <label for="checkbox-2" class="label">
-                <input id="checkbox-2" type="checkbox" name="checkbox" value="2" /> Choice 2
-            </label>
-            <label for="checkbox-3" class="label">
-                <input id="checkbox-3" type="checkbox" name="checkbox" value="3" /> Choice 3
-            </label>
+            <fieldset class="fieldset">
+                <legend class="legend">Checkboxes</legend>
+                <label for="checkbox-1" class="label">
+                    <input id="checkbox-1" type="checkbox" name="checkbox" value="1" /> Choice 1
+                </label>
+                <label for="checkbox-2" class="label">
+                    <input id="checkbox-2" type="checkbox" name="checkbox" value="2" /> Choice 2
+                </label>
+                <label for="checkbox-3" class="label">
+                    <input id="checkbox-3" type="checkbox" name="checkbox" value="3" /> Choice 3
+                </label>
+            </fieldset>
         </section>
 
         <section id="sg-form-control-radiobuttons" class="sg-section">
@@ -633,15 +642,18 @@ p q r s t u v w x y z { | } ~ </pre>
                 <h1 class="epsilon hN">Form Control &ndash; Radio Buttons</h1>
             </header>
 
-            <label for="radio-1" class="label">
-                <input id="radio-1" type="radio" name="radio" value="1" /> Choice 1
-            </label>
-            <label for="radio-2" class="label">
-                <input id="radio-2" type="radio" name="radio" value="2" /> Choice 2
-            </label>
-            <label for="radio-3" class="label">
-                <input id="radio-3" type="radio" name="radio" value="3" /> Choice 3
-            </label>
+            <fieldset class="fieldset fieldset--bordered">
+                <legend class="legend">Radio Buttons</legend>
+                <label for="radio-1" class="label">
+                    <input id="radio-1" type="radio" name="radio" value="1" /> Choice 1
+                </label>
+                <label for="radio-2" class="label">
+                    <input id="radio-2" type="radio" name="radio" value="2" /> Choice 2
+                </label>
+                <label for="radio-3" class="label">
+                    <input id="radio-3" type="radio" name="radio" value="3" /> Choice 3
+                </label>
+            </fieldset>
         </section>
 
         <section id="sg-form-control-textarea" class="sg-section">
