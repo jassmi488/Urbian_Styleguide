@@ -1,0 +1,43 @@
+/* -------------------------------------------------------------------------- *\
+   $PAGINATION
+\* -------------------------------------------------------------------------- */
+
+.pagination {
+    margin-bottom: 1em;
+    width: 100%;
+
+    .list {
+        .clearfix();
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        white-space: nowrap;
+
+        li {
+            display: inline-block;
+
+            &.is-current {
+
+                a {
+                    background-color: @color-gray;
+                    color: @color-white;
+                }
+            }
+        }
+    }
+
+    a {
+        color: @color-gray-dark;
+        display: block;
+        font-family: @font-secondary;
+        font-weight: @weight-bold;
+        padding: 0.375em 0.875em;
+        text-decoration: none;
+        .transition(background-color 0.25s, color 0.25s;);
+
+        &:focus,
+        &:hover {
+            background-color: @color-silver;
+        }
+    }
+}
