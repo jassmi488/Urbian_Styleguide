@@ -572,6 +572,36 @@ p q r s t u v w x y z { | } ~ </pre>
             </table>
         </section>
 
+        <section id="sg-figure" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Figure</h1>
+            </header>
+
+            <figure class="figure">
+                <img class="figure__image" src="http://placehold.it/600x400" alt="" />
+                <figcaption class="figure__caption">This is a placeholder image with a supporting caption.</figcaption>
+            </figure>
+        </section>
+
+        <section id="sg-form-control-checkboxes" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form Control &ndash; Checkboxes</h1>
+            </header>
+
+            <fieldset class="fieldset fieldset--bordered">
+                <legend class="legend">Checkboxes</legend>
+                <label for="checkbox-1" class="label">
+                    <input id="checkbox-1" type="checkbox" name="checkbox" value="1" /> Choice 1
+                </label>
+                <label for="checkbox-2" class="label">
+                    <input id="checkbox-2" type="checkbox" name="checkbox" value="2" /> Choice 2
+                </label>
+                <label for="checkbox-3" class="label">
+                    <input id="checkbox-3" type="checkbox" name="checkbox" value="3" /> Choice 3
+                </label>
+            </fieldset>
+        </section>
+
         <section id="sg-form-control-inputs" class="sg-section">
             <header class="sg-header sg-header--section">
                 <h1 class="epsilon hN">Form Control &ndash; Inputs</h1>
@@ -602,41 +632,6 @@ p q r s t u v w x y z { | } ~ </pre>
             </div>
         </section>
 
-        <section id="sg-form-control-select" class="sg-section">
-            <header class="sg-header sg-header--section">
-                <h1 class="epsilon hN">Form Control &ndash; Select</h1>
-            </header>
-
-            <label for="select" class="label">
-                Select
-                <select id="select" class="input input--select">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                    <option value="4">Option 4</option>
-                </select>
-            </label>
-        </section>
-
-        <section id="sg-form-control-checkboxes" class="sg-section">
-            <header class="sg-header sg-header--section">
-                <h1 class="epsilon hN">Form Control &ndash; Checkboxes</h1>
-            </header>
-
-            <fieldset class="fieldset fieldset--bordered">
-                <legend class="legend">Checkboxes</legend>
-                <label for="checkbox-1" class="label">
-                    <input id="checkbox-1" type="checkbox" name="checkbox" value="1" /> Choice 1
-                </label>
-                <label for="checkbox-2" class="label">
-                    <input id="checkbox-2" type="checkbox" name="checkbox" value="2" /> Choice 2
-                </label>
-                <label for="checkbox-3" class="label">
-                    <input id="checkbox-3" type="checkbox" name="checkbox" value="3" /> Choice 3
-                </label>
-            </fieldset>
-        </section>
-
         <section id="sg-form-control-radiobuttons" class="sg-section">
             <header class="sg-header sg-header--section">
                 <h1 class="epsilon hN">Form Control &ndash; Radio Buttons</h1>
@@ -656,6 +651,22 @@ p q r s t u v w x y z { | } ~ </pre>
             </fieldset>
         </section>
 
+        <section id="sg-form-control-select" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form Control &ndash; Select</h1>
+            </header>
+
+            <label for="select" class="label">
+                Select
+                <select id="select" class="input input--select">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </label>
+        </section>
+
         <section id="sg-form-control-textarea" class="sg-section">
             <header class="sg-header sg-header--section">
                 <h1 class="epsilon hN">Form Control &ndash; Textarea</h1>
@@ -664,17 +675,6 @@ p q r s t u v w x y z { | } ~ </pre>
             <div class="sg-example">
                 <textarea class="input input--textarea" placeholder="Placeholder text&hellip;"></textarea>
             </div>
-        </section>
-
-        <section id="sg-figure" class="sg-section">
-            <header class="sg-header sg-header--section">
-                <h1 class="epsilon hN">Figure</h1>
-            </header>
-
-            <figure class="figure">
-                <img class="figure__image" src="http://placehold.it/600x400" alt="" />
-                <figcaption class="figure__caption">This is a placeholder image with a supporting caption.</figcaption>
-            </figure>
         </section>
 
         <section id="sg-buttons" class="sg-section">
@@ -734,12 +734,12 @@ p q r s t u v w x y z { | } ~ </pre>
                     <code class="sg-code">fa-facebook-square</code>
                 </li>
                 <li>
-                    <span class="icon fa fa-twitter-square" title="Twitter" aria-hidden="true"></span>
-                    <code class="sg-code">fa-twitter-square</code>
-                </li>
-                <li>
                     <span class="icon fa fa-google-plus-square" title="Google+" aria-hidden="true"></span>
                     <code class="sg-code">fa-google-plus-square</code>
+                </li>
+                <li>
+                    <span class="icon fa fa-twitter-square" title="Twitter" aria-hidden="true"></span>
+                    <code class="sg-code">fa-twitter-square</code>
                 </li>
                 <li>
                     <span class="icon fa fa-chevron-right" title="Chevron Right" aria-hidden="true"></span>
@@ -837,8 +837,8 @@ p q r s t u v w x y z { | } ~ </pre>
                 <li><a href="elements.html#sg-table-bordered">Table &ndash; Bordered</a></li>
                 <li><a href="elements.html#sg-table-striped">Table &ndash; Striped</a></li>
                 <li><a href="elements.html#sg-figure">Figure</a></li>
-                <li><a href="elements.html#sg-form-control-inputs">Form Control &ndash; Inputs</a></li>
                 <li><a href="elements.html#sg-form-control-checkboxes">Form Control &ndash; Checkboxes</a></li>
+                <li><a href="elements.html#sg-form-control-inputs">Form Control &ndash; Inputs</a></li>
                 <li><a href="elements.html#sg-form-control-radiobuttons">Form Control &ndash; Radio Buttons</a></li>
                 <li><a href="elements.html#sg-form-control-select">Form Control &ndash; Select</a></li>
                 <li><a href="elements.html#sg-form-control-textarea">Form Control &ndash; Textarea</a></li>
@@ -860,7 +860,7 @@ p q r s t u v w x y z { | } ~ </pre>
     <footer class="sg-footer" role="contentinfo">
         <ol class="sg-list">
             <li><b>Version</b>: 0.0.0</li>
-            <li><b>Last Modified</b>: <div data-last-modified="true">28 July, 2014</div></li>
+            <li><b>Last Modified</b>: <span data-last-modified="true">28 July, 2014</span></li>
         </ol>
     </footer>
 
