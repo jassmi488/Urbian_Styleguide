@@ -3,7 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .btn {
-    background-color: @color-blue;
+    background-color: @color-black;
     border: 1px solid transparent;
     color: @color-white;
     display: inline-block;
@@ -29,7 +29,7 @@
         &.is-active,
         &:focus,
         &:hover {
-            background-color: @color-blue;
+            background-color: @color-black;
             border-color: @color-silver;
             color: @color-white;
         }
@@ -45,7 +45,7 @@
     &:hover {
         background-color: @color-white;
         border-color: @color-silver;
-        color: @color-blue;
+        color: @color-black;
         outline: none;
     }
 
@@ -54,9 +54,19 @@
      */
 
     &.btn--secondary {
+        background-color: @color-gray-dark;
         font-size: 0.875em;
         height: 2.286em; /* 32 / 14 */
         padding: 0.5em 0.75em;
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: @color-white;
+            border-color: @color-silver;
+            color: @color-black;
+            outline: none;
+        }
     }
 
     /**
@@ -72,6 +82,7 @@
         &:focus,
         &:hover {
             border-color: @color-silver;
+            color: @color-gray-dark;
         }
 
         &.is-loading {
