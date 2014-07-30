@@ -32,6 +32,10 @@
                         var icon_up = $link.data('icon-up');
                         var icon_down = $link.data('icon-down');
 
+                        /*
+                         * Update the selected accordion item
+                         */
+
                         if ($item.hasClass('is-selected'))
                         {
                             $item.removeClass('is-selected');
@@ -78,14 +82,14 @@
                     var $map_canvas = $('.map__canvas', $map);
                     var $map_button = $('.btn', $map);
 
-                    if (screen_width >= breakpoint)
+                    if (screen_width >= breakpoint) // Display the interactive embedded map
                     {
                         $map_img.addClass('is-hidden');
                         $map_button.addClass('is-hidden');
                         $map_canvas.attr('src', url_embed);
                         $map_canvas.removeClass('is-hidden');
                     }
-                    else
+                    else // Display a static image of the map
                     {
                         $map_img.removeClass('is-hidden');
                         $map_button.removeClass('is-hidden');
@@ -133,6 +137,10 @@
 
                         $('.tab-list li', $tabs).not($tab).removeClass('is-selected').attr('aria-selected', 'false');
                         $('.tab-panel', $tabs).not($tab_panel).removeClass('is-active').attr('aria-hidden', 'true');
+
+                        /*
+                         * Display the selected tab
+                         */
 
                         if (!$tab.hasClass('is-selected'))
                         {
