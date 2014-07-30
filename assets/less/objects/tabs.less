@@ -8,10 +8,16 @@
     .tab-list {
 
         .list {
+            .clearfix();
             margin-bottom: 0;
 
             li {
-                display: inline-block;
+                float: left;
+                margin-right: 0.25em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
 
                 &.is-selected {
 
