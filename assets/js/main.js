@@ -32,16 +32,16 @@
                         var icon_up = $link.data('icon-up');
                         var icon_down = $link.data('icon-down');
 
-                        if ($item.hasClass('is-active'))
+                        if ($item.hasClass('is-selected'))
                         {
                             $item.attr('aria-hidden', 'false');
-                            $item.removeClass('is-active');
+                            $item.removeClass('is-selected');
                             $icon.removeClass(icon_up).addClass(icon_down);
                         }
                         else
                         {
                             $item.attr('aria-hidden', 'true');
-                            $item.addClass('is-active');
+                            $item.addClass('is-selected');
                             $icon.removeClass(icon_down).addClass(icon_up);
                         }
 
@@ -50,7 +50,7 @@
                          */
 
                         $('.accordion-item__link .icon').not($icon).removeClass(icon_up).addClass(icon_down);
-                        $('.accordion-item').not($item).removeClass('is-active');
+                        $('.accordion-item').not($item).removeClass('is-selected');
                     });
                 });
             }

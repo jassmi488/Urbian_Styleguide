@@ -6,9 +6,9 @@
     margin-bottom: 1em;
 
     .accordion-item {
-        margin-bottom: 0.0625em;
+        margin-bottom: 0.25em;
 
-        &.is-active {
+        &.is-selected {
 
             .accordion-item__contents {
                 display: block;
@@ -33,7 +33,7 @@
         }
 
         .accordion-item__link {
-            background-color: @color-silver;
+            background-color: @color-white-dark;
             color: @color-gray-dark;
             display: block;
             padding: 0.4375em 0.875em 0.5em 0.875em;
@@ -42,7 +42,7 @@
 
             &:focus,
             &:hover {
-                background-color: @color-gray;
+                background-color: @color-silver;
                 color: @color-black;
             }
         }
@@ -50,8 +50,6 @@
         .accordion-item__contents {
             display: none;
             padding-top: 0.75em;
-            padding-right: 0.75em;
-            padding-left: 0.75em;
             visibility: hidden;
         }
     }
