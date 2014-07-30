@@ -67,15 +67,35 @@
             <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-reply" aria-hidden="true"></span>Style Guide</button>
         </div>
 
+        <section id="sg-inline" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form &ndash; Inline</h1>
+            </header>
+
+            <form id="form-inline" action="forms.html" method="post" class="form form--inline">
+                <label class="label visuallyhidden">Email Address</label>
+                <input class="input" type="email" id="email" placeholder="Email Address" maxlength="100" />
+
+                <label class="label visuallyhidden">Password</label>
+                <input class="input" type="password" id="password" placeholder="Password" maxlength="100" />
+
+                <label class="label label--checkbox">
+                    <input class="input" type="checkbox" id="remember" value="1" /> Remember me?
+                </label>
+
+                <input class="btn" type="submit" id="submit" value="Sign In" />
+            </form>
+        </section>
+
         <section id="sg-search" class="sg-section">
             <header class="sg-header sg-header--section">
-                <h1 class="epsilon hN">Search</h1>
+                <h1 class="epsilon hN">Form &ndash; Search</h1>
             </header>
 
             <form id="form-search" action="forms.html" method="post" class="form form--search">
                 <label for="keywords" class="visuallyhidden">Search</label>
-                <input class="input input--turquoise" type="text" id="keywords" name="keywords" placeholder="Search&hellip;" />
-                <button class="btn btn--icon btn--turquoise" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+                <input class="input" type="text" id="keywords" name="keywords" placeholder="Search&hellip;" maxlength="20" />
+                <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
             </form>
         </section>
     </main>
@@ -89,7 +109,8 @@
 
         <nav class="sg-nav sg-nav--secondary">
             <ol class="sg-list">
-                <li><a href="forms.html#sg-search">Search</a></li>
+                <li><a href="forms.html#sg-inline">Form &ndash; Inline</a></li>
+                <li><a href="forms.html#sg-search">Form &ndash; Search</a></li>
             </ol>
         </nav>
     </aside>

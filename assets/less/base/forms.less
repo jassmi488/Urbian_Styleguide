@@ -5,6 +5,49 @@
 .form {
 
     /**
+     * Inline
+     */
+
+    &.form--inline {
+
+        .input {
+            margin-bottom: 0.5em;
+        }
+
+        @media all and (min-width: @bp-small) {
+
+            .clearfix();
+
+            .label {
+                float: left;
+                margin-right: 0.5em;
+
+                &.label--checkbox {
+                    padding-top: 0.5em;
+
+                    .input {
+                        float: none;
+                        margin-right: 0.25em;
+                    }
+                }
+            }
+
+            .input {
+                float: left;
+                margin-top: 0;
+                margin-right: 0.5em;
+                margin-bottom: 0;
+                width: auto;
+            }
+
+            .btn {
+                float: left;
+                margin-right: 0;
+            }
+        }
+    }
+
+    /**
      * Search
      */
 
