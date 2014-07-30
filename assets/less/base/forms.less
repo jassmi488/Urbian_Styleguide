@@ -10,8 +10,15 @@
 
     &.form--inline {
 
+        .label {
+
+            &.label--checkbox {
+                margin-bottom: 0.5em;
+            }
+        }
+
         .input {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.75em;
         }
 
         @media all and (min-width: @bp-small) {
@@ -23,6 +30,7 @@
                 margin-right: 0.5em;
 
                 &.label--checkbox {
+                    margin-bottom: 0;
                     padding-top: 0.5em;
 
                     .input {
@@ -126,7 +134,7 @@
 .label {
     color: @color-gray-dark;
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 

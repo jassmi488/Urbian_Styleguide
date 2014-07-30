@@ -67,6 +67,30 @@
             <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-reply" aria-hidden="true"></span>Style Guide</button>
         </div>
 
+        <section id="sg-default" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form &ndash; Default</h1>
+            </header>
+
+            <form id="form-default" action="forms.html" method="post" class="form">
+                <label for="email-1" class="label">
+                    Email Address
+                    <input class="input" type="email" id="email-1" placeholder="Email Address" maxlength="100" />
+                </label>
+
+                <label for="password-1" class="label">
+                    Password
+                    <input class="input" type="password" id="password-1" placeholder="Password" maxlength="100" />
+                </label>
+
+                <label for="remember-1" class="label">
+                    <input class="input" type="checkbox" id="remember-1" value="1" /> Remember me?
+                </label>
+
+                <input class="btn" type="submit" id="submit-1" value="Sign In" />
+            </form>
+        </section>
+
         <section id="sg-inline" class="sg-section">
             <header class="sg-header sg-header--section">
                 <h1 class="epsilon hN">Form &ndash; Inline</h1>
@@ -109,6 +133,7 @@
 
         <nav class="sg-nav sg-nav--secondary">
             <ol class="sg-list">
+                <li><a href="forms.html#sg-default">Form &ndash; Default</a></li>
                 <li><a href="forms.html#sg-inline">Form &ndash; Inline</a></li>
                 <li><a href="forms.html#sg-search">Form &ndash; Search</a></li>
             </ol>
