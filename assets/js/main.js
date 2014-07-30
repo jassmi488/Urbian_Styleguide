@@ -34,11 +34,13 @@
 
                         if ($item.hasClass('is-active'))
                         {
+                            $item.attr('aria-hidden', 'false');
                             $item.removeClass('is-active');
                             $icon.removeClass(icon_up).addClass(icon_down);
                         }
                         else
                         {
+                            $item.attr('aria-hidden', 'true');
                             $item.addClass('is-active');
                             $icon.removeClass(icon_down).addClass(icon_up);
                         }
