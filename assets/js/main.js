@@ -49,8 +49,8 @@
                          * Reset the display of all other accordion items
                          */
 
-                        $('.accordion-item__link .icon').not($icon).removeClass(icon_up).addClass(icon_down);
-                        $('.accordion-item').not($item).removeClass('is-selected');
+                        $('.accordion-item__link .icon', $accordion).not($icon).removeClass(icon_up).addClass(icon_down);
+                        $('.accordion-item', $accordion).not($item).removeClass('is-selected');
                     });
                 });
             }
@@ -103,6 +103,47 @@
             {
                 renderMap();
             });
+
+            /* ==========================================================================
+               Tabs
+               ========================================================================== */
+
+            var $tabs_component = $('[data-component="tabs"]');
+
+            if ($tabs_component.length > 0)
+            {
+                $tabs_component.each(function ()
+                {
+                    var $tabs = $(this);
+                    var $tablist = $('.tab-list', $tabs);
+                    var $tablist_link = $('a', $tablist);
+
+                    $tablist_link.on('click', function (e)
+                    {
+                        e.preventDefault();
+
+                        var $link = $(this);
+                        var $tab = $link.parent();
+                        var tab_panel_id = $tab.attr('aria-controls');
+                        var $tab_panel = $('#' + tab_panel_id);
+
+                        /*
+                         * Reset the display of all other tabs
+                         */
+
+                        $('.tab-list li', $tabs).not($tab).removeClass('is-selected').attr('aria-selected', 'false');
+                        $('.tab-panel', $tabs).not($tab_panel).removeClass('is-active').attr('aria-hidden', 'true');
+
+                        if (!$tab.hasClass('is-selected'))
+                        {
+                            $tab.attr('aria-selected', 'true');
+                            $tab.addClass('is-selected');
+                            $tab_panel.addClass('is-active');
+                            $tab_panel.attr('aria-hidden', 'false');
+                        }
+                    });
+                });
+            }
         }
     },
 
