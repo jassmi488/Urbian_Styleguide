@@ -195,3 +195,19 @@ input[type="checkbox"],
 input[type="radio"] {
     margin-right: 0.375em;
 }
+
+/*
+ * Remove the inner shadow that appears in text inputs on iOS/OSX
+ */
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea {
+    -webkit-appearance: none;
+}
