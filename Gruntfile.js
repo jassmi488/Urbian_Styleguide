@@ -68,20 +68,6 @@ module.exports = function (grunt)
                 }
             }
         },
-        pagespeed: {
-            options: {
-                nokey: true,
-                url: "https://developers.google.com"
-            },
-            build: {
-                options: {
-                    url: "http://127.0.0.1:1337",
-                    locale: "en",
-                    strategy: "desktop",
-                    threshold: 80
-                }
-            }
-        },
         validation: {
             files: {
                 src: [
@@ -95,7 +81,7 @@ module.exports = function (grunt)
                 files: [
                     'assets/js/**',
                     'assets/less/**',
-                    'templates/**/*.html',
+                    'templates/**',
                     '*.html'
                 ],
                 tasks: ['less'],
@@ -120,7 +106,7 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-html-validation');
-    grunt.loadNpmTasks('grunt-pagespeed');
+
     grunt.registerTask('default', defaultTasks);
     grunt.registerTask('serve', ['less', 'connect', 'watch']);
 };
