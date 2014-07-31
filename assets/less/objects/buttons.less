@@ -20,6 +20,22 @@
     vertical-align: middle;
     white-space: nowrap;
 
+    /**
+     * Silver
+     */
+
+    &.btn--silver {
+        background-color: @color-gray-dark;
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: @color-white;
+            border-color: @color-silver;
+            color: @color-black;
+        }
+    }
+
     &[disabled="disabled"] {
 
         &:active {
@@ -50,11 +66,10 @@
     }
 
     /**
-     * Secondary
+     * Small
      */
 
-    &.btn--secondary {
-        background-color: @color-gray-dark;
+    &.btn--small {
         font-size: 0.875em; /* 14 / 16 */
         height: 2.286em; /* 32 / 14 */
         padding: 0.5em 0.75em;
@@ -62,9 +77,6 @@
         &.is-active,
         &:focus,
         &:hover {
-            background-color: @color-white;
-            border-color: @color-silver;
-            color: @color-black;
             outline: none;
         }
     }
@@ -119,5 +131,32 @@
         &.icon--weather {
             font-size: 1.125em; /* 18 / 16 */
         }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Group
+   ========================================================================== */
+
+.btn-group {
+    .clearfix();
+    width: 100%;
+
+    &.btn-group--left {
+
+        .btn {
+            float: left;
+            margin-right: 0.5em;
+            margin-left: 0;
+        }
+    }
+
+    .btn {
+        float: right;
+        margin-left: 0.5em;
     }
 }
