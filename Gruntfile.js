@@ -8,7 +8,7 @@ module.exports = function (grunt)
                     hostname: '*',
                     livereload: true,
                     open: {
-                        target: 'http:127.0.0.1:1337'
+                        target: 'http://127.0.0.1:1337'
                     },
                     port: 1337,
                     useAvailablePort: true
@@ -92,13 +92,6 @@ module.exports = function (grunt)
         }
     });
 
-    var defaultTasks = [
-        'csslint',
-        'jshint',
-        'less',
-        'validation'
-    ];
-
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -106,7 +99,6 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-html-validation');
-
-    grunt.registerTask('default', defaultTasks);
+    
     grunt.registerTask('serve', ['less', 'connect', 'watch']);
 };
