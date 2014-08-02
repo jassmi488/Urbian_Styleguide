@@ -12,7 +12,6 @@
     Bootstrap -- @twbootstrap
     Brad Frost -- @brad_frost
     CSS-Tricks -- @Real_CSS_Tricks
-    Dave Olsen -- @dmolsen
     Harry Roberts -- @csswizardry
     Jeffrey Zeldman -- @zeldman
     John Resig -- @jeresig
@@ -23,6 +22,6 @@
 
 # SITE
 
-    Last Update: 2014/07/28
+    Last Update: 2014/08/02
     Standards: HTML5, CSS3
     Components: Font Awesome, jQuery, Normalize.css
