@@ -146,7 +146,7 @@
     }
 }
 
-@media all and (min-width: @bp-xs) {
+@media all and (min-width: @bp-small) {
 
     .sg-btn {
         width: auto;
@@ -374,9 +374,11 @@
     .sg-anchor {
         color: @color-black;
         text-decoration: none;
+        .transition(color 0.25s);
 
         &:focus,
         &:hover {
+            color: @color-gray-dark;
             text-decoration: underline;
         }
     }
@@ -522,7 +524,7 @@ body {
     }
 }
 
-@media all and (min-width: @bp-xs) {
+@media all and (min-width: @bp-small) {
 
     .sg-header {
 
@@ -601,7 +603,7 @@ body {
     }
 }
 
-@media all and (min-width: @bp-xs) {
+@media all and (min-width: @bp-small) {
 
     .sg-nav {
 
