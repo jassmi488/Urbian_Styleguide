@@ -12,6 +12,8 @@
     Bootstrap -- @twbootstrap
     Brad Frost -- @brad_frost
     CSS-Tricks -- @Real_CSS_Tricks
+    Ethan Marcotte -- @beep
+    H5BP -- @h5bp
     Harry Roberts -- @csswizardry
     Jeffrey Zeldman -- @zeldman
     John Resig -- @jeresig
