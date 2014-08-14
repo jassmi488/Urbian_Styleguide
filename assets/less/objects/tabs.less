@@ -6,29 +6,27 @@
     margin-bottom: 1em;
 
     .tab-list {
+        list-style: none;
+        margin: 0 0 0.75em 0;
+        padding: 0;
 
-        .list {
-            .clearfix();
-            margin-bottom: 0;
+        .tab-list__tab {
+            margin-bottom: 0.25em;
 
-            li {
-                margin-bottom: 0.25em;
+            &:last-child {
+                margin-bottom: 0;
+            }
 
-                &:last-child {
-                    margin-bottom: 0;
-                }
+            &.is-selected {
 
-                &.is-selected {
-
-                    a {
-                        background-color: @color-gray;
-                        color: @color-black;
-                    }
+                .tab-list__link {
+                    background-color: @color-gray;
+                    color: @color-black;
                 }
             }
         }
 
-        a {
+        .tab-list__link {
             background-color: @color-white-dark;
             color: @color-gray-dark;
             display: block;
@@ -45,17 +43,13 @@
         }
     }
 
-    .tab-content {
+    .tab-panel {
+        display: none;
+        visibility: hidden;
 
-        .tab-panel {
-            display: none;
-            padding-top: 0.75em;
-            visibility: hidden;
-
-            &.is-active {
-                display: block;
-                visibility: visible;
-            }
+        &.is-active {
+            display: block;
+            visibility: visible;
         }
     }
 }
@@ -65,17 +59,15 @@
     .tabs {
 
         .tab-list {
+            .clearfix();
 
-            .list {
+            .tab-list__tab {
+                float: left;
+                margin-bottom: 0;
+                margin-right: 0.25em;
 
-                li {
-                    float: left;
-                    margin-bottom: 0;
-                    margin-right: 0.25em;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }

@@ -191,26 +191,22 @@
             </header>
 
             <div class="tabs" data-component="tabs">
-                <div class="tab-list">
-                    <ol class="list" role="tablist">
-                        <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="is-selected"><a href="patterns.html#sg-tabs">Tab 1</a></li>
-                        <li id="tab-2" aria-controls="panel-2" role="tab" aria-selected="false"><a href="patterns.html#sg-tabs">Tab 2</a></li>
-                        <li id="tab-3" aria-controls="panel-3" role="tab" aria-selected="false"><a href="patterns.html#sg-tabs">Tab 3</a></li>
-                    </ol>
+                <ol class="tab-list" role="tablist">
+                    <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="tab-list__tab is-selected"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a></li>
+                    <li id="tab-2" aria-controls="panel-2" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 2</a></li>
+                    <li id="tab-3" aria-controls="panel-3" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 3</a></li>
+                </ol>
+                <div id="panel-1" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                 </div>
-                <div class="tab-content">
-                    <div id="panel-1" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
-                    <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                    </div>
-                    <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                    </div>
+                <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                 </div>
             </div>
         </section>
