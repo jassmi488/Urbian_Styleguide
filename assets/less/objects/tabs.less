@@ -12,11 +12,10 @@
             margin-bottom: 0;
 
             li {
-                float: left;
-                margin-right: 0.25em;
+                margin-bottom: 0.25em;
 
                 &:last-child {
-                    margin-right: 0;
+                    margin-bottom: 0;
                 }
 
                 &.is-selected {
@@ -56,6 +55,28 @@
             &.is-active {
                 display: block;
                 visibility: visible;
+            }
+        }
+    }
+}
+
+@media all and (min-width: @bp-xs) {
+
+    .tabs {
+
+        .tab-list {
+
+            .list {
+
+                li {
+                    float: left;
+                    margin-bottom: 0;
+                    margin-right: 0.25em;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
