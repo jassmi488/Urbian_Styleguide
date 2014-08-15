@@ -2,6 +2,8 @@
 
 ## [Style Guide](http://joepublicn.com/styleguide/v2)
 
+Shortened URL for device testing: [http://goo.gl/4NQ5zr](http://goo.gl/4NQ5zr)
+
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 [![NPM Dependencies](https://david-dm.org/connectjoepublic/styleguide.png)](https://david-dm.org)
 
@@ -58,7 +60,7 @@ less/
 
 ### Polyfills
 
-The following scripts are included for **IE9** and below:
+The following scripts are included for **IE8** and below:
 - [html5shiv](https://github.com/aFarkas/html5shiv)
 - [matchMedia.js](https://github.com/paulirish/matchMedia.js)
 - [Respond.js](https://github.com/scottjehl/Respond)
