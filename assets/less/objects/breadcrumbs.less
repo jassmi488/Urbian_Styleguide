@@ -1,0 +1,60 @@
+/* -------------------------------------------------------------------------- *\
+   $BREADCRUMBS
+\* -------------------------------------------------------------------------- */
+
+.breadcrumbs {
+    margin-bottom: 1em;
+    width: 100%;
+
+    .list {
+        .clearfix();
+        margin-bottom: 0;
+
+        li {
+            color: @color-gray;
+            float: left;
+            font-size: 0.875em; /* 14 / 16 */
+            font-weight: @weight-bold;
+            margin-right: 1.5em;
+            position: relative;
+
+            &:after {
+                content: "/";
+                font-size: 1em;
+                position: absolute;
+                right: -0.875em;
+                top: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &:after {
+                    content: "";
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+
+            &.is-current {
+
+                a {
+                    color: @color-gray;
+                }
+            }
+        }
+    }
+
+    a {
+        color: @color-gray-dark;
+        display: block;
+        text-decoration: none;
+        .transition(color 0.25s);
+
+        &:focus,
+        &:hover {
+            color: @color-black;
+            text-decoration: underline;
+        }
+    }
+}

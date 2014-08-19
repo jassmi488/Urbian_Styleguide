@@ -2,15 +2,28 @@
 # The humans responsible & technology colophon
 
 # TEAM
-     ___               ______      _     _ _        _ __
-    |_  |              | ___ \    | |   | (_)      | '_ \
-      | | ___   ___    | |_/ /   _| |__ | |_  ___  | | | |
-      | |/ _ \ / _ \   |  __/ | | | '_ \| | |/ __| |_| |_|
-  /\__/ / (_) |  __/   | |  | |_| | |_) | | | (__
-  \____/ \___/ \___|   \_|   \__,_|_.__/|_|_|\___|
+
+    Michael Thorne -- Front-end Web Developer -- @mikkelz_za
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    Adam Kaplan -- @helloadamkaplan
+    Bootstrap -- @twbootstrap
+    Brad Frost -- @brad_frost
+    CSS-Tricks -- @Real_CSS_Tricks
+    Ethan Marcotte -- @beep
+    H5BP -- @h5bp
+    Harry Roberts -- @csswizardry
+    Jeffrey Zeldman -- @zeldman
+    John Resig -- @jeresig
+    Nicolas Gallagher -- @necolas
+    Paul Irish -- @paul_irish
+    Roger Johansson -- @rogerjohansson
+    Scott Jehl -- @scottjehl
 
 # SITE
 
-    Last Update: 2014/05/20
+    Last Update: 2014/08/08
     Standards: HTML5, CSS3
-    Components: Font Awesome, jQuery, LESS, Normalize.css
+    Components: Font Awesome, Grunt, jQuery, LESS, Normalize.css

@@ -1,0 +1,53 @@
+/* -------------------------------------------------------------------------- *\
+   $NAVIGATION
+\* -------------------------------------------------------------------------- */
+
+.nav {
+    width: 100%;
+
+    .list {
+        .clearfix();
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        white-space: nowrap;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    a {
+        display: block;
+        font-weight: @weight-bold;
+        text-decoration: none;
+    }
+
+    /**
+     * Primary
+     */
+
+    &.nav--primary {
+
+        .list {
+
+            li {
+                margin-right: 1.25em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        a {
+            color: @color-gray-dark;
+            font-size: 1.125em; /* 18 / 16 */
+
+            &:focus,
+            &:hover {
+                color: @color-black;
+            }
+        }
+    }
+}

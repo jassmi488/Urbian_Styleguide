@@ -1,895 +1,161 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html lang="en" dir="ltr" class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" dir="ltr" class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html lang="en" dir="ltr" class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!--> <html lang="en" dir="ltr" class="no-js"> <!--<![endif]-->
+<html lang="en" dir="ltr" class="sg-html">
 <head>
     <meta charset="utf-8" />
-    <title>Style Guide &ndash; Forms</title>
+    <title>Forms &ndash; Style Guide</title>
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Open Graph: http://ogp.me -->
+    <!-- Open Graph -->
     <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
     <meta property="og:description" content="" />
-    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
 
-    <!-- Twitter Cards: https://dev.twitter.com/docs/cards -->
-    <meta name="twitter:card" content="" />
-    <meta name="twitter:site" content="" />
-    <meta name="twitter:creator" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:image" content="" />
+    <!-- Twitter Card -->
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="" />
 
-    <!-- Avoiding the FOUC v3.0: http://www.paulirish.com/2009/avoiding-the-fouc-v3 -->
-    <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
 
-    <!-- Google+ Page: https://support.google.com/plus/answer/1713826?hl=en -->
-    <link rel="publisher" href="//plus.google.com/{+PageId}/" />
-
-    <!-- Font Awesome: http://fortawesome.github.io/Font-Awesome -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/main.css?v=1.0.0" />
-    <link rel="stylesheet" href="assets/css/style-guide/main.css?v=1.0.0" />
+    <link rel="stylesheet" href="assets/css/style.css?v=0.0.0" />
+    <link rel="stylesheet" href="assets/css/styleguide.css?v=0.0.0" />
+
+    <!-- Google+: change XXXXXXXXXX to be your profile's ID -->
+    <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
     <![endif]-->
 </head>
-<body class="sg-body" data-component="prettyprint">
-    <header class="sg-header" role="banner">
-        <div class="sg-wrapper">
-            <a href="index.html" class="sg-home"><span aria-hidden="true" class="icon fa fa-home"></span></a>
-            <h1 class="delta white">Forms</h1>
-            <a href="forms.html#sg-table-of-contents" class="sg-nav-toggle" data-action="sg-nav-toggle"><span aria-hidden="true" class="icon fa fa-bars"></span></a>
-        </div>
-    </header>
-    <!-- // Header -->
+<body>
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-    <nav class="sg-nav" data-container="sg-nav" role="navigation">
-        <div class="sg-wrapper">
-            <ol class="sg-list sg-list-nav">
-                <li><a href="#sg-form-input-types"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Input Types</a></li>
-                <li><a href="#sg-form-validation"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Validation</a></li>
-                <li><a href="#sg-form-layout-default"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Default Layout</a></li>
-                <li><a href="#sg-form-layout-inline"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Inline Layout</a></li>
-                <li><a href="#sg-form-layout-horizontal"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Horizontal Layout</a></li>
-                <li><a href="#sg-form-layout-search"><span aria-hidden="true" class="icon fa fa-caret-right"></span> Search Layout</a></li>
+    <header class="sg-header sg-header--primary" role="banner">
+        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/100x58" width="100" height="58" alt="Name of Project Logo" /></a>
+        <nav class="sg-nav sg-nav--primary" role="navigation">
+            <ol class="sg-list">
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li class="is-active"><a href="forms.html">Forms</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="templates">Templates</a></li>
             </ol>
+        </nav>
+        <button class="sg-btn sg-btn--nav" data-toggle="nav"><span class="icon fa fa-bars" aria-hidden="true"></span>Menu</button>
+    </header>
+
+    <main class="sg-main" role="main">
+        <div id="sg-patchwork" class="sg-section sg-section--well is-hidden">
+            <p class="sg-paragraph sg-paragraph--intro">
+                <span class="icon sg-icon fa fa-info-circle" aria-hidden="true"></span>This is the patchwork view which doesn't include the markup preview and usage examples. This view is particularly useful for device testing because it shows elements at full-width, presented on the page as they would appear on the site.
+            </p>
+            <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-reply" aria-hidden="true"></span>Style Guide</button>
         </div>
-    </nav>
-    <!-- // Navigation -->
 
-    <main id="top" class="sg-main" role="main">
-        <div class="sg-wrapper">
-            <a id="sg-form-input-types" class="sg-section-link"></a>
-
-            <!--[if lt IE 9]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
-
-            <section class="sg-section">
-                <h6 class="epsilon sg-section-heading-primary">Input Types <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <label for="input-a" class="label">Text Input <abbr title="Required" class="red">*</abbr></label>
-                <input type="text" id="input-a" name="input-a" class="input" required="required" placeholder="I&rsquo;m placeholder text" aria-required="true" />
-                <!-- // Text -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Text Input &lt;abbr title="Required"&gt;*&lt;/abbr&gt;&lt;/label&gt;
-&lt;input type="text" id="input" name="name" class="input" required="required" placeholder="I&rsquo;m placeholder text" aria-required="true" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-r" class="label">Disabled Text Input</label>
-                <input type="text" id="input-r" name="input-r" class="input" disabled="disabled" aria-disabled="true" />
-                <!-- // Text Input (Disabled) -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Text Input (Disabled)&lt;/label&gt;
-&lt;input type="text" id="input" name="name" class="input" disabled="disabled" aria-disabled="true" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-h" class="label">Password</label>
-                <input type="password" id="input-h" name="input-h" class="input" />
-                <span class="input-help">This is supplementary text related to this input.</span>
-                <!-- // Password -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Password&lt;/label&gt;
-&lt;input type="password" id="input" name="name" class="input" /&gt;
-&lt;span class="input-help"&gt;This is supplementary text related to this input.&lt;/span&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-d" class="label">Email Address</label>
-                <input type="email" id="input-d" name="input-d" class="input" placeholder="example@domain.com" />
-                <!-- // Email Address -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Email Address&lt;/label&gt;
-&lt;input type="email" id="input" name="name" class="input" placeholder="example@domain.com" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-l" class="label">File Upload</label>
-                <input type="file" id="input-l" name="input-l" class="input input-file" />
-                <!-- // File -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;File Upload&lt;/label&gt;
-&lt;input type="file" id="input" name="name" class="input input-file" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-i" class="label">Textarea</label>
-                <textarea id="input-i" class="input input-textarea" rows="8" cols="48"></textarea>
-                <!-- // Textarea -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Textarea&lt;/label&gt;
-&lt;textarea id="input" class="input input-textarea rows="8" cols="48"&gt;&lt;/textarea&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-m" class="label">Select</label>
-				<select id="input-m" class="input input-select">
-					<optgroup label="Group 1">
-						<option value="Option 1">Option 1.1</option>
-						<option value="Option 2">Option 1.2</option>
-						<option value="Option 3">Option 1.3</option>
-					</optgroup>
-					<optgroup label="Group 2">
-						<option value="Option 1">Option 2.1</option>
-						<option value="Option 2">Option 2.2</option>
-						<option value="Option 3">Option 2.3</option>
-					</optgroup>
-				</select>
-                <!-- // Select -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Select&lt;/label&gt;
-&lt;select id="input" class="input input-select"&gt;
-    &lt;optgroup label="Group 1"&gt;
-        &lt;option value="Option 1"&gt;Option 1.1&lt;/option&gt;
-        &lt;option value="Option 2"&gt;Option 1.2&lt;/option&gt;
-        &lt;option value="Option 3"&gt;Option 1.3&lt;/option&gt;
-    &lt;/optgroup&gt;
-&lt;/select&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-s" class="label">Disabled Select</label>
-				<select id="input-s" class="input input-select" disabled="disabled" aria-disabled="true">
-					<optgroup label="Group 1">
-						<option value="Option 1">Option 1.1</option>
-						<option value="Option 2">Option 1.2</option>
-						<option value="Option 3">Option 1.3</option>
-					</optgroup>
-					<optgroup label="Group 2">
-						<option value="Option 1">Option 2.1</option>
-						<option value="Option 2">Option 2.2</option>
-						<option value="Option 3">Option 2.3</option>
-					</optgroup>
-				</select>
-                <!-- // Select (Disabled) -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Select&lt;/label&gt;
-&lt;select id="input" class="input input-select" disabled="disabled" aria-disabled="true"&gt;
-    &lt;optgroup label="Group 1"&gt;
-        &lt;option value="Option 1"&gt;Option 1.1&lt;/option&gt;
-        &lt;option value="Option 2"&gt;Option 1.2&lt;/option&gt;
-        &lt;option value="Option 3"&gt;Option 1.3&lt;/option&gt;
-    &lt;/optgroup&gt;
-&lt;/select&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-				<fieldset class="fieldset">
-					<label for="input-n" class="label label-inline">
-						Inline Select
-						<select id="input-n" class="input input-select">
-							<optgroup label="Group 1">
-								<option value="Option 1">Option 1.1</option>
-								<option value="Option 2">Option 1.2</option>
-								<option value="Option 3">Option 1.3</option>
-							</optgroup>
-							<optgroup label="Group 2">
-								<option value="Option 1">Option 2.1</option>
-								<option value="Option 2">Option 2.2</option>
-								<option value="Option 3">Option 2.3</option>
-							</optgroup>
-						</select>
-						<!-- // Select -->
-					</label>
-
-					<label for="input-o" class="label label-inline">
-						Inline Select
-						<select id="input-o" class="input input-select">
-							<optgroup label="Group 1">
-								<option value="Option 1">Option 1.1</option>
-								<option value="Option 2">Option 1.2</option>
-								<option value="Option 3">Option 1.3</option>
-							</optgroup>
-							<optgroup label="Group 2">
-								<option value="Option 1">Option 2.1</option>
-								<option value="Option 2">Option 2.2</option>
-								<option value="Option 3">Option 2.3</option>
-							</optgroup>
-						</select>
-						<!-- // Select -->
-					</label>
-
-					<label for="input-p" class="label label-inline">
-						Inline Select
-						<select id="input-p" class="input input-select">
-							<optgroup label="Group 1">
-								<option value="Option 1">Option 1.1</option>
-								<option value="Option 2">Option 1.2</option>
-								<option value="Option 3">Option 1.3</option>
-							</optgroup>
-							<optgroup label="Group 2">
-								<option value="Option 1">Option 2.1</option>
-								<option value="Option 2">Option 2.2</option>
-								<option value="Option 3">Option 2.3</option>
-							</optgroup>
-						</select>
-						<!-- // Select -->
-					</label>
-				</fieldset>
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label label-inline"&gt;
-    Inline Select
-    &lt;select id="input" class="input input-select"&gt;
-        &lt;optgroup label="Group 1"&gt;
-            &lt;option value="Option 1"&gt;Option 1.1&lt;/option&gt;
-            &lt;option value="Option 2"&gt;Option 1.2&lt;/option&gt;
-            &lt;option value="Option 3"&gt;Option 1.3&lt;/option&gt;
-        &lt;/optgroup&gt;
-    &lt;/select&gt;
-&lt;/label&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <fieldset class="fieldset">
-                    <legend class="legend">Checkboxes</legend>
-                    <!-- // Legend -->
-
-                    <label for="checkbox-1" class="label label-option">
-                        <input type="checkbox" id="checkbox-1" name="checkbox-1" value="Choice 1" /> Choice 1
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <label for="checkbox-2" class="label label-option">
-                        <input type="checkbox" id="checkbox-2" name="checkbox-2" value="Choice 2" /> Choice 2
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <label for="checkbox-3" class="label label-option">
-                        <input type="checkbox" id="checkbox-3" name="checkbox-3" value="Choice 3" /> Choice 3
-                    </label>
-                    <!-- // Checkbox -->
-                </fieldset>
-                <!-- // Checkboxes -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;fieldset class="fieldset"&gt;
-    &lt;legend class="legend"&gt;Checkboxes&lt;/legend&gt;
-
-    &lt;label for="checkbox" class="label label-option"&gt;
-        &lt;input type="checkbox" id="checkbox" name="checkbox" value="Choice 1" /&gt; Choice 1
-    &lt;/label&gt;
-
-    &lt;label for="checkbox" class="label label-option"&gt;
-        &lt;input type="checkbox" id="checkbox" name="checkbox" value="Choice 2" /&gt; Choice 2
-    &lt;/label&gt;
-
-    &lt;label for="checkbox" class="label label-option"&gt;
-        &lt;input type="checkbox" id="checkbox" name="checkbox" value="Choice 3" /&gt; Choice 3
-    &lt;/label&gt;
-&lt;/fieldset&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <fieldset class="fieldset fieldset-border">
-                    <legend class="legend">Inline Checkboxes</legend>
-                    <!-- // Legend -->
-
-                    <label for="checkbox-4" class="label label-option label-inline">
-                        <input type="checkbox" id="checkbox-4" name="checkbox-4" value="Choice 1" /> Choice 1
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <label for="checkbox-5" class="label label-option label-inline">
-                        <input type="checkbox" id="checkbox-5" name="checkbox-5" value="Choice 2" /> Choice 2
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <label for="checkbox-6" class="label label-option label-inline">
-                        <input type="checkbox" id="checkbox-6" name="checkbox-6" value="Choice 3" /> Choice 3
-                    </label>
-                    <!-- // Checkbox -->
-                </fieldset>
-                <!-- // Checkboxes -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;fieldset class="fieldset fieldset-border"&gt;
-    &lt;legend class="legend"&gt;Checkboxes&lt;/legend&gt;
-
-    &lt;label for="checkbox" class="label label-option label-inline"&gt;
-        &lt;input type="checkbox" id="checkbox" name="name" value="Choice 1" /&gt; Choice 1
-    &lt;/label&gt;
-
-    &lt;label for="checkbox" class="label label-option label-inline"&gt;
-        &lt;input type="checkbox" id="checkbox" name="name" value="Choice 2" /&gt; Choice 2
-    &lt;/label&gt;
-
-    &lt;label for="checkbox" class="label label-option label-inline"&gt;
-        &lt;input type="checkbox" id="checkbox" name="name" value="Choice 3" /&gt; Choice 3
-    &lt;/label&gt;
-&lt;/fieldset&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <fieldset class="fieldset">
-                    <legend class="legend">Radio Buttons</legend>
-                    <!-- // Legend -->
-
-                    <label for="radio-1" class="label label-option">
-                        <input type="radio" id="radio-1" name="radio" value="Option 1" checked="checked" /> Option 1
-                    </label>
-                    <!-- // Radio -->
-
-                    <label for="radio-2" class="label label-option">
-                        <input type="radio" id="radio-2" name="radio" value="Option 2" /> Option 2
-                    </label>
-                    <!-- // Radio -->
-
-                    <label for="radio-3" class="label label-option">
-                        <input type="radio" id="radio-3" name="radio" value="Option 3" /> Option 3
-                    </label>
-                    <!-- // Radio -->
-                </fieldset>
-                <!-- // Radio Buttons -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;fieldset class="fieldset"&gt;
-    &lt;legend class="legend"&gt;Radio Buttons&lt;/legend&gt;
-
-    &lt;label for="radio" class="label label-option"&gt;
-        &lt;input type="radio" id="radio" name="radio" value="Option 1" checked="checked" /&gt; Option 1
-    &lt;/label&gt;
-
-    &lt;label for="radio" class="label label-option"&gt;
-        &lt;input type="radio" id="radio" name="radio" value="Option 2" /&gt; Option 2
-    &lt;/label&gt;
-
-    &lt;label for="radio" class="label label-option"&gt;
-        &lt;input type="radio" id="radio" name="radio" value="Option 3" /&gt; Option 3
-    &lt;/label&gt;
-&lt;/fieldset&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <fieldset class="fieldset fieldset-border">
-                    <legend class="legend">Inline Radio Buttons</legend>
-                    <!-- // Legend -->
-
-                    <label for="radio-4" class="label label-option label-inline">
-                        <input type="radio" id="radio-4" name="radio-b" value="Option 1" checked="checked" /> Option 1
-                    </label>
-                    <!-- // Radio -->
-
-                    <label for="radio-5" class="label label-option label-inline">
-                        <input type="radio" id="radio-5" name="radio-b" value="Option 2" /> Option 2
-                    </label>
-                    <!-- // Radio -->
-
-                    <label for="radio-6" class="label label-option label-inline">
-                        <input type="radio" id="radio-6" name="radio-b" value="Option 3" /> Option 3
-                    </label>
-                    <!-- // Radio -->
-                </fieldset>
-                <!-- // Radio Buttons -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;fieldset class="fieldset fieldset-border"&gt;
-    &lt;legend class="legend"&gt;Radio Buttons&lt;/legend&gt;
-
-    &lt;label for="radio" class="label label-option label-inline"&gt;
-        &lt;input type="radio" id="radio" name="radio" value="Option 1" checked="checked" /&gt; Option 1
-    &lt;/label&gt;
-
-    &lt;label for="radio" class="label label-option label-inline"&gt;
-        &lt;input type="radio" id="radio" name="radio" value="Option 2" /&gt; Option 2
-    &lt;/label&gt;
-
-    &lt;label for="radio" class="label label-option label-inline"&gt;
-        &lt;input type="radio" id="radio" name="radio" value="Option 3" /&gt; Option 3
-    &lt;/label&gt;
-&lt;/fieldset&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-e" class="label">URL</label>
-                <input type="url" id="input-e" name="input-e" class="input" placeholder="http://mysite.com" />
-                <!-- // URL -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;URL&lt;/label&gt;
-&lt;input type="url" id="input" name="name" class="input" placeholder="http://mysite.com" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-k" class="label">Telephone</label>
-                <input type="tel" id="input-k" name="input-k" class="input" />
-                <!-- // Telephone -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Telephone&lt;/label&gt;
-&lt;input type="tel" id="input" name="name" class="input" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-f" class="label">Number</label>
-                <input type="number" id="input-f" name="input-f" class="input" value="1" min="1" max="10" step="1" />
-                <!-- // Number -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Number&lt;/label&gt;
-&lt;input type="number" id="input" name="name" class="input" value="1" min="1" max="10" step="1" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-g" class="label">Range</label>
-                <input type="range" id="input-g" name="input-g" class="input" value="0" min="1" max="10" />
-                <!-- // Range -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Range&lt;/label&gt;
-&lt;input type="range" id="input" name="name" class="input" value="0" min="1" max="10" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-j" class="label">Search</label>
-                <input type="search" id="input-j" name="input-j" class="input" placeholder="Enter search term&hellip;" />
-                <!-- // Search -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Search&lt;/label&gt;
-&lt;input type="search" id="input" name="name" class="input" placeholder="Enter search term&hellip;" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-c" class="label">Date</label>
-                <input type="date" id="input-c" name="input-c" class="input" />
-                <!-- // Date -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Date&lt;/label&gt;
-&lt;input type="date" id="input" name="name" class="input" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <label for="input-q" class="label">Color</label>
-                <input type="color" id="input-q" name="input-q" class="input input-color" />
-                <!-- // Color -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Color&lt;/label&gt;
-&lt;input type="color" id="input" name="name" class="input input-color" /&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <span class="label">Progress</span>
-                <progress id="progress" class="progress" value="50" max="100">50 %</progress>
-                <!-- // Progress -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;label for="input" class="label"&gt;Progress&lt;/label&gt;
-&lt;progress id="progress" class="progress" value="50" max="100"&gt;50 %&lt;/progress&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <span class="label">Button</span>
-                <button class="btn">Button</button>
-                <!-- // Button -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;button class="btn"&gt;Button&lt;/button&gt;</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <span class="label">Submit</span>
-                <input type="submit" id="submit" value="Submit" class="btn" />
-                <!-- // Submit -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;input type="submit" id="submit" type="submit" value="Submit" class="btn" /&gt;</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-            </section>
-            <!-- // Input Types -->
-
-            <section class="sg-section">
-                <a id="sg-form-validation" class="sg-section-link"></a>
-                <h5 class="epsilon sg-section-heading-primary">Validation <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
-
-                <h6 class="zeta grey sg-section-heading-secondary">Success <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <div class="validation validation-success">
-                    <label for="input-w" class="label">Text Input</label>
-                    <input type="text" id="input-w" name="input-w" class="input" placeholder="Everything looks good here." />
-                    <!-- // Validation (Success) -->
-                </div>
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="validation validation-success"&gt;
-    &lt;label for="input" class="label validation validation-success"&gt;Text Input&lt;/label&gt;
-    &lt;input type="text" id="input" name="name" class="input validation validation-success" placeholder="" /&gt;
-&lt;/div&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <h6 class="zeta grey sg-section-heading-secondary">Warning <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <div class="validation validation-warning">
-                    <label for="input-x" class="label">Text Input</label>
-                    <input type="text" id="input-x" name="input-x" class="input" placeholder="Are you sure you want to enter this?" />
-                    <!-- // Validation (Warning) -->
-                </div>
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="validation validation-warning"&gt;
-    &lt;label for="input" class="label validation validation-warning"&gt;Text Input&lt;/label&gt;
-    &lt;input type="text" id="input" name="name" class="input validation validation-warning" placeholder="" /&gt;
-&lt;/div&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <h6 class="zeta grey sg-section-heading-secondary">Error <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <div class="validation validation-error">
-                    <label for="input-y" class="label">Text Input</label>
-                    <input type="text" id="input-y" name="input-y" class="input" placeholder="This isn&rsquo;t right. You need to fix it!" />
-                    <!-- // Validation (Error) -->
-                </div>
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;div class="validation validation-error"&gt;
-    &lt;label for="input" class="label validation validation-error"&gt;Text Input&lt;/label&gt;
-    &lt;input type="text" id="input" name="name" class="input validation validation-error" placeholder="" /&gt;
-&lt;/div&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-            </section>
-            <!-- // Validation -->
-
-            <section class="sg-section">
-                <h5 class="epsilon sg-section-heading-primary">Forms <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h5>
-
-                <a id="sg-form-layout-default" class="sg-section-link"></a>
-                <h6 class="zeta grey-light sg-section-heading-secondary">Default Layout <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <form action="forms.html#sg-form-layout-default" method="post" class="form" role="form">
-                    <label for="input-a1" class="label">Email Address</label>
-                    <input type="email" id="input-a1" name="input-a1" class="input" placeholder="example@domain.com" />
-                    <!-- // Email Address -->
-
-                    <label for="input-a2" class="label">Password</label>
-                    <input type="password" id="input-a2" name="input-a2" class="input" />
-                    <!-- // Password -->
-
-                    <label for="input-a3" class="label label-option">
-                        <input type="checkbox" id="input-a3" name="input-a3" value="Choice 1" /> Remember me
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <input type="submit" id="submit-1" name="submit-1" class="btn" value="Log In" />
-                    <!-- // Submit -->
-                </form>
-                <!-- // Default Form -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;form action="forms.html" method="post" class="form"&gt;
-    &lt;label for="input-1" class="label"&gt;Email Address&lt;/label&gt;
-    &lt;input type="email" id="input" name="name" class="input" placeholder="example@domain.com" /&gt;
-
-    &lt;label for="input-2" class="label"&gt;Password&lt;/label&gt;
-    &lt;input type="password" id="input" name="name" class="input" /&gt;
-
-    &lt;label for="input-3" class="label label-option"&gt;
-        &lt;input type="checkbox" id="input" name="name" value="Choice 1" /&gt; Remember me
-    &lt;/label&gt;
-
-    &lt;input type="submit" id="submit" name="submit" class="btn" value="Log In" /&gt;
-&lt;/form&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <a id="sg-form-layout-inline" class="sg-section-link"></a>
-                <h6 class="zeta grey-light sg-section-heading-secondary">Inline Layout <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <form action="forms.html#sg-form-layout-inline" method="post" class="form form-inline" role="form">
-                    <label for="input-b1" class="label visuallyhidden">Email Address</label>
-                    <input type="email" id="input-b1" name="input-b1" class="input" placeholder="Email Address" />
-                    <!-- // Email Address -->
-
-                    <label for="input-b2" class="label visuallyhidden">Password</label>
-                    <input type="password" id="input-b2" name="input-b2" class="input" placeholder="Password" />
-                    <!-- // Password -->
-
-                    <label for="input-b3" class="label label-option">
-                        <input type="checkbox" id="input-b3" name="input-b3" value="Choice 1" /> Remember me
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <input type="submit" id="submit-2" name="submit-2" class="btn" value="Log In" />
-                    <!-- // Submit -->
-                </form>
-                <!-- // Inline Form -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;form action="forms.html" method="post" class="form form-inline"&gt;
-	&lt;label for="input-1" class="label visuallyhidden"&gt;Email Address&lt;/label&gt;
-	&lt;input type="email" id="input-1" class="input" placeholder="example@domain.com" /&gt;
-
-	&lt;label for="input-2" class="label visuallyhidden"&gt;Password&lt;/label&gt;
-	&lt;input type="password" id="input-2" class="input" /&gt;
-
-	&lt;label for="input-3" class="label label-option"&gt;
-	&lt;input type="checkbox" id="input-3" value="Choice 1" /&gt; Remember me
-	&lt;/label&gt;
-
-	&lt;input type="submit" class="btn" value="Log In" /&gt;
-&lt;/form&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <a id="sg-form-layout-horizontal" class="sg-section-link"></a>
-                <h6 class="zeta grey-light sg-section-heading-secondary">Horizontal Layout <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <form action="forms.html#sg-form-layout-horizontal" method="post" class="form form-horizontal" role="form">
-                    <label for="input-c1" class="label">Email Address</label>
-                    <input type="email" id="input-c1" name="input-c1" class="input" placeholder="example@domain.com" />
-                    <!-- // Email Address -->
-
-                    <label for="input-c2" class="label">Password</label>
-                    <input type="password" id="input-c2" name="input-c2" class="input" />
-                    <!-- // Password -->
-
-                    <label for="input-c3" class="label">Country</label>
-                    <select id="input-c3" name="input-c3" class="input input-select">
-                        <option value="Australia">Australia</option>
-                        <option value="South Africa">South Africa</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="United States of America">United States of America</option>
-                    </select>
-                    <!-- // Select -->
-
-                    <label for="input-c4" class="label label-option">
-                        <input type="checkbox" id="input-c4" name="input-c4" value="Choice 1" /> Remember me
-                    </label>
-                    <!-- // Checkbox -->
-
-                    <input type="submit" id="submit-3" name="submit-3" class="btn" value="Log In" />
-                    <!-- // Submit -->
-                </form>
-                <!-- // Horizontal Form -->
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;form action="forms.html" method="post" class="form form-horizontal"&gt;
-	&lt;label for="input-1" class="label"&gt;Email Address&lt;/label&gt;
-	&lt;input type="email" id="input-1" class="input" placeholder="example@domain.com" /&gt;
-
-	&lt;label for="input-2" class="label"&gt;Password&lt;/label&gt;
-	&lt;input type="password" id="input-2" class="input" /&gt;
-
-	&lt;label for="input-3" class="label"&gt;Country&lt;/label&gt;
-	&lt;select id="input-3" class="input input-select"&gt;
-		&lt;option value="Australia"&gt;Australia&lt;/option&gt;
-		&lt;option value="South Africa"&gt;South Africa&lt;/option&gt;
-		&lt;option value="United Kingdom"&gt;United Kingdom&lt;/option&gt;
-		&lt;option value="United States of America"&gt;United States of America&lt;/option&gt;
-	&lt;/select&gt;
-
-	&lt;label for="input-4" class="label label-option"&gt;
-		&lt;input type="checkbox" id="input-4" value="Choice 1" /&gt; Remember me
-	&lt;/label&gt;
-
-	&lt;input type="submit" class="btn" value="Log In" /&gt;
-&lt;/form&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-
-                <a id="sg-form-layout-search" class="sg-section-link"></a>
-                <h6 class="zeta grey-light sg-section-heading-secondary">Search Layout <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-
-                <form action="forms.html#sg-form-layout-search" method="post" class="form form-search" role="search">
-                    <label for="search" class="label visuallyhidden">Search</label>
-                    <input type="search" id="search" name="search" class="input" placeholder="Search&hellip;" />
-                    <button class="btn btn-icon" aria-label="Search"><span aria-hidden="true" class="icon fa fa-search"></span></button>
-                </form>
-                <!-- // Search Form -->
-                <br/>
-
-                <div class="sg-source-code">
-                    <a href="#" class="sg-btn" data-action="sg-toggle-source-code" role="button">View Source</a>
-                    <div class="sg-source-code-wrapper" data-container="sg-source-code">
-<code class="prettyprint linenums">&lt;form action="forms.html" method="post" class="form form-search"&gt;
-    &lt;label for="search" class="label visuallyhidden"&gt;Search&lt;/label&gt;
-    &lt;input type="search" id="search" name="search" class="input" placeholder="Search&hellip;" /&gt;
-    &lt;button class="btn btn-icon" aria-label="Search"&gt;&lt;span aria-hidden="true" class="icon fa fa-search"&gt;&lt;/span&gt;&lt;/button&gt;
-&lt;/form&gt;
-</code>
-                    </div>
-                </div>
-                <!-- // Source Code -->
-            </section>
-            <!-- // Forms -->
-
-            <a id="sg-table-of-contents" class="sg-section-link js-hidden"></a>
-            <section class="sg-section js-hidden">
-                <h6 class="zeta sg-section-heading-primary">Table of Contents <a href="#top" data-action="sg-back-to-top">Back to Top <span aria-hidden="true" class="icon fa fa-arrow-up"></span></a></h6>
-                <ul class="sg-list sg-list-table-of-contents">
-                    <li><a href="#sg-form-input-types">Input Types</a></li>
-                    <li><a href="#sg-form-validation">Validation</a></li>
-                    <li><a href="#sg-form-layout-default">Default Layout</a></li>
-                    <li><a href="#sg-form-layout-inline">Inline Layout</a></li>
-                    <li><a href="#sg-form-layout-horizontal">Horizontal Layout</a></li>
-                    <li><a href="#sg-form-layout-search">Search Layout</a></li>
-                </ul>
-            </section>
-            <!-- // Table of Contents -->
-        </div>
+        <section id="sg-default" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form &ndash; Default</h1>
+            </header>
+
+            <form id="form-default" action="forms.html" method="post" class="form">
+                <label for="email" class="label">
+                    Email Address
+                    <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
+                </label>
+
+                <label for="password" class="label">
+                    Password
+                    <input class="input" type="password" id="password" name="password-1" placeholder="Password" maxlength="100" />
+                </label>
+
+                <label for="remember" class="label">
+                    <input class="input" type="checkbox" id="remember" name="remember" value="1" /> Remember me?
+                </label>
+
+                <input class="btn" type="submit" value="Sign In" />
+            </form>
+        </section>
+
+        <section id="sg-inline" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form &ndash; Inline</h1>
+            </header>
+
+            <form id="form-inline" action="forms.html" method="post" class="form form--inline">
+                <label for="email-2" class="label visuallyhidden">Email Address</label>
+                <input class="input" type="email" id="email-2" name="email-2" placeholder="Email Address" maxlength="100" />
+
+                <label for="password-2" class="label visuallyhidden">Password</label>
+                <input class="input" type="password" id="password-2" name="password-2" placeholder="Password" maxlength="100" />
+
+                <label for="remember-2" class="label label--checkbox">
+                    <input class="input" type="checkbox" id="remember-2" name="remember-2" value="1" /> Remember me?
+                </label>
+
+                <input class="btn" type="submit" value="Sign In" />
+            </form>
+        </section>
+
+        <section id="sg-search" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Form &ndash; Search</h1>
+            </header>
+
+            <form id="form-search" action="forms.html" method="post" class="form form--search">
+                <label for="search" class="visuallyhidden">Search</label>
+                <input class="input" type="text" id="search" name="search" placeholder="Search&hellip;" maxlength="20" />
+                <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+            </form>
+        </section>
     </main>
-    <!-- // Main -->
+
+    <aside class="sg-aside" data-action="sticky">
+        <header class="sg-header sg-header--section">
+            <h3 class="epsilon hN"><a href="index.html"><span class="icon fa fa-reply" aria-hidden="true"></span></a>Table of Contents</h3>
+        </header>
+
+        <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-desktop" aria-hidden="true"></span>View as Patchwork</button>
+
+        <nav class="sg-nav sg-nav--secondary">
+            <ol class="sg-list">
+                <li><a href="forms.html#sg-default">Form &ndash; Default</a></li>
+                <li><a href="forms.html#sg-inline">Form &ndash; Inline</a></li>
+                <li><a href="forms.html#sg-search">Form &ndash; Search</a></li>
+            </ol>
+        </nav>
+    </aside>
+
+    <button class="sg-btn sg-btn--top" data-action="back-to-top" title="Back to Top"><span class="icon fa fa-arrow-circle-up" aria-hidden="true"></span></button>
 
     <footer class="sg-footer" role="contentinfo">
-        <div class="sg-wrapper">
-            <p>
-                <small><b>Last Modified</b>: <time datetime="2014-04-20" data-component="last-modified">May 20, 2014</time></small>
-            </p>
-            <p>
-                <small><b>Version</b>: 1.0.0</small>
-            </p>
-        </div>
+        <ol class="sg-list">
+            <li><b>Version</b>: 0.0.0</li>
+            <li><b>Last Modified</b>: <span data-last-modified="true">28 July, 2014</span></li>
+        </ol>
     </footer>
-    <!-- // Footer -->
 
     <!-- JavaScript -->
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=1.0.0"></script>
-    <script src="assets/js/main.js?v=1.0.0"></script>
-    <script src="assets/js/style-guide/prettify.js?v=1.0.0"></script>
-    <script src="assets/js/style-guide/main.js?v=1.0.0"></script>
-    <script>main.init();</script>
-    <script>style_guide.init();</script>
+    <script src="assets/js/plugins.js?v=0.0.0"></script>
+    <script src="assets/js/main.js?v=0.0.0"></script>
+    <script src="assets/js/styleguide.js?v=0.0.0"></script>
+    <script>UTIL.init();</script>
+    <script>STYLEGUIDE_UTIL.init();</script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -898,7 +164,7 @@
         e=o.createElement(i);r=o.getElementsByTagName(i)[0];
         e.src='//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
 </body>
 </html>

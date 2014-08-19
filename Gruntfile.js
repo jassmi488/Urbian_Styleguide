@@ -8,7 +8,7 @@ module.exports = function (grunt)
                     hostname: '*',
                     livereload: true,
                     open: {
-                        target: 'http:127.0.0.1:1337'
+                        target: 'http://127.0.0.1:1337'
                     },
                     port: 1337,
                     useAvailablePort: true
@@ -17,23 +17,12 @@ module.exports = function (grunt)
         },
         csslint: {
             strict: {
-                src: ['assets/css/main.css'],
+                src: [
+                    'assets/css/style.css',
+                    'assets/css/styleguide.css'
+                ],
                 options: {
                     import: 2
-                }
-            }
-        },
-        jshint: {
-            files: ['assets/js/main.js']
-        },
-        less: {
-            build: {
-                files: {
-                    'assets/css/main.css': 'assets/less/main.less',
-                    'assets/css/style-guide/main.css': 'assets/less/style-guide/main.less'
-                },
-                options: {
-                    cleancss: true
                 }
             }
         },
@@ -45,7 +34,7 @@ module.exports = function (grunt)
                     authKey: 'joepublicn'
                 },
                 src: './',
-                dest: 'public_html/style-guide',
+                dest: 'public_html/styleguide/v2',
                 exclusions: [
                     '.editorconfig',
                     '.ftppass',
@@ -65,9 +54,26 @@ module.exports = function (grunt)
                 ]
             }
         },
+        jshint: {
+            files: ['assets/js/main.js']
+        },
+        less: {
+            build: {
+                files: {
+                    'assets/css/style.css': 'assets/less/style.less',
+                    'assets/css/styleguide.css': 'assets/less/styleguide.less'
+                },
+                options: {
+                    cleancss: true
+                }
+            }
+        },
         validation: {
             files: {
-                src: ['*.html', 'templates/**/*.html']
+                src: [
+                    'templates/**/*.html',
+                    '*.html'
+                ]
             }
         },
         watch: {
@@ -75,6 +81,7 @@ module.exports = function (grunt)
                 files: [
                     'assets/js/**',
                     'assets/less/**',
+                    'templates/**',
                     '*.html'
                 ],
                 tasks: ['less'],
@@ -85,13 +92,6 @@ module.exports = function (grunt)
         }
     });
 
-    var defaultTasks = [
-        'csslint',
-        'jshint',
-        'less',
-        'validation'
-    ];
-
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -99,6 +99,6 @@ module.exports = function (grunt)
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-deploy');
     grunt.loadNpmTasks('grunt-html-validation');
-    grunt.registerTask('default', defaultTasks);
+
     grunt.registerTask('serve', ['less', 'connect', 'watch']);
 };

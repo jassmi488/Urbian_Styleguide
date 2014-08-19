@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="sg-html">
+<head>
+    <meta charset="utf-8" />
+    <title>Templates &ndash; Style Guide</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=0.0.0" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css?v=0.0.0" />
+
+    <!-- Google+: change XXXXXXXXXX to be your profile's ID -->
+    <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
+
+    <!--[if lt IE 9]>
+    <script src="../assets/js/vendor/polyfills.js"></script>
+    <![endif]-->
+</head>
+<body data-controller="site">
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="sg-header sg-header--primary" role="banner">
+        <a href="../index.html" title="Name of Project" class="logo"><img src="http://placehold.it/100x58" width="100" height="58" alt="Name of Project Logo" /></a>
+        <nav class="sg-nav sg-nav--primary" role="navigation">
+            <ol class="sg-list">
+                <li><a href="../elements.html">Elements</a></li>
+                <li><a href="../patterns.html">Patterns</a></li>
+                <li><a href="../forms.html">Forms</a></li>
+                <li><a href="../grid.html">Grid</a></li>
+                <li class="is-active"><a href="../templates">Templates</a></li>
+            </ol>
+        </nav>
+        <button class="sg-btn sg-btn--nav" data-toggle="nav"><span class="icon fa fa-bars" aria-hidden="true"></span>Menu</button>
+    </header>
+
+    <main class="sg-main sg-main--full" role="main">
+        <section class="sg-section sg-section--intro">
+            <header class="sg-header sg-header--section">
+                <h3 class="epsilon hN"><a href="../index.html"><span class="icon fa fa-reply" aria-hidden="true"></span></a>Table of Contents</h3>
+            </header>
+
+            <ol class="sg-list sg-list--templates">
+                <li><a href="#">Default</a></li>
+                <li>
+                    Errors
+                    <ol class="sg-list">
+                        <li><a href="../404.html">404</a></li>
+                        <li><a href="../500.html">500</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="sg-footer sg-footer--full" role="contentinfo">
+        <ol class="sg-list">
+            <li><b>Version</b>: 0.0.0</li>
+            <li><b>Last Modified</b>: <span data-last-modified="true">28 July, 2014</span></li>
+        </ol>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/plugins.js?v=0.0.0"></script>
+    <script src="../assets/js/main.js?v=0.0.0"></script>
+    <script src="../assets/js/styleguide.js?v=0.0.0"></script>
+    <script>UTIL.init();</script>
+    <script>STYLEGUIDE_UTIL.init();</script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>

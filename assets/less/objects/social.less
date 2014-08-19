@@ -1,0 +1,32 @@
+/* -------------------------------------------------------------------------- *\
+   $SOCIAL
+\* -------------------------------------------------------------------------- */
+
+.social {
+    margin-bottom: 1em;
+
+    .list {
+        margin-bottom: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 0.75em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    a {
+        color: @color-gray;
+        font-size: 1.875em; /* 30 / 16 */
+        text-decoration: none;
+        .transition(color 0.25s);
+
+        &:focus,
+        &:hover {
+            color: @color-black;
+        }
+    }
+}

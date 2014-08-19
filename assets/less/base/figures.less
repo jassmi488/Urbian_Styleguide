@@ -1,0 +1,35 @@
+/* -------------------------------------------------------------------------- *\
+   $FIGURE
+\* -------------------------------------------------------------------------- */
+
+/**
+ * The <figure> element is intended to be used in conjunction with the
+ * <figcaption> element to mark up diagrams, illustrations, photos, as per:
+ * http://html5doctor.com/the-figure-figcaption-elements
+ *
+ * E.g.:
+ *
+   <figure class="figure">
+       <img class="figure__img" src="" alt="" />
+       <figcaption class="figure__caption"></figcaption>
+   </figure>
+ *
+ */
+
+figure,
+.figure {
+    margin: 0;
+
+    img,
+    .figure__img {
+        height: auto;
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+
+    figcaption,
+    .figure__caption {
+        color: @color-gray;
+        font-size: 1.125em; /* 18 / 16 */
+    }
+}

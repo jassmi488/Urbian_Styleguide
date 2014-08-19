@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="sg-html">
+<head>
+    <meta charset="utf-8" />
+    <title>Patterns &ndash; Style Guide</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="assets/css/style.css?v=0.0.0" />
+    <link rel="stylesheet" href="assets/css/styleguide.css?v=0.0.0" />
+
+    <!-- Google+: change XXXXXXXXXX to be your profile's ID -->
+    <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
+
+    <!--[if lt IE 9]>
+    <script src="assets/js/vendor/polyfills.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 9]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="sg-header sg-header--primary" role="banner">
+        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/100x58" width="100" height="58" alt="Name of Project Logo" /></a>
+        <nav class="sg-nav sg-nav--primary" role="navigation">
+            <ol class="sg-list">
+                <li><a href="elements.html">Elements</a></li>
+                <li class="is-active"><a href="patterns.html">Patterns</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="templates">Templates</a></li>
+            </ol>
+        </nav>
+        <button class="sg-btn sg-btn--nav" data-toggle="nav"><span class="icon fa fa-bars" aria-hidden="true"></span>Menu</button>
+    </header>
+
+    <main class="sg-main" role="main">
+        <div id="sg-patchwork" class="sg-section sg-section--well is-hidden">
+            <p class="sg-paragraph sg-paragraph--intro">
+                <span class="icon sg-icon fa fa-info-circle" aria-hidden="true"></span>This is the patchwork view which doesn't include the markup preview and usage examples. This view is particularly useful for device testing because it shows elements at full-width, presented on the page as they would appear on the site.
+            </p>
+            <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-reply" aria-hidden="true"></span>Style Guide</button>
+        </div>
+
+        <section id="sg-navigation-primary" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Navigation &ndash; Primary</h1>
+            </header>
+
+            <nav class="nav nav--primary" role="navigation">
+                <ol class="list">
+                    <li><a href="patterns.html#sg-navigation-primary">Home</a></li>
+                    <li><a href="patterns.html#sg-navigation-primary">Services</a></li>
+                    <li><a href="patterns.html#sg-navigation-primary">Work</a></li>
+                    <li><a href="patterns.html#sg-navigation-primary">News</a></li>
+                    <li><a href="patterns.html#sg-navigation-primary">Contact</a></li>
+                </ol>
+            </nav>
+        </section>
+
+        <section id="sg-accordion" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Accordion</h1>
+            </header>
+
+            <div class="accordion" data-component="accordion" role="tablist">
+                <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
+                    <div id="accordion-tab-1" class="accordion-item__title" aria-controls="accordion-panel-1" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a></div>
+                    <div id="accordion-panel-1" class="accordion-item__contents" aria-labelledby="accordion-tab-1" role="tabpanel">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
+                    <div id="accordion-tab-2" class="accordion-item__title" aria-controls="accordion-panel-2" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a></div>
+                    <div id="accordion-panel-2" class="accordion-item__contents" aria-labelledby="accordion-tab-2" role="tabpanel">
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
+                    <div id="accordion-tab-3" class="accordion-item__title" aria-controls="accordion-panel-3" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 3<span class="icon fa fa-caret-down" aria-hidden="true"></span></a></div>
+                    <div id="accordion-panel-3" class="accordion-item__contents" aria-labelledby="accordion-tab-3" role="tabpanel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sg-alerts" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Alerts</h1>
+            </header>
+
+            <div class="alert alert--success" role="alert">
+                <div class="alert__title">Success</div>
+                <p class="alert__message"><b>Well done!</b> You successfully read <a class="alert__link" href="patterns.html#sg-alerts">this important alert message</a>.</p>
+            </div>
+
+            <div class="alert alert--info" role="alert">
+                <div class="alert__title">Information</div>
+                <p class="alert__message"><b>Heads up!</b> This <a class="alert__link" href="patterns.html#sg-alerts">alert needs your attention</a>, but it&rsquo;s not super important.</p>
+            </div>
+
+            <div class="alert alert--warning" role="alert">
+                <div class="alert__title">Warning!</div>
+                <p class="alert__message">Better check yourself, you&rsquo;re <a class="alert__link" href="patterns.html#sg-alerts">alert needs your attention</a>, but it&rsquo;s not super important.</p>
+            </div>
+
+            <div class="alert alert--error" role="alert">
+                <div class="alert__title">Error</div>
+                <p class="alert__message"><b>Oh snap!</b> <a class="alert__link" href="patterns.html#sg-alerts">Change a few things up</a> and try submitting again.</p>
+            </div>
+        </section>
+
+        <section id="sg-breadcrumbs" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Breadcrumbs</h1>
+            </header>
+
+            <div class="breadcrumbs">
+                <ol class="list">
+                    <li><a href="patterns.html#sg-breadcrumbs">Services</a></li>
+                    <li><a href="patterns.html#sg-breadcrumbs">Strategy</a></li>
+                    <li><a href="patterns.html#sg-breadcrumbs">Design/UX</a></li>
+                    <li class="is-current">Technology</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="sg-pagination" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Pagination</h1>
+            </header>
+
+            <div class="pagination">
+                <ol class="list">
+                    <li><a href="patterns.html#sg-pagination">1</a></li>
+                    <li class="is-current"><a href="patterns.html#sg-pagination">2</a></li>
+                    <li><a href="patterns.html#sg-pagination">3</a></li>
+                    <li><a href="patterns.html#sg-pagination">4</a></li>
+                    <li><a href="patterns.html#sg-pagination">5</a></li>
+                    <li><a href="patterns.html#sg-pagination">6</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="sg-social" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Social</h1>
+            </header>
+
+            <div class="social">
+                <ol class="list">
+                    <li><a href="patterns.html#sg-social" title="Follow us on Facebook"><span class="icon fa fa-facebook-square" aria-hidden="true"></span></a></li>
+                    <li><a href="patterns.html#sg-social" title="Follow us on Google+"><span class="icon fa fa-google-plus-square" aria-hidden="true"></span></a></li>
+                    <li><a href="patterns.html#sg-social" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="sg-tabs" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Tabs</h1>
+            </header>
+
+            <div class="tabs" data-component="tabs">
+                <ol class="tab-list" role="tablist">
+                    <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="tab-list__tab is-selected"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a></li>
+                    <li id="tab-2" aria-controls="panel-2" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 2</a></li>
+                    <li id="tab-3" aria-controls="panel-3" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 3</a></li>
+                </ol>
+                <div id="panel-1" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+                <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div id="panel-3" class="tab-panel" role="tabpanel" aria-labelledby="tab-3" aria-hidden="true">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sg-aside" data-action="sticky">
+        <header class="sg-header sg-header--section">
+            <h3 class="epsilon hN"><a href="index.html"><span class="icon fa fa-reply" aria-hidden="true"></span></a>Table of Contents</h3>
+        </header>
+
+        <button class="sg-btn sg-btn--toggle" data-toggle="styleguide"><span class="icon fa fa-desktop" aria-hidden="true"></span>View as Patchwork</button>
+
+        <nav class="sg-nav sg-nav--secondary">
+            <ol class="sg-list">
+                <li><a href="patterns.html#sg-navigation-primary">Navigation &ndash; Primary</a></li>
+                <li><a href="patterns.html#sg-accordion">Accordion</a></li>
+                <li><a href="patterns.html#sg-alerts">Alerts</a></li>
+                <li><a href="patterns.html#sg-breadcrumbs">Breadcrumbs</a></li>
+                <li><a href="patterns.html#sg-pagination">Pagination</a></li>
+                <li><a href="patterns.html#sg-social">Social</a></li>
+                <li><a href="patterns.html#sg-tabs">Tabs</a></li>
+            </ol>
+        </nav>
+    </aside>
+
+    <button class="sg-btn sg-btn--top" data-action="back-to-top" title="Back to Top"><span class="icon fa fa-arrow-circle-up" aria-hidden="true"></span></button>
+
+    <footer class="sg-footer" role="contentinfo">
+        <ol class="sg-list">
+            <li><b>Version</b>: 0.0.0</li>
+            <li><b>Last Modified</b>: <span data-last-modified="true">28 July, 2014</span></li>
+        </ol>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/plugins.js?v=0.0.0"></script>
+    <script src="assets/js/main.js?v=0.0.0"></script>
+    <script src="assets/js/styleguide.js?v=0.0.0"></script>
+    <script>UTIL.init();</script>
+    <script>STYLEGUIDE_UTIL.init();</script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
+</html>

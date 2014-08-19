@@ -1,8 +1,11 @@
 [![Connect Joe Public](http://connectjoepublic.com/github.png)](http://connectjoepublic.com)
 
-## [Style Guide](http://joepublicn.com/styleguide/v1)
+## [Style Guide](http://joepublicn.com/styleguide/v2)
 
-The style guide is a system of [elements](http://joepublicn.com/styleguide/v1/elements.html), [modules](http://joepublicn.com/styleguide/v1/modules.html) and [components](http://joepublicn.com/styleguide/v1/components.html) which are used to create the unique templates and individual pages for this website. It includes form [input types](http://joepublicn.com/styleguide/v1/forms.html#sg-form-input-types) along with common layout [patterns](http://joepublicn.com/styleguide/v1/forms.html#sg-form-layout-default). There is also a basic [grid](http://joepublicn.com/styleguide/v1/grid.html) system.
+Shortened URL for device testing: [http://goo.gl/4NQ5zr](http://goo.gl/4NQ5zr)
+
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
+[![NPM Dependencies](https://david-dm.org/connectjoepublic/styleguide.png)](https://david-dm.org)
 
 ### Requirements
 
@@ -13,41 +16,59 @@ Ensure that the following are installed on your computer:
 
 ### Getting Started
 
-1. Clone the repository: `git clone git@github.com:joepublicn/styleguide.git`
+1. Clone the repository: `git clone git@github.com:connectjoepublic/styleguide.git`
 2. Change to the directory you cloned the repository into: e.g. `cd styleguide`
 3. Run the node install command which downloads the required Grunt plugins: `npm install`
 4. Start the local server and watch task: `grunt serve`
 
-### Standards
+### LESS Structure
 
-* [HTML5](http://www.w3.org/TR/html5)
-* [CSS3](http://www.w3.org/TR/CSS/#css3)
+```
+less/
+     base/
+        base.less
+        grid.less
+        headings.less
+        helpers.less
+        hr.less
+        links.less
+        print.less
+     generic/
+        mixins.less
+        normalize.less
+        reset.less
+        variables.less
+     objects/
+        media.less
+     style.less
+```
+
+### Features
+
+- **Breakpoints, Colors, Fonts**
+    - `less/generic/variables.less`
+- **Helpers**
+    - `less/base/helpers.less`
+- **Mixins**
+    - `less/generic/mixins.less`
 
 ### Components
 
-* [Font Awesome](http://fortawesome.github.io/Font-Awesome) v4.1.0
-* [jQuery](http://jquery.com) v1.11.0
-* [LESS](http://lesscss.org) v1.7.0
-* [Normalize.css](http://necolas.github.io/normalize.css) v3.0.1
+- [Font Awesome](http://fontawesome.io)
+- [jQuery](http://jquery.com)
+- [Normalize.css](http://necolas.github.io/normalize.css)
 
 ### Polyfills
 
-These are only applicable to Internet Explorer 8 and below.
-
-* [HTML5 Shiv](https://github.com/aFarkas/html5shiv) v3.7.0
-* [matchMedia()](https://github.com/scottjehl/Respond)
-* [Respond.js](https://github.com/scottjehl/Respond) v1.4.2
-
-### Plugins (optional)
-
-* [jQuery Modal](https://github.com/kylefox/jquery-modal) v0.5.5
-* [Bootstrap Tooltip](http://getbootstrap.com) v3.1.1
-* [FlexSlider](https://github.com/woothemes/flexslider) v2.2.2
-* [Placeholder](https://github.com/mathiasbynens/jquery-placeholder) v2.0.7
+The following scripts are included for **IE8** and below:
+- [html5shiv](https://github.com/aFarkas/html5shiv)
+- [matchMedia.js](https://github.com/paulirish/matchMedia.js)
+- [Respond.js](https://github.com/scottjehl/Respond)
 
 ### Inspiration
 
 * [Barebones](http://barebones.paulrobertlloyd.com) by [Paul Robert Lloyd](http://paulrobertlloyd.com)
-* [Front-end Style Guides](http://24ways.org/2011/front-end-style-guides) by [Anna Debenham](http://maban.co.uk)
+* [HTML5 Boilerplate](http://html5boilerplate.com) by [H5BP](https://twitter.com/h5bp)
 * [Pattern Lab](http://pattern-lab.info) by [Brad Frost](http://bradfrostweb.com) and [Dave Olsen](http://dmolsen.com)
+* [Pattern Libraries](http://alistapart.com/blog/post/getting-started-with-pattern-libraries) by [Anna Debenham](http://maban.co.uk)
 * [Style Guide Boilerplate](http://bjankord.github.io/Style-Guide-Boilerplate) by [Brett Jankord](http://www.brettjankord.com)

@@ -1,0 +1,120 @@
+/* -------------------------------------------------------------------------- *\
+   $TABLES
+\* -------------------------------------------------------------------------- */
+
+table,
+.table {
+    width: 100%;
+
+    caption,
+    .table__caption {
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    th {
+        padding: 0.5em 1em;
+        text-align: left;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    td {
+        padding: 0.5em 1em;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+
+    tfoot {
+        font-style: italic;
+        text-align: left;
+    }
+
+
+
+    a {
+        color: @color-gray-dark;
+
+        &:focus,
+        &:hover {
+            color: @color-black;
+        }
+    }
+
+    /**
+     * Bordered
+     */
+
+    &.table--bordered {
+        border: 1px solid @color-silver;
+        border-radius: 1px;
+
+        th {
+            border-right: 1px solid @color-silver;
+            border-bottom: 1px solid @color-silver;
+
+            &:first-child {
+                padding-left: 1em;
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+
+        td {
+            border-right: 1px solid @color-silver;
+            border-bottom: 1px solid @color-silver;
+            padding-left: 1em;
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+
+        tfoot {
+
+            td {
+
+                &:first-child {
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+
+    /**
+     * Striped
+     */
+
+    &.table--striped {
+
+        th {
+
+            &:first-child {
+                padding-left: 1em;
+            }
+        }
+
+        tbody {
+
+            tr {
+
+                &:nth-child(odd) {
+                    background-color: @color-white-dark;
+                }
+
+                td {
+                    
+                    &:first-child {
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

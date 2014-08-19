@@ -1,0 +1,978 @@
+/* -------------------------------------------------------------------------- *\
+   $TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * IMPORTS
+ * ELEMENTS
+ * .....Buttons
+ * .....Code
+ * .....Headings
+ * .....Icons
+ * .....Lists
+ * .....Paragraph
+ * CONTAINERS
+ * .....Body
+ * .....Headers
+ * .....Navigation
+ * .....Main
+ * .....Section
+ * .....Aside
+ * .....Footer
+ * .....Example
+ * GRID
+ */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $IMPORTS
+\* -------------------------------------------------------------------------- */
+
+@import "generic/mixins";
+@import "generic/variables";
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $ELEMENTS
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $Buttons
+   ========================================================================== */
+
+.sg-btn {
+    background-color: @color-white;
+    border: 1px solid @color-silver;
+    border-radius: 1px;
+    color: @color-gray-dark;
+    display: inline-block;
+    font-family: @font-secondary;
+    font-weight: bold;
+    line-height: normal;
+    padding: 0.5em 0.75em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    .transition(background-color 0.25s, border-color 0.25s, color 0.25s, top 0.25s;);
+    width: 100%;
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    &:focus,
+    &:hover {
+        background-color: @color-black;
+        border-color: @color-black;
+        color: @color-white;
+        outline: none;
+    }
+
+    &.sg-btn--nav {
+        background-color: @color-white-dark;
+        border-color: @color-black;
+        color: @color-black;
+        font-size: 1.125em; /* 18 / 16 */
+        padding: 0.125em 0.5em;
+        width: auto;
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: @color-black;
+            color: @color-white;
+        }
+    }
+
+    &.sg-btn--toggle {
+        border-color: transparent;
+        color: @color-black;
+        font-size: 0.875em; /* 14 / 16 */
+        text-align: left;
+        width: auto;
+
+        &:active {
+            top: 0;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: @color-black;
+            border-color: @color-black;
+            color: @color-white;
+        }
+    }
+
+    &.sg-btn--top {
+        background-color: transparent;
+        border-color: transparent;
+        bottom: 1.75em;
+        color: @color-gray;
+        display: none;
+        padding: 0.125em 0.5em;
+        position: fixed;
+        right: 1.5em;
+        .transition(background-color 0.25s, border-color 0.25s, color 0.25s, top 0.25s;);
+        width: auto;
+
+        &:active {
+            position: fixed;
+            top: inherit;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: transparent;
+            border-color: transparent;
+            color: @color-black;
+            opacity: 1;
+        }
+
+        .icon {
+            font-size: 2em; /* 32 / 16 */
+            margin-right: 0;
+        }
+    }
+
+    .icon {
+        margin-right: 0.5em;
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .sg-btn {
+        width: auto;
+
+        &.sg-btn--nav {
+            display: none;
+        }
+
+        &.sg-btn--top {
+            bottom: 2em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Code
+   ========================================================================== */
+
+.sg-code {
+    background-color: @color-white-dark;
+    display: inline-block;
+    font-size: 0.875em; /* 14 / 16 */
+    margin-bottom: 1em;
+    padding: 0.25em 0.5em;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Headings
+   ========================================================================== */
+
+.sg-heading {
+    color: @color-gray;
+    font-family: @font-secondary;
+    text-transform: uppercase;
+
+    &.sg-heading--spacer {
+        margin-top: 2.5em;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Lists
+   ========================================================================== */
+
+.sg-list {
+    font-family: @font-secondary;
+    list-style: none;
+    margin-top: 0;
+    padding-left: 0;
+
+    &.sg-list--colors {
+        .clearfix();
+        margin-left: -1em;
+        padding-left: 1em;
+
+        li {
+            border: 1px solid @color-silver;
+            height: 9em;
+            margin-bottom: 1em;
+            position: relative;
+            width: 100%;
+
+            &:focus,
+            &:hover {
+
+                .sg-code {
+                    max-height: 5.25em;
+                }
+            }
+
+            .sg-code {
+                background-color: @color-white;
+                bottom: 0;
+                left: 0;
+                margin-bottom: 0;
+                max-height: 2.625em;
+                overflow: hidden;
+                padding-top: 0.5em;
+                padding-right: 0;
+                padding-bottom: 0.5em;
+                padding-left: 0;
+                position: absolute;
+                text-align: center;
+                .transition(max-height 0.25s);
+                width: 100%;
+
+                .sg-code__value {
+                    display: block;
+
+                    &+ .sg-code__value {
+                        padding-top: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    &.sg-list--icons {
+
+        li {
+            padding-bottom: 3em;
+
+            .icon {
+                float: left;
+                font-size: 1.625em; /* 26 / 16 */
+                text-align: center;
+                width: 1.25em;
+            }
+
+            .sg-code {
+                margin-left: 1em;
+            }
+        }
+    }
+
+    &.sg-list--templates {
+        counter-reset: section;
+        padding-left: 0.5em;
+
+        li {
+            color: @color-gray-dark;
+
+            &:before {
+                color: @color-gray;
+                content: counters(section, ".") ". ";
+                counter-increment: section;
+                font-weight: @weight-bold;
+                padding-right: 0.25em;
+            }
+        }
+
+        .sg-list {
+            counter-reset: section;
+            padding-left: 1em;
+
+            li {
+
+                &:before {
+                    counter-increment: section;
+                    content: counters(section, ".") ". ";
+                }
+            }
+        }
+
+        a {
+            color: @color-gray-dark;
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                color: @color-black;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media all and (min-width: @bp-xs) {
+
+    .sg-list {
+
+        &.sg-list--colors {
+            padding-left: 0;
+
+            li {
+                float: left;
+                margin-left: 1em;
+                padding-bottom: 2em;
+                width: 12em;
+            }
+        }
+
+        &.sg-list--icons {
+            .clearfix();
+            margin-bottom: -2em;
+
+            li {
+                float: left;
+                width: 33%;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Paragraphs
+   ========================================================================== */
+
+.sg-paragraph {
+    font-family: @font-secondary;
+    font-size: 1em;
+    margin: 0;
+
+    &.sg-paragraph--intro {
+        font-size: 1.125em; /* 18 / 16 */
+    }
+
+    &+ .sg-paragraph {
+        margin-top: 1em;
+    }
+
+    &+ .sg-list {
+        margin-top: 2em;
+    }
+
+    &+ .sg-btn {
+        margin-top: 2em;
+    }
+
+    .sg-anchor {
+        color: @color-black;
+        text-decoration: none;
+        .transition(color 0.25s);
+
+        &:focus,
+        &:hover {
+            color: @color-gray-dark;
+            text-decoration: underline;
+        }
+    }
+
+    .sg-icon {
+        margin-right: 0.5em;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $CONTAINERS
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $HTML
+   ========================================================================== */
+
+.sg-html {
+    background: @color-white;
+}
+
+/* ==========================================================================
+   $Body
+   ========================================================================== */
+
+body {
+
+    /**
+     * Patchwork s particularly useful for device testing because it shows elements
+     * at full-width, presented on the page as they would appear on the site.
+     */
+
+    &.is-patchwork {
+
+        .sg-main {
+            width: 100%;
+        }
+
+        .sg-section {
+
+            &:first-of-type {
+                margin-top: 2em;
+            }
+
+            &.is-hidden {
+                display: block;
+                visibility: visible;
+            }
+
+            .sg-header--section,
+            .sg-heading,
+            .sg-code {
+                display: none;
+                visibility: hidden;
+            }
+        }
+
+        .sg-aside {
+            display: none;
+            visibility: hidden;
+        }
+
+        .sg-footer {
+            width: 100%;
+        }
+    }
+}
+
+/* ==========================================================================
+   $Headers
+   ========================================================================== */
+
+.sg-header {
+    width: 100%;
+
+    &.sg-header--primary {
+        background-color: @color-white-dark;
+        box-shadow: 0 0 3px rgba(77,77,77, 0.5);
+        .clearfix();
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+        position: relative;
+        z-index: 2;
+
+        .logo {
+            display: block;
+            margin-bottom: 0.5em;
+            margin-left: 1em;
+            width: 6.25em; /* 100 / 16 */
+
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        .sg-btn--nav {
+            position: absolute;
+            right: 1em;
+            top: 1.1875em;
+        }
+    }
+
+    &.sg-header--main {
+        border-bottom: 1px dotted @color-silver;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+
+        .hN {
+            margin-bottom: 0.375em;
+        }
+    }
+
+    &.sg-header--section {
+        border-bottom: 1px dotted @color-silver;
+        color: @color-gray-dark;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        .hN {
+            margin-bottom: 0.25em;
+        }
+
+        a {
+            color: @color-silver;
+            font-size: 0.875em; /* 14 / 16 */
+            .transition(color 0.25s);
+
+            &:focus,
+            &:hover {
+                color: @color-black;
+            }
+        }
+    }
+
+    .icon {
+        margin-right: 0.5em;
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .sg-header {
+
+        &.sg-header--primary {
+            padding-bottom: 0.5em;
+
+            .logo {
+                float: left;
+                margin-bottom: 0;
+                margin-left: 2em;
+            }
+
+            .sg-nav {
+                float: right;
+                padding-top: 0.875em;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Navigation
+   ========================================================================== */
+
+.sg-nav {
+    font-family: @font-secondary;
+
+    &.sg-nav--primary {
+        background-color: @color-gray;
+        box-shadow: inset 0 0 3px @color-gray-dark;
+        max-height: 0;
+        overflow: hidden;
+        .transition(max-height 0.25s);
+
+        &.is-open {
+            max-height: 15em;
+        }
+
+        .sg-list {
+            .clearfix();
+            list-style: none;
+            margin: 0.5em 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 1px;
+
+                a {
+                    color: @color-white;
+                    display: block;
+                    padding-top: 0.5em;
+                    padding-right: 1em;
+                    padding-bottom: 0.5em;
+                    padding-left: 1em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    .transition(background-color 0.25s, border-color 0.25s, color 0.25s, top 0.25s;);
+
+                    &:active {
+                        position: relative;
+                        top: 1px;
+                    }
+
+                    &:focus,
+                    &:hover {
+                        background-color: @color-black;
+                        color: @color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .sg-nav {
+
+        &.sg-nav--primary {
+            background-color: @color-white-dark;
+            box-shadow: none;
+            max-height: 100%;
+            padding-left: 0;
+            padding-right: 2em;
+
+            .sg-list {
+                margin-top: 0;
+                margin-bottom: 0;
+
+                li {
+                    float: left;
+                    margin-right: 1em;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &.is-active {
+
+                        a {
+                            background-color: @color-black;
+                            color: @color-white;
+
+                            &:focus,
+                            &:hover {
+                                color: @color-white;
+                            }
+                        }
+                    }
+
+                    a {
+                        border: 1px transparent solid;
+                        border-radius: 1px;
+                        color: @color-black;
+                        padding: 0.125em 0.5em;
+
+                        &:focus,
+                        &:hover {
+                            border-color: @color-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Main
+   ========================================================================== */
+
+.sg-main {
+    padding-right: 1em;
+    padding-left: 1em;
+
+    &.sg-main--full {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-main {
+        float: right;
+        padding-right: 2em;
+        padding-left: 2em;
+        width: 75%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Section
+   ========================================================================== */
+
+.sg-section {
+    .clearfix();
+    margin-bottom: 2em;
+    padding-top: 1em;
+
+    &.sg-section--well {
+        background-color: @color-white-dark;
+        border: 1px solid @color-silver;
+        border-radius: 1px;
+        box-shadow: inset 0 0 10px @color-silver;
+        padding: 1em;
+
+        &:last-of-type {
+            padding-bottom: 1em;
+        }
+    }
+
+    &.is-hidden {
+        display: none;
+        visibility: hidden;
+    }
+
+    &.sg-section--block {
+
+        p + .sg-btn {
+            margin-top: 1em;
+        }
+    }
+
+    &.sg-section--bordered {
+        background-color: @color-white-dark;
+        border: 1px solid @color-silver;
+        border-radius: 1px;
+        padding: 0.5em 0.75em 0.75em 0.75em;
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .sg-section {
+        margin-bottom: 4em;
+        padding-top: 2em;
+
+        &.sg-section--intro {
+            margin-bottom: 2.5em;
+
+            &:last-of-type {
+                padding-bottom: 0;
+            }
+        }
+
+        &:last-of-type {
+            padding-bottom: 4em;
+        }
+
+        &.sg-section--block {
+            min-height: 28em;
+            position: relative;
+
+            .sg-btn {
+                bottom: 1em;
+                position: absolute;
+                right: 1em;
+
+                &:active {
+                    bottom: 15px;
+                    position: absolute;
+                    top: inherit;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: @bp-medium) {
+
+    .sg-section {
+
+        &.sg-section--block {
+            min-height: 25em;
+            position: relative;
+        }
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-section {
+
+        &.sg-section--block {
+            min-height: 22em;
+
+            .sg-btn {
+                bottom: 1.5em;
+                right: 1.5em;
+
+                &:active {
+                    bottom: 23px;
+                }
+            }
+        }
+
+        &.sg-section--bordered {
+            padding: 1em 1.5em 1.5em 1.5em;
+        }
+    }
+}
+
+@media all and (min-width: @bp-xl) {
+
+    .sg-section {
+
+        &.sg-section--block {
+            min-height: 19em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Aside
+   ========================================================================== */
+
+.sg-aside {
+    background-color: @color-white;
+    padding-right: 1em;
+    padding-left: 1em;
+
+    .sg-btn--toggle {
+        margin-bottom: 2px;
+        width: 100%;
+    }
+
+    .sg-list {
+        background-color: @color-white-dark;
+        margin-bottom: 2em;
+
+        li {
+            border-bottom: 2px solid @color-white;
+
+            a {
+                color: @color-black;
+                font-size: 0.875em; /* 14 / 16 */
+                display: block;
+                padding-top: 0.25em;
+                padding-right: 0.75em;
+                padding-bottom: 0.375em;
+                padding-left: 0.75em;
+                text-decoration: none;
+                .transition(background-color 0.25s, color 0.25s;);
+
+                &.is-active,
+                &:focus,
+                &:hover {
+                    background-color: @color-black;
+                    color: @color-white;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-aside {
+        left: 0;
+        max-width: 20em; /* 320 / 16 */
+        overflow-y: auto;
+        padding-right: 2em;
+        padding-left: 2em;
+        position: absolute;
+        top: 7.625em;
+        .transition(top 0.5s);
+        width: 25%;
+
+        .sg-list {
+            margin-bottom: 0;
+        }
+
+        &.is-fixed {
+            height: 100%;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            position: fixed;
+            top: 0;
+        }
+    }
+}
+
+@media all and (min-height: @bp-medium) {
+
+    .sg-aside {
+
+        &.is-fixed {
+            padding-top: 0;
+            padding-bottom: 0;
+            top: 2em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Footer
+   ========================================================================== */
+
+.sg-footer {
+    clear: both;
+    font-size: 0.875em; /* 14 / 16 */
+    margin-bottom: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    width: 100%;
+
+    &.sg-footer--full {
+        width: 100%;
+    }
+
+    .sg-list {
+        border-top: 1px dotted @color-silver;
+        padding-top: 1em;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-footer  {
+        float: right;
+        padding-right: 2em;
+        padding-left: 2em;
+        width: 75%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Example
+   ========================================================================== */
+
+.sg-example {
+
+    &+ .sg-example {
+        margin-top: 1em;
+    }
+
+    &+ .sg-list {
+        margin-top: 2em;
+    }
+
+    &+ .sg-btn {
+        margin-top: 2em;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   $GRID
+\* -------------------------------------------------------------------------- */
+
+.sg-col {
+    background-color: @color-silver;
+
+    .sg-code {
+        background-color: @color-silver;
+        color: @color-gray-dark;
+        display: inline-block;
+        margin-bottom: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.75em;
+    }
+}

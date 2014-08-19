@@ -1,0 +1,213 @@
+/* -------------------------------------------------------------------------- *\
+   $FORMS
+\* -------------------------------------------------------------------------- */
+
+.form {
+
+    /**
+     * Inline
+     */
+
+    &.form--inline {
+
+        .label {
+
+            &.label--checkbox {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .input {
+            margin-bottom: 0.75em;
+        }
+
+        @media all and (min-width: @bp-small) {
+
+            .clearfix();
+
+            .label {
+                float: left;
+                margin-right: 0.5em;
+
+                &.label--checkbox {
+                    margin-bottom: 0;
+                    padding-top: 0.5em;
+
+                    .input {
+                        float: none;
+                        margin-right: 0.25em;
+                    }
+                }
+            }
+
+            .input {
+                float: left;
+                margin-top: 0;
+                margin-right: 0.5em;
+                margin-bottom: 0;
+                width: auto;
+            }
+
+            .btn {
+                float: left;
+                margin-right: 0;
+            }
+        }
+    }
+
+    /**
+     * Search
+     */
+
+    &.form--search {
+        position: relative;
+
+        .input {
+            margin-top: 0;
+            padding-right: 2.75em;
+        }
+
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+@media all and (min-width: @bp-medium) {
+
+    .form {
+
+        &.form--search {
+
+            .input {
+                min-width: 20em; /* 320 / 16 */
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Fieldset
+   ========================================================================== */
+
+.fieldset {
+    margin-bottom: 1em;
+
+    &.fieldset--bordered {
+        border: 1px solid @color-silver;
+        padding: 0.5em 1.25em 0 1.25em;
+
+        .legend {
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Fieldset
+   ========================================================================== */
+
+.legend {
+    color: @color-gray-dark;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Label
+   ========================================================================== */
+
+.label {
+    color: @color-gray-dark;
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Input
+   ========================================================================== */
+
+input[type="color"],
+input[type="date"],
+input[type="email"],
+input[type="file"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+
+    &.input {
+        border: 1px solid @color-silver;
+        border-radius: 0;
+        color: @color-gray-dark;
+        font-family: @font;
+        height: 2.5em; /* 40 / 16 */
+        margin-top: 0.375em;
+        padding: 0.5625em 0.75em 0.5em 0.75em;
+        .transition(border-color 0.25s);
+        width: 100%;
+
+        &[disabled="disabled"] {
+            background-color: @color-white-dark;
+            border-color: @color-white-dark;
+            color: @color-white-dark;
+        }
+
+        &:focus,
+        &:hover {
+            border-color: @color-gray-dark;
+        }
+    }
+
+    &.input--select {
+        padding-top: 0.375em;
+    }
+
+    &.input--textarea {
+        height: inherit;
+        min-height: 6em;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.375em;
+}
+
+/*
+ * Remove the inner shadow that appears in text inputs on iOS/OSX
+ */
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea {
+    -webkit-appearance: none;
+}
