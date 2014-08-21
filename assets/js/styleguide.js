@@ -13,7 +13,7 @@ STYLEGUIDE = {
                Back to Top
                ========================================================================== */
 
-            var $back_to_top = $('[data-action="back-to-top"]');
+            var $back_to_top = $('[data-sg-action="back-to-top"]');
 
             $back_to_top.on('click', function ()
             {
@@ -32,15 +32,23 @@ STYLEGUIDE = {
                Last Modified
                ========================================================================== */
 
-            var $last_modified = $('[data-last-modified="true"]');
-            var last_modified_date = new Date(document.lastModified); // Get the last modified date of the document
-            var months = [ "January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
-            var last_modified_day = last_modified_date.getDate();
-            var last_modified_month = last_modified_date.getMonth();
-            var last_modified_year = last_modified_date.getFullYear();
+            var $last_modified = $('[data-sg-last-modified="true"]');
 
-            // Display the last modified date
-            $last_modified.html(months[last_modified_month] + ' ' + last_modified_day + ', ' + last_modified_year);
+            if ($last_modified.length > 0)
+            {
+                // Get the last modified date of the document
+                var last_modified_date = new Date(document.lastModified);
+                var months = [ "January","February", "March",
+                               "April", "May", "June", "July",
+                               "August", "September", "October",
+                               "November", "December" ];
+                var last_modified_day = last_modified_date.getDate();
+                var last_modified_month = last_modified_date.getMonth();
+                var last_modified_year = last_modified_date.getFullYear();
+
+                // Display the last modified date
+                $last_modified.html(months[last_modified_month] + ' ' + last_modified_day + ', ' + last_modified_year);
+            }
 
             /* ==========================================================================
                Scroll
@@ -80,7 +88,7 @@ STYLEGUIDE = {
                Sticky
                ========================================================================== */
 
-            var $aside = $('[data-action="sticky"]');
+            var $aside = $('[data-sg-action="sticky"]');
 
             $('li a', $aside).on('click', function (e)
             {
@@ -110,7 +118,7 @@ STYLEGUIDE = {
                Toggle Navigation
                ========================================================================== */
 
-            var $toggle_nav = $('[data-toggle="nav"]');
+            var $toggle_nav = $('[data-sg-toggle="nav"]');
 
             $toggle_nav.on('click', function ()
             {
@@ -122,7 +130,7 @@ STYLEGUIDE = {
                Toggle Style Guide View
                ========================================================================== */
 
-            var $toggle_styleguide = $('[data-toggle="styleguide"]');
+            var $toggle_styleguide = $('[data-sg-toggle="styleguide"]');
 
             $toggle_styleguide.each(function ()
             {
