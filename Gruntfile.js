@@ -1,5 +1,7 @@
 module.exports = function (grunt)
 {
+    require('time-grunt')(grunt);
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         connect: {
@@ -92,13 +94,8 @@ module.exports = function (grunt)
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-csslint');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-ftp-deploy');
-    grunt.loadNpmTasks('grunt-html-validation');
+    require('load-grunt-tasks')(grunt);
 
     grunt.registerTask('serve', ['less', 'connect', 'watch']);
+    grunt.registerTask('default', ['build']);
 };
