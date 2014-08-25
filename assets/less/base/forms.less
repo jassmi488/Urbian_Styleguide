@@ -211,3 +211,41 @@ input[type="url"],
 textarea {
     -webkit-appearance: none;
 }
+
+
+
+
+
+/* ==========================================================================
+   $Toggle Password
+   ========================================================================== */
+
+.toggle-password {
+    position: relative;
+
+    .toggle {
+        right: 0.4375em;
+        top: 2.6125em;
+    }
+}
+
+.toggle {
+    background-color: @color-white-dark;
+    border: 0;
+    color: @color-gray;
+    font-family: @font-secondary;
+    font-size: 0.875em; /* 14 / 16 */
+    font-weight: @weight-bold;
+    height: 2em; /* 28 / 14 */
+    padding: 0.1875em 0.5em 0.3125em 0.5em;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    .transition(color 0.25s);
+
+    &:focus,
+    &:hover {
+        color: @color-gray-dark;
+        outline: 0;
+    }
+}

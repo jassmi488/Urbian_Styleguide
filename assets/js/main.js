@@ -9,6 +9,14 @@
 
         init: function ()
         {
+            /*
+             * Check to see if the current browser supports DOM level 2 events e.g. `addEventListener`.
+             * Internet Explorer 8 and below does not.
+             * Based on: http://responsivenews.co.uk/post/18948466399/cutting-the-mustard
+             */
+
+            var isModernBrowser = ('addEventListener' in window) ? true : false;
+
             /* ==========================================================================
                Accordion
                ========================================================================== */
@@ -149,6 +157,55 @@
                             $tab_panel.addClass('is-active');
                             $tab_panel.attr('aria-hidden', 'false');
                         }
+                    });
+                });
+            }
+
+            /* ==========================================================================
+               Toggle Password
+               ========================================================================== */
+
+            var $toggle_password = $('[data-component="toggle-password"]');
+
+            if ($toggle_password.length > 0 && isModernBrowser)
+            {
+                $toggle_password.each(function ()
+                {
+                    var $form = $(this);
+                    var $input = $('input[type="password"]', $form);
+                    var $toggle = $('[data-toggle="password"]', $form);
+
+                    $toggle.removeClass('visuallyhidden'); // Enable the toggle button
+
+                    /*
+                     * Switch the input type
+                     */
+
+                    $toggle.on('click', function(e)
+                    {
+                        e.preventDefault();
+
+                        if ($input.attr('type') == 'password')
+                        {
+                            $toggle.html('Hide');
+                            $input.attr('type', 'text');
+                        }
+                        else
+                        {
+                            $toggle.html('Show');
+                            $input.attr('type', 'password');
+                        }
+
+                        $input.focus(); // Keep keyboard active on touchscreen devices
+                    });
+
+                    /*
+                     * Reset the input type
+                     */
+
+                    $form.on('submit', function ()
+                    {
+                        $input.attr('type', 'password');
                     });
                 });
             }
