@@ -649,25 +649,32 @@ p q r s t u v w x y z { | } ~ </pre>
 
             <div class="sg-example">
                 <label for="text" class="label">
-                    Text <input id="text" name="text" class="input" type="text" placeholder="Placeholder text…" />
+                    Text
+                    <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" />
                 </label>
             </div>
 
             <div class="sg-example">
                 <label for="email" class="label">
-                    Email <input id="email" name="email" class="input" type="email" placeholder="user@domain.com" />
+                    Email
+                    <input class="input" type="email" id="email" name="email" placeholder="user@domain.com" />
                 </label>
             </div>
 
             <div class="sg-example">
-                <label for="password" class="label">
-                    Password <input id="password" name="input-password" class="input" type="password" />
-                </label>
+                <div class="toggle-password" data-component="toggle-password">
+                    <label for="password" class="label">
+                        Password
+                        <input class="input" type="password" id="password" name="input-password" />
+                    </label>
+                    <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+                </div>
             </div>
 
             <div class="sg-example">
                 <label for="url" class="label">
-                    URL <input id="url" name="url" class="input" type="url" placeholder="http://www.google.com" />
+                    URL
+                    <input class="input" type="url" id="url" name="url" placeholder="http://www.google.com" />
                 </label>
             </div>
         </section>

@@ -72,16 +72,14 @@
                 <h1 class="epsilon hN">Form – Default</h1>
             </header>
 
-            <form id="form-default" action="forms.html" method="post" class="form" data-component="toggle-password">
+            <form id="form-default" action="forms.html" method="post" class="form">
                 <label for="email" class="label">
-                    Email Address
-                    <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
+                    Email Address <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
                 </label>
 
-                <div class="toggle-password">
+                <div class="toggle-password" data-component="toggle-password">
                     <label for="password" class="label">
-                        Password
-                        <input class="input" type="password" id="password" name="password" maxlength="100" />
+                        Password <input class="input" type="password" id="password" name="password" maxlength="100" />
                     </label>
                     <button class="visuallyhidden toggle" data-toggle="password">Show</button>
                 </div>
