@@ -19,20 +19,18 @@
     vertical-align: middle;
     white-space: nowrap;
 
-    /**
-     * Silver
-     */
+    &:active {
+        position: relative;
+        top: 1px;
+    }
 
-    &.btn--silver {
-        background-color: @color-gray-dark;
-
-        &.is-active,
-        &:focus,
-        &:hover {
-            background-color: @color-white;
-            border-color: @color-silver;
-            color: @color-black;
-        }
+    &.is-active,
+    &:focus,
+    &:hover {
+        background-color: @color-white;
+        border-color: @color-silver;
+        color: @color-black;
+        outline: none;
     }
 
     &[disabled="disabled"] {
@@ -50,18 +48,20 @@
         }
     }
 
-    &:active {
-        position: relative;
-        top: 1px;
-    }
+    /**
+     * Silver
+     */
 
-    &.is-active,
-    &:focus,
-    &:hover {
-        background-color: @color-white;
-        border-color: @color-silver;
-        color: @color-black;
-        outline: none;
+    &.btn--silver {
+        background-color: @color-gray-dark;
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: @color-white;
+            border-color: @color-silver;
+            color: @color-black;
+        }
     }
 
     /**
