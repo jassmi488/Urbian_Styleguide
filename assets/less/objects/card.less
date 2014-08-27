@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------------- *\
+   $CARD
+\* -------------------------------------------------------------------------- */
+
+.card {
+    max-width: 18.75em; /* 300 / 16 */
+    .transition(box-shadow 0.25s);
+
+    &:focus,
+    &:hover {
+        box-shadow: 0 0 5px @color-silver;
+    }
+
+    .card__link {
+        display: block;
+        text-decoration: none;
+    }
+
+    .card__img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .card-inner {
+        border: 1px solid @color-silver;
+        border-top: 0;
+        .clearfix();
+        padding: 1.25em 1em 1em 1em;
+    }
+
+    .card__title {
+        font-size: 1.25em; /* 20 / 16 */
+        margin-bottom: 0.5em;
+    }
+
+    .card__synopsis {
+        margin-bottom: 1.5em;
+    }
+
+    .card__btn {
+        float: right;
+    }
+}
