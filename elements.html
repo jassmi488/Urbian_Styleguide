@@ -604,15 +604,20 @@ p q r s t u v w x y z { | } ~ </pre>
                     Text
                     <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" />
                 </label>
-                <div class="help-text">This is default help text for this input.</div>
             </div>
 
             <div class="sg-example">
-                <label for="text-2" class="label">
+                <label for="text-2" class="label label--disabled">
                     Disabled
-                    <input class="input" type="text" id="text-2" name="text-2" placeholder="Placeholder text…" disabled="disabled" />
+                    <input class="input" type="text" id="text-2" name="text-2" value="You cannot interact with this form control" placeholder="Placeholder text…" disabled="disabled" />
                 </label>
-                <div class="help-text help-text--right">This is right-aligned help text for this input.</div>
+            </div>
+
+            <div class="sg-example">
+                <label for="text-3" class="label">
+                    Readonly
+                    <input class="input" type="text" id="text-3" name="text-3" value="You cannot modify the value of this form control" placeholder="Placeholder text…" readonly="readonly" />
+                </label>
             </div>
 
             <div class="sg-example">
@@ -620,6 +625,7 @@ p q r s t u v w x y z { | } ~ </pre>
                     Email
                     <input class="input" type="email" id="email" name="email" placeholder="user@domain.com" />
                 </label>
+                <div class="help-text">This is default help text for this form control.</div>
             </div>
 
             <div class="sg-example">
@@ -629,6 +635,7 @@ p q r s t u v w x y z { | } ~ </pre>
                         <input class="input" type="password" id="password" name="input-password" />
                     </label>
                     <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+                    <div class="help-text help-text--right">This is right-aligned help text for this form control.</div>
                 </div>
             </div>
 

@@ -182,13 +182,18 @@ textarea {
         &[disabled="disabled"] {
             background-color: @color-white-dark;
             border-color: @color-white-dark;
-            color: @color-white-dark;
+            color: @color-gray;
             cursor: not-allowed;
 
             &:focus,
             &:hover {
                 border-color: @color-white-dark;
             }
+        }
+
+        &[readonly="readonly"] {
+            background-color: @color-white-dark;
+            cursor: not-allowed;
         }
 
         &:focus,
