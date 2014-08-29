@@ -178,6 +178,12 @@ textarea {
             background-color: @color-white-dark;
             border-color: @color-white-dark;
             color: @color-white-dark;
+            cursor: not-allowed;
+
+            &:focus,
+            &:hover {
+                border-color: @color-white-dark;
+            }
         }
 
         &:focus,
