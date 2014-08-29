@@ -188,9 +188,11 @@
    ========================================================================== */
 
 .sg-heading {
+    clear: both;
     color: @color-gray;
     font-family: @font-secondary;
     text-transform: uppercase;
+    width: 100%;
 
     &.sg-heading--spacer {
         margin-top: 2.5em;
@@ -952,6 +954,7 @@ body {
    ========================================================================== */
 
 .sg-example {
+    .clearfix();
 
     &+ .sg-example {
         margin-top: 1em;
