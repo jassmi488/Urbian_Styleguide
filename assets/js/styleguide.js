@@ -47,7 +47,6 @@ STYLEGUIDE = {
                     $code_toggle.on('click', function ()
                     {
                         $(this).toggleClass('is-active');
-                        $(this).blur(); // Remove focus from the button
 
                         /*
                          * Toggle the label of the button
