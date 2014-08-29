@@ -20,14 +20,40 @@
         .input {
             margin-bottom: 0.75em;
         }
+    }
 
-        @media all and (min-width: @bp-small) {
+    /**
+     * Search
+     */
 
+    &.form--search {
+        position: relative;
+
+        .input {
+            margin-top: 0;
+            padding-right: 2.75em;
+        }
+
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .form {
+
+        &.form--inline {
             .clearfix();
 
             .label {
+                clear: none;
                 float: left;
                 margin-right: 0.5em;
+                width: auto;
 
                 &.label--checkbox {
                     margin-bottom: 0;
@@ -52,25 +78,6 @@
                 float: left;
                 margin-right: 0;
             }
-        }
-    }
-
-    /**
-     * Search
-     */
-
-    &.form--search {
-        position: relative;
-
-        .input {
-            margin-top: 0;
-            padding-right: 2.75em;
-        }
-
-        .btn {
-            position: absolute;
-            right: 0;
-            top: 0;
         }
     }
 }
@@ -132,9 +139,11 @@
    ========================================================================== */
 
 .label {
+    clear: both;
     color: @color-gray-dark;
     display: block;
     margin-bottom: 1.5em;
+    width: 100%;
 
     &.label--disabled {
         color: @color-gray;
@@ -142,8 +151,10 @@
     }
 
     &.label--inline {
+        clear: none;
         float: left;
         margin-right: 1.5em;
+        width: auto;
     }
 }
 
