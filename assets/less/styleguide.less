@@ -68,6 +68,7 @@
         top: 1px;
     }
 
+    &.is-active,
     &:focus,
     &:hover {
         background-color: @color-black;
@@ -177,6 +178,7 @@
     font-size: 0.875em; /* 14 / 16 */
     margin-bottom: 1em;
     padding: 0.25em 0.5em;
+    white-space: pre;
 }
 
 
@@ -966,6 +968,30 @@ body {
 
     &+ .sg-btn {
         margin-top: 2em;
+    }
+}
+
+.sg-example-code {
+    border-top: 1px dashed @color-silver;
+    margin-top: 2em;
+    padding-top: 1em;
+
+    .sg-code {
+        background-color: @color-black;
+        clear: both;
+        color: @color-white;
+        display: none;
+        margin-top: 1em;
+        overflow: auto;
+        padding-right: 2em;
+        padding-left: 2em;
+        visibility: hidden;
+        width: 100%;
+
+        &.is-visible {
+            display: block;
+            visibility: visible;
+        }
     }
 }
 

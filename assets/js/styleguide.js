@@ -29,6 +29,45 @@ STYLEGUIDE = {
             }
 
             /* ==========================================================================
+               Code
+               ========================================================================== */
+
+            var $code_component = $('[data-sg-component="code"]');
+
+            if ($code_component.length > 0)
+            {
+                $code_component.each(function ()
+                {
+                    var $code_example = $(this);
+                    var $code = $('.sg-code', $code_example);
+                    var $code_toggle = $('[data-sg-toggle="code"]', $code_example);
+
+                    $code.text($code.html()); // Convert HTML to character entities
+
+                    $code_toggle.on('click', function ()
+                    {
+                        $(this).toggleClass('is-active');
+                        $(this).blur(); // Remove focus from the button
+
+                        /*
+                         * Toggle the label of the button
+                         */
+
+                        if ($(this).hasClass('is-active'))
+                        {
+                            $(this).html('Hide Code');
+                        }
+                        else
+                        {
+                            $(this).html('View Code');
+                        }
+
+                        $code.toggleClass('is-visible'); // Toggle the display of the code
+                    });
+                })
+            }
+
+            /* ==========================================================================
                Last Modified
                ========================================================================== */
 
