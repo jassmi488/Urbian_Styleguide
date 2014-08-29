@@ -607,9 +607,9 @@ p q r s t u v w x y z { | } ~ </pre>
             </div>
 
             <div class="sg-example">
-                <label for="disabled" class="label">
+                <label for="text-2" class="label">
                     Disabled
-                    <input class="input" type="text" id="disabled" name="disabled" placeholder="Placeholder text…" disabled="disabled" />
+                    <input class="input" type="text" id="text-2" name="text-2" placeholder="Placeholder text…" disabled="disabled" />
                 </label>
             </div>
 
@@ -652,8 +652,8 @@ p q r s t u v w x y z { | } ~ </pre>
                 <label for="checkbox-2" class="label">
                     <input id="checkbox-2" type="checkbox" name="checkbox" value="2" /> Choice 2
                 </label>
-                <label for="checkbox-3" class="label">
-                    <input id="checkbox-3" type="checkbox" name="checkbox" value="3" /> Choice 3
+                <label for="checkbox-3" class="label label--disabled">
+                    <input id="checkbox-3" type="checkbox" name="checkbox" value="3" disabled="disabled" /> Choice 3
                 </label>
             </fieldset>
 
@@ -666,8 +666,8 @@ p q r s t u v w x y z { | } ~ </pre>
                 <label for="checkbox-5" class="label label--inline">
                     <input id="checkbox-5" type="checkbox" name="checkbox2" value="2" /> Choice 2
                 </label>
-                <label for="checkbox-6" class="label label--inline">
-                    <input id="checkbox-6" type="checkbox" name="checkbox2" value="3" /> Choice 3
+                <label for="checkbox-6" class="label label--inline label--disabled">
+                    <input id="checkbox-6" type="checkbox" name="checkbox2" value="3" disabled="disabled" /> Choice 3
                 </label>
             </fieldset>
         </section>
@@ -686,8 +686,8 @@ p q r s t u v w x y z { | } ~ </pre>
                 <label for="radio-2" class="label">
                     <input id="radio-2" type="radio" name="radio" value="2" /> Choice 2
                 </label>
-                <label for="radio-3" class="label">
-                    <input id="radio-3" type="radio" name="radio" value="3" /> Choice 3
+                <label for="radio-3" class="label label--disabled">
+                    <input id="radio-3" type="radio" name="radio" value="3" disabled="disabled" /> Choice 3
                 </label>
             </fieldset>
 
@@ -700,8 +700,8 @@ p q r s t u v w x y z { | } ~ </pre>
                 <label for="radio-5" class="label label--inline">
                     <input id="radio-5" type="radio" name="radio2" value="2" /> Choice 2
                 </label>
-                <label for="radio-6" class="label label--inline">
-                    <input id="radio-6" type="radio" name="radio2" value="3" /> Choice 3
+                <label for="radio-6" class="label label--inline label--disabled">
+                    <input id="radio-6" type="radio" name="radio2" value="3" disabled="disabled" /> Choice 3
                 </label>
             </fieldset>
         </section>
@@ -714,6 +714,16 @@ p q r s t u v w x y z { | } ~ </pre>
             <label for="select" class="label">
                 Select
                 <select id="select" name="select" class="input input--select">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </label>
+
+            <label for="select" class="label label--disabled">
+                Disabled
+                <select id="select-2" name="select-2" class="input input--select" disabled="disabled">
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
