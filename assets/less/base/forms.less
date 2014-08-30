@@ -190,6 +190,11 @@ textarea {
         .transition(border-color 0.25s);
         width: 100%;
 
+        &:focus,
+        &:hover {
+            border-color: @color-gray-dark;
+        }
+
         &[disabled="disabled"] {
             background-color: @color-white-dark;
             border-color: @color-white-dark;
@@ -205,11 +210,6 @@ textarea {
         &[readonly="readonly"] {
             background-color: @color-white-dark;
             cursor: not-allowed;
-        }
-
-        &:focus,
-        &:hover {
-            border-color: @color-gray-dark;
         }
     }
 
