@@ -52,13 +52,15 @@ STYLEGUIDE = {
                          * Toggle the label of the button
                          */
 
+                        var icon_code = '<span class="icon fa fa-code" aria-hidden="true"></span>';
+
                         if ($(this).hasClass('is-active'))
                         {
-                            $(this).html('Hide Code');
+                            $(this).html(icon_code + 'Hide Code');
                         }
                         else
                         {
-                            $(this).html('View Code');
+                            $(this).html(icon_code + 'View Code');
                         }
 
                         $code.toggleClass('is-visible'); // Toggle the display of the code

@@ -92,8 +92,26 @@
             </form>
 
             <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code">View Code</button>
+                <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
                 <code class="sg-code">
+<form id="form-default" action="#" method="post" class="form">
+    <label for="email" class="label">
+        Email Address <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
+    </label>
+
+    <div class="toggle-password" data-component="toggle-password">
+        <label for="password" class="label">
+            Password <input class="input" type="password" id="password" name="password" maxlength="100" />
+        </label>
+        <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+    </div>
+
+    <label for="remember" class="label">
+        <input class="input" type="checkbox" id="remember" name="remember" value="1" /> Remember me?
+    </label>
+
+    <input class="btn" type="submit" value="Sign In" />
+</form>
                 </code>
             </div>
         </section>
@@ -118,8 +136,21 @@
             </form>
 
             <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code">View Code</button>
+                <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
                 <code class="sg-code">
+<form id="form-inline" action="#" method="post" class="form form--inline">
+    <label for="email-2" class="label visuallyhidden">Email Address</label>
+    <input class="input" type="email" id="email-2" name="email-2" placeholder="Email Address" maxlength="100" />
+
+    <label for="password-2" class="label visuallyhidden">Password</label>
+    <input class="input" type="password" id="password-2" name="password-2" placeholder="Password" maxlength="100" />
+
+    <label for="remember-2" class="label label--checkbox">
+        <input class="input" type="checkbox" id="remember-2" name="remember-2" value="1" /> Remember me?
+    </label>
+
+    <input class="btn" type="submit" value="Sign In" />
+</form>
                 </code>
             </div>
         </section>
@@ -132,12 +163,19 @@
             <form id="form-search" action="forms.html" method="post" class="form form--search">
                 <label for="search" class="visuallyhidden">Search</label>
                 <input class="input" type="text" id="search" name="search" placeholder="Search…" maxlength="20" />
+
                 <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
             </form>
 
             <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code">View Code</button>
+                <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
                 <code class="sg-code">
+<form id="form-search" action="#" method="post" class="form form--search">
+    <label for="search" class="visuallyhidden">Search</label>
+    <input class="input" type="text" id="search" name="search" placeholder="Search…" maxlength="20" />
+
+    <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+</form>
                 </code>
             </div>
         </section>

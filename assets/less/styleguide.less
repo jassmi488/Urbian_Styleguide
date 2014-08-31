@@ -973,15 +973,20 @@ body {
 
 .sg-example-code {
     border-top: 1px dashed @color-silver;
+    .clearfix();
     margin-top: 2em;
     padding-top: 1em;
 
+    .sg-btn {
+        float: right;
+        margin-bottom: 1em;
+    }
+
     .sg-code {
         background-color: @color-black;
-        clear: both;
         color: @color-white;
         display: none;
-        margin-top: 1em;
+        margin-top: 2em;
         overflow: auto;
         padding-right: 2em;
         padding-left: 2em;
