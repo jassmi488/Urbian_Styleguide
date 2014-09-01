@@ -74,7 +74,7 @@
 
             <nav class="nav nav--primary" role="navigation">
                 <ol class="list">
-                    <li><a href="patterns.html#sg-navigation-primary">Home</a></li>
+                    <li class="is-active"><a href="patterns.html#sg-navigation-primary">Home</a></li>
                     <li><a href="patterns.html#sg-navigation-primary">Services</a></li>
                     <li><a href="patterns.html#sg-navigation-primary">Work</a></li>
                     <li><a href="patterns.html#sg-navigation-primary">News</a></li>
@@ -84,17 +84,12 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<nav class="nav nav--primary" role="navigation">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><nav class="nav nav--primary" role="navigation">
     <ol class="list">
-        <li><a href="#">Home</a></li>
+        <li class="is-active"><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
     </ol>
-</nav>
-                </code>
+</nav></code></pre>
             </div>
         </section>
 
@@ -105,20 +100,26 @@
 
             <div class="accordion" data-component="accordion" role="tablist">
                 <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
-                    <div id="accordion-tab-1" class="accordion-item__title" aria-controls="accordion-panel-1" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a></div>
+                    <div id="accordion-tab-1" class="accordion-item__title" aria-controls="accordion-panel-1" role="tab">
+                        <a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a>
+                    </div>
                     <div id="accordion-panel-1" class="accordion-item__contents" aria-labelledby="accordion-tab-1" role="tabpanel">
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                     </div>
                 </div>
                 <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
-                    <div id="accordion-tab-2" class="accordion-item__title" aria-controls="accordion-panel-2" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a></div>
+                    <div id="accordion-tab-2" class="accordion-item__title" aria-controls="accordion-panel-2" role="tab">
+                        <a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                    </div>
                     <div id="accordion-panel-2" class="accordion-item__contents" aria-labelledby="accordion-tab-2" role="tabpanel">
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </div>
                 </div>
                 <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
-                    <div id="accordion-tab-3" class="accordion-item__title" aria-controls="accordion-panel-3" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 3<span class="icon fa fa-caret-down" aria-hidden="true"></span></a></div>
+                    <div id="accordion-tab-3" class="accordion-item__title" aria-controls="accordion-panel-3" role="tab">
+                        <a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 3<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                    </div>
                     <div id="accordion-panel-3" class="accordion-item__contents" aria-labelledby="accordion-tab-3" role="tabpanel">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -129,22 +130,24 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="accordion" data-component="accordion" role="tablist">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="accordion" data-component="accordion" role="tablist">
     <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
-        <div id="accordion-tab-1" class="accordion-item__title" aria-controls="accordion-panel-1" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a></div>
-        <div id="accordion-panel-1" class="accordion-item__contents" aria-labelledby="accordion-tab-1" role="tabpanel">
+        <div id="accordion-tab-a" class="accordion-item__title" aria-controls="accordion-panel-a" role="tab">
+            <a class="accordion-item__link" href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a>
+        </div>
+        <div id="accordion-panel-a" class="accordion-item__contents" aria-labelledby="accordion-tab-a" role="tabpanel">
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
     </div>
     <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
-        <div id="accordion-tab-2" class="accordion-item__title" aria-controls="accordion-panel-2" role="tab"><a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a></div>
-        <div id="accordion-panel-2" class="accordion-item__contents" aria-labelledby="accordion-tab-2" role="tabpanel">
+        <div id="accordion-tab-b" class="accordion-item__title" aria-controls="accordion-panel-b" role="tab">
+            <a class="accordion-item__link" href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+        </div>
+        <div id="accordion-panel-b" class="accordion-item__contents" aria-labelledby="accordion-tab-b" role="tabpanel">
             <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
         </div>
     </div>
-</div>
-                </code>
+</div></code></pre>
             </div>
         </section>
 
@@ -160,12 +163,9 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="alert alert--success" role="alert">
-    <div class="alert__title">Success</div>
-    <p class="alert__message"><b>Well done!</b> You successfully read <a class="alert__link" href="patterns.html#sg-alerts">this important alert message</a>.</p>
-</div>
-                </code>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--success" role="alert"><div class="alert__title">Success</div>
+    <p class="alert__message"><b>Well done!</b> You successfully read <a class="alert__link" href="#">this important alert message</a>.</p>
+</div></code></pre>
             </div>
 
             <div class="alert alert--info" role="alert">
@@ -175,12 +175,9 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="alert alert--info" role="alert">
-    <div class="alert__title">Information</div>
-    <p class="alert__message"><b>Heads up!</b> This <a class="alert__link" href="patterns.html#sg-alerts">alert needs your attention</a>, but it’s not super important.</p>
-</div>
-                </code>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--info" role="alert"><div class="alert__title">Information</div>
+    <p class="alert__message"><b>Heads up!</b> This <a class="alert__link" href="#">alert needs your attention</a>, but it’s not super important.</p>
+</div></code></pre>
             </div>
 
             <div class="alert alert--warning" role="alert">
@@ -190,12 +187,9 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="alert alert--warning" role="alert">
-    <div class="alert__title">Warning!</div>
-    <p class="alert__message">Better check yourself, this <a class="alert__link" href="patterns.html#sg-alerts">alert needs your attention</a>, but it’s not super important.</p>
-</div>
-                </code>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--warning" role="alert"><div class="alert__title">Warning!</div>
+    <p class="alert__message">Better check yourself, this <a class="alert__link" href="#">alert needs your attention</a>, but it’s not super important.</p>
+</div></code></pre>
             </div>
 
             <div class="alert alert--error" role="alert">
@@ -205,12 +199,9 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="alert alert--error" role="alert">
-    <div class="alert__title">Error</div>
-    <p class="alert__message"><b>Oh snap!</b> <a class="alert__link" href="patterns.html#sg-alerts">Change a few things up</a> and try submitting again.</p>
-</div>
-                </code>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--error" role="alert"><div class="alert__title">Error</div>
+    <p class="alert__message"><b>Oh snap!</b> <a class="alert__link" href="#">Change a few things up</a> and try submitting again.</p>
+</div></code></pre>
             </div>
         </section>
 
@@ -230,14 +221,12 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="breadcrumbs">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="breadcrumbs">
     <ol class="list">
-        <li><a href="patterns.html#sg-breadcrumbs">Services</a></li>
+        <li><a href="#">Services</a></li>
         <li class="is-current">Technology</li>
     </ol>
-</div>
-                </code>
+</div></code></pre>
             </div>
         </section>
 
@@ -260,8 +249,7 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="card">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="card">
     <a class="card__link" href="#">
         <img class="card__img" src="http://placehold.it/300x169" width="300" height="169" alt="" />
     </a>
@@ -271,8 +259,7 @@
         <p class="card__synopsis">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium…</p>
         <a class="card__btn btn btn--silver" href="#" role="button">View</a>
     </div>
-</div>
-                </code>
+</div></code></pre>
             </div>
         </section>
 
@@ -294,14 +281,12 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="pagination">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="pagination">
     <ol class="list">
-        <li><a href="patterns.html#sg-pagination">1</a></li>
-        <li class="is-current"><a href="patterns.html#sg-pagination">2</a></li>
+        <li><a href="#">1</a></li>
+        <li class="is-current"><a href="#">2</a></li>
     </ol>
-</div>
-                </code>
+</div></code></pre>
             </div>
         </section>
 
@@ -312,23 +297,33 @@
 
             <div class="social">
                 <ol class="list">
-                    <li><a href="patterns.html#sg-social" title="Follow us on Facebook"><span class="icon fa fa-facebook-square" aria-hidden="true"></span></a></li>
-                    <li><a href="patterns.html#sg-social" title="Follow us on Google+"><span class="icon fa fa-google-plus-square" aria-hidden="true"></span></a></li>
-                    <li><a href="patterns.html#sg-social" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a></li>
+                    <li>
+                        <a href="patterns.html#sg-social" title="Follow us on Facebook"><span class="icon fa fa-facebook-square" aria-hidden="true"></span></a>
+                    </li>
+                    <li>
+                        <a href="patterns.html#sg-social" title="Follow us on Google+"><span class="icon fa fa-google-plus-square" aria-hidden="true"></span></a>
+                    </li>
+                    <li>
+                        <a href="patterns.html#sg-social" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a>
+                    </li>
                 </ol>
             </div>
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="social">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="social">
     <ol class="list">
-        <li><a href="#" title="Follow us on Facebook"><span class="icon fa fa-facebook-square" aria-hidden="true"></span></a></li>
-        <li><a href="#" title="Follow us on Google+"><span class="icon fa fa-google-plus-square" aria-hidden="true"></span></a></li>
-        <li><a href="#" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a></li>
+        <li>
+            <a href="#" title="Follow us on Facebook"><span class="icon fa fa-facebook-square" aria-hidden="true"></span></a>
+        </li>
+        <li>
+            <a href="#" title="Follow us on Google+"><span class="icon fa fa-google-plus-square" aria-hidden="true"></span></a>
+        </li>
+        <li>
+            <a href="#" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a>
+        </li>
     </ol>
-</div>
-                </code>
+</div></code></pre>
             </div>
         </section>
 
@@ -339,9 +334,15 @@
 
             <div class="tabs" data-component="tabs">
                 <ol class="tab-list" role="tablist">
-                    <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="tab-list__tab is-selected"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a></li>
-                    <li id="tab-2" aria-controls="panel-2" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 2</a></li>
-                    <li id="tab-3" aria-controls="panel-3" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 3</a></li>
+                    <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="tab-list__tab is-selected">
+                        <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a>
+                    </li>
+                    <li id="tab-2" aria-controls="panel-2" role="tab" aria-selected="false" class="tab-list__tab">
+                        <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 2</a>
+                    </li>
+                    <li id="tab-3" aria-controls="panel-3" role="tab" aria-selected="false" class="tab-list__tab">
+                        <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 3</a>
+                    </li>
                 </ol>
                 <div id="panel-1" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
@@ -359,20 +360,22 @@
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon fa fa-code" aria-hidden="true"></span>View Code</button>
-                <code class="sg-code">
-<div class="tabs" data-component="tabs">
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="tabs" data-component="tabs">
     <ol class="tab-list" role="tablist">
-        <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="tab-list__tab is-selected"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a></li>
-        <li id="tab-2" aria-controls="panel-2" role="tab" aria-selected="false" class="tab-list__tab"><a href="patterns.html#sg-tabs" class="tab-list__link">Tab 2</a></li>
+        <li id="tab-a" aria-controls="panel-a" role="tab" aria-selected="true" class="tab-list__tab is-selected">
+            <a href="#" class="tab-list__link">Tab 1</a>
+        </li>
+        <li id="tab-b" aria-controls="panel-b" role="tab" aria-selected="false" class="tab-list__tab">
+            <a href="#" class="tab-list__link">Tab 2</a>
+        </li>
     </ol>
-    <div id="panel-1" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
+    <div id="panel-a" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-a" aria-hidden="false">
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </div>
-    <div id="panel-2" class="tab-panel" role="tabpanel" aria-labelledby="tab-2" aria-hidden="true">
+    <div id="panel-b" class="tab-panel" role="tabpanel" aria-labelledby="tab-b" aria-hidden="true">
         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
     </div>
-</div>
-                </code>
+</div></code></pre>
             </div>
         </section>
     </main>
@@ -411,7 +414,8 @@
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/plugins.js?v=0.0.0"></script>
     <script src="assets/js/main.js?v=0.0.0"></script>
-    <script src="assets/js/styleguide.js?v=0.0.0"></script>
+    <script src="assets/js/styleguide/plugins.js?v=0.0.0"></script>
+    <script src="assets/js/styleguide/styleguide.js?v=0.0.0"></script>
     <script>UTIL.init();</script>
     <script>STYLEGUIDE_UTIL.init();</script>
 

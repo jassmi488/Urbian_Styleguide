@@ -39,7 +39,8 @@ STYLEGUIDE = {
                 $code_component.each(function ()
                 {
                     var $code_example = $(this);
-                    var $code = $('.sg-code', $code_example);
+                    var $pre = $('.sg-pre', $code_example);
+                    var $code = $('[data-sg-markup="true"]', $code_example);
                     var $code_toggle = $('[data-sg-toggle="code"]', $code_example);
 
                     $code.text($code.html()); // Convert HTML to character entities
@@ -63,7 +64,7 @@ STYLEGUIDE = {
                             $(this).html(icon_code + 'View Code');
                         }
 
-                        $code.toggleClass('is-visible'); // Toggle the display of the code
+                        $pre.toggleClass('is-visible'); // Toggle the display of the code
                     });
                 })
             }
