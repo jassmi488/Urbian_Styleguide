@@ -9,6 +9,27 @@
     margin-bottom: 1em;
     padding: 0.5em 1em 0.875em 1.25em;
 
+    .alert__title {
+        font-size: 1.25em; /* 20 / 16 */
+        font-weight: @weight-bold;
+        margin-bottom: 0.25em;
+    }
+
+    .alert__message {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .alert__link {
+        font-weight: @weight-bold;
+        text-decoration: none;
+
+        &:focus,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     &.alert--success {
         border-color: @color-green;
 
@@ -54,27 +75,6 @@
 
         .alert__link {
             color: @color-red;
-        }
-    }
-
-    .alert__title {
-        font-size: 1.25em; /* 20 / 16 */
-        font-weight: @weight-bold;
-        margin-bottom: 0.25em;
-    }
-
-    .alert__message {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .alert__link {
-        font-weight: @weight-bold;
-        text-decoration: none;
-
-        &:focus,
-        &:hover {
-            text-decoration: underline;
         }
     }
 }
