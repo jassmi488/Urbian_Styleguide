@@ -49,18 +49,23 @@
     }
 
     /**
-     * Silver
+     * Icon
      */
 
-    &.btn--silver {
-        background-color: @color-gray-dark;
+    &.btn--icon {
 
-        &.is-active,
-        &:focus,
-        &:hover {
-            background-color: @color-white;
-            border-color: @color-silver;
-            color: @color-black;
+        .icon {
+            margin-left: 0;
+        }
+    }
+
+    .icon {
+        font-size: 0.875em; /* 14 / 16 */
+        margin-left: 0.75em;
+
+        &.icon--first {
+            margin-right: 0.75em;
+            margin-left: 0;
         }
     }
 
@@ -107,23 +112,18 @@
     }
 
     /**
-     * Icon
+     * Silver
      */
 
-    &.btn--icon {
+    &.btn--silver {
+        background-color: @color-gray-dark;
 
-        .icon {
-            margin-left: 0;
-        }
-    }
-
-    .icon {
-        font-size: 0.875em; /* 14 / 16 */
-        margin-left: 0.75em;
-
-        &.icon--first {
-            margin-right: 0.75em;
-            margin-left: 0;
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: @color-white;
+            border-color: @color-silver;
+            color: @color-black;
         }
     }
 }
