@@ -5,7 +5,6 @@
 Shortened URL for device testing: [http://goo.gl/4NQ5zr](http://goo.gl/4NQ5zr)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
-[![NPM Dependencies](https://david-dm.org/connectjoepublic/styleguide.png)](https://david-dm.org)
 
 ### Requirements
 
@@ -64,9 +63,9 @@ less/
 
 - **Breakpoints, Colors, Fonts**
     - `less/generic/variables.less`
-- **Helpers**
+- **Clearfix, Fluid Embed, Font Utilities**
     - `less/base/helpers.less`
-- **Mixins**
+- **Transform, Transition**
     - `less/generic/mixins.less`
 
 ### Components
@@ -74,6 +73,7 @@ less/
 - [Font Awesome](http://fontawesome.io)
 - [jQuery](http://jquery.com)
 - [Normalize.css](http://necolas.github.io/normalize.css)
+- [Placeholder](http://mths.be/placeholder)
 - [Tablesaw](https://github.com/filamentgroup/tablesaw)
 
 ### Polyfills
