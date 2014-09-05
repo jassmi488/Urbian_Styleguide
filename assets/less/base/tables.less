@@ -44,34 +44,13 @@ table,
         border-radius: 1px;
 
         th {
+            border-right: 1px solid @color-silver;
             border-bottom: 1px solid @color-silver;
         }
 
-        tbody {
-
-            tr {
-
-                &:first-child {
-
-                    td {
-
-                        &:first-child {
-                            border-top: 1px solid @color-silver;
-                        }
-                    }
-                }
-
-                td {
-                    border-bottom: 1px solid @color-silver;
-
-                    &:last-child {
-                        border-bottom: 0;
-                    }
-                }
-            }
-        }
-
         td {
+            border-right: 1px solid @color-silver;
+            border-bottom: 1px solid @color-silver;
             padding-left: 1em;
         }
     }
@@ -94,46 +73,7 @@ table,
     }
 }
 
-@media all and (min-width: @bp-xs) {
-
-    table,
-    .table {
-
-        &.table--bordered {
-
-            thead {
-
-                th {
-                    border-right: 1px solid @color-silver;
-                    padding-left: 1em;
-
-                    &:last-child {
-                        border-right: 0;
-                    }
-                }
-            }
-
-            tbody {
-
-                tr {
-
-                    td {
-                        border-right: 1px solid @color-silver;
-
-                        &:last-child {
-                            border-right: 0;
-                            border-bottom: 1px solid @color-silver;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/**
- * Tablesaw | 0.1.6 | https://github.com/filamentgroup/tablesaw
- */
+/* Tablesaw | 0.1.6 | https://github.com/filamentgroup/tablesaw */
 
 table.tablesaw {
     empty-cells: show;
@@ -155,6 +95,8 @@ table.tablesaw {
 
 .tablesaw th,
 .tablesaw td {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: .5em .7em;
 }
@@ -190,7 +132,7 @@ table.tablesaw {
     .tablesaw-stack th .tablesaw-cell-label {
         display: block;
         padding: 0 .6em 0 0;
-        min-width: 30%;
+        min-width: 40%;
         display: inline-block;
     }
 
@@ -206,15 +148,6 @@ table.tablesaw {
         display: block;
     }
 
-    /* Hide the table cells in the footer */
-    .tablesaw-stack tfoot {
-
-        .tablesaw-cell-label {
-            display: none;
-            visibility: hidden;
-        }
-    }
-
     /* Avoid double strokes when stacked */
     .tablesaw-stack tbody th.group {
         margin-top: -1px;
@@ -228,6 +161,51 @@ table.tablesaw {
 
 @media (max-width: 39.9375em) {
 
+    /* Table rows have a gray bottom stroke by default */
+    .tablesaw-stack {
+
+        tbody {
+
+            tr {
+                border-bottom: 1px solid @color-silver;
+            }
+        }
+
+        &.table--bordered {
+
+            tbody {
+
+                tr {
+
+                    &:first-child {
+
+                        td {
+
+                            &:first-child {
+                                border-top: 1px solid @color-silver;
+                            }
+                        }
+                    }
+
+                    td {
+                        border-right: 0;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            tfoot {
+
+                td {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+
     .tablesaw-stack thead td,
     .tablesaw-stack thead th {
         display: none;
@@ -239,15 +217,9 @@ table.tablesaw {
         float: left;
         width: 100%;
     }
-
-    /* Table rows have a gray bottom stroke by default */
-    .tablesaw-stack tbody tr {
-        border-bottom: 1px solid @color-silver;
-    }
 }
 
-/* Media query to show as a standard table at 560px (35em x 16px) or wider */
-
+/* Media query to show as a standard table at 640px (40em x 16px) or wider */
 @media (min-width: @bp-xs) {
 
     .tablesaw-stack tr {
