@@ -26,21 +26,38 @@ Ensure that the following are installed on your computer:
 ```
 less/
      base/
+        anchors.less
         base.less
+        blockquotes.less
+        figures.less
+        forms.less
         grid.less
         headings.less
         helpers.less
         hr.less
-        links.less
+        lists.less
+        paragraphs.less
         print.less
+        tables.less
      generic/
         mixins.less
         normalize.less
         reset.less
         variables.less
      objects/
+        accordion.less
+        alert.less
+        breadcrumbs.less
+        buttons.less
+        card.less
+        map.less
         media.less
+        nav.less
+        pagination.less
+        social.less
+        tabs.less
      style.less
+     styleguide.less
 ```
 
 ### Features
@@ -57,6 +74,7 @@ less/
 - [Font Awesome](http://fontawesome.io)
 - [jQuery](http://jquery.com)
 - [Normalize.css](http://necolas.github.io/normalize.css)
+- [Tablesaw](https://github.com/filamentgroup/tablesaw)
 
 ### Polyfills
 
