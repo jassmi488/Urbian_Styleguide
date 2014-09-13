@@ -140,21 +140,38 @@
     .clearfix();
     width: 100%;
 
-    /**
-     * Left-aligned Buttons
-     */
+    .btn {
+        margin-bottom: 0.875em;
+        width: 100%;
 
-    &.btn-group--left {
-
-        .btn {
-            float: left;
-            margin-right: 0.5em;
-            margin-left: 0;
+        &:last-child {
+            margin-bottom: 0;
         }
     }
+}
 
-    .btn {
-        float: right;
-        margin-left: 0.5em;
+@media all and (min-width: @bp-xxs) {
+
+    .btn-group {
+
+        .btn {
+            float: right;
+            margin-bottom: 0;
+            margin-left: 0.5em;
+            width: auto;
+        }
+
+        /**
+         * Left-aligned Buttons
+         */
+
+        &.btn-group--left {
+
+            .btn {
+                float: left;
+                margin-right: 0.5em;
+                margin-left: 0;
+            }
+        }
     }
 }
