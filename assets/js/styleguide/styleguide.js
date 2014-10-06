@@ -53,7 +53,7 @@ STYLEGUIDE = {
                          * Toggle the label of the button
                          */
 
-                        var icon_code = '<span class="icon fa fa-code" aria-hidden="true"></span>';
+                        var icon_code = '<span class="icon icon--left fa fa-code" aria-hidden="true"></span>';
 
                         if ($(this).hasClass('is-active'))
                         {

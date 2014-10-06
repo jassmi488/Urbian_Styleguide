@@ -46,7 +46,7 @@
     <![endif]-->
 
     <header class="sg-header sg-header--primary" role="banner">
-        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/100x58" width="100" height="58" alt="Name of Project Logo" /></a>
+        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/100x50" width="100" height="50" alt="Name of Project Logo" /></a>
         <nav class="sg-nav sg-nav--primary" role="navigation">
             <ol class="sg-list">
                 <li><a href="elements.html">Elements</a></li>
@@ -56,7 +56,7 @@
                 <li><a href="templates">Templates</a></li>
             </ol>
         </nav>
-        <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="icon fa fa-bars" aria-hidden="true"></span>Menu</button>
+        <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="icon icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
     </header>
 
     <main class="sg-main sg-main--full" role="main">
@@ -69,63 +69,66 @@
             <p class="sg-paragraph">If you have any questions, <a class="sg-anchor" href="https://github.com/connectjoepublic/styleguide/issues/new">submit an issue in our GitHub repo</a>.</p>
         </section>
 
-        <div class="row">
-            <div class="col col-1-4">
-                <section class="sg-section sg-section--block sg-section--bordered">
-                    <header class="sg-header sg-header--section">
-                        <h2 class="epsilon hN"><span class="icon fa fa-cube" aria-hidden="true"></span>Elements</h2>
-                    </header>
+        <div class="sg-sections">
+            <section class="sg-section sg-section--block sg-section--bordered">
+                <header class="sg-header sg-header--section">
+                    <h2 class="epsilon hN"><span class="icon fa fa-cube" aria-hidden="true"></span>Elements</h2>
+                </header>
 
-                    <p class="sg-paragraph">These are the smallest building blocks for an interface, such as headings, buttons, form input fields
-                        and icons.</p>
+                <p class="sg-paragraph">Elements are the basic building blocks, such as headings, buttons and icons.</p>
 
-                    <p class="sg-paragraph">More abstract elements like the font stack and color palette are also included here.</p>
+                <p class="sg-paragraph">They include more abstract elements like color palettes and font stacks.</p>
 
-                    <a href="elements.html" class="sg-btn" role="button">View</a>
-                </section>
-            </div>
+                <a href="elements.html" class="sg-btn" role="button">View</a>
+            </section>
 
-            <div class="col col-1-4">
-                <section class="sg-section sg-section--block sg-section--bordered">
-                    <header class="sg-header sg-header--section">
-                        <h2 class="epsilon hN"><span class="icon fa fa-cubes" aria-hidden="true"></span>Patterns</h2>
-                    </header>
+            <section class="sg-section sg-section--block sg-section--bordered">
+                <header class="sg-header sg-header--section">
+                    <h2 class="epsilon hN"><span class="icon fa fa-cubes" aria-hidden="true"></span>Patterns</h2>
+                </header>
 
-                    <p class="sg-paragraph">These are groups of elements, that when combined, function together as a unit.</p>
+                <p class="sg-paragraph">Patterns are groups of elements that, when combined, function together as a unit.</p>
 
-                    <p class="sg-paragraph">Examples of these common snippets of markup are navigation, tabs or a list of articles.</p>
+                <p class="sg-paragraph">It encourages creating reusable interface patterns like navigation, accordions, tabs or cards.</p>
 
-                    <a href="patterns.html" class="sg-btn" role="button">View</a>
-                </section>
-            </div>
+                <a href="patterns.html" class="sg-btn" role="button">View</a>
+            </section>
 
-            <div class="col col-1-4">
-                <section class="sg-section sg-section--block sg-section--bordered">
-                    <header class="sg-header sg-header--section">
-                        <h2 class="epsilon hN"><span class="icon fa fa-file-text-o" aria-hidden="true"></span>Forms</h2>
-                    </header>
+            <section class="sg-section sg-section--block sg-section--bordered">
+                <header class="sg-header sg-header--section">
+                    <h2 class="epsilon hN"><span class="icon fa fa-file-text-o" aria-hidden="true"></span>Forms</h2>
+                </header>
 
-                    <p class="sg-paragraph">These are combinations of normal content and controls such as labels, inputs, and checkboxes.</p>
+                <p class="sg-paragraph">Forms consist of normal content and controls such as labels, text inputs, checkboxes and buttons.</p>
 
-                    <p class="sg-paragraph">For example, a search form consisting of a label, text input and submit button.</p>
+                <p class="sg-paragraph">For example, a search form consisting of a label, text input and submit button.</p>
 
-                    <a href="forms.html" class="sg-btn" role="button">View</a>
-                </section>
-            </div>
+                <a href="forms.html" class="sg-btn" role="button">View</a>
+            </section>
 
-            <div class="col col-1-4">
-                <section class="sg-section sg-section--block sg-section--bordered">
-                    <header class="sg-header sg-header--section">
-                        <h2 class="epsilon hN"><span class="icon fa fa-th" aria-hidden="true"></span>Grid</h2>
-                    </header>
+            <section class="sg-section sg-section--block sg-section--bordered">
+                <header class="sg-header sg-header--section">
+                    <h2 class="epsilon hN"><span class="icon fa fa-th" aria-hidden="true"></span>Grid</h2>
+                </header>
 
-                    <p class="sg-paragraph">This is a combination of containers and columns which provides structure for content.</p>
+                <p class="sg-paragraph">The grid consists of rows and columns of containers used to give structure to content.</p>
 
-                    <p class="sg-paragraph">Column sizes are specified in fractions and take up the full width available on narrow screens.</p>
+                <p class="sg-paragraph">Column widths are specified in percentages and appear full width on narrow screens.</p>
 
-                    <a href="grid.html" class="sg-btn" role="button">View</a>
-                </section>
-            </div>
+                <a href="grid.html" class="sg-btn" role="button">View</a>
+            </section>
+
+            <section class="sg-section sg-section--block sg-section--bordered">
+                <header class="sg-header sg-header--section">
+                    <h2 class="epsilon hN"><span class="icon fa fa-files-o" aria-hidden="true"></span>Templates</h2>
+                </header>
+
+                <p class="sg-paragraph">Templates are combinations of elements, patterns, forms or grids to provide context per page.</p>
+
+                <p class="sg-paragraph">They could include variations e.g. single vs multi–column content layout.</p>
+
+                <a href="templates" class="sg-btn" role="button">View</a>
+            </section>
         </div>
     </main>
 
