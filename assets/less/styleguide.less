@@ -812,16 +812,23 @@ body {
         margin-bottom: 4em;
         padding-top: 2em;
 
+        &:last-of-type {
+            padding-bottom: 4em;
+        }
+
+        &.sg-section--block {
+
+            &:last-of-type {
+                padding-bottom: 0.75em;
+            }
+        }
+
         &.sg-section--intro {
             margin-bottom: 2.5em;
 
             &:last-of-type {
                 padding-bottom: 0;
             }
-        }
-
-        &:last-of-type {
-            padding-bottom: 4em;
         }
     }
 }
