@@ -1060,31 +1060,31 @@ body {
 code[class*="language-"],
 pre[class*="language-"] {
     color: #f8f8f2;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
     line-height: 1.5;
+    text-align: left;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
 
     -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
+      -o-tab-size: 4;
+         tab-size: 4;
 
     -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+       -moz-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-    padding: 1em;
+    border-radius: 1px;
     margin: .5em 0;
     overflow: auto;
-    border-radius: 1px;
+    padding: 1em;
 }
 
 :not(pre) > code[class*="language-"],
@@ -1094,8 +1094,8 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-    padding: .1em;
     border-radius: 1px;
+    padding: .1em;
 }
 
 .token.comment,
@@ -1173,9 +1173,9 @@ pre[class*="language-"] {
 }
 
 pre.line-numbers {
-    position: relative;
-    padding-left: 3.8em;
     counter-reset: linenumber;
+    padding-left: 3.8em;
+    position: relative;
 }
 
 pre.line-numbers > code {
@@ -1183,31 +1183,31 @@ pre.line-numbers > code {
 }
 
 .line-numbers .line-numbers-rows {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
+    border-right: 1px solid #999;
     font-size: 100%;
     left: -3.8em;
-    width: 3em; /* works for line-numbers below 1000 lines */
     letter-spacing: -1px;
-    border-right: 1px solid #999;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 3em; /* works for line-numbers below 1000 lines */
 
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 
 }
 
 .line-numbers-rows > span {
-    pointer-events: none;
-    display: block;
     counter-increment: linenumber;
+    display: block;
+    pointer-events: none;
 }
 
 .line-numbers-rows > span:before {
-    content: counter(linenumber);
     color: #999;
+    content: counter(linenumber);
     display: block;
     padding-right: 0.8em;
     text-align: right;
