@@ -52,7 +52,9 @@ module.exports = function (grunt)
                     'README.md',
                     'robots.txt',
                     'less',
-                    'node_modules'
+                    'node_modules',
+                    'validation-report.json',
+                    'validation-status.json'
                 ]
             }
         },
