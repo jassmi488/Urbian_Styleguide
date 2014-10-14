@@ -4,6 +4,8 @@
 
 /**
  * IMPORTS
+ * VARIABLES
+ * .....Font
  * ELEMENTS
  * .....Buttons
  * .....Code
@@ -41,6 +43,20 @@
 
 
 /* -------------------------------------------------------------------------- *\
+   $VARIABLES
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $Font
+   ========================================================================== */
+
+@font-styleguide: "Roboto", sans-serif;
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
    $ELEMENTS
 \* -------------------------------------------------------------------------- */
 
@@ -54,7 +70,7 @@
     border-radius: 1px;
     color: @color-gray-dark;
     display: inline-block;
-    font-family: @font-secondary;
+    font-family: @font-styleguide;
     font-weight: bold;
     line-height: normal;
     padding: 0.5em 0.75em;
@@ -193,7 +209,7 @@
 .sg-heading {
     clear: both;
     color: @color-gray;
-    font-family: @font-secondary;
+    font-family: @font-styleguide;
     text-transform: uppercase;
     width: 100%;
 
@@ -211,7 +227,7 @@
    ========================================================================== */
 
 .sg-list {
-    font-family: @font-secondary;
+    font-family: @font-styleguide;
     list-style: none;
     margin-top: 0;
     padding-left: 0;
@@ -359,7 +375,7 @@
    ========================================================================== */
 
 .sg-paragraph {
-    font-family: @font-secondary;
+    font-family: @font-styleguide;
     font-size: 1em;
     margin: 0;
 
@@ -563,7 +579,7 @@ body {
    ========================================================================== */
 
 .sg-nav {
-    font-family: @font-secondary;
+    font-family: @font-styleguide;
 
     &.sg-nav--primary {
         background-color: @color-gray;
