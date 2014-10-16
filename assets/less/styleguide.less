@@ -299,7 +299,9 @@
         padding-left: 0.5em;
 
         li {
-            color: @color-gray-dark;
+            color: @color-gray;
+            font-size: 0.875em; /* 14 / 16 */
+            text-transform: uppercase;
 
             &:before {
                 color: @color-gray;
@@ -307,6 +309,10 @@
                 counter-increment: section;
                 font-weight: @weight-bold;
                 padding-right: 0.25em;
+            }
+
+            li {
+                font-size: 1em;
             }
         }
 
