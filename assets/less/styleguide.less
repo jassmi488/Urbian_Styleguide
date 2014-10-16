@@ -68,12 +68,12 @@
     background-color: @color-white;
     border: 1px solid @color-silver;
     border-radius: 1px;
-    color: @color-gray-dark;
+    color: @color-black;
     display: inline-block;
     font-family: @font-styleguide;
     font-weight: bold;
     line-height: normal;
-    padding: 0.5em 0.75em;
+    padding: 0.5em 0.75em 0.5625em 0.75em;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -130,7 +130,7 @@
     &.sg-btn--top {
         background-color: transparent;
         border-color: transparent;
-        bottom: 1.75em;
+        bottom: 1.125em;
         color: @color-gray;
         display: none;
         padding: 0.125em 0.5em;
@@ -204,7 +204,7 @@
 
 .sg-heading {
     clear: both;
-    color: @color-gray;
+    color: @color-gray-dark;
     font-family: @font-styleguide;
     text-transform: uppercase;
     width: 100%;
@@ -520,7 +520,6 @@ body {
 
     &.sg-header--section {
         border-bottom: 1px dotted @color-silver;
-        color: @color-gray-dark;
         margin-bottom: 2em;
         text-transform: uppercase;
         white-space: nowrap;
@@ -890,11 +889,12 @@ body {
                 color: @color-black;
                 font-size: 0.875em; /* 14 / 16 */
                 display: block;
-                padding-top: 0.25em;
+                padding-top: 0.375em;
                 padding-right: 0.75em;
                 padding-bottom: 0.375em;
                 padding-left: 0.75em;
                 text-decoration: none;
+                text-transform: uppercase;
                 .transition(background-color 0.25s, color 0.25s;);
 
                 &.is-active,
@@ -917,7 +917,7 @@ body {
         padding-right: 2em;
         padding-left: 2em;
         position: absolute;
-        top: 7.625em;
+        top: 7.125em;
         .transition(top 0.5s);
         width: 25%;
 
@@ -958,8 +958,8 @@ body {
 .sg-footer {
     clear: both;
     font-size: 0.875em; /* 14 / 16 */
-    margin-bottom: 1em;
     padding-right: 1em;
+    padding-bottom: 1.1875em;
     padding-left: 1em;
     width: 100%;
 
@@ -969,6 +969,7 @@ body {
 
     .sg-list {
         border-top: 1px dotted @color-silver;
+        margin-bottom: 0;
         padding-top: 1em;
     }
 }
