@@ -733,49 +733,6 @@ body {
     }
 }
 
-@media all and (min-width: @bp-medium) {
-
-    .sg-sections {
-
-        .sg-section {
-            min-height: 25em;
-            position: relative;
-
-            .sg-btn {
-                bottom: 1em;
-                left: 1em;
-                position: absolute;
-
-                &:active {
-                    bottom: 15px;
-                    position: absolute;
-                    top: inherit;
-                }
-            }
-        }
-    }
-}
-
-@media all and (min-width: @bp-xl) {
-
-    .sg-sections {
-
-        .sg-section {
-            min-height: 22em;
-        }
-    }
-}
-
-@media all and (min-width: @bp-xxl) {
-
-    .sg-sections {
-
-        .sg-section {
-            min-height: 20em;
-        }
-    }
-}
-
 /**
  * Section
  */
@@ -854,6 +811,13 @@ body {
 @media all and (min-width: @bp-large) {
 
     .sg-section {
+
+        &.sg-section--block {
+
+            &:last-of-type {
+                padding-bottom: 1.5em;
+            }
+        }
 
         &.sg-section--bordered {
             padding: 1em 1.5em 1.5em 1.5em;
