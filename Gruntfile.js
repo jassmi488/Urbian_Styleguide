@@ -100,4 +100,5 @@ module.exports = function (grunt)
 
     grunt.registerTask('serve', ['less', 'connect', 'watch']);
     grunt.registerTask('default', ['serve']);
+    grunt.registerTask('ftp', ['ftp-deploy']);
 };
