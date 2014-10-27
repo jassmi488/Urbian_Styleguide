@@ -68,6 +68,29 @@
             }
 
             /* ==========================================================================
+               Alert
+               ========================================================================== */
+
+            var $alert_component = $('[data-component="alert"]');
+
+            if ($alert_component.length > 0)
+            {
+                $alert_component.each(function ()
+                {
+                    var $alert = $(this);
+
+                    var $dismiss_alert = $('[data-action="dismiss"]', $alert);
+
+                    $dismiss_alert.on('click', function (e)
+                    {
+                        e.preventDefault();
+
+                        $alert.fadeOut();
+                    });
+                });
+            }
+
+            /* ==========================================================================
                Map
                ========================================================================== */
 

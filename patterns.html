@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700%7CSource+Sans+Pro:400,700" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="//fonts.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="assets/css/style.css?v=2.0.6" />
@@ -169,51 +169,59 @@
                 <h1 class="epsilon hN">Alerts</h1>
             </header>
 
-            <div class="alert alert--success" role="alert">
+            <div class="alert alert--success" role="alert" data-component="alert">
                 <div class="alert__title">Success</div>
                 <p class="alert__message"><b>Well done!</b> You’ve successfully read <a class="alert__link" href="patterns.html#sg-alerts">this important alert message</a>.</p>
+                <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
             </div>
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--success" role="alert"><div class="alert__title">Success</div>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--success" role="alert" data-component="alert"><div class="alert__title">Success</div>
     <p class="alert__message"><b>Well done!</b> You successfully read <a class="alert__link" href="#">this important alert message</a>.</p>
+    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
             </div>
 
-            <div class="alert alert--info" role="alert">
+            <div class="alert alert--info" role="alert" data-component="alert">
                 <div class="alert__title">Information</div>
                 <p class="alert__message"><b>Heads up!</b> This <a class="alert__link" href="patterns.html#sg-alerts">alert needs your attention</a>, but it’s not super important.</p>
+                <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
             </div>
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--info" role="alert"><div class="alert__title">Information</div>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--info" role="alert" data-component="alert"><div class="alert__title">Information</div>
     <p class="alert__message"><b>Heads up!</b> This <a class="alert__link" href="#">alert needs your attention</a>, but it’s not super important.</p>
+    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
             </div>
 
-            <div class="alert alert--warning" role="alert">
+            <div class="alert alert--warning" role="alert" data-component="alert">
                 <div class="alert__title">Warning!</div>
                 <p class="alert__message">Better <a class="alert__link" href="patterns.html#sg-alerts">check yourself</a>, you’re not looking too good.</p>
+                <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
             </div>
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--warning" role="alert"><div class="alert__title">Warning!</div>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--warning" role="alert" data-component="alert"><div class="alert__title">Warning!</div>
     <p class="alert__message">Better <a class="alert__link" href="patterns.html#sg-alerts">check yourself</a>, you’re not looking too good.</p>
+    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
             </div>
 
-            <div class="alert alert--error" role="alert">
+            <div class="alert alert--error" role="alert" data-component="alert">
                 <div class="alert__title">Error</div>
                 <p class="alert__message"><b>Oh snap!</b> Change a few things up and <a class="alert__link" href="patterns.html#sg-alerts">try submitting again</a>.</p>
+                <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
             </div>
 
             <div class="sg-example-code" data-sg-component="code">
                 <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--error" role="alert"><div class="alert__title">Error</div>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--error" role="alert" data-component="alert"><div class="alert__title">Error</div>
     <p class="alert__message"><b>Oh snap!</b> <a class="alert__link" href="#">Change a few things up</a> and try submitting again.</p>
+    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
             </div>
         </section>
