@@ -2,7 +2,7 @@
 <html lang="en" class="sg-html">
 <head>
     <meta charset="utf-8" />
-    <title>Name of Project – Style Guide</title>
+    <title>Style Guide – Name of Project</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=2.1.0" />
-    <link rel="stylesheet" href="../assets/css/styleguide.css?v=2.1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
 
     <!-- Google+: change XXXXXXXXXX to be your profile’s ID -->
     <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
@@ -114,24 +114,28 @@
 
                 <p class="sg-paragraph">They provide context and are focused on content structure as opposed to actual content.</p>
 
-                <a href="../templates" class="sg-btn" role="button">Explore</a>
+                <a href="templates.html" class="sg-btn" role="button">Explore</a>
             </section>
         </div>
     </main>
 
     <footer class="sg-footer sg-footer--full" role="contentinfo">
         <ol class="sg-list">
-            <li><b>Version</b>: 2.1.0</li>
-            <li><b>Last Modified</b>: <span data-sg-last-modified="true">20 October, 2014</span></li>
+            <li><b>Version</b>: <%= version %></li>
+            <li><b>Last Updated</b>: <%= updated %></li>
         </ol>
     </footer>
 
     <!-- JavaScript -->
+    <% if (environment === 'dist') { %>
+    <script src="../assets/js/script-<%= version %>.js"></script>
+    <% } else { %>
     <script src="../assets/js/vendor/jquery.js"></script>
-    <script src="../assets/js/plugins.js?v=2.1.0"></script>
-    <script src="../assets/js/main.js?v=2.1.0"></script>
-    <script src="../assets/js/styleguide/plugins.js?v=2.1.0"></script>
-    <script src="../assets/js/styleguide/styleguide.js?v=2.1.0"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <% } %>
+    <script src="../assets/js/styleguide/plugins.js"></script>
+    <script src="../assets/js/styleguide/styleguide.js"></script>
     <script>UTIL.init();</script>
     <script>STYLEGUIDE_UTIL.init();</script>
 </body>

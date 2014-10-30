@@ -70,28 +70,6 @@ STYLEGUIDE = {
             }
 
             /* ==========================================================================
-               Last Modified
-               ========================================================================== */
-
-            var $last_modified = $('[data-sg-last-modified="true"]');
-
-            if ($last_modified.length > 0)
-            {
-                // Get the last modified date of the document
-                var last_modified_date = new Date(document.lastModified);
-                var months = [ "January","February", "March",
-                               "April", "May", "June", "July",
-                               "August", "September", "October",
-                               "November", "December" ];
-                var last_modified_day = last_modified_date.getDate();
-                var last_modified_month = last_modified_date.getMonth();
-                var last_modified_year = last_modified_date.getFullYear();
-
-                // Display the last modified date
-                $last_modified.html(months[last_modified_month] + ' ' + last_modified_day + ', ' + last_modified_year);
-            }
-
-            /* ==========================================================================
                Scroll
                ========================================================================== */
 

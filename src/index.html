@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Home</title>
+    <title>Name of Project</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
@@ -32,7 +32,11 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2.1.0" />
+    <% if (environment === 'dist') { %>
+    <link rel="stylesheet" href="assets/css/style-<%= version %>.css" />
+    <% } else { %>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <% } %>
 
     <!-- Google+: change XXXXXXXXXX to be your profile’s ID -->
     <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
@@ -41,7 +45,7 @@
     <script src="assets/js/vendor/polyfills.js"></script>
     <![endif]-->
 </head>
-<body data-controller="site">
+<body>
     <!--[if lt IE 9]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -59,9 +63,13 @@
     </footer>
 
     <!-- JavaScript -->
+    <% if (environment === 'dist') { %>
+    <script src="assets/js/script-<%= version %>.js"></script>
+    <% } else { %>
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=2.1.0"></script>
-    <script src="assets/js/main.js?v=2.1.0"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <% } %>
     <script>UTIL.init();</script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site’s ID -->

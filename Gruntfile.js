@@ -4,7 +4,10 @@ module.exports = function (grunt)
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        clean: ['build'],
+        clean: {
+            build: ['build'],
+            dist: ['dist']
+        },
         connect: {
             server: {
                 options: {
@@ -20,13 +23,19 @@ module.exports = function (grunt)
             }
         },
         copy: {
-            assets: {
+            build: {
                 files: [
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: ['{css,images}/**'],
+                        src: ['{images,js}/**'],
                         dest: 'build/assets'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['**/*.html'],
+                        dest: 'build'
                     },
                     {
                         expand: true,
@@ -36,26 +45,37 @@ module.exports = function (grunt)
                     }
                 ]
             },
-            styleguide: {
-                expand: true,
-                cwd: 'src/styleguide',
-                src: ['*.*', '.*'],
-                dest: 'build/styleguide'
-            },
-            js: {
+            dist: {
                 files: [
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: [
-                            'js/styleguide/plugins.js',
-                            'js/styleguide/styleguide.js',
-                            'js/vendor/jquery.js',
-                            'js/vendor/polyfills.js',
-                            'js/main.js',
-                            'js/plugins.js'
-                        ],
-                        dest: 'build/assets'
+                        src: ['images/**'],
+                        dest: 'dist/assets'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src/assets',
+                        src: ['js/vendor/polyfill.js'],
+                        dest: 'dist/assets'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src/assets',
+                        src: ['js/styleguide/**'],
+                        dest: 'dist/assets'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: '**/*.html',
+                        dest: 'dist'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['*.*', '.*'],
+                        dest: 'dist'
                     }
                 ]
             }
@@ -78,8 +98,8 @@ module.exports = function (grunt)
                     port: 21,
                     authKey: 'joepublicn'
                 },
-                src: './',
-                dest: 'public_html/styleguide/v2',
+                src: './dist',
+                dest: 'public_html/styleguide/v2.1',
                 exclusions: [
                     '.editorconfig',
                     '.ftppass',
@@ -102,23 +122,73 @@ module.exports = function (grunt)
             }
         },
         jshint: {
-            files: ['assets/js/main.js']
+            files: ['src/assets/js/main.js']
         },
         less: {
             build: {
                 files: {
-                    'assets/css/style.css': 'src/assets/less/style.less',
-                    'assets/css/styleguide.css': 'src/assets/less/styleguide.less'
+                    'build/assets/css/style.css': 'src/assets/less/style.less',
+                    'build/assets/css/styleguide.css': 'src/assets/less/styleguide.less'
                 },
                 options: {
+                    banner: '/*! <%= pkg.description %> | <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
+                    cleancss: true
+                }
+            },
+            dist: {
+                files: {
+                    'dist/assets/css/style-<%= pkg.version %>.css': 'src/assets/less/style.less',
+                    'dist/assets/css/styleguide-<%= pkg.version %>.css': 'src/assets/less/styleguide.less'
+                },
+                options: {
+                    banner: '/*! <%= pkg.description %> | <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
                     cleancss: true
                 }
             }
         },
+        processhtml: {
+            build: {
+                options: {
+                    process: true,
+                    data: {
+                        updated: '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>',
+                        version: '<%= pkg.version %>'
+                    }
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: '**/*.html',
+                        dest: 'build'
+                    }
+                ]
+            },
+            dist: {
+                options: {
+                    process: true,
+                    data: {
+                        updated: '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>',
+                        version: '<%= pkg.version %>'
+                    }
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: '**/*.html',
+                        dest: 'dist'
+                    }
+                ]
+            }
+        },
         uglify: {
+            options: {
+                banner: '/*! <%= pkg.description %> | <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */'
+            },
             build: {
                 files: {
-                    'build/assets/js/script.js': [
+                    'dist/assets/js/script-<%= pkg.version %>.js': [
                         'src/assets/js/vendor/jquery.js',
                         'src/assets/js/plugins.js',
                         'src/assets/js/main.js'
@@ -139,7 +209,7 @@ module.exports = function (grunt)
                 files: [
                     'src/**'
                 ],
-                tasks: ['less', 'copy'],
+                tasks: ['less:build', 'copy:build', 'processhtml:build'],
                 options: {
                     livereload: true
                 }
@@ -149,8 +219,10 @@ module.exports = function (grunt)
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['clean', 'less', 'copy']);
-    grunt.registerTask('serve', ['clean', 'less', 'copy', 'connect', 'watch']);
+    grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
+    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'uglify']);
     grunt.registerTask('ftp', ['ftp-deploy']);
+    grunt.registerTask('process', ['processhtml']);
+    grunt.registerTask('serve', ['build', 'connect', 'watch']);
 };
