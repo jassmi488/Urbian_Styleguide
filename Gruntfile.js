@@ -12,7 +12,7 @@ module.exports = function (grunt)
                     base: 'build',
                     livereload: true,
                     open: {
-                        target: 'http://127.0.0.1:1337'
+                        target: 'http://127.0.0.1:1337/styleguide/'
                     },
                     port: 1337,
                     useAvailablePort: true
@@ -36,11 +36,11 @@ module.exports = function (grunt)
                     }
                 ]
             },
-            templates: {
+            styleguide: {
                 expand: true,
-                cwd: 'src/templates',
+                cwd: 'src/styleguide',
                 src: ['*.*', '.*'],
-                dest: 'build/templates'
+                dest: 'build/styleguide'
             },
             js: {
                 files: [
@@ -107,8 +107,8 @@ module.exports = function (grunt)
         less: {
             build: {
                 files: {
-                    'assets/css/style.css': 'assets/less/style.less',
-                    'assets/css/styleguide.css': 'assets/less/styleguide.less'
+                    'assets/css/style.css': 'src/assets/less/style.less',
+                    'assets/css/styleguide.css': 'src/assets/less/styleguide.less'
                 },
                 options: {
                     cleancss: true
