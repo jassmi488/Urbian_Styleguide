@@ -4,10 +4,12 @@ module.exports = function (grunt)
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        clean: ['build'],
         connect: {
             server: {
                 options: {
                     hostname: '*',
+                    base: 'build',
                     livereload: true,
                     open: {
                         target: 'http://127.0.0.1:1337'
@@ -15,6 +17,47 @@ module.exports = function (grunt)
                     port: 1337,
                     useAvailablePort: true
                 }
+            }
+        },
+        copy: {
+            assets: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src/assets',
+                        src: ['{css,images}/**'],
+                        dest: 'build/assets'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['*.*', '.*'],
+                        dest: 'build'
+                    }
+                ]
+            },
+            templates: {
+                expand: true,
+                cwd: 'src/templates',
+                src: ['*.*', '.*'],
+                dest: 'build/templates'
+            },
+            js: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src/assets',
+                        src: [
+                            'js/styleguide/plugins.js',
+                            'js/styleguide/styleguide.js',
+                            'js/vendor/jquery.js',
+                            'js/vendor/polyfills.js',
+                            'js/main.js',
+                            'js/plugins.js'
+                        ],
+                        dest: 'build/assets'
+                    }
+                ]
             }
         },
         csslint: {
@@ -72,10 +115,21 @@ module.exports = function (grunt)
                 }
             }
         },
+        uglify: {
+            build: {
+                files: {
+                    'build/assets/js/script.js': [
+                        'src/assets/js/vendor/jquery.js',
+                        'src/assets/js/plugins.js',
+                        'src/assets/js/main.js'
+                    ]
+                }
+            }
+        },
         validation: {
             files: {
                 src: [
-                    'templates/**/*.html',
+                    'build/**/*.html',
                     '*.html'
                 ]
             }
@@ -83,12 +137,9 @@ module.exports = function (grunt)
         watch: {
             build: {
                 files: [
-                    'assets/js/**',
-                    'assets/less/**',
-                    'templates/**',
-                    '*.html'
+                    'src/**'
                 ],
-                tasks: ['less'],
+                tasks: ['less', 'copy'],
                 options: {
                     livereload: true
                 }
@@ -98,7 +149,8 @@ module.exports = function (grunt)
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('serve', ['less', 'connect', 'watch']);
-    grunt.registerTask('default', ['serve']);
+    grunt.registerTask('build', ['clean', 'less', 'copy']);
+    grunt.registerTask('serve', ['clean', 'less', 'copy', 'connect', 'watch']);
+    grunt.registerTask('default', ['build']);
     grunt.registerTask('ftp', ['ftp-deploy']);
 };
