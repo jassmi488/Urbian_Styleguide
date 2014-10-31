@@ -2,6 +2,11 @@ module.exports = function (grunt)
 {
     require('time-grunt')(grunt);
 
+    var today = '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>';
+    var package_name = '<%= pkg.name %>';
+    var package_version = '<%= pkg.version %>';
+    var banner = '/*! ' + package_name + ' | ' + package_version + '  | ' + today + ' */';
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         clean: {
@@ -83,8 +88,8 @@ module.exports = function (grunt)
         csslint: {
             strict: {
                 src: [
-                    'assets/css/style.css',
-                    'assets/css/styleguide.css'
+                    'build/assets/css/style.css',
+                    'build/assets/css/styleguide.css'
                 ],
                 options: {
                     import: 2
@@ -92,7 +97,7 @@ module.exports = function (grunt)
             }
         },
         'ftp-deploy': {
-            build: {
+            dist: {
                 auth: {
                     host: 'joepublicn.com',
                     port: 21,
@@ -147,7 +152,7 @@ module.exports = function (grunt)
                     'build/assets/css/styleguide.css': 'src/assets/less/styleguide.less'
                 },
                 options: {
-                    banner: '/*! <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
+                    banner: banner,
                     cleancss: true
                 }
             },
@@ -157,7 +162,7 @@ module.exports = function (grunt)
                     'dist/assets/css/styleguide-<%= pkg.version %>.css': 'src/assets/less/styleguide.less'
                 },
                 options: {
-                    banner: '/*! <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
+                    banner: banner,
                     cleancss: true
                 }
             }
@@ -167,8 +172,8 @@ module.exports = function (grunt)
                 options: {
                     process: true,
                     data: {
-                        updated: '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>',
-                        version: '<%= pkg.version %>'
+                        updated: today,
+                        version: package_version
                     }
                 },
                 files: [
@@ -184,8 +189,8 @@ module.exports = function (grunt)
                 options: {
                     process: true,
                     data: {
-                        updated: '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>',
-                        version: '<%= pkg.version %>'
+                        updated: today,
+                        version: package_version
                     }
                 },
                 files: [
@@ -200,7 +205,7 @@ module.exports = function (grunt)
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */'
+                banner: banner
             },
             build: {
                 files: {
@@ -246,7 +251,7 @@ module.exports = function (grunt)
     grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('deploy', ['dist', 'ftp']);
-    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'htmlmin']);
+    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'uglify', 'htmlmin']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('process', ['processhtml']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
