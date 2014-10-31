@@ -55,6 +55,7 @@ less/
         pagination.less
         social.less
         tabs.less
+        tooltips.less
      style.less
      styleguide.less
 ```
