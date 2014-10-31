@@ -121,6 +121,22 @@ module.exports = function (grunt)
                 ]
             }
         },
+        htmlmin: {
+            dist: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'dist',
+                        src: '**/*.html',
+                        dest: 'dist'
+                    }
+                ]
+            }
+        },
         jshint: {
             files: ['src/assets/js/main.js']
         },
@@ -229,7 +245,7 @@ module.exports = function (grunt)
 
     grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('deploy', ['dist', 'ftp']);
+    grunt.registerTask('deploy', ['dist', 'htmlmin', 'ftp']);
     grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('process', ['processhtml']);
