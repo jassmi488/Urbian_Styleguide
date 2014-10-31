@@ -221,7 +221,7 @@ module.exports = function (grunt)
 
     grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'uglify']);
+    grunt.registerTask('deploy', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'uglify', 'ftp']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('process', ['processhtml']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
