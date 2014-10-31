@@ -42,6 +42,8 @@ Thumbs.db
 
 # Node / Grunt #
 ################
+build
+dist
 node_modules
 validation-report.json
 validation-status.json

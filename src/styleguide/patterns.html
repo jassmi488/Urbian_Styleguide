@@ -2,13 +2,13 @@
 <html lang="en" class="sg-html">
 <head>
     <meta charset="utf-8" />
-    <title>Patterns – Style Guide</title>
+    <title>Patterns – Name of Project</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png.png" />
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700%7CSource+Sans+Pro:400,700" />
@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
-    <link rel="stylesheet" href="assets/css/style.css?v=2.1.0" />
-    <link rel="stylesheet" href="assets/css/styleguide.css?v=2.1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide.css" />
 
     <!-- Google+: change XXXXXXXXXX to be your profile’s ID -->
     <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
 
     <!--[if lt IE 9]>
-    <script src="assets/js/vendor/polyfills.js"></script>
+    <script src="../assets/js/vendor/polyfills.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -40,7 +40,7 @@
                 <li class="is-active"><a href="patterns.html">Patterns</a></li>
                 <li><a href="forms.html">Forms</a></li>
                 <li><a href="grid.html">Grid</a></li>
-                <li><a href="templates">Templates</a></li>
+                <li><a href="templates.html">Templates</a></li>
             </ol>
         </nav>
         <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="icon icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
@@ -444,17 +444,21 @@
 
     <footer class="sg-footer" role="contentinfo">
         <ol class="sg-list">
-            <li><b>Version</b>: 2.1.0</li>
-            <li><b>Last Modified</b>: <span data-sg-last-modified="true">20 October, 2014</span></li>
+            <li><b>Version</b>: <%= version %></li>
+            <li><b>Last Updated</b>: <%= updated %></li>
         </ol>
     </footer>
 
     <!-- JavaScript -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js?v=2.1.0"></script>
-    <script src="assets/js/main.js?v=2.1.0"></script>
-    <script src="assets/js/styleguide/plugins.js?v=2.1.0"></script>
-    <script src="assets/js/styleguide/styleguide.js?v=2.1.0"></script>
+    <% if (environment === 'dist') { %>
+    <script src="../assets/js/script-<%= version %>.js"></script>
+    <% } else { %>
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <% } %>
+    <script src="../assets/js/styleguide/plugins.js"></script>
+    <script src="../assets/js/styleguide/styleguide.js"></script>
     <script>UTIL.init();</script>
     <script>STYLEGUIDE_UTIL.init();</script>
 </body>
