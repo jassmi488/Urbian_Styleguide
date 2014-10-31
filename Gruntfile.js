@@ -131,7 +131,7 @@ module.exports = function (grunt)
                     'build/assets/css/styleguide.css': 'src/assets/less/styleguide.less'
                 },
                 options: {
-                    banner: '/*! <%= pkg.description %> | <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
+                    banner: '/*! <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
                     cleancss: true
                 }
             },
@@ -141,7 +141,7 @@ module.exports = function (grunt)
                     'dist/assets/css/styleguide-<%= pkg.version %>.css': 'src/assets/less/styleguide.less'
                 },
                 options: {
-                    banner: '/*! <%= pkg.description %> | <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
+                    banner: '/*! <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */',
                     cleancss: true
                 }
             }
@@ -184,7 +184,7 @@ module.exports = function (grunt)
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.description %> | <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */'
+                banner: '/*! <%= pkg.version %> | <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */'
             },
             build: {
                 files: {
@@ -197,11 +197,19 @@ module.exports = function (grunt)
             }
         },
         validation: {
-            files: {
-                src: [
-                    'build/**/*.html',
-                    '*.html'
-                ]
+            build: {
+                files: {
+                    src: [
+                        'build/**/*.html'
+                    ]
+                }
+            },
+            dist: {
+                files: {
+                    src: [
+                        'dist/**/*.html'
+                    ]
+                }
             }
         },
         watch: {
@@ -221,7 +229,8 @@ module.exports = function (grunt)
 
     grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
-    grunt.registerTask('deploy', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'uglify', 'ftp']);
+    grunt.registerTask('deploy', ['dist', 'ftp']);
+    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('process', ['processhtml']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
