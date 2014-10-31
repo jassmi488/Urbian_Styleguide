@@ -104,7 +104,7 @@ module.exports = function (grunt)
                     authKey: 'joepublicn'
                 },
                 src: './dist',
-                dest: 'public_html/styleguide/v2.1',
+                dest: 'public_html/styleguide/v2',
                 exclusions: [
                     '.editorconfig',
                     '.ftppass',

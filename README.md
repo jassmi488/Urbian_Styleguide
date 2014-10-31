@@ -1,8 +1,4 @@
-[![Connect Joe Public](http://connectjoepublic.com/github.png)](http://connectjoepublic.com)
-
 ## [Style Guide](http://joepublicn.com/styleguide/v2)
-
-Shortened URL for device testing: [http://goo.gl/4NQ5zr](http://goo.gl/4NQ5zr)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 
