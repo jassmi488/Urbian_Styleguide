@@ -16,6 +16,17 @@ Ensure that the following are installed on your computer:
 3. Run the node install command which downloads the required Grunt plugins: `npm install`
 4. Start the local server and watch task: `grunt serve`
 
+### Validation
+
+1. JavaScript: `grunt jshint`
+2. HTML: `grunt validation:build` or `grunt validation:dist`
+
+### Deploying
+
+1. Ensure that the FTP server credentials are correct in the `.ftppass` file
+2. Ensure that the FTP deployment paths are correct for the `ftp-deploy` task in `Gruntfile.js`
+3. Run the task: `grunt deploy`
+
 ### LESS Structure
 
 ```
