@@ -17,8 +17,13 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
 
     <!-- Style Sheets -->
+    <% if (environment === 'dist') { %>
+    <link rel="stylesheet" href="../assets/css/style-<%= version %>.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide-<%= version %>.css" />
+    <% } else { %>
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <% } %>
 
     <!-- Google+: change XXXXXXXXXX to be your profile’s ID -->
     <link rel="publisher" href="https://plus.google.com/XXXXXXXXXX" />
