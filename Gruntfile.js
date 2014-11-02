@@ -5,7 +5,7 @@ module.exports = function (grunt)
     var today = '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>';
     var package_name = '<%= pkg.name %>';
     var package_version = '<%= pkg.version %>';
-    var banner = '/*! ' + package_name + ' | ' + package_version + '  | ' + today + ' */';
+    var banner = '/*! ' + package_name + ' | ' + package_version + ' | ' + today + ' */';
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
