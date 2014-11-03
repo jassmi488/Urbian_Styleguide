@@ -33,7 +33,7 @@ module.exports = function (grunt)
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: ['{images,js}/**'],
+                        src: ['{fonts,images,js}/**'],
                         dest: 'build/assets'
                     },
                     {
@@ -55,7 +55,7 @@ module.exports = function (grunt)
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: ['images/**'],
+                        src: ['{fonts,images}/**'],
                         dest: 'dist/assets'
                     },
                     {
