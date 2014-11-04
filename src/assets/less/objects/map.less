@@ -9,8 +9,8 @@
     .map__img {
         display: block;
         height: auto;
-        max-width: 100%;
         visibility: visible;
+        width: 100%;
 
         &.is-hidden {
             display: none;
@@ -42,11 +42,20 @@
     }
 }
 
-@media all and (min-width: @bp-medium) {
+@media all and (min-width: @bp-xs) {
 
     .map {
         background-color: @color-white-dark;
-        margin-bottom: 1em;
-        max-height: 22.5em; /* 360 / 16 */
+        height: auto;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        .map__canvas {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
     }
 }

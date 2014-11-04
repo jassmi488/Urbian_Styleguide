@@ -33,7 +33,7 @@ module.exports = function (grunt)
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: ['{images,js}/**'],
+                        src: ['{fonts,images,js}/**'],
                         dest: 'build/assets'
                     },
                     {
@@ -55,7 +55,7 @@ module.exports = function (grunt)
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: ['images/**'],
+                        src: ['{fonts,images}/**'],
                         dest: 'dist/assets'
                     },
                     {
@@ -86,12 +86,21 @@ module.exports = function (grunt)
             }
         },
         csslint: {
-            strict: {
+            build: {
                 src: [
-                    'build/assets/css/style.css',
-                    'build/assets/css/styleguide.css'
+                    'build/assets/css/style.css'
                 ],
                 options: {
+                    csslintrc: '.csslintrc',
+                    import: 2
+                }
+            },
+            dist: {
+                src: [
+                    'dist/assets/css/style-<%= pkg.version %>.css'
+                ],
+                options: {
+                    csslintrc: '.csslintrc',
                     import: 2
                 }
             }
@@ -221,14 +230,14 @@ module.exports = function (grunt)
             build: {
                 files: {
                     src: [
-                        'build/**/*.html'
+                        'build/*.html'
                     ]
                 }
             },
             dist: {
                 files: {
                     src: [
-                        'dist/**/*.html'
+                        'dist/*.html'
                     ]
                 }
             }
