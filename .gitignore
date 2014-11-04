@@ -36,14 +36,14 @@
 ehthumbs.db
 Thumbs.db
 
-# PhpStorm #
-###########
-*.idea
-
-# Node / Grunt #
+# Grunt / Node #
 ################
 build
 dist
 node_modules
 validation-report.json
 validation-status.json
+
+# PhpStorm #
+###########
+*.idea
