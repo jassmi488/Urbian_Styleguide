@@ -1,4 +1,4 @@
-## [Style Guide](http://joepublicn.com/styleguide/v2)
+## [Style Guide Boilerplate](http://joepublicn.com/styleguide/v2)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 
