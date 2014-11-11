@@ -18,13 +18,14 @@ Ensure that the following are installed on your computer:
 
 ### Validation
 
-1. JavaScript: `grunt jshint`
-2. HTML: `grunt validation:build` or `grunt validation:dist`
+1. HTML: `grunt validation:build`
+2. CSS: `grunt csslint:build`
+3. JavaScript: `grunt jshint:build`
 
 ### Deploying
 
-1. Ensure that the FTP server credentials are correct in the `.ftppass` file
-2. Ensure that the FTP deployment paths are correct for the `ftp-deploy` task in `Gruntfile.js`
+1. Update the FTP server credentials in the `.ftppass` file
+2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
 3. Run the task: `grunt deploy`
 
 ### LESS Structure
@@ -47,9 +48,11 @@ less/
         tables.less
      generic/
         mixins.less
-        normalize.less
         reset.less
         variables.less
+     vendor/
+        font-awesome.less
+        normalize.less
      objects/
         accordion.less
         alert.less
@@ -78,9 +81,9 @@ less/
 
 ### Components
 
-- [Font Awesome](http://fontawesome.io)
-- [jQuery](http://jquery.com)
 - [Normalize.css](http://necolas.github.io/normalize.css)
+- [jQuery](http://jquery.com)
+- [Font Awesome](http://fontawesome.io)
 - [Placeholder](http://mths.be/placeholder)
 - [Tablesaw](https://github.com/filamentgroup/tablesaw)
 
