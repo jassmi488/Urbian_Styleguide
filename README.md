@@ -50,9 +50,6 @@ less/
         mixins.less
         reset.less
         variables.less
-     vendor/
-        font-awesome.less
-        normalize.less
      objects/
         accordion.less
         alert.less
@@ -66,6 +63,9 @@ less/
         social.less
         tabs.less
         tooltips.less
+     vendor/
+        font-awesome.less
+        normalize.less
      style.less
      styleguide.less
 ```
