@@ -22,15 +22,14 @@
         float: left;
         margin-right: 1em;
 
-        /* Reverse image placement (right instead of left) */
-        &.media__img--rev {
+        img {
+            display: block;
+        }
+
+        &.media__img--right {
             float: right;
             margin-right: 0;
             margin-left: 1em;
-        }
-
-        img {
-            display: block;
         }
     }
 
@@ -38,6 +37,10 @@
         overflow: hidden;
     }
 }
+
+/**
+ * Audio/Video
+ */
 
 audio,
 video {
