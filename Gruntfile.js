@@ -61,7 +61,7 @@ module.exports = function (grunt)
                     {
                         expand: true,
                         cwd: 'src/assets',
-                        src: ['js/vendor/polyfill.js'],
+                        src: ['js/vendor/polyfills.js'],
                         dest: 'dist/assets'
                     },
                     {
