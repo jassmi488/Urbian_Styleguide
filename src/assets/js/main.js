@@ -3,7 +3,7 @@
  * Based on http://goo.gl/XtN0RS by Jason Garber
  * ======================================================================== */
 
- SITENAME = {
+SITENAME = {
 
     common: {
 
@@ -100,7 +100,7 @@
              * Render the static map image or embedded iFrame depending on the screen width
              */
 
-            function renderMap()
+            function renderMap ()
             {
                 var $map = $('[data-component="map"]');
 
@@ -210,7 +210,7 @@
                      * Switch the input type
                      */
 
-                    $toggle.on('click', function(e)
+                    $toggle.on('click', function (e)
                     {
                         e.preventDefault();
 

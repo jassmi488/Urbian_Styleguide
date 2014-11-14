@@ -20,7 +20,7 @@ STYLEGUIDE = {
                 scrollToTop();
             });
 
-            function scrollToTop()
+            function scrollToTop ()
             {
                 $('html, body').animate({
                     easing: 'easeOutExpo',
