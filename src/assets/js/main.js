@@ -100,7 +100,7 @@ SITENAME = {
              * Render the static map image or embedded iFrame depending on the screen width
              */
 
-            function renderMap ()
+            function renderMap()
             {
                 var $map = $('[data-component="map"]');
 
