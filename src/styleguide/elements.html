@@ -31,13 +31,12 @@
     <![endif]-->
 
     <header class="sg-header sg-header--primary" role="banner">
-        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/100x50" width="100" height="50" alt="Name of Project Logo" /></a>
+        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/75x42" width="75" height="42" alt="Name of Project Logo" /></a>
         <nav class="sg-nav sg-nav--primary" role="navigation">
             <ol class="sg-list">
                 <li class="is-active"><a href="elements.html">Elements</a></li>
                 <li><a href="patterns.html">Patterns</a></li>
                 <li><a href="forms.html">Forms</a></li>
-                <li><a href="grid.html">Grid</a></li>
                 <li><a href="templates.html">Templates</a></li>
             </ol>
         </nav>
@@ -1409,13 +1408,251 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
 </div></code></pre>
             </div>
         </section>
+        <section id="sg-grid" class="sg-section">
+            <header class="sg-header sg-header--section">
+                <h1 class="epsilon hN">Grid</h1>
+            </header>
+
+            <div class="sg-row row">
+                <div class="sg-col col">
+                    <code class="sg-code">col</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-2">
+                    <code class="sg-code">col-1-2</code>
+                </div>
+                <div class="sg-col col col-1-2">
+                    <code class="sg-code">col-1-2</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-3">
+                    <code class="sg-code">col-1-3</code>
+                </div>
+                <div class="sg-col col col-2-3">
+                    <code class="sg-code">col-2-3</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-4">
+                    <code class="sg-code">col-1-4</code>
+                </div>
+                <div class="sg-col col col-3-4">
+                    <code class="sg-code">col-3-4</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-5">
+                    <code class="sg-code">col-1-5</code>
+                </div>
+                <div class="sg-col col col-4-5">
+                    <code class="sg-code">col-4-5</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+                <div class="sg-col col col-5-6">
+                    <code class="sg-code">col-5-6</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-3">
+                    <code class="sg-code">col-1-3</code>
+                </div>
+                <div class="sg-col col col-1-3">
+                    <code class="sg-code">col-1-3</code>
+                </div>
+                <div class="sg-col col col-1-3">
+                    <code class="sg-code">col-1-3</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-4">
+                    <code class="sg-code">col-1-4</code>
+                </div>
+                <div class="sg-col col col-1-4">
+                    <code class="sg-code">col-1-4</code>
+                </div>
+                <div class="sg-col col col-1-4">
+                    <code class="sg-code">col-1-4</code>
+                </div>
+                <div class="sg-col col col-1-4">
+                    <code class="sg-code">col-1-4</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-5">
+                    <code class="sg-code">col-1-5</code>
+                </div>
+                <div class="sg-col col col-1-5">
+                    <code class="sg-code">col-1-5</code>
+                </div>
+                <div class="sg-col col col-1-5">
+                    <code class="sg-code">col-1-5</code>
+                </div>
+                <div class="sg-col col col-1-5">
+                    <code class="sg-code">col-1-5</code>
+                </div>
+                <div class="sg-col col col-1-5">
+                    <code class="sg-code">col-1-5</code>
+                </div>
+            </div>
+
+            <div class="sg-row row">
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+                <div class="sg-col col col-1-6">
+                    <code class="sg-code">col-1-6</code>
+                </div>
+            </div>
+
+            <div class="sg-example-code" data-sg-component="code">
+                <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="row">
+    <div class="col">
+        <code class="sg-code">col</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-2">
+        <code class="sg-code">col-1-2</code>
+    </div>
+    <div class="col col-1-2">
+        <code class="sg-code">col-1-2</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-3">
+        <code class="sg-code">col-1-3</code>
+    </div>
+    <div class="col col-2-3">
+        <code class="sg-code">col-2-3</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-4">
+        <code class="sg-code">col-1-4</code>
+    </div>
+    <div class="col col-3-4">
+        <code class="sg-code">col-3-4</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-5">
+        <code class="sg-code">col-1-5</code>
+    </div>
+    <div class="col col-4-5">
+        <code class="sg-code">col-4-5</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+    <div class="col col-5-6">
+        <code class="sg-code">col-5-6</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-3">
+        <code class="sg-code">col-1-3</code>
+    </div>
+    <div class="col col-1-3">
+        <code class="sg-code">col-1-3</code>
+    </div>
+    <div class="col col-1-3">
+        <code class="sg-code">col-1-3</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-4">
+        <code class="sg-code">col-1-4</code>
+    </div>
+    <div class="col col-1-4">
+        <code class="sg-code">col-1-4</code>
+    </div>
+    <div class="col col-1-4">
+        <code class="sg-code">col-1-4</code>
+    </div>
+    <div class="col col-1-4">
+        <code class="sg-code">col-1-4</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-5">
+        <code class="sg-code">col-1-5</code>
+    </div>
+    <div class="col col-1-5">
+        <code class="sg-code">col-1-5</code>
+    </div>
+    <div class="col col-1-5">
+        <code class="sg-code">col-1-5</code>
+    </div>
+    <div class="col col-1-5">
+        <code class="sg-code">col-1-5</code>
+    </div>
+    <div class="col col-1-5">
+        <code class="sg-code">col-1-5</code>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+    <div class="col col-1-6">
+        <code class="sg-code">col-1-6</code>
+    </div>
+</div></code></pre>
+            </div>
+        </section>
     </main>
 
     <aside class="sg-aside" data-sg-action="sticky">
-        <header class="sg-header sg-header--section">
-            <h3 class="epsilon hN"><a href="index.html"><span class="icon fa fa-reply" aria-hidden="true"></span></a>Table of Contents</h3>
-        </header>
-
         <button class="sg-btn sg-btn--toggle" data-sg-toggle="styleguide"><span class="icon icon--left fa fa-desktop" aria-hidden="true"></span>View as Patchwork</button>
 
         <nav class="sg-nav sg-nav--secondary">
@@ -1456,11 +1693,12 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                 <li><a href="elements.html#sg-media-html5-audio">Media – HTML5 Audio</a></li>
                 <li><a href="elements.html#sg-media-html5-video">Media – HTML5 Video</a></li>
                 <li><a href="elements.html#sg-media-youtube">Media – YouTube</a></li>
+                <li><a href="elements.html#sg-grid">Grid</a></li>
             </ol>
         </nav>
     </aside>
 
-    <button class="sg-btn sg-btn--top" data-sg-action="back-to-top" title="Back to Top"><span class="icon fa fa-arrow-circle-up" aria-hidden="true"></span></button>
+    <button class="sg-btn sg-btn--top" data-sg-action="back-to-top" title="Back to Top"><span class="icon fa fa-arrow-up" aria-hidden="true"></span></button>
 
     <footer class="sg-footer" role="contentinfo">
         <ol class="sg-list">
