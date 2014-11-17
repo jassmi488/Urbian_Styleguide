@@ -167,22 +167,32 @@
             <p class="font-secondary"><strong>Secondary font bold: Roboto, sans-serif</strong></p>
         </section>
 
-        <section id="sg-visibility" class="sg-section">
+        <section id="sg-media-queries" class="sg-section">
             <header class="sg-header sg-header--section">
-                <h1 class="epsilon hN">Visibility</h1>
+                <h1 class="epsilon hN">Media Queries</h1>
             </header>
 
-            <p class="hide-small">This text is hidden on smaller screens</p>
+            <p class="hide--small">This text is hidden on smaller screens</p>
 
-            <p class="hide-medium hide-large"><em>This text is only visible on smaller screens</em></p>
+            <p class="hide--medium hide--large"><em>This text is only visible on smaller screens</em></p>
 
-            <p class="hide-medium">This text is hidden on medium screens only</p>
+            <p class="hide--medium">This text is hidden on medium screens only</p>
 
-            <p class="hide-small hide-large"><em>This text is only visible on medium screens</em></p>
+            <p class="hide--small hide--large"><em>This text is only visible on medium screens</em></p>
 
-            <p class="hide-large">This text is hidden on large screens</p>
+            <p class="hide--large">This text is hidden on large screens</p>
 
-            <p class="hide-small hide-medium"><em>This text is only visible on large screens</em></p>
+            <p class="hide--small hide--medium"><em>This text is only visible on large screens</em></p>
+
+            <div class="sg-example-code" data-sg-component="code">
+                <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><p class="hide--small">This text is hidden on smaller screens</p>
+<p class="hide--medium hide--large"><em>This text is only visible on smaller screens</em></p>
+<p class="hide--medium">This text is hidden on medium screens only</p>
+<p class="hide--small hide--large"><em>This text is only visible on medium screens</em></p>
+<p class="hide--large">This text is hidden on large screens</p>
+<p class="hide--small hide--medium"><em>This text is only visible on large screens</em></p></code></pre>
+            </div>
         </section>
 
         <section id="sg-headings" class="sg-section">
@@ -1412,7 +1422,7 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
             <ol class="sg-list">
                 <li><a href="elements.html#sg-color-palette">Color Palette</a></li>
                 <li><a href="elements.html#sg-font-stacks">Font Stacks</a></li>
-                <li><a href="elements.html#sg-visibility">Visibility</a></li>
+                <li><a href="elements.html#sg-media-queries">Media Queries</a></li>
                 <li><a href="elements.html#sg-headings">Headings</a></li>
                 <li><a href="elements.html#sg-paragraphs">Paragraphs</a></li>
                 <li><a href="elements.html#sg-blockquote">Block Quote</a></li>
