@@ -3,6 +3,27 @@
 \* -------------------------------------------------------------------------- */
 
 /**
+ * Description
+ */
+
+dl {
+    margin-bottom: 1em;
+
+    dt {
+        font-weight: @weight-bold;
+    }
+
+    dd {
+        margin-bottom: 1em;
+        margin-left: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/**
  * Ordered
  */
 
@@ -28,27 +49,6 @@
 
     li {
         margin-bottom: 1em;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-/**
- * Description
- */
-
-dl {
-    margin-bottom: 1em;
-
-    dt {
-        font-weight: @weight-bold;
-    }
-
-    dd {
-        margin-bottom: 1em;
-        margin-left: 0;
 
         &:last-child {
             margin-bottom: 0;
