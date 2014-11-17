@@ -81,7 +81,7 @@ STYLEGUIDE = {
             {
                 scrolled = $(window).scrollTop();
 
-                if (scrolled > header_height)
+                if (scrolled >= header_height)
                 {
                     if (!$aside.hasClass('is-fixed'))
                     {
@@ -113,7 +113,7 @@ STYLEGUIDE = {
             {
                 e.preventDefault();
 
-                $('a.is-active').removeClass('is-active');
+                $('a.is-active', $aside).removeClass('is-active');
                 $(this).addClass('is-active');
 
                 var href = $(this).attr('href');
@@ -146,12 +146,12 @@ STYLEGUIDE = {
             });
 
             /* ==========================================================================
-               Toggle Style Guide View
+               Toggle Patchwork View
                ========================================================================== */
 
-            var $toggle_styleguide = $('[data-sg-toggle="styleguide"]');
+            var $toggle_patchwork = $('[data-sg-toggle="patchwork"]');
 
-            $toggle_styleguide.each(function ()
+            $toggle_patchwork.each(function ()
             {
                 $(this).on('click', function ()
                 {
