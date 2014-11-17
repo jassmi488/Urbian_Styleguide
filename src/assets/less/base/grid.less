@@ -3,7 +3,6 @@
 \* -------------------------------------------------------------------------- */
 
 .row {
-    margin-bottom: 5%;
     overflow: hidden;
 
     .col {
@@ -13,6 +12,10 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    &+ .row {
+        margin-top: 5%;
     }
 }
 
