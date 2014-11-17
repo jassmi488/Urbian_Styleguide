@@ -695,14 +695,9 @@ body {
 
     .sg-main {
         float: right;
-        padding-right: 5em;
-        padding-left: 5em;
-        width: 75%;
-
-        &.sg-main--full {
-            padding-right: 2em;
-            padding-left: 2em;
-        }
+        padding-right: 2em;
+        padding-left: 2em;
+        width: 78%;
     }
 }
 
@@ -872,7 +867,7 @@ body {
         padding-left: 2em;
         position: absolute;
         top: 6.0625em;
-        width: 25%;
+        width: 22%;
 
         .sg-list {
             margin-bottom: 0;
@@ -923,14 +918,9 @@ body {
 
     .sg-footer  {
         float: right;
-        padding-right: 5em;
-        padding-left: 5em;
-        width: 75%;
-
-        &.sg-footer--full {
-            padding-right: 2em;
-            padding-left: 2em;
-        }
+        padding-right: 2em;
+        padding-left: 2em;
+        width: 78%;
     }
 }
 
@@ -975,8 +965,15 @@ body {
         width: 100%;
 
         .sg-btn {
+            background-color: @color-white-dark;
             float: right;
+            font-size: 0.875em; /* 14 / 16 */
             margin-bottom: 1em;
+
+            &:focus,
+            &:hover {
+                background-color: @color-black;
+            }
         }
 
         .sg-pre {
