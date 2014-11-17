@@ -3,53 +3,92 @@
 \* -------------------------------------------------------------------------- */
 
 /**
- * The Description List encloses a list of pairs of terms and descriptions.
- * Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs), as per:
- * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
- *
- * E.g.:
- *
-   <dl>
-       <dt>Firefox</dt>
-       <dd>A free, open source, cross-platform, graphical web browser developed
-           by the Mozilla Corporation and hundreds of volunteers.</dd>
-
-       <!-- Other terms and definitions -->
-   </dl>
- *
+ * Ordered
  */
 
-dl,
-.dl {
+.list--ordered {
+    margin-bottom: 1em;
+
+    li {
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/**
+ * Unordered
+ */
+
+.list--unordered {
+    list-style: square;
+    margin-bottom: 1em;
+
+    li {
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/**
+ * Description
+ */
+
+dl {
+    margin-bottom: 1em;
 
     dt {
         font-weight: @weight-bold;
     }
 
     dd {
+        margin-bottom: 1em;
         margin-left: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
 /**
- * Custom Lists
+ * Unstyled
  */
 
-.list {
-    margin-top: 0;
-    margin-bottom: 1em;
+.list--unstyled {
+    .unstyled();
+
+    .list--unstyled {
+        margin-left: 1em;
+    }
+}
+
+.unstyled() {
     list-style: none;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
+}
 
-    /**
-     * Inline
-     */
+/**
+ * Inline
+ */
 
-    &.list--inline {
-        .clearfix();
+.list--inline {
+    .clearfix();
+    .unstyled();
 
-        li {
-            float: left;
+    li {
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 0;
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
