@@ -11,7 +11,7 @@ Ensure that the following are installed on your computer:
 
 ### Getting Started
 
-1. Clone the repository: `git clone git@github.com:connectjoepublic/styleguide.git`
+1. Clone the repository: `git clone git@github.com:we-are-next/styleguide.git`
 2. Change to the directory you cloned the repository into: e.g. `cd styleguide`
 3. Run the node install command which downloads the required Grunt plugins: `npm install`
 4. Start the local server and watch task: `grunt serve`
