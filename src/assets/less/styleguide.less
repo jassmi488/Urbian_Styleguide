@@ -20,6 +20,7 @@
  * CONTAINERS
  * .....HTML
  * .....Body
+ * .....Wrapper
  * .....Headers
  * .....Navigation
  * .....Main
@@ -173,16 +174,6 @@
         font-size: @h5-font-size;
         margin-top: 2em;
         text-transform: capitalize;
-    }
-}
-
-@media all and (min-width: @bp-large) {
-
-    .sg-heading {
-
-        &.sg-heading--spacer {
-            margin-top: 4em;
-        }
     }
 }
 
@@ -400,6 +391,10 @@
     background: @color-white;
 }
 
+
+
+
+
 /* ==========================================================================
    $Body
    ========================================================================== */
@@ -439,6 +434,21 @@ body {
     }
 }
 
+
+
+
+
+/* ==========================================================================
+   $Wrapper
+   ========================================================================== */
+
+.sg-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 71.25em; /* 1140 / 16 */
+    width: 90%;
+}
+
 /* ==========================================================================
    $Headers
    ========================================================================== */
@@ -456,7 +466,8 @@ body {
 
         .logo {
             display: block;
-            margin: 0.5em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
             width: 6.25em; /* 100 / 16 */
 
             img {
@@ -467,7 +478,7 @@ body {
 
         .sg-btn--nav {
             position: absolute;
-            right: 0.5em;
+            right: 5%;
             top: 0.8125em;
         }
     }
@@ -542,10 +553,6 @@ body {
             position: fixed;
             top: 0;
             width: 100%;
-
-            .logo {
-                margin-left: 2em;
-            }
         }
     }
 }
@@ -561,8 +568,6 @@ body {
 .sg-nav {
 
     &.sg-nav--primary {
-        background-color: @color-white-dark;
-        box-shadow: inset 0 0 20px @color-silver;
         max-height: 0;
         overflow: hidden;
         .transition(max-height 0.25s);
@@ -572,10 +577,9 @@ body {
         }
 
         .sg-list {
-            border-top: 1px solid @color-silver;
             .clearfix();
             list-style: none;
-            margin: 0;
+            margin: 0 0 0.5em 0;
             padding: 0;
 
             li {
@@ -619,15 +623,9 @@ body {
     .sg-nav {
 
         &.sg-nav--primary {
-            background-color: @color-white;
-            box-shadow: none;
             max-height: 100%;
-            padding-right: 1em;
-            padding-left: 0;
 
             .sg-list {
-                border-top: 0;
-                margin-top: 0;
                 margin-bottom: 0;
 
                 li {
@@ -647,16 +645,6 @@ body {
     }
 }
 
-@media all and (min-width: @bp-large) {
-
-    .sg-nav {
-
-        &.sg-nav--primary {
-            padding-right: 2em;
-        }
-    }
-}
-
 
 
 
@@ -664,13 +652,6 @@ body {
 /* ==========================================================================
    $Main
    ========================================================================== */
-
-.sg-main {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 71.25em; /* 1140 / 16 */
-    width: 90%;
-}
 
 @media all and (min-width: @bp-large) {
 
@@ -773,11 +754,7 @@ body {
 
 .sg-footer {
     clear: both;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 71.25em; /* 1140 / 16 */
     padding-bottom: 2.5em;
-    width: 90%;
 
     .sg-list {
         margin-bottom: 0;
@@ -826,7 +803,7 @@ body {
         visibility: visible;
         .clearfix();
         margin-top: 2em;
-        margin-bottom: 2em;
+        margin-bottom: 4em;
         width: 100%;
 
         .sg-btn {

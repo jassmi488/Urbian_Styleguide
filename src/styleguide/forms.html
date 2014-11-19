@@ -31,143 +31,149 @@
     <![endif]-->
 
     <header class="sg-header sg-header--primary" role="banner">
-        <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/75x42" width="75" height="42" alt="Name of Project Logo" /></a>
-        <nav class="sg-nav sg-nav--primary" role="navigation">
-            <ol class="sg-list">
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="patterns.html">Patterns</a></li>
-                <li class="is-active"><a href="forms.html">Forms</a></li>
-                <li><a href="templates.html">Templates</a></li>
-            </ol>
-        </nav>
-        <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="icon icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
+        <div class="sg-wrapper">
+            <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/75x42" width="75" height="42" alt="Name of Project Logo" /></a>
+            <nav class="sg-nav sg-nav--primary" role="navigation">
+                <ol class="sg-list">
+                    <li><a href="elements.html">Elements</a></li>
+                    <li><a href="patterns.html">Patterns</a></li>
+                    <li class="is-active"><a href="forms.html">Forms</a></li>
+                    <li><a href="templates.html">Templates</a></li>
+                </ol>
+            </nav>
+            <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="icon icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
+        </div>
     </header>
 
     <main class="sg-main" role="main">
-        <div id="sg-patchwork" class="sg-section sg-section--well is-hidden">
-            <p class="sg-paragraph sg-paragraph--intro">
-                <span class="icon sg-icon fa fa-info-circle" aria-hidden="true"></span>This is the patchwork view which doesn’t include the markup preview and usage examples. This view is particularly useful for device testing because it shows elements at full-width, presented on the page as they would appear on the site.
-            </p>
-            <button class="sg-btn sg-btn--toggle" data-sg-toggle="patchwork"><span class="icon icon--left fa fa-reply" aria-hidden="true"></span>Default View</button>
+        <div class="sg-wrapper">
+            <div id="sg-patchwork" class="sg-section sg-section--well is-hidden">
+                <p class="sg-paragraph sg-paragraph--intro">
+                    <span class="icon sg-icon fa fa-info-circle" aria-hidden="true"></span>This is the patchwork view which doesn’t include the markup preview and usage examples. This view is particularly useful for device testing because it shows elements at full-width, presented on the page as they would appear on the site.
+                </p>
+                <button class="sg-btn sg-btn--toggle" data-sg-toggle="patchwork"><span class="icon icon--left fa fa-reply" aria-hidden="true"></span>Default View</button>
+            </div>
+
+            <section id="sg-default" class="sg-section">
+                <header class="sg-header sg-header--section">
+                    <h1 class="hN">Form – Default</h1>
+                </header>
+
+                <form id="form-default" action="forms.html" method="post" class="form">
+                    <label for="email" class="label">
+                        Email Address
+                        <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
+                    </label>
+
+                    <div class="toggle-password" data-component="toggle-password">
+                        <label for="password" class="label">
+                            Password
+                            <input class="input" type="password" id="password" name="password" maxlength="100" />
+                        </label>
+                        <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+                    </div>
+
+                    <label for="remember" class="label">
+                        <input class="input" type="checkbox" id="remember" name="remember" value="1" /> Remember me?
+                    </label>
+
+                    <input class="btn" type="submit" value="Sign In" />
+                </form>
+
+                <div class="sg-example-code" data-sg-component="code">
+                    <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-default-a" action="#" method="post" class="form">
+        <label for="email-a" class="label">
+            Email Address
+            <input class="input" type="email" id="email-a" name="email-a" placeholder="Email Address" maxlength="100" />
+        </label>
+
+        <div class="toggle-password" data-component="toggle-password">
+            <label for="password-a" class="label">
+                Password
+                <input class="input" type="password" id="password-a" name="password-a" maxlength="100" />
+            </label>
+            <button class="visuallyhidden toggle" data-toggle="password">Show</button>
         </div>
 
-        <section id="sg-default" class="sg-section">
-            <header class="sg-header sg-header--section">
-                <h1 class="hN">Form – Default</h1>
-            </header>
-
-            <form id="form-default" action="forms.html" method="post" class="form">
-                <label for="email" class="label">
-                    Email Address
-                    <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
-                </label>
-
-                <div class="toggle-password" data-component="toggle-password">
-                    <label for="password" class="label">
-                        Password
-                        <input class="input" type="password" id="password" name="password" maxlength="100" />
-                    </label>
-                    <button class="visuallyhidden toggle" data-toggle="password">Show</button>
-                </div>
-
-                <label for="remember" class="label">
-                    <input class="input" type="checkbox" id="remember" name="remember" value="1" /> Remember me?
-                </label>
-
-                <input class="btn" type="submit" value="Sign In" />
-            </form>
-
-            <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-default-a" action="#" method="post" class="form">
-    <label for="email-a" class="label">
-        Email Address
-        <input class="input" type="email" id="email-a" name="email-a" placeholder="Email Address" maxlength="100" />
-    </label>
-
-    <div class="toggle-password" data-component="toggle-password">
-        <label for="password-a" class="label">
-            Password
-            <input class="input" type="password" id="password-a" name="password-a" maxlength="100" />
+        <label for="remember-a" class="label">
+            <input class="input" type="checkbox" id="remember-a" name="remember-a" value="1" /> Remember me?
         </label>
-        <button class="visuallyhidden toggle" data-toggle="password">Show</button>
-    </div>
 
-    <label for="remember-a" class="label">
-        <input class="input" type="checkbox" id="remember-a" name="remember-a" value="1" /> Remember me?
-    </label>
+        <input class="btn" type="submit" value="Sign In" />
+    </form></code></pre>
+                </div>
+            </section>
 
-    <input class="btn" type="submit" value="Sign In" />
-</form></code></pre>
-            </div>
-        </section>
+            <section id="sg-inline" class="sg-section">
+                <header class="sg-header sg-header--section">
+                    <h1 class="hN">Form – Inline</h1>
+                </header>
 
-        <section id="sg-inline" class="sg-section">
-            <header class="sg-header sg-header--section">
-                <h1 class="hN">Form – Inline</h1>
-            </header>
+                <form id="form-inline" action="forms.html" method="post" class="form form--inline">
+                    <label for="email-2" class="label visuallyhidden">Email Address</label>
+                    <input class="input" type="email" id="email-2" name="email-2" placeholder="Email Address" maxlength="100" />
 
-            <form id="form-inline" action="forms.html" method="post" class="form form--inline">
-                <label for="email-2" class="label visuallyhidden">Email Address</label>
-                <input class="input" type="email" id="email-2" name="email-2" placeholder="Email Address" maxlength="100" />
+                    <label for="password-2" class="label visuallyhidden">Password</label>
+                    <input class="input" type="password" id="password-2" name="password-2" placeholder="Password" maxlength="100" />
 
-                <label for="password-2" class="label visuallyhidden">Password</label>
-                <input class="input" type="password" id="password-2" name="password-2" placeholder="Password" maxlength="100" />
+                    <label for="remember-2" class="label label--checkbox">
+                        <input class="input" type="checkbox" id="remember-2" name="remember-2" value="1" /> Remember me?
+                    </label>
 
-                <label for="remember-2" class="label label--checkbox">
-                    <input class="input" type="checkbox" id="remember-2" name="remember-2" value="1" /> Remember me?
-                </label>
+                    <input class="btn" type="submit" value="Sign In" />
+                </form>
 
-                <input class="btn" type="submit" value="Sign In" />
-            </form>
+                <div class="sg-example-code" data-sg-component="code">
+                    <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-inline-b" action="#" method="post" class="form form--inline">
+        <label for="email-b" class="label visuallyhidden">Email Address</label>
+        <input class="input" type="email" id="email-b" name="email-b" placeholder="Email Address" maxlength="100" />
 
-            <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-inline-b" action="#" method="post" class="form form--inline">
-    <label for="email-b" class="label visuallyhidden">Email Address</label>
-    <input class="input" type="email" id="email-b" name="email-b" placeholder="Email Address" maxlength="100" />
+        <label for="password-b" class="label visuallyhidden">Password</label>
+        <input class="input" type="password" id="password-b" name="password-b" placeholder="Password" maxlength="100" />
 
-    <label for="password-b" class="label visuallyhidden">Password</label>
-    <input class="input" type="password" id="password-b" name="password-b" placeholder="Password" maxlength="100" />
+        <label for="remember-b" class="label label--checkbox">
+            <input class="input" type="checkbox" id="remember-b" name="remember-b" value="1" /> Remember me?
+        </label>
 
-    <label for="remember-b" class="label label--checkbox">
-        <input class="input" type="checkbox" id="remember-b" name="remember-b" value="1" /> Remember me?
-    </label>
+        <input class="btn" type="submit" value="Sign In" />
+    </form></code></pre>
+                </div>
+            </section>
 
-    <input class="btn" type="submit" value="Sign In" />
-</form></code></pre>
-            </div>
-        </section>
+            <section id="sg-search" class="sg-section">
+                <header class="sg-header sg-header--section">
+                    <h1 class="hN">Form – Search</h1>
+                </header>
 
-        <section id="sg-search" class="sg-section">
-            <header class="sg-header sg-header--section">
-                <h1 class="hN">Form – Search</h1>
-            </header>
+                <form id="form-search" action="forms.html" method="post" class="form form--search">
+                    <label for="search" class="visuallyhidden">Search</label>
+                    <input class="input" type="text" id="search" name="search" placeholder="Search…" maxlength="20" />
 
-            <form id="form-search" action="forms.html" method="post" class="form form--search">
-                <label for="search" class="visuallyhidden">Search</label>
-                <input class="input" type="text" id="search" name="search" placeholder="Search…" maxlength="20" />
+                    <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+                </form>
 
-                <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
-            </form>
+                <div class="sg-example-code" data-sg-component="code">
+                    <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-search-c" action="#" method="post" class="form form--search">
+        <label for="search-c" class="visuallyhidden">Search</label>
+        <input class="input" type="text" id="search-c" name="search-c" placeholder="Search…" maxlength="20" />
 
-            <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code"><span class="icon icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-search-c" action="#" method="post" class="form form--search">
-    <label for="search-c" class="visuallyhidden">Search</label>
-    <input class="input" type="text" id="search-c" name="search-c" placeholder="Search…" maxlength="20" />
-
-    <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
-</form></code></pre>
-            </div>
-        </section>
+        <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+    </form></code></pre>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="sg-footer" role="contentinfo">
-        <ol class="sg-list">
-            <li><b>Version</b>: <%= version %></li>
-            <li><b>Last Update</b>: <%= updated %></li>
-        </ol>
+        <div class="sg-wrapper">
+            <ol class="sg-list">
+                <li><b>Version</b>: <%= version %></li>
+                <li><b>Last Update</b>: <%= updated %></li>
+            </ol>
+        </div>
     </footer>
 
     <!-- JavaScript -->
