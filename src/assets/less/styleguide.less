@@ -171,8 +171,18 @@
     &.sg-heading--spacer {
         color: @color-gray-dark;
         font-size: @h5-font-size;
-        margin-top: 4em;
+        margin-top: 2em;
         text-transform: capitalize;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-heading {
+
+        &.sg-heading--spacer {
+            margin-top: 4em;
+        }
     }
 }
 
@@ -469,7 +479,7 @@ body {
         .hN {
             display: inline-block;
             font-family: @font-styleguide;
-            font-size: @h2-font-size;
+            font-size: @h3-font-size;
             margin-bottom: 0;
             padding-right: 7.5%;
             padding-left: 7.5%;
@@ -485,7 +495,7 @@ body {
 
         .hN {
             font-family: @font-styleguide;
-            font-size: @h4-font-size;
+            font-size: @h5-font-size;
             margin-bottom: 0;
         }
 
@@ -528,6 +538,10 @@ body {
     .sg-header {
 
         &.sg-header--primary {
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
 
             .logo {
                 margin-left: 2em;
@@ -659,6 +673,13 @@ body {
 
     &.sg-main--full {
         width: 100%;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-main {
+        margin-top: 7.25em;
     }
 }
 
@@ -817,7 +838,6 @@ body {
         width: 100%;
 
         .sg-btn {
-            background-color: @color-white-dark;
             font-size: 0.875em; /* 14 / 16 */
             margin-bottom: 1em;
 
