@@ -51,40 +51,6 @@ STYLEGUIDE = {
             }
 
             /* ==========================================================================
-               Scroll
-               ========================================================================== */
-
-            var scrolled = 0;
-            var scrolled_last = 0;
-            var header_height = $('.sg-header--primary').height();
-
-            $(window).on('scroll', function ()
-            {
-                scrolled = $(window).scrollTop();
-
-                if (scrolled >= header_height)
-                {
-                    if (!$aside.hasClass('is-fixed'))
-                    {
-                        $aside.addClass('is-fixed');
-                    }
-
-                    $back_to_top.fadeIn();
-                }
-                else
-                {
-                    if ($aside.hasClass('is-fixed'))
-                    {
-                        $aside.removeClass('is-fixed');
-                    }
-
-                    $back_to_top.fadeOut();
-                }
-
-                scrolled_last = scrolled;
-            });
-
-            /* ==========================================================================
                Toggle Navigation
                ========================================================================== */
 
@@ -94,21 +60,6 @@ STYLEGUIDE = {
             {
                 $('.sg-nav--primary').toggleClass('is-open');
                 $toggle_nav.toggleClass('is-active');
-            });
-
-            /* ==========================================================================
-               Toggle Patchwork View
-               ========================================================================== */
-
-            var $toggle_patchwork = $('[data-sg-toggle="patchwork"]');
-
-            $toggle_patchwork.each(function ()
-            {
-                $(this).on('click', function ()
-                {
-                    $('body').toggleClass('is-patchwork');
-                    scrollToTop();
-                });
             });
         }
     }
