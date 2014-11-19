@@ -808,12 +808,18 @@ body {
     padding-right: 1em;
     padding-left: 1em;
 
+    .sg-nav {
+        max-width: 15.4375em; /* 247 / 16 */
+    }
+
     .sg-btn--toggle {
         width: 100%;
     }
 
     .sg-list {
         background-color: @color-white-dark;
+        border-top: 1px dotted @color-silver;
+        margin-top: 1em;
         margin-bottom: 2em;
 
         li {
@@ -845,10 +851,7 @@ body {
 
     .sg-aside {
         left: 0;
-        max-width: 20em; /* 320 / 16 */
         overflow-y: auto;
-        padding-right: 2em;
-        padding-left: 2em;
         position: absolute;
         top: 6.0625em;
         width: 22%;
@@ -861,8 +864,8 @@ body {
             border-right: 1px solid @color-silver;
             box-shadow: 0 0 20px @color-silver;
             height: 100%;
-            padding-top: 2em;
-            padding-bottom: 2em;
+            padding-top: 1em;
+            padding-bottom: 1em;
             position: fixed;
             top: 0;
         }
