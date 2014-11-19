@@ -24,7 +24,6 @@
  * .....Navigation
  * .....Main
  * .....Sections
- * .....Aside
  * .....Footer
  * .....Example
  * GRID
@@ -114,34 +113,6 @@
 
         &:active {
             top: 0;
-        }
-    }
-
-    &.sg-btn--top {
-        background-color: transparent;
-        bottom: 1.75em;
-        color: @color-gray;
-        display: none;
-        padding: 0.125em 0.5em;
-        position: fixed;
-        right: 1.625em;
-        .transition(background-color 0.25s, color 0.25s, top 0.25s;);
-
-        &:active {
-            position: fixed;
-            top: inherit;
-        }
-
-        &:focus,
-        &:hover {
-            background-color: transparent;
-            color: @color-black;
-            opacity: 1;
-        }
-
-        .icon {
-            font-size: 2em; /* 32 / 16 */
-            margin-left: 0;
         }
     }
 
@@ -433,8 +404,6 @@ body {
     &.is-patchwork {
 
         .sg-main {
-            padding-right: 1.5em;
-            padding-left: 1.5em;
             width: 100%;
         }
 
@@ -454,14 +423,7 @@ body {
             }
         }
 
-        .sg-aside {
-            display: none;
-            visibility: hidden;
-        }
-
         .sg-footer {
-            padding-right: 1.5em;
-            padding-left: 1.5em;
             width: 100%;
         }
     }
@@ -515,7 +477,7 @@ body {
     }
 
     &.sg-header--section {
-        border-bottom: 1px dotted @color-silver;
+        border-bottom: 1px solid @color-silver;
         margin-bottom: 2em;
         padding-bottom: 0.25em;
         text-transform: uppercase;
@@ -690,25 +652,13 @@ body {
    ========================================================================== */
 
 .sg-main {
-    padding-right: 1em;
-    padding-left: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 71.25em; /* 1140 / 16 */
+    width: 90%;
 
     &.sg-main--full {
         width: 100%;
-    }
-}
-
-@media all and (min-width: @bp-large) {
-
-    .sg-main {
-        float: right;
-        padding-right: 2em;
-        padding-left: 4em;
-        width: 78%;
-
-        &.sg-main--full {
-            padding-left: 2em;
-        }
     }
 }
 
@@ -801,88 +751,16 @@ body {
 
 
 /* ==========================================================================
-   $Aside
-   ========================================================================== */
-
-.sg-aside {
-    padding-right: 1em;
-    padding-left: 1em;
-
-    .sg-btn--toggle {
-        width: 100%;
-    }
-
-    .sg-list {
-        background-color: @color-white-dark;
-        border-top: 1px dotted @color-silver;
-        margin-top: 1em;
-        margin-bottom: 2em;
-
-        li {
-            border-bottom: 1px dotted @color-silver;
-
-            a {
-                color: @color-gray-dark;
-                font-size: 0.875em; /* 14 / 16 */
-                display: block;
-                padding-top: 0.5em;
-                padding-right: 0.75em;
-                padding-bottom: 0.5em;
-                padding-left: 0.6875em;
-                text-decoration: none;
-                .transition(background-color 0.25s, color 0.25s;);
-
-                &.is-active,
-                &:focus,
-                &:hover {
-                    background-color: @color-black;
-                    color: @color-white;
-                }
-            }
-        }
-    }
-}
-
-@media all and (min-width: @bp-large) {
-
-    .sg-aside {
-        left: 0;
-        max-width: 20em; /* 320 / 16 */
-        overflow-y: auto;
-        position: absolute;
-        top: 5.5em;
-        width: 22%;
-
-        .sg-list {
-            margin-bottom: 0;
-        }
-
-        &.is-fixed {
-            border-right: 1px solid @color-silver;
-            box-shadow: 0 0 20px @color-silver;
-            height: 100%;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            position: fixed;
-            top: 0;
-        }
-    }
-}
-
-
-
-
-
-/* ==========================================================================
    $Footer
    ========================================================================== */
 
 .sg-footer {
     clear: both;
-    padding-right: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 71.25em; /* 1140 / 16 */
     padding-bottom: 2.5em;
-    padding-left: 1em;
-    width: 100%;
+    width: 90%;
 
     &.sg-footer--full {
         width: 100%;
@@ -894,20 +772,6 @@ body {
 
         li {
             font-size: 0.875em; /* 14 / 16 */
-        }
-    }
-}
-
-@media all and (min-width: @bp-large) {
-
-    .sg-footer  {
-        float: right;
-        padding-right: 2em;
-        padding-left: 4em;
-        width: 78%;
-
-        &.sg-footer--full {
-            padding-left: 2em;
         }
     }
 }
@@ -954,7 +818,6 @@ body {
 
         .sg-btn {
             background-color: @color-white-dark;
-            float: right;
             font-size: 0.875em; /* 14 / 16 */
             margin-bottom: 1em;
 

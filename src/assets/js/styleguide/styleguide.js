@@ -10,25 +10,6 @@ STYLEGUIDE = {
         init: function ()
         {
             /* ==========================================================================
-               Back to Top
-               ========================================================================== */
-
-            var $back_to_top = $('[data-sg-action="back-to-top"]');
-
-            $back_to_top.on('click', function ()
-            {
-                scrollToTop();
-            });
-
-            function scrollToTop()
-            {
-                $('html, body').animate({
-                    easing: 'easeOutExpo',
-                    scrollTop: 0
-                }, 250);
-            }
-
-            /* ==========================================================================
                Code
                ========================================================================== */
 
@@ -101,36 +82,6 @@ STYLEGUIDE = {
                 }
 
                 scrolled_last = scrolled;
-            });
-
-            /* ==========================================================================
-               Sticky
-               ========================================================================== */
-
-            var $aside = $('[data-sg-action="sticky"]');
-
-            $('li a', $aside).on('click', function (e)
-            {
-                e.preventDefault();
-
-                $('a.is-active', $aside).removeClass('is-active');
-                $(this).addClass('is-active');
-
-                var href = $(this).attr('href');
-                var hash = href.indexOf('#');
-                var id = href.substr(hash, href.length);
-                var page = href.substr(0, hash);
-                var element = $(id);
-
-                $('html, body').animate({
-                    easing: 'easeOutExpo',
-                    scrollTop: element.offset().top
-                }, 250);
-
-                if (history.pushState)
-                {
-                    history.pushState(null, null, page + id);
-                }
             });
 
             /* ==========================================================================
