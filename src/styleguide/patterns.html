@@ -47,6 +47,24 @@
 
     <main class="sg-main" role="main">
         <div class="sg-wrapper">
+            <form class="sg-form sg-form--fixed" action="forms.html" method="post">
+                <label for="sg-jump" class="sg-label">
+                    <select class="sg-input sg-input--select" id="sg-jump" data-sg-jump="section">
+                        <option value="">Jump to…</option>
+                        <option value="sg-navigation">Navigation</option>
+                        <option value="sg-navigation-vertical">Navigation – Vertical</option>
+                        <option value="sg-accordion">Accordion</option>
+                        <option value="sg-alerts">Alerts</option>
+                        <option value="sg-breadcrumbs">Breadcrumbs</option>
+                        <option value="sg-card">Card</option>
+                        <option value="sg-pagination">Pagination</option>
+                        <option value="sg-social">Social</option>
+                        <option value="sg-tabs">Tabs</option>
+                        <option value="sg-tooltips">Tooltips</option>
+                    </select>
+                </label>
+            </form>
+
             <section id="sg-navigation" class="sg-section">
                 <header class="sg-header sg-header--section">
                     <h1 class="hN">Navigation</h1>

@@ -13,6 +13,7 @@
  * ELEMENTS
  * .....Buttons
  * .....Code
+ * .....Forms
  * .....Headings
  * .....Icons
  * .....Lists
@@ -22,7 +23,6 @@
  * .....Wrapper
  * .....Headers
  * .....Navigation
- * .....Main
  * .....Sections
  * .....Footer
  * .....Example
@@ -142,6 +142,63 @@
     font-size: 0.875em; /* 14 / 16 */
     margin-bottom: 1em;
     padding: 0.25em 0.5em;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Form
+   ========================================================================== */
+
+.sg-form {
+
+    .sg-input {
+        background-color: @color-white-dark;
+        border: 1px solid @color-silver;
+        border-radius: 0;
+        color: @color-gray-dark;
+        font-family: @font-styleguide;
+        height: 2.5em; /* 40 / 16 */
+        margin-top: 0.375em;
+        padding: 0.5625em 0.75em 0.5em 0.75em;
+        .transition(background-color 0.25s, border-color 0.25s;);
+
+        &:focus,
+        &:hover {
+            background-color: @color-white;
+            border-color: @color-gray-dark;
+        }
+
+        &.sg-input--select {
+            padding-top: 0.375em;
+        }
+    }
+
+    &.sg-form--fixed {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media all and (min-width: @bp-large) {
+
+    .sg-form {
+
+        &.sg-form--fixed {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 71.25em; /* 1140 / 16 */
+            position: fixed;
+            top: 6em;
+            text-align: right;
+            visibility: visible;
+            width: 90%;
+            z-index: 1;
+        }
+    }
 }
 
 
@@ -393,6 +450,7 @@
     margin-right: auto;
     margin-left: auto;
     max-width: 71.25em; /* 1140 / 16 */
+    position: relative;
     width: 90%;
 }
 
@@ -429,8 +487,8 @@
 
         .sg-btn--nav {
             position: absolute;
-            right: 5%;
-            top: 0.8125em;
+            right: 0;
+            top: 0.375em;
         }
     }
 
@@ -601,21 +659,6 @@
 
 
 /* ==========================================================================
-   $Main
-   ========================================================================== */
-
-@media all and (min-width: @bp-large) {
-
-    .sg-main {
-        margin-top: 7.25em;
-    }
-}
-
-
-
-
-
-/* ==========================================================================
    $Sections
    ========================================================================== */
 
@@ -643,7 +686,7 @@
 
 .sg-section {
     .clearfix();
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     padding-top: 2em;
     width: 100%;
 
@@ -674,11 +717,21 @@
     }
 }
 
-@media all and (min-width: @bp-small) {
+@media all and (min-width: @bp-large) {
 
     .sg-section {
-        margin-bottom: 4em;
-        padding-top: 2.5625em;
+        padding-top: 10em;
+
+        &:first-of-type {
+            padding-top: 10em;
+        }
+
+        &.sg-section--block {
+
+            &:first-of-type {
+                padding-top: 1em;
+            }
+        }
 
         &.sg-section--intro {
             margin-bottom: 4em;
@@ -864,7 +917,7 @@ pre[class*="language-"] {
 }
 
 .namespace {
-    opacity: .7;
+    opacity: 0.75;
 }
 
 .token.property,
