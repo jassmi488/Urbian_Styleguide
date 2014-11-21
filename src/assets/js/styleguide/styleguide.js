@@ -54,9 +54,9 @@ STYLEGUIDE = {
                Jump to Section
                ========================================================================== */
 
-            var $jump_section = $('[data-sg-jump="section"]');
+            var $jump_action = $('[data-sg-action="jump"]');
 
-            $jump_section.on('change', function ()
+            $jump_action.on('change', function ()
             {
                 var section = $(this).find('option:selected')[0].value;
 
