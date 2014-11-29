@@ -1,7 +1,6 @@
 ## [Style Guide](http://joepublicn.com/styleguide/v2/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
-[![Build Status](https://magnum.travis-ci.com/we-are-next/styleguide)](https://magnum.travis-ci.com/we-are-next/styleguide)
 
 ### Requirements
 
