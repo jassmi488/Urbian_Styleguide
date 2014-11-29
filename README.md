@@ -1,10 +1,11 @@
 ## [Style Guide](http://joepublicn.com/styleguide/v2/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
+[![Build Status](https://magnum.travis-ci.com/we-are-next/styleguide)](https://magnum.travis-ci.com/we-are-next/styleguide)
 
 ### Requirements
 
-Ensure that the following are installed on your computer:
+Ensure that the following is installed on your computer:
 
 1. [Git](http://git-scm.com)
 2. [Node.js](http://nodejs.org)
