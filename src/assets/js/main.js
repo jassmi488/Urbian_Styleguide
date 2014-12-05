@@ -107,7 +107,7 @@ SITENAME = {
                 if ($map.length > 0)
                 {
                     var screen_width = document.body.clientWidth;
-                    var breakpoint = 640; // This is the equivalent of `@bp-xs`
+                    var breakpoint = 480; // This is the equivalent of `@bp-xs`
                     var url_embed = $map.data('url-embed');
                     var $map_img = $('.map__img', $map);
                     var $map_canvas = $('.map__canvas', $map);
