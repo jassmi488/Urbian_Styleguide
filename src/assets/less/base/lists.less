@@ -24,71 +24,78 @@ dl {
 }
 
 /**
- * Ordered
- */
-
-.list--ordered {
-    margin-bottom: 1em;
-
-    li {
-        margin-bottom: 1em;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-/**
- * Unordered
- */
-
-.list--unordered {
-    list-style: square;
-    margin-bottom: 1em;
-
-    li {
-        margin-bottom: 1em;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-/**
- * Unstyled
+ * Custom
  */
 
 .list {
-    .unstyled();
 
     .list {
         margin-left: 1em;
     }
-}
 
-.unstyled() {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+    /**
+     * Inline
+     */
 
-/**
- * Inline
- */
+    &.list--inline {
+        .clearfix();
+        .unstyled();
 
-.list--inline {
-    .clearfix();
-    .unstyled();
+        li {
+            float: left;
+            margin-right: 1em;
+            margin-bottom: 0;
 
-    li {
-        float: left;
-        margin-right: 1em;
-        margin-bottom: 0;
-
-        &:last-child {
-            margin-right: 0;
+            &:last-child {
+                margin-right: 0;
+            }
         }
+    }
+
+    /**
+     * Ordered
+     */
+
+    &.list--ordered {
+        margin-bottom: 1em;
+
+        li {
+            margin-bottom: 1em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    /**
+     * Unordered
+     */
+
+    &.list--unordered {
+        list-style: square;
+        margin-bottom: 1em;
+
+        li {
+            margin-bottom: 1em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    /**
+     * Unstyled
+     */
+
+    &.list--unstyled {
+        .unstyled();
+    }
+
+    .unstyled() {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 }
