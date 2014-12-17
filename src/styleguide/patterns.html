@@ -41,7 +41,7 @@
                     <li><a href="templates.html">Templates</a></li>
                 </ol>
             </nav>
-            <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
+            <button class="sg-btn sg-btn--nav js-sg-toggle-nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
         </div>
     </header>
 
@@ -49,7 +49,7 @@
         <div class="sg-wrapper">
             <form class="sg-form sg-form--fixed" action="patterns.html" method="post">
                 <label for="sg-jump" class="sg-label">
-                    <select class="sg-input sg-input--select" id="sg-jump" data-sg-action="jump">
+                    <select class="sg-input sg-input--select js-sg-jump" id="sg-jump">
                         <option value="">Jump to…</option>
                         <option value="sg-navigation">Navigation</option>
                         <option value="sg-navigation-vertical">Navigation – Vertical</option>
@@ -80,9 +80,9 @@
                     </ol>
                 </nav>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><nav class="nav" role="navigation">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><nav class="nav" role="navigation">
     <ol class="list">
         <li class="is-active"><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
@@ -106,9 +106,9 @@
                     </ol>
                 </nav>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><nav class="nav nav--vertical" role="navigation">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><nav class="nav nav--vertical" role="navigation">
     <ol class="list">
         <li class="is-active"><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
@@ -122,7 +122,7 @@
                     <h1 class="hN">Accordion</h1>
                 </header>
 
-                <div class="accordion" data-component="accordion" role="tablist">
+                <div class="accordion js-accordion" role="tablist">
                     <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
                         <div id="accordion-tab-1" class="accordion-item__title" aria-controls="accordion-panel-1" role="tab">
                             <a class="accordion-item__link" href="patterns.html#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a>
@@ -152,9 +152,9 @@
                     </div>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="accordion" data-component="accordion" role="tablist">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="accordion js-accordion" role="tablist">
     <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
         <div id="accordion-tab-a" class="accordion-item__title" aria-controls="accordion-panel-a" role="tab">
             <a class="accordion-item__link" href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a>
@@ -181,75 +181,75 @@
                     <h1 class="hN">Alerts</h1>
                 </header>
 
-                <div class="alert alert--success" role="alert" data-component="alert">
+                <div class="alert alert--success js-alert" role="alert">
                     <div class="alert__title">Success</div>
                     <p class="alert__message">
                         <b>Well done!</b> You’ve successfully read <a class="alert__link" href="patterns.html#sg-alerts">this important alert message</a>.
                     </p>
-                    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+                    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--success" role="alert" data-component="alert"><div class="alert__title">Success</div>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="alert alert--success js-alert" role="alert"><div class="alert__title">Success</div>
     <p class="alert__message">
         <b>Well done!</b> You successfully read <a class="alert__link" href="#">this important alert message</a>.
     </p>
-    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
                 </div>
 
-                <div class="alert alert--info" role="alert" data-component="alert">
+                <div class="alert alert--info js-alert" role="alert">
                     <div class="alert__title">Information</div>
                     <p class="alert__message">
                         <b>Heads up!</b> This <a class="alert__link" href="patterns.html#sg-alerts">alert needs your attention</a>, but it’s not super important.
                     </p>
-                    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+                    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--info" role="alert" data-component="alert"><div class="alert__title">Information</div>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="alert alert--info js-alert" role="alert"><div class="alert__title">Information</div>
     <p class="alert__message">
         <b>Heads up!</b> This <a class="alert__link" href="#">alert needs your attention</a>, but it’s not super important.
     </p>
-    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
                 </div>
 
-                <div class="alert alert--warning" role="alert" data-component="alert">
+                <div class="alert alert--warning js-alert" role="alert">
                     <div class="alert__title">Warning!</div>
                     <p class="alert__message">
                         Better <a class="alert__link" href="patterns.html#sg-alerts">check yourself</a>, you’re not looking too good.
                     </p>
-                    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+                    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--warning" role="alert" data-component="alert"><div class="alert__title">Warning!</div>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="alert alert--warning js-alert" role="alert"><div class="alert__title">Warning!</div>
     <p class="alert__message">
         Better <a class="alert__link" href="patterns.html#sg-alerts">check yourself</a>, you’re not looking too good.
     </p>
-    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
                 </div>
 
-                <div class="alert alert--error" role="alert" data-component="alert">
+                <div class="alert alert--error js-alert" role="alert">
                     <div class="alert__title">Error</div>
                     <p class="alert__message">
                         <b>Oh snap!</b> Change a few things up and <a class="alert__link" href="patterns.html#sg-alerts">try submitting again</a>.
                     </p>
-                    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+                    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="alert alert--error" role="alert" data-component="alert"><div class="alert__title">Error</div>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="alert alert--error js-alert" role="alert"><div class="alert__title">Error</div>
     <p class="alert__message">
         <b>Oh snap!</b> <a class="alert__link" href="#">Change a few things up</a> and try submitting again.
     </p>
-    <button class="alert__dismiss" data-action="dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
+    <button class="alert__dismiss js-dismiss"><span class="icon fa fa-times-circle" aria-hidden="true"></span></button>
 </div></code></pre>
                 </div>
             </section>
@@ -268,9 +268,9 @@
                     </ol>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="breadcrumbs">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="breadcrumbs">
     <ol class="list">
         <li><a href="#">Services</a></li>
         <li class="is-active">Technology</li>
@@ -298,9 +298,9 @@
                     </div>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="card">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="card">
     <a class="card__link" href="#">
         <img class="card__img" src="http://placehold.it/300x169" width="300" height="169" alt="" />
     </a>
@@ -332,9 +332,9 @@
                     </ol>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="pagination">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="pagination">
     <ol class="list">
         <li><a href="#">1</a></li>
         <li class="is-active"><a href="#">2</a></li>
@@ -362,9 +362,9 @@
                     </ol>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="social">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="social">
     <ol class="list">
         <li>
             <a href="#" title="Follow us on Facebook"><span class="icon fa fa-facebook-square" aria-hidden="true"></span></a>
@@ -385,7 +385,7 @@
                     <h1 class="hN">Tabs</h1>
                 </header>
 
-                <div class="tabs" data-component="tabs">
+                <div class="tabs js-tabs">
                     <ol class="tab-list" role="tablist">
                         <li id="tab-1" aria-controls="panel-1" role="tab" aria-selected="true" class="tab-list__tab is-selected">
                             <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a>
@@ -423,9 +423,9 @@
                     </div>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="tabs" data-component="tabs">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="tabs js-tabs">
     <ol class="tab-list" role="tablist">
         <li id="tab-a" aria-controls="panel-a" role="tab" aria-selected="true" class="tab-list__tab is-selected">
             <a href="#" class="tab-list__link">Tab 1</a>
@@ -453,14 +453,14 @@
                     <h1 class="hN">Tooltips</h1>
                 </header>
 
-                <p>Sed ut <a href="patterns.html#sg-tooltips" data-component="tooltip" data-tooltip-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">perspiciatis unde omnis</a> iste natus error sit voluptatem accusantium <a href="patterns.html#sg-tooltips" data-component="tooltip" data-placement="right" title="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">doloremque laudantium</a>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem <a href="patterns.html#sg-tooltips" data-component="tooltip" data-placement="bottom" title="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">quia voluptas</a> sit aspernatur aut odit aut fugit, sed quia consequuntur <a href="patterns.html#sg-tooltips" data-component="tooltip" data-tooltip-placement="left" title="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.">magni dolores</a> eos qui ratione voluptatem sequi nesciunt.</p>
+                <p>Sed ut <a class="js-tooltip" href="patterns.html#sg-tooltips" data-tooltip-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">perspiciatis unde omnis</a> iste natus error sit voluptatem accusantium <a class="js-tooltip" href="patterns.html#sg-tooltips" data-placement="right" title="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">doloremque laudantium</a>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem <a class="js-tooltip" href="patterns.html#sg-tooltips" data-placement="bottom" title="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">quia voluptas</a> sit aspernatur aut odit aut fugit, sed quia consequuntur <a class="js-tooltip" href="patterns.html#sg-tooltips" data-tooltip-placement="left" title="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.">magni dolores</a> eos qui ratione voluptatem sequi nesciunt.</p>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><p>Sed ut <a href="#" data-component="tooltip" data-placement="top" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
-<p>Sed ut <a href="#" data-component="tooltip" data-placement="right" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
-<p>Sed ut <a href="#" data-component="tooltip" data-placement="bottom" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
-<p>Sed ut <a href="#" data-component="tooltip" data-placement="left" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><p>Sed ut <a class="js-tooltip" href="#" data-placement="top" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
+<p>Sed ut <a class="js-tooltip" href="#" data-placement="right" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
+<p>Sed ut <a class="js-tooltip" href="#" data-placement="bottom" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
+<p>Sed ut <a class="js-tooltip" href="#" data-placement="left" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p></code></pre>
                 </div>
             </section>
         </div>

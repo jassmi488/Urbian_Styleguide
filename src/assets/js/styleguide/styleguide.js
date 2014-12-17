@@ -13,16 +13,16 @@ STYLEGUIDE = {
                Code
                ========================================================================== */
 
-            var $code_component = $('[data-sg-component="code"]');
+            var $code_component = $('.js-sg-code');
 
             if ($code_component.length > 0)
             {
                 $code_component.each(function ()
                 {
                     var $code_example = $(this);
-                    var $pre = $('.sg-pre', $code_example);
-                    var $code = $('[data-sg-markup="true"]', $code_example);
-                    var $code_toggle = $('[data-sg-toggle="code"]', $code_example);
+                    var $pre = $('pre', $code_example);
+                    var $code = $('code', $code_example);
+                    var $code_toggle = $('.js-sg-toggle', $code_example);
 
                     $code.text($code.html()); // Convert HTML to character entities
 
@@ -54,7 +54,7 @@ STYLEGUIDE = {
                Jump to Section
                ========================================================================== */
 
-            var $jump_action = $('[data-sg-action="jump"]');
+            var $jump_action = $('.js-sg-jump');
 
             $jump_action.on('change', function ()
             {
@@ -70,7 +70,7 @@ STYLEGUIDE = {
                Toggle Navigation
                ========================================================================== */
 
-            var $toggle_nav = $('[data-sg-toggle="nav"]');
+            var $toggle_nav = $('.js-sg-toggle-nav');
 
             $toggle_nav.on('click', function ()
             {

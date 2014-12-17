@@ -21,7 +21,7 @@ SITENAME = {
                Accordion
                ========================================================================== */
 
-            var $accordion_component = $('[data-component="accordion"]');
+            var $accordion_component = $('.js-accordion');
 
             if ($accordion_component.length > 0)
             {
@@ -71,7 +71,7 @@ SITENAME = {
                Alert
                ========================================================================== */
 
-            var $alert_component = $('[data-component="alert"]');
+            var $alert_component = $('.js-alert');
 
             if ($alert_component.length > 0)
             {
@@ -79,7 +79,7 @@ SITENAME = {
                 {
                     var $alert = $(this);
 
-                    var $dismiss_alert = $('[data-action="dismiss"]', $alert);
+                    var $dismiss_alert = $('.js-dismiss', $alert);
 
                     $dismiss_alert.on('click', function (e)
                     {
@@ -102,7 +102,7 @@ SITENAME = {
 
             function renderMap()
             {
-                var $map = $('[data-component="map"]');
+                var $map = $('.js-map');
 
                 if ($map.length > 0)
                 {
@@ -149,7 +149,7 @@ SITENAME = {
                Tabs
                ========================================================================== */
 
-            var $tabs_component = $('[data-component="tabs"]');
+            var $tabs_component = $('.js-tabs');
 
             if ($tabs_component.length > 0)
             {
@@ -194,7 +194,7 @@ SITENAME = {
                Toggle Password
                ========================================================================== */
 
-            var $toggle_password = $('[data-component="toggle-password"]');
+            var $toggle_password = $('.js-toggle-password');
 
             if ($toggle_password.length > 0 && isModernBrowser)
             {
@@ -202,7 +202,7 @@ SITENAME = {
                 {
                     var $form = $(this);
                     var $input = $('input[type="password"]', $form);
-                    var $toggle = $('[data-toggle="password"]', $form);
+                    var $toggle = $('.js-toggle', $form);
 
                     $toggle.removeClass('visuallyhidden'); // Enable the toggle button
 
@@ -243,7 +243,7 @@ SITENAME = {
                Tooltips
                ========================================================================== */
 
-            var $tooltips = $('[data-component="tooltip"]');
+            var $tooltips = $('.js-tooltip');
 
             if ($tooltips.length > 0)
             {

@@ -41,7 +41,7 @@
                     <li><a href="templates.html">Templates</a></li>
                 </ol>
             </nav>
-            <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
+            <button class="sg-btn sg-btn--nav js-sg-toggle-nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
         </div>
     </header>
 
@@ -49,7 +49,7 @@
         <div class="sg-wrapper">
             <form class="sg-form sg-form--fixed" action="forms.html" method="post">
                 <label for="sg-jump" class="sg-label">
-                    <select class="sg-input sg-input--select" id="sg-jump" data-sg-action="jump">
+                    <select class="sg-input sg-input--select js-sg-jump" id="sg-jump">
                         <option value="">Jump to…</option>
                         <option value="sg-default">Form – Default</option>
                         <option value="sg-inline">Form – Inline</option>
@@ -69,12 +69,12 @@
                         <input class="input" type="email" id="email" name="email" placeholder="Email Address" maxlength="100" />
                     </label>
 
-                    <div class="toggle-password" data-component="toggle-password">
+                    <div class="toggle-password js-toggle-password">
                         <label for="password" class="label">
                             Password
                             <input class="input" type="password" id="password" name="password" maxlength="100" />
                         </label>
-                        <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+                        <button class="visuallyhidden toggle js-toggle">Show</button>
                     </div>
 
                     <label for="remember" class="label">
@@ -84,20 +84,20 @@
                     <input class="btn" type="submit" value="Sign In" />
                 </form>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-default-a" action="#" method="post" class="form">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><form id="form-default-a" action="#" method="post" class="form">
     <label for="email-a" class="label">
         Email Address
         <input class="input" type="email" id="email-a" name="email-a" placeholder="Email Address" maxlength="100" />
     </label>
 
-    <div class="toggle-password" data-component="toggle-password">
+    <div class="toggle-password js-toggle-password">
         <label for="password-a" class="label">
             Password
             <input class="input" type="password" id="password-a" name="password-a" maxlength="100" />
         </label>
-        <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+        <button class="visuallyhidden toggle js-toggle">Show</button>
     </div>
 
     <label for="remember-a" class="label">
@@ -128,9 +128,9 @@
                     <input class="btn" type="submit" value="Sign In" />
                 </form>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-inline-b" action="#" method="post" class="form form--inline">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><form id="form-inline-b" action="#" method="post" class="form form--inline">
     <label for="email-b" class="label visuallyhidden">Email Address</label>
     <input class="input" type="email" id="email-b" name="email-b" placeholder="Email Address" maxlength="100" />
 
@@ -158,9 +158,9 @@
                     <button class="btn btn--icon" type="submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
                 </form>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><form id="form-search-c" action="#" method="post" class="form form--search">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><form id="form-search-c" action="#" method="post" class="form form--search">
     <label for="search-c" class="visuallyhidden">Search</label>
     <input class="input" type="text" id="search-c" name="search-c" placeholder="Search…" maxlength="20" />
 

@@ -41,7 +41,7 @@
                     <li><a href="templates.html">Templates</a></li>
                 </ol>
             </nav>
-            <button class="sg-btn sg-btn--nav" data-sg-toggle="nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
+            <button class="sg-btn sg-btn--nav js-sg-toggle-nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
         </div>
     </header>
 
@@ -49,7 +49,7 @@
         <div class="sg-wrapper">
             <form class="sg-form sg-form--fixed" action="elements.html" method="post">
                 <label for="sg-jump" class="sg-label">
-                    <select class="sg-input sg-input--select" id="sg-jump" data-sg-action="jump">
+                    <select class="sg-input sg-input--select js-sg-jump" id="sg-jump">
                         <option value="">Jump to…</option>
                         <option value="sg-color-palette">Color Palette</option>
                         <option value="sg-font-stacks">Font Stacks</option>
@@ -224,9 +224,9 @@
 
                 <p class="hide--small hide--medium"><em>This text is only visible on large screens</em></p>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><p class="hide--small">This text is hidden on smaller screens</p>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><p class="hide--small">This text is hidden on smaller screens</p>
 <p class="hide--medium hide--large"><em>This text is only visible on smaller screens</em></p>
 <p class="hide--medium">This text is hidden on medium screens only</p>
 <p class="hide--small hide--large"><em>This text is only visible on medium screens</em></p>
@@ -252,9 +252,9 @@
 
                 <h6 class="zeta">h6. The quick brown fox jumps over the lazy dog</h6>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><h1 class="alpha">The quick brown fox jumps over the lazy dog</h1>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><h1 class="alpha">The quick brown fox jumps over the lazy dog</h1>
 <h2 class="beta">The quick brown fox jumps over the lazy dog</h2>
 <h3 class="gamma">The quick brown fox jumps over the lazy dog</h3>
 <h4 class="delta">The quick brown fox jumps over the lazy dog</h4>
@@ -271,25 +271,25 @@
                 <h2 class="sg-heading sg-heading--spacer">Large</h2>
                 <p class="text--large">“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><p class="text--large">“The quick brown fox jumps over the lazy dog” is an English–language pangram…</p></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><p class="text--large">“The quick brown fox jumps over the lazy dog” is an English–language pangram…</p></code></pre>
                 </div>
 
                 <h2 class="sg-heading sg-heading--spacer">Default</h2>
                 <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><p>“The quick brown fox jumps over the lazy dog” is an English–language pangram…</p></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><p>“The quick brown fox jumps over the lazy dog” is an English–language pangram…</p></code></pre>
                 </div>
 
                 <h2 class="sg-heading sg-heading--spacer">Small</h2>
                 <p class="text--small">“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><p class="text--small">“The quick brown fox jumps over the lazy dog” is an English–language pangram…</p></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><p class="text--small">“The quick brown fox jumps over the lazy dog” is an English–language pangram…</p></code></pre>
                 </div>
             </section>
 
@@ -307,9 +307,9 @@
                     </cite>
                 </blockquote>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><blockquote class="blockquote">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><blockquote class="blockquote">
     <p class="blockquote__quote">
         The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates…
     </p>
@@ -327,9 +327,9 @@
 
                 <hr />
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><hr /></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><hr /></code></pre>
                 </div>
             </section>
 
@@ -393,9 +393,9 @@
                     <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><a href="#">This is a text link</a>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><a href="#">This is a text link</a>
 
 <strong>Strong is used to indicate strong importance</strong>
 
@@ -446,9 +446,9 @@ P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~ </pre>
 
-            <div class="sg-example-code" data-sg-component="code">
-                <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><pre>P R E F O R M A T T E D T E X T
+            <div class="sg-example-code js-sg-code">
+                <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><pre>P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
 @ A B C D E F G H I J K L M N O
@@ -474,9 +474,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <div class="tel">+1-650-289-4040</div>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="vcard">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="vcard">
     <div class="fn org">Company Name</div>
     <div class="adr">
         <div class="street-address">169 University Avenue</div>
@@ -496,9 +496,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
 
                 <time datetime="2014-01-01">January 1, 2014</time>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><time datetime="2014-01-01">January 1, 2014</time></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><time datetime="2014-01-01">January 1, 2014</time></code></pre>
                 </div>
             </section>
 
@@ -516,9 +516,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <dd>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</dd>
                 </dl>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><dl>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><dl>
     <dt>The quick brown fox jumps over the lazy dog</dt>
     <dd>“The quick brown fox jumps over the lazy dog” is an English–language pangram…</dd>
 </dl></code></pre>
@@ -536,9 +536,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
                 </ol>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><ol class="list list--ordered">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><ol class="list list--ordered">
     <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram…</li>
 </ol></code></pre>
                 </div>
@@ -555,9 +555,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</li>
                 </ul>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><ul class="list list--unordered">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><ul class="list list--unordered">
     <li>“The quick brown fox jumps over the lazy dog” is an English–language pangram…</li>
 </ul></code></pre>
                 </div>
@@ -574,9 +574,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <li>Duis aute irure dolor</li>
                 </ul>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><ul class="list list--inline">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><ul class="list list--inline">
     <li>Lorem ipsum dolor sit</li>
     <li>Sed do eiusmod tempor</li>
     <li>Duis aute irure dolor</li>
@@ -595,9 +595,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
                 </ul>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><ul class="list list--unstyled">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><ul class="list list--unstyled">
     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
     <li>Sed do eiusmod tempor incididunt ut labore et dolore magna</li>
     <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
@@ -653,9 +653,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </tfoot>
                 </table>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><table class="table tablesaw tablesaw-stack" data-mode="stack">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><table class="table tablesaw tablesaw-stack" data-mode="stack">
     <caption class="table__caption">The Greatest Movie Actors of All Time</caption>
     <thead>
     <tr>
@@ -730,9 +730,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </tfoot>
                 </table>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><table class="table table--bordered tablesaw tablesaw-stack" data-mode="stack">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><table class="table table--bordered tablesaw tablesaw-stack" data-mode="stack">
     <caption class="table__caption">The Greatest Movie Actors of All Time</caption>
     <thead>
     <tr>
@@ -807,9 +807,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </tfoot>
                 </table>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><table class="table table--striped tablesaw tablesaw-stack" data-mode="stack">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><table class="table table--striped tablesaw tablesaw-stack" data-mode="stack">
     <caption class="table__caption">The Greatest Movie Actors of All Time</caption>
     <thead>
     <tr>
@@ -846,9 +846,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <figcaption class="figure__caption">This is a placeholder image with a supporting caption.</figcaption>
                 </figure>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><figure class="figure">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><figure class="figure">
     <img class="figure__img" src="http://placehold.it/600x400" width="600" height="400" alt="" />
     <figcaption class="figure__caption">This is a placeholder image with a supporting caption.</figcaption>
 </figure></code></pre>
@@ -890,13 +890,13 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                 </div>
 
                 <div class="sg-example">
-                    <div class="toggle-password" data-component="toggle-password">
+                    <div class="toggle-password js-toggle-password">
                         <label for="password" class="label">
                             Password
                             <input class="input" type="password" id="password" name="password" />
                         </label>
 
-                        <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+                        <button class="visuallyhidden toggle js-toggle">Show</button>
                         <div class="help-text help-text--right">This is right-aligned help text for this form control.</div>
                     </div>
                 </div>
@@ -908,9 +908,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><label for="text-a" class="label">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><label for="text-a" class="label">
     Text
     <input class="input" type="text" id="text-a" name="text-a" placeholder="Placeholder text…" />
 </label>
@@ -931,13 +931,13 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
 </label>
 <div class="help-text">This is default help text for this form control.</div>
 
-<div class="toggle-password" data-component="toggle-password">
+<div class="toggle-password">
     <label for="password-e" class="label">
         Password
         <input class="input" type="password" id="password-e" name="password-e" />
     </label>
 
-    <button class="visuallyhidden toggle" data-toggle="password">Show</button>
+    <button class="visuallyhidden toggle js-toggle">Show</button>
     <div class="help-text help-text--right">This is right-aligned help text for this form control.</div>
 </div>
 
@@ -969,9 +969,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </fieldset>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><fieldset class="fieldset fieldset--bordered">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset fieldset--bordered">
     <legend class="legend">Checkboxes</legend>
     <label for="checkbox-a" class="label">
         <input id="checkbox-a" type="checkbox" name="checkbox" value="1" /> Choice 1
@@ -999,9 +999,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </fieldset>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><fieldset class="fieldset fieldset--bordered">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset fieldset--bordered">
     <legend class="legend">Checkboxes</legend>
     <label for="checkbox-c" class="label label--inline">
         <input id="checkbox-c" type="checkbox" name="checkbox" value="1" /> Choice 1
@@ -1035,9 +1035,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </fieldset>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><fieldset class="fieldset fieldset--bordered">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset fieldset--bordered">
     <legend class="legend">Radio Buttons</legend>
     <label for="radio-a" class="label">
         <input id="radio-a" type="radio" name="radio" value="1" /> Choice 1
@@ -1065,9 +1065,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </fieldset>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><fieldset class="fieldset fieldset--bordered">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset fieldset--bordered">
     <legend class="legend">Radio Buttons</legend>
     <label for="radio-c" class="label label--inline">
         <input id="radio-c" type="radio" name="radio" value="1" /> Choice 1
@@ -1106,9 +1106,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </select>
                 </label>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><label for="select-a" class="label">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><label for="select-a" class="label">
     Select
     <select id="select-a" name="select-a" class="input input--select">
         <option value="1">Option 1</option>
@@ -1144,9 +1144,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </select>
                 </label>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><label for="select-c" class="label">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><label for="select-c" class="label">
     Select
     <select id="select-c" name="select-c" class="input input--select">
         <option value="1">Option 1</option>
@@ -1171,9 +1171,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <textarea id="textarea" name="textarea" class="input input--textarea" placeholder="Placeholder text…"></textarea>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><textarea id="textarea-a" name="textarea-a" class="input input--textarea" placeholder="Placeholder text…"></textarea></code></pre>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><textarea id="textarea-a" name="textarea-a" class="input input--textarea" placeholder="Placeholder text…"></textarea></code></pre>
                 </div>
             </section>
 
@@ -1189,9 +1189,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><label for="text" class="label has-error">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><label for="text" class="label has-error">
     Error
     <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" />
 </label></code></pre>
@@ -1204,9 +1204,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><label for="text" class="label has-warning">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><label for="text" class="label has-warning">
     Warning
     <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" />
 </label></code></pre>
@@ -1219,9 +1219,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </label>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><label for="text" class="label has-success">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><label for="text" class="label has-success">
     Success
     <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" />
 </label></code></pre>
@@ -1238,9 +1238,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <a href="elements.html#sg-buttons" class="btn btn--silver" role="button">Button</a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><button class="btn">Button<span class="icon fa fa-caret-right" aria-hidden="true"></span></button>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><button class="btn">Button<span class="icon fa fa-caret-right" aria-hidden="true"></span></button>
 <a href="#" class="btn btn--silver" role="button">Button</a></code></pre>
                 </div>
             </section>
@@ -1255,9 +1255,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <a href="elements.html#sg-buttons" class="btn btn--small btn--silver" role="button">Button</a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><button class="btn btn--small">Button<span class="icon fa fa-caret-right" aria-hidden="true"></span></button>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><button class="btn btn--small">Button<span class="icon fa fa-caret-right" aria-hidden="true"></span></button>
 <a href="#" class="btn btn--small btn--silver" role="button">Button</a></code></pre>
                 </div>
             </section>
@@ -1272,9 +1272,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <a href="elements.html#sg-buttons" class="btn btn--text btn--small" role="button">Button</a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><button class="btn btn--text btn--small">Button<span class="icon fa fa-caret-right" aria-hidden="true"></span></button>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><button class="btn btn--text btn--small">Button<span class="icon fa fa-caret-right" aria-hidden="true"></span></button>
 <a href="#" class="btn btn--text btn--small" role="button">Button</a></code></pre>
                 </div>
             </section>
@@ -1289,9 +1289,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <a href="elements.html#sg-buttons" class="btn btn--icon btn--small btn--silver"><span class="icon fa fa-search" aria-hidden="true"></span></a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><a href="#" class="btn btn--icon btn--small"><span class="icon fa fa-search" aria-hidden="true"></span></a>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><a href="#" class="btn btn--icon btn--small"><span class="icon fa fa-search" aria-hidden="true"></span></a>
 <a href="#" class="btn btn--icon btn--small btn--silver"><span class="icon fa fa-search" aria-hidden="true"></span></a></code></pre>
                 </div>
             </section>
@@ -1307,9 +1307,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <a href="elements.html#sg-button-groups" class="btn btn--silver" role="button">Secondary</a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="btn-group">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="btn-group">
     <a href="#" class="btn" role="button">Primary</a>
     <a href="#" class="btn btn--silver" role="button">Secondary</a>
 </div></code></pre>
@@ -1321,9 +1321,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <a href="elements.html#sg-button-groups" class="btn btn--silver" role="button">Secondary</a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="btn-group btn-group--left">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="btn-group btn-group--left">
     <a href="#" class="btn" role="button">Primary</a>
     <a href="#" class="btn btn--silver" role="button">Secondary</a>
 </div></code></pre>
@@ -1366,9 +1366,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </li>
                 </ol>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><span class="icon fa fa-caret-up" title="Caret Up" aria-hidden="true"></span>
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><span class="icon fa fa-caret-up" title="Caret Up" aria-hidden="true"></span>
 <span class="icon fa fa-caret-right" title="Caret Right" aria-hidden="true"></span>
 <span class="icon fa fa-caret-down" title="Caret Down" aria-hidden="true"></span>
 <span class="icon fa fa-search" title="Search" aria-hidden="true"></span>
@@ -1383,15 +1383,15 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <h1 class="hN">Map</h1>
                 </header>
 
-                <div class="map" data-component="map" data-url-static="https://maps.google.com/maps/api/staticmap?center=-33.9338399.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.2833411829097!2d18.45708!3d-33.933839899999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0a28811b49%3A0xb935331aac1a0616!2s9+Queens+Park+Ave%2C+Salt+River%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1414765028558">
+                <div class="map js-map" data-url-static="https://maps.google.com/maps/api/staticmap?center=-33.9338399.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.2833411829097!2d18.45708!3d-33.933839899999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0a28811b49%3A0xb935331aac1a0616!2s9+Queens+Park+Ave%2C+Salt+River%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1414765028558">
                     <img class="map__img" src="https://maps.google.com/maps/api/staticmap?center=-33.9338399,18.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" alt="Next: 9 Queens Park Avenue" />
                     <iframe class="map__canvas is-hidden"></iframe>
                     <a href="https://www.google.co.za/maps/place/9+Queens+Park+Ave,+Salt+River,+Cape+Town,+7925/@-33.9338399,18.45708,17z" class="map__btn btn btn--small">View on Google Maps<span class="icon fa fa-external-link" aria-hidden="true"></span></a>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="map" data-component="map" data-url-static="https://maps.google.com/maps/api/staticmap?center=-33.9338399.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.2833411829097!2d18.45708!3d-33.933839899999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0a28811b49%3A0xb935331aac1a0616!2s9+Queens+Park+Ave%2C+Salt+River%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1414765028558">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="map js-map" data-url-static="https://maps.google.com/maps/api/staticmap?center=-33.9338399.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.2833411829097!2d18.45708!3d-33.933839899999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0a28811b49%3A0xb935331aac1a0616!2s9+Queens+Park+Ave%2C+Salt+River%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1414765028558">
     <img class="map__img" src="https://maps.google.com/maps/api/staticmap?center=-33.9338399,18.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" alt="Next: 9 Queens Park Avenue" />
     <iframe class="map__canvas is-hidden"></iframe>
     <a href="https://www.google.co.za/maps/place/9+Queens+Park+Ave,+Salt+River,+Cape+Town,+7925/@-33.9338399,18.45708,17z" class="map__btn btn btn--small">View on Google Maps<span class="icon fa fa-external-link" aria-hidden="true"></span></a>
@@ -1410,9 +1410,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <p>Your user agent does not support the HTML5 Audio element.</p>
                 </audio>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><audio controls="controls">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><audio controls="controls">
     <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />
     <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />
     <p>Your user agent does not support the HTML5 Audio element.</p>
@@ -1431,9 +1431,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <p>Your user agent does not support the HTML5 Video element.</p>
                 </video>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><video poster="../assets/images/general/poster-video.jpg" controls="controls" preload="auto">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><video poster="../assets/images/general/poster-video.jpg" controls="controls" preload="auto">
     <source id="ogv-a" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg" />
     <source id="mp4-a" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4" />
     <p>Your user agent does not support the HTML5 Video element.</p>
@@ -1450,9 +1450,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     <iframe src="http://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="fluid-embed">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="fluid-embed">
     <iframe src="http://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
 </div></code></pre>
                 </div>
@@ -1580,9 +1580,9 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
                     </div>
                 </div>
 
-                <div class="sg-example-code" data-sg-component="code">
-                    <button class="sg-btn" data-sg-toggle="code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup" data-sg-markup="true"><div class="row">
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="row">
     <div class="col">
 
     </div>
