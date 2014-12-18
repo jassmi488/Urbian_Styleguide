@@ -58,6 +58,7 @@ less/
         card.less
         map.less
         media.less
+        modal.less
         nav.less
         pagination.less
         social.less
@@ -74,9 +75,9 @@ less/
 
 - **Breakpoints, Colors, Fonts**
     - `less/generic/variables.less`
-- **Clearfix, Fluid Embed, Font Utilities**
+- **Clearfix, Fluid Embeds, Text Utilities**
     - `less/base/helpers.less`
-- **Transform, Transition**
+- **Transforms, Transitions**
     - `less/generic/mixins.less`
 
 ### Components
@@ -84,8 +85,10 @@ less/
 - [Normalize.css](http://necolas.github.io/normalize.css)
 - [jQuery](http://jquery.com)
 - [Font Awesome](http://fontawesome.io)
+- [Modal](https://github.com/drublic/css-modal)
 - [Placeholder](http://mths.be/placeholder)
 - [Tablesaw](https://github.com/filamentgroup/tablesaw)
+- [Tooltip](http://getbootstrap.com/javascript/#tooltip)
 
 ### Polyfills
 
@@ -99,5 +102,4 @@ The following scripts are included for **IE8** and below:
 * [Barebones](http://barebones.paulrobertlloyd.com) by [Paul Robert Lloyd](http://paulrobertlloyd.com)
 * [HTML5 Boilerplate](http://html5boilerplate.com) by [H5BP](https://twitter.com/h5bp)
 * [Pattern Lab](http://pattern-lab.info) by [Brad Frost](http://bradfrostweb.com) and [Dave Olsen](http://dmolsen.com)
-* [Pattern Libraries](http://alistapart.com/blog/post/getting-started-with-pattern-libraries) by [Anna Debenham](http://maban.co.uk)
 * [Style Guide Boilerplate](http://bjankord.github.io/Style-Guide-Boilerplate) by [Brett Jankord](http://www.brettjankord.com)
