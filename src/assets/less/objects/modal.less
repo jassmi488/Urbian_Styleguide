@@ -19,6 +19,15 @@
 }
 
 .modal--show {
+    bottom: 0;
+    display: none \9;
+    height: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
     -webkit-transform: translate(0, 100%);
        -moz-transform: translate(0, 100%);
         -ms-transform: translate(0, 100%);
@@ -26,28 +35,19 @@
             transform: translate(0, 100%);
     -webkit-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
     width: 0;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    display: none \9;
+    z-index: 999;
 }
 
 .modal--show:target, .is-active.modal--show {
+    height: auto;
+    opacity: 1;
     -webkit-transform: translate(0, 0);
        -moz-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
          -o-transform: translate(0, 0);
             transform: translate(0, 0);
     width: auto;
-    height: auto;
-    opacity: 1;
 }
 
 .is-active.modal--show {
@@ -61,36 +61,36 @@
 }
 
 .modal--show .modal-inner {
+    left: 50%;
+    margin-left: -325px;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
     position: absolute;
     top: 50px;
-    left: 50%;
     z-index: 20;
-    margin-left: -325px;
     width: 650px;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
 }
 
 .modal--show .modal-inner > img,
 .modal--show .modal-inner > video,
 .modal--show .modal-inner > iframe {
-    width: 100%;
     height: auto;
     min-height: 300px;
+    width: 100%;
 }
 
 .modal--show .modal-inner > img {
-    width: auto;
     max-width: 100%;
+    width: auto;
 }
 
 .modal--show .modal-content {
-    position: relative;
     max-height: 400px;
     max-height: 80vh;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    position: relative;
 
     p {
 
@@ -105,16 +105,16 @@
 }
 
 .modal--show .modal-footer {
+    background: @color-white-dark;
     border-top: 1px solid @color-white;
     padding: 1em;
-    background: @color-white-dark;
 }
 
 .modal--show .modal-close {
+    clip: rect(0 0 0 0);
     color: @color-gray-dark;
     display: block;
     height: 1px;
-    clip: rect(0 0 0 0);
     margin: -1px;
     overflow: hidden;
     text-decoration: none;
@@ -126,31 +126,31 @@
 }
 
 .modal--show .modal-close:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: 10;
 }
 
 .modal--show .modal-close:after {
     content: '\00d7';
-    position: absolute;
-    top: 25px;
-    right: 50%;
-    z-index: 20;
     margin-right: -325px;
+    position: absolute;
+    right: 50%;
+    top: 25px;
+    z-index: 20;
 }
 
 @media screen and (max-width: 43.125em) {
 
     .modal--show .modal-inner {
-        width: auto;
         left: 20px;
-        right: 20px;
         margin-left: 0;
+        right: 20px;
+        width: auto;
     }
 
     .modal--show .modal-close:after {
@@ -162,6 +162,8 @@
 @media screen and (max-width: 30em) {
 
     .modal--show {
+        bottom: auto;
+        display: block;
         -webkit-transform: translate(0, 400px);
         -webkit-transform: translate3d(0, 100%, 0);
                 transform: translate3d(0, 100%, 0);
@@ -170,8 +172,6 @@
             -ms-transition: opacity 0.25s;
              -o-transition: opacity 0.25s;
                 transition: opacity 0.25s;
-        display: block;
-        bottom: auto;
     }
 
     .modal--show:target, .is-active.modal--show {
@@ -180,31 +180,28 @@
 
     .modal--show:before {
         content: '';
-        position: fixed;
-        top: 0;
         left: 0;
+        position: fixed;
         right: 0;
+        top: 0;
         z-index: 30;
     }
 
     .modal--show .modal-inner {
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-        top: 0;
-        left: 0;
-        right: 0;
         height: 100%;
+        left: 0;
         overflow: auto;
+        right: 0;
+        top: 0;
     }
 
     .modal--show .modal-content {
         max-height: none;
-        -ms-word-break: break-all;
-            word-break: break-all;
         -webkit-hyphens: auto;
            -moz-hyphens: auto;
                 hyphens: auto;
+        -ms-word-break: break-all;
+            word-break: break-all;
     }
 
     .modal--show .modal-close {
@@ -216,11 +213,11 @@
     }
 
     .modal--show .modal-close:after {
-        top: 5px !important;
-        right: 5px;
         left: auto;
-        z-index: 40;
         margin-left: 0;
+        right: 5px;
+        top: 5px !important;
+        z-index: 40;
     }
 }
 
@@ -241,12 +238,12 @@
 }
 
 .is-stacked.modal--show {
+    opacity: 1;
     -webkit-transform: translate(0, 0) scale(1, 1);
        -moz-transform: translate(0, 0) scale(1, 1);
         -ms-transform: translate(0, 0) scale(1, 1);
          -o-transform: translate(0, 0) scale(1, 1);
             transform: translate(0, 0) scale(1, 1);
-    opacity: 1;
 }
 
 .is-stacked.modal--show .modal-inner {
@@ -302,9 +299,9 @@
 }
 
 .modal--show .modal-footer {
+    background: @color-white-dark;
     border-top: 1px solid @color-white;
     padding: 1em;
-    background: @color-white-dark;
 }
 
 .modal--show .modal-close {
@@ -318,10 +315,10 @@
 }
 
 .modal--show .modal-close:after {
-    content: '\00d7';
     background: @color-white;
-    padding: 2px 8px;
+    content: '\00d7';
     font-size: 1.2em;
+    padding: 2px 8px;
     text-decoration: none;
     text-indent: 0;
 }
@@ -330,15 +327,15 @@
 
     .modal--show:before {
         background-color: @color-gray-dark;
-        height: 3em;
         -webkit-box-shadow: 0 0 5px rgba(0,0,0, 0.6);
                 box-shadow: 0 0 5px rgba(0,0,0, 0.6);
+        height: 3em;
     }
 
     .modal--show .modal-inner {
-        padding-top: 3em;
         -webkit-box-shadow: none;
                 box-shadow: none;
+        padding-top: 3em;
     }
 
     .modal--show .modal-close {
