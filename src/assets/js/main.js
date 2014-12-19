@@ -56,13 +56,6 @@ SITENAME = {
                             $item.attr('aria-hidden', 'false').attr('aria-selected', 'true');
                             $icon.removeClass(icon_down).addClass(icon_up);
                         }
-
-                        /*
-                         * Reset the display of all other accordion items
-                         */
-
-                        $('.accordion-item__link .icon', $accordion).not($icon).removeClass(icon_up).addClass(icon_down);
-                        $('.accordion-item', $accordion).not($item).removeClass('is-selected').attr('aria-hidden', 'true').attr('aria-selected', 'false');
                     });
                 });
             }
