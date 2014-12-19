@@ -47,7 +47,13 @@ STYLEGUIDE = {
 
                         $pre.toggleClass('is-visible'); // Toggle the display of the code
                     });
-                })
+
+                    /*
+                     * Ensure the correct class names are displayed in the example code
+                     */
+
+                    $code.html($code.html().replace(/%2D/g, '-')); // `%2D` is the HTML character entity for a dash
+                });
             }
 
             /* ==========================================================================
