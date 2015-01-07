@@ -108,12 +108,12 @@ module.exports = function (grunt)
         'ftp-deploy': {
             dist: {
                 auth: {
-                    host: 'joepublicn.com',
+                    host: 'static.wearenext.co.za',
                     port: 21,
-                    authKey: 'joepublicn'
+                    authKey: 'static'
                 },
                 src: './dist',
-                dest: 'public_html/styleguide/v2',
+                dest: 'public_html/styleguide/',
                 exclusions: [
                     '.editorconfig',
                     '.ftppass',
