@@ -162,7 +162,7 @@ module.exports = function (grunt)
                 },
                 options: {
                     banner: banner,
-                    cleancss: true
+                    compress: true
                 }
             },
             dist: {
@@ -172,7 +172,7 @@ module.exports = function (grunt)
                 },
                 options: {
                     banner: banner,
-                    cleancss: true
+                    compress: true
                 }
             }
         },
