@@ -1,4 +1,4 @@
-## [Style Guide](http://joepublicn.com/styleguide/v2/styleguide)
+## [Style Guide](http://static.wearenext.co.za/styleguide/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 
