@@ -31,44 +31,47 @@ Ensure that the following is installed on your computer:
 ### LESS Structure
 
 ```
-less/
-     base/
-        anchors.less
-        base.less
-        blockquotes.less
-        figures.less
-        forms.less
-        grid.less
-        headings.less
-        helpers.less
-        hr.less
-        lists.less
-        paragraphs.less
-        print.less
-        tables.less
-     generic/
-        mixins.less
-        reset.less
-        variables.less
-     objects/
-        accordion.less
-        alert.less
-        breadcrumbs.less
-        buttons.less
-        card.less
-        map.less
-        media.less
-        modal.less
-        nav.less
-        pagination.less
-        social.less
-        tabs.less
-        tooltips.less
-     vendor/
-        font-awesome.less
-        normalize.less
-     style.less
-     styleguide.less
+less
+|-- base
+|   |-- anchors.less
+|   |-- base.less
+|   |-- blockquotes.less
+|   |-- figures.less
+|   |-- forms.less
+|   |-- grid.less
+|   |-- headings.less
+|   |-- helpers.less
+|   |-- hr.less
+|   |-- lists.less
+|   |-- paragraphs.less
+|   |-- print.less
+|   `-- tables.less
+|-- generic
+|   |-- mixins.less
+|   |-- reset.less
+|   `-- variables.less
+|-- objects
+|   |-- accordion.less
+|   |-- alert.less
+|   |-- breadcrumbs.less
+|   |-- buttons.less
+|   |-- card.less
+|   |-- carousel.less
+|   |-- map.less
+|   |-- media.less
+|   |-- modal.less
+|   |-- nav.less
+|   |-- pagination.less
+|   |-- social.less
+|   |-- tabs.less
+|   `-- tooltips.less
+|-- vendor
+    |-- font-awesome.less
+    `-- normalize.less
+|-- style.less
+`-- styleguide.less
+
+4 directories, 34 files
 ```
 
 ### Features
