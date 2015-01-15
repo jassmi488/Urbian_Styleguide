@@ -230,14 +230,16 @@ module.exports = function (grunt)
             build: {
                 files: {
                     src: [
-                        'build/*.html'
+                        'build/*.html',
+                        'build/**/*.html'
                     ]
                 }
             },
             dist: {
                 files: {
                     src: [
-                        'dist/*.html'
+                        'dist/*.html',
+                        'dist/**/*.html'
                     ]
                 }
             }
