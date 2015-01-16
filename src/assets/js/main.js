@@ -89,7 +89,7 @@ SITENAME = {
 
             var $carousel_component = $('.js-carousel');
 
-            if ($alert_component.length > 0)
+            if ($carousel_component.length > 0)
             {
                 $carousel_component.each(function ()
                 {
