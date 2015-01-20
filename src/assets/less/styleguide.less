@@ -9,6 +9,7 @@
 /**
  * IMPORTS
  * VARIABLES
+ * .....Color
  * .....Font
  * ELEMENTS
  * .....Buttons
@@ -48,6 +49,16 @@
 /* -------------------------------------------------------------------------- *\
    $VARIABLES
 \* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   $Color
+   ========================================================================== */
+
+@color-styleguide: @color-blue;
+
+
+
+
 
 /* ==========================================================================
    $Font
@@ -102,7 +113,7 @@
         &.is-active,
         &:focus,
         &:hover {
-            background-color: @color-black;
+            background-color: @color-styleguide;
             color: @color-white;
         }
     }
@@ -412,7 +423,9 @@
 
         &:focus,
         &:hover {
-            color: @color-black;
+            color: @color-styleguide;
+            background: linear-gradient(to bottom, @color-styleguide, @color-styleguide) repeat-x 0 21px;
+            background-size: 1px 1px;
         }
     }
 
@@ -607,19 +620,19 @@
                 &.is-active {
 
                     a {
-                        background-color: @color-black;
+                        background-color: @color-styleguide;
                         color: @color-white;
 
                         &:focus,
                         &:hover {
-                            background-color: @color-black;
+                            background-color: @color-styleguide;
                             color: @color-white;
                         }
                     }
                 }
 
                 a {
-                    color: @color-black;
+                    color: @color-styleguide;
                     display: block;
                     font-weight: @weight-bold;
                     padding: 0.5em 0.625em;
@@ -629,7 +642,7 @@
 
                     &:focus,
                     &:hover {
-                        background-color: @color-black;
+                        background-color: @color-styleguide;
                         color: @color-white;
                     }
                 }
@@ -654,7 +667,7 @@
                     float: left;
 
                     a {
-                        color: @color-black;
+                        color: @color-styleguide;
                         padding: 1.0625em 1em;
 
                         &:active {
