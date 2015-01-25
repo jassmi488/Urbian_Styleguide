@@ -8,9 +8,9 @@
  *
  * E.g.:
  *
-   <blockquote class="blockquote">
-       <p class="blockquote__quote"></p>
-       <cite class="blockquote__cite">&mdash; <a href="#"></a></cite>
+   <blockquote>
+       <p></p>
+       <cite>&mdash; <a href="#"></a></cite>
    </blockquote>
  *
  */
@@ -20,8 +20,7 @@ blockquote {
     margin: 0 0 1em 1em;
     padding: 0 1em;
 
-    p,
-    .blockquote__quote {
+    p {
         quotes: "\201C""\201D""\2018""\2019";
 
         &:before {
@@ -33,8 +32,7 @@ blockquote {
         }
     }
 
-    cite,
-    .blockquote__cite {
+    cite {
 
         a {
             color: @color-gray-dark;
