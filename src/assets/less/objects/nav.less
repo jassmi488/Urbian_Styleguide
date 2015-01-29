@@ -8,18 +8,10 @@
     .list {
         .clearfix();
         list-style: none;
+        margin-top: 0;
         margin-bottom: 0;
         padding-left: 0;
         white-space: nowrap;
-
-        li {
-            display: inline-block;
-            margin-right: 1.25em;
-
-            &:last-child {
-                margin-right: 0;
-            }
-        }
     }
 
     .is-active {
@@ -43,6 +35,25 @@
     }
 
     /**
+     * Horizontal
+     */
+
+    &.nav--horizontal {
+
+        .list {
+
+            li {
+                display: inline-block;
+                margin-right: 1.25em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    /**
      * Vertical
      */
 
@@ -54,7 +65,6 @@
             li {
                 border-bottom: 2px solid @color-white;
                 display: block;
-                margin-right: 0;
 
                 &:last-child {
                     border-bottom: 0;
