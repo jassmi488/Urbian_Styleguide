@@ -43,11 +43,10 @@
         .list {
 
             li {
-                display: inline-block;
-                margin-right: 1.25em;
+                margin-bottom: 1.25em;
 
                 &:last-child {
-                    margin-right: 0;
+                    margin-bottom: 0;
                 }
             }
         }
@@ -64,7 +63,6 @@
 
             li {
                 border-bottom: 2px solid @color-white;
-                display: block;
 
                 &:last-child {
                     border-bottom: 0;
@@ -90,12 +88,26 @@
 
     .nav {
 
-        /**
-         * Vertical
-         */
-
         &.nav--vertical {
             max-width: 20em; /* 320 / 16 */
+        }
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .nav {
+
+        &.nav--horizontal {
+
+            li {
+                display: inline-block;
+                margin-right: 1.25em;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
         }
     }
 }
