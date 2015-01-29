@@ -91,7 +91,6 @@ less
 - [Modal](https://github.com/drublic/css-modal)
 - [Placeholder](http://mths.be/placeholder)
 - [Slick](http://github.com/kenwheeler/slick)
-- [Tablesaw](https://github.com/filamentgroup/tablesaw)
 - [Tooltip](http://getbootstrap.com/javascript/#tooltip)
 
 ### Polyfills
