@@ -82,6 +82,7 @@
                         <option value="sg-buttons-text">Buttons – Text</option>
                         <option value="sg-buttons-icon">Buttons – Icon</option>
                         <option value="sg-button-groups">Button Groups</option>
+                        <option value="sg-button-dropdown">Button Dropdown</option>
                         <option value="sg-icons">Icons</option>
                         <option value="sg-map">Map</option>
                         <option value="sg-media-html5-audio">Media – HTML5 Audio</option>
@@ -1333,6 +1334,42 @@ p q r s t u v w x y z { | } ~ </pre></code></pre>
     <a href="#" class="btn" role="button">Primary</a>
     <a href="#" class="btn btn--silver" role="button">Secondary</a>
 </div></code></pre>
+                </div>
+            </section>
+
+            <section id="sg-button-dropdown" class="sg-section">
+                <header class="sg-header sg-header--section">
+                    <h1 class="hN">Button Dropdown</h1>
+                </header>
+
+                <div class="btn-group btn-group--left">
+                    <div class="btn-dropdown js-toggle-dropdown-btn">
+                        <button class="btn" data-dropdown-id="dropdown-btn-1" aria-expanded="false" role="button">Primary<span class="icon fa fa-caret-down" aria-hidden="true"></span></button>
+                        <div class="dropdown" id="dropdown-btn-1" aria-hidden="true" role="menu">
+                            <ol class="list">
+                                <li><a href="elements.html#sg-button-dropdown">Action 1</a></li>
+                                <li class="is-separator"><a href="elements.html#sg-button-dropdown">Action 2</a></li>
+                                <li><a href="elements.html#sg-button-dropdown">Action 3</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="btn-dropdown js-toggle-dropdown-btn">
+                        <button class="btn btn--silver" data-dropdown-id="dropdown-btn-2" aria-expanded="false" role="button">Secondary<span class="icon fa fa-caret-down" aria-hidden="true"></span></button>
+                        <div class="dropdown" id="dropdown-btn-2" aria-hidden="true" role="menu">
+                            <ol class="list">
+                                <li><a href="elements.html#sg-button-dropdown">Action 4</a></li>
+                                <li class="is-separator"><a href="elements.html#sg-button-dropdown">Action 5</a></li>
+                                <li><a href="elements.html#sg-button-dropdown">Action 6</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup">
+
+                    </code></pre>
                 </div>
             </section>
 

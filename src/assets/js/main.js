@@ -202,6 +202,64 @@ SITENAME = {
             }
 
             /* ==========================================================================
+               Toggle Dropdown Buttons
+               ========================================================================== */
+
+            var $toggle_dropdown_buttons = $('.js-toggle-dropdown-btn');
+
+            if ($toggle_dropdown_buttons.length > 0)
+            {
+                $toggle_dropdown_buttons.each(function ()
+                {
+                    var $button = $('.btn', $(this));
+
+                    $button.on('click', function ()
+                    {
+                        /**
+                         * Open the current dropdown
+                         */
+
+                        $(this).toggleClass('is-active');
+
+                        var dropdown_id = $(this).data('dropdown-id');
+                        var $dropdown = $('#' + dropdown_id);
+
+                        if ($dropdown.length > 0)
+                        {
+                            $dropdown.toggleClass('is-open');
+
+                            /**
+                             * Toggle ARIA attributes
+                             */
+
+                            if ($dropdown.hasClass('is-open'))
+                            {
+                                $dropdown.attr('aria-hidden', 'false');
+                                $button.attr('aria-expanded', 'true');
+                            }
+                            else
+                            {
+                                $dropdown.attr('aria-hidden', 'true');
+                                $button.attr('aria-expanded', 'false');
+                            }
+
+                            /**
+                             * Close all other dropdowns
+                             */
+
+                            var $dropdowns = $('.dropdown', $toggle_dropdown_buttons);
+
+                            $dropdowns.not($dropdown).each(function ()
+                            {
+                                $(this).removeClass('is-open');
+                                $(this).attr('aria-hidden', 'true');
+                            });
+                        }
+                    });
+                });
+            }
+
+            /* ==========================================================================
                Toggle Password
                ========================================================================== */
 
