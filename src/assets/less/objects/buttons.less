@@ -8,8 +8,8 @@
 
 /**
  * BUTTON
- * GROUP
  * DROPDOWN
+ * GROUP
  */
 
 
@@ -141,6 +141,64 @@
 
 
 /* -------------------------------------------------------------------------- *\
+   $DROPDOWN
+\* -------------------------------------------------------------------------- */
+
+.btn-dropdown {
+    display: inline-block;
+    position: relative;
+
+    .dropdown {
+        background-color: @color-white-dark;
+        border: 1px solid @color-silver;
+        display: none;
+        left: 0;
+        margin-top: 1px;
+        min-width: 10em; /* 160 / 16 */
+        position: absolute;
+        top: 100%;
+        visibility: hidden;
+        z-index: 10;
+
+        &.is-open {
+            display: block;
+            visibility: visible;
+        }
+
+        .list {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+
+            li {
+
+                &.is-separator {
+                    border-bottom: 1px solid @color-silver;
+                }
+            }
+        }
+
+        a {
+            color: @color-gray-dark;
+            display: inline-block;
+            font-weight: @weight-bold;
+            padding: 0.75em 1em;
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                color: @color-black;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
    $GROUP
 \* -------------------------------------------------------------------------- */
 
@@ -202,65 +260,11 @@
 
                 .btn {
                     margin-right: 0;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
-            }
-        }
-    }
-}
-
-
-
-
-
-/* -------------------------------------------------------------------------- *\
-   $DROPDOWN
-\* -------------------------------------------------------------------------- */
-
-.btn-dropdown {
-    display: inline-block;
-    position: relative;
-
-    .dropdown {
-        background-color: @color-white-dark;
-        border: 1px solid @color-silver;
-        display: none;
-        left: 0;
-        margin-top: 1px;
-        min-width: 10em; /* 160 / 16 */
-        position: absolute;
-        top: 100%;
-        visibility: hidden;
-        z-index: 10;
-
-        &.is-open {
-            display: block;
-            visibility: visible;
-        }
-
-        .list {
-            list-style: none;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-left: 0;
-
-            li {
-
-                &.is-separator {
-                    border-bottom: 1px solid @color-silver;
-                }
-            }
-        }
-
-        a {
-            color: @color-gray-dark;
-            display: inline-block;
-            font-weight: @weight-bold;
-            padding: 0.75em 1em;
-            text-decoration: none;
-
-            &:focus,
-            &:hover {
-                color: @color-black;
             }
         }
     }
