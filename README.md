@@ -1,4 +1,4 @@
-## [Style Guide](http://static.wearenext.co.za/styleguide/styleguide)
+## [Boilerplate Style Guide](http://static.wearenext.co.za/styleguide/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 
