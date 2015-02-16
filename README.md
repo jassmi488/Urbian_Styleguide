@@ -13,8 +13,8 @@ Ensure that the following is installed on your computer:
 
 1. Clone the repository: `git clone git@github.com:we-are-next/styleguide.git`
 2. Change to the directory you cloned the repository into: e.g. `cd styleguide`
-3. Run the node install command which downloads the required Grunt plugins: `npm install`
-4. Start the local server and watch task: `grunt serve`
+3. Install the required dependencies: `npm install`
+4. Start a local server: `npm start`
 
 ### Validation
 
