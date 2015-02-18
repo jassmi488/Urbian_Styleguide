@@ -142,6 +142,45 @@ SITENAME = {
             }
 
             /* ==========================================================================
+               Navigation Dropdown
+               ========================================================================== */
+
+            var $nav_dropdown = $('.js-nav-dropdown');
+
+            if ($nav_dropdown.length > 0)
+            {
+                $('a', $nav_dropdown).each(function ()
+                {
+                    var $anchor = $(this);
+                    var $anchor_icon = $('.icon', $anchor);
+                    var $menu = $anchor.next('.list--menu');
+                    var icon_up = $anchor.data('icon-up');
+                    var icon_down = $anchor.data('icon-down');
+
+                    $anchor.on('click', function (e)
+                    {
+                        e.preventDefault();
+
+                        $menu.toggleClass('is-open');
+
+                        if ($menu.hasClass('is-open'))
+                        {
+                            $menu.attr('aria-hidden', 'false');
+                            $anchor_icon.removeClass(icon_down).addClass(icon_up);
+                        }
+                        else
+                        {
+                            $menu.attr('aria-hidden', 'true');
+                            $anchor_icon.removeClass(icon_up).addClass(icon_down);
+                        }
+
+                        $('.list--menu', $nav_dropdown).not($menu).removeClass('is-open').attr('aria-hidden', 'true');
+                        $('.icon', $nav_dropdown).not($anchor_icon).removeClass(icon_up).addClass(icon_down);
+                    });
+                });
+            }
+
+            /* ==========================================================================
                Placeholder
                ========================================================================== */
 

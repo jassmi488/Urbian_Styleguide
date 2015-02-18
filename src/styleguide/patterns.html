@@ -72,11 +72,25 @@
                     <h1 class="hN">Navigation – Horizontal</h1>
                 </header>
 
-                <nav class="nav nav--horizontal" role="navigation">
+                <nav class="nav nav--horizontal js-nav-dropdown" role="navigation">
                     <ol class="list">
-                        <li class="is-active"><a href="patterns.html#sg-navigation">Home</a></li>
-                        <li><a href="patterns.html#sg-navigation">Services</a></li>
-                        <li><a href="patterns.html#sg-navigation">Work</a></li>
+                        <li><a href="patterns.html#sg-navigation">Home</a></li>
+                        <li>
+                            <a href="patterns.html#sg-navigation" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Services<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                            <ol class="list list--menu" aria-hidden="true" role="menu">
+                                <li><a href="patterns.html#sg-navigation">Web Design</a></li>
+                                <li class="is-separator"><a href="patterns.html#sg-navigation">Front-end Development</a></li>
+                                <li><a href="patterns.html#sg-navigation">Strategy</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="patterns.html#sg-navigation" class="js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Work<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                            <ol class="list list--menu" aria-hidden="true" role="menu">
+                                <li><a href="patterns.html#sg-navigation">Project – 01</a></li>
+                                <li><a href="patterns.html#sg-navigation">Project – 02</a></li>
+                                <li><a href="patterns.html#sg-navigation">Project – 03</a></li>
+                            </ol>
+                        </li>
                         <li><a href="patterns.html#sg-navigation">News</a></li>
                         <li><a href="patterns.html#sg-navigation">Contact</a></li>
                     </ol>
@@ -86,8 +100,16 @@
                     <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><nav class="nav" role="navigation">
     <ol class="list">
-        <li class="is-active"><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#" class="js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">
+                Services<span class="icon fa fa-caret-down" aria-hidden="true"></span>
+            </a>
+            <ol class="list list--menu" role="menu" aria-hidden="true">
+                <li class="is-separator"><a href="#">Front-end Development</a></li>
+                <li><a href="#">Strategy</a></li>
+            </ol>
+        </li>
     </ol>
 </nav></code></pre>
                 </div>

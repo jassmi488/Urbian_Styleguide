@@ -12,6 +12,49 @@
         margin-bottom: 0;
         padding-left: 0;
         white-space: nowrap;
+
+        li {
+            position: relative;
+        }
+
+        /**
+         * Menu
+         */
+
+        &.list--menu {
+            background-color: @color-white-dark;
+            border: 1px solid @color-silver;
+            display: none;
+            margin-top: 1em;
+            margin-left: 0;
+            visibility: hidden;
+
+            &.is-open {
+                display: block;
+                visibility: visible;
+            }
+
+            li {
+                display: block;
+                margin-left: 0;
+
+                &.is-separator {
+                    border-bottom: 1px solid @color-silver;
+                }
+
+                a {
+                    display: block;
+                    font-size: 1em;
+                    padding: 0.75em 1em;
+
+                    &:focus,
+                    &:hover {
+                        background-color: @color-white;
+                        color: @color-black;
+                    }
+                }
+            }
+        }
     }
 
     .is-active {
@@ -34,6 +77,11 @@
         }
     }
 
+    .icon {
+        float: right;
+        margin-left: 0.375em;
+    }
+
     /**
      * Horizontal
      */
@@ -46,6 +94,14 @@
                 margin-bottom: 1.25em;
 
                 &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &.list--menu {
+
+                li {
+                    margin-right: 0;
                     margin-bottom: 0;
                 }
             }
@@ -88,14 +144,41 @@
 
     .nav {
 
+        .list {
+
+            &.list--menu {
+                left: 0;
+                margin-top: 0.5em;
+                position: absolute;
+                top: 100%;
+                z-index: 2;
+            }
+        }
+
+        .icon {
+            float: none;
+            margin-left: 0.5em;
+        }
+
         &.nav--horizontal {
 
-            li {
-                display: inline-block;
-                margin-right: 1.25em;
+            .list {
 
-                &:last-child {
-                    margin-right: 0;
+                li {
+                    display: inline-block;
+                    margin-right: 1.25em;
+                    margin-bottom: 0;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &.list--menu {
+
+                    li {
+                        display: block;
+                    }
                 }
             }
         }
