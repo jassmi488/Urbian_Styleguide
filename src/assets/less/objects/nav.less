@@ -23,7 +23,6 @@
 
         &.list--menu {
             background-color: @color-white-dark;
-            border: 1px solid @color-silver;
             display: none;
             margin-top: 1em;
             margin-left: 0;
@@ -39,18 +38,19 @@
                 margin-left: 0;
 
                 &.is-separator {
-                    border-bottom: 1px solid @color-silver;
+                    border-bottom: 2px solid @color-white;
                 }
 
                 a {
                     display: block;
                     font-size: 1em;
                     padding: 0.75em 1em;
+                    .transition(background-color 0.25s, color 0.25s;);
 
                     &:focus,
                     &:hover {
-                        background-color: @color-white;
-                        color: @color-black;
+                        background-color: @color-gray-dark;
+                        color: @color-white;
                     }
                 }
             }
