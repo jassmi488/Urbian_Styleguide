@@ -3,33 +3,33 @@
 \* -------------------------------------------------------------------------- */
 
 h1, .alpha {
-    .heading(@h1-font-size);
+    .heading(@h1-font-size, @h1-line-height);
 }
 
 h2, .beta {
-    .heading(@h2-font-size);
+    .heading(@h2-font-size, @h2-line-height);
 }
 
 h3, .gamma {
-    .heading(@h3-font-size);
+    .heading(@h3-font-size, @h3-line-height);
 }
 
 h4, .delta {
-    .heading(@h4-font-size);
+    .heading(@h4-font-size, @h4-line-height);
 }
 
 h5, .epsilon {
-    .heading(@h5-font-size);
+    .heading(@h5-font-size, @h5-line-height);
 }
 
 h6, .zeta {
-    .heading(@h6-font-size);
+    .heading(@h6-font-size, @h6-line-height);
 }
 
-.heading(@font-size) {
+.heading(@font-size, @line-height) {
     font-family: @font-secondary;
     font-size: @font-size;
-    line-height: 1.25;
+    line-height: @line-height;
     margin-top: 0;
     margin-bottom: 1em;
 }
