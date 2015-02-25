@@ -56,18 +56,18 @@ less
 |   |-- breadcrumbs.less
 |   |-- buttons.less
 |   |-- card.less
-|   |-- carousel.less
 |   |-- map.less
 |   |-- media.less
-|   |-- modal.less
 |   |-- nav.less
 |   |-- pagination.less
 |   |-- social.less
 |   |-- tabs.less
-|   `-- tooltips.less
 |-- vendor
     |-- font-awesome.less
-    `-- normalize.less
+    |-- modal.less
+    |-- normalize.less
+    |-- slick.less
+|   `-- tooltips.less
 |-- style.less
 `-- styleguide.less
 
