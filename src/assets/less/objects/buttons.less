@@ -73,17 +73,21 @@
     &.btn--icon {
 
         .icon {
-            margin-left: 0;
-        }
-    }
+            float: right;
+            font-size: 1.25em; /* 20 / 16 */
+            margin-top: -0.125em;
+            margin-left: 0.5em;
 
-    .icon {
-        font-size: 0.875em; /* 14 / 16 */
-        margin-left: 0.75em;
+            &.icon--left {
+                float: left;
+                margin-right: 0.375em;
+                margin-left: 0;
+            }
 
-        &.icon--left {
-            margin-right: 0.75em;
-            margin-left: 0;
+            &.icon--only {
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
     }
 
