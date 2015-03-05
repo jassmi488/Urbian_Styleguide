@@ -23,9 +23,10 @@ __/\\\\\_____/\\\____________________________________________
     Shaun van Tonder -- Server-side Developer
     Warren Manley -- Server-side Developer, Data Analyst
     Rory van Heerden -- Server-side Developer
+    Leigh Pietersen -- Designer
 
 # SITE
 
-    Last Update: 2015/02/18
+    Last Update: 2015/03/05
     Standards: HTML5, CSS3
     Components: Font Awesome, Grunt, jQuery, LESS, Normalize.css
