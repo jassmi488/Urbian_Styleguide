@@ -8,14 +8,14 @@
  *
  * E.g.:
  *
-   <blockquote>
+   <blockquote class="blockquote">
        <p></p>
-       <cite>&mdash; <a href="#"></a></cite>
+       <cite class="blockquote__cite">&mdash; <a href="#"></a></cite>
    </blockquote>
  *
  */
 
-blockquote {
+.blockquote {
     border-left: 3px @color-gray solid;
     margin: 0 0 1em 1em;
     padding: 0 1em;
@@ -32,7 +32,7 @@ blockquote {
         }
     }
 
-    cite {
+    .blockquote__cite {
 
         a {
             color: @color-gray-dark;
