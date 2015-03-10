@@ -80,8 +80,8 @@
 
 .sg-btn {
     background-color: @color-white;
-    border: 2px solid @color-black;
-    color: @color-black;
+    border: 2px solid @color-gray-dark;
+    color: @color-gray-dark;
     display: inline-block;
     font-family: @font-styleguide;
     font-weight: bold;
@@ -90,7 +90,7 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    .transition(background-color 0.25s, border-color 0.25s, color 0.25s, top 0.25s;);
+    .transition(background-color 0.25s, color 0.25s, top 0.25s;);
 
     &:active {
         position: relative;
@@ -100,7 +100,7 @@
     &.is-active,
     &:focus,
     &:hover {
-        background-color: @color-black;
+        background-color: @color-gray-dark;
         color: @color-white;
         outline: none;
     }
@@ -171,6 +171,7 @@
         background-color: @color-white-dark;
         border: 1px solid @color-silver;
         border-radius: 0;
+        box-shadow: 0 0 15px @color-silver;
         color: @color-gray-dark;
         font-family: @font-styleguide;
         height: 2.5em; /* 40 / 16 */
@@ -251,8 +252,8 @@
         padding-left: 1em;
 
         li {
-            box-shadow: 0 0 20px @color-silver;
             border: 1px solid @color-silver;
+            box-shadow: 0 0 15px @color-silver;
             height: 9em;
             margin-bottom: 1em;
             position: relative;
@@ -485,7 +486,7 @@
     &.sg-header--primary {
         background-color: @color-white;
         border-bottom: 1px solid @color-silver;
-        box-shadow: 0 0 20px @color-silver;
+        box-shadow: 0 0 15px @color-silver;
         .clearfix();
         position: relative;
         z-index: 10;
@@ -713,7 +714,7 @@
 
     &.sg-section--block {
         border: 1px solid @color-silver;
-        box-shadow: 0 0 20px @color-silver;
+        box-shadow: 0 0 15px @color-silver;
         margin-bottom: 2.5625em;
         padding: 1em 1.5em 1.5em 1.5em;
         text-align: center;
@@ -822,17 +823,8 @@
         width: 100%;
 
         .sg-btn {
-            border-color: @color-gray;
-            color: @color-gray;
             font-size: 0.75em; /* 12 / 16 */
             margin-bottom: 1em;
-
-            &.is-active,
-            &:focus,
-            &:hover {
-                border-color: @color-black;
-                color: @color-white;
-            }
         }
 
         .sg-pre {
