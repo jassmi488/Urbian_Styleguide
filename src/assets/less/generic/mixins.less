@@ -7,54 +7,10 @@
 \* -------------------------------------------------------------------------- */
 
 /**
- * BLOCKQUOTE
  * CLEARFIX
- * HORIZONTAL RULE
  * TRANSFORM
  * TRANSITION
  */
-
-
-
-
-
-/* -------------------------------------------------------------------------- *\
-   $BLOCKQUOTE
-\* -------------------------------------------------------------------------- */
-
-.blockquote() {
-    border-left: 3px @color-gray solid;
-    margin: 0 0 1em 1em;
-    padding: 0 1em;
-
-    p {
-        quotes: "\201C""\201D""\2018""\2019";
-
-        &:before {
-            content: open-quote;
-        }
-
-        &:after {
-            content: close-quote;
-        }
-    }
-
-    /**
-     * Cite
-     */
-
-    cite {
-
-        a {
-            color: @color-gray-dark;
-
-            &:focus,
-            &:hover {
-                color: @color-black;
-            }
-        }
-    }
-}
 
 
 
@@ -86,23 +42,6 @@
     &:after {
         clear: both;
     }
-}
-
-
-
-
-
-/* -------------------------------------------------------------------------- *\
-   $HORIZONTAL RULE
-\* -------------------------------------------------------------------------- */
-
-.hr() {
-    border: 0;
-    border-top: 3px solid @color-gray;
-    display: block;
-    height: 1px;
-    margin: 1em 0;
-    padding: 0;
 }
 
 
