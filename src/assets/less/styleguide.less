@@ -22,9 +22,10 @@
  * CONTAINERS
  * .....HTML
  * .....Wrapper
- * .....Headers
+ * .....Header
  * .....Navigation
  * .....Sections
+ * .....Article
  * .....Footer
  * .....Example
  * GRID
@@ -477,7 +478,7 @@
 
 
 /* ==========================================================================
-   $Headers
+   $Header
    ========================================================================== */
 
 .sg-header {
@@ -526,8 +527,8 @@
 
     &.sg-header--section {
         border-bottom: 1px solid @color-silver;
-        margin-bottom: 2em;
-        padding-bottom: 0.25em;
+        margin-bottom: 3em;
+        padding-bottom: 0.5em;
         text-transform: uppercase;
         white-space: nowrap;
 
@@ -711,6 +712,10 @@
         display: none;
     }
 
+    &:last-child {
+        margin-bottom: 4em;
+    }
+
     &.sg-section--block {
         border: 1px solid @color-silver;
         box-shadow: 0 0 15px @color-silver;
@@ -741,6 +746,10 @@
             padding-top: 10em;
         }
 
+        &:last-child {
+            margin-bottom: 12em;
+        }
+
         &.sg-section--block {
 
             &:first-of-type {
@@ -766,16 +775,35 @@
 
 
 /* ==========================================================================
+   $Article
+   ========================================================================== */
+
+.sg-article {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 40em; /* 640 / 16 */
+}
+
+
+
+
+
+/* ==========================================================================
    $Footer
    ========================================================================== */
 
 .sg-footer {
     clear: both;
+    padding-top: 0.25em;
     padding-bottom: 2.5em;
+
+    .sg-wrapper {
+        border-top: 1px solid @color-silver;
+        padding-top: 0.375em;
+    }
 
     .sg-list {
         margin-bottom: 0;
-        padding-top: 1em;
 
         li {
             font-size: 0.875em; /* 14 / 16 */
@@ -818,7 +846,6 @@
         .clearfix();
         display: block;
         margin-top: 2em;
-        margin-bottom: 4em;
         width: 100%;
 
         .sg-btn {

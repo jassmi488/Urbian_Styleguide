@@ -1,0 +1,63 @@
+/* -------------------------------------------------------------------------- *\
+   $ARTICLE
+\* -------------------------------------------------------------------------- */
+
+.article {
+
+    /**
+     * Block Quote
+     */
+
+    blockquote {
+        .blockquote();
+    }
+
+    /**
+     * Horizontal Rule
+     */
+
+    hr {
+        .hr();
+    }
+
+    /**
+     * Image
+     */
+
+    img {
+        height: auto;
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+
+    /**
+     * Paragraph
+     */
+
+    p {
+
+        &+ h2,
+        &+ h3,
+        &+ h4,
+        &+ h5,
+        &+ h6 {
+            margin-top: 1em;
+        }
+    }
+
+    /**
+     * Pull Left
+     */
+
+    .pull--left {
+        margin-right: 1em;
+    }
+
+    /**
+     * Pull Right
+     */
+
+    .pull--right {
+        margin-left: 1em;
+    }
+}
