@@ -10,22 +10,30 @@
  * E.g.:
  *
    <figure class="figure">
-       <img class="figure__img" src="" alt="" />
-       <figcaption class="figure__caption"></figcaption>
+       <img src="" width="" height="" alt="" />
+       <figcaption></figcaption>
    </figure>
  *
  */
 
 .figure {
-    margin: 0;
+    .figure();
+}
 
-    .figure__img {
+/**
+ * Mixin
+ */
+
+.figure() {
+    margin: 0 0 1em 0;
+
+    img {
         height: auto;
         margin-bottom: 1em;
         max-width: 100%;
     }
 
-    .figure__caption {
+    figcaption {
         color: @color-gray;
         font-size: 1.125em; /* 18 / 16 */
     }
