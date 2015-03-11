@@ -242,8 +242,24 @@
    $FLOATS
 \* -------------------------------------------------------------------------- */
 
-.pull--left  { float: left !important; }
-.pull--right { float: right !important; }
+@media all and (min-width: @bp-small) {
+
+    /**
+     * Pull Right
+     */
+
+    .pull--right {
+        float: right !important;
+    }
+
+    /**
+     * Pull Left
+     */
+
+    .pull--left  {
+        float: left !important;
+    }
+}
 
 
 
