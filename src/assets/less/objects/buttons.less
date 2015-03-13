@@ -209,8 +209,7 @@
     .clearfix();
     width: 100%;
 
-    .btn,
-    .btn-dropdown {
+    .btn {
         margin-bottom: 0.875em;
         width: 100%;
 
@@ -220,9 +219,41 @@
     }
 
     .btn-dropdown {
+        float: right;
+        margin-bottom: 0.75em;
+        margin-left: 0.75em;
+        width: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         .btn {
+            float: left;
             margin-bottom: 0;
+            margin-left: 0;
+            width: auto;
+        }
+    }
+
+    /**
+     * Left-aligned Buttons
+     */
+
+    &.btn-group--left {
+
+        .btn-dropdown {
+            float: left;
+            margin-right: 0.75em;
+            margin-left: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .btn {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -231,8 +262,7 @@
 
     .btn-group {
 
-        .btn,
-        .btn-dropdown {
+        .btn {
             float: right;
             margin-bottom: 0;
             margin-left: 0.75em;
@@ -240,10 +270,8 @@
         }
 
         .btn-dropdown {
-
-            .btn {
-                margin-left: 0;
-            }
+            margin-bottom: 0;
+            width: auto;
         }
 
         /**
@@ -252,20 +280,12 @@
 
         &.btn-group--left {
 
-            .btn,
-            .btn-dropdown {
+            .btn {
                 float: left;
                 margin-right: 0.75em;
                 margin-left: 0;
 
                 &:last-child {
-                    margin-right: 0;
-                }
-            }
-
-            .btn-dropdown {
-
-                .btn {
                     margin-right: 0;
                 }
             }
