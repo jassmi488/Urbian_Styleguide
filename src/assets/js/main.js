@@ -312,7 +312,7 @@ SITENAME = {
                     var $input = $('input[type="password"]', $form);
                     var $toggle = $('.js-toggle', $form);
 
-                    $toggle.removeClass('visuallyhidden'); // Enable the toggle button
+                    $toggle.removeClass('u-visuallyhidden'); // Enable the toggle button
 
                     /*
                      * Switch the input type
