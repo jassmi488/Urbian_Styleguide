@@ -1,5 +1,5 @@
 /**
- * HELPERS
+ * UTILITIES
  */
 
 /* -------------------------------------------------------------------------- *\
@@ -112,7 +112,7 @@
  * Hide visually and from screen readers:
  */
 
-.hidden {
+.u-hidden {
     display: none !important;
 }
 
@@ -121,7 +121,7 @@
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
 
-.visuallyhidden {
+.u-visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -138,8 +138,8 @@
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.u-visuallyhidden.focusable:active,
+.u-visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -160,7 +160,7 @@
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible { visibility: hidden; }
+.u-invisible { visibility: hidden; }
 
 
 
@@ -176,7 +176,7 @@
 
 @media all and (max-width: @bp-small) {
 
-    .hide--small {
+    .u-hide--small {
         display: none !important;
     }
 }
@@ -187,7 +187,7 @@
 
 @media all and (min-width: @bp-small) and (max-width: @bp-large) {
 
-    .hide--medium {
+    .u-hide--medium {
         display: none !important;
     }
 }
@@ -198,7 +198,7 @@
 
 @media all and (min-width: @bp-large) {
 
-    .hide--large {
+    .u-hide--large {
         display: none !important;
     }
 }
@@ -215,7 +215,7 @@
  * Embed Responsively, as per: http://embedresponsively.com
  */
 
-.fluid-embed {
+.u-fluid-embed {
     height: auto;
     max-width: 100%;
     overflow: hidden;
@@ -248,7 +248,7 @@
      * Pull Right
      */
 
-    .pull--right {
+    .u-pull--right {
         float: right !important;
     }
 
@@ -256,7 +256,7 @@
      * Pull Left
      */
 
-    .pull--left  {
+    .u-pull--left  {
         float: left !important;
     }
 }
@@ -273,7 +273,7 @@
    $Family
    ========================================================================== */
 
-.font--secondary { font-family: @font-secondary; }
+.u-font--secondary { font-family: @font-secondary; }
 
 
 
@@ -283,9 +283,9 @@
    $Weight
    ========================================================================== */
 
-.weight--bold      { font-weight: 700; }
-.weight--semi-bold { font-weight: 600; }
-.weight--normal    { font-weight: 400; }
+.u-weight--bold      { font-weight: 700; }
+.u-weight--semi-bold { font-weight: 600; }
+.u-weight--normal    { font-weight: 400; }
 
 
 
@@ -299,9 +299,9 @@
    $Align
    ========================================================================== */
 
-.align--right  { text-align: right; }
-.align--center { text-align: center; }
-.align--left   { text-align: left; }
+.u-align--right  { text-align: right; }
+.u-align--center { text-align: center; }
+.u-align--left   { text-align: left; }
 
 
 
@@ -311,6 +311,6 @@
    $Transform
    ========================================================================== */
 
-.transform--uppercase  { text-transform: uppercase; }
-.transform--lowercase  { text-transform: lowercase; }
-.transform--capitalize { text-transform: capitalize; }
+.u-transform--uppercase  { text-transform: uppercase; }
+.u-transform--lowercase  { text-transform: lowercase; }
+.u-transform--capitalize { text-transform: capitalize; }

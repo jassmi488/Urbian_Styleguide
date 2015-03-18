@@ -40,12 +40,12 @@ less
 |   |-- forms.less
 |   |-- grid.less
 |   |-- headings.less
-|   |-- helpers.less
 |   |-- hr.less
 |   |-- lists.less
 |   |-- paragraphs.less
 |   |-- print.less
-|   `-- tables.less
+|   |-- tables.less
+|   `-- utilities.less
 |-- generic
 |   |-- mixins.less
 |   |-- reset.less
@@ -78,8 +78,8 @@ less
 
 - **Breakpoints, Colors, Fonts**
     - `less/generic/variables.less`
-- **Clearfix, Fluid Embeds, Text Utilities**
-    - `less/base/helpers.less`
+- **Clearfix, Colors, Display, Embeds, Text Utilities**
+    - `less/base/utilities.less`
 - **Transforms, Transitions**
     - `less/generic/mixins.less`
 
@@ -99,10 +99,3 @@ The following scripts are included for **IE8** and below:
 - [html5shiv](https://github.com/aFarkas/html5shiv)
 - [matchMedia.js](https://github.com/paulirish/matchMedia.js)
 - [Respond.js](https://github.com/scottjehl/Respond)
-
-### Inspiration
-
-* [Barebones](http://barebones.paulrobertlloyd.com) by [Paul Robert Lloyd](http://paulrobertlloyd.com)
-* [HTML5 Boilerplate](http://html5boilerplate.com) by [H5BP](https://twitter.com/h5bp)
-* [Pattern Lab](http://pattern-lab.info) by [Brad Frost](http://bradfrostweb.com) and [Dave Olsen](http://dmolsen.com)
-* [Style Guide Boilerplate](http://bjankord.github.io/Style-Guide-Boilerplate) by [Brett Jankord](http://www.brettjankord.com)
