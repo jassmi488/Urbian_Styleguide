@@ -118,13 +118,13 @@ SITENAME = {
                 if ($map.length > 0)
                 {
                     var screen_width = document.body.clientWidth;
-                    var breakpoint = 480; // This is the equivalent of `@bp-xs`
+                    var breakpoint_xs = 480; // This is the equivalent of `@bp-xs`
                     var url_embed = $map.data('url-embed');
                     var $map_img = $('.map__img', $map);
                     var $map_canvas = $('.map__canvas', $map);
                     var $map_button = $('.btn', $map);
 
-                    if (screen_width >= breakpoint) // Display the interactive embedded map
+                    if (screen_width >= breakpoint_xs) // Display the interactive embedded map
                     {
                         $map_img.addClass('is-hidden');
                         $map_button.addClass('is-hidden');
