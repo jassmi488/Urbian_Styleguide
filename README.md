@@ -28,7 +28,7 @@ Ensure that the following is installed on your computer:
 2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
 3. Run the task: `grunt deploy`
 
-### LESS Structure
+### Less Structure
 
 ```
 less
