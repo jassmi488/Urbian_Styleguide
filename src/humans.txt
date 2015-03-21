@@ -11,22 +11,24 @@ __/\\\\\_____/\\\____________________________________________
        _\/\\\___\//\\\\\__\//\\\\\\\\\\__/\\\/\///\\\____\//\\\\\___
         _\///_____\/////____\//////////__\///____\///______\/////____
 
-# WE ARE NEXT
+        wearenext.co.za
 
-    Franco Raffa -- Partner, Managing Director -- @franco_raffa
-    Shawn Roos -- Partner, Strategist, UX & Design -- @shawnroos
-    Wayne Ashley Berry -- Partner, Server-side Developer -- @waynethebrain
-    Dave Küsel -- Strategist, Product Manager -- @david_kusel
-    Ulanda Chan -- Project Manager -- @ulandachan
-    Michael Thorne -- Front-end Web Developer -- @mikkelz_za
-    Lauren Waller -- Interface Designer, Front-end Developer -- @waller_texas
-    Shaun van Tonder -- Server-side Developer
-    Warren Manley -- Server-side Developer, Data Analyst
-    Rory van Heerden -- Server-side Developer
-    Leigh Pietersen -- Designer
+# TEAM
+
+    Franco Raffa       | Partner, Managing Director              | @franco_raffa
+    Shawn Roos         | Partner, Strategist, UX & Design        | @shawnroos
+    Wayne Ashley Berry | Partner, Server-side Developer          | @waynethebrain
+    Dave Küsel         | Strategist, Product Manager             | @david_kusel
+    Ulanda Chan        | Project Manager                         | @ulandachan
+    Michael Thorne     | Front-end Web Developer                 | @mikkelz_za
+    Lauren Waller      | Interface Designer, Front-end Developer | @waller_texas
+    Shaun van Tonder   | Server-side Developer                   | @countnoobula
+    Warren Manley      | Server-side Developer, Data Analyst     |
+    Rory van Heerden   | Server-side Developer                   |
+    Leigh Pietersen    | Designer                                | @bag_f
 
 # SITE
 
-    Last Update: 2015/03/05
+    Last Update: 2015/03/21
     Standards: HTML5, CSS3
     Components: Font Awesome, Grunt, jQuery, Less, Normalize.css
