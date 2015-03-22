@@ -24,8 +24,8 @@ __/\\\\\_____/\\\____________________________________________
     Lauren Waller      | Interface Designer, Front-end Developer | @waller_texas
     Shaun van Tonder   | Server-side Developer                   | @countnoobula
     Warren Manley      | Server-side Developer, Data Analyst     |
-    Rory van Heerden   | Server-side Developer                   |
-    Leigh Pietersen    | Designer                                | @bag_f
+    Rory van Heerden   | Server-side Developer                   | @bag_f
+    Leigh Pietersen    | Designer                                |
 
 # SITE
 
