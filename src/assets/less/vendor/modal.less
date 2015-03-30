@@ -36,7 +36,7 @@
     -webkit-transform: translate3d(0, 100%, 0);
             transform: translate3d(0, 100%, 0);
     width: 0;
-    z-index: 999;
+    z-index: @zindex-modal;
 }
 
 .modal--show:target, .is-active.modal--show {
@@ -67,7 +67,7 @@
     overflow-x: hidden;
     position: absolute;
     top: 50px;
-    z-index: 20;
+    z-index: @zindex-modal-show;
     width: 650px;
 }
 
@@ -131,7 +131,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 10;
+    z-index: @zindex-modal-overlay;
 }
 
 .modal--show .modal-close:after {
@@ -141,7 +141,7 @@
     position: absolute;
     right: 50%;
     top: 25px;
-    z-index: 20;
+    z-index: @zindex-modal-close;
 }
 
 @media screen and (max-width: 43.125em) {
@@ -184,7 +184,7 @@
         position: fixed;
         right: 0;
         top: 0;
-        z-index: 30;
+        z-index: @zindex-modal-header;
     }
 
     .modal--show .modal-inner {
@@ -217,7 +217,7 @@
         margin-left: 0;
         right: 5px;
         top: 5px !important;
-        z-index: 40;
+        z-index: @zindex-modal-close;
     }
 }
 
