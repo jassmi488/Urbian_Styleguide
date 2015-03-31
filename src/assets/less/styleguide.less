@@ -110,7 +110,7 @@
         border-color: @color-styleguide;
         color: @color-styleguide;
         font-size: 1.125em; /* 18 / 16 */
-        padding: 0.125em 0.5em;
+        padding: 0.25em 0.5em 0.195em 0.5em;
 
         &.is-active,
         &:focus,
@@ -459,19 +459,12 @@
    ========================================================================== */
 
 .sg-wrapper {
+    .clearfix();
     margin-right: auto;
     margin-left: auto;
-    max-width: 85.375em; /* 1366 / 16 */
+    max-width: @bp-xl;
     position: relative;
     width: 90%;
-
-    /**
-     * Full
-     */
-
-    &.sg-wrapper--full {
-        max-width: 100%;
-    }
 }
 
 
@@ -493,10 +486,15 @@
         position: relative;
         z-index: 10;
 
+        .sg-wrapper {
+            width: 100%;
+        }
+
         .logo {
             display: inline-block;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
+            margin-left: 5%;
 
             img {
                 height: auto;
@@ -506,8 +504,8 @@
 
         .sg-btn--nav {
             position: absolute;
-            right: 0;
-            top: 0.875em;
+            right: 5%;
+            top: 0.8125em;
         }
     }
 
@@ -587,6 +585,23 @@
     }
 }
 
+@media all and (min-width: @bp-xl) {
+
+    .sg-header {
+
+        &.sg-header--primary {
+
+            .sg-wrapper {
+                width: 90%;
+            }
+
+            .logo {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
 
 
 
@@ -626,7 +641,7 @@
                     color: @color-styleguide;
                     display: block;
                     font-weight: @weight-bold;
-                    padding: 0.5em 0.625em;
+                    padding: 0.5em 5%;
                     text-decoration: none;
                     text-transform: uppercase;
                     .transition(background-color 0.25s, color 0.25s, top 0.25s;);
@@ -647,7 +662,7 @@
     .sg-nav {
 
         &.sg-nav--primary {
-            margin-right: 0;
+            margin-right: 5%;
             margin-left: 0;
             max-height: 100%;
 
@@ -667,6 +682,16 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media all and (min-width: @bp-xl) {
+
+    .sg-nav {
+
+        &.sg-nav--primary {
+            margin-right: 0;
         }
     }
 }
