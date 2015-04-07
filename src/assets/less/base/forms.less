@@ -181,6 +181,10 @@
         .input {
             border-color: @color-red;
         }
+
+        .help-text {
+            color: @color-red;
+        }
     }
 
     &.has-success {
@@ -189,6 +193,10 @@
         .input {
             border-color: @color-green;
         }
+
+        .help-text {
+            color: @color-green;
+        }
     }
 
     &.has-warning {
@@ -196,6 +204,10 @@
 
         .input {
             border-color: @color-orange;
+        }
+
+        .help-text {
+            color: @color-orange;
         }
     }
 }
@@ -295,9 +307,9 @@ textarea {
 
 .help-text {
     color: @color-gray;
+    display: block;
     font-size: 0.875em; /* 14 / 16 */
-    margin-top: -1.125em;
-    margin-bottom: 1.5em;
+    padding-top: 0.5em;
     padding-left: 0.125em;
 
     &.help-text--right {
