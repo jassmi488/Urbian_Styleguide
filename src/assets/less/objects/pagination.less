@@ -13,8 +13,25 @@
         padding: 0;
 
         li {
+            display: none;
             float: left;
             margin-right: 0.25em;
+
+            &:first-child {
+                display: block;
+
+                .icon {
+                    margin-right: 0.5em;
+                }
+            }
+
+            &:last-child {
+                display: block;
+
+                .icon {
+                    margin-left: 0.5em;
+                }
+            }
 
             &.is-active {
 
@@ -22,6 +39,20 @@
                     background-color: @color-gray;
                     color: @color-black;
                 }
+            }
+
+            &.is-disabled {
+                background-color: @color-white-dark;
+                color: @color-silver;
+                padding: 0.375em 0.875em;
+            }
+
+            &.is-spacer {
+                padding: 0.375em 0.875em;
+            }
+
+            .icon {
+                font-size: 0.875em; /* 14 / 16 */
             }
         }
     }
@@ -38,6 +69,19 @@
         &:focus,
         &:hover {
             background-color: @color-silver;
+        }
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .pagination {
+
+        .list {
+
+            li {
+                display: block;
+            }
         }
     }
 }
