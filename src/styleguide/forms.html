@@ -51,14 +51,16 @@
                 <label for="sg-jump" class="sg-label">
                     <select class="sg-input js-sg-jump" id="sg-jump">
                         <option value="">Jump to…</option>
-                        <option value="sg-default">Form – Default</option>
-                        <option value="sg-inline">Form – Inline</option>
-                        <option value="sg-search">Form – Search</option>
+                        <option value="sg-form-default">Form – Default</option>
+                        <option value="sg-form-inline">Form – Inline</option>
+                        <option value="sg-form-search">Form – Search</option>
+                        <option value="sg-fieldset-default">Fieldset – Default</option>
+                        <option value="sg-fieldset-bordered">Fieldset – Bordered</option>
                     </select>
                 </label>
             </form>
 
-            <section id="sg-default" class="sg-section">
+            <section id="sg-form-default" class="sg-section">
                 <header class="sg-header sg-header--section">
                     <h1 class="hN">Form – Default</h1>
                 </header>
@@ -109,7 +111,7 @@
                 </div>
             </section>
 
-            <section id="sg-inline" class="sg-section">
+            <section id="sg-form-inline" class="sg-section">
                 <header class="sg-header sg-header--section">
                     <h1 class="hN">Form – Inline</h1>
                 </header>
@@ -146,7 +148,7 @@
                 </div>
             </section>
 
-            <section id="sg-search" class="sg-section">
+            <section id="sg-form-search" class="sg-section">
                 <header class="sg-header sg-header--section">
                     <h1 class="hN">Form – Search</h1>
                 </header>
@@ -166,6 +168,72 @@
 
     <button class="btn btn--icon" type="submit"><span class="icon icon--only fa fa-search" aria-hidden="true"></span></button>
 </form></code></pre>
+                </div>
+            </section>
+
+            <section id="sg-fieldset-default" class="sg-section">
+                <header class="sg-header sg-header--section">
+                    <h1 class="hN">Fieldset – Default</h1>
+                </header>
+
+                <div class="sg-example">
+                    <fieldset class="fieldset">
+                        <legend class="legend">Checkboxes</legend>
+                        <label for="checkbox-7" class="label u-weight--normal">
+                            <input id="checkbox-7" type="checkbox" name="checkbox" value="1" /> Choice 1
+                        </label>
+
+                        <label for="checkbox-8" class="label label--disabled u-weight--normal">
+                            <input id="checkbox-8" type="checkbox" name="checkbox" value="2" disabled="disabled" /> Choice 2
+                        </label>
+
+                        <label for="checkbox-9" class="label u-weight--normal">
+                            <input id="checkbox-9" type="checkbox" name="checkbox" value="3" /> Choice 3
+                        </label>
+                    </fieldset>
+                </div>
+
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset">
+    <legend class="legend">Checkboxes</legend>
+    <label for="checkbox-7" class="label u-weight--normal">
+        <input id="checkbox-7" type="checkbox" name="checkbox" value="1" /> Choice 1
+    </label>
+</fieldset></code></pre>
+                </div>
+            </section>
+
+            <section id="sg-fieldset-bordered" class="sg-section">
+                <header class="sg-header sg-header--section">
+                    <h1 class="hN">Fieldset – Bordered</h1>
+                </header>
+
+                <div class="sg-example">
+                    <fieldset class="fieldset fieldset--bordered">
+                        <legend class="legend">Radio Buttons</legend>
+                        <label for="radio-7" class="label u-weight--normal">
+                            <input id="radio-7" type="radio" name="radio" value="1" /> Choice 1
+                        </label>
+
+                        <label for="radio-8" class="label label--disabled u-weight--normal">
+                            <input id="radio-8" type="radio" name="radio" value="2" disabled="disabled" /> Choice 2
+                        </label>
+
+                        <label for="radio-9" class="label u-weight--normal">
+                            <input id="radio-9" type="radio" name="radio" value="3" /> Choice 3
+                        </label>
+                    </fieldset>
+                </div>
+
+                <div class="sg-example-code js-sg-code">
+                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset fieldset--bordered">
+    <legend class="legend">Radio Buttons</legend>
+    <label for="radio-7" class="label u-weight--normal">
+        <input id="radio-7" type="radio" name="radio" value="1" /> Choice 1
+    </label>
+</fieldset></code></pre>
                 </div>
             </section>
         </div>
