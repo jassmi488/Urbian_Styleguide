@@ -221,9 +221,9 @@
     }
 
     .btn-dropdown {
-        float: right;
         margin-bottom: 0.75em;
         margin-left: 0.75em;
+        text-align: left;
         width: 100%;
 
         &:last-child {
@@ -245,7 +245,6 @@
     &.btn-group--left {
 
         .btn-dropdown {
-            float: left;
             margin-right: 0.75em;
             margin-left: 0;
 
@@ -263,12 +262,16 @@
 @media all and (min-width: @bp-xs) {
 
     .btn-group {
+        text-align: right;
 
         .btn {
-            float: right;
             margin-bottom: 0;
             margin-left: 0.75em;
             width: auto;
+
+            &:first-child {
+                margin-left: 0;
+            }
         }
 
         .btn-dropdown {
@@ -281,9 +284,9 @@
          */
 
         &.btn-group--left {
+            text-align: left;
 
             .btn {
-                float: left;
                 margin-right: 0.75em;
                 margin-left: 0;
 
