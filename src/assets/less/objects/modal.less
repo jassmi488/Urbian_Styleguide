@@ -10,17 +10,19 @@
     padding: 1em;
     position: relative;
 
-    .btn {
-        border-color: transparent;
+    .modal-close {
+        background-color: transparent;
+        border: 0;
         color: @color-gray;
         position: absolute;
         right: 0;
         top: 0;
+        .transition(color 0.25s);
 
         &:focus,
         &:hover {
-            border-color: transparent;
             color: @color-black;
+            outline: none;
         }
     }
 }
