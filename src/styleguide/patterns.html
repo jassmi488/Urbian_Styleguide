@@ -382,35 +382,51 @@
                     <h1 class="hN">Modal</h1>
                 </header>
 
-                <p>Lorem ipsum dolor sit amet, <a href="#modal">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, <a href="#modal" data-toggle="modal" data-target="#modal">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                <div class="modal--show" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-                    <div class="modal-inner">
-                        <header class="modal-header" id="modal-label">
-                            <h1 class="hN">Header</h1>
-                        </header>
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+                    <div class="modal-dialog">
                         <div class="modal-content">
-                            <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
-                            <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modal-label">Modal Title</h4>
+                                <button type="button" class="btn btn--transparent btn--small" data-dismiss="modal" aria-label="Close">
+                                    <span class="icon fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="btn-group">
+                                    <a href="patterns.html#sg-modal" class="btn" role="button">Save</a>
+                                    <a href="patterns.html#sg-modal" class="btn btn--transparent" data-dismiss="modal" role="button">Close</a>
+                                </div>
+                            </div>
                         </div>
-                        <footer class="modal-footer">Footer</footer>
                     </div>
-                    <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
                 </div>
 
                 <div class="sg-example-code js-sg-code">
                     <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="modal--show" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-    <div class="modal-inner">
-        <header class="modal-header" id="modal-label">
-            <h1 class="hN">Header</h1>
-        </header>
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+    <div class="modal-dialog">
         <div class="modal-content">
-            <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains…</p>
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-label">Modal Title</h4>
+                <button type="button" class="btn btn--transparent btn--small" data-dismiss="modal" aria-label="Close">
+                    <span class="icon fa fa-times" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains…</p>
+            </div>
+            <div class="modal-footer">
+                Modal Footer
+            </div>
         </div>
-        <footer class="modal-footer">Footer</footer>
     </div>
-    <a href="#!" class="modal-close" title="Close this modal" data-close="Close" data-dismiss="modal">?</a>
 </div></code></pre>
                 </div>
             </section>

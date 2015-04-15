@@ -58,15 +58,16 @@ less
 |   |-- card.less
 |   |-- map.less
 |   |-- media.less
+|   |-- modal.less
 |   |-- nav.less
 |   |-- pagination.less
 |   |-- social.less
 |   |-- tabs.less
 |-- vendor
-    |-- font-awesome.less
-    |-- modal.less
-    |-- normalize.less
-    |-- slick.less
+|   |-- font-awesome.less
+|   |-- modal.less
+|   |-- normalize.less
+|   |-- slick.less
 |   `-- tooltips.less
 |-- style.less
 `-- styleguide.less
@@ -88,7 +89,7 @@ less
 - [Normalize.css](http://necolas.github.io/normalize.css)
 - [jQuery](http://jquery.com)
 - [Font Awesome](http://fontawesome.io)
-- [Modal](https://github.com/drublic/css-modal)
+- [Modal](http://getbootstrap.com/javascript/#modals)
 - [Placeholder](http://mths.be/placeholder)
 - [Slick](http://github.com/kenwheeler/slick)
 - [Tooltip](http://getbootstrap.com/javascript/#tooltip)
