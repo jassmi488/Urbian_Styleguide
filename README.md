@@ -62,7 +62,7 @@ less
 |   |-- nav.less
 |   |-- pagination.less
 |   |-- social.less
-|   |-- tabs.less
+|   `-- tabs.less
 |-- vendor
 |   |-- font-awesome.less
 |   |-- modal.less
@@ -72,7 +72,7 @@ less
 |-- style.less
 `-- styleguide.less
 
-4 directories, 34 files
+4 directories, 35 files
 ```
 
 ### Features
