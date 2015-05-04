@@ -273,7 +273,7 @@
    $Family
    ========================================================================== */
 
-.u-font--secondary { font-family: @font-secondary; }
+.u-font--secondary { font-family: @font-secondary !important; }
 
 
 
@@ -283,9 +283,9 @@
    $Weight
    ========================================================================== */
 
-.u-weight--bold      { font-weight: 700; }
-.u-weight--semi-bold { font-weight: 600; }
-.u-weight--normal    { font-weight: 400; }
+.u-weight--bold      { font-weight: 700 !important; }
+.u-weight--semi-bold { font-weight: 600 !important; }
+.u-weight--normal    { font-weight: 400 !important; }
 
 
 
@@ -299,9 +299,9 @@
    $Align
    ========================================================================== */
 
-.u-align--right  { text-align: right; }
-.u-align--center { text-align: center; }
-.u-align--left   { text-align: left; }
+.u-align--right  { text-align: right  !important; }
+.u-align--center { text-align: center !important; }
+.u-align--left   { text-align: left   !important; }
 
 
 
@@ -311,6 +311,7 @@
    $Transform
    ========================================================================== */
 
-.u-transform--uppercase  { text-transform: uppercase; }
-.u-transform--lowercase  { text-transform: lowercase; }
-.u-transform--capitalize { text-transform: capitalize; }
+.u-transform--capitalize { text-transform: capitalize !important; }
+.u-transform--inherit    { text-transform: inherit    !important; }
+.u-transform--lowercase  { text-transform: lowercase  !important; }
+.u-transform--uppercase  { text-transform: uppercase  !important; }
