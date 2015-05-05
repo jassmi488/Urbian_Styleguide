@@ -98,16 +98,14 @@
 
                 <div class="sg-example-code js-sg-code">
                     <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><nav class="nav" role="navigation">
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><nav class="nav nav--horizontal js-nav-dropdown" role="navigation">
     <ol class="list">
         <li><a href="#">Home</a></li>
         <li>
-            <a href="#" class="js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">
-                Services<span class="icon fa fa-caret-down" aria-hidden="true"></span>
-            </a>
-            <ol class="list list--menu" role="menu" aria-hidden="true">
+            <a href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Services<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+            <ol class="list list--menu" aria-hidden="true" role="menu">
+                <li><a href="#">Web Design</a></li>
                 <li class="is-separator"><a href="#">Front-end Development</a></li>
-                <li><a href="#">Strategy</a></li>
             </ol>
         </li>
     </ol>
@@ -384,12 +382,12 @@
 
                 <p>Lorem ipsum dolor sit amet, <a href="#modal" data-toggle="modal" data-target="#modal">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal-label" role="dialog">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h4 class="modal-title" id="modal-label">Modal Title</h4>
-                                <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                                <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close">
                                     <span class="icon fa fa-times" aria-hidden="true"></span>
                                 </button>
                             </div>
@@ -400,8 +398,8 @@
                             </div>
                             <div class="modal-footer">
                                 <div class="btn-group">
-                                    <a href="patterns.html#sg-modal" class="btn btn--transparent" data-dismiss="modal" role="button">Close</a>
-                                    <a href="patterns.html#sg-modal" class="btn" role="button">Save</a>
+                                    <a class="btn btn--transparent" href="patterns.html#sg-modal" data-dismiss="modal" role="button">Close</a>
+                                    <a class="btn" href="patterns.html#sg-modal" role="button">Save</a>
                                 </div>
                             </div>
                         </div>
@@ -410,12 +408,12 @@
 
                 <div class="sg-example-code js-sg-code">
                     <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modal-label-2" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="modal-label">Modal Title</h4>
-                <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title" id="modal-label-2">Modal Title</h4>
+                <button class="modal-close" type="button" data-dismiss="modal-2" aria-label="Close">
                     <span class="icon fa fa-times" aria-hidden="true"></span>
                 </button>
             </div>
@@ -509,13 +507,13 @@
                 <div class="tabs js-tabs">
                     <ol class="tab-list" role="tablist">
                         <li class="tab-list__tab is-selected" id="tab-1" aria-controls="panel-1" aria-selected="true" role="tab">
-                            <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 1</a>
+                            <a class="tab-list__link" href="patterns.html#sg-tabs">Tab 1</a>
                         </li>
                         <li class="tab-list__tab" id="tab-2" aria-controls="panel-2" aria-selected="false" role="tab">
-                            <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 2</a>
+                            <a class="tab-list__link" href="patterns.html#sg-tabs">Tab 2</a>
                         </li>
                         <li class="tab-list__tab" id="tab-3" aria-controls="panel-3" aria-selected="false" role="tab">
-                            <a href="patterns.html#sg-tabs" class="tab-list__link">Tab 3</a>
+                            <a class="tab-list__link" href="patterns.html#sg-tabs">Tab 3</a>
                         </li>
                     </ol>
                     <div class="tab-panel is-active" id="panel-1" role="tabpanel" aria-labelledby="tab-1" aria-hidden="false">
@@ -549,10 +547,10 @@
                     <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><div class="tabs js-tabs">
     <ol class="tab-list" role="tablist">
         <li class="tab-list__tab is-selected" id="tab-a" aria-controls="panel-a" aria-selected="true" role="tab">
-            <a href="#" class="tab-list__link">Tab 1</a>
+            <a class="tab-list__link" href="#">Tab 1</a>
         </li>
         <li class="tab-list__tab" id="tab-b" aria-controls="panel-b" aria-selected="false" role="tab">
-            <a href="#" class="tab-list__link">Tab 2</a>
+            <a class="tab-list__link" href="#">Tab 2</a>
         </li>
     </ol>
     <div class="tab-panel is-active" id="panel-a" role="tabpanel" aria-labelledby="tab-a" aria-hidden="false">
