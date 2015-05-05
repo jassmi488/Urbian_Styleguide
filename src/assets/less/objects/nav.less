@@ -15,6 +15,31 @@
 
         li {
             position: relative;
+
+            &.is-active {
+
+                a {
+                    color: @color-black;
+                }
+            }
+
+            a {
+                color: @color-gray-dark;
+                display: block;
+                font-size: 1.125em; /* 18 / 16 */
+                font-weight: @weight-bold;
+                text-decoration: none;
+                .transition(color 0.25s);
+
+                &:focus,
+                &:hover {
+                    color: @color-black;
+                }
+            }
+
+            .icon {
+                float: right;
+            }
         }
 
         /**
@@ -53,31 +78,6 @@
                 }
             }
         }
-    }
-
-    .is-active {
-
-        a {
-            color: @color-black;
-        }
-    }
-
-    a {
-        color: @color-gray-dark;
-        display: block;
-        font-size: 1.125em; /* 18 / 16 */
-        font-weight: @weight-bold;
-        text-decoration: none;
-        .transition(color 0.25s);
-
-        &:focus,
-        &:hover {
-            color: @color-black;
-        }
-    }
-
-    .icon {
-        float: right;
     }
 
     /**
@@ -121,18 +121,18 @@
                 &:last-child {
                     border-bottom: 0;
                 }
-            }
-        }
 
-        a {
-            background-color: @color-white-dark;
-            font-size: 1em;
-            padding: 1em 1.3125em;
-            .transition(background-color 0.25s);
+                a {
+                    background-color: @color-white-dark;
+                    font-size: 1em;
+                    padding: 1em 1.3125em;
+                    .transition(background-color 0.25s);
 
-            &:focus,
-            &:hover {
-                background-color: @color-silver;
+                    &:focus,
+                    &:hover {
+                        background-color: @color-silver;
+                    }
+                }
             }
         }
     }
@@ -144,6 +144,14 @@
 
         .list {
 
+            li {
+
+                .icon {
+                    float: none;
+                    margin-left: 0.375em;
+                }
+            }
+
             &.list--menu {
                 left: 0;
                 margin-top: 0.5em;
@@ -151,11 +159,6 @@
                 top: 100%;
                 z-index: @zindex-nav-dropdown;
             }
-        }
-
-        .icon {
-            float: none;
-            margin-left: 0.375em;
         }
 
         &.nav--horizontal {
