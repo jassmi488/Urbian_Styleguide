@@ -105,38 +105,38 @@ SITENAME = {
                Map
                ========================================================================== */
 
-            renderMap();
+            renderMapEmbed();
 
             /**
-             * Render the static map image or embedded iFrame depending on the screen width
+             * Render the static map image or embedded iframe depending on the screen width
              */
 
-            function renderMap()
+            function renderMapEmbed()
             {
-                var $map = $('.js-map');
+                var $map_embed = $('.js-map-embed');
 
-                if ($map.length > 0)
+                if ($map_embed.length > 0)
                 {
                     var screen_width = document.body.clientWidth;
                     var breakpoint_xs = 480; // This is the equivalent of `@bp-xs`
-                    var url_embed = $map.data('url-embed');
-                    var $map_img = $('.map__img', $map);
-                    var $map_canvas = $('.map__canvas', $map);
-                    var $map_button = $('.btn', $map);
+                    var url_embed = $map_embed.data('url-embed');
+                    var $map_embed_img = $('.map-embed__img', $map_embed);
+                    var $map_embed_canvas = $('.map-embed__canvas', $map_embed);
+                    var $map_embed_button = $('.btn', $map_embed);
 
                     if (screen_width >= breakpoint_xs) // Display the interactive embedded map
                     {
-                        $map_img.addClass('is-hidden');
-                        $map_button.addClass('is-hidden');
-                        $map_canvas.attr('src', url_embed);
-                        $map_canvas.removeClass('is-hidden');
+                        $map_embed_img.addClass('is-hidden');
+                        $map_embed_button.addClass('is-hidden');
+                        $map_embed_canvas.attr('src', url_embed);
+                        $map_embed_canvas.removeClass('is-hidden');
                     }
                     else // Display a static image of the map
                     {
-                        $map_img.removeClass('is-hidden');
-                        $map_button.removeClass('is-hidden');
-                        $map_canvas.attr('src', '');
-                        $map_canvas.addClass('is-hidden');
+                        $map_embed_img.removeClass('is-hidden');
+                        $map_embed_button.removeClass('is-hidden');
+                        $map_embed_canvas.attr('src', '');
+                        $map_embed_canvas.addClass('is-hidden');
                     }
                 }
             }
@@ -358,7 +358,7 @@ SITENAME = {
 
             $(window).on('resize', function ()
             {
-                renderMap();
+                renderMapEmbed();
             });
         }
     },

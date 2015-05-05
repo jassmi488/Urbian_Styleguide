@@ -2,11 +2,15 @@
    $MAP
 \* -------------------------------------------------------------------------- */
 
-.map {
+.map-embed {
     height: 100%;
     width: 100%;
 
-    .map__img {
+    /**
+     * Image
+     */
+
+    .map-embed__img {
         height: auto;
         width: 100%;
 
@@ -15,7 +19,11 @@
         }
     }
 
-    .map__canvas {
+    /**
+     * Canvas
+     */
+
+    .map-embed__canvas {
         border: 0;
         display: block;
         height: 100%;
@@ -26,7 +34,11 @@
         }
     }
 
-    .map__btn {
+    /**
+     * Button
+     */
+
+    .btn {
         margin-top: 1em;
 
         &.is-hidden {
@@ -37,13 +49,13 @@
 
 @media all and (min-width: @bp-small) {
 
-    .map {
+    .map-embed {
         background-color: @color-white-dark;
         height: auto;
         padding-bottom: 56.25%;
         position: relative;
 
-        .map__canvas {
+        .map-embed__canvas {
             height: 100%;
             left: 0;
             position: absolute;
