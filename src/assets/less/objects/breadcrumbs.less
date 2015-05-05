@@ -6,6 +6,10 @@
     margin-bottom: 1em;
     width: 100%;
 
+    /**
+     * List
+     */
+
     .list {
         .clearfix();
         list-style: none;
@@ -40,19 +44,19 @@
             &.is-active {
                 color: @color-gray;
             }
-        }
-    }
 
-    a {
-        color: @color-gray-dark;
-        display: block;
-        text-decoration: none;
-        .transition(color 0.25s);
+            a {
+                color: @color-gray-dark;
+                display: block;
+                text-decoration: none;
+                .transition(color 0.25s);
 
-        &:focus,
-        &:hover {
-            color: @color-black;
-            text-decoration: underline;
+                &:focus,
+                &:hover {
+                    color: @color-black;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
