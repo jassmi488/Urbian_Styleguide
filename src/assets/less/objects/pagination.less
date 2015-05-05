@@ -6,6 +6,10 @@
     margin-bottom: 1em;
     width: 100%;
 
+    /**
+     * List
+     */
+
     .list {
         .clearfix();
         list-style: none;
@@ -51,24 +55,24 @@
                 padding: 0.375em 0.875em;
             }
 
+            a {
+                background-color: @color-white-dark;
+                color: @color-gray-dark;
+                display: block;
+                font-weight: @weight-bold;
+                padding: 0.375em 0.875em;
+                text-decoration: none;
+                .transition(background-color 0.25s);
+
+                &:focus,
+                &:hover {
+                    background-color: @color-silver;
+                }
+            }
+
             .icon {
                 font-size: 0.875em; /* 14 / 16 */
             }
-        }
-    }
-
-    a {
-        background-color: @color-white-dark;
-        color: @color-gray-dark;
-        display: block;
-        font-weight: @weight-bold;
-        padding: 0.375em 0.875em;
-        text-decoration: none;
-        .transition(background-color 0.25s);
-
-        &:focus,
-        &:hover {
-            background-color: @color-silver;
         }
     }
 }
