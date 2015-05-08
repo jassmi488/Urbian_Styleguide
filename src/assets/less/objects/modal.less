@@ -2,13 +2,37 @@
    MODAL
 \* -------------------------------------------------------------------------- */
 
+.modal {
+    z-index: @z-index-modal;
+}
+
+/**
+ * Backdrop
+ */
+
+.modal-backdrop {
+    z-index: @z-index-modal-backdrop;
+}
+
+/**
+ * Content
+ */
+
 .modal-content {
     border-radius: 0;
 }
 
+/**
+ * Header
+ */
+
 .modal-header {
     padding: 1em;
     position: relative;
+
+    /**
+     * Close
+     */
 
     .modal-close {
         background-color: transparent;
@@ -28,9 +52,17 @@
     }
 }
 
+/**
+ * Body
+ */
+
 .modal-body {
     padding: 1em;
 }
+
+/**
+ * Footer
+ */
 
 .modal-footer {
     padding: 1em;
