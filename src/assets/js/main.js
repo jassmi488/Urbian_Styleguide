@@ -159,7 +159,14 @@ SITENAME = {
 
                     $anchor.on('click', function (e)
                     {
-                        e.preventDefault();
+                        /**
+                         * Prevent click on primary drop-down anchor
+                         */
+
+                        if ($(this).next().hasClass('list--menu'))
+                        {
+                            e.preventDefault();
+                        }
 
                         $menu.toggleClass('is-open');
 
