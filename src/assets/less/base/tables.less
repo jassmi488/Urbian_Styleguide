@@ -16,12 +16,16 @@
         text-align: left;
     }
 
-    th {
-        background-color: @color-white;
-        border-right: 1px solid @color-silver;
-        border-bottom: 2px solid @color-gray;
-        padding: 0.5em 1em;
-        text-align: left;
+    thead {
+        display: none;
+
+        th {
+            background-color: @color-white;
+            border-right: 1px solid @color-silver;
+            border-bottom: 2px solid @color-gray;
+            padding: 0.5em 1em;
+            text-align: left;
+        }
     }
 
     tbody {
@@ -37,7 +41,15 @@
     td {
         border-right: 1px solid @color-silver;
         border-bottom: 1px solid @color-silver;
+        display: block;
         padding: 0.5em 1em;
+        text-align: right;
+
+        &:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: @weight-bold;
+        }
     }
 
     tfoot {
@@ -51,6 +63,10 @@
             }
         }
 
+        td {
+            border-bottom: 0;
+        }
+
         a {
             color: @color-gray-dark;
             text-decoration: underline;
@@ -59,6 +75,25 @@
             &:focus,
             &:hover {
                 color: @color-blue;
+            }
+        }
+    }
+}
+
+@media all and (min-width: @bp-small) {
+
+    .table {
+
+        thead {
+            display: table-header-group;
+        }
+
+        td {
+            display: table-cell;
+            text-align: inherit;
+
+            &:before {
+                display: none;
             }
         }
     }
