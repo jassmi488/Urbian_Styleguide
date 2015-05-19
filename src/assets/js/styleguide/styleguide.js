@@ -10,6 +10,46 @@ STYLEGUIDE = {
         init: function ()
         {
             /* ==========================================================================
+               Code
+               ========================================================================== */
+
+            var $toggle_code = $('.js-sg-toggle-code');
+
+            if ($toggle_code.length > 0)
+            {
+                window.prettyPrint && prettyPrint();
+
+                $toggle_code.each(function ()
+                {
+                    var $toggle = $(this);
+                    var $toggle_wrapper = $toggle.parent();
+                    var $code = $('code', $toggle_wrapper);
+
+                    $toggle.on('click', function ()
+                    {
+                        $toggle.toggleClass('is-active');
+
+                        /*
+                         * Toggle the label of the button
+                         */
+
+                        var icon_code = '<span class="sg-icon fa fa-code" aria-hidden="true"></span>';
+
+                        if ($(this).hasClass('is-active'))
+                        {
+                            $(this).html(icon_code + 'Hide Code');
+                        }
+                        else
+                        {
+                            $(this).html(icon_code + 'View Code');
+                        }
+
+                        $code.toggleClass('is-visible');
+                    });
+                });
+            }
+
+            /* ==========================================================================
                Jump to Section
                ========================================================================== */
 

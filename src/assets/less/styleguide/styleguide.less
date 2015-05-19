@@ -17,6 +17,7 @@
  * OBJECTS
  * .....Button
  * .....Card
+ * .....Code
  * .....Footer
  * .....Header
  * .....Layout
@@ -44,6 +45,7 @@
  */
 
 @import "vendor/font-awesome";
+@import "vendor/prettify";
 
 
 
@@ -363,6 +365,51 @@
 
     .sg-card__synopsis {
         margin-bottom: 2em;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Code
+   ========================================================================== */
+
+.sg-code {
+    display: block;
+    white-space: pre;
+}
+
+/**
+ * Wrapper
+ */
+
+.sg-code-wrapper {
+    clear: both;
+    margin-top: 2em;
+
+    /**
+     * Button
+     */
+
+    .sg-btn {
+
+    }
+
+    /**
+     * Code
+     */
+
+    .sg-code {
+        background-color: @sg-color-white-dark;
+        display: none;
+        padding: 1em;
+
+        &.is-visible {
+            display: block;
+            margin-top: 1em;
+        }
     }
 }
 
