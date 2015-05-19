@@ -127,6 +127,21 @@
     padding: 0;
 
     /**
+     * Colors
+     */
+
+    &.sg-list--colors {
+
+        li {
+            border: 1px solid @sg-color-silver;
+            height: 9em;
+            margin-bottom: 1em;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    /**
      * Meta
      */
 
@@ -163,6 +178,15 @@
     }
 }
 
+@media all and (min-width: @sg-bp-medium) {
+
+    .sg-list {
+
+        &.sg-list--colors {
+
+        }
+    }
+}
 
 
 
