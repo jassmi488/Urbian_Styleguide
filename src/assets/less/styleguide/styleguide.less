@@ -10,13 +10,17 @@
  * IMPORTS
  * BASE
  * .....HTML
- * .....Forms
+ * .....Form
  * .....List
+ * .....Paragraph
  * OBJECTS
  * .....Button
+ * .....Card
+ * .....Footer
  * .....Header
  * .....Layout
  * .....Nav
+ * .....Social
  */
 
 
@@ -63,21 +67,7 @@
 
 
 /* ==========================================================================
-   $List
-   ========================================================================== */
-
-.sg-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
-/* ==========================================================================
-   $Forms
+   $Form
    ========================================================================== */
 
 .sg-form {
@@ -100,12 +90,93 @@
     .sg-input {
         border: 0;
         border-radius: 0;
-        color: @sg-color-black;
+        color: @sg-color-gray-dark;
         font-weight: @sg-weight-normal;
         padding: 0.5625em 0.5em;
         width: 100%;
     }
 }
+
+
+
+
+
+/* ==========================================================================
+   $List
+   ========================================================================== */
+
+.sg-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /**
+     * Meta
+     */
+
+    &.sg-list--meta {
+        color: @sg-color-gray-dark;
+
+        li {
+            font-size: 0.875em; /* 14 / 16 */
+            margin-bottom: 0.5em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .sg-icon {
+                margin-right: 0.5em;
+                text-align: center;
+                width: 1.25em;
+            }
+
+            a {
+                border-bottom: 1px solid @sg-color-silver;
+                color: @sg-color-gray-dark;
+                text-decoration: none;
+                .transition(border-color 0.25s, color 0.25s;);
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: @sg-color;
+                    color: @sg-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Paragraph
+   ========================================================================== */
+
+.sg-paragraph {
+    font-size: 1.125em; /* 18 / 16 */
+    margin-bottom: 0;
+
+    a {
+        border-bottom: 1px solid @sg-color-silver;
+        color: @sg-color-black;
+        text-decoration: none;
+        .transition(color 0.25s);
+
+        &:focus,
+        &:hover {
+            border-bottom-color: @sg-color;
+            color: @sg-color;
+        }
+    }
+
+    &+ .sg-paragraph {
+        margin-top: 1em;
+    }
+}
+
 
 
 
@@ -121,7 +192,7 @@
 .sg-btn {
     background-color: @sg-color-white;
     border: 0;
-    color: @sg-color-black;
+    color: @sg-color-gray-dark;
     display: inline-block;
     font-size: 1em;
     font-weight: @sg-weight-bold;
@@ -137,7 +208,7 @@
 
     &:focus,
     &:hover {
-        background-color: @sg-color-black;
+        background-color: @sg-color-gray-dark;
         color: @sg-color-white;
         outline: none;
     }
@@ -148,6 +219,103 @@
 
     .sg-icon {
         margin-right: 0.5em;
+    }
+
+    /**
+     * White (Dark)
+     */
+
+    &.sg-btn--white-dark {
+        background-color: @sg-color-white-dark;
+        color: @sg-color-gray-dark;
+
+        &:focus,
+        &:hover {
+            background-color: @sg-color-gray-dark;
+            color: @sg-color-white;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Card
+   ========================================================================== */
+
+.sg-card {
+    background-color: @sg-color-white;
+    padding: 2em 1em;
+    position: relative;
+
+    /**
+     * Icon
+     */
+
+    .sg-icon {
+        color: @sg-color-gray-dark;
+        font-size: 2em; /* 32 / 16 */
+        margin-bottom: 0.5em;
+    }
+
+    /**
+     * Title
+     */
+
+    .sg-card__title {
+        font-size: 1.75em; /* 28 / 16 */
+        margin-bottom: 0.75em;
+    }
+
+    /**
+     * Synopsis
+     */
+
+    .sg-card__synopsis {
+        margin-bottom: 2em;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Footer
+   ========================================================================== */
+
+.sg-footer {
+    background-color: @sg-color-gray-dark;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+
+    /**
+     * Logo
+     */
+
+    .sg-logo {
+        display: inline-block;
+        margin-bottom: 1.5em;
+    }
+
+    /**
+     * Social
+     */
+
+    .sg-social {
+        margin-bottom: 3em;
+    }
+
+    /**
+     * Copyright
+     */
+
+    .sg-copyright {
+        color: @sg-color-white-dark;
+        font-size: 87.5%;
     }
 }
 
@@ -160,37 +328,130 @@
    ========================================================================== */
 
 .sg-header {
-    background-color: @sg-color;
-    padding: 1em;
 
     /**
-     * Nav
+     * Primary
      */
 
-    .sg-nav {
-        display: none;
+    &.sg-header--primary {
+        background-color: @sg-color;
+        padding: 1em;
 
-        &.is-open {
-            display: block;
+        /**
+         * Nav
+         */
+
+        .sg-nav {
+            display: none;
+
+            &.is-open {
+                display: block;
+            }
+
+            /**
+             * List
+             */
+
+            .sg-list {
+                margin-top: 1em;
+            }
+
+            /**
+             * Form
+             */
+
+            .sg-form {
+                margin-top: 1em;
+            }
         }
 
-        .sg-list {
-            margin-top: 1em;
-        }
+        /**
+         * Button
+         */
 
-        .sg-form {
-            margin-top: 1em;
+        > .sg-btn {
+            position: absolute;
+            right: 1em;
+            top: 1em;
         }
     }
 
     /**
-     * Button
+     * Section
      */
 
-    .sg-btn {
-        position: absolute;
-        right: 1em;
-        top: 1em;
+    &.sg-header--section {
+        border-bottom: 3px solid @sg-color-silver;
+        clear: both;
+        margin-bottom: 2em;
+        padding-bottom: 0.75em;
+        width: 100%;
+
+        /**
+         * Heading
+         */
+
+        .sg-hN {
+            font-size: 1.125em; /* 18 / 16 */
+            letter-spacing: 1px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+
+    /**
+     * Intro
+     */
+
+    &.sg-header--intro {
+        background-color: @sg-color;
+        padding: 1em;
+        text-align: center;
+
+        /**
+         * Wrapper
+         */
+
+        .sg-l-wrapper {
+            width: 100%;
+        }
+
+        /**
+         * Logo
+         */
+
+        .sg-logo {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        /**
+         * Heading
+         */
+
+        .sg-hN {
+            color: @sg-color-white;
+            font-size: 1.75em; /* 28 / 16 */
+        }
+
+        /**
+         * Cards
+         */
+
+        .sg-cards {
+
+            /**
+             * Card
+             */
+
+            .sg-card {
+                margin-bottom: 1em;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 
@@ -222,8 +483,53 @@
             }
         }
 
-        .sg-btn {
+        > .sg-btn {
             display: none;
+        }
+
+        &.sg-header--intro {
+
+            .sg-logo {
+                float: none;
+            }
+        }
+    }
+}
+
+@media all and (min-width: @sg-bp-medium) {
+
+    .sg-header {
+
+        &.sg-header--intro {
+            padding-top: 4em;
+            padding-bottom: 4.75em;
+
+            .sg-logo {
+                margin-bottom: 3.5em;
+            }
+
+            .sg-hN {
+                font-size: 3em; /* 48 / 16 */
+            }
+
+            .sg-cards {
+                display: flex;
+                margin-top: 4em;
+                margin-right: -0.5em;
+                margin-left: -0.5em;
+
+                /**
+                 * Card
+                 */
+
+                .sg-card {
+                    float: left;
+                    margin-right: 1em;
+                    margin-bottom: 0;
+                    margin-left: 1em;
+                    width: 25%;
+                }
+            }
         }
     }
 }
@@ -245,10 +551,76 @@
    $Layout
    ========================================================================== */
 
+/**
+ * Wrapper
+ */
+
 .sg-l-wrapper {
+    .clearfix();
     margin-right: auto;
     margin-left: auto;
     max-width: @sg-bp-xl;
+    width: 90%;
+
+    /**
+     * Narrow
+     */
+
+    &.sg-l-wrapper--narrow {
+        max-width: @sg-bp-medium;
+    }
+}
+
+/**
+ * Section
+ */
+
+.sg-l-section {
+    .clearfix();
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+@media all and (min-width: @sg-bp-medium) {
+
+    .sg-l-section {
+        padding-top: 6em;
+        padding-bottom: 6em;
+    }
+}
+
+/**
+ * Article
+ */
+
+.sg-l-article {
+    margin-bottom: 1em;
+}
+
+@media all and (min-width: @sg-bp-medium) {
+
+    .sg-l-article {
+        float: left;
+        margin-bottom: 0;
+        padding-right: 5%;
+        width: 70%;
+    }
+}
+
+/**
+ * Aside
+ */
+
+.sg-l-aside {
+
+}
+
+@media all and (min-width: @sg-bp-medium) {
+
+    .sg-l-aside {
+        float: left;
+        width: 30%;
+    }
 }
 
 
@@ -290,6 +662,7 @@
                     text-transform: uppercase;
                     .transition(border-color 0.25s, color 0.25s;);
 
+                    &.is-active,
                     &:focus,
                     &:hover {
                         border-bottom-color: @sg-color-white;
@@ -327,6 +700,45 @@
                     &:first-child {
                         margin-left: 0;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Social
+   ========================================================================== */
+
+.sg-social {
+
+    /**
+     * List
+     */
+
+    .sg-list {
+
+        li {
+            display: inline-block;
+            margin-left: 1.5em;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                color: @sg-color-gray;
+                font-size: 1.5em; /* 24 / 16 */
+                text-decoration: none;
+                .transition(color 0.25s);
+
+                &:focus,
+                &:hover {
+                    color: @sg-color-white-dark;
                 }
             }
         }
