@@ -72,10 +72,12 @@
    ========================================================================== */
 
 .sg-heading-spacer {
+    clear: both;
     color: @sg-color-gray-dark;
     font-size: 1em;
     margin-top: 2em;
     margin-bottom: 1em;
+    width: 100%;
 }
 
 
@@ -133,11 +135,47 @@
     &.sg-list--colors {
 
         li {
-            border: 1px solid @sg-color-silver;
-            height: 9em;
-            margin-bottom: 1em;
+            border: 1px solid @sg-color-white-dark;
+            height: 8em;
+            margin-bottom: 1.5em;
             position: relative;
             width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:focus,
+            &:hover {
+
+                .sg-code {
+                    max-height: 5.25em;
+                }
+            }
+
+            .sg-code {
+                background-color: @sg-color-white;
+                bottom: 0;
+                left: 0;
+                margin-bottom: 0;
+                max-height: 2.625em;
+                overflow: hidden;
+                padding: 0.5em 0 0.625em;
+                position: absolute;
+                text-align: center;
+                .transition(max-height 0.25s);
+                width: 100%;
+
+                .sg-code__value {
+                    color: @sg-color-black;
+                    display: block;
+
+                    &+ .sg-code__value {
+                        color: @sg-color-gray-dark;
+                        padding-top: 0.5em;
+                    }
+                }
+            }
         }
     }
 
@@ -178,12 +216,22 @@
     }
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: @sg-bp-small) {
 
     .sg-list {
 
         &.sg-list--colors {
+            .clearfix();
+            margin-right: -0.5em;
+            margin-left: -0.5em;
 
+            li {
+                float: left;
+                margin-right: 0.5em;
+                margin-left: 0.5em;
+                padding-bottom: 2em;
+                width: 10em;
+            }
         }
     }
 }
