@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Forms – Name of Project</title>
+    <title>Name of Project – Forms | Style Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Apple Touch Icon -->
@@ -15,10 +15,10 @@
     <!-- Style Sheets -->
     <% if (environment === 'dist') { %>
     <link rel="stylesheet" href="../assets/css/style-<%= version %>.css" />
-    <link rel="stylesheet" href="../assets/css/styleguide-<%= version %>.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide/styleguide-<%= version %>.css" />
     <% } else { %>
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide/styleguide.css" />
     <% } %>
 
     <!--[if lt IE 9]>
@@ -31,222 +31,73 @@
     <![endif]-->
 
     <header class="sg-header sg-header--primary" role="banner">
-        <div class="sg-wrapper">
-            <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/75x42" width="75" height="42" alt="Name of Project logo" /></a>
-            <nav class="sg-nav sg-nav--primary" role="navigation">
-                <ol class="sg-list">
-                    <li><a href="elements.html">Elements</a></li>
-                    <li><a href="patterns.html">Patterns</a></li>
-                    <li class="is-active"><a href="forms.html">Forms</a></li>
-                    <li><a href="templates.html">Templates</a></li>
-                    <li><a href="http://static.wearenext.co.za/styleguide" target="_blank">Live<span class="icon fa fa-external-link" aria-hidden="true"></span></a></li>
-                </ol>
-            </nav>
-            <button class="sg-btn sg-btn--nav js-sg-toggle-nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
-        </div>
-    </header>
+        <a class="sg-logo" href="index.html">
+            <picture>
+                <source srcset="http://placehold.it/160x40" media="(min-width: 75em)" />
+                <img src="http://placehold.it/80x40" alt="Name of Project" />
+            </picture>
+        </a>
 
-    <main class="sg-main" role="main">
-        <div class="sg-wrapper">
-            <form class="sg-form sg-form--fixed" action="forms.html" method="post">
-                <label for="sg-jump" class="sg-label">
-                    <select class="sg-input js-sg-jump" id="sg-jump">
+        <nav class="sg-nav sg-nav--primary">
+            <ol class="sg-list">
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a class="is-active" href="forms.html">Forms</a></li>
+                <li><a href="templates.html">Templates</a></li>
+                <li><a href="http://static.wearenext.co.za/styleguide" target="_blank">Live<span class="icon fa fa-external-link" aria-hidden="true"></span></a></li>
+            </ol>
+
+            <form class="sg-form">
+                <label class="sg-label">
+                    <select class="sg-input">
                         <option value="">Jump to…</option>
-                        <option value="sg-form-default">Form – Default</option>
-                        <option value="sg-form-inline">Form – Inline</option>
-                        <option value="sg-form-search">Form – Search</option>
-                        <option value="sg-fieldset-default">Fieldset – Default</option>
-                        <option value="sg-fieldset-bordered">Fieldset – Bordered</option>
+                        <option value="sg-color-palette">Color Palette</option>
                     </select>
                 </label>
             </form>
+        </nav>
 
-            <section id="sg-form-default" class="sg-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="hN">Form – Default</h1>
-                </header>
+        <button class="sg-btn js-sg-toggle-nav"><span class="sg-icon fa fa-bars" aria-hidden="true"></span>Menu</button>
+    </header>
 
-                <form class="form" id="form-default" action="forms.html" method="post">
-                    <label class="label" for="email">
-                        Email Address
-                        <input class="input" type="email" id="email" name="email" maxlength="100" />
-                    </label>
+    <main class="sg-main" role="main">
+        <div class="sg-l-wrapper">
 
-                    <div class="toggle-password js-toggle-password">
-                        <label class="label" for="password">
-                            Password
-                            <input class="input" type="password" id="password" name="password" maxlength="100" />
-                        </label>
-                        <button class="u-visuallyhidden toggle js-toggle" type="button">Show</button>
-                    </div>
-
-                    <label class="label label--checkbox" for="remember">
-                        <input class="input" type="checkbox" id="remember" name="remember" value="1" /> Remember me?
-                    </label>
-
-                    <input class="btn" type="submit" value="Sign In" />
-                </form>
-
-                <div class="sg-example-code js-sg-code">
-                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><form class="form" id="form-default-a" action="#" method="post">
-    <label class="label" for="email-a">
-        Email Address
-        <input class="input" type="email" id="email-a" name="email-a" maxlength="100" />
-    </label>
-
-    <div class="toggle-password js-toggle-password">
-        <label class="label" for="password-a">
-            Password
-            <input class="input" type="password" id="password-a" name="password-a" maxlength="100" />
-        </label>
-        <button class="u-visuallyhidden toggle js-toggle" type="button">Show</button>
-    </div>
-
-    <label class="label label--checkbox" for="remember-a">
-        <input class="input" type="checkbox" id="remember-a" name="remember-a" value="1" /> Remember me?
-    </label>
-
-    <input class="btn" type="submit" value="Sign In" />
-</form></code></pre>
-                </div>
-            </section>
-
-            <section id="sg-form-inline" class="sg-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="hN">Form – Inline</h1>
-                </header>
-
-                <form class="form form--inline" id="form-inline" action="forms.html" method="post">
-                    <label class="label u-visuallyhidden" for="email-2">Email Address</label>
-                    <input class="input" type="email" id="email-2" name="email-2" placeholder="Email Address" maxlength="100" />
-
-                    <label class="label u-visuallyhidden" for="password-2">Password</label>
-                    <input class="input" type="password" id="password-2" name="password-2" placeholder="Password" maxlength="100" />
-
-                    <label class="label label--checkbox" for="remember-2">
-                        <input class="input" type="checkbox" id="remember-2" name="remember-2" value="1" /> Remember me?
-                    </label>
-
-                    <input class="btn" type="submit" value="Sign In" />
-                </form>
-
-                <div class="sg-example-code js-sg-code">
-                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><form class="form form--inline" id="form-inline-b" action="#" method="post">
-    <label class="label u-visuallyhidden" for="email-b">Email Address</label>
-    <input class="input" type="email" id="email-b" name="email-b" placeholder="Email Address" maxlength="100" />
-
-    <label class="label u-visuallyhidden" for="password-b">Password</label>
-    <input class="input" type="password" id="password-b" name="password-b" placeholder="Password" maxlength="100" />
-
-    <label class="label label--checkbox" for="remember-b">
-        <input class="input" type="checkbox" id="remember-b" name="remember-b" value="1" /> Remember me?
-    </label>
-
-    <input class="btn" type="submit" value="Sign In" />
-</form></code></pre>
-                </div>
-            </section>
-
-            <section id="sg-form-search" class="sg-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="hN">Form – Search</h1>
-                </header>
-
-                <form class="form form--search" id="form-search" action="forms.html" method="post">
-                    <label class="u-visuallyhidden" for="search">Search</label>
-                    <input class="input" type="text" id="search" name="search" placeholder="Search…" maxlength="20" />
-
-                    <button class="btn btn--icon" type="submit"><span class="icon icon--only fa fa-search" aria-hidden="true"></span></button>
-                </form>
-
-                <div class="sg-example-code js-sg-code">
-                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><form class="form form--search" id="form-search-c" action="#" method="post">
-    <label class="u-visuallyhidden" for="search-c">Search</label>
-    <input class="input" type="text" id="search-c" name="search-c" placeholder="Search…" maxlength="20" />
-
-    <button class="btn btn--icon" type="submit"><span class="icon icon--only fa fa-search" aria-hidden="true"></span></button>
-</form></code></pre>
-                </div>
-            </section>
-
-            <section id="sg-fieldset-default" class="sg-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="hN">Fieldset – Default</h1>
-                </header>
-
-                <div class="sg-example">
-                    <fieldset class="fieldset">
-                        <legend class="legend">Checkboxes</legend>
-                        <label class="label label--checkbox" for="checkbox-7">
-                            <input type="checkbox" id="checkbox-7" name="checkbox" value="1" /> Choice 1
-                        </label>
-
-                        <label class="label label--checkbox label--disabled" for="checkbox-8">
-                            <input type="checkbox" id="checkbox-8" name="checkbox" value="2" disabled="disabled" /> Choice 2
-                        </label>
-
-                        <label class="label label--checkbox" for="checkbox-9">
-                            <input type="checkbox" id="checkbox-9" name="checkbox" value="3" /> Choice 3
-                        </label>
-                    </fieldset>
-                </div>
-
-                <div class="sg-example-code js-sg-code">
-                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset">
-    <legend class="legend">Checkboxes</legend>
-    <label class="label label--checkbox" for="checkbox-a">
-        <input type="checkbox" id="checkbox-a" name="checkbox" value="1" /> Choice 1
-    </label>
-</fieldset></code></pre>
-                </div>
-            </section>
-
-            <section id="sg-fieldset-bordered" class="sg-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="hN">Fieldset – Bordered</h1>
-                </header>
-
-                <div class="sg-example">
-                    <fieldset class="fieldset fieldset--bordered">
-                        <legend class="legend">Radio Buttons</legend>
-                        <label class="label label--radio" for="radio-7">
-                            <input type="radio" id="radio-7" name="radio" value="1" /> Choice 1
-                        </label>
-
-                        <label class="label label--radio label--disabled" for="radio-8">
-                            <input type="radio" id="radio-8" name="radio" value="2" disabled="disabled" /> Choice 2
-                        </label>
-
-                        <label class="label label--radio" for="radio-9">
-                            <input type="radio" id="radio-9" name="radio" value="3" /> Choice 3
-                        </label>
-                    </fieldset>
-                </div>
-
-                <div class="sg-example-code js-sg-code">
-                    <button class="sg-btn js-sg-toggle"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <pre class="sg-pre code-toolbar line-numbers"><code class="language-markup"><fieldset class="fieldset fieldset--bordered">
-    <legend class="legend">Radio Buttons</legend>
-    <label class="label label--radio" for="radio-a">
-        <input type="radio" id="radio-a" name="radio" value="1" /> Choice 1
-    </label>
-</fieldset></code></pre>
-                </div>
-            </section>
         </div>
     </main>
 
     <footer class="sg-footer" role="contentinfo">
-        <div class="sg-wrapper">
-            <ol class="sg-list">
-                <li><b>Version</b>: <%= version %></li>
-                <li><b>Last Update</b>: <%= updated %></li>
-                <li><b>Website URL</b>: <a href="http://static.wearenext.co.za/styleguide">static.wearenext.co.za/styleguide</a></li>
-            </ol>
+        <div class="sg-l-wrapper">
+            <a class="sg-logo" href="index.html">
+                <img src="http://www.wearenext.co.za/assets/images/logos/logo-next-light-57x22.png" srcset="http://www.wearenext.co.za/assets/images/logos/logo-next-light-144x55.png 2x" width="57" height="22" alt="Next" />
+            </a>
+
+            <div class="sg-social">
+                <ol class="sg-list">
+                    <li>
+                        <a href="mailto:hello@wearenext.co.za" title="Email us">
+                            <span class="sg-icon fa fa-envelope" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/we-are-next" title="Follow us on GitHub">
+                            <span class="sg-icon fa fa-github" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.medium.com/@WeAreNext" title="Follow us on Medium">
+                            <span class="sg-icon fa fa-medium" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/nextct" title="Follow us on Twitter">
+                            <span class="sg-icon fa fa-twitter" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+
+            <small class="sg-copyright">© 2014 Next</small>
         </div>
     </footer>
 
@@ -258,7 +109,6 @@
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/main.js"></script>
     <% } %>
-    <script src="../assets/js/styleguide/plugins.js"></script>
     <script src="../assets/js/styleguide/styleguide.js"></script>
     <script>UTIL.init();</script>
     <script>STYLEGUIDE_UTIL.init();</script>

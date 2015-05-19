@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Templates – Name of Project</title>
+    <title>Name of Project – Templates | Style Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Apple Touch Icon -->
@@ -15,10 +15,10 @@
     <!-- Style Sheets -->
     <% if (environment === 'dist') { %>
     <link rel="stylesheet" href="../assets/css/style-<%= version %>.css" />
-    <link rel="stylesheet" href="../assets/css/styleguide-<%= version %>.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide/styleguide-<%= version %>.css" />
     <% } else { %>
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/styleguide/styleguide.css" />
     <% } %>
 
     <!--[if lt IE 9]>
@@ -31,53 +31,67 @@
     <![endif]-->
 
     <header class="sg-header sg-header--primary" role="banner">
-        <div class="sg-wrapper">
-            <a href="index.html" title="Name of Project" class="logo"><img src="http://placehold.it/75x42" width="75" height="42" alt="Name of Project logo" /></a>
-            <nav class="sg-nav sg-nav--primary" role="navigation">
-                <ol class="sg-list">
-                    <li><a href="elements.html">Elements</a></li>
-                    <li><a href="patterns.html">Patterns</a></li>
-                    <li><a href="forms.html">Forms</a></li>
-                    <li class="is-active"><a href="templates.html">Templates</a></li>
-                    <li><a href="http://static.wearenext.co.za/styleguide" target="_blank">Live<span class="icon fa fa-external-link" aria-hidden="true"></span></a></li>
-                </ol>
-            </nav>
-            <button class="sg-btn sg-btn--nav js-sg-toggle-nav"><span class="sg-icon sg-icon--left fa fa-bars" aria-hidden="true"></span>Menu</button>
-        </div>
+        <a class="sg-logo" href="index.html">
+            <picture>
+                <source srcset="http://placehold.it/160x40" media="(min-width: 75em)" />
+                <img src="http://placehold.it/80x40" alt="Name of Project" />
+            </picture>
+        </a>
+
+        <nav class="sg-nav sg-nav--primary">
+            <ol class="sg-list">
+                <li><a href="elements.html">Elements</a></li>
+                <li><a href="patterns.html">Patterns</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a class="is-active" href="templates.html">Templates</a></li>
+                <li><a href="http://static.wearenext.co.za/styleguide" target="_blank">Live<span class="icon fa fa-external-link" aria-hidden="true"></span></a></li>
+            </ol>
+
+            <form class="sg-form">
+                <label class="sg-label">
+                    <select class="sg-input">
+                        <option value="">Jump to…</option>
+                        <option value="sg-color-palette">Color Palette</option>
+                    </select>
+                </label>
+            </form>
+        </nav>
+
+        <button class="sg-btn js-sg-toggle-nav"><span class="sg-icon fa fa-bars" aria-hidden="true"></span>Menu</button>
     </header>
 
-    <main class="sg-main" role="main">
-        <div class="sg-wrapper">
-            <section class="sg-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="hN">Table of Contents</h1>
-                </header>
+    <footer class="sg-footer" role="contentinfo">
+        <div class="sg-l-wrapper">
+            <a class="sg-logo" href="index.html">
+                <img src="http://www.wearenext.co.za/assets/images/logos/logo-next-light-57x22.png" srcset="http://www.wearenext.co.za/assets/images/logos/logo-next-light-144x55.png 2x" width="57" height="22" alt="Next" />
+            </a>
 
-                <ol class="sg-list sg-list--templates">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#">Template A</a></li>
-                    <li><a href="#">Template B</a></li>
-                    <li><a href="#">Template C</a></li>
-                    <li><a href="typography.html">Typography</a></li>
+            <div class="sg-social">
+                <ol class="sg-list">
                     <li>
-                        Errors
-                        <ol class="sg-list">
-                            <li><a href="../404.html">404</a></li>
-                            <li><a href="../500.html">500</a></li>
-                        </ol>
+                        <a href="mailto:hello@wearenext.co.za" title="Email us">
+                            <span class="sg-icon fa fa-envelope" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/we-are-next" title="Follow us on GitHub">
+                            <span class="sg-icon fa fa-github" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.medium.com/@WeAreNext" title="Follow us on Medium">
+                            <span class="sg-icon fa fa-medium" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/nextct" title="Follow us on Twitter">
+                            <span class="sg-icon fa fa-twitter" aria-hidden="true"></span>
+                        </a>
                     </li>
                 </ol>
-            </section>
-        </div>
-    </main>
+            </div>
 
-    <footer class="sg-footer" role="contentinfo">
-        <div class="sg-wrapper">
-            <ol class="sg-list">
-                <li><b>Version</b>: <%= version %></li>
-                <li><b>Last Update</b>: <%= updated %></li>
-                <li><b>Website URL</b>: <a href="http://static.wearenext.co.za/styleguide">static.wearenext.co.za/styleguide</a></li>
-            </ol>
+            <small class="sg-copyright">© 2014 Next</small>
         </div>
     </footer>
 
@@ -89,7 +103,6 @@
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/main.js"></script>
     <% } %>
-    <script src="../assets/js/styleguide/plugins.js"></script>
     <script src="../assets/js/styleguide/styleguide.js"></script>
     <script>UTIL.init();</script>
     <script>STYLEGUIDE_UTIL.init();</script>
