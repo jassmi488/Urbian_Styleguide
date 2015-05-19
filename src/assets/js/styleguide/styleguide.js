@@ -10,53 +10,6 @@ STYLEGUIDE = {
         init: function ()
         {
             /* ==========================================================================
-               Code
-               ========================================================================== */
-
-            var $code_component = $('.js-sg-code');
-
-            if ($code_component.length > 0)
-            {
-                $code_component.each(function ()
-                {
-                    var $code_example = $(this);
-                    var $pre = $('pre', $code_example);
-                    var $code = $('code', $code_example);
-                    var $code_toggle = $('.js-sg-toggle', $code_example);
-
-                    $code.text($code.html()); // Convert HTML to character entities
-
-                    $code_toggle.on('click', function ()
-                    {
-                        $(this).toggleClass('is-active');
-
-                        /*
-                         * Toggle the label of the button
-                         */
-
-                        var icon_code = '<span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>';
-
-                        if ($(this).hasClass('is-active'))
-                        {
-                            $(this).html(icon_code + 'Hide Code');
-                        }
-                        else
-                        {
-                            $(this).html(icon_code + 'View Code');
-                        }
-
-                        $pre.toggleClass('is-visible'); // Toggle the display of the code
-                    });
-
-                    /*
-                     * Ensure the correct class names are displayed in the example code
-                     */
-
-                    $code.html($code.html().replace(/%2D/g, '-')); // `%2D` is the HTML character entity for a dash
-                });
-            }
-
-            /* ==========================================================================
                Jump to Section
                ========================================================================== */
 
