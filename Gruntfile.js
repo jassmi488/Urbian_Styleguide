@@ -158,7 +158,7 @@ module.exports = function (grunt)
             build: {
                 files: {
                     'build/assets/css/style.css': 'src/assets/less/style.less',
-                    'build/assets/css/styleguide.css': 'src/assets/less/styleguide.less'
+                    'build/assets/css/styleguide/styleguide.css': 'src/assets/less/styleguide/styleguide.less'
                 },
                 options: {
                     banner: banner,
@@ -168,7 +168,7 @@ module.exports = function (grunt)
             dist: {
                 files: {
                     'dist/assets/css/style-<%= pkg.version %>.css': 'src/assets/less/style.less',
-                    'dist/assets/css/styleguide-<%= pkg.version %>.css': 'src/assets/less/styleguide.less'
+                    'dist/assets/css/styleguide/styleguide-<%= pkg.version %>.css': 'src/assets/less/styleguide/styleguide.less'
                 },
                 options: {
                     banner: banner,
