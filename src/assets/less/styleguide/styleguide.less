@@ -10,6 +10,7 @@
  * IMPORTS
  * BASE
  * .....HTML
+ * .....Headings
  * .....Form
  * .....List
  * .....Paragraph
@@ -60,6 +61,21 @@
     background-color: @sg-color-white;
     color: @sg-color-black;
     font: 100%/1.5 @sg-font;
+}
+
+
+
+
+
+/* ==========================================================================
+   $Headings
+   ========================================================================== */
+
+.sg-heading-spacer {
+    color: @sg-color-gray-dark;
+    font-size: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 
@@ -474,6 +490,10 @@
 
         &.sg-header--primary {
             .clearfix();
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
 
             .sg-logo {
                 float: left;
@@ -583,15 +603,33 @@
 
 .sg-l-section {
     .clearfix();
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    /**
+     * Intro
+     */
+
+    &.sg-l-section--intro {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
 }
 
 @media all and (min-width: @sg-bp-medium) {
 
     .sg-l-section {
-        padding-top: 6em;
-        padding-bottom: 6em;
+        padding-top: 10em;
+        padding-bottom: 5em;
+
+        /**
+         * Intro
+         */
+
+        &.sg-l-section--intro {
+            padding-top: 6em;
+            padding-bottom: 6em;
+        }
     }
 }
 
