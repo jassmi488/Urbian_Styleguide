@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en" class="sg-html">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Name of Project – Elements | Style Guide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CSource+Sans+Pro:400,700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CSource+Sans+Pro:400,700">
 
     <!-- Style Sheets -->
     <% if (environment === 'dist') { %>
-    <link rel="stylesheet" href="../assets/css/style-<%= version %>.css" />
-    <link rel="stylesheet" href="../assets/css/styleguide/styleguide-<%= version %>.css" />
+    <link rel="stylesheet" href="../assets/css/style-<%= version %>.css">
+    <link rel="stylesheet" href="../assets/css/styleguide/styleguide-<%= version %>.css">
     <% } else { %>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/styleguide/styleguide.css" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/styleguide/styleguide.css">
     <% } %>
 
     <!--[if lt IE 9]>
@@ -33,8 +33,8 @@
     <header class="sg-header sg-header--primary" role="banner">
         <a class="sg-logo" href="index.html">
             <picture>
-                <source srcset="http://placehold.it/160x40" media="(min-width: 75em)" />
-                <img src="http://placehold.it/80x40" alt="Name of Project" />
+                <source srcset="http://placehold.it/160x40" media="(min-width: 75em)">
+                <img src="http://placehold.it/80x40" alt="Name of Project">
             </picture>
         </a>
 
@@ -310,11 +310,11 @@
                     <h1 class="sg-hN">Horizontal Rule</h1>
                 </header>
 
-                <hr class="hr" />
+                <hr class="hr">
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <code class="sg-code prettyprint"><hr class="hr" /></code>
+                    <code class="sg-code prettyprint"><hr class="hr"></code>
                 </div>
             </section>
 
@@ -679,14 +679,14 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 </header>
 
                 <figure class="figure">
-                    <img src="http://placehold.it/600x400" width="600" height="400" alt="" />
+                    <img src="http://placehold.it/600x400" width="600" height="400" alt="">
                     <figcaption>This is a placeholder image with a supporting caption.</figcaption>
                 </figure>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><figure class="figure">
-    <img src="http://placehold.it/600x400" width="600" height="400" alt="" />
+    <img src="http://placehold.it/600x400" width="600" height="400" alt="">
     <figcaption>This is a placeholder image with a supporting caption.</figcaption>
 </figure></code>
                 </div>
@@ -700,28 +700,28 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 <div class="sg-example">
                     <label class="label" for="text">
                         Text
-                        <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" maxlength="100" />
+                        <input class="input" type="text" id="text" name="text" placeholder="Placeholder text…" maxlength="100">
                     </label>
                 </div>
 
                 <div class="sg-example">
                     <label class="label label--disabled" for="text-2">
                         Disabled
-                        <input class="input" type="text" id="text-2" name="text-2" placeholder="Placeholder text…" value="You cannot interact with this form control" maxlength="100" disabled="disabled" />
+                        <input class="input" type="text" id="text-2" name="text-2" placeholder="Placeholder text…" value="You cannot interact with this form control" maxlength="100" disabled="disabled">
                     </label>
                 </div>
 
                 <div class="sg-example">
                     <label class="label" for="text-3">
                         Read-only
-                        <input class="input" type="text" id="text-3" name="text-3" placeholder="Placeholder text…" value="You cannot modify the value of this form control" readonly="readonly" maxlength="100" />
+                        <input class="input" type="text" id="text-3" name="text-3" placeholder="Placeholder text…" value="You cannot modify the value of this form control" readonly="readonly" maxlength="100">
                     </label>
                 </div>
 
                 <div class="sg-example">
                     <label class="label" for="email">
                         Email
-                        <input class="input" type="email" id="email" name="email" placeholder="user@domain.com" value="" maxlength="100" />
+                        <input class="input" type="email" id="email" name="email" placeholder="user@domain.com" value="" maxlength="100">
                         <span class="help-text">This is default help text for this form control.</span>
                     </label>
                 </div>
@@ -730,7 +730,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
                     <div class="toggle-password js-toggle-password">
                         <label class="label" for="password">
                             Password
-                            <input class="input" type="password" id="password" name="password" placeholder="" value="" maxlength="100" />
+                            <input class="input" type="password" id="password" name="password" placeholder="" value="" maxlength="100">
                         </label>
 
                         <button class="u-visuallyhidden toggle js-toggle" type="button">Show</button>
@@ -741,7 +741,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 <div class="sg-example">
                     <label class="label" for="url">
                         URL
-                        <input class="input" type="url" id="url" name="url" placeholder="http://www.google.com" value="" maxlength="100" />
+                        <input class="input" type="url" id="url" name="url" placeholder="http://www.google.com" value="" maxlength="100">
                     </label>
                 </div>
 
@@ -749,29 +749,29 @@ p q r s t u v w x y z { | } ~ </pre></code>
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><label class="label" for="text-a">
     Text
-    <input class="input" type="text" id="text-a" name="text-a" placeholder="Placeholder text…" value="" maxlength="100" />
+    <input class="input" type="text" id="text-a" name="text-a" placeholder="Placeholder text…" value="" maxlength="100">
 </label>
 
 <label class="label label--disabled" for="text-b">
     Disabled
-    <input class="input" type="text" id="text-b" name="text-b" placeholder="Placeholder text…" value="You cannot interact with this form control" maxlength="100" disabled="disabled" />
+    <input class="input" type="text" id="text-b" name="text-b" placeholder="Placeholder text…" value="You cannot interact with this form control" maxlength="100" disabled="disabled">
 </label>
 
 <label class="label" for="text-c">
     Readonly
-    <input class="input" type="text" id="text-c" name="text-c" placeholder="Placeholder text…" value="You cannot modify the value of this form control" maxlength="100" readonly="readonly" />
+    <input class="input" type="text" id="text-c" name="text-c" placeholder="Placeholder text…" value="You cannot modify the value of this form control" maxlength="100" readonly="readonly">
 </label>
 
 <label class="label" for="email-d">
     Email
-    <input class="input" type="email" id="email-d" name="email-d" placeholder="user@domain.com" value="" maxlength="100" />
+    <input class="input" type="email" id="email-d" name="email-d" placeholder="user@domain.com" value="" maxlength="100">
     <span class="help-text">This is default help text for this form control.</span>
 </label>
 
 <div class="toggle-password">
     <label class="label" for="password-e">
         Password
-        <input class="input" type="password" id="password-e" name="password-e" placeholder="" value="" maxlength="100" />
+        <input class="input" type="password" id="password-e" name="password-e" placeholder="" value="" maxlength="100">
         <span class="help-text help-text--right">This is right-aligned help text for this form control.</span>
     </label>
 
@@ -780,7 +780,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
 
 <label class="label" for="url-a">
     URL
-    <input class="input" type="url" id="url-a" name="url-a" placeholder="http://www.google.com" value="" maxlength="100" />
+    <input class="input" type="url" id="url-a" name="url-a" placeholder="http://www.google.com" value="" maxlength="100">
 </label></code>
                 </div>
             </section>
@@ -792,49 +792,49 @@ p q r s t u v w x y z { | } ~ </pre></code>
 
                 <h2 class="sg-heading-spacer">Default</h2>
                 <label class="label label--checkbox" for="checkbox-1">
-                    <input type="checkbox" id="checkbox-1" name="checkbox" value="1" /> Choice 1
+                    <input type="checkbox" id="checkbox-1" name="checkbox" value="1"> Choice 1
                 </label>
 
                 <label class="label label--checkbox label--disabled" for="checkbox-2">
-                    <input type="checkbox" id="checkbox-2" name="checkbox" value="2" disabled="disabled" /> Choice 2
+                    <input type="checkbox" id="checkbox-2" name="checkbox" value="2" disabled="disabled"> Choice 2
                 </label>
 
                 <label class="label label--checkbox" for="checkbox-3">
-                    <input type="checkbox" id="checkbox-3" name="checkbox" value="3" /> Choice 3
+                    <input type="checkbox" id="checkbox-3" name="checkbox" value="3"> Choice 3
                 </label>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><label for="checkbox-a" class="label label--checkbox">
-    <input type="checkbox" id="checkbox-a" name="checkbox" value="1" /> Choice 1
+    <input type="checkbox" id="checkbox-a" name="checkbox" value="1"> Choice 1
 </label>
 
 <label class="label label--checkbox label--disabled" for="checkbox-b">
-    <input type="checkbox" id="checkbox-b" name="checkbox" value="2" disabled="disabled" /> Choice 2
+    <input type="checkbox" id="checkbox-b" name="checkbox" value="2" disabled="disabled"> Choice 2
 </label></code>
                 </div>
 
                 <h2 class="sg-heading-spacer">Inline</h2>
                 <label class="label label--checkbox label--inline" for="checkbox-4">
-                    <input type="checkbox" id="checkbox-4" name="checkbox2" value="1" /> Choice 1
+                    <input type="checkbox" id="checkbox-4" name="checkbox2" value="1"> Choice 1
                 </label>
 
                 <label class="label label--checkbox label--inline label--disabled" for="checkbox-5">
-                    <input type="checkbox" id="checkbox-5" name="checkbox2" value="2" disabled="disabled" /> Choice 2
+                    <input type="checkbox" id="checkbox-5" name="checkbox2" value="2" disabled="disabled"> Choice 2
                 </label>
 
                 <label class="label label--checkbox label--inline" for="checkbox-6">
-                    <input type="checkbox" id="checkbox-6" name="checkbox2" value="3" /> Choice 3
+                    <input type="checkbox" id="checkbox-6" name="checkbox2" value="3"> Choice 3
                 </label>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><label class="label label--checkbox label--inline" for="checkbox-c">
-    <input type="checkbox" id="checkbox-c" name="checkbox" value="1" /> Choice 1
+    <input type="checkbox" id="checkbox-c" name="checkbox" value="1"> Choice 1
 </label>
 
 <label class="label label--checkbox label--inline label--disabled" for="checkbox-d">
-    <input type="checkbox" id="checkbox-d" name="checkbox" value="2" disabled="disabled" /> Choice 2
+    <input type="checkbox" id="checkbox-d" name="checkbox" value="2" disabled="disabled"> Choice 2
 </label></code>
                 </div>
             </section>
@@ -846,49 +846,49 @@ p q r s t u v w x y z { | } ~ </pre></code>
 
                 <h2 class="sg-heading-spacer">Default</h2>
                 <label class="label label--radio" for="radio-1">
-                    <input type="radio" id="radio-1" name="radio" value="1" /> Choice 1
+                    <input type="radio" id="radio-1" name="radio" value="1"> Choice 1
                 </label>
 
                 <label class="label label--radio label--disabled" for="radio-2">
-                    <input type="radio" id="radio-2" name="radio" value="2" disabled="disabled" /> Choice 2
+                    <input type="radio" id="radio-2" name="radio" value="2" disabled="disabled"> Choice 2
                 </label>
 
                 <label class="label label--radio" for="radio-3">
-                    <input type="radio" id="radio-3" name="radio" value="3" /> Choice 3
+                    <input type="radio" id="radio-3" name="radio" value="3"> Choice 3
                 </label>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><label for="radio-a" class="label label--radio">
-    <input type="radio" id="radio-a" name="radio" value="1" /> Choice 1
+    <input type="radio" id="radio-a" name="radio" value="1"> Choice 1
 </label>
 
 <label class="label label--radio label--disabled" for="radio-b">
-    <input type="radio" id="radio-b" name="radio" value="2" disabled="disabled" /> Choice 2
+    <input type="radio" id="radio-b" name="radio" value="2" disabled="disabled"> Choice 2
 </label></code>
                 </div>
 
                 <h2 class="sg-heading-spacer">Inline</h2>
                 <label class="label label--radio label--inline" for="radio-4">
-                    <input type="radio" id="radio-4" name="radio2" value="1" /> Choice 1
+                    <input type="radio" id="radio-4" name="radio2" value="1"> Choice 1
                 </label>
 
                 <label class="label label--radio label--inline label--disabled" for="radio-5">
-                    <input type="radio" id="radio-5" name="radio2" value="2" disabled="disabled" /> Choice 2
+                    <input type="radio" id="radio-5" name="radio2" value="2" disabled="disabled"> Choice 2
                 </label>
 
                 <label class="label label--radio label--inline" for="radio-6">
-                    <input type="radio" id="radio-6" name="radio2" value="3" /> Choice 3
+                    <input type="radio" id="radio-6" name="radio2" value="3"> Choice 3
                 </label>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><label for="radio-c" class="label label--radio label--inline">
-    <input type="radio" id="radio-c" name="radio" value="1" /> Choice 1
+    <input type="radio" id="radio-c" name="radio" value="1"> Choice 1
 </label>
 
 <label class="label label--radio label--inline label--disabled" for="radio-d">
-    <input type="radio" id="radio-d" name="radio" value="2" disabled="disabled" /> Choice 2
+    <input type="radio" id="radio-d" name="radio" value="2" disabled="disabled"> Choice 2
 </label></code>
                 </div>
             </section>
@@ -947,7 +947,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
                     </select>
                 </label>
 
-                <label class="label label--inline label--disabled" for="select-2">
+                <label class="label label--inline label--disabled" for="select-4">
                     Disabled
                     <select class="input" id="select-4" name="select-4" disabled="disabled">
                         <option value="1">Option 1</option>
@@ -1005,16 +1005,16 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 <div class="sg-example">
                     <label class="label has-error" for="text-error">
                         Label
-                        <input class="input" type="text" id="text-error" name="text-error" placeholder="Placeholder text…" value="" maxlength="100" />
+                        <input class="input" type="text" id="text-error" name="text-error" placeholder="Placeholder text…" value="" maxlength="100">
                         <span class="help-text">Better check yourself, you’re not looking too good.</span>
                     </label>
                 </div>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <code class="sg-code prettyprint"><label for="text" class="label has-error">
+                    <code class="sg-code prettyprint"><label for="text-error-a" class="label has-error">
     Label
-    <input class="input" type="text" id="text-error-a" name="text-error-a" placeholder="Placeholder text…" value="" maxlength="100" />
+    <input class="input" type="text" id="text-error-a" name="text-error-a" placeholder="Placeholder text…" value="" maxlength="100">
     <span class="help-text">Better check yourself, you’re not looking too good.</span>
 </label></code>
                 </div>
@@ -1023,16 +1023,16 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 <div class="sg-example">
                     <label class="label has-warning" for="text-warning">
                         Label
-                        <input class="input" type="text" id="text-warning" name="text-warning" placeholder="Placeholder text…" value="" maxlength="100" />
+                        <input class="input" type="text" id="text-warning" name="text-warning" placeholder="Placeholder text…" value="" maxlength="100">
                         <span class="help-text">Oh snap! Change a few things up and try submitting again.</span>
                     </label>
                 </div>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <code class="sg-code prettyprint"><label for="text" class="label has-warning">
+                    <code class="sg-code prettyprint"><label for="text-warning-a" class="label has-warning">
     Label
-    <input class="input" type="text" id="text-warning-a" name="text-warning-a" placeholder="Placeholder text…" value="" maxlength="100" />
+    <input class="input" type="text" id="text-warning-a" name="text-warning-a" placeholder="Placeholder text…" value="" maxlength="100">
     <span class="help-text">Oh snap! Change a few things up and try submitting again.</span>
 </label></code>
                 </div>
@@ -1041,16 +1041,16 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 <div class="sg-example">
                     <label class="label has-success" for="text-success">
                         Label
-                        <input class="input" type="text" id="text-success" name="text-success" placeholder="Placeholder text…" value="" maxlength="100" />
+                        <input class="input" type="text" id="text-success" name="text-success" placeholder="Placeholder text…" value="" maxlength="100">
                         <span class="help-text">Well done! You successfully read this important alert message.</span>
                     </label>
                 </div>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <code class="sg-code prettyprint"><label for="text" class="label has-success">
+                    <code class="sg-code prettyprint"><label for="text-success-a" class="label has-success">
     Label
-    <input class="input" type="text" id="text-success-a" name="text-success-a" placeholder="Placeholder text…" value="" maxlength="100" />
+    <input class="input" type="text" id="text-success-a" name="text-success-a" placeholder="Placeholder text…" value="" maxlength="100">
     <span class="help-text">Well done! You successfully read this important alert message.</span>
 </label></code>
                 </div>
@@ -1313,7 +1313,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 </header>
 
                 <div class="map-embed js-map-embed" data-url-static="https://maps.google.com/maps/api/staticmap?center=-33.9338399.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.2833411829097!2d18.45708!3d-33.933839899999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0a28811b49%3A0xb935331aac1a0616!2s9+Queens+Park+Ave%2C+Salt+River%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1414765028558">
-                    <img class="map-embed__img" src="https://maps.google.com/maps/api/staticmap?center=-33.9338399,18.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" alt="Next: 9 Queens Park Avenue" />
+                    <img class="map-embed__img" src="https://maps.google.com/maps/api/staticmap?center=-33.9338399,18.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" alt="Next: 9 Queens Park Avenue">
                     <iframe class="map-embed__canvas is-hidden"></iframe>
                     <a class="btn btn--icon btn--small" href="https://www.google.co.za/maps/place/9+Queens+Park+Ave,+Salt+River,+Cape+Town,+7925/@-33.9338399,18.45708,17z" role="button">View on Google Maps<span class="icon fa fa-external-link" aria-hidden="true"></span></a>
                 </div>
@@ -1321,7 +1321,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><div class="map-embed js-map-embed" data-url-static="https://maps.google.com/maps/api/staticmap?center=-33.9338399.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" data-url-embed="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3310.2833411829097!2d18.45708!3d-33.933839899999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d0a28811b49%3A0xb935331aac1a0616!2s9+Queens+Park+Ave%2C+Salt+River%2C+Cape+Town%2C+7925!5e0!3m2!1sen!2sza!4v1414765028558">
-    <img class="map-embed__img" src="https://maps.google.com/maps/api/staticmap?center=-33.9338399,18.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" alt="Next: 9 Queens Park Avenue" />
+    <img class="map-embed__img" src="https://maps.google.com/maps/api/staticmap?center=-33.9338399,18.45708&amp;zoom=17&amp;markers=-33.9338399,18.45708&amp;size=400x400&amp;sensor=false" alt="Next: 9 Queens Park Avenue">
     <iframe class="map-embed__canvas is-hidden"></iframe>
     <a class="btn btn--icon btn--small" href="https://www.google.co.za/maps/place/9+Queens+Park+Ave,+Salt+River,+Cape+Town,+7925/@-33.9338399,18.45708,17z" role="button">View on Google Maps<span class="icon fa fa-external-link" aria-hidden="true"></span></a>
 </div></code>
@@ -1334,16 +1334,16 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 </header>
 
                 <audio controls="controls">
-                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />
-                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />
+                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4">
+                    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis">
                     <p>Your user agent does not support the HTML5 Audio element.</p>
                 </audio>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><audio controls="controls">
-    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4" />
-    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis" />
+    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type="audio/mp4">
+    <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type="audio/ogg; codecs=vorbis">
     <p>Your user agent does not support the HTML5 Audio element.</p>
 </audio></code>
                 </div>
@@ -1355,16 +1355,16 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 </header>
 
                 <video poster="../assets/images/general/poster-video.jpg" controls="controls" preload="auto">
-                    <source id="ogv" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg" />
-                    <source id="mp4" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4" />
+                    <source id="ogv" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg">
+                    <source id="mp4" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4">
                     <p>Your user agent does not support the HTML5 Video element.</p>
                 </video>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><video poster="../assets/images/general/poster-video.jpg" controls="controls" preload="auto">
-    <source id="ogv-a" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg" />
-    <source id="mp4-a" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4" />
+    <source id="ogv-a" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg">
+    <source id="mp4-a" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4">
     <p>Your user agent does not support the HTML5 Video element.</p>
 </video></code>
                 </div>
@@ -1635,7 +1635,7 @@ p q r s t u v w x y z { | } ~ </pre></code>
     <footer class="sg-footer" role="contentinfo">
         <div class="sg-l-wrapper">
             <a class="sg-logo" href="index.html">
-                <img src="http://www.wearenext.co.za/assets/images/logos/logo-next-light-57x22.png" srcset="http://www.wearenext.co.za/assets/images/logos/logo-next-light-144x55.png 2x" width="57" height="22" alt="Next" />
+                <img src="http://www.wearenext.co.za/assets/images/logos/logo-next-light-57x22.png" srcset="http://www.wearenext.co.za/assets/images/logos/logo-next-light-144x55.png 2x" width="57" height="22" alt="Next">
             </a>
 
             <div class="sg-social">
