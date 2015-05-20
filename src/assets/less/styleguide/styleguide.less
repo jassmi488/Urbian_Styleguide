@@ -19,6 +19,7 @@
  * .....Card
  * .....Code
  * .....Footer
+ * .....Grid
  * .....Header
  * .....Layout
  * .....Nav
@@ -454,6 +455,41 @@
     .sg-copyright {
         color: @sg-color-white-dark;
         font-size: 87.5%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   $Grid
+   ========================================================================== */
+
+/**
+ * Row
+ */
+
+.sg-row {
+    background-color: @sg-color-white-dark;
+}
+
+/**
+ * Column
+ */
+
+.sg-col {
+    background-color: @sg-color-gray-dark;
+
+    .sg-code {
+        background-color: @sg-color-gray-dark;
+        color: @sg-color-white;
+        display: inline-block;
+        font-size: 0.875em; /* 14 / 16 */
+        margin-bottom: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.75em;
     }
 }
 
