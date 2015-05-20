@@ -13,12 +13,47 @@ STYLEGUIDE = {
                Code
                ========================================================================== */
 
+            /*
+             * Encode
+             */
+
+            var $code = $('.js-sg-code');
+
+            if ($code.length > 0)
+            {
+
+                $code.each(function ()
+                {
+                    var $code_sample = $('code', $(this));
+
+                    /*
+                     * Escape text and replace with HTML character entities
+                     */
+
+                    $code_sample.text($code_sample.html());
+
+                    /*
+                     * Using `%2D` instead of `-` so that JavaScript is not initialized in `<code>` blocks
+                     */
+
+                    $code_sample.html($code_sample.html().replace(/%2D/g, '-'));
+                });
+
+                /*
+                 * Make the source code pretty
+                 */
+
+                prettyPrint();
+            }
+
+            /*
+             * Toggle
+             */
+
             var $toggle_code = $('.js-sg-toggle-code');
 
             if ($toggle_code.length > 0)
             {
-                window.prettyPrint && prettyPrint();
-
                 $toggle_code.each(function ()
                 {
                     var $toggle = $(this);
@@ -27,6 +62,7 @@ STYLEGUIDE = {
 
                     $toggle.on('click', function ()
                     {
+                        $code.toggleClass('is-visible');
                         $toggle.toggleClass('is-active');
 
                         /*
@@ -43,8 +79,6 @@ STYLEGUIDE = {
                         {
                             $(this).html(icon_code + 'View Code');
                         }
-
-                        $code.toggleClass('is-visible');
                     });
                 });
             }
