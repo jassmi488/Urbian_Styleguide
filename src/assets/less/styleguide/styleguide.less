@@ -260,19 +260,19 @@
         color: @sg-color-gray-dark;
         counter-reset: section;
         font-size: 1.125em; /* 18 / 16 */
-        padding-left: 0.5em;
+        padding-left: 0.75em;
 
         li {
             color: @sg-color-gray-dark;
             font-weight: @sg-weight-bold;
-            margin-bottom: 0.25em;
+            margin-bottom: 0.75em;
 
             &:before {
                 color: @sg-color-gray;
                 content: counters(section, ".") ". ";
                 counter-increment: section;
                 font-weight: @sg-weight-bold;
-                padding-right: 0.25em;
+                padding-right: 0.375em;
             }
 
             a {
@@ -291,10 +291,11 @@
 
             .sg-list {
                 counter-reset: section;
-                margin-top: 0.25em;
+                margin-top: 0.375em;
                 padding-left: 1em;
 
                 li {
+                    margin-bottom: 0.375em;
 
                     &:before {
                         counter-increment: section;
