@@ -151,9 +151,6 @@ module.exports = function (grunt)
                 ]
             }
         },
-        jshint: {
-            files: ['src/assets/js/main.js']
-        },
         less: {
             build: {
                 files: {
