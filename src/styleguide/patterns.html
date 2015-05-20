@@ -51,7 +51,18 @@
                 <label class="sg-label">
                     <select class="sg-input">
                         <option value="">Jump to…</option>
-                        <option value="sg-color-palette">Color Palette</option>
+                        <option value="sg-navigation-horizontal">Navigation – Horizontal</option>
+                        <option value="sg-navigation-vertical">Navigation – Vertical</option>
+                        <option value="sg-accordion">Accordion</option>
+                        <option value="sg-alerts">Alerts</option>
+                        <option value="sg-breadcrumbs">Breadcrumbs</option>
+                        <option value="sg-card">Card</option>
+                        <option value="sg-carousel">Carousel</option>
+                        <option value="sg-modal">Modal</option>
+                        <option value="sg-pagination">Pagination</option>
+                        <option value="sg-social">Social</option>
+                        <option value="sg-tabs">Tabs</option>
+                        <option value="sg-tooltips">Tooltips</option>
                     </select>
                 </label>
             </form>
@@ -62,7 +73,526 @@
 
     <main class="sg-main" role="main">
         <div class="sg-l-wrapper">
+            <section class="sg-l-section" id="sg-navigation-horizontal">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Navigation – Horizontal</h1>
+                </header>
 
+                <nav class="nav nav--horizontal js-nav-dropdown" role="navigation">
+                    <ol class="list">
+                        <li><a href="#sg-navigation-horizontal">Home</a></li>
+                        <li>
+                            <a href="#sg-navigation-horizontal" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Services<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                            <ol class="list list--menu" aria-hidden="true" role="menu">
+                                <li><a href="#sg-navigation-horizontal">Web Design</a></li>
+                                <li class="is-separator"><a href="#sg-navigation-horizontal">Front-end Development</a></li>
+                                <li><a href="#sg-navigation-horizontal">Strategy</a></li>
+                            </ol>
+                        </li>
+                        <li>
+                            <a href="#sg-navigation-horizontal" class="js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Work<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                            <ol class="list list--menu" aria-hidden="true" role="menu">
+                                <li><a href="#sg-navigation-horizontal">Project – 01</a></li>
+                                <li><a href="#sg-navigation-horizontal">Project – 02</a></li>
+                                <li><a href="#sg-navigation-horizontal">Project – 03</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#sg-navigation-horizontal">News</a></li>
+                        <li><a href="#sg-navigation-horizontal">Contact</a></li>
+                    </ol>
+                </nav>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><nav class="nav nav--horizontal js-nav-dropdown" role="navigation">
+    <ol class="list">
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Services<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+            <ol class="list list--menu" aria-hidden="true" role="menu">
+                <li><a href="#">Web Design</a></li>
+                <li class="is-separator"><a href="#">Front-end Development</a></li>
+            </ol>
+        </li>
+    </ol>
+</nav></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-navigation-vertical">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Navigation – Vertical</h1>
+                </header>
+
+                <nav class="nav nav--vertical" role="navigation">
+                    <ol class="list">
+                        <li class="is-active"><a href="#sg-navigation-vertical">Home</a></li>
+                        <li><a href="#sg-navigation-vertical">Services</a></li>
+                        <li><a href="#sg-navigation-vertical">Work</a></li>
+                        <li><a href="#sg-navigation-vertical">News</a></li>
+                        <li><a href="#sg-navigation-vertical">Contact</a></li>
+                    </ol>
+                </nav>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><nav class="nav nav--vertical" role="navigation">
+    <ol class="list">
+        <li class="is-active"><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+    </ol>
+</nav></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-accordion">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Accordion</h1>
+                </header>
+
+                <div class="accordion js-accordion" role="tablist">
+                    <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
+                        <div class="accordion-item__title" id="accordion-tab-1" aria-controls="accordion-panel-1" role="tab">
+                            <a class="accordion-item__link" href="#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a>
+                        </div>
+                        <div class="accordion-item__contents" id="accordion-panel-1" aria-labelledby="accordion-tab-1" role="tabpanel">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
+                        <div class="accordion-item__title" id="accordion-tab-2" aria-controls="accordion-panel-2" role="tab">
+                            <a class="accordion-item__link" href="#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                        </div>
+                        <div class="accordion-item__contents" id="accordion-panel-2" aria-labelledby="accordion-tab-2" role="tabpanel">
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
+                        <div class="accordion-item__title" id="accordion-tab-3" aria-controls="accordion-panel-3" role="tab">
+                            <a class="accordion-item__link" href="#sg-accordion" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 3<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                        </div>
+                        <div class="accordion-item__contents" id="accordion-panel-3" aria-labelledby="accordion-tab-3" role="tabpanel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="accordion js-accordion" role="tablist">
+    <div class="accordion-item is-selected" role="tab" aria-selected="true" aria-hidden="false">
+        <div class="accordion-item__title" id="accordion-tab-a" aria-controls="accordion-panel-a" role="tab">
+            <a class="accordion-item__link" href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 1<span class="icon fa fa-caret-up" aria-hidden="true"></span></a>
+        </div>
+        <div class="accordion-item__contents" id="accordion-panel-a" aria-labelledby="accordion-tab-a" role="tabpanel">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam…</p>
+        </div>
+    </div>
+
+    <div class="accordion-item" role="tab" aria-selected="false" aria-hidden="true">
+        <div class="accordion-item__title" id="accordion-tab-b" aria-controls="accordion-panel-b" role="tab">
+            <a class="accordion-item__link" href="#" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down">Lorem ipsum dolor sit amet 2<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+        </div>
+        <div class="accordion-item__contents" id="accordion-panel-b" aria-labelledby="accordion-tab-b" role="tabpanel">
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia…</p>
+        </div>
+    </div>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-alerts">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Alerts</h1>
+                </header>
+
+                <h2 class="sg-heading-spacer">Success</h2>
+                <div class="alert alert--success js-alert" role="alert">
+                    <div class="alert__title">Success</div>
+                    <p class="alert__message">
+                        <b>Well done!</b> You’ve successfully read <a class="alert__link" href="#sg-alerts">this important alert message</a>.
+                    </p>
+                    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="alert alert--success js-alert" role="alert"><div class="alert__title">Success</div>
+    <p class="alert__message">
+        <b>Well done!</b> You successfully read <a class="alert__link" href="#">this important alert message</a>.
+    </p>
+    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+</div></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Info</h2>
+                <div class="alert alert--info js-alert" role="alert">
+                    <div class="alert__title">Information</div>
+                    <p class="alert__message">
+                        <b>Heads up!</b> This <a class="alert__link" href="#sg-alerts">alert needs your attention</a>, but it’s not super important.
+                    </p>
+                    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="alert alert--info js-alert" role="alert"><div class="alert__title">Information</div>
+    <p class="alert__message">
+        <b>Heads up!</b> This <a class="alert__link" href="#">alert needs your attention</a>, but it’s not super important.
+    </p>
+    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+</div></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Warning</h2>
+                <div class="alert alert--warning js-alert" role="alert">
+                    <div class="alert__title">Warning!</div>
+                    <p class="alert__message">
+                        Better <a class="alert__link" href="#sg-alerts">check yourself</a>, you’re not looking too good.
+                    </p>
+                    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="alert alert--warning js-alert" role="alert"><div class="alert__title">Warning!</div>
+    <p class="alert__message">
+        Better <a class="alert__link" href="#sg-alerts">check yourself</a>, you’re not looking too good.
+    </p>
+    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+</div></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Error</h2>
+                <div class="alert alert--error js-alert" role="alert">
+                    <div class="alert__title">Error</div>
+                    <p class="alert__message">
+                        <b>Oh snap!</b> Change a few things up and <a class="alert__link" href="#sg-alerts">try submitting again</a>.
+                    </p>
+                    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="alert alert--error js-alert" role="alert"><div class="alert__title">Error</div>
+    <p class="alert__message">
+        <b>Oh snap!</b> <a class="alert__link" href="#">Change a few things up</a> and try submitting again.
+    </p>
+    <button class="alert__dismiss js-dismiss" type="button"><span class="icon fa fa-times" aria-hidden="true"></span></button>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-breadcrumbs">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Breadcrumbs</h1>
+                </header>
+
+                <div class="breadcrumbs">
+                    <ol class="list">
+                        <li><a href="#sg-breadcrumbs">Services</a></li>
+                        <li><a href="#sg-breadcrumbs">Strategy</a></li>
+                        <li><a href="#sg-breadcrumbs">Design/UX</a></li>
+                        <li class="is-active">Technology</li>
+                    </ol>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="breadcrumbs">
+    <ol class="list">
+        <li><a href="#">Services</a></li>
+        <li class="is-active">Technology</li>
+    </ol>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-card">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Card</h1>
+                </header>
+
+                <div class="card">
+                    <a class="card__link" href="#sg-card">
+                        <img class="card__img" src="http://placehold.it/300x169" width="300" height="169" alt="" />
+                    </a>
+                    <div class="card-inner">
+                        <h3 class="card__title">Lorem ipsum dolor sit amet</h3>
+                        <time class="card__time" datetime="2014-08-27">27 August, 2014</time>
+                        <p class="card__synopsis">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium…
+                        </p>
+                        <a class="btn" href="#sg-card" role="button">View</a>
+                    </div>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="card">
+    <a class="card__link" href="#">
+        <img class="card__img" src="http://placehold.it/300x169" width="300" height="169" alt="" />
+    </a>
+    <div class="card-inner">
+        <h3 class="card__title">Lorem ipsum dolor sit amet</h3>
+        <time class="card__time" datetime="2014-08-27">27 August, 2014</time>
+        <p class="card__synopsis">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem…
+        </p>
+        <a class="btn" href="#" role="button">View</a>
+    </div>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-carousel">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Carousel</h1>
+                </header>
+
+                <div class="slick js-carousel">
+                    <div>
+                        <img src="http://placehold.it/1400x787" width="1400" height="787" alt="" />
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1400x787" width="1400" height="787" alt="" />
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/1400x787" width="1400" height="787" alt="" />
+                    </div>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="slick js%2Dcarousel">
+    <div>
+        <img src="http://placehold.it/1400x787" width="1400" height="787" alt="" />
+    </div>
+    <div>
+        <img src="http://placehold.it/1400x787" width="1400" height="787" alt="" />
+    </div>
+    <div>
+        <img src="http://placehold.it/1400x787" width="1400" height="787" alt="" />
+    </div>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-modal">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Modal</h1>
+                </header>
+
+                <p>Lorem ipsum dolor sit amet, <a href="#modal" data-toggle="modal" data-target="#modal">consectetur adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal-label" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="modal-label">Modal Title</h4>
+                                <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span class="icon fa fa-times" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains all of the letters of the alphabet. It is used to show fonts and to test typewriters and computer keyboards, and in other applications involving all of the letters in the English alphabet. Owing to its brevity and coherence, it has become widely known.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="btn-group">
+                                    <a class="btn btn--transparent" href="#sg-modal" data-dismiss="modal" role="button">Close</a>
+                                    <a class="btn" href="#sg-modal" role="button">Save</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modal-label-2" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-label-2">Modal Title</h4>
+                <button class="modal-close" type="button" data-dismiss="modal-2" aria-label="Close">
+                    <span class="icon fa fa-times" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>“The quick brown fox jumps over the lazy dog” is an English–language pangram — a phrase that contains…</p>
+            </div>
+            <div class="modal-footer">
+                Modal Footer
+            </div>
+        </div>
+    </div>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-pagination">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Pagination</h1>
+                </header>
+
+                <div class="pagination">
+                    <ol class="list">
+                        <li class="is-disabled"><span class="icon fa fa-chevron-left" aria-hidden="true"></span>Prev</li>
+                        <li class="is-active"><a href="#sg-pagination">1</a></li>
+                        <li><a href="#sg-pagination">2</a></li>
+                        <li><a href="#sg-pagination">3</a></li>
+                        <li class="is-spacer">…</li>
+                        <li><a href="#sg-pagination">7</a></li>
+                        <li><a href="#sg-pagination">8</a></li>
+                        <li><a href="#sg-pagination">9</a></li>
+                        <li><a href="#sg-pagination">Next<span class="icon fa fa-chevron-right" aria-hidden="true"></span></a></li>
+                    </ol>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="pagination">
+    <ol class="list">
+        <li class="is-disabled"><span class="icon fa fa-chevron-left" aria-hidden="true"></span>Prev</li>
+        <li class="is-active"><a href="#">1</a></li>
+        <li class="is-spacer">…</li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Next<span class="icon fa fa-chevron-right" aria-hidden="true"></span></a></li>
+    </ol>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-social">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Social</h1>
+                </header>
+
+                <div class="social">
+                    <ol class="list">
+                        <li>
+                            <a href="#sg-social" title="Follow us on Facebook"><span class="icon fa fa-facebook-official" aria-hidden="true"></span></a>
+                        </li>
+                        <li>
+                            <a href="#sg-social" title="Follow us on Google+"><span class="icon fa fa-google-plus" aria-hidden="true"></span></a>
+                        </li>
+                        <li>
+                            <a href="#sg-social" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="social">
+    <ol class="list">
+        <li>
+            <a href="#" title="Follow us on Facebook"><span class="icon fa fa-facebook-official" aria-hidden="true"></span></a>
+        </li>
+        <li>
+            <a href="#" title="Follow us on Google+"><span class="icon fa fa-google-plus" aria-hidden="true"></span></a>
+        </li>
+        <li>
+            <a href="#" title="Follow us on Twitter"><span class="icon fa fa-twitter" aria-hidden="true"></span></a>
+        </li>
+    </ol>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-tabs">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Tabs</h1>
+                </header>
+
+                <div class="tabs js-tabs">
+                    <ol class="tab-list" role="tablist">
+                        <li class="tab-list__tab is-selected" id="tab-1" aria-controls="panel-1" aria-selected="true" role="tab">
+                            <a class="tab-list__link" href="#sg-tabs">Tab 1</a>
+                        </li>
+                        <li class="tab-list__tab" id="tab-2" aria-controls="panel-2" aria-selected="false" role="tab">
+                            <a class="tab-list__link" href="#sg-tabs">Tab 2</a>
+                        </li>
+                        <li class="tab-list__tab" id="tab-3" aria-controls="panel-3" aria-selected="false" role="tab">
+                            <a class="tab-list__link" href="#sg-tabs">Tab 3</a>
+                        </li>
+                    </ol>
+                    <div class="tab-panel is-active" id="panel-1" aria-labelledby="tab-1" aria-hidden="false" role="tabpanel">
+                        <p>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </p>
+                        <p>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                    </div>
+                    <div class="tab-panel" id="panel-2" aria-labelledby="tab-2" aria-hidden="true" role="tabpanel">
+                        <p>
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </p>
+                    </div>
+                    <div class="tab-panel" id="panel-3" aria-labelledby="tab-3" aria-hidden="true" role="tabpanel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="tabs js-tabs">
+    <ol class="tab-list" role="tablist">
+        <li class="tab-list__tab is-selected" id="tab-a" aria-controls="panel-a" aria-selected="true" role="tab">
+            <a class="tab-list__link" href="#">Tab 1</a>
+        </li>
+        <li class="tab-list__tab" id="tab-b" aria-controls="panel-b" aria-selected="false" role="tab">
+            <a class="tab-list__link" href="#">Tab 2</a>
+        </li>
+    </ol>
+    <div class="tab-panel is-active" id="panel-a" aria-labelledby="tab-a" aria-hidden="false" role="tabpanel">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam…
+        </p>
+    </div>
+    <div class="tab-panel" id="panel-b" aria-labelledby="tab-b" aria-hidden="true" role="tabpanel">
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia…
+        </p>
+    </div>
+</div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-tooltips">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Tooltips</h1>
+                </header>
+
+                <p>Sed ut <a class="js-tooltip" href="#sg-tooltips" data-tooltip-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">perspiciatis unde omnis</a>
+                    iste natus error sit voluptatem accusantium <a class="js-tooltip" href="#sg-tooltips" data-placement="right" title="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">doloremque laudantium</a>,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                    sunt explicabo. Nemo enim ipsam voluptatem <a class="js-tooltip" href="#sg-tooltips" data-placement="bottom" title="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">quia voluptas</a>
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur <a class="js-tooltip" href="#sg-tooltips" data-tooltip-placement="left" title="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.">magni dolores</a>
+                    eos qui ratione voluptatem sequi nesciunt.</p>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><p>Sed ut <a class="js%2Dtooltip" href="#" data-placement="top" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
+<p>Sed ut <a class="js%2Dtooltip" href="#" data-placement="right" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
+<p>Sed ut <a class="js%2Dtooltip" href="#" data-placement="bottom" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p>
+<p>Sed ut <a class="js%2Dtooltip" href="#" data-placement="left" title="Lorem ipsum dolor">perspiciatis unde omnis</a> iste natus</p></code>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -109,6 +639,7 @@
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/main.js"></script>
     <% } %>
+    <script src="../assets/js/styleguide/plugins.js"></script>
     <script src="../assets/js/styleguide/styleguide.js"></script>
     <script>UTIL.init();</script>
     <script>STYLEGUIDE_UTIL.init();</script>
