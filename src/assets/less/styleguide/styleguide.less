@@ -78,7 +78,7 @@
     color: @sg-color-gray-dark;
     font-family: @sg-font;
     font-size: 1em;
-    margin-top: 2em;
+    margin-top: 3em;
     margin-bottom: 1em;
     width: 100%;
 }
@@ -174,12 +174,44 @@
 
                 .sg-code {
                     color: @sg-color-black;
+                    display: block;
 
                     &+ .sg-code {
                         color: @sg-color-gray-dark;
                         padding-top: 0.5em;
                     }
                 }
+            }
+        }
+    }
+
+    /**
+     * Icons
+     */
+
+    &.sg-list--icons {
+
+        li {
+            .clearfix();
+            margin-bottom: 2em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .icon {
+                float: left;
+                font-size: 1.625em; /* 26 / 16 */
+                text-align: center;
+                width: 1.25em;
+            }
+
+            .sg-code {
+                background-color: @sg-color-white-dark;
+                display: inline-block;
+                font-size: 0.875em; /* 14 / 16 */
+                margin-left: 1em;
+                padding: 0.125em 0.375em;
             }
         }
     }
@@ -234,7 +266,6 @@
                 float: left;
                 margin-right: 0.5em;
                 margin-left: 0.5em;
-                padding-bottom: 2em;
                 width: 10em;
             }
         }
@@ -382,10 +413,6 @@
 /* ==========================================================================
    $Code
    ========================================================================== */
-
-.sg-code {
-    display: block;
-}
 
 /**
  * Wrapper
