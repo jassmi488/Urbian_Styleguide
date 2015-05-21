@@ -38,6 +38,7 @@
          * Make the source code pretty
          */
 
+        /*global prettyPrint*/
         prettyPrint();
     }
 
