@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "grunt serve",
-    "test": "eslint src/"
+    "test": "eslint src/assets/js/"
   },
   "devDependencies": {
     "eslint": "^0.21.2",
