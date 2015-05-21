@@ -106,9 +106,6 @@ module.exports = function (grunt)
             }
         },
         eslint: {
-            options: {
-                configFile: 'eslint.json'
-            },
             target: ['src/assets/js/main.js']
         },
         'ftp-deploy': {
