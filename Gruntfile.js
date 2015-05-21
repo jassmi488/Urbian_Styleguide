@@ -266,4 +266,5 @@ module.exports = function (grunt)
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('process', ['processhtml']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
+    grunt.registerTask('test', ['csslint', 'eslint']);
 };

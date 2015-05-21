@@ -1,6 +1,7 @@
 ## [Boilerplate Style Guide](http://static.wearenext.co.za/styleguide/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
+[![Build Status](https://magnum.travis-ci.com/we-are-next/styleguide.svg?token=4q8vnSqGs4oqaN95p1Pp)](https://magnum.travis-ci.com/we-are-next/styleguide)
 
 ### Requirements
 
