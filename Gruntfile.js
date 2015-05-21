@@ -105,6 +105,9 @@ module.exports = function (grunt)
                 }
             }
         },
+        eslint: {
+            target: ['src/assets/js/main.js']
+        },
         'ftp-deploy': {
             dist: {
                 auth: {
@@ -150,9 +153,6 @@ module.exports = function (grunt)
                     }
                 ]
             }
-        },
-        jshint: {
-            files: ['src/assets/js/main.js']
         },
         less: {
             build: {

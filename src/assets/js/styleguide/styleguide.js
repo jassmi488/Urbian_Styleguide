@@ -1,140 +1,101 @@
 /* ========================================================================
- * DOM-based Routing
- * Based on http://goo.gl/XtN0RS by Jason Garber
+ * Style Guide JavaScript
  * ======================================================================== */
 
-STYLEGUIDE = {
+(function () {
 
-    common: {
+    'use strict';
 
-        init: function ()
-        {
-            /* ==========================================================================
-               Code
-               ========================================================================== */
+    /* ==========================================================================
+     * Code View
+     * ========================================================================== */
+
+    /*
+     * Encode
+     */
+
+    var $code = $('.js-sg-code');
+
+    if ($code.length > 0) {
+
+        $code.each(function () {
+            var $code_sample = $('code', $(this));
 
             /*
-             * Encode
+             * Escape text and replace with HTML character entities
              */
 
-            var $code = $('.js-sg-code');
+            $code_sample.text($code_sample.html());
 
-            if ($code.length > 0)
-            {
+            /*
+             * Using `%2D` instead of `-` so that JavaScript is not initialized in `<code>` blocks
+             */
 
-                $code.each(function ()
-                {
-                    var $code_sample = $('code', $(this));
+            $code_sample.html($code_sample.html().replace(/%2D/g, '-'));
+        });
 
-                    /*
-                     * Escape text and replace with HTML character entities
-                     */
+        /*
+         * Make the source code pretty
+         */
 
-                    $code_sample.text($code_sample.html());
+        /*global prettyPrint*/
+        prettyPrint();
+    }
 
-                    /*
-                     * Using `%2D` instead of `-` so that JavaScript is not initialized in `<code>` blocks
-                     */
+    /*
+     * Toggle
+     */
 
-                    $code_sample.html($code_sample.html().replace(/%2D/g, '-'));
-                });
+    var $toggle_code = $('.js-sg-toggle-code');
+
+    if ($toggle_code.length > 0) {
+        $toggle_code.each(function () {
+            var $toggle = $(this);
+            var $toggle_wrapper = $toggle.parent();
+            var $code = $('code', $toggle_wrapper);
+
+            $toggle.on('click', function () {
+                $code.toggleClass('is-visible');
+                $toggle.toggleClass('is-active');
 
                 /*
-                 * Make the source code pretty
+                 * Toggle the label of the button
                  */
 
-                prettyPrint();
-            }
+                var icon_code = '<span class="sg-icon fa fa-code" aria-hidden="true"></span>';
 
-            /*
-             * Toggle
-             */
-
-            var $toggle_code = $('.js-sg-toggle-code');
-
-            if ($toggle_code.length > 0)
-            {
-                $toggle_code.each(function ()
-                {
-                    var $toggle = $(this);
-                    var $toggle_wrapper = $toggle.parent();
-                    var $code = $('code', $toggle_wrapper);
-
-                    $toggle.on('click', function ()
-                    {
-                        $code.toggleClass('is-visible');
-                        $toggle.toggleClass('is-active');
-
-                        /*
-                         * Toggle the label of the button
-                         */
-
-                        var icon_code = '<span class="sg-icon fa fa-code" aria-hidden="true"></span>';
-
-                        if ($(this).hasClass('is-active'))
-                        {
-                            $(this).html(icon_code + 'Hide Code');
-                        }
-                        else
-                        {
-                            $(this).html(icon_code + 'View Code');
-                        }
-                    });
-                });
-            }
-
-            /* ==========================================================================
-               Jump to Section
-               ========================================================================== */
-
-            var $jump_action = $('.js-sg-jump');
-
-            $jump_action.on('change', function ()
-            {
-                var section = $(this).find('option:selected')[0].value;
-
-                if (section != '')
-                {
-                    location.hash = '#' + section;
+                if ($(this).hasClass('is-active')) {
+                    $(this).html(icon_code + 'Hide Code');
+                }
+                else {
+                    $(this).html(icon_code + 'View Code');
                 }
             });
-
-            /* ==========================================================================
-               Toggle Navigation
-               ========================================================================== */
-
-            var $toggle_nav = $('.js-sg-toggle-nav');
-
-            $toggle_nav.on('click', function ()
-            {
-                $('.sg-nav--primary').toggleClass('is-open');
-                $toggle_nav.toggleClass('is-active');
-            });
-        }
+        });
     }
-};
 
-STYLEGUIDE_UTIL = {
+    /* ==========================================================================
+     * Jump to Section
+     * ========================================================================== */
 
-    exec: function (controller, action)
-    {
-        var ns = STYLEGUIDE;
-        action = ( action === undefined ) ? 'init' : action;
+    var $jump_action = $('.js-sg-jump');
 
-        if (controller !== '' && ns[controller] && typeof ns[controller][action] == 'function')
-        {
-            ns[controller][action]();
+    $jump_action.on('change', function () {
+        var section = $(this).find('option:selected')[0].value;
+
+        if (section !== '') {
+            location.hash = '#' + section;
         }
-    },
+    });
 
-    init: function ()
-    {
-        var body = document.body;
-        var controller = body.getAttribute('data-controller');
-        var action = body.getAttribute('data-action');
+    /* ==========================================================================
+     * Toggle Navigation
+     * ========================================================================== */
 
-        STYLEGUIDE_UTIL.exec('common');
-        STYLEGUIDE_UTIL.exec(controller);
-        STYLEGUIDE_UTIL.exec(controller, action);
-    }
-};
+    var $toggle_nav = $('.js-sg-toggle-nav');
+
+    $toggle_nav.on('click', function () {
+        $('.sg-nav--primary').toggleClass('is-open');
+        $toggle_nav.toggleClass('is-active');
+    });
+})();
