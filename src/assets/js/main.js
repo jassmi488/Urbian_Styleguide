@@ -91,7 +91,7 @@
      * Map
      * ========================================================================== */
 
-    /**
+    /*
      * Render the static map image or embedded iframe depending on the screen width
      */
 
@@ -107,14 +107,20 @@
             var $map_embed_button = $('.btn', $map_embed);
 
             if (screen_width >= breakpoint_xs) {
-                // Display the interactive embedded map
+                /*
+                 * Display the interactive embedded map
+                 */
+
                 $map_embed_img.addClass('is-hidden');
                 $map_embed_button.addClass('is-hidden');
                 $map_embed_canvas.attr('src', url_embed);
                 $map_embed_canvas.removeClass('is-hidden');
             }
             else {
-                // Display a static image of the map
+                /*
+                 * Display a static image of the map
+                 */
+
                 $map_embed_img.removeClass('is-hidden');
                 $map_embed_button.removeClass('is-hidden');
                 $map_embed_canvas.attr('src', '');
@@ -140,7 +146,7 @@
             var icon_down = $anchor.data('icon-down');
 
             $anchor.on('click', function (e) {
-                /**
+                /*
                  * Prevent click on primary drop-down anchor
                  */
 
@@ -223,7 +229,7 @@
             var $button = $('.btn', $(this));
 
             $button.on('click', function () {
-                /**
+                /*
                  * Open the current dropdown
                  */
 
@@ -235,7 +241,7 @@
                 if ($dropdown.length > 0) {
                     $dropdown.toggleClass('is-open');
 
-                    /**
+                    /*
                      * Toggle ARIA attributes
                      */
 
@@ -248,7 +254,7 @@
                         $button.attr('aria-expanded', 'false');
                     }
 
-                    /**
+                    /*
                      * Close all other dropdowns
                      */
 
