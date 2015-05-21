@@ -2,9 +2,9 @@
  * Style Guide JavaScript
  * ======================================================================== */
 
-(function ()
-{
-    "use strict";
+(function () {
+
+    'use strict';
 
     /* ==========================================================================
      * Code
@@ -16,11 +16,9 @@
 
     var $code = $('.js-sg-code');
 
-    if ($code.length > 0)
-    {
+    if ($code.length > 0) {
 
-        $code.each(function ()
-        {
+        $code.each(function () {
             var $code_sample = $('code', $(this));
 
             /*
@@ -49,16 +47,13 @@
 
     var $toggle_code = $('.js-sg-toggle-code');
 
-    if ($toggle_code.length > 0)
-    {
-        $toggle_code.each(function ()
-        {
+    if ($toggle_code.length > 0) {
+        $toggle_code.each(function () {
             var $toggle = $(this);
             var $toggle_wrapper = $toggle.parent();
             var $code = $('code', $toggle_wrapper);
 
-            $toggle.on('click', function ()
-            {
+            $toggle.on('click', function () {
                 $code.toggleClass('is-visible');
                 $toggle.toggleClass('is-active');
 
@@ -68,12 +63,10 @@
 
                 var icon_code = '<span class="sg-icon fa fa-code" aria-hidden="true"></span>';
 
-                if ($(this).hasClass('is-active'))
-                {
+                if ($(this).hasClass('is-active')) {
                     $(this).html(icon_code + 'Hide Code');
                 }
-                else
-                {
+                else {
                     $(this).html(icon_code + 'View Code');
                 }
             });
@@ -86,12 +79,10 @@
 
     var $jump_action = $('.js-sg-jump');
 
-    $jump_action.on('change', function ()
-    {
+    $jump_action.on('change', function () {
         var section = $(this).find('option:selected')[0].value;
 
-        if (section != '')
-        {
+        if (section !== '') {
             location.hash = '#' + section;
         }
     });
@@ -102,8 +93,7 @@
 
     var $toggle_nav = $('.js-sg-toggle-nav');
 
-    $toggle_nav.on('click', function ()
-    {
+    $toggle_nav.on('click', function () {
         $('.sg-nav--primary').toggleClass('is-open');
         $toggle_nav.toggleClass('is-active');
     });
