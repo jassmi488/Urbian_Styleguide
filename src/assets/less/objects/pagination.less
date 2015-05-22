@@ -45,16 +45,6 @@
                 }
             }
 
-            &.is-disabled {
-                background-color: @color-white-dark;
-                color: @color-silver;
-                padding: 0.375em 0.875em;
-            }
-
-            &.is-spacer {
-                padding: 0.375em 0.875em;
-            }
-
             a {
                 background-color: @color-white-dark;
                 color: @color-gray-dark;
@@ -77,6 +67,24 @@
             .icon {
                 font-size: 0.875em; /* 14 / 16 */
             }
+        }
+
+        /**
+         * Disabled
+         */
+
+        .is-disabled {
+            background-color: @color-white-dark;
+            color: @color-silver;
+            padding: 0.375em 0.875em;
+        }
+
+        /**
+         * Spacer
+         */
+
+        .is-spacer {
+            padding: 0.375em 0.875em;
         }
     }
 }
