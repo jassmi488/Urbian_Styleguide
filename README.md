@@ -2,6 +2,8 @@
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 [![Build Status](https://magnum.travis-ci.com/we-are-next/styleguide.svg?token=4q8vnSqGs4oqaN95p1Pp)](https://magnum.travis-ci.com/we-are-next/styleguide)
+[![Dependency Status](https://david-dm.org/we-are-next/styleguide.svg)](https://david-dm.org/we-are-next/styleguide)
+[![devDependency Status](https://david-dm.org/we-are-next/styleguide/dev-status.svg)](https://david-dm.org/we-are-next/styleguide#info=devDependencies)
 
 ### Requirements
 
