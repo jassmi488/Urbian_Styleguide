@@ -29,53 +29,6 @@ Ensure that the following is installed on your computer:
 2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
 3. Run the task: `grunt deploy`
 
-### Less Structure
-
-```
-less
-|-- base
-|   |-- anchors.less
-|   |-- base.less
-|   |-- blockquotes.less
-|   |-- figures.less
-|   |-- forms.less
-|   |-- grid.less
-|   |-- headings.less
-|   |-- hr.less
-|   |-- lists.less
-|   |-- paragraphs.less
-|   |-- print.less
-|   |-- tables.less
-|   `-- utilities.less
-|-- generic
-|   |-- mixins.less
-|   |-- reset.less
-|   `-- variables.less
-|-- objects
-|   |-- accordion.less
-|   |-- alert.less
-|   |-- breadcrumbs.less
-|   |-- buttons.less
-|   |-- card.less
-|   |-- map.less
-|   |-- media.less
-|   |-- modal.less
-|   |-- nav.less
-|   |-- pagination.less
-|   |-- social.less
-|   `-- tabs.less
-|-- vendor
-|   |-- font-awesome.less
-|   |-- modal.less
-|   |-- normalize.less
-|   |-- slick.less
-|   `-- tooltips.less
-|-- style.less
-`-- styleguide.less
-
-4 directories, 35 files
-```
-
 ### Features
 
 - **Breakpoints, Colors, Fonts**
