@@ -96,41 +96,35 @@
      * Render the static map image or embedded iframe depending on the screen width
      */
 
+    var $map_embed = $('.js-map-embed');
+
     function renderMapEmbed () {
-        var $map_embed = $('.js-map-embed');
+        var screen_width = document.body.clientWidth;
+        var breakpoint_xs = 480; // This is the equivalent of `@bp-xs`
+        var url_embed = $map_embed.data('url-embed');
+        var $map_embed_img = $('.map-embed__img', $map_embed);
+        var $map_embed_canvas = $('.map-embed__canvas', $map_embed);
+        var $map_embed_button = $('.btn', $map_embed);
 
-        if ($map_embed.length > 0) {
-            var screen_width = document.body.clientWidth;
-            var breakpoint_xs = 480; // This is the equivalent of `@bp-xs`
-            var url_embed = $map_embed.data('url-embed');
-            var $map_embed_img = $('.map-embed__img', $map_embed);
-            var $map_embed_canvas = $('.map-embed__canvas', $map_embed);
-            var $map_embed_button = $('.btn', $map_embed);
-
-            if (screen_width >= breakpoint_xs) {
-                /*
-                 * Display the interactive embedded map
-                 */
-
-                $map_embed_img.addClass('is-hidden');
-                $map_embed_button.addClass('is-hidden');
-                $map_embed_canvas.attr('src', url_embed);
-                $map_embed_canvas.removeClass('is-hidden');
-            }
-            else {
-                /*
-                 * Display a static image of the map
-                 */
-
-                $map_embed_img.removeClass('is-hidden');
-                $map_embed_button.removeClass('is-hidden');
-                $map_embed_canvas.attr('src', '');
-                $map_embed_canvas.addClass('is-hidden');
-            }
+        if (screen_width >= breakpoint_xs) {
+            // Display the interactive embedded map
+            $map_embed_img.addClass('is-hidden');
+            $map_embed_button.addClass('is-hidden');
+            $map_embed_canvas.attr('src', url_embed);
+            $map_embed_canvas.removeClass('is-hidden');
+        }
+        else {
+            // Display a static image of the map
+            $map_embed_img.removeClass('is-hidden');
+            $map_embed_button.removeClass('is-hidden');
+            $map_embed_canvas.attr('src', '');
+            $map_embed_canvas.addClass('is-hidden');
         }
     }
 
-    renderMapEmbed();
+    if ($map_embed.length > 0) {
+        renderMapEmbed();
+    }
 
     /* ==========================================================================
      * Navigation Dropdown
@@ -330,6 +324,9 @@
      * ========================================================================== */
 
     $(window).on('resize', function () {
-        renderMapEmbed();
+
+        if ($map_embed.length > 0) {
+            renderMapEmbed();
+        }
     });
 })();
