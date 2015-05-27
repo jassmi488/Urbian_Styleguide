@@ -17,18 +17,6 @@ Ensure that the following is installed on your computer:
 3. Install the required dependencies: `npm install`
 4. Start a local server: `npm start`
 
-### Validation
-
-1. HTML: `grunt validation:build`
-2. CSS: `grunt csslint:build`
-3. JavaScript: `grunt jshint:build`
-
-### Deploying
-
-1. Update the FTP server credentials in the `.ftppass` file
-2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
-3. Run the task: `grunt deploy`
-
 ### Features
 
 - **Breakpoints, Colors, Fonts**
@@ -55,3 +43,15 @@ The following scripts are included for **IE8** and below:
 - [html5shiv](https://github.com/aFarkas/html5shiv)
 - [matchMedia.js](https://github.com/paulirish/matchMedia.js)
 - [Respond.js](https://github.com/scottjehl/Respond)
+
+### Linting and Validation
+
+1. HTML: `grunt validation:build`
+2. CSS: `grunt csslint:build`
+3. JavaScript: `grunt eslint`
+
+### Deploying
+
+1. Update the FTP server credentials in the `.ftppass` file
+2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
+3. Run the task: `grunt deploy`
