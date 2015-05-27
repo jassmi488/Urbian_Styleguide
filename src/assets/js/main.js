@@ -107,14 +107,20 @@
         var $map_embed_button = $('.btn', $map_embed);
 
         if (screen_width >= breakpoint_xs) {
-            // Display the interactive embedded map
+            /*
+             * Display the interactive embedded map
+             */
+
             $map_embed_img.addClass('is-hidden');
             $map_embed_button.addClass('is-hidden');
             $map_embed_canvas.attr('src', url_embed);
             $map_embed_canvas.removeClass('is-hidden');
         }
         else {
-            // Display a static image of the map
+            /*
+             * Display a static image of the map
+             */
+
             $map_embed_img.removeClass('is-hidden');
             $map_embed_button.removeClass('is-hidden');
             $map_embed_canvas.attr('src', '');
