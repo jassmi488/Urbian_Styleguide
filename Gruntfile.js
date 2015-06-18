@@ -132,11 +132,12 @@ module.exports = function (grunt)
                     'README.md',
                     'robots.txt',
                     'less',
-                    'node_modules',
-                    'validation-report.json',
-                    'validation-status.json'
+                    'node_modules'
                 ]
             }
+        },
+        htmllint: {
+            all: ['build/**/*.html', '!build/styleguide/*.html']
         },
         htmlmin: {
             dist: {
