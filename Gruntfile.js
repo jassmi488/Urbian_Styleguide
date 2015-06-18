@@ -226,24 +226,6 @@ module.exports = function (grunt)
                 }
             }
         },
-        validation: {
-            build: {
-                files: {
-                    src: [
-                        'build/*.html',
-                        'build/**/*.html'
-                    ]
-                }
-            },
-            dist: {
-                files: {
-                    src: [
-                        'dist/*.html',
-                        'dist/**/*.html'
-                    ]
-                }
-            }
-        },
         watch: {
             build: {
                 files: [
