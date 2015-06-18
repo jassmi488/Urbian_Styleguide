@@ -13,13 +13,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CSource+Sans+Pro:400,700">
 
     <!-- Style Sheets -->
-    <% if (environment === 'dist') { %>
-    <link rel="stylesheet" href="../assets/css/style-<%= version %>.css">
-    <link rel="stylesheet" href="../assets/css/styleguide/styleguide-<%= version %>.css">
-    <% } else { %>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/styleguide/styleguide.css">
-    <% } %>
 
     <!--[if lt IE 9]>
     <script src="../assets/js/vendor/polyfills.js"></script>
@@ -101,8 +96,8 @@
 
                 <aside class="sg-l-aside">
                     <ol class="sg-list sg-list--meta">
-                        <li><span class="sg-icon fa fa-file-text" aria-hidden="true"></span><b>Version</b>: <%= version %></li>
-                        <li><span class="sg-icon fa fa-clock-o" aria-hidden="true"></span><b>Last Updated</b>: <%= updated %></li>
+                        <li><span class="sg-icon fa fa-file-text" aria-hidden="true"></span><b>Version</b>: 3.0.3</li>
+                        <li><span class="sg-icon fa fa-clock-o" aria-hidden="true"></span><b>Last Updated</b>: 2015-06-18</li>
                         <li><span class="sg-icon fa fa-external-link" aria-hidden="true"></span><b>URL</b>: <a href="http://static.wearenext.co.za/styleguide" target="_blank">static.wearenext.co.za/styleguide</a></li>
                     </ol>
                 </aside>
@@ -146,13 +141,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <% if (environment === 'dist') { %>
-    <script src="../assets/js/script-<%= version %>.js"></script>
-    <% } else { %>
-    <script src="../assets/js/vendor/jquery.js"></script>
-    <script src="../assets/js/plugins.js"></script>
-    <script src="../assets/js/main.js"></script>
-    <% } %>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/styleguide/plugins.js"></script>
     <script src="../assets/js/styleguide/styleguide.js"></script>
 </body>
 </html>

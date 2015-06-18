@@ -31,11 +31,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 
     <!-- Style Sheets -->
-    <% if (environment === 'dist') { %>
-    <link rel="stylesheet" href="assets/css/style-<%= version %>.css">
-    <% } else { %>
     <link rel="stylesheet" href="assets/css/style.css">
-    <% } %>
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
@@ -59,13 +55,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <% if (environment === 'dist') { %>
-    <script src="assets/js/script-<%= version %>.js"></script>
-    <% } else { %>
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-    <% } %>
+    <script src="assets/js/script.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site’s ID -->
     <script>

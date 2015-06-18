@@ -97,7 +97,7 @@ module.exports = function (grunt)
             },
             dist: {
                 src: [
-                    'dist/assets/css/style-<%= pkg.version %>.css'
+                    'dist/assets/css/style.css'
                 ],
                 options: {
                     csslintrc: '.csslintrc',
@@ -168,49 +168,13 @@ module.exports = function (grunt)
             },
             dist: {
                 files: {
-                    'dist/assets/css/style-<%= pkg.version %>.css': 'src/assets/less/style.less',
-                    'dist/assets/css/styleguide/styleguide-<%= pkg.version %>.css': 'src/assets/less/styleguide/styleguide.less'
+                    'dist/assets/css/style.css': 'src/assets/less/style.less',
+                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/less/styleguide/styleguide.less'
                 },
                 options: {
                     banner: banner,
                     compress: true
                 }
-            }
-        },
-        processhtml: {
-            build: {
-                options: {
-                    process: true,
-                    data: {
-                        updated: today,
-                        version: package_version
-                    }
-                },
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'src',
-                        src: '**/*.html',
-                        dest: 'build'
-                    }
-                ]
-            },
-            dist: {
-                options: {
-                    process: true,
-                    data: {
-                        updated: today,
-                        version: package_version
-                    }
-                },
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'src',
-                        src: '**/*.html',
-                        dest: 'dist'
-                    }
-                ]
             }
         },
         uglify: {
@@ -219,7 +183,16 @@ module.exports = function (grunt)
             },
             build: {
                 files: {
-                    'dist/assets/js/script-<%= pkg.version %>.js': [
+                    'build/assets/js/script.js': [
+                        'src/assets/js/vendor/jquery.js',
+                        'src/assets/js/plugins.js',
+                        'src/assets/js/main.js'
+                    ]
+                }
+            },
+            dist: {
+                files: {
+                    'dist/assets/js/script.js': [
                         'src/assets/js/vendor/jquery.js',
                         'src/assets/js/plugins.js',
                         'src/assets/js/main.js'
@@ -232,7 +205,7 @@ module.exports = function (grunt)
                 files: [
                     'src/**'
                 ],
-                tasks: ['less:build', 'copy:build', 'processhtml:build'],
+                tasks: ['less:build', 'copy:build', 'uglify:build'],
                 options: {
                     livereload: true
                 }
@@ -242,12 +215,11 @@ module.exports = function (grunt)
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'processhtml:build']);
+    grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'uglify:build']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('deploy', ['dist', 'ftp']);
-    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'processhtml:dist', 'uglify', 'htmlmin']);
+    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'uglify:dist', 'htmlmin']);
     grunt.registerTask('ftp', ['ftp-deploy']);
-    grunt.registerTask('process', ['processhtml']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
     grunt.registerTask('test', ['csslint', 'eslint']);
 };
