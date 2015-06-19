@@ -46,7 +46,7 @@ The following scripts are included for **IE8** and below:
 
 ### Linting and Validation
 
-1. HTML: `grunt validation:build`
+1. HTML: `grunt htmllint`
 2. CSS: `grunt csslint:build`
 3. JavaScript: `grunt eslint`
 
