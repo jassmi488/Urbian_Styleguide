@@ -11,24 +11,8 @@ __/\\\\\_____/\\\____________________________________________
        _\/\\\___\//\\\\\__\//\\\\\\\\\\__/\\\/\///\\\____\//\\\\\___
         _\///_____\/////____\//////////__\///____\///______\/////____
 
-        wearenext.co.za
+We are Next.
 
-# TEAM
+We help businesses build things people love to use.
 
-    Franco Raffa       | Partner, Managing Director              | @franco_raffa
-    Shawn Roos         | Partner, Strategist, UX & Design        | @shawnroos
-    Wayne Ashley Berry | Partner, Server-side Developer          | @waynethebrain
-    Dave Küsel         | Strategist, Product Manager             | @david_kusel
-    Ulanda Chan        | Project Manager                         | @ulandachan
-    Michael Thorne     | Front-end Web Developer                 | @mikkelz_za
-    Lauren Waller      | Interface Designer, Front-end Developer | @waller_texas
-    Shaun van Tonder   | Server-side Developer                   | @countnoobula
-    Warren Manley      | Server-side Developer, Data Analyst     |
-    Rory van Heerden   | Server-side Developer                   | @bag_f
-    Leigh Pietersen    | Designer                                |
-
-# SITE
-
-    Last Update: 2015/03/21
-    Standards: HTML5, CSS3
-    Components: Font Awesome, Grunt, jQuery, Less, Normalize.css
+Find out more -> http://www.wearenext.co.za/
