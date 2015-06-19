@@ -203,7 +203,7 @@
                  */
 
                 $('.tab-list li', $tabs).not($tab).removeClass('is-selected').attr('aria-selected', 'false');
-                $('.tab-panel', $tabs).not($tab_panel).removeClass('is-active').attr('aria-hidden', 'true');
+                $('.tab-panel', $tabs).not($tab_panel).removeClass('is-selected').attr('aria-hidden', 'true');
 
                 /*
                  * Display the selected tab
@@ -212,7 +212,7 @@
                 if (!$tab.hasClass('is-selected')) {
                     $tab.attr('aria-selected', 'true');
                     $tab.addClass('is-selected');
-                    $tab_panel.addClass('is-active');
+                    $tab_panel.addClass('is-selected');
                     $tab_panel.attr('aria-hidden', 'false');
                 }
             });
