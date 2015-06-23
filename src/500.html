@@ -13,11 +13,24 @@
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-
     <!-- Style Sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Web Fonts -->
+    <script>
+        WebFontConfig = {
+            google: {
+                families: ['Roboto:400,700']
+            }
+        };
+    </script>
+
+    <!-- Web Font Loader -->
+    <script>
+        (function(){var e=document.createElement("script");e.src=("https:"==document.location.protocol?"https":"http")+
+        "://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js";e.type="text/javascript";e.async="true";
+        var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+    </script>
 
     <!--[if lt IE 9]>
     <script src="assets/js/vendor/polyfills.js"></script>
