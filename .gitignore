@@ -38,6 +38,7 @@ Thumbs.db
 
 # Grunt / Node #
 ################
+.ftppass
 build
 dist
 node_modules
