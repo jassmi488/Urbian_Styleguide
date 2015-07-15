@@ -8,8 +8,6 @@
 
 /**
  * CLEARFIX
- * TRANSFORM
- * TRANSITION
  */
 
 
@@ -42,42 +40,4 @@
     &:after {
         clear: both;
     }
-}
-
-
-
-
-
-/* -------------------------------------------------------------------------- *\
-   $TRANSFORM
-\* -------------------------------------------------------------------------- */
-
-/**
- * Example Usage: .transform(rotateX(90deg));
- */
-
-.transform(@function) {
-    -webkit-transform: @function;
-       -moz-transform: @function;
-         -o-transform: @function;
-            transform: @function;
-}
-
-
-
-
-
-/* -------------------------------------------------------------------------- *\
-   $TRANSITION
-\* -------------------------------------------------------------------------- */
-
-/**
- * Example Usage: .transition(color 0.25s, opacity 0.25s;);
- */
-
-.transition(@transition) {
-    -webkit-transition: @transition;
-       -moz-transition: @transition;
-         -o-transition: @transition;
-            transition: @transition;
 }
