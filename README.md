@@ -49,9 +49,3 @@ The following scripts are included for **IE8** and below:
 1. HTML: `grunt htmllint`
 2. CSS: `grunt csslint:build`
 3. JavaScript: `grunt eslint`
-
-### Deploying
-
-1. Update the FTP server credentials in the `.ftppass` file
-2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
-3. Run the task: `grunt deploy`
