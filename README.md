@@ -1,4 +1,4 @@
-## [Boilerplate Style Guide](http://static.wearenext.co.za/styleguide/styleguide)
+## [Style Guide Boilerplate](http://static.wearenext.co.za/styleguide/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
 [![Build Status](https://magnum.travis-ci.com/we-are-next/styleguide.svg?token=4q8vnSqGs4oqaN95p1Pp)](https://magnum.travis-ci.com/we-are-next/styleguide)
@@ -49,9 +49,3 @@ The following scripts are included for **IE8** and below:
 1. HTML: `grunt htmllint`
 2. CSS: `grunt csslint:build`
 3. JavaScript: `grunt eslint`
-
-### Deploying
-
-1. Update the FTP server credentials in the `.ftppass` file
-2. Update the FTP deployment paths for the `ftp-deploy` task in `Gruntfile.js`
-3. Run the task: `grunt deploy`
