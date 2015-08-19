@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="sg-html">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -41,10 +41,7 @@
     <header class="sg-header sg-header--primary" role="banner">
         <div class="sg-l-wrapper">
             <a class="sg-logo" href="index.html">
-                <picture>
-                    <source srcset="http://placehold.it/160x40" media="(min-width: 75em)">
-                    <img src="http://placehold.it/80x40" alt="Name of Project">
-                </picture>
+                <img src="//placehold.it/160x40" srcset="//placehold.it/320x80 2x" width="160" height="40" alt="Name of Project logo">
             </a>
 
             <nav class="sg-nav sg-nav--primary">
@@ -112,7 +109,23 @@
                     <h1 class="sg-hN">Color Palette</h1>
                 </header>
 
-                <h2 class="sg-heading-spacer">Primary</h2>
+                <h2 class="sg-heading-spacer">Brand</h2>
+                <ol class="sg-list sg-list--colors">
+                    <li class="bg-primary">
+                        <div class="sg-codes">
+                            <code class="sg-code">#001f3f</code>
+                            <code class="sg-code">@color-primary</code>
+                        </div>
+                    </li>
+                    <li class="bg-secondary">
+                        <div class="sg-codes">
+                            <code class="sg-code">#7fdbff</code>
+                            <code class="sg-code">@color-secondary</code>
+                        </div>
+                    </li>
+                </ol>
+
+                <h2 class="sg-heading-spacer">Utility</h2>
                 <ol class="sg-list sg-list--colors">
                     <li class="bg-red">
                         <div class="sg-codes">
@@ -425,15 +438,15 @@ The <mark>mark element</mark> indicates a highlight
 <samp>This is sample output from a computer program</samp>
 
 The <var>variarble element</var>, such as <var>x</var> = <var>y</var></code>
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <section class="sg-l-section" id="sg-preformatted-text">
-            <header class="sg-header sg-header--section">
-                <h1 class="sg-hN">Preformatted Text</h1>
-            </header>
+            <section class="sg-l-section" id="sg-preformatted-text">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Preformatted Text</h1>
+                </header>
 
-            <pre>P R E F O R M A T T E D T E X T
+                <pre>P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
 @ A B C D E F G H I J K L M N O
@@ -441,7 +454,7 @@ P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~ </pre>
 
-            <div class="sg-code-wrapper js-sg-code">
+                <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><pre>P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
@@ -689,14 +702,14 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 </header>
 
                 <figure class="figure">
-                    <img src="http://placehold.it/600x400" width="600" height="400" alt="">
+                    <img src="//placehold.it/600x400" width="600" height="400" alt="">
                     <figcaption>This is a placeholder image with a supporting caption.</figcaption>
                 </figure>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
                     <code class="sg-code prettyprint"><figure class="figure">
-    <img src="http://placehold.it/600x400" width="600" height="400" alt="">
+    <img src="//placehold.it/600x400" width="600" height="400" alt="">
     <figcaption>This is a placeholder image with a supporting caption.</figcaption>
 </figure></code>
                 </div>
