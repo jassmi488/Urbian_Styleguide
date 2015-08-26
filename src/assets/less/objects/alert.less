@@ -26,15 +26,15 @@
 
     .alert__message {
         margin-bottom: 0;
-    }
 
-    /**
-     * Link
-     */
+        /**
+         * Anchor
+         */
 
-    .alert__link {
-        font-weight: @weight-bold;
-        text-decoration: underline;
+        a {
+            font-weight: @weight-bold;
+            text-decoration: underline;
+        }
     }
 
     /**
@@ -69,8 +69,11 @@
             color: @color-green;
         }
 
-        .alert__link {
-            color: @color-green;
+        .alert__message {
+
+            a {
+                color: @color-green;
+            }
         }
     }
 
@@ -85,8 +88,11 @@
             color: @color-blue;
         }
 
-        .alert__link {
-            color: @color-blue;
+        .alert__message {
+
+            a {
+                color: @color-blue;
+            }
         }
     }
 
@@ -101,8 +107,11 @@
             color: @color-orange;
         }
 
-        .alert__link {
-            color: @color-orange;
+        .alert__message {
+
+            a {
+                color: @color-orange;
+            }
         }
     }
 
@@ -117,8 +126,11 @@
             color: @color-red;
         }
 
-        .alert__link {
-            color: @color-red;
+        .alert__message {
+
+            a {
+                color: @color-red;
+            }
         }
     }
 }
