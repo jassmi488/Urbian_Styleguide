@@ -11,14 +11,6 @@
 
     blockquote {
         .blockquote();
-
-        &+ h2,
-        &+ h3,
-        &+ h4,
-        &+ h5,
-        &+ h6 {
-            margin-top: 2em;
-        }
     }
 
     /**
@@ -27,14 +19,6 @@
 
     figure {
         .figure();
-
-        &+ h2,
-        &+ h3,
-        &+ h4,
-        &+ h5,
-        &+ h6 {
-            margin-top: 2em;
-        }
     }
 
     /**
@@ -49,7 +33,7 @@
      * Image
      */
 
-    > img {
+    img {
         height: auto;
         margin-bottom: 1em;
         max-width: 100%;
@@ -62,22 +46,14 @@
     dl,
     ol,
     ul {
+        margin-top: 1em;
         margin-bottom: 1em;
+        padding-left: 2em;
 
-        dl,
-        ol,
-        ul {
-            margin-bottom: 0;
-        }
-    }
-
-    dd,
-    dt,
-    li {
-        font-size: 1em;
-
+        dd,
+        dt,
         li {
-            font-size: 1em;
+            margin-bottom: 1em;
         }
     }
 
@@ -86,18 +62,8 @@
      */
 
     p {
-
-        &+ figure {
-            margin-top: 2em;
-        }
-
-        &+ h2,
-        &+ h3,
-        &+ h4,
-        &+ h5,
-        &+ h6 {
-            margin-top: 2em;
-        }
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     /**
@@ -115,12 +81,27 @@
 
     .article {
 
+        blockquote {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        figure {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        p {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
         .u-pull--right {
-            margin-left: 1em;
+            margin-left: 2em;
         }
 
         .u-pull--left {
-            margin-right: 1em;
+            margin-right: 2em;
         }
     }
 }
