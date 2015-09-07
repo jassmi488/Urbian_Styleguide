@@ -116,7 +116,7 @@ module.exports = function (grunt)
                     authKey: 'static'
                 },
                 src: './dist',
-                dest: 'public_html/styleguide/',
+                dest: 'public_html/boilerplate/',
                 exclusions: [
                     '.editorconfig',
                     '.ftppass',
