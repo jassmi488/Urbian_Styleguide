@@ -58,7 +58,6 @@
                             <option value="">Jump to…</option>
                             <option value="sg-color-palette">Color Palette</option>
                             <option value="sg-font-stacks">Font Stacks</option>
-                            <option value="sg-visibility">Visibility</option>
                             <option value="sg-headings">Headings</option>
                             <option value="sg-paragraph">Paragraph</option>
                             <option value="sg-blockquote">Block Quote</option>
@@ -91,8 +90,8 @@
                             <option value="sg-map">Map</option>
                             <option value="sg-media-html5-audio">Media – HTML5 Audio</option>
                             <option value="sg-media-html5-video">Media – HTML5 Video</option>
-                            <option value="sg-media-youtube">Media – YouTube</option>
                             <option value="sg-grid">Grid</option>
+                            <option value="sg-utilities">Utilities</option>
                         </select>
                     </label>
                 </form>
@@ -233,34 +232,6 @@
                 <p class="u-font--secondary">Secondary font: Roboto, sans-serif</p>
                 <p class="u-font--secondary"><em>Secondary font italic: Roboto, sans-serif</em></p>
                 <p class="u-font--secondary"><strong>Secondary font bold: Roboto, sans-serif</strong></p>
-            </section>
-
-            <section class="sg-l-section" id="sg-visibility">
-                <header class="sg-header sg-header--section">
-                    <h1 class="sg-hN">Visibility</h1>
-                </header>
-
-                <p class="u-hide--small">This text is hidden on smaller screens</p>
-
-                <p class="u-hide--medium u-hide--large"><em>This text is only visible on smaller screens</em></p>
-
-                <p class="u-hide--medium">This text is hidden on medium screens only</p>
-
-                <p class="u-hide--small u-hide--large"><em>This text is only visible on medium screens</em></p>
-
-                <p class="u-hide--large">This text is hidden on large screens</p>
-
-                <p class="u-hide--small u-hide--medium"><em>This text is only visible on large screens</em></p>
-
-                <div class="sg-code-wrapper js-sg-code">
-                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <code class="sg-code prettyprint"><p class="u-hide--small">This text is hidden on smaller screens</p>
-<p class="u-hide--medium u-hide--large"><em>This text is only visible on smaller screens</em></p>
-<p class="u-hide--medium">This text is hidden on medium screens only</p>
-<p class="u-hide--small u-hide--large"><em>This text is only visible on medium screens</em></p>
-<p class="u-hide--large">This text is hidden on large screens</p>
-<p class="u-hide--small u-hide--medium"><em>This text is only visible on large screens</em></p></code>
-                </div>
             </section>
 
             <section class="sg-l-section" id="sg-headings">
@@ -1398,23 +1369,6 @@ p q r s t u v w x y z { | } ~ </pre></code>
                 </div>
             </section>
 
-            <section class="sg-l-section" id="sg-media-youtube">
-                <header class="sg-header sg-header--section">
-                    <h1 class="sg-hN">Media – YouTube</h1>
-                </header>
-
-                <div class="u-fluid-embed">
-                    <iframe src="https://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
-                </div>
-
-                <div class="sg-code-wrapper js-sg-code">
-                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
-                    <code class="sg-code prettyprint"><div class="u-fluid-embed">
-    <iframe src="https://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
-</div></code>
-                </div>
-            </section>
-
             <section class="sg-l-section" id="sg-grid">
                 <header class="sg-header sg-header--section">
                     <h1 class="sg-hN">Grid</h1>
@@ -1655,6 +1609,122 @@ p q r s t u v w x y z { | } ~ </pre></code>
 
     </div>
 </div></code>
+                </div>
+            </section>
+
+            <section class="sg-l-section" id="sg-utilities">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Utilities</h1>
+                </header>
+
+                <h2 class="sg-heading-spacer">Display</h2>
+
+                <p>Hide visually and from screen readers</p>
+
+                <p>Hide only visually, but have it available for screen readers</p>
+
+                <p>Hide visually and from screen readers, but maintain layout</p>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><p class="u-hidden">Hide visually and from screen readers</p>
+<p class="u-visuallyhidden">Hide only visually, but have it available for screen readers</p>
+<p class="u-invisible">Hide visually and from screen readers, but maintain layout</p></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Visibility</h2>
+
+                <p class="u-hide--small">This text is hidden on smaller screens</p>
+
+                <p class="u-hide--medium u-hide--large"><em>This text is only visible on smaller screens</em></p>
+
+                <p class="u-hide--medium">This text is hidden on medium screens only</p>
+
+                <p class="u-hide--small u-hide--large"><em>This text is only visible on medium screens</em></p>
+
+                <p class="u-hide--large">This text is hidden on large screens</p>
+
+                <p class="u-hide--small u-hide--medium"><em>This text is only visible on large screens</em></p>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+<code class="sg-code prettyprint"><p class="u-hide--small">This text is hidden on smaller screens</p>
+<p class="u-hide--medium u-hide--large"><em>This text is only visible on smaller screens</em></p>
+<p class="u-hide--medium">This text is hidden on medium screens only</p>
+<p class="u-hide--small u-hide--large"><em>This text is only visible on medium screens</em></p>
+<p class="u-hide--large">This text is hidden on large screens</p>
+<p class="u-hide--small u-hide--medium"><em>This text is only visible on large screens</em></p></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Embed</h2>
+
+                <div class="u-fluid-embed">
+                    <iframe src="https://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><div class="u-fluid-embed">
+    <iframe src="https://www.youtube.com/embed/7rW9vTrN6OU" allowfullscreen="allowfullscreen"></iframe>
+</div></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Floats</h2>
+
+                <div class="clearfix">
+                    <p class="u-pull--left">This element is floated left</p>
+                </div>
+
+                <div class="clearfix">
+                    <p class="u-pull--right">This element is floated right</p>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><p class="u-pull--left">This element is floated left</p>
+<p class="u-pull--right">This element is floated right</p></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Font</h2>
+
+                <p class="u-weight--bold">This font weight is bold</p>
+
+                <p class="u-weight--semi-bold">This font weight is semi-bold</p>
+
+                <p class="u-weight--normal">This font weight is normal</p>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><p class="u-weight--bold">This font weight is bold</p>
+<p class="u-weight--semi-bold">This font weight is semi-bold</p>
+<p class="u-weight--normal">This font weight is normal</p></code>
+                </div>
+
+                <h2 class="sg-heading-spacer">Text</h2>
+
+                <p class="u-align--left">This text is aligned left</p>
+
+                <p class="u-align--center">This text is aligned center</p>
+
+                <p class="u-align--right">This text is aligned right</p>
+
+                <p class="u-transform--capitalize">This text is transformed capitalize</p>
+
+                <p class="u-transform--inherit">This text is transformed inherit</p>
+
+                <p class="u-transform--lowercase">This text is transformed lowercase</p>
+
+                <p class="u-transform--uppercase">This text is transformed uppercase</p>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code"><span class="sg-icon sg-icon--left fa fa-code" aria-hidden="true"></span>View Code</button>
+                    <code class="sg-code prettyprint"><p class="u-align--left">This text is aligned left</p>
+<p class="u-align--center">This text is aligned center</p>
+<p class="u-align--right">This text is aligned right</p>
+<p class="u-transform--capitalize">This text is transformed capitalize</p>
+<p class="u-transform--inherit">This text is transformed inherite</p>
+<p class="u-transform--lowercase">This text is transformed lowercase</p>
+<p class="u-transform--uppercase">This text is transformed uppercase</p></code>
                 </div>
             </section>
         </div>
