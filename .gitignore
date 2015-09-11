@@ -48,3 +48,8 @@ validation-status.json
 # PhpStorm #
 ###########
 *.idea
+
+# Sass #
+########
+
+.sass-cache
