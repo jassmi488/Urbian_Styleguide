@@ -1,0 +1,431 @@
+/**
+ * FORMS
+ */
+
+/* -------------------------------------------------------------------------- *\
+   #TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * FORM
+ * FIELDSET
+ * LABEL
+ * INPUT
+ * HELP TEXT
+ * TOGGLE PASSWORD
+ */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #FORM
+\* -------------------------------------------------------------------------- */
+
+.form {
+    @include clearfix();
+
+    /**
+     * Inline
+     */
+
+    &.form--inline {
+
+        .label {
+
+            &.label--checkbox {
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .input {
+            margin-bottom: 0.75em;
+        }
+    }
+
+    /**
+     * Search
+     */
+
+    &.form--search {
+        position: relative;
+
+        .input {
+            margin-top: 0;
+            padding-right: 2.75em;
+        }
+
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+@media all and (min-width: $bp-small) {
+
+    .form {
+
+        &.form--inline {
+
+            .label {
+                clear: none;
+                float: left;
+                margin-right: 0.5em;
+                width: auto;
+
+                &.label--checkbox {
+                    margin-bottom: 0;
+                    padding-top: 0.5em;
+
+                    .input {
+                        float: none;
+                        margin-right: 0.25em;
+                    }
+                }
+            }
+
+            .input {
+                float: left;
+                margin-top: 0;
+                margin-right: 0.5em;
+                margin-bottom: 0;
+                width: auto;
+            }
+
+            .btn {
+                float: left;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $bp-medium) {
+
+    .form {
+
+        &.form--search {
+
+            .input {
+                min-width: 20em; /* 320 / 16 */
+            }
+        }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #FIELDSET
+\* -------------------------------------------------------------------------- */
+
+.fieldset {
+
+    /**
+     * Legend
+     */
+
+    .legend {
+        color: $color-gray-dark;
+        font-weight: $weight-bold;
+        margin-bottom: 1em;
+    }
+
+    /**
+     * Bordered
+     */
+
+    &.fieldset--bordered {
+        border: 1px solid $color-silver;
+        margin-bottom: 1.5em;
+        padding: 0.5em 1.25em 0 1.25em;
+
+        .legend {
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #LABEL
+\* -------------------------------------------------------------------------- */
+
+.label {
+    clear: both;
+    color: $color-gray-dark;
+    display: block;
+    font-weight: $weight-bold;
+    margin-bottom: 1.5em;
+    width: 100%;
+
+    /**
+     * Link
+     */
+
+    .label__link {
+        color: $color-gray-dark;
+        float: right;
+        font-size: 0.875em; /* 14 / 16 */
+        font-weight: $weight-normal;
+        margin-top: 0.125em;
+        transition: color 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $color-blue;
+        }
+    }
+
+    /**
+     * Checkbox | Radio Button
+     */
+
+    &.label--checkbox,
+    &.label--radio {
+        font-weight: $weight-normal;
+    }
+
+    /**
+     * Disabled
+     */
+
+    &.label--disabled {
+        color: $color-gray;
+        cursor: not-allowed;
+    }
+
+    /**
+     * Inline
+     */
+
+    &.label--inline {
+        clear: none;
+        float: left;
+        margin-right: 1.5em;
+        width: auto;
+    }
+
+    /**
+     * Error
+     */
+
+    &.has-error {
+        color: $color-red;
+
+        .input {
+            border-color: $color-red;
+        }
+
+        .help-text {
+            color: $color-red;
+        }
+    }
+
+    /**
+     * Success
+     */
+
+    &.has-success {
+        color: $color-green;
+
+        .input {
+            border-color: $color-green;
+        }
+
+        .help-text {
+            color: $color-green;
+        }
+    }
+
+    /**
+     * Warning
+     */
+
+    &.has-warning {
+        color: $color-orange;
+
+        .input {
+            border-color: $color-orange;
+        }
+
+        .help-text {
+            color: $color-orange;
+        }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #INPUT
+\* -------------------------------------------------------------------------- */
+
+input[type="date"],
+input[type="email"],
+input[type="file"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+
+    &.input {
+        border: 1px solid $color-silver;
+        border-radius: 0;
+        color: $color-gray-dark;
+        font-family: $font;
+        font-weight: $weight-normal;
+        height: 2.5em; /* 40 / 16 */
+        margin-top: 0.375em;
+        padding: 0.5em 0.75em 0.5625em 0.75em;
+        transition: border-color 0.25s;
+        width: 100%;
+
+        &:focus,
+        &:hover {
+            border-color: $color-gray-dark;
+        }
+
+        /**
+         * Disabled
+         */
+
+        &[disabled="disabled"] {
+            background-color: $color-white-dark;
+            border-color: $color-white-dark;
+            color: $color-gray;
+            cursor: not-allowed;
+
+            &:focus,
+            &:hover {
+                border-color: $color-white-dark;
+            }
+        }
+
+        /**
+         * Readonly
+         */
+
+        &[readonly="readonly"] {
+            background-color: $color-white-dark;
+            cursor: not-allowed;
+        }
+    }
+
+    /**
+     * Textarea
+     */
+
+    &.input--textarea {
+        height: inherit;
+        min-height: 6em;
+    }
+
+    /**
+     * Placeholder
+     */
+
+    &.placeholder {
+        color: #aaa;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.375em;
+}
+
+/**
+ * Remove the inner shadow that appears in text inputs on iOS/OSX
+ */
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+textarea {
+    -webkit-appearance: none;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #HELP TEXT
+\* -------------------------------------------------------------------------- */
+
+.help-text {
+    color: $color-gray;
+    display: block;
+    font-size: 0.875em; /* 14 / 16 */
+    font-weight: $weight-normal;
+    padding-top: 0.5em;
+    padding-left: 0.125em;
+
+    /**
+     * Right-aligned
+     */
+
+    &.help-text--right {
+        padding-right: 0.125em;
+        text-align: right;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #TOGGLE PASSWORD
+\* -------------------------------------------------------------------------- */
+
+.toggle-password {
+    position: relative;
+
+    /**
+     * Toggle
+     */
+
+    .toggle {
+        background-color: $color-white-dark;
+        border: 0;
+        color: $color-gray;
+        font-family: $font-secondary;
+        font-size: 0.875em; /* 14 / 16 */
+        font-weight: $weight-bold;
+        height: 2em; /* 28 / 14 */
+        padding: 0.3125em 0.5em 0.1875em 0.5em;
+        position: absolute;
+        right: 0.375em;
+        text-align: center;
+        top: 2.5625em;
+        transition: color 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $color-gray-dark;
+            outline: 0;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+/* -------------------------------------------------------------------------- *\
+   #TABLE
+\* -------------------------------------------------------------------------- */
+
+.table {
+    border: 1px solid $color-silver;
+    margin-bottom: 1em;
+    width: 100%;
+
+    /**
+     * Caption
+     */
+
+    .table__caption {
+        font-weight: $weight-bold;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    thead {
+        display: none;
+
+        th {
+            background-color: $color-white;
+            border-right: 1px solid $color-silver;
+            border-bottom: 2px solid $color-gray;
+            padding: 0.5em 1em;
+            text-align: left;
+        }
+    }
+
+    tbody {
+
+        tr {
+
+            &:last-child {
+
+                td {
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                }
+            }
+
+            &:nth-child(odd) {
+                background-color: $color-white-dark;
+            }
+        }
+    }
+
+    td {
+        border-bottom: 1px solid $color-silver;
+        display: block;
+        padding: 0.5em 1em;
+        text-align: right;
+
+        &:before {
+            content: attr(data-label);
+            float: left;
+            font-weight: $weight-bold;
+        }
+    }
+
+    tfoot {
+        font-style: italic;
+        text-align: left;
+
+        tr {
+
+            &:first-child {
+
+                td {
+                    border-top: 2px solid $color-gray;
+                }
+            }
+
+            &:nth-child(odd) {
+                background-color: inherit;
+            }
+        }
+
+        td {
+            border-bottom: 0;
+        }
+
+        a {
+            color: $color-gray-dark;
+            text-decoration: underline;
+            transition: color 0.25s;
+
+            &:focus,
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $bp-small) {
+
+    .table {
+
+        thead {
+            display: table-header-group;
+        }
+
+        td {
+            border-right: 1px solid $color-silver;
+            display: table-cell;
+            text-align: left;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        tfoot {
+
+            tr {
+
+                &:first-child {
+
+                    td {
+                        border-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/* -------------------------------------------------------------------------- *\
+   #BLOCKQUOTE
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Indicates that the enclosed text is an extended quotation, as per:
+ * http://html5doctor.com/cite-and-blockquote-reloaded
+ *
+ * E.g.:
+ *
+   <blockquote class="blockquote">
+       <p></p>
+       <cite>— <a href="#"></a></cite>
+   </blockquote>
+ *
+ */
+
+/**
+ * Mixin
+ */
+
+@mixin blockquote() {
+    border-left: 3px $color-gray solid;
+    margin: 1em 0 1em 1em;
+    padding: 0 1em;
+
+    p {
+        quotes: "\201C""\201D""\2018""\2019";
+
+        &:before {
+            content: open-quote;
+        }
+
+        &:after {
+            content: close-quote;
+        }
+    }
+
+    cite {
+
+        a {
+            color: $color-gray-dark;
+            text-decoration: underline;
+            transition: color 0.25s;
+
+            &:focus,
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+}
+
+/**
+ * Blockquote
+ */
+
+.blockquote {
+    @include blockquote();
+}
