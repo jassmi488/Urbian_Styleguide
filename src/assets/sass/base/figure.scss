@@ -16,15 +16,11 @@
  *
  */
 
-.figure {
-    .figure();
-}
-
 /**
  * Mixin
  */
 
-.figure() {
+@mixin figure() {
     margin: 1em 0;
 
     img {
@@ -37,4 +33,12 @@
         color: @color-gray;
         font-size: 1.125em; /* 18 / 16 */
     }
+}
+
+/**
+ * Figure
+ */
+
+.figure {
+    @include figure();
 }

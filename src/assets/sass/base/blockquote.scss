@@ -15,15 +15,11 @@
  *
  */
 
-.blockquote {
-    .blockquote();
-}
-
 /**
  * Mixin
  */
 
-.blockquote() {
+@mixin blockquote() {
     border-left: 3px @color-gray solid;
     margin: 1em 0 1em 1em;
     padding: 0 1em;
@@ -53,4 +49,12 @@
             }
         }
     }
+}
+
+/**
+ * Blockquote
+ */
+
+.blockquote {
+    @include blockquote();
 }
