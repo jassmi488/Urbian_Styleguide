@@ -64,7 +64,7 @@
     }
 }
 
-@media all and (min-width: @bp-small) {
+@media all and (min-width: $bp-small) {
 
     .form {
 
@@ -103,7 +103,7 @@
     }
 }
 
-@media all and (min-width: @bp-medium) {
+@media all and (min-width: $bp-medium) {
 
     .form {
 
@@ -131,8 +131,8 @@
      */
 
     .legend {
-        color: @color-gray-dark;
-        font-weight: @weight-bold;
+        color: $color-gray-dark;
+        font-weight: $weight-bold;
         margin-bottom: 1em;
     }
 
@@ -141,7 +141,7 @@
      */
 
     &.fieldset--bordered {
-        border: 1px solid @color-silver;
+        border: 1px solid $color-silver;
         margin-bottom: 1.5em;
         padding: 0.5em 1.25em 0 1.25em;
 
@@ -162,9 +162,9 @@
 
 .label {
     clear: both;
-    color: @color-gray-dark;
+    color: $color-gray-dark;
     display: block;
-    font-weight: @weight-bold;
+    font-weight: $weight-bold;
     margin-bottom: 1.5em;
     width: 100%;
 
@@ -173,16 +173,16 @@
      */
 
     .label__link {
-        color: @color-gray-dark;
+        color: $color-gray-dark;
         float: right;
         font-size: 0.875em; /* 14 / 16 */
-        font-weight: @weight-normal;
+        font-weight: $weight-normal;
         margin-top: 0.125em;
         transition: color 0.25s;
 
         &:focus,
         &:hover {
-            color: @color-blue;
+            color: $color-blue;
         }
     }
 
@@ -192,7 +192,7 @@
 
     &.label--checkbox,
     &.label--radio {
-        font-weight: @weight-normal;
+        font-weight: $weight-normal;
     }
 
     /**
@@ -200,7 +200,7 @@
      */
 
     &.label--disabled {
-        color: @color-gray;
+        color: $color-gray;
         cursor: not-allowed;
     }
 
@@ -220,14 +220,14 @@
      */
 
     &.has-error {
-        color: @color-red;
+        color: $color-red;
 
         .input {
-            border-color: @color-red;
+            border-color: $color-red;
         }
 
         .help-text {
-            color: @color-red;
+            color: $color-red;
         }
     }
 
@@ -236,14 +236,14 @@
      */
 
     &.has-success {
-        color: @color-green;
+        color: $color-green;
 
         .input {
-            border-color: @color-green;
+            border-color: $color-green;
         }
 
         .help-text {
-            color: @color-green;
+            color: $color-green;
         }
     }
 
@@ -252,14 +252,14 @@
      */
 
     &.has-warning {
-        color: @color-orange;
+        color: $color-orange;
 
         .input {
-            border-color: @color-orange;
+            border-color: $color-orange;
         }
 
         .help-text {
-            color: @color-orange;
+            color: $color-orange;
         }
     }
 }
@@ -285,11 +285,11 @@ select,
 textarea {
 
     &.input {
-        border: 1px solid @color-silver;
+        border: 1px solid $color-silver;
         border-radius: 0;
-        color: @color-gray-dark;
-        font-family: @font;
-        font-weight: @weight-normal;
+        color: $color-gray-dark;
+        font-family: $font;
+        font-weight: $weight-normal;
         height: 2.5em; /* 40 / 16 */
         margin-top: 0.375em;
         padding: 0.5em 0.75em 0.5625em 0.75em;
@@ -298,7 +298,7 @@ textarea {
 
         &:focus,
         &:hover {
-            border-color: @color-gray-dark;
+            border-color: $color-gray-dark;
         }
 
         /**
@@ -306,14 +306,14 @@ textarea {
          */
 
         &[disabled="disabled"] {
-            background-color: @color-white-dark;
-            border-color: @color-white-dark;
-            color: @color-gray;
+            background-color: $color-white-dark;
+            border-color: $color-white-dark;
+            color: $color-gray;
             cursor: not-allowed;
 
             &:focus,
             &:hover {
-                border-color: @color-white-dark;
+                border-color: $color-white-dark;
             }
         }
 
@@ -322,7 +322,7 @@ textarea {
          */
 
         &[readonly="readonly"] {
-            background-color: @color-white-dark;
+            background-color: $color-white-dark;
             cursor: not-allowed;
         }
     }
@@ -375,10 +375,10 @@ textarea {
 \* -------------------------------------------------------------------------- */
 
 .help-text {
-    color: @color-gray;
+    color: $color-gray;
     display: block;
     font-size: 0.875em; /* 14 / 16 */
-    font-weight: @weight-normal;
+    font-weight: $weight-normal;
     padding-top: 0.5em;
     padding-left: 0.125em;
 
@@ -408,12 +408,12 @@ textarea {
      */
 
     .toggle {
-        background-color: @color-white-dark;
+        background-color: $color-white-dark;
         border: 0;
-        color: @color-gray;
-        font-family: @font-secondary;
+        color: $color-gray;
+        font-family: $font-secondary;
         font-size: 0.875em; /* 14 / 16 */
-        font-weight: @weight-bold;
+        font-weight: $weight-bold;
         height: 2em; /* 28 / 14 */
         padding: 0.3125em 0.5em 0.1875em 0.5em;
         position: absolute;
@@ -424,7 +424,7 @@ textarea {
 
         &:focus,
         &:hover {
-            color: @color-gray-dark;
+            color: $color-gray-dark;
             outline: 0;
         }
     }

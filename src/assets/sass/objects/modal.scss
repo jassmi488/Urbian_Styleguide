@@ -7,7 +7,7 @@
  */
 
 .modal {
-    z-index: @z-index-modal;
+    z-index: $z-index-modal;
 }
 
 /**
@@ -15,7 +15,7 @@
  */
 
 .modal-backdrop {
-    z-index: @z-index-modal-backdrop;
+    z-index: $z-index-modal-backdrop;
 }
 
 /**
@@ -41,7 +41,7 @@
     .modal-close {
         background-color: transparent;
         border: 0;
-        color: @color-silver;
+        color: $color-silver;
         font-size: 1.25em; /* 20 / 16 */
         position: absolute;
         right: 0.25em;
@@ -50,7 +50,7 @@
 
         &:focus,
         &:hover {
-            color: @color-black;
+            color: $color-black;
             outline: none;
         }
     }

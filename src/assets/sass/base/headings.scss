@@ -6,9 +6,9 @@
  * Mixin
  */
 
-@mixin heading(@font-size) {
-    font-family: @font-secondary;
-    font-size: @font-size;
+@mixin heading($font-size) {
+    font-family: $font-secondary;
+    font-size: $font-size;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 1em;
@@ -19,25 +19,25 @@
  */
 
 h1, .alpha {
-    @include heading(@h1-font-size);
+    @include heading($h1-font-size);
 }
 
 h2, .beta {
-    @include heading(@h2-font-size);
+    @include heading($h2-font-size);
 }
 
 h3, .gamma {
-    @include heading(@h3-font-size);
+    @include heading($h3-font-size);
 }
 
 h4, .delta {
-    @include heading(@h4-font-size);
+    @include heading($h4-font-size);
 }
 
 h5, .epsilon {
-    @include heading(@h5-font-size);
+    @include heading($h5-font-size);
 }
 
 h6, .zeta {
-    @include heading(@h6-font-size);
+    @include heading($h6-font-size);
 }

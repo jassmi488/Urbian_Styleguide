@@ -110,7 +110,7 @@
     overflow: scroll;
 }
 
-@media (min-width: @bp-small) {
+@media (min-width: $bp-small) {
 
     .modal-dialog {
         width: 600px;
@@ -127,7 +127,7 @@
     }
 }
 
-@media (min-width: @bp-medium) {
+@media (min-width: $bp-medium) {
 
     .modal-lg {
         width: 900px;

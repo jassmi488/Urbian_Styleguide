@@ -8,7 +8,7 @@
 
 /* Slider */
 .slick-loading .slick-list {
-    background: @color-white url("../images/general/loader.gif") center center no-repeat;
+    background: $color-white url("../images/general/loader.gif") center center no-repeat;
 }
 
 /* Slide */
@@ -60,7 +60,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-    color: @color-black;
+    color: $color-black;
     font-family: "FontAwesome";
     font-size: 24px;
     line-height: 1;
@@ -153,7 +153,7 @@
 }
 
 .slick-dots li button:before {
-    color: @color-black;
+    color: $color-black;
     content: "\f111";
     font-family: "FontAwesome";
     font-size: 16px;
@@ -170,6 +170,6 @@
 }
 
 .slick-dots .slick-active button:before {
-    color: @color-black;
+    color: $color-black;
     opacity: .75;
 }

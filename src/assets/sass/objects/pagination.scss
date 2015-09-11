@@ -40,28 +40,28 @@
             &.is-selected {
 
                 a {
-                    background-color: @color-gray;
-                    color: @color-black;
+                    background-color: $color-gray;
+                    color: $color-black;
 
                     &:focus,
                     &:hover {
-                        background-color: @color-gray;
+                        background-color: $color-gray;
                     }
                 }
             }
 
             a {
-                background-color: @color-white-dark;
-                color: @color-gray-dark;
+                background-color: $color-white-dark;
+                color: $color-gray-dark;
                 display: block;
-                font-weight: @weight-bold;
+                font-weight: $weight-bold;
                 padding: 0.375em 0.875em;
                 text-decoration: none;
                 transition: background-color 0.25s;
 
                 &:focus,
                 &:hover {
-                    background-color: @color-silver;
+                    background-color: $color-silver;
                 }
             }
 
@@ -79,8 +79,8 @@
          */
 
         .is-disabled {
-            background-color: @color-white-dark;
-            color: @color-silver;
+            background-color: $color-white-dark;
+            color: $color-silver;
             padding: 0.375em 0.875em;
         }
 
@@ -94,7 +94,7 @@
     }
 }
 
-@media all and (min-width: @bp-small) {
+@media all and (min-width: $bp-small) {
 
     .pagination {
 

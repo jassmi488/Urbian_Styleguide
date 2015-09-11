@@ -17,10 +17,10 @@
         padding: 0;
 
         li {
-            color: @color-gray;
+            color: $color-gray;
             float: left;
             font-size: 0.875em; /* 14 / 16 */
-            font-weight: @weight-bold;
+            font-weight: $weight-bold;
             margin-right: 1.5em;
             position: relative;
 
@@ -42,18 +42,18 @@
             }
 
             &.is-active {
-                color: @color-gray;
+                color: $color-gray;
             }
 
             a {
-                color: @color-gray-dark;
+                color: $color-gray-dark;
                 display: block;
                 text-decoration: none;
                 transition: color 0.25s;
 
                 &:focus,
                 &:hover {
-                    color: @color-black;
+                    color: $color-black;
                     text-decoration: underline;
                 }
             }

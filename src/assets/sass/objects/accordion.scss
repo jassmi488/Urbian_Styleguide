@@ -24,8 +24,8 @@
          */
 
         .accordion-item__title {
-            color: @color-gray-dark;
-            font-weight: @weight-bold;
+            color: $color-gray-dark;
+            font-weight: $weight-bold;
 
             /**
              * Icon
@@ -43,8 +43,8 @@
          */
 
         .accordion-item__link {
-            background-color: @color-white-dark;
-            color: @color-gray-dark;
+            background-color: $color-white-dark;
+            color: $color-gray-dark;
             display: block;
             padding: 0.5em 0.875em 0.4375em 0.875em;
             text-decoration: none;
@@ -52,8 +52,8 @@
 
             &:focus,
             &:hover {
-                background-color: @color-silver;
-                color: @color-black;
+                background-color: $color-silver;
+                color: $color-black;
             }
         }
 

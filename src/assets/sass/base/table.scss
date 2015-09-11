@@ -3,7 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .table {
-    border: 1px solid @color-silver;
+    border: 1px solid $color-silver;
     margin-bottom: 1em;
     width: 100%;
 
@@ -12,7 +12,7 @@
      */
 
     .table__caption {
-        font-weight: @weight-bold;
+        font-weight: $weight-bold;
         margin-bottom: 1em;
         text-align: left;
     }
@@ -21,9 +21,9 @@
         display: none;
 
         th {
-            background-color: @color-white;
-            border-right: 1px solid @color-silver;
-            border-bottom: 2px solid @color-gray;
+            background-color: $color-white;
+            border-right: 1px solid $color-silver;
+            border-bottom: 2px solid $color-gray;
             padding: 0.5em 1em;
             text-align: left;
         }
@@ -44,13 +44,13 @@
             }
 
             &:nth-child(odd) {
-                background-color: @color-white-dark;
+                background-color: $color-white-dark;
             }
         }
     }
 
     td {
-        border-bottom: 1px solid @color-silver;
+        border-bottom: 1px solid $color-silver;
         display: block;
         padding: 0.5em 1em;
         text-align: right;
@@ -58,7 +58,7 @@
         &:before {
             content: attr(data-label);
             float: left;
-            font-weight: @weight-bold;
+            font-weight: $weight-bold;
         }
     }
 
@@ -71,7 +71,7 @@
             &:first-child {
 
                 td {
-                    border-top: 2px solid @color-gray;
+                    border-top: 2px solid $color-gray;
                 }
             }
 
@@ -85,19 +85,19 @@
         }
 
         a {
-            color: @color-gray-dark;
+            color: $color-gray-dark;
             text-decoration: underline;
             transition: color 0.25s;
 
             &:focus,
             &:hover {
-                color: @color-blue;
+                color: $color-blue;
             }
         }
     }
 }
 
-@media all and (min-width: @bp-small) {
+@media all and (min-width: $bp-small) {
 
     .table {
 
@@ -106,7 +106,7 @@
         }
 
         td {
-            border-right: 1px solid @color-silver;
+            border-right: 1px solid $color-silver;
             display: table-cell;
             text-align: left;
 

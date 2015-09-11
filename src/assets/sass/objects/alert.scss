@@ -3,7 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .alert {
-    background-color: @color-white-dark;
+    background-color: $color-white-dark;
     border-left-style: solid;
     border-left-width: 3px;
     margin-bottom: 1em;
@@ -16,7 +16,7 @@
 
     .alert__title {
         font-size: 1.25em; /* 20 / 16 */
-        font-weight: @weight-bold;
+        font-weight: $weight-bold;
         margin-bottom: 0.25em;
     }
 
@@ -32,7 +32,7 @@
          */
 
         a {
-            font-weight: @weight-bold;
+            font-weight: $weight-bold;
             text-decoration: underline;
         }
     }
@@ -44,7 +44,7 @@
     .alert__dismiss {
         background-color: transparent;
         border: 0;
-        color: @color-gray;
+        color: $color-gray;
         display: block;
         position: absolute;
         right: 0.25em;
@@ -53,7 +53,7 @@
 
         &:focus,
         &:hover {
-            color: @color-black;
+            color: $color-black;
             outline: 0;
         }
     }
@@ -63,16 +63,16 @@
      */
 
     &.alert--success {
-        border-color: @color-green;
+        border-color: $color-green;
 
         .alert__title {
-            color: @color-green;
+            color: $color-green;
         }
 
         .alert__message {
 
             a {
-                color: @color-green;
+                color: $color-green;
             }
         }
     }
@@ -82,16 +82,16 @@
      */
 
     &.alert--info {
-        border-color: @color-blue;
+        border-color: $color-blue;
 
         .alert__title {
-            color: @color-blue;
+            color: $color-blue;
         }
 
         .alert__message {
 
             a {
-                color: @color-blue;
+                color: $color-blue;
             }
         }
     }
@@ -101,16 +101,16 @@
      */
 
     &.alert--warning {
-        border-color: @color-orange;
+        border-color: $color-orange;
 
         .alert__title {
-            color: @color-orange;
+            color: $color-orange;
         }
 
         .alert__message {
 
             a {
-                color: @color-orange;
+                color: $color-orange;
             }
         }
     }
@@ -120,16 +120,16 @@
      */
 
     &.alert--error {
-        border-color: @color-red;
+        border-color: $color-red;
 
         .alert__title {
-            color: @color-red;
+            color: $color-red;
         }
 
         .alert__message {
 
             a {
-                color: @color-red;
+                color: $color-red;
             }
         }
     }

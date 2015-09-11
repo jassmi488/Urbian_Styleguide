@@ -20,7 +20,7 @@
  */
 
 @mixin blockquote() {
-    border-left: 3px @color-gray solid;
+    border-left: 3px $color-gray solid;
     margin: 1em 0 1em 1em;
     padding: 0 1em;
 
@@ -39,13 +39,13 @@
     cite {
 
         a {
-            color: @color-gray-dark;
+            color: $color-gray-dark;
             text-decoration: underline;
             transition: color 0.25s;
 
             &:focus,
             &:hover {
-                color: @color-blue;
+                color: $color-blue;
             }
         }
     }

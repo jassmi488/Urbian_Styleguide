@@ -38,7 +38,7 @@
      */
 
     .card__time {
-        color: @color-gray-dark;
+        color: $color-gray-dark;
         display: block;
         font-size: 0.9375em; /* 15 / 16 */
         margin-bottom: 0.9375em;
@@ -65,7 +65,7 @@
      */
 
     .card-inner {
-        border: 1px solid @color-silver;
+        border: 1px solid $color-silver;
         border-top: 0;
         .clearfix();
         padding: 1.25em 1em 1em 1em;

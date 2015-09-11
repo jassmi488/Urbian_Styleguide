@@ -48,10 +48,10 @@
     }
 }
 
-@media all and (min-width: @bp-small) {
+@media all and (min-width: $bp-small) {
 
     .map-embed {
-        background-color: @color-white-dark;
+        background-color: $color-white-dark;
         height: auto;
         padding-bottom: 56.25%;
         position: relative;
