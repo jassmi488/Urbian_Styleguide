@@ -73,7 +73,7 @@
     .tabs {
 
         .tab-list {
-            .clearfix();
+            @include clearfix();
 
             .tab-list__tab {
                 float: left;

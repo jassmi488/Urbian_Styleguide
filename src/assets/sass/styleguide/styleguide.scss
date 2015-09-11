@@ -179,7 +179,7 @@
     &.sg-list--icons {
 
         li {
-            .clearfix();
+            @include clearfix();
             margin-bottom: 2em;
 
             &:last-child {
@@ -299,7 +299,7 @@
     .sg-list {
 
         &.sg-list--colors {
-            .clearfix();
+            @include clearfix();
             margin-right: -0.5em;
             margin-left: -0.5em;
 
@@ -748,7 +748,7 @@
     .sg-header {
 
         &.sg-header--primary {
-            .clearfix();
+            @include clearfix();
             left: 0;
             position: fixed;
             top: 0;
@@ -849,7 +849,7 @@
  */
 
 .sg-l-wrapper {
-    .clearfix();
+    @include clearfix();
     margin-right: auto;
     margin-left: auto;
     max-width: $sg-bp-xl;
@@ -869,7 +869,7 @@
  */
 
 .sg-l-section {
-    .clearfix();
+    @include clearfix();
     padding-top: 4em;
     padding-bottom: 2em;
 
@@ -1009,7 +1009,7 @@
         &.sg-nav--primary {
 
             .sg-list {
-                .clearfix();
+                @include clearfix();
                 float: left;
 
                 li {

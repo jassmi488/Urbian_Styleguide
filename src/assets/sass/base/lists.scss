@@ -42,7 +42,7 @@ dl {
      */
 
     &.list--inline {
-        .clearfix();
+        @include clearfix();
         .unstyled();
 
         li {

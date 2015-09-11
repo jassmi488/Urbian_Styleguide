@@ -67,7 +67,7 @@
     .card-inner {
         border: 1px solid $color-silver;
         border-top: 0;
-        .clearfix();
+        @include clearfix();
         padding: 1.25em 1em 1em 1em;
     }
 }
