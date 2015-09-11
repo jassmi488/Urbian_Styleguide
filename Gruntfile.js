@@ -155,25 +155,23 @@ module.exports = function (grunt)
                 ]
             }
         },
-        less: {
+        sass: {
             build: {
                 files: {
-                    'build/assets/css/style.css': 'src/assets/less/style.less',
-                    'build/assets/css/styleguide/styleguide.css': 'src/assets/less/styleguide/styleguide.less'
+                    'build/assets/css/style.css': 'src/assets/sass/style.scss',
+                    'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
                 },
                 options: {
-                    banner: banner,
-                    compress: true
+                    style: 'compressed'
                 }
             },
             dist: {
                 files: {
-                    'dist/assets/css/style.css': 'src/assets/less/style.less',
-                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/less/styleguide/styleguide.less'
+                    'dist/assets/css/style.css': 'src/assets/less/style.scss',
+                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/less/styleguide/styleguide.scss'
                 },
                 options: {
-                    banner: banner,
-                    compress: true
+                    style: 'compressed'
                 }
             }
         },
@@ -205,7 +203,7 @@ module.exports = function (grunt)
                 files: [
                     'src/**'
                 ],
-                tasks: ['less:build', 'copy:build', 'uglify:build'],
+                tasks: ['sass:build', 'copy:build', 'uglify:build'],
                 options: {
                     livereload: true
                 }
@@ -215,10 +213,10 @@ module.exports = function (grunt)
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['clean:build', 'less:build', 'copy:build', 'uglify:build']);
+    grunt.registerTask('build', ['clean:build', 'sass:build', 'copy:build', 'uglify:build']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('deploy', ['dist', 'ftp']);
-    grunt.registerTask('dist', ['clean:dist', 'less:dist', 'copy:dist', 'uglify:dist', 'htmlmin']);
+    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'uglify:dist', 'htmlmin']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
     grunt.registerTask('test', ['csslint', 'eslint']);
