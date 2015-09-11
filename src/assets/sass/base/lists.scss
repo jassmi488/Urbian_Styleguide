@@ -3,6 +3,16 @@
 \* -------------------------------------------------------------------------- */
 
 /**
+ * Mixin
+ */
+
+@mixin unstyled() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/**
  * Description
  */
 
@@ -43,7 +53,7 @@ dl {
 
     &.list--inline {
         @include clearfix();
-        .unstyled();
+        @include unstyled();
 
         li {
             float: left;
@@ -94,12 +104,6 @@ dl {
      */
 
     &.list--unstyled {
-        .unstyled();
-    }
-
-    .unstyled() {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        @include unstyled();
     }
 }
