@@ -124,14 +124,14 @@ module.exports = function (grunt)
                     '.gitignore',
                     '.htaccess',
                     '.idea',
-                    '*.less',
+                    '*.scss',
                     'apple-touch-icon-precomposed.png',
                     'favicon.ico',
                     'Gruntfile.js',
                     'package.json',
                     'README.md',
                     'robots.txt',
-                    'less',
+                    'sass',
                     'node_modules'
                 ]
             }
@@ -167,8 +167,8 @@ module.exports = function (grunt)
             },
             dist: {
                 files: {
-                    'dist/assets/css/style.css': 'src/assets/less/style.scss',
-                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/less/styleguide/styleguide.scss'
+                    'dist/assets/css/style.css': 'src/assets/sass/style.scss',
+                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
                 },
                 options: {
                     style: 'compressed'
