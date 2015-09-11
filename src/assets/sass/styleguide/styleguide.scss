@@ -584,8 +584,6 @@
 
     &.sg-header--primary {
         background-color: $sg-color-primary;
-        padding-top: 1em;
-        padding-bottom: 1em;
 
         /**
          * Wrapper
@@ -619,6 +617,7 @@
 
             &.is-open {
                 display: block;
+                padding-bottom: 1em;
             }
 
             /**
@@ -645,7 +644,7 @@
         .sg-btn {
             position: absolute;
             right: 1em;
-            top: 0;
+            top: 1em;
         }
     }
 
@@ -768,7 +767,7 @@
             .sg-nav {
                 display: block;
                 float: left;
-                margin-top: 0.4375em;
+                margin-top: 1.4125em;
                 margin-left: 2em;
 
                 .sg-list {
@@ -779,7 +778,7 @@
                     margin-top: 0;
                     position: absolute;
                     right: 0;
-                    top: 0;
+                    top: 1em;
                     width: auto;
                 }
             }
