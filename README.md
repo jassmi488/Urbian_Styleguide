@@ -20,11 +20,11 @@ Ensure that the following is installed on your computer:
 ### Features
 
 - **Breakpoints, Colors, Fonts**
-    - `less/generic/variables.less`
+    - `sass/generic/variables.scss`
 - **Clearfix, Colors, Display, Embeds, Text Utilities**
-    - `less/base/utilities.less`
+    - `sass/base/utilities.scss`
 - **Transforms, Transitions**
-    - `less/generic/mixins.less`
+    - `sass/generic/mixins.scss`
 
 ### Components
 
