@@ -22,12 +22,12 @@
    #BREAKPOINTS
 \* -------------------------------------------------------------------------- */
 
-@sg-bp-xs:      30.00em; /*  30.00 x 16 =  480px */
-@sg-bp-small:   46.25em; /*  46.25 x 16 =  740px */
-@sg-bp-medium:  61.25em; /*  61.25 x 16 =  980px */
-@sg-bp-large:   75.00em; /*  75.00 x 16 = 1200px */
-@sg-bp-xl:      87.50em; /*  87.50 x 16 = 1400px */
-@sg-bp-xxl:    100.00em; /* 105.00 x 16 = 1600px */
+$sg-bp-xs:      30.00em; /*  30.00 x 16 =  480px */
+$sg-bp-small:   46.25em; /*  46.25 x 16 =  740px */
+$sg-bp-medium:  61.25em; /*  61.25 x 16 =  980px */
+$sg-bp-large:   75.00em; /*  75.00 x 16 = 1200px */
+$sg-bp-xl:      87.50em; /*  87.50 x 16 = 1400px */
+$sg-bp-xxl:    100.00em; /* 105.00 x 16 = 1600px */
 
 
 
@@ -41,18 +41,18 @@
  * Brand
  */
 
-@sg-color-primary:    #001f3f;
+$sg-color-primary:    #001f3f;
 
 /**
  * Grayscale
  */
 
-@sg-color-black:      #222;
-@sg-color-gray-dark:  #4a4a4a;
-@sg-color-gray:       #898989;
-@sg-color-silver:     #d2d2d2;
-@sg-color-white-dark: #f2f2f2;
-@sg-color-white:      #fff;
+$sg-color-black:      #222;
+$sg-color-gray-dark:  #4a4a4a;
+$sg-color-gray:       #898989;
+$sg-color-silver:     #d2d2d2;
+$sg-color-white-dark: #f2f2f2;
+$sg-color-white:      #fff;
 
 
 
@@ -66,7 +66,7 @@
    #Family
    ========================================================================== */
 
-@sg-font: "Source Sans Pro", sans-serif;
+$sg-font: "Source Sans Pro", sans-serif;
 
 
 
@@ -76,6 +76,6 @@
    #Weight
    ========================================================================== */
 
-@sg-weight-bold:      700;
-@sg-weight-semi-bold: 600;
-@sg-weight-normal:    400;
+$sg-weight-bold:      700;
+$sg-weight-semi-bold: 600;
+$sg-weight-normal:    400;

@@ -62,8 +62,8 @@
 
 .sg-heading-spacer {
     clear: both;
-    color: @sg-color-gray-dark;
-    font-family: @sg-font;
+    color: $sg-color-gray-dark;
+    font-family: $sg-font;
     font-size: 1em;
     margin-top: 3em;
     margin-bottom: 1em;
@@ -79,7 +79,7 @@
    ========================================================================== */
 
 .sg-form {
-    font-family: @sg-font;
+    font-family: $sg-font;
     width: 100%;
 
     /**
@@ -87,7 +87,7 @@
      */
 
     .sg-label {
-        font-weight: @sg-weight-bold;
+        font-weight: $sg-weight-bold;
         display: block;
         width: 100%;
     }
@@ -99,8 +99,8 @@
     .sg-input {
         border: 0;
         border-radius: 0;
-        color: @sg-color-gray-dark;
-        font-weight: @sg-weight-normal;
+        color: $sg-color-gray-dark;
+        font-weight: $sg-weight-normal;
         padding: 0.5625em 0.5em;
         width: 100%;
     }
@@ -115,7 +115,7 @@
    ========================================================================== */
 
 .sg-list {
-    font-family: @sg-font;
+    font-family: $sg-font;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -127,7 +127,7 @@
     &.sg-list--colors {
 
         li {
-            border: 1px solid @sg-color-white-dark;
+            border: 1px solid $sg-color-white-dark;
             height: 8em;
             margin-bottom: 1.5em;
             position: relative;
@@ -146,7 +146,7 @@
             }
 
             .sg-codes {
-                background-color: @sg-color-white;
+                background-color: $sg-color-white;
                 bottom: 0;
                 font-size: 0.875em; /* 14 / 16 */
                 left: 0;
@@ -160,11 +160,11 @@
                 width: 100%;
 
                 .sg-code {
-                    color: @sg-color-black;
+                    color: $sg-color-black;
                     display: block;
 
                     &+ .sg-code {
-                        color: @sg-color-gray-dark;
+                        color: $sg-color-gray-dark;
                         padding-top: 0.5em;
                     }
                 }
@@ -194,7 +194,7 @@
             }
 
             .sg-code {
-                background-color: @sg-color-white-dark;
+                background-color: $sg-color-white-dark;
                 display: inline-block;
                 font-size: 0.875em; /* 14 / 16 */
                 margin-left: 1em;
@@ -208,7 +208,7 @@
      */
 
     &.sg-list--meta {
-        color: @sg-color-gray-dark;
+        color: $sg-color-gray-dark;
 
         li {
             font-size: 0.875em; /* 14 / 16 */
@@ -225,15 +225,15 @@
             }
 
             a {
-                border-bottom: 1px solid @sg-color-silver;
-                color: @sg-color-gray-dark;
+                border-bottom: 1px solid $sg-color-silver;
+                color: $sg-color-gray-dark;
                 text-decoration: none;
                 transition: border-color 0.25s, color 0.25s;
 
                 &:focus,
                 &:hover {
-                    border-bottom-color: @sg-color-primary;
-                    color: @sg-color-primary;
+                    border-bottom-color: $sg-color-primary;
+                    color: $sg-color-primary;
                 }
             }
         }
@@ -244,35 +244,35 @@
      */
 
     &.sg-list--templates {
-        color: @sg-color-gray-dark;
+        color: $sg-color-gray-dark;
         counter-reset: section;
         font-size: 1.125em; /* 18 / 16 */
         padding-left: 0.75em;
 
         li {
-            color: @sg-color-gray-dark;
-            font-weight: @sg-weight-bold;
+            color: $sg-color-gray-dark;
+            font-weight: $sg-weight-bold;
             margin-bottom: 0.75em;
 
             &:before {
-                color: @sg-color-gray;
+                color: $sg-color-gray;
                 content: counters(section, ".") ". ";
                 counter-increment: section;
-                font-weight: @sg-weight-bold;
+                font-weight: $sg-weight-bold;
                 padding-right: 0.375em;
             }
 
             a {
-                border-bottom: 1px solid @sg-color-silver;
-                color: @sg-color-gray-dark;
-                font-weight: @sg-weight-normal;
+                border-bottom: 1px solid $sg-color-silver;
+                color: $sg-color-gray-dark;
+                font-weight: $sg-weight-normal;
                 text-decoration: none;
                 transition: border-color 0.25s, color 0.25s;
 
                 &:focus,
                 &:hover {
-                    border-bottom-color: @sg-color-primary;
-                    color: @sg-color-primary;
+                    border-bottom-color: $sg-color-primary;
+                    color: $sg-color-primary;
                 }
             }
 
@@ -294,7 +294,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-small) {
+@media all and (min-width: $sg-bp-small) {
 
     .sg-list {
 
@@ -322,20 +322,20 @@
    ========================================================================== */
 
 .sg-paragraph {
-    font-family: @sg-font;
+    font-family: $sg-font;
     font-size: 1.125em; /* 18 / 16 */
     margin-bottom: 0;
 
     a {
-        border-bottom: 1px solid @sg-color-silver;
-        color: @sg-color-black;
+        border-bottom: 1px solid $sg-color-silver;
+        color: $sg-color-black;
         text-decoration: none;
         transition: border-color 0.25s, color 0.25s;
 
         &:focus,
         &:hover {
-            border-bottom-color: @sg-color-primary;
-            color: @sg-color-primary;
+            border-bottom-color: $sg-color-primary;
+            color: $sg-color-primary;
         }
     }
 
@@ -357,13 +357,13 @@
    ========================================================================== */
 
 .sg-btn {
-    background-color: @sg-color-white;
+    background-color: $sg-color-white;
     border: 0;
-    color: @sg-color-gray-dark;
+    color: $sg-color-gray-dark;
     display: inline-block;
-    font-family: @sg-font;
+    font-family: $sg-font;
     font-size: 1em;
-    font-weight: @sg-weight-bold;
+    font-weight: $sg-weight-bold;
     letter-spacing: 1px;
     line-height: 1;
     padding: 0.75em 1em;
@@ -376,8 +376,8 @@
 
     &:focus,
     &:hover {
-        background-color: @sg-color-gray-dark;
-        color: @sg-color-white;
+        background-color: $sg-color-gray-dark;
+        color: $sg-color-white;
         outline: none;
     }
 
@@ -394,13 +394,13 @@
      */
 
     &.sg-btn--white-dark {
-        background-color: @sg-color-white-dark;
-        color: @sg-color-gray-dark;
+        background-color: $sg-color-white-dark;
+        color: $sg-color-gray-dark;
 
         &:focus,
         &:hover {
-            background-color: @sg-color-gray-dark;
-            color: @sg-color-white;
+            background-color: $sg-color-gray-dark;
+            color: $sg-color-white;
         }
     }
 }
@@ -414,8 +414,8 @@
    ========================================================================== */
 
 .sg-card {
-    background-color: @sg-color-white;
-    font-family: @sg-font;
+    background-color: $sg-color-white;
+    font-family: $sg-font;
     padding: 2em 1em;
     position: relative;
 
@@ -424,7 +424,7 @@
      */
 
     .sg-icon {
-        color: @sg-color-gray-dark;
+        color: $sg-color-gray-dark;
         font-size: 2em; /* 32 / 16 */
         margin-bottom: 0.5em;
     }
@@ -448,7 +448,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: $sg-bp-medium) {
 
     .sg-card {
 
@@ -499,8 +499,8 @@
    ========================================================================== */
 
 .sg-footer {
-    background-color: @sg-color-gray-dark;
-    font-family: @sg-font;
+    background-color: $sg-color-gray-dark;
+    font-family: $sg-font;
     padding-top: 3em;
     padding-bottom: 3em;
     text-align: center;
@@ -527,7 +527,7 @@
      */
 
     .sg-copyright {
-        color: @sg-color-white-dark;
+        color: $sg-color-white-dark;
         font-size: 87.5%;
     }
 }
@@ -545,7 +545,7 @@
  */
 
 .sg-row {
-    background-color: @sg-color-white-dark;
+    background-color: $sg-color-white-dark;
 }
 
 /**
@@ -553,11 +553,11 @@
  */
 
 .sg-col {
-    background-color: @sg-color-gray-dark;
+    background-color: $sg-color-gray-dark;
 
     .sg-code {
-        background-color: @sg-color-gray-dark;
-        color: @sg-color-white;
+        background-color: $sg-color-gray-dark;
+        color: $sg-color-white;
         display: inline-block;
         font-size: 0.875em; /* 14 / 16 */
         margin-bottom: 0;
@@ -576,14 +576,14 @@
    ========================================================================== */
 
 .sg-header {
-    font-family: @sg-font;
+    font-family: $sg-font;
 
     /**
      * Primary
      */
 
     &.sg-header--primary {
-        background-color: @sg-color-primary;
+        background-color: $sg-color-primary;
         padding-top: 1em;
         padding-bottom: 1em;
 
@@ -654,7 +654,7 @@
      */
 
     &.sg-header--section {
-        border-bottom: 3px solid @sg-color-silver;
+        border-bottom: 3px solid $sg-color-silver;
         clear: both;
         margin-bottom: 2em;
         padding-bottom: 0.75em;
@@ -665,7 +665,7 @@
          */
 
         .sg-hN {
-            color: @sg-color-gray-dark;
+            color: $sg-color-gray-dark;
             font-size: 1.125em; /* 18 / 16 */
             letter-spacing: 1px;
             margin-bottom: 0;
@@ -678,7 +678,7 @@
      */
 
     &.sg-header--intro {
-        background-color: @sg-color-primary;
+        background-color: $sg-color-primary;
         padding: 1.5em 1em 1em 1em;
         text-align: center;
 
@@ -704,7 +704,7 @@
          */
 
         .sg-hN {
-            color: @sg-color-white;
+            color: $sg-color-white;
             font-size: 1.75em; /* 28 / 16 */
         }
 
@@ -729,7 +729,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-small) {
+@media all and (min-width: $sg-bp-small) {
 
     .sg-header {
 
@@ -743,7 +743,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: $sg-bp-medium) {
 
     .sg-header {
 
@@ -823,7 +823,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-large) {
+@media all and (min-width: $sg-bp-large) {
 
     .sg-header {
 
@@ -852,7 +852,7 @@
     .clearfix();
     margin-right: auto;
     margin-left: auto;
-    max-width: @sg-bp-xl;
+    max-width: $sg-bp-xl;
     width: 90%;
 
     /**
@@ -860,7 +860,7 @@
      */
 
     &.sg-l-wrapper--narrow {
-        max-width: @sg-bp-medium;
+        max-width: $sg-bp-medium;
     }
 }
 
@@ -887,7 +887,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: $sg-bp-medium) {
 
     .sg-l-section {
         padding-top: 10em;
@@ -916,7 +916,7 @@
     margin-bottom: 1em;
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: $sg-bp-medium) {
 
     .sg-l-article {
         float: left;
@@ -934,7 +934,7 @@
 
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: $sg-bp-medium) {
 
     .sg-l-aside {
         float: left;
@@ -951,7 +951,7 @@
    ========================================================================== */
 
 .sg-nav {
-    font-family: @sg-font;
+    font-family: $sg-font;
 
     /**
      * Primary
@@ -974,8 +974,8 @@
 
                 a {
                     border-bottom: 3px solid transparent;
-                    color: @sg-color-white-dark;
-                    font-weight: @sg-weight-bold;
+                    color: $sg-color-white-dark;
+                    font-weight: $sg-weight-bold;
                     letter-spacing: 1px;
                     padding-bottom: 0.25em;
                     text-decoration: none;
@@ -985,8 +985,8 @@
                     &.is-active,
                     &:focus,
                     &:hover {
-                        border-bottom-color: @sg-color-white;
-                        color: @sg-color-white;
+                        border-bottom-color: $sg-color-white;
+                        color: $sg-color-white;
                     }
 
                     /**
@@ -1002,7 +1002,7 @@
     }
 }
 
-@media all and (min-width: @sg-bp-medium) {
+@media all and (min-width: $sg-bp-medium) {
 
     .sg-nav {
 
@@ -1035,7 +1035,7 @@
    ========================================================================== */
 
 .sg-social {
-    font-family: @sg-font;
+    font-family: $sg-font;
 
     /**
      * List
@@ -1052,14 +1052,14 @@
             }
 
             a {
-                color: @sg-color-gray;
+                color: $sg-color-gray;
                 font-size: 1.5em; /* 24 / 16 */
                 text-decoration: none;
                 transition: color 0.25s;
 
                 &:focus,
                 &:hover {
-                    color: @sg-color-white-dark;
+                    color: $sg-color-white-dark;
                 }
             }
         }
