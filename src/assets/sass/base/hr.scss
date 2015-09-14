@@ -1,0 +1,24 @@
+/* -------------------------------------------------------------------------- *\
+   #HORIZONTAL RULE
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Mixin
+ */
+
+@mixin hr() {
+    border: 0;
+    border-top: 3px solid $color-gray;
+    display: block;
+    height: 1px;
+    margin: 2em 0;
+    padding: 0;
+}
+
+/**
+ * Horizontal Rule
+ */
+
+.hr {
+    @include hr();
+}

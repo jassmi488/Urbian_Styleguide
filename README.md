@@ -19,15 +19,18 @@ Ensure that the following is installed on your computer:
 
 ### Features
 
-- **Breakpoints, Colors, Fonts**
-    - `less/generic/variables.less`
-- **Clearfix, Colors, Display, Embeds, Text Utilities**
-    - `less/base/utilities.less`
-- **Transforms, Transitions**
-    - `less/generic/mixins.less`
+- Mobile first approach:
+ - Layout-specific media queries with breakpoints introduced as needed
+- Configurable variables:
+ - Breakpoints, colors, font stacks and z-indexes
+- Utility classes to assist with:
+ - Color, display and visibility of elements, responsive embeds and typography
+- HTML code samples for all elements, patterns and forms
+- Template for previewing the style of typographic markup
 
 ### Components
 
+- [Sass](http://sass-lang.com)
 - [Normalize.css](http://necolas.github.io/normalize.css)
 - [jQuery](http://jquery.com)
 - [Font Awesome](http://fontawesome.io)

@@ -1,0 +1,1066 @@
+/**
+ * STYLEGUIDE
+ */
+
+/* -------------------------------------------------------------------------- *\
+   #TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * IMPORTS
+ * BASE
+ * .....Headings
+ * .....Form
+ * .....List
+ * .....Paragraph
+ * OBJECTS
+ * .....Button
+ * .....Card
+ * .....Code
+ * .....Footer
+ * .....Grid
+ * .....Header
+ * .....Layout
+ * .....Nav
+ * .....Social
+ */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #IMPORTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Generic
+ */
+
+@import "generic/mixins";
+@import "generic/variables";
+
+/**
+ * Vendor
+ */
+
+@import "vendor/font-awesome";
+@import "vendor/next";
+@import "vendor/prettify";
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #BASE
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   #Headings
+   ========================================================================== */
+
+.sg-heading-spacer {
+    clear: both;
+    color: $sg-color-gray-dark;
+    font-family: $sg-font;
+    font-size: 1em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+
+
+
+
+/* ==========================================================================
+   #Form
+   ========================================================================== */
+
+.sg-form {
+    font-family: $sg-font;
+    width: 100%;
+
+    /**
+     * Label
+     */
+
+    .sg-label {
+        font-weight: $sg-weight-bold;
+        display: block;
+        width: 100%;
+    }
+
+    /**
+     * Input
+     */
+
+    .sg-input {
+        border: 0;
+        border-radius: 0;
+        color: $sg-color-gray-dark;
+        font-weight: $sg-weight-normal;
+        padding: 0.5625em 0.5em;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #List
+   ========================================================================== */
+
+.sg-list {
+    font-family: $sg-font;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    /**
+     * Colors
+     */
+
+    &.sg-list--colors {
+
+        li {
+            border: 1px solid $sg-color-white-dark;
+            height: 8em;
+            margin-bottom: 1.5em;
+            position: relative;
+            width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:focus,
+            &:hover {
+
+                .sg-codes {
+                    max-height: 5.25em;
+                }
+            }
+
+            .sg-codes {
+                background-color: $sg-color-white;
+                bottom: 0;
+                font-size: 0.875em; /* 14 / 16 */
+                left: 0;
+                margin-bottom: 0;
+                max-height: 2.625em;
+                overflow: hidden;
+                padding: 0.5em 0 0.625em;
+                position: absolute;
+                text-align: center;
+                transition: max-height 0.25s;
+                width: 100%;
+
+                .sg-code {
+                    color: $sg-color-black;
+                    display: block;
+
+                    &+ .sg-code {
+                        color: $sg-color-gray-dark;
+                        padding-top: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Icons
+     */
+
+    &.sg-list--icons {
+
+        li {
+            @include clearfix();
+            margin-bottom: 2em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .icon {
+                float: left;
+                font-size: 1.625em; /* 26 / 16 */
+                text-align: center;
+                width: 1.25em;
+            }
+
+            .sg-code {
+                background-color: $sg-color-white-dark;
+                display: inline-block;
+                font-size: 0.875em; /* 14 / 16 */
+                margin-left: 1em;
+                padding: 0.125em 0.375em;
+            }
+        }
+    }
+
+    /**
+     * Meta
+     */
+
+    &.sg-list--meta {
+        color: $sg-color-gray-dark;
+
+        li {
+            font-size: 0.875em; /* 14 / 16 */
+            margin-bottom: 0.5em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .sg-icon {
+                margin-right: 0.5em;
+                text-align: center;
+                width: 1.25em;
+            }
+
+            a {
+                border-bottom: 1px solid $sg-color-silver;
+                color: $sg-color-gray-dark;
+                text-decoration: none;
+                transition: border-color 0.25s, color 0.25s;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $sg-color-primary;
+                    color: $sg-color-primary;
+                }
+            }
+        }
+    }
+
+    /**
+     * Templates
+     */
+
+    &.sg-list--templates {
+        color: $sg-color-gray-dark;
+        counter-reset: section;
+        font-size: 1.125em; /* 18 / 16 */
+        padding-left: 0.75em;
+
+        li {
+            color: $sg-color-gray-dark;
+            font-weight: $sg-weight-bold;
+            margin-bottom: 0.75em;
+
+            &:before {
+                color: $sg-color-gray;
+                content: counters(section, ".") ". ";
+                counter-increment: section;
+                font-weight: $sg-weight-bold;
+                padding-right: 0.375em;
+            }
+
+            a {
+                border-bottom: 1px solid $sg-color-silver;
+                color: $sg-color-gray-dark;
+                font-weight: $sg-weight-normal;
+                text-decoration: none;
+                transition: border-color 0.25s, color 0.25s;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $sg-color-primary;
+                    color: $sg-color-primary;
+                }
+            }
+
+            .sg-list {
+                counter-reset: section;
+                margin-top: 0.375em;
+                padding-left: 1.375em;
+
+                li {
+                    margin-bottom: 0.375em;
+
+                    &:before {
+                        counter-increment: section;
+                        content: counters(section, ".") ". ";
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-small) {
+
+    .sg-list {
+
+        &.sg-list--colors {
+            @include clearfix();
+            margin-right: -0.5em;
+            margin-left: -0.5em;
+
+            li {
+                float: left;
+                margin-right: 0.5em;
+                margin-left: 0.5em;
+                width: 10em;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Paragraph
+   ========================================================================== */
+
+.sg-paragraph {
+    font-family: $sg-font;
+    font-size: 1.125em; /* 18 / 16 */
+    margin-bottom: 0;
+
+    a {
+        border-bottom: 1px solid $sg-color-silver;
+        color: $sg-color-black;
+        text-decoration: none;
+        transition: border-color 0.25s, color 0.25s;
+
+        &:focus,
+        &:hover {
+            border-bottom-color: $sg-color-primary;
+            color: $sg-color-primary;
+        }
+    }
+
+    &+ .sg-paragraph {
+        margin-top: 1em;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #OBJECTS
+\* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+   #Button
+   ========================================================================== */
+
+.sg-btn {
+    background-color: $sg-color-white;
+    border: 0;
+    color: $sg-color-gray-dark;
+    display: inline-block;
+    font-family: $sg-font;
+    font-size: 1em;
+    font-weight: $sg-weight-bold;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 0.75em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.25s, color 0.25s;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:focus,
+    &:hover {
+        background-color: $sg-color-gray-dark;
+        color: $sg-color-white;
+        outline: none;
+    }
+
+    /**
+     * Icon
+     */
+
+    .sg-icon {
+        margin-right: 0.5em;
+    }
+
+    /**
+     * White (Dark)
+     */
+
+    &.sg-btn--white-dark {
+        background-color: $sg-color-white-dark;
+        color: $sg-color-gray-dark;
+
+        &:focus,
+        &:hover {
+            background-color: $sg-color-gray-dark;
+            color: $sg-color-white;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Card
+   ========================================================================== */
+
+.sg-card {
+    background-color: $sg-color-white;
+    font-family: $sg-font;
+    padding: 2em 1em;
+    position: relative;
+
+    /**
+     * Icon
+     */
+
+    .sg-icon {
+        color: $sg-color-gray-dark;
+        font-size: 2em; /* 32 / 16 */
+        margin-bottom: 0.5em;
+    }
+
+    /**
+     * Title
+     */
+
+    .sg-card__title {
+        font-size: 1.75em; /* 28 / 16 */
+        margin-bottom: 0.75em;
+    }
+
+    /**
+     * Synopsis
+     */
+
+    .sg-card__synopsis {
+        font-size: 1.125em; /* 18 / 16 */
+        margin-bottom: 2em;
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-card {
+
+        .sg-card__synopsis {
+            font-size: 1.25em; /* 20 / 16 */
+        }
+    }
+}
+
+
+
+
+/* ==========================================================================
+   #Code
+   ========================================================================== */
+
+/**
+ * Wrapper
+ */
+
+.sg-code-wrapper {
+    clear: both;
+    margin-top: 2em;
+
+    /**
+     * Code
+     */
+
+    .sg-code {
+        display: none;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: pre;
+
+        &.is-visible {
+            display: block;
+            margin-top: 1em;
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Footer
+   ========================================================================== */
+
+.sg-footer {
+    background-color: $sg-color-gray-dark;
+    font-family: $sg-font;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+
+    /**
+     * Logo
+     */
+
+    .sg-logo {
+        display: inline-block;
+        margin-bottom: 1.5em;
+    }
+
+    /**
+     * Social
+     */
+
+    .sg-social {
+        margin-bottom: 3em;
+    }
+
+    /**
+     * Copyright
+     */
+
+    .sg-copyright {
+        color: $sg-color-white-dark;
+        font-size: 87.5%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Grid
+   ========================================================================== */
+
+/**
+ * Row
+ */
+
+.sg-row {
+    background-color: $sg-color-white-dark;
+}
+
+/**
+ * Column
+ */
+
+.sg-col {
+    background-color: $sg-color-gray-dark;
+
+    .sg-code {
+        background-color: $sg-color-gray-dark;
+        color: $sg-color-white;
+        display: inline-block;
+        font-size: 0.875em; /* 14 / 16 */
+        margin-bottom: 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.75em;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Header
+   ========================================================================== */
+
+.sg-header {
+    font-family: $sg-font;
+
+    /**
+     * Primary
+     */
+
+    &.sg-header--primary {
+        background-color: $sg-color-primary;
+
+        /**
+         * Wrapper
+         */
+
+        .sg-l-wrapper {
+            padding-right: 1em;
+            padding-left: 1em;
+            position: relative;
+            width: 100%;
+        }
+
+        /**
+         * Logo
+         */
+
+        .sg-logo {
+            display: inline-block;
+
+            img {
+                display: inline-block;
+            }
+        }
+
+        /**
+         * Nav
+         */
+
+        .sg-nav {
+            display: none;
+
+            &.is-open {
+                display: block;
+                padding-bottom: 1em;
+            }
+
+            /**
+             * List
+             */
+
+            .sg-list {
+                margin-top: 1em;
+            }
+
+            /**
+             * Form
+             */
+
+            .sg-form {
+                margin-top: 1em;
+            }
+        }
+
+        /**
+         * Button
+         */
+
+        .sg-btn {
+            position: absolute;
+            right: 1em;
+            top: 1em;
+        }
+    }
+
+    /**
+     * Section
+     */
+
+    &.sg-header--section {
+        border-bottom: 3px solid $sg-color-silver;
+        clear: both;
+        margin-bottom: 2em;
+        padding-bottom: 0.75em;
+        width: 100%;
+
+        /**
+         * Heading
+         */
+
+        .sg-hN {
+            color: $sg-color-gray-dark;
+            font-size: 1.125em; /* 18 / 16 */
+            letter-spacing: 1px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+    }
+
+    /**
+     * Intro
+     */
+
+    &.sg-header--intro {
+        background-color: $sg-color-primary;
+        padding: 1.5em 1em 1em 1em;
+        text-align: center;
+
+        /**
+         * Wrapper
+         */
+
+        .sg-l-wrapper {
+            width: 100%;
+        }
+
+        /**
+         * Logo
+         */
+
+        .sg-logo {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        /**
+         * Heading
+         */
+
+        .sg-hN {
+            color: $sg-color-white;
+            font-size: 1.75em; /* 28 / 16 */
+        }
+
+        /**
+         * Cards
+         */
+
+        .sg-cards {
+
+            /**
+             * Card
+             */
+
+            .sg-card {
+                margin-bottom: 1em;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-small) {
+
+    .sg-header {
+
+        &.sg-header--intro {
+            padding-top: 1em;
+
+            .sg-logo {
+                float: none;
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-header {
+
+        &.sg-header--primary {
+            @include clearfix();
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+
+            .sg-l-wrapper {
+                padding-right: 0;
+                padding-left: 0;
+                width: 90%;
+            }
+
+            .sg-logo {
+                float: left;
+            }
+
+            .sg-nav {
+                display: block;
+                float: left;
+                margin-top: 1.4125em;
+                margin-left: 2em;
+
+                .sg-list {
+                    margin-top: 0;
+                }
+
+                .sg-form {
+                    margin-top: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 1em;
+                    width: auto;
+                }
+            }
+
+            .sg-btn {
+                display: none;
+            }
+        }
+
+        &.sg-header--intro {
+            padding-top: 4em;
+            padding-bottom: 4.75em;
+
+            .sg-logo {
+                margin-bottom: 2em;
+            }
+
+            .sg-hN {
+                font-size: 2em; /* 32 / 16 */
+            }
+
+            .sg-cards {
+                display: flex;
+                margin-top: 4em;
+                margin-right: -0.5em;
+                margin-left: -0.5em;
+
+                /**
+                 * Card
+                 */
+
+                .sg-card {
+                    float: left;
+                    margin-right: 1em;
+                    margin-bottom: 0;
+                    margin-left: 1em;
+                    width: 33%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-large) {
+
+    .sg-header {
+
+        &.sg-header--primary {
+
+            .sg-nav {
+                margin-left: 4.75em;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Layout
+   ========================================================================== */
+
+/**
+ * Wrapper
+ */
+
+.sg-l-wrapper {
+    @include clearfix();
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $sg-bp-xl;
+    width: 90%;
+
+    /**
+     * Narrow
+     */
+
+    &.sg-l-wrapper--narrow {
+        max-width: $sg-bp-medium;
+    }
+}
+
+/**
+ * Section
+ */
+
+.sg-l-section {
+    @include clearfix();
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    &:last-of-type {
+        padding-bottom: 4em;
+    }
+
+    /**
+     * Intro
+     */
+
+    &.sg-l-section--intro {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-l-section {
+        padding-top: 10em;
+        padding-bottom: 5em;
+
+        &:last-of-type {
+            padding-bottom: 10em;
+        }
+
+        /**
+         * Intro
+         */
+
+        &.sg-l-section--intro {
+            padding-top: 6em;
+            padding-bottom: 6em;
+        }
+    }
+}
+
+/**
+ * Article
+ */
+
+.sg-l-article {
+    margin-bottom: 1em;
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-l-article {
+        float: left;
+        margin-bottom: 0;
+        padding-right: 5%;
+        width: 70%;
+    }
+}
+
+/**
+ * Aside
+ */
+
+.sg-l-aside {
+
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-l-aside {
+        float: left;
+        width: 30%;
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Nav
+   ========================================================================== */
+
+.sg-nav {
+    font-family: $sg-font;
+
+    /**
+     * Primary
+     */
+
+    &.sg-nav--primary {
+
+        /**
+         * List
+         */
+
+        .sg-list {
+
+            li {
+                margin-bottom: 1em;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    border-bottom: 3px solid transparent;
+                    color: $sg-color-white-dark;
+                    font-weight: $sg-weight-bold;
+                    letter-spacing: 1px;
+                    padding-bottom: 0.25em;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: border-color 0.25s, color 0.25s;
+
+                    &.is-active,
+                    &:focus,
+                    &:hover {
+                        border-bottom-color: $sg-color-white;
+                        color: $sg-color-white;
+                    }
+
+                    /**
+                     * Icon
+                     */
+
+                    .icon {
+                        margin-left: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-nav {
+
+        &.sg-nav--primary {
+
+            .sg-list {
+                @include clearfix();
+                float: left;
+
+                li {
+                    float: left;
+                    margin-bottom: 0;
+                    margin-left: 2em;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* ==========================================================================
+   #Social
+   ========================================================================== */
+
+.sg-social {
+    font-family: $sg-font;
+
+    /**
+     * List
+     */
+
+    .sg-list {
+
+        li {
+            display: inline-block;
+            margin-left: 1.5em;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                color: $sg-color-gray;
+                font-size: 1.5em; /* 24 / 16 */
+                text-decoration: none;
+                transition: color 0.25s;
+
+                &:focus,
+                &:hover {
+                    color: $sg-color-white-dark;
+                }
+            }
+        }
+    }
+}

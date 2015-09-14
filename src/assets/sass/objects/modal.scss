@@ -1,0 +1,73 @@
+/* -------------------------------------------------------------------------- *\
+   #MODAL
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Theme
+ */
+
+.modal {
+    z-index: $z-index-modal;
+}
+
+/**
+ * Backdrop
+ */
+
+.modal-backdrop {
+    z-index: $z-index-modal-backdrop;
+}
+
+/**
+ * Content
+ */
+
+.modal-content {
+    border-radius: 0;
+}
+
+/**
+ * Header
+ */
+
+.modal-header {
+    padding: 1em;
+    position: relative;
+
+    /**
+     * Close
+     */
+
+    .modal-close {
+        background-color: transparent;
+        border: 0;
+        color: $color-silver;
+        font-size: 1.25em; /* 20 / 16 */
+        position: absolute;
+        right: 0.25em;
+        top: 0.125em;
+        transition: color 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $color-black;
+            outline: none;
+        }
+    }
+}
+
+/**
+ * Body
+ */
+
+.modal-body {
+    padding: 1em;
+}
+
+/**
+ * Footer
+ */
+
+.modal-footer {
+    padding: 1em 1em 0 1em;
+}
