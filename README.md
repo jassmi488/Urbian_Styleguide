@@ -21,6 +21,8 @@ Ensure that the following is installed on your computer:
 
 - Mobile first approach:
  - Layout-specific media queries with breakpoints introduced as needed
+- Sass is used to preprocess CSS with:
+ - Imports, mixins and nesting
 - Configurable variables:
  - Breakpoints, colors, font stacks and z-indexes
 - Utility classes to assist with:
