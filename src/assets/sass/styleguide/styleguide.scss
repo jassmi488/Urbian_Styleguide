@@ -163,7 +163,7 @@
                     color: $sg-color-black;
                     display: block;
 
-                    &+ .sg-code {
+                    & + .sg-code {
                         color: $sg-color-gray-dark;
                         padding-top: 0.5em;
                     }
@@ -339,7 +339,7 @@
         }
     }
 
-    &+ .sg-paragraph {
+    & + .sg-paragraph {
         margin-top: 1em;
     }
 }
