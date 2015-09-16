@@ -434,6 +434,7 @@
      */
 
     .sg-card__title {
+        font-family: $sg-font;
         font-size: 1.75em; /* 28 / 16 */
         margin-bottom: 0.75em;
     }
@@ -445,16 +446,6 @@
     .sg-card__synopsis {
         font-size: 1.125em; /* 18 / 16 */
         margin-bottom: 2em;
-    }
-}
-
-@media all and (min-width: $sg-bp-medium) {
-
-    .sg-card {
-
-        .sg-card__synopsis {
-            font-size: 1.25em; /* 20 / 16 */
-        }
     }
 }
 
@@ -665,6 +656,7 @@
 
         .sg-hN {
             color: $sg-color-gray-dark;
+            font-family: $sg-font;
             font-size: 1.125em; /* 18 / 16 */
             letter-spacing: 1px;
             margin-bottom: 0;
@@ -704,7 +696,8 @@
 
         .sg-hN {
             color: $sg-color-white;
-            font-size: 1.75em; /* 28 / 16 */
+            font-family: $sg-font;
+            font-size: 2.25em; /* 36 / 16 */
         }
 
         /**
@@ -794,10 +787,6 @@
 
             .sg-logo {
                 margin-bottom: 2em;
-            }
-
-            .sg-hN {
-                font-size: 2em; /* 32 / 16 */
             }
 
             .sg-cards {
