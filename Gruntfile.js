@@ -136,9 +136,6 @@ module.exports = function (grunt)
                 ]
             }
         },
-        htmllint: {
-            all: ['build/**/*.html', '!build/styleguide/*.html']
-        },
         htmlmin: {
             dist: {
                 options: {
