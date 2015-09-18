@@ -12,6 +12,7 @@
  * FONTS
  * .....Family
  * .....Weight
+ * Z-INDEX
  */
 
 
@@ -79,3 +80,17 @@ $sg-font: "Source Sans Pro", sans-serif;
 $sg-weight-bold:      700;
 $sg-weight-semi-bold: 600;
 $sg-weight-normal:    400;
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #Z-INDEX
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Header
+ */
+
+$sg-z-index-header: 1020;
