@@ -61,10 +61,10 @@
     }
 
     /**
-     * Inner
+     * Content
      */
 
-    .card-inner {
+    .card-content {
         border: 1px solid $color-silver;
         border-top: 0;
         @include clearfix();
