@@ -23,6 +23,7 @@
  */
 
 .modal-content {
+    border-color: $color-gray-dark;
     border-radius: 0;
 }
 
@@ -31,6 +32,7 @@
  */
 
 .modal-header {
+    border-bottom-color: $color-silver;
     padding: 1em;
     position: relative;
 
@@ -69,5 +71,6 @@
  */
 
 .modal-footer {
+    border-top-color: $color-silver;
     padding: 1em 1em 0 1em;
 }
