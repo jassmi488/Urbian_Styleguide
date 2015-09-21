@@ -322,6 +322,7 @@
    ========================================================================== */
 
 .sg-paragraph {
+    color: $sg-color-gray-dark;
     font-family: $sg-font;
     font-size: 1.125em; /* 18 / 16 */
     margin-bottom: 0;
@@ -434,6 +435,7 @@
      */
 
     .sg-card__title {
+        color: $sg-color-gray-dark;
         font-family: $sg-font;
         font-size: 1.75em; /* 28 / 16 */
         margin-bottom: 0.75em;
@@ -444,6 +446,7 @@
      */
 
     .sg-card__synopsis {
+        color: $sg-color-gray-dark;
         font-size: 1.125em; /* 18 / 16 */
         margin-bottom: 2em;
     }

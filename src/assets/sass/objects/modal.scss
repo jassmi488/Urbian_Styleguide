@@ -23,6 +23,7 @@
  */
 
 .modal-content {
+    border-color: $color-black;
     border-radius: 0;
 }
 
@@ -31,6 +32,7 @@
  */
 
 .modal-header {
+    border-bottom-color: $color-silver;
     padding: 1em;
     position: relative;
 
@@ -44,8 +46,8 @@
         color: $color-silver;
         font-size: 1.25em; /* 20 / 16 */
         position: absolute;
-        right: 0.25em;
-        top: 0.125em;
+        right: 0.5em;
+        top: 0.6875em;
         transition: color 0.25s;
 
         &:focus,
@@ -69,5 +71,6 @@
  */
 
 .modal-footer {
+    border-top-color: $color-silver;
     padding: 1em 1em 0 1em;
 }
