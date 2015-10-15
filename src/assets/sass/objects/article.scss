@@ -19,6 +19,11 @@
 
     figure {
         @include figure();
+
+        img {
+            max-width: none;
+            width: 100%;
+        }
     }
 
     /**
