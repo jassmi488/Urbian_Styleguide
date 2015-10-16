@@ -149,22 +149,22 @@
             $anchor.on('click', function (e) {
 
                 /*
-                 * Prevent click on primary dropdown anchor
+                 * Toggle the dropdown menu
                  */
 
                 if ($(this).next().hasClass('list--menu')) {
-                    e.preventDefault();
-                }
+                    e.preventDefault(); // Prevent click on dropdown anchor
 
-                $menu.toggleClass('is-open');
+                    $menu.toggleClass('is-open');
 
-                if ($menu.hasClass('is-open')) {
-                    $menu.attr('aria-hidden', 'false');
-                    $anchor_icon.removeClass(icon_down).addClass(icon_up);
-                }
-                else {
-                    $menu.attr('aria-hidden', 'true');
-                    $anchor_icon.removeClass(icon_up).addClass(icon_down);
+                    if ($menu.hasClass('is-open')) {
+                        $menu.attr('aria-hidden', 'false');
+                        $anchor_icon.removeClass(icon_down).addClass(icon_up);
+                    }
+                    else {
+                        $menu.attr('aria-hidden', 'true');
+                        $anchor_icon.removeClass(icon_up).addClass(icon_down);
+                    }
                 }
 
                 /*
