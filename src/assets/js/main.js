@@ -143,12 +143,13 @@
             var $anchor = $(this);
             var $anchor_icon = $('.icon', $anchor);
             var $menu = $anchor.next('.list--menu');
-            var icon_up = $anchor.data('icon-up');
-            var icon_down = $anchor.data('icon-down');
+            var icon_up = $nav_dropdown.data('icon-up');
+            var icon_down = $nav_dropdown.data('icon-down');
 
             $anchor.on('click', function (e) {
+
                 /*
-                 * Prevent click on primary drop-down anchor
+                 * Prevent click on primary dropdown anchor
                  */
 
                 if ($(this).next().hasClass('list--menu')) {
@@ -166,8 +167,19 @@
                     $anchor_icon.removeClass(icon_up).addClass(icon_down);
                 }
 
-                $('.list--menu', $nav_dropdown).not($menu).removeClass('is-open').attr('aria-hidden', 'true');
-                $('.icon', $nav_dropdown).not($anchor_icon).removeClass(icon_up).addClass(icon_down);
+                /*
+                 * Close all other open menus
+                 */
+
+                var $menu_other = $('.list--menu', $nav_dropdown).not($menu);
+                $menu_other.removeClass('is-open').attr('aria-hidden', 'true');
+
+                /*
+                 * Reset icon of all other menu anchors
+                 */
+
+                var $anchor_other_icon = $('.icon', $menu_other.prev());
+                $anchor_other_icon.removeClass(icon_up).addClass(icon_down);
             });
         });
     }
