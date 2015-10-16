@@ -31,8 +31,8 @@
                 var $link = $(this);
                 var $item = $link.parents('.accordion-item');
                 var $icon = $('.icon', $link);
-                var icon_up = $link.data('icon-up');
-                var icon_down = $link.data('icon-down');
+                var icon_up = $accordion_component.data('icon-up');
+                var icon_down = $accordion_component.data('icon-down');
 
                 /*
                  * Update the selected accordion item
