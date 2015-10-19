@@ -31,8 +31,8 @@
                 var $link = $(this);
                 var $item = $link.parents('.accordion-item');
                 var $icon = $('.icon', $link);
-                var icon_up = $link.data('icon-up');
-                var icon_down = $link.data('icon-down');
+                var icon_up = $accordion_component.data('icon-up');
+                var icon_down = $accordion_component.data('icon-down');
 
                 /*
                  * Update the selected accordion item
@@ -143,31 +143,43 @@
             var $anchor = $(this);
             var $anchor_icon = $('.icon', $anchor);
             var $menu = $anchor.next('.list--menu');
-            var icon_up = $anchor.data('icon-up');
-            var icon_down = $anchor.data('icon-down');
+            var icon_up = $nav_dropdown.data('icon-up');
+            var icon_down = $nav_dropdown.data('icon-down');
 
             $anchor.on('click', function (e) {
+
                 /*
-                 * Prevent click on primary drop-down anchor
+                 * Toggle the dropdown menu
                  */
 
                 if ($(this).next().hasClass('list--menu')) {
-                    e.preventDefault();
+                    e.preventDefault(); // Prevent click on dropdown anchor
+
+                    $menu.toggleClass('is-open');
+
+                    if ($menu.hasClass('is-open')) {
+                        $menu.attr('aria-hidden', 'false');
+                        $anchor_icon.removeClass(icon_down).addClass(icon_up);
+                    }
+                    else {
+                        $menu.attr('aria-hidden', 'true');
+                        $anchor_icon.removeClass(icon_up).addClass(icon_down);
+                    }
                 }
 
-                $menu.toggleClass('is-open');
+                /*
+                 * Close all other open menus
+                 */
 
-                if ($menu.hasClass('is-open')) {
-                    $menu.attr('aria-hidden', 'false');
-                    $anchor_icon.removeClass(icon_down).addClass(icon_up);
-                }
-                else {
-                    $menu.attr('aria-hidden', 'true');
-                    $anchor_icon.removeClass(icon_up).addClass(icon_down);
-                }
+                var $menu_other = $('.list--menu', $nav_dropdown).not($menu);
+                $menu_other.removeClass('is-open').attr('aria-hidden', 'true');
 
-                $('.list--menu', $nav_dropdown).not($menu).removeClass('is-open').attr('aria-hidden', 'true');
-                $('.icon', $nav_dropdown).not($anchor_icon).removeClass(icon_up).addClass(icon_down);
+                /*
+                 * Reset icon of all other menu anchors
+                 */
+
+                var $anchor_other_icon = $('.icon', $menu_other.prev());
+                $anchor_other_icon.removeClass(icon_up).addClass(icon_down);
             });
         });
     }
