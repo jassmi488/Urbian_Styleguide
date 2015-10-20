@@ -412,28 +412,12 @@ textarea {
     position: relative;
 
     /**
-     * Toggle
+     * Button
      */
 
-    .toggle {
-        background-color: $color-white-dark;
-        border: 0;
-        color: $color-gray;
-        font-family: $font-secondary;
-        font-size: 0.875em; /* 14 / 16 */
-        font-weight: $weight-bold;
-        height: 2em; /* 28 / 14 */
-        padding: 0.3125em 0.5em 0.1875em 0.5em;
+    .btn {
         position: absolute;
-        right: 0.375em;
-        text-align: center;
-        top: 2.5625em;
-        transition: color 0.25s;
-
-        &:focus,
-        &:hover {
-            color: $color-gray-dark;
-            outline: 0;
-        }
+        right: 0;
+        top: 1.875em;
     }
 }

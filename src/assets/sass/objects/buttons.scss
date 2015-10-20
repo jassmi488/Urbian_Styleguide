@@ -33,13 +33,9 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.25s, border-color 0.25s, color 0.25s, top 0.25s;
+    transition: background-color 0.25s, border-color 0.25s, color 0.25s;
     vertical-align: middle;
     white-space: nowrap;
-
-    &:active {
-        top: 1px;
-    }
 
     &.is-active,
     &:focus,
@@ -51,10 +47,6 @@
     }
 
     &[disabled="disabled"] {
-
-        &:active {
-            top: 0;
-        }
 
         &.is-active,
         &:focus,
@@ -158,7 +150,6 @@
         border: 1px solid $color-silver;
         display: none;
         left: 0;
-        margin-top: 1px;
         min-width: 10em; /* 160 / 16 */
         position: absolute;
         top: 100%;
