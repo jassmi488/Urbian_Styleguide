@@ -260,11 +260,9 @@
 
                     if ($dropdown.hasClass('is-open')) {
                         $dropdown.attr('aria-hidden', 'false');
-                        $button.attr('aria-expanded', 'true');
                     }
                     else {
                         $dropdown.attr('aria-hidden', 'true');
-                        $button.attr('aria-expanded', 'false');
                     }
 
                     /*
