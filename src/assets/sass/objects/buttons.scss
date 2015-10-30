@@ -152,6 +152,7 @@
         left: 0;
         min-width: 10em; /* 160 / 16 */
         position: absolute;
+        text-align: left;
         top: 100%;
         z-index: $z-index-btn-dropdown;
 
@@ -208,7 +209,7 @@
      */
 
     .btn {
-        margin-bottom: 0.875em;
+        margin-bottom: 1.25em;
         width: 100%;
 
         &:last-child {
@@ -221,9 +222,7 @@
      */
 
     .btn-dropdown {
-        margin-bottom: 0.75em;
-        margin-left: 0.75em;
-        text-align: left;
+        margin-bottom: 1.25em;
         width: 100%;
 
         &:last-child {
@@ -233,19 +232,22 @@
         .btn {
             float: left;
             margin-bottom: 0;
-            margin-left: 0;
             width: auto;
+
+            & + .btn {
+                margin-left: 1px;
+            }
         }
     }
 
     /**
-     * Left-aligned Buttons
+     * Right-aligned
      */
 
-    &.btn-group--left {
+    &.btn-group--right {
 
         .btn-dropdown {
-            margin-right: 0.75em;
+            margin-right: 0.9375em;
             margin-left: 0;
 
             &:last-child {
@@ -262,11 +264,10 @@
 @media all and (min-width: $bp-xs) {
 
     .btn-group {
-        text-align: right;
 
         .btn {
             margin-bottom: 0;
-            margin-left: 0.75em;
+            margin-left: 0.9375em;
             width: auto;
 
             &:first-child {
@@ -276,14 +277,23 @@
 
         .btn-dropdown {
             margin-bottom: 0;
+            margin-left: 0.9375em;
             width: auto;
+
+            &:first-child {
+                margin-left: 0;
+            }
         }
 
-        &.btn-group--left {
-            text-align: left;
+        &.btn-group--center {
+            text-align: center;
+        }
+
+        &.btn-group--right {
+            text-align: right;
 
             .btn {
-                margin-right: 0.75em;
+                margin-right: 0.9375em;
                 margin-left: 0;
 
                 &:last-child {
