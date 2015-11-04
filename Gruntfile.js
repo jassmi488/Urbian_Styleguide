@@ -157,9 +157,6 @@ module.exports = function (grunt)
                 files: {
                     'build/assets/css/style.css': 'src/assets/sass/style.scss',
                     'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
-                },
-                options: {
-                    style: 'compressed'
                 }
             },
             dist: {
@@ -168,6 +165,7 @@ module.exports = function (grunt)
                     'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
                 },
                 options: {
+                    sourcemap: 'none',
                     style: 'compressed'
                 }
             }
