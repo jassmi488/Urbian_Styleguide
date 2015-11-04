@@ -19,14 +19,6 @@
 
     thead {
         display: none;
-
-        th {
-            background-color: $color-white;
-            border-right: 1px solid $color-silver;
-            border-bottom: 2px solid $color-gray;
-            padding: 0.5em 1em;
-            text-align: left;
-        }
     }
 
     tbody {
@@ -103,6 +95,14 @@
 
         thead {
             display: table-header-group;
+
+            th {
+                background-color: $color-white;
+                border-right: 1px solid $color-silver;
+                border-bottom: 2px solid $color-gray;
+                padding: 0.5em 1em;
+                text-align: left;
+            }
         }
 
         td {
