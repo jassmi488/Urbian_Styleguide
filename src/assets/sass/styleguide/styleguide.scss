@@ -220,12 +220,6 @@
                 margin-bottom: 0;
             }
 
-            .sg-icon {
-                margin-right: 0.5em;
-                text-align: center;
-                width: 1.25em;
-            }
-
             a {
                 border-bottom: 1px solid $sg-color-silver;
                 color: $sg-color-gray-dark;
@@ -385,14 +379,6 @@
     }
 
     /**
-     * Icon
-     */
-
-    .sg-icon {
-        margin-right: 0.5em;
-    }
-
-    /**
      * White (Dark)
      */
 
@@ -421,16 +407,6 @@
     font-family: $sg-font;
     padding: 2em 1em;
     position: relative;
-
-    /**
-     * Icon
-     */
-
-    .sg-icon {
-        color: $sg-color-silver;
-        font-size: 2em; /* 32 / 16 */
-        margin-bottom: 0.5em;
-    }
 
     /**
      * Title

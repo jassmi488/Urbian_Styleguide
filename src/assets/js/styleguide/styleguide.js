@@ -62,13 +62,11 @@
                  * Toggle the label of the button
                  */
 
-                var icon_code = '<span class="sg-icon fa fa-code" aria-hidden="true"></span>';
-
                 if ($(this).hasClass('is-active')) {
-                    $(this).html(icon_code + 'Hide Code');
+                    $(this).html('Hide Code');
                 }
                 else {
-                    $(this).html(icon_code + 'View Code');
+                    $(this).html('View Code');
                 }
             });
         });
