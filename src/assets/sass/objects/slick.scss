@@ -15,7 +15,7 @@
 .slick-slide img {
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 /* Arrows */
@@ -104,10 +104,6 @@
 }
 
 /* Dots */
-.slick-slider {
-    margin-bottom: 16px;
-}
-
 .slick-dots {
     bottom: 0;
     display: block;
