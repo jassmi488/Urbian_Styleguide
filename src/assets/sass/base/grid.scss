@@ -4,7 +4,6 @@
 
 .row {
     @include clearfix();
-    margin-bottom: 10%;
 
     &:last-child {
         margin-bottom: 0;
@@ -17,6 +16,10 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    & + .row {
+        margin-top: 5%;
     }
 }
 
