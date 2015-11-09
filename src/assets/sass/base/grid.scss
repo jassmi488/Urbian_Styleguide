@@ -4,14 +4,14 @@
 
 .row {
     @include clearfix();
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 
     &:last-child {
         margin-bottom: 0;
     }
 
     .col {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
         width: 100%;
 
         &:last-child {
