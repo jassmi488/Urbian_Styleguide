@@ -81,9 +81,10 @@
     if ($carousel_component.length > 0) {
         $carousel_component.each(function () {
             var $carousel = $(this);
+            var dots = $carousel.data('dots');
 
             $carousel.slick({
-                dots: true
+                dots: typeof dots !== 'undefined' ? dots : false
             });
         });
     }
