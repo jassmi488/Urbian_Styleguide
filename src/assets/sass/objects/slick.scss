@@ -3,41 +3,25 @@
 \* -------------------------------------------------------------------------- */
 
 /**
- * Theme
+ * Slider
  */
 
-/* Slick */
-.slick {
-
-    > div {
-        margin-bottom: 2em;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.slick-initialized {
-
-    > div {
-        margin-bottom: 0;
-    }
-}
-
-/* Slider */
 .slick-loading .slick-list {
     background: $color-white url("../images/general/loader.gif") center center no-repeat;
 }
 
-/* Slide */
-.slick-slide img {
-    display: block;
-    height: auto;
-    width: 100%;
+/**
+ * Slide
+ */
+
+.slick-slide:focus {
+    outline: none;
 }
 
-/* Arrows */
+/**
+ * Arrows
+ */
+
 .slick-prev,
 .slick-next {
     background: transparent;
@@ -53,6 +37,7 @@
     padding: 0;
     position: absolute;
     top: 50%;
+    transform: translate(0, -50%);
     width: 24px;
 }
 
@@ -90,6 +75,7 @@
 
 .slick-prev {
     left: 16px;
+    z-index: 1;
 }
 
 [dir="rtl"] .slick-prev {
@@ -122,7 +108,10 @@
     content: "\f053";
 }
 
-/* Dots */
+/**
+ * Dots
+ */
+
 .slick-dots {
     bottom: 0;
     display: block;
@@ -173,9 +162,9 @@
     font-family: "FontAwesome";
     font-size: 16px;
     height: 24px;
-    opacity: .25;
     left: 0;
     line-height: 24px;
+    opacity: .25;
     position: absolute;
     text-align: center;
     top: 0;
