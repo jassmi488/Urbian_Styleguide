@@ -6,6 +6,25 @@
  * Theme
  */
 
+/* Slick */
+.slick {
+
+    > div {
+        margin-bottom: 2em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.slick-initialized {
+
+    > div {
+        margin-bottom: 0;
+    }
+}
+
 /* Slider */
 .slick-loading .slick-list {
     background: $color-white url("../images/general/loader.gif") center center no-repeat;
