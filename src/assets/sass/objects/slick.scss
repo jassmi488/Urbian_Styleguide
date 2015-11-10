@@ -14,6 +14,23 @@
  * Slide
  */
 
+.slick-slide {
+
+    &:focus {
+        outline: none;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/**
+ * Slide
+ */
+
 .slick-slide:focus {
     outline: none;
 }
