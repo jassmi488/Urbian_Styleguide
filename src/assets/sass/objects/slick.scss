@@ -3,22 +3,42 @@
 \* -------------------------------------------------------------------------- */
 
 /**
- * Theme
+ * Slider
  */
 
-/* Slider */
 .slick-loading .slick-list {
     background: $color-white url("../images/general/loader.gif") center center no-repeat;
 }
 
-/* Slide */
-.slick-slide img {
-    display: block;
-    height: auto;
-    width: 100%;
+/**
+ * Slide
+ */
+
+.slick-slide {
+
+    &:focus {
+        outline: none;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
 }
 
-/* Arrows */
+/**
+ * Slide
+ */
+
+.slick-slide:focus {
+    outline: none;
+}
+
+/**
+ * Arrows
+ */
+
 .slick-prev,
 .slick-next {
     background: transparent;
@@ -29,11 +49,11 @@
     font-size: 0;
     height: 24px;
     line-height: 0;
-    margin-top: -10px;
     outline: none;
     padding: 0;
     position: absolute;
     top: 50%;
+    transform: translate(0, -50%);
     width: 24px;
 }
 
@@ -71,6 +91,7 @@
 
 .slick-prev {
     left: 16px;
+    z-index: 1;
 }
 
 [dir="rtl"] .slick-prev {
@@ -103,7 +124,10 @@
     content: "\f053";
 }
 
-/* Dots */
+/**
+ * Dots
+ */
+
 .slick-dots {
     bottom: 0;
     display: block;
@@ -154,9 +178,9 @@
     font-family: "FontAwesome";
     font-size: 16px;
     height: 24px;
-    opacity: .25;
     left: 0;
     line-height: 24px;
+    opacity: .25;
     position: absolute;
     text-align: center;
     top: 0;
