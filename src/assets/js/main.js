@@ -148,7 +148,6 @@
             var icon_down = $nav_dropdown.data('icon-down');
 
             $anchor.on('click', function (e) {
-
                 /*
                  * Toggle the dropdown menu
                  */
@@ -341,7 +340,6 @@
      * ========================================================================== */
 
     $(window).on('resize', function () {
-
         if ($map_embed.length > 0) {
             renderMapEmbed();
         }
