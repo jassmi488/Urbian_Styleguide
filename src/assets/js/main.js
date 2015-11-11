@@ -101,7 +101,7 @@
 
     function renderMapEmbed () {
         var screen_width = document.body.clientWidth;
-        var breakpoint_xs = 480; // This is the equivalent of `@bp-xs`
+        var breakpoint_xs = 480; // This is the equivalent of `$bp-xs`
         var url_embed = $map_embed.data('url-embed');
         var $map_embed_img = $('.map-embed__img', $map_embed);
         var $map_embed_canvas = $('.map-embed__canvas', $map_embed);
