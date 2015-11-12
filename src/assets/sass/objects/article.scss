@@ -3,7 +3,6 @@
 \* -------------------------------------------------------------------------- */
 
 .article {
-    margin-bottom: 1em;
 
     /**
      * Block Quote
@@ -19,11 +18,6 @@
 
     figure {
         @include figure();
-
-        img {
-            max-width: none;
-            width: 100%;
-        }
     }
 
     /**
@@ -32,16 +26,6 @@
 
     hr {
         @include hr();
-    }
-
-    /**
-     * Image
-     */
-
-    img {
-        height: auto;
-        margin-bottom: 1em;
-        max-width: 100%;
     }
 
     /**
@@ -75,40 +59,26 @@
      * Paragraph
      */
 
-    > p {
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+    p {
 
-    /**
-     * Narrow
-     */
+        & + h1,
+        & + h2,
+        & + h3,
+        & + h4,
+        & + h5,
+        & + h6 {
+            margin-top: 1em;
+        }
 
-    &.article--narrow {
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 40em; /* 640 / 16 */
+        & + p {
+            margin-top: 1em;
+        }
     }
 }
 
 @media all and (min-width: $bp-small) {
 
     .article {
-
-        blockquote {
-            margin-top: 2em;
-            margin-bottom: 2em;
-        }
-
-        figure {
-            margin-top: 2em;
-            margin-bottom: 2em;
-        }
-
-        > p {
-            margin-top: 2em;
-            margin-bottom: 2em;
-        }
 
         .u-pull--right {
             margin-left: 2em;
