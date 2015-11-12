@@ -25,4 +25,12 @@
     max-width: 71.25em; /* 1140 / 16 */
     position: relative;
     width: 90%;
+
+    /**
+     * Small
+     */
+
+    &.l-wrapper--small {
+        max-width: 40em; /* 640 / 16 */
+    }
 }
