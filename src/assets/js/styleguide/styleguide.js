@@ -17,7 +17,6 @@
     var $code = $('.js-sg-code');
 
     if ($code.length > 0) {
-
         $code.each(function () {
             var $code_sample = $('code', $(this));
 
