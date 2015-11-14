@@ -43,7 +43,7 @@
         background-color: $color-white;
         border-color: $color-black;
         color: $color-black;
-        outline: none;
+        outline: 0;
     }
 
     &[disabled="disabled"] {
