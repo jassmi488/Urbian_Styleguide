@@ -7,11 +7,11 @@
 
 Ensure that the following is installed on your computer:
 
-1. [Git](http://git-scm.com)
-2. [Node.js](http://nodejs.org)
-3. [RubyInstaller for Windows](http://rubyinstaller.org)
+1. [Git](http://git-scm.com/downloads)
+2. [Node.js](https://nodejs.org/en/download)
+3. [RubyInstaller for Windows](http://rubyinstaller.org/downloads)
  * Ruby is pre-installed on Mac
-4. [Sass](http://sass-lang.com/install): `gem install sass`
+4. [Sass](http://sass-lang.com/install)
 
 ### Getting Started
 
