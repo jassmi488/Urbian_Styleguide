@@ -82,9 +82,11 @@
         $carousel_component.each(function () {
             var $carousel = $(this);
             var dots = $carousel.data('dots');
+            var infinite = $carousel.data('infinite');
 
             $carousel.slick({
-                dots: typeof dots !== 'undefined' ? dots : false
+                dots: typeof dots !== 'undefined' ? dots : false,
+                infinite: typeof infinite !== 'undefined' ? infinite : true
             });
         });
     }
