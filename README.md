@@ -34,7 +34,6 @@ Ensure that the following is installed on your computer:
 
 ### Components
 
-- [Sass](http://sass-lang.com)
 - [Normalize.css](http://necolas.github.io/normalize.css)
 - [jQuery](http://jquery.com)
 - [Font Awesome](http://fontawesome.io)
