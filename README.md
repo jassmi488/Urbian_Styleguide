@@ -11,7 +11,7 @@ Ensure that the following is installed on your computer:
 2. [Node.js](http://nodejs.org)
 3. [RubyInstaller for Windows](http://rubyinstaller.org)
 
- 3.1. Ruby is pre-installed on Mac, but you will need to install Sass: `sudo gem install sass`
+ 3.1. Ruby is pre-installed on Mac, but you will need to [install Sass](http://sass-lang.com/install): `sudo gem install sass`
 
 ### Getting Started
 
