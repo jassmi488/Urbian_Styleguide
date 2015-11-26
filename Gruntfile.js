@@ -154,19 +154,22 @@ module.exports = function (grunt)
         },
         sass: {
             build: {
-                files: {
-                    'build/assets/css/style.css': 'src/assets/sass/style.scss',
-                    'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
+                options: {
+                    sourceMap: true
+                },
+                dist: {
+                    files: {
+                        'build/assets/css/style.css': 'src/assets/sass/style.scss',
+                        'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
+                    }
                 }
             },
             dist: {
-                files: {
-                    'dist/assets/css/style.css': 'src/assets/sass/style.scss',
-                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
-                },
-                options: {
-                    sourcemap: 'none',
-                    style: 'compressed'
+                dist: {
+                    files: {
+                        'dist/assets/css/style.css': 'src/assets/sass/style.scss',
+                        'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
+                    }
                 }
             }
         },
