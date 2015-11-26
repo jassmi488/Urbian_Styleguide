@@ -154,6 +154,9 @@ module.exports = function (grunt)
         },
         sass: {
             build: {
+                options: {
+                    sourceMap: true
+                },
                 files: {
                     'build/assets/css/style.css': 'src/assets/sass/style.scss',
                     'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
@@ -163,10 +166,6 @@ module.exports = function (grunt)
                 files: {
                     'dist/assets/css/style.css': 'src/assets/sass/style.scss',
                     'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
-                },
-                options: {
-                    sourcemap: 'none',
-                    style: 'compressed'
                 }
             }
         },
