@@ -105,6 +105,14 @@ module.exports = function (grunt)
                 }
             }
         },
+        cssmin: {
+            dist: {
+                files: {
+                    'dist/assets/css/style.css': 'dist/assets/css/style.css',
+                    'dist/assets/css/styleguide/styleguide.css': 'dist/assets/css/styleguide/styleguide.css'
+                }
+            }
+        },
         eslint: {
             target: ['src/assets/js/main.js']
         },
@@ -210,7 +218,7 @@ module.exports = function (grunt)
     grunt.registerTask('build', ['clean:build', 'sass:build', 'copy:build', 'uglify:build']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('deploy', ['dist', 'ftp']);
-    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'uglify:dist', 'htmlmin']);
+    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'cssmin:dist', 'uglify:dist', 'htmlmin']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
     grunt.registerTask('test', ['csslint', 'eslint']);
