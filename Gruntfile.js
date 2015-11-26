@@ -157,19 +157,15 @@ module.exports = function (grunt)
                 options: {
                     sourceMap: true
                 },
-                dist: {
-                    files: {
-                        'build/assets/css/style.css': 'src/assets/sass/style.scss',
-                        'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
-                    }
+                files: {
+                    'build/assets/css/style.css': 'src/assets/sass/style.scss',
+                    'build/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
                 }
             },
             dist: {
-                dist: {
-                    files: {
-                        'dist/assets/css/style.css': 'src/assets/sass/style.scss',
-                        'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
-                    }
+                files: {
+                    'dist/assets/css/style.css': 'src/assets/sass/style.scss',
+                    'dist/assets/css/styleguide/styleguide.css': 'src/assets/sass/styleguide/styleguide.scss'
                 }
             }
         },
