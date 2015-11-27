@@ -178,9 +178,6 @@ module.exports = function (grunt)
             }
         },
         uglify: {
-            options: {
-                banner: banner
-            },
             build: {
                 files: {
                     'build/assets/js/script.js': [
