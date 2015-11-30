@@ -3,7 +3,6 @@
  * ========================================================================== */
 
 (function () {
-
     'use strict';
 
     /*
@@ -61,7 +60,6 @@
     if ($alert_component.length > 0) {
         $alert_component.each(function () {
             var $alert = $(this);
-
             var $dismiss_alert = $('.js-dismiss', $alert);
 
             $dismiss_alert.on('click', function (e) {
