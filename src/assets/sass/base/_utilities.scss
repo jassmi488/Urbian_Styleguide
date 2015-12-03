@@ -23,6 +23,7 @@
  * TEXT
  * .....Align
  * .....Transform
+ * .....Truncate
  */
 
 
@@ -325,3 +326,17 @@
 .u-transform--inherit    { text-transform: inherit    !important; }
 .u-transform--lowercase  { text-transform: lowercase  !important; }
 .u-transform--uppercase  { text-transform: uppercase  !important; }
+
+
+
+
+
+/* ==========================================================================
+   #Truncate
+   ========================================================================== */
+
+.u-truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
