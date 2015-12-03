@@ -9,7 +9,7 @@
 /**
  * IMPORTS
  * BASE
- * .....Headings
+ * .....Heading
  * .....Form
  * .....List
  * .....Paragraph
@@ -33,20 +33,8 @@
    #IMPORTS
 \* -------------------------------------------------------------------------- */
 
-/**
- * Generic
- */
-
-@import "generic/mixins";
-@import "generic/variables";
-
-/**
- * Vendor
- */
-
-@import "vendor/fontawesome";
-@import "vendor/next";
-@import "vendor/prettify";
+@import "generic";
+@import "vendor";
 
 
 
@@ -57,7 +45,7 @@
 \* -------------------------------------------------------------------------- */
 
 /* ==========================================================================
-   #Headings
+   #Heading
    ========================================================================== */
 
 .sg-heading-spacer {
