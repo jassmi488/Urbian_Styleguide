@@ -9,6 +9,8 @@
 /**
  * CLEARFIX
  * COLORS
+ * .....Background
+ * .....Foreground
  * DISPLAY
  * .....Hidden
  * .....Invisible
@@ -61,9 +63,9 @@
    #COLORS
 \* -------------------------------------------------------------------------- */
 
-/**
- * Background
- */
+/* ==========================================================================
+   #Background
+   ========================================================================== */
 
 .bg-primary     { background-color: $color-primary !important; }
 .bg-secondary   { background-color: $color-secondary !important; }
@@ -81,9 +83,13 @@
 .bg-facebook    { background-color: $color-facebook !important; }
 .bg-twitter     { background-color: $color-twitter !important; }
 
-/**
- * Foreground
- */
+
+
+
+
+/* ==========================================================================
+   #Foreground
+   ========================================================================== */
 
 .primary     { color: $color-primary !important; }
 .secondary   { color: $color-secondary !important; }
