@@ -73,7 +73,8 @@
 
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
-    opacity: .25;
+    cursor: default;
+    opacity: 0.25;
 }
 
 .slick-prev:before,
