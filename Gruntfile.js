@@ -1,5 +1,4 @@
-module.exports = function (grunt)
-{
+module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var today = '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>';
