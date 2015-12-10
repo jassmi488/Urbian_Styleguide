@@ -83,7 +83,7 @@
     font-family: "FontAwesome";
     font-size: 24px;
     line-height: 1;
-    opacity: .75;
+    opacity: 0.75;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -179,7 +179,7 @@
     height: 24px;
     left: 0;
     line-height: 24px;
-    opacity: .25;
+    opacity: 0.25;
     position: absolute;
     text-align: center;
     top: 0;
@@ -190,5 +190,5 @@
 
 .slick-dots .slick-active button:before {
     color: $color-black;
-    opacity: .75;
+    opacity: 0.75;
 }
