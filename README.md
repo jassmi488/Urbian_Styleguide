@@ -51,8 +51,7 @@ The following scripts are included for **IE8** and below:
 - [matchMedia.js](https://github.com/paulirish/matchMedia.js)
 - [Respond.js](https://github.com/scottjehl/Respond)
 
-### Linting and Validation
+### Linting
 
-1. HTML: `grunt htmllint`
-2. CSS: `grunt csslint:build`
-3. JavaScript: `grunt eslint`
+1. CSS: `grunt csslint:build`
+2. JavaScript: `grunt eslint`
