@@ -10,7 +10,7 @@ Ensure that the following is installed on your computer:
 1. [Git](http://git-scm.com/downloads)
 2. [Node.js](https://nodejs.org/en/download)
 3. [RubyInstaller for Windows](http://rubyinstaller.org/downloads)
- * Ruby is pre-installed on Mac
+  - Ruby is pre-installed on Mac
 4. [Sass](http://sass-lang.com/install)
 
 ### Getting Started
@@ -23,13 +23,13 @@ Ensure that the following is installed on your computer:
 ### Features
 
 - Mobile first approach:
- - Layout-specific media queries with breakpoints introduced as needed
+  - Layout-specific media queries with breakpoints introduced as needed
 - Sass to preprocess CSS with:
- - Imports, mixins and nesting
+  - Imports, mixins and nesting
 - Configurable variables:
- - Breakpoints, colors, font stacks and z-indexes
+  - Breakpoints, colors, font stacks and z-indexes
 - Utility classes to assist with:
- - Color, display and visibility of elements, responsive embeds and typography
+  - Color, display and visibility of elements, responsive embeds and typography
 - HTML code samples for all elements, patterns and forms
 - Template for previewing the style of typographic markup
 
