@@ -1,7 +1,7 @@
 {
-    "name": "styleguide",
+    "name": "boilerplate-styleguide",
     "version": "3.4.2",
-    "description": "Style Guide",
+    "description": "Boilerplate Style Guide",
     "author": "Next",
     "license": "MIT",
     "repository": {
