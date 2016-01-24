@@ -40,7 +40,8 @@
         }
 
         .input {
-            margin-bottom: 0.75em;
+            margin-top: 0;
+            margin-bottom: 1em;
         }
     }
 
@@ -64,7 +65,7 @@
     }
 }
 
-@media all and (min-width: $bp-small) {
+@media all and (min-width: $bp-medium) {
 
     .form {
 
@@ -100,12 +101,6 @@
                 margin-right: 0;
             }
         }
-    }
-}
-
-@media all and (min-width: $bp-medium) {
-
-    .form {
 
         &.form--search {
 
