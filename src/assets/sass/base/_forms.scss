@@ -46,10 +46,10 @@
     }
 
     /**
-     * Search
+     * Single
      */
 
-    &.form--search {
+    &.form--single {
         position: relative;
 
         .input {
@@ -102,7 +102,7 @@
             }
         }
 
-        &.form--search {
+        &.form--single {
 
             .input {
                 min-width: 20em; /* 320 / 16 */
