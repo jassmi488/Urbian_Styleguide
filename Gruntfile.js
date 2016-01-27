@@ -158,6 +158,32 @@ module.exports = function (grunt) {
                 ]
             }
         },
+        processhtml: {
+            build: {
+                options: {
+                    process: true,
+                    data: {
+                        today: today,
+                        package_version: package_version
+                    }
+                },
+                files: {
+                    'build/styleguide/index.html': ['src/styleguide/index.html']
+                }
+            },
+            dist: {
+                options: {
+                    process: true,
+                    data: {
+                        today: today,
+                        package_version: package_version
+                    }
+                },
+                files: {
+                    'dist/styleguide/index.html': ['src/styleguide/index.html']
+                }
+            }
+        },
         sass: {
             build: {
                 options: {
@@ -210,10 +236,10 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['clean:build', 'sass:build', 'copy:build', 'uglify:build']);
+    grunt.registerTask('build', ['clean:build', 'sass:build', 'copy:build', 'uglify:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('deploy', ['dist', 'ftp']);
-    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'cssmin:dist', 'uglify:dist', 'htmlmin']);
+    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'cssmin:dist', 'uglify:dist', 'processhtml:dist', 'htmlmin']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
     grunt.registerTask('test', ['csslint', 'eslint']);
