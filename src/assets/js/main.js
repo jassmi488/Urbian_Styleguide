@@ -148,6 +148,7 @@
             var icon_down = $nav_dropdown.data('icon-down');
 
             $anchor.on('click', function (e) {
+
                 /*
                  * Toggle the dropdown menu
                  */
