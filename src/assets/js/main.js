@@ -242,6 +242,7 @@
             var $button = $('.btn', $(this));
 
             $button.on('click', function () {
+
                 /*
                  * Open the current dropdown
                  */
