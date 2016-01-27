@@ -2,7 +2,6 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var today = '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>';
-    var package_name = '<%= pkg.name %>';
     var package_version = '<%= pkg.version %>';
 
     grunt.initConfig({
