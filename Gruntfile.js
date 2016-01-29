@@ -225,7 +225,7 @@ module.exports = function (grunt) {
                 files: [
                     'src/**'
                 ],
-                tasks: ['sass:build', 'copy:build', 'uglify:build'],
+                tasks: ['sass:build', 'copy:build', 'uglify:build', 'processhtml:build'],
                 options: {
                     livereload: true
                 }
