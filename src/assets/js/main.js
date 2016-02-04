@@ -294,7 +294,7 @@
             var $input = $('input[type="password"]', $form);
             var $toggle = $('.js-toggle', $form);
 
-            $toggle.removeClass('u-visuallyhidden'); // Enable the toggle button
+            $toggle.removeClass('u-hidden'); // Show the toggle button
 
             /*
              * Switch the input type
