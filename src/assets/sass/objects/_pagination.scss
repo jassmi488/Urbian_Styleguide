@@ -10,67 +10,52 @@
      * List
      */
 
-    .list {
+    .pagination__list {
         @include clearfix();
         list-style: none;
         margin: 0;
         padding: 0;
+    }
 
-        li {
-            display: none;
-            float: left;
-            margin-right: 0.25em;
+    /**
+     * Item
+     */
 
-            &:first-child {
-                display: block;
+    .pagination__item {
+        display: none;
+        float: left;
+        margin-right: 0.25em;
 
-                .icon {
-                    margin-right: 0.5em;
-                }
+        &:first-child {
+            display: block;
+
+            .icon {
+                margin-right: 0.5em;
             }
+        }
 
-            &:last-child {
-                display: block;
+        &:last-child {
+            display: block;
 
-                .icon {
-                    margin-left: 0.5em;
-                }
+            .icon {
+                margin-left: 0.5em;
             }
+        }
 
-            &.is-selected {
+        /**
+         * Selected
+         */
 
-                a {
-                    background-color: $color-gray;
-                    color: $color-black;
-
-                    &:focus,
-                    &:hover {
-                        background-color: $color-gray;
-                    }
-                }
-            }
+        &.is-selected {
 
             a {
-                background-color: $color-white-dark;
-                color: $color-gray-dark;
-                display: block;
-                font-weight: $weight-bold;
-                padding: 0.375em 0.875em;
-                text-decoration: none;
-                transition: background-color 0.25s;
+                background-color: $color-gray;
+                color: $color-black;
 
                 &:focus,
                 &:hover {
-                    background-color: $color-silver;
+                    background-color: $color-gray;
                 }
-            }
-
-            /**
-             * Icon
-             */
-
-            .icon {
-                font-size: 0.875em; /* 14 / 16 */
             }
         }
 
@@ -78,7 +63,7 @@
          * Disabled
          */
 
-        .is-disabled {
+        &.is-disabled {
             background-color: $color-white-dark;
             color: $color-silver;
             padding: 0.375em 0.875em;
@@ -88,8 +73,35 @@
          * Spacer
          */
 
-        .is-spacer {
+        &.is-spacer {
             padding: 0.375em 0.875em;
+        }
+    }
+
+    /**
+     * Link
+     */
+
+    .pagination__link {
+        background-color: $color-white-dark;
+        color: $color-gray-dark;
+        display: block;
+        font-weight: $weight-bold;
+        padding: 0.375em 0.875em;
+        text-decoration: none;
+        transition: background-color 0.25s;
+
+        &:focus,
+        &:hover {
+            background-color: $color-silver;
+        }
+
+        /**
+         * Icon
+         */
+
+        .icon {
+            font-size: 0.875em; /* 14 / 16 */
         }
     }
 }
@@ -98,11 +110,8 @@
 
     .pagination {
 
-        .list {
-
-            li {
-                display: block;
-            }
+        .pagination__item {
+            display: block;
         }
     }
 }
