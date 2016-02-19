@@ -3,60 +3,59 @@
 \* -------------------------------------------------------------------------- */
 
 .breadcrumbs {
-    margin-bottom: 1em;
-    width: 100%;
+    @include clearfix();
+    list-style: none;
+    margin: 0 0 1em;
+    padding: 0;
 
     /**
-     * List
+     * Item
      */
 
-    .list {
-        @include clearfix();
-        list-style: none;
-        margin: 0;
-        padding: 0;
+    .breadcrumbs__item {
+        color: $color-gray;
+        float: left;
+        font-size: 0.875em; /* 14 / 16 */
+        font-weight: $weight-bold;
+        margin-right: 1.5em;
+        position: relative;
 
-        li {
-            color: $color-gray;
-            float: left;
-            font-size: 0.875em; /* 14 / 16 */
-            font-weight: $weight-bold;
-            margin-right: 1.5em;
-            position: relative;
+        &:after {
+            content: "/";
+            font-size: 1em;
+            position: absolute;
+            right: -0.875em;
+            top: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
 
             &:after {
-                content: "/";
-                font-size: 1em;
-                position: absolute;
-                right: -0.875em;
-                top: 0;
+                content: "";
+                display: none;
             }
+        }
 
-            &:last-child {
-                margin-right: 0;
+        &.is-active {
+            color: $color-gray;
+        }
+    }
 
-                &:after {
-                    content: "";
-                    display: none;
-                }
-            }
+    /**
+     * Link
+     */
 
-            &.is-active {
-                color: $color-gray;
-            }
+    .breadcrumbs__link {
+        color: $color-gray-dark;
+        display: block;
+        text-decoration: none;
+        transition: color 0.25s;
 
-            a {
-                color: $color-gray-dark;
-                display: block;
-                text-decoration: none;
-                transition: color 0.25s;
-
-                &:focus,
-                &:hover {
-                    color: $color-black;
-                    text-decoration: underline;
-                }
-            }
+        &:focus,
+        &:hover {
+            color: $color-black;
+            text-decoration: underline;
         }
     }
 }
