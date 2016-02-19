@@ -20,7 +20,7 @@
    #MIXIN
 \* -------------------------------------------------------------------------- */
 
-@mixin unstyled() {
+@mixin reset-list() {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -75,7 +75,7 @@ dl {
 
     &.list--inline {
         @include clearfix();
-        @include unstyled();
+        @include reset-list();
 
         li {
             float: left;
@@ -126,6 +126,6 @@ dl {
      */
 
     &.list--unstyled {
-        @include unstyled();
+        @include reset-list();
     }
 }

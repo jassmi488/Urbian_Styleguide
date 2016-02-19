@@ -11,7 +11,7 @@
 
     .social__list {
         @include clearfix();
-        @include unstyled();
+        @include reset-list();
     }
 
     /**
