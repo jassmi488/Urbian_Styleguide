@@ -3,10 +3,18 @@
 \* -------------------------------------------------------------------------- */
 
 .breadcrumbs {
-    @include clearfix();
-    list-style: none;
-    margin: 0 0 1em;
-    padding: 0;
+    margin-bottom: 1em;
+
+    /**
+     * List
+     */
+
+    .breadcrumbs__list {
+        @include clearfix();
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
     /**
      * Item
