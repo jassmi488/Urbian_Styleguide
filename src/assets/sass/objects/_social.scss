@@ -19,7 +19,7 @@
      */
 
     .social__item {
-        display: inline-block;
+        float: left;
         margin-right: 1em;
 
         &:last-child {
