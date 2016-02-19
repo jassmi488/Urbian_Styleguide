@@ -2,29 +2,12 @@
    #SLICK
 \* -------------------------------------------------------------------------- */
 
-/**
- * Slider
- */
-
+/* Slider */
 .slick-loading .slick-list {
     background-color: $color-white;
 }
 
-/**
- * Slide
- */
-
-.slick-slide {
-
-    &:focus {
-        outline: 0;
-    }
-}
-
-/**
- * Arrows
- */
-
+/* Arrows */
 .slick-prev,
 .slick-next {
     background: transparent;
@@ -112,14 +95,16 @@
     content: "\f053";
 }
 
-/**
- * Dots
- */
+/* Dots */
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
 
 .slick-dots {
     bottom: 0;
     display: block;
     list-style: none;
+    margin: 0 0 16px 0;
     padding: 0;
     position: absolute;
     text-align: center;
@@ -130,7 +115,7 @@
     cursor: pointer;
     display: inline-block;
     height: 24px;
-    margin: 0 5px;
+    margin: 0 6px;
     padding: 0;
     position: relative;
     width: 24px;
