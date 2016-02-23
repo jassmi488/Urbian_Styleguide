@@ -167,10 +167,10 @@
 
             li {
                 margin-bottom: 0;
+            }
 
-                &.is-separator {
-                    border-bottom: 1px solid $color-silver;
-                }
+            .is-separator {
+                border-bottom: 1px solid $color-silver;
             }
         }
 
