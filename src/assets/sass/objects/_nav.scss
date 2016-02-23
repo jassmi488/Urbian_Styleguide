@@ -7,10 +7,7 @@
 
     .list {
         @include clearfix();
-        list-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-left: 0;
+        @include reset-list();
         white-space: nowrap;
 
         li {
