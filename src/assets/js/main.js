@@ -105,7 +105,7 @@
         $('a', $nav_dropdown).each(function () {
             var $anchor = $(this);
             var $anchor_icon = $('.icon', $anchor);
-            var $menu = $anchor.next('.list--menu');
+            var $menu = $anchor.next('.js-menu');
             var icon_up = $nav_dropdown.data('icon-up');
             var icon_down = $nav_dropdown.data('icon-down');
 
@@ -115,7 +115,7 @@
                  * Toggle the dropdown menu
                  */
 
-                if ($(this).next().hasClass('list--menu')) {
+                if ($(this).next().hasClass('js-menu')) {
                     e.preventDefault(); // Prevent click on dropdown anchor
 
                     $menu.toggleClass('is-open');
@@ -134,7 +134,7 @@
                  * Close all other open menus
                  */
 
-                var $menu_other = $('.list--menu', $nav_dropdown).not($menu);
+                var $menu_other = $('.js-menu', $nav_dropdown).not($menu);
                 $menu_other.removeClass('is-open').attr('aria-hidden', 'true');
 
                 /*
