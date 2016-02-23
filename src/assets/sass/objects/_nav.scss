@@ -5,42 +5,91 @@
 .nav {
     width: 100%;
 
-    .list {
+    /**
+     * List
+     */
+
+    .nav__list {
         @include clearfix();
         @include reset-list();
         white-space: nowrap;
 
-        li {
-            position: relative;
+        /**
+         * Menu
+         */
 
-            &.is-active {
+        &.nav__list--menu {
+            background-color: $color-white-dark;
+            display: none;
+            margin-top: 1em;
+            margin-left: 0;
 
-                a {
-                    color: $color-black;
+            &.is-open {
+                display: block;
+            }
+
+            .nav__item {
+                border-bottom: 2px solid $color-white;
+                margin-bottom: 0;
+                margin-left: 0;
+
+                &:last-child {
+                    border-bottom: 0;
                 }
             }
 
-            a {
-                color: $color-gray-dark;
-                display: block;
-                font-size: 1.125em; /* 18 / 16 */
-                font-weight: $weight-bold;
-                text-decoration: none;
-                transition: color 0.25s;
+            .nav__link {
+                font-size: 1em;
+                padding: 0.75em 1.5em;
+                transition: background-color 0.25s, color 0.25s;
 
                 &:focus,
                 &:hover {
-                    color: $color-black;
+                    background-color: $color-gray-dark;
+                    color: $color-white;
                 }
             }
+        }
+    }
 
-            /**
-             * Icon
-             */
+    /**
+     * Item
+     */
 
-            .icon {
-                float: right;
+    .nav__item {
+        position: relative;
+
+        &.is-active {
+
+            a {
+                color: $color-black;
             }
+        }
+    }
+
+    /**
+     * Link
+     */
+
+    .nav__link {
+        color: $color-gray-dark;
+        display: block;
+        font-size: 1.125em; /* 18 / 16 */
+        font-weight: $weight-bold;
+        text-decoration: none;
+        transition: color 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $color-black;
+        }
+
+        /**
+         * Icon
+         */
+
+        .icon {
+            float: right;
         }
     }
 
@@ -50,51 +99,11 @@
 
     &.nav--horizontal {
 
-        .list {
+        .nav__item {
+            margin-bottom: 1.5em;
 
-            li {
-                margin-bottom: 1.5em;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            /**
-             * Menu
-             */
-
-            &.list--menu {
-                background-color: $color-white-dark;
-                display: none;
-                margin-top: 1em;
-                margin-left: 0;
-
-                &.is-open {
-                    display: block;
-                }
-
-                li {
-                    border-bottom: 2px solid $color-white;
-                    margin-bottom: 0;
-                    margin-left: 0;
-
-                    &:last-child {
-                        border-bottom: 0;
-                    }
-
-                    a {
-                        font-size: 1em;
-                        padding: 0.75em 1.5em;
-                        transition: background-color 0.25s, color 0.25s;
-
-                        &:focus,
-                        &:hover {
-                            background-color: $color-gray-dark;
-                            color: $color-white;
-                        }
-                    }
-                }
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -106,27 +115,24 @@
     &.nav--vertical {
         margin-bottom: 1em;
 
-        .list {
+        .nav__item {
+            border-bottom: 2px solid $color-white;
+            margin-bottom: 0;
 
-            li {
-                border-bottom: 2px solid $color-white;
-                margin-bottom: 0;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
 
-                &:last-child {
-                    border-bottom: 0;
-                }
+        .nav__link {
+            background-color: $color-white-dark;
+            font-size: 1em;
+            padding: 1em 1.3125em;
+            transition: background-color 0.25s, color 0.25s;
 
-                a {
-                    background-color: $color-white-dark;
-                    font-size: 1em;
-                    padding: 1em 1.3125em;
-                    transition: background-color 0.25s, color 0.25s;
-
-                    &:focus,
-                    &:hover {
-                        background-color: $color-silver;
-                    }
-                }
+            &:focus,
+            &:hover {
+                background-color: $color-silver;
             }
         }
     }
@@ -136,41 +142,38 @@
 
     .nav {
 
-        .list {
+        .nav__list {
 
-            li {
-
-                .icon {
-                    float: none;
-                    margin-left: 0.375em;
-                }
+            .icon {
+                float: none;
+                margin-left: 0.375em;
             }
         }
 
         &.nav--horizontal {
 
-            .list {
+            .nav__list {
 
-                li {
-                    display: inline-block;
-                    margin-bottom: 0;
-                    margin-left: 1.5em;
-
-                    &:first-child {
-                        margin-left: 0;
-                    }
-                }
-
-                &.list--menu {
+                &.nav__list--menu {
                     left: 0;
                     margin-top: 0.5em;
                     position: absolute;
                     top: 100%;
                     z-index: $z-index-nav-dropdown;
 
-                    li {
+                    .nav__item {
                         display: block;
                     }
+                }
+            }
+
+            .nav__item {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-left: 1.5em;
+
+                &:first-child {
+                    margin-left: 0;
                 }
             }
         }
