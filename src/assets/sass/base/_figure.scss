@@ -21,10 +21,10 @@
  */
 
 @mixin figure() {
-    margin: 1em 0;
+    margin: 0 0 1.5rem 0;
 
     img {
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
     }
 
     figcaption {
