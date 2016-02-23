@@ -165,8 +165,12 @@
         .list {
             @include reset-list();
 
-            .is-separator {
-                border-bottom: 1px solid $color-silver;
+            li {
+                margin-bottom: 0;
+
+                &.is-separator {
+                    border-bottom: 1px solid $color-silver;
+                }
             }
         }
 
