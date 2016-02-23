@@ -30,6 +30,10 @@
                 display: block;
             }
 
+            /**
+             * Item
+             */
+
             .nav__item {
                 border-bottom: 2px solid $color-white;
                 margin-bottom: 0;
@@ -39,6 +43,10 @@
                     border-bottom: 0;
                 }
             }
+
+            /**
+             * Link
+             */
 
             .nav__link {
                 padding: 0.5em 1em;
