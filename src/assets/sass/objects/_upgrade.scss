@@ -8,7 +8,11 @@
     padding: 1em;
     text-align: center;
 
-    a {
+    /**
+     * Link
+     */
+
+    .upgrade__link {
         color: $color-blue;
     }
 }
