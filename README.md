@@ -53,5 +53,5 @@ The following scripts are included for **IE8** and below:
 
 ### Linting
 
-1. CSS: `grunt csslint:build`
+1. CSS: `grunt csslint`
 2. JavaScript: `grunt eslint`
