@@ -12,18 +12,20 @@
     .social__list {
         @include clearfix();
         @include reset-list();
-    }
+        margin-bottom: 0;
 
-    /**
-     * Item
-     */
+        /**
+         * Item
+         */
 
-    .social__item {
-        float: left;
-        margin-right: 1em;
+        .social__item {
+            float: left;
+            margin-right: 1em;
+            margin-bottom: 0;
 
-        &:last-child {
-            margin-right: 0;
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 

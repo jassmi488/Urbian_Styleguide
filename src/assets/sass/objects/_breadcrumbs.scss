@@ -12,39 +12,45 @@
     .breadcrumbs__list {
         @include clearfix();
         @include reset-list();
-    }
+        margin-bottom: 0;
 
-    /**
-     * Item
-     */
+        /**
+         * Item
+         */
 
-    .breadcrumbs__item {
-        color: $color-gray;
-        float: left;
-        font-size: 0.875em; /* 14 / 16 */
-        font-weight: $weight-bold;
-        margin-right: 1.5em;
-        position: relative;
-
-        &:after {
-            content: "/";
-            font-size: 1em;
-            position: absolute;
-            right: -0.875em;
-            top: 0;
-        }
-
-        &:last-child {
-            margin-right: 0;
+        .breadcrumbs__item {
+            color: $color-gray;
+            float: left;
+            font-size: 0.875em; /* 14 / 16 */
+            font-weight: $weight-bold;
+            margin-right: 1.5em;
+            margin-bottom: 0;
+            position: relative;
 
             &:after {
-                content: "";
-                display: none;
+                content: "/";
+                font-size: 1em;
+                position: absolute;
+                right: -0.875em;
+                top: 0;
             }
-        }
 
-        &.is-active {
-            color: $color-gray;
+            &:last-child {
+                margin-right: 0;
+
+                &:after {
+                    content: "";
+                    display: none;
+                }
+            }
+
+            /**
+             * Active
+             */
+
+            &.is-active {
+                color: $color-gray;
+            }
         }
     }
 

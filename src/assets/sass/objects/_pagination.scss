@@ -13,66 +13,68 @@
     .pagination__list {
         @include clearfix();
         @include reset-list();
-    }
-
-    /**
-     * Item
-     */
-
-    .pagination__item {
-        display: none;
-        float: left;
-        margin-right: 0.25em;
-
-        &:first-child {
-            display: block;
-
-            .icon {
-                margin-right: 0.5em;
-            }
-        }
-
-        &:last-child {
-            display: block;
-
-            .icon {
-                margin-left: 0.5em;
-            }
-        }
+        margin-bottom: 0;
 
         /**
-         * Selected
+         * Item
          */
 
-        &.is-selected {
+        .pagination__item {
+            display: none;
+            float: left;
+            margin-right: 0.25em;
+            margin-bottom: 0;
 
-            a {
-                background-color: $color-gray;
-                color: $color-black;
+            &:first-child {
+                display: block;
 
-                &:focus,
-                &:hover {
-                    background-color: $color-gray;
+                .icon {
+                    margin-right: 0.5em;
                 }
             }
-        }
 
-        /**
-         * Disabled
-         */
+            &:last-child {
+                display: block;
 
-        &.is-disabled {
-            background-color: $color-white-dark;
-            color: $color-silver;
-            padding: 0.375em 0.875em;
-        }
+                .icon {
+                    margin-left: 0.5em;
+                }
+            }
 
-        /**
-         * Spacer
-         */
+            /**
+             * Disabled
+             */
 
-        &.is-spacer {
-            padding: 0.375em 0.875em;
+            &.is-disabled {
+                background-color: $color-white-dark;
+                color: $color-silver;
+                padding: 0.375em 0.875em;
+            }
+
+            /**
+             * Selected
+             */
+
+            &.is-selected {
+
+                a {
+                    background-color: $color-gray;
+                    color: $color-black;
+
+                    &:focus,
+                    &:hover {
+                        background-color: $color-gray;
+                    }
+                }
+            }
+
+            /**
+             * Spacer
+             */
+
+            &.is-spacer {
+                padding: 0.375em 0.875em;
+            }
         }
     }
 
@@ -108,8 +110,11 @@
 
     .pagination {
 
-        .pagination__item {
-            display: block;
+        .pagination__list {
+
+            .pagination__item {
+                display: block;
+            }
         }
     }
 }
