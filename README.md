@@ -1,7 +1,7 @@
 ## [Boilerplate Style Guide](http://s.wearenext.co.za/boilerplate/styleguide)
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com)
-[![Build Status](https://magnum.travis-ci.com/we-are-next/styleguide.svg?token=4q8vnSqGs4oqaN95p1Pp)](https://magnum.travis-ci.com/we-are-next/styleguide)
+[![Build Status](https://magnum.travis-ci.com/we-are-next/boilerplate-styleguide.svg?token=4q8vnSqGs4oqaN95p1Pp)](https://magnum.travis-ci.com/we-are-next/styleguide)
 
 ### Requirements
 
@@ -15,7 +15,7 @@ Ensure that the following is installed on your computer:
 
 ### Getting Started
 
-1. Clone the repository: `git clone git@github.com:we-are-next/styleguide.git`
+1. Clone the repository: `git clone git@github.com:we-are-next/boilerplate-styleguide.git`
 2. Change to the directory you cloned the repository into: e.g. `cd styleguide`
 3. Install the required dependencies: `npm install`
 4. Start a local server: `npm start`
