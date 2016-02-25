@@ -12,7 +12,6 @@
     .social__list {
         @include clearfix();
         @include reset-list();
-        margin-bottom: 0;
 
         /**
          * Item

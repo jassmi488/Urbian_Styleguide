@@ -36,6 +36,7 @@
     ol,
     ul {
         @include reset-list();
+        margin-bottom: 1.5rem;
     }
 
     /**
