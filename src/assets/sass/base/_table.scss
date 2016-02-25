@@ -42,6 +42,7 @@
     }
 
     td {
+        @include clearfix();
         border-bottom: 1px solid $color-silver;
         display: block;
         padding: 0.5em 1em;

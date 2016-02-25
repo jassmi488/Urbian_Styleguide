@@ -31,7 +31,7 @@
 </head>
 <body>
     <!--[if lt IE 9]>
-    <p class="upgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
+    <p class="upgrade">You are using an <strong>outdated</strong> browser. Please <a class="upgrade__link" href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <header class="sg-header sg-header--primary" role="banner">
@@ -725,20 +725,20 @@ The <var>variarble element</var>, such as <var>x</var> = <var>y</var></code>
                     <div class="btn-dropdown js-toggle-dropdown-btn">
                         <button class="btn btn--icon" type="button" data-dropdown-id="dropdown-btn-1">Primary<span class="icon fa fa-caret-down" aria-hidden="true"></span></button>
                         <div class="dropdown" id="dropdown-btn-1" aria-hidden="true" role="menu">
-                            <ol class="list">
-                                <li><a href="#sg-button-dropdown">Action 1</a></li>
-                                <li class="is-separator"><a href="#sg-button-dropdown">Action 2</a></li>
-                                <li><a href="#sg-button-dropdown">Action 3</a></li>
+                            <ol class="dropdown__list">
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 1</a></li>
+                                <li class="dropdown__item is-separator"><a class="dropdown__link" href="#sg-button-dropdown">Action 2</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 3</a></li>
                             </ol>
                         </div>
                     </div>
                     <div class="btn-dropdown js-toggle-dropdown-btn">
                         <button class="btn btn--icon btn--gray" type="button" data-dropdown-id="dropdown-btn-2">Secondary<span class="icon fa fa-caret-down" aria-hidden="true"></span></button>
                         <div class="dropdown" id="dropdown-btn-2" aria-hidden="true" role="menu">
-                            <ol class="list">
-                                <li><a href="#sg-button-dropdown">Action 1</a></li>
-                                <li class="is-separator"><a href="#sg-button-dropdown">Action 2</a></li>
-                                <li><a href="#sg-button-dropdown">Action 3</a></li>
+                            <ol class="dropdown__list">
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 1</a></li>
+                                <li class="dropdown__item is-separator"><a class="dropdown__link" href="#sg-button-dropdown">Action 2</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 3</a></li>
                             </ol>
                         </div>
                     </div>
@@ -750,10 +750,10 @@ The <var>variarble element</var>, such as <var>x</var> = <var>y</var></code>
     <div class="btn-dropdown js-toggle-dropdown-btn">
         <button class="btn btn--icon" type="button" data-dropdown-id="dropdown-btn-a">Primary<span class="icon fa fa-caret-down" aria-hidden="true"></span></button>
         <div class="dropdown" id="dropdown-btn-a" aria-hidden="true" role="menu">
-            <ol class="list">
-                <li><a href="#">Action 1</a></li>
-                <li class="is-separator"><a href="#">Action 2</a></li>
-                <li><a href="#">Action 3</a></li>
+            <ol class="dropdown__list">
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Action 1</a></li>
+                <li class="dropdown__item is-separator"><a class="dropdown__link" href="#">Action 2</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Action 3</a></li>
             </ol>
         </div>
     </div>
@@ -771,10 +771,10 @@ The <var>variarble element</var>, such as <var>x</var> = <var>y</var></code>
                         <button class="btn" type="button">Primary</button>
                         <button class="btn btn--icon" type="button" data-dropdown-id="dropdown-btn-3"><span class="icon icon--only fa fa-caret-down" aria-hidden="true"></span></button>
                         <div class="dropdown" id="dropdown-btn-3" aria-hidden="true" role="menu">
-                            <ol class="list">
-                                <li><a href="#sg-button-dropdown">Action 1</a></li>
-                                <li class="is-separator"><a href="#sg-button-dropdown">Action 2</a></li>
-                                <li><a href="#sg-button-dropdown">Action 3</a></li>
+                            <ol class="dropdown__list">
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 1</a></li>
+                                <li class="dropdown__item is-separator"><a class="dropdown__link" href="#sg-button-dropdown">Action 2</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 3</a></li>
                             </ol>
                         </div>
                     </div>
@@ -782,10 +782,10 @@ The <var>variarble element</var>, such as <var>x</var> = <var>y</var></code>
                         <button class="btn btn--gray" type="button">Secondary</button>
                         <button class="btn btn--icon btn--gray" type="button" data-dropdown-id="dropdown-btn-4"><span class="icon icon--only fa fa-caret-down" aria-hidden="true"></span></button>
                         <div class="dropdown" id="dropdown-btn-4" aria-hidden="true" role="menu">
-                            <ol class="list">
-                                <li><a href="#sg-button-dropdown">Action 1</a></li>
-                                <li class="is-separator"><a href="#sg-button-dropdown">Action 2</a></li>
-                                <li><a href="#sg-button-dropdown">Action 3</a></li>
+                            <ol class="dropdown__list">
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 1</a></li>
+                                <li class="dropdown__item is-separator"><a class="dropdown__link" href="#sg-button-dropdown">Action 2</a></li>
+                                <li class="dropdown__item"><a class="dropdown__link" href="#sg-button-dropdown">Action 3</a></li>
                             </ol>
                         </div>
                     </div>
@@ -798,10 +798,10 @@ The <var>variarble element</var>, such as <var>x</var> = <var>y</var></code>
         <button class="btn" type="button">Primary</button>
         <button class="btn btn--icon" type="button" data-dropdown-id="dropdown-btn-b"><span class="icon icon--only fa fa-caret-down" aria-hidden="true"></span></button>
         <div class="dropdown" id="dropdown-btn-b" aria-hidden="true" role="menu">
-            <ol class="list">
-                <li><a href="#">Action 1</a></li>
-                <li class="is-separator"><a href="#">Action 2</a></li>
-                <li><a href="#">Action 3</a></li>
+            <ol class="dropdown__list">
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Action 1</a></li>
+                <li class="dropdown__item is-separator"><a class="dropdown__link" href="#">Action 2</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Action 3</a></li>
             </ol>
         </div>
     </div>
