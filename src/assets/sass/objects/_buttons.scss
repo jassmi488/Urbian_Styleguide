@@ -162,19 +162,32 @@
             display: block;
         }
 
-        .list {
-            margin-bottom: 0;
+        /**
+         * List
+         */
 
-            li {
-                margin-bottom: 0;
-            }
+        .dropdown__list {
+            @include reset-list();
+            margin-bottom: 0;
 
             .is-separator {
                 border-bottom: 1px solid $color-silver;
             }
+
+            /**
+             * Item
+             */
+
+            .dropdown__item {
+                margin-bottom: 0;
+            }
         }
 
-        a {
+        /**
+         * Link
+         */
+
+        .dropdown__link {
             color: $color-gray-dark;
             display: block;
             font-weight: $weight-bold;
