@@ -52,8 +52,7 @@
                     <label class="sg-label">
                         <select class="sg-input js-sg-jump" id="sg-jump">
                             <option value="">Jump to…</option>
-                            <option value="sg-navigation-horizontal">Navigation – Horizontal</option>
-                            <option value="sg-navigation-vertical">Navigation – Vertical</option>
+                            <option value="sg-navigation">Navigation</option>
                             <option value="sg-breadcrumbs">Breadcrumbs</option>
                             <option value="sg-alerts">Alerts</option>
                             <option value="sg-card">Card</option>
@@ -74,38 +73,40 @@
 
     <main class="sg-main" role="main">
         <div class="sg-l-wrapper">
-            <section class="sg-l-section" id="sg-navigation-horizontal">
+            <section class="sg-l-section" id="sg-navigation">
                 <header class="sg-header sg-header--section">
-                    <h1 class="sg-hN">Navigation – Horizontal</h1>
+                    <h1 class="sg-hN">Navigation</h1>
                 </header>
 
-                <nav class="nav nav--horizontal js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down" role="navigation">
+                <h2 class="sg-heading-spacer">Primary</h2>
+
+                <nav class="nav nav--primary js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down" role="navigation">
                     <ol class="nav__list">
-                        <li class="nav__item is-active"><a class="nav__link" href="#sg-navigation-horizontal">Home</a></li>
+                        <li class="nav__item is-active"><a class="nav__link" href="#sg-navigation">Home</a></li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#sg-navigation-horizontal">Services<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                            <a class="nav__link" href="#sg-navigation">Services<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
                             <ol class="nav__list nav__list--menu js-menu" aria-hidden="true" role="menu">
-                                <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Web Design</a></li>
-                                <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Front-end Development</a></li>
-                                <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Strategy</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#sg-navigation">Web Design</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#sg-navigation">Front-end Development</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#sg-navigation">Strategy</a></li>
                             </ol>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#sg-navigation-horizontal">Work<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
+                            <a class="nav__link" href="#sg-navigation">Work<span class="icon fa fa-caret-down" aria-hidden="true"></span></a>
                             <ol class="nav__list nav__list--menu js-menu" aria-hidden="true" role="menu">
-                                <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Project – 01</a></li>
-                                <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Project – 02</a></li>
-                                <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Project – 03</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#sg-navigation">Project – 01</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#sg-navigation">Project – 02</a></li>
+                                <li class="nav__item"><a class="nav__link" href="#sg-navigation">Project – 03</a></li>
                             </ol>
                         </li>
-                        <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">News</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#sg-navigation-horizontal">Contact</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#sg-navigation">News</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#sg-navigation">Contact</a></li>
                     </ol>
                 </nav>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code">View Code</button>
-                    <code class="sg-code prettyprint"><nav class="nav nav--horizontal js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down" role="navigation">
+                    <code class="sg-code prettyprint"><nav class="nav nav--primary js-nav-dropdown" data-icon-up="fa-caret-up" data-icon-down="fa-caret-down" role="navigation">
     <ol class="nav__list">
         <li class="nav__item is-active"><a class="nav__link" href="#">Home</a></li>
         <li class="nav__item">
@@ -118,26 +119,22 @@
     </ol>
 </nav></code>
                 </div>
-            </section>
 
-            <section class="sg-l-section" id="sg-navigation-vertical">
-                <header class="sg-header sg-header--section">
-                    <h1 class="sg-hN">Navigation – Vertical</h1>
-                </header>
+                <h2 class="sg-heading-spacer">Secondary</h2>
 
-                <nav class="nav nav--vertical" role="navigation">
+                <nav class="nav nav--secondary" role="navigation">
                     <ol class="nav__list">
-                        <li class="nav__item is-active"><a class="nav__link" href="#sg-navigation-vertical">Home</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#sg-navigation-vertical">Services</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#sg-navigation-vertical">Work</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#sg-navigation-vertical">News</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#sg-navigation-vertical">Contact</a></li>
+                        <li class="nav__item is-active"><a class="nav__link" href="#sg-navigation">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#sg-navigation">Services</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#sg-navigation">Work</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#sg-navigation">News</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#sg-navigation">Contact</a></li>
                     </ol>
                 </nav>
 
                 <div class="sg-code-wrapper js-sg-code">
                     <button class="sg-btn sg-btn--white-dark js-sg-toggle-code">View Code</button>
-                    <code class="sg-code prettyprint"><nav class="nav nav--vertical" role="navigation">
+                    <code class="sg-code prettyprint"><nav class="nav nav--secondary" role="navigation">
     <ol class="nav__list">
         <li class="nav__item is-active"><a class="nav__link" href="#">Home</a></li>
         <li class="nav__item"><a class="nav__link" href="#">Services</a></li>

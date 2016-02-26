@@ -101,10 +101,10 @@
     }
 
     /**
-     * Horizontal
+     * Primary
      */
 
-    &.nav--horizontal {
+    &.nav--primary {
 
         .nav__item {
             margin-bottom: 1em;
@@ -112,10 +112,10 @@
     }
 
     /**
-     * Vertical
+     * Secondary
      */
 
-    &.nav--vertical {
+    &.nav--secondary {
 
         .nav__item {
             border-bottom: 2px solid $color-white;
@@ -151,7 +151,7 @@
             }
         }
 
-        &.nav--horizontal {
+        &.nav--primary {
 
             .nav__list {
 
