@@ -52,6 +52,39 @@
     }
 
     /* ==========================================================================
+     * Collapse
+     * ========================================================================== */
+
+    var $collapse_component = $('.js-collapse');
+
+    if ($collapse_component.length > 0) {
+        $carousel_component.each(function () {
+            var $collapse = $(this);
+            var collapse_id = $collapse.data('collapse-id');
+
+            if (typeof collapse_id !== 'undefined') {
+                var $el = $('#' + collapse_id);
+
+                if ($el.length > 0) {
+                    $el.toggleClass('is-open');
+
+                    var collapse_toggle = $collapse.data('collapse-toggle');
+
+                    if (typeof collapse_toggle !== 'undefined') {
+                        if (collapse_toggle) {
+                            $collapse.toggleClass('is-active');
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    $(document).on('click', '.js-collapse', function (e) {
+        e.preventDefault();
+    });
+
+    /* ==========================================================================
      * Map
      * ========================================================================== */
 
