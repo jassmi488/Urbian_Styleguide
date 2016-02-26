@@ -27,7 +27,7 @@
             $dismiss_alert.on('click', function (e) {
                 e.preventDefault();
 
-                $alert.fadeOut();
+                $alert.fadeOut(250);
             });
         });
     }
