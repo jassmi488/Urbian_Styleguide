@@ -10,6 +10,15 @@
     z-index: $z-index-modal;
 }
 
+.modal.fade .modal-dialog {
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.modal.in .modal-dialog {
+    opacity: 1;
+}
+
 /**
  * Backdrop
  */
