@@ -83,38 +83,6 @@
     }
 
     /**
-     * Small
-     */
-
-    &.btn--small {
-        font-size: 0.875em; /* 14 / 16 */
-        padding: 0.525em 0.75em;
-
-        &.btn--icon {
-
-            .icon {
-                font-size: 1em;
-            }
-        }
-    }
-
-    /**
-     * Transparent
-     */
-
-    &.btn--transparent {
-        background-color: transparent;
-        border-color: transparent;
-        color: $color-black;
-
-        &:focus,
-        &:hover {
-            border-color: $color-black;
-            color: $color-black;
-        }
-    }
-
-    /**
      * Gray
      */
 
