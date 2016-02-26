@@ -3,14 +3,15 @@
 \* -------------------------------------------------------------------------- */
 
 .collapse {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s;
 
     /**
      * Open
      */
 
     &.is-open {
-        clear: both;
-        display: block;
+        max-height: 30em; /* 480 / 16 */
     }
 }
