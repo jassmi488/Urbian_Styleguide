@@ -168,6 +168,7 @@
      */
 
     .label__link {
+        color: $color-gray-dark;
         float: right;
         font-size: 0.875em; /* 14 / 16 */
         font-weight: $weight-normal;
@@ -176,7 +177,7 @@
 
         &:focus,
         &:hover {
-            color: $color-blue;
+            color: $color-black;
         }
     }
 
