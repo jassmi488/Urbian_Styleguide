@@ -53,11 +53,14 @@
 \* -------------------------------------------------------------------------- */
 
 @mixin sg-heading($font-size, $percentage) {
+    color: $sg-color-gray-dark;
     font-family: $sg-font-secondary;
     font-size: $font-size;
+    letter-spacing: 0.125em;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    text-transform: uppercase;
 }
 
 

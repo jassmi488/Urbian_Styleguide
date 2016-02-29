@@ -1,0 +1,79 @@
+/* -------------------------------------------------------------------------- *\
+   #FOOTER
+\* -------------------------------------------------------------------------- */
+
+.sg-footer {
+    background-color: $sg-color-gray-dark;
+    text-align: center;
+
+    /**
+     * Logo
+     */
+
+    .sg-footer__logo {
+        display: inline-block;
+        margin-bottom: 1.5em;
+    }
+
+    /**
+     * List
+     */
+
+    .sg-footer__list {
+        @include sg-clearfix();
+        @include sg-list();
+        margin-bottom: 3em;
+
+        /**
+         * Item
+         */
+
+        .sg-footer__item {
+            display: inline-block;
+            font-family: $sg-font-secondary;
+            margin-bottom: 0;
+            margin-left: 1.5em;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    /**
+     * Link
+     */
+
+    .sg-footer__link {
+        color: $sg-color-gray;
+        font-size: 1.5em; /* 24 / 16 */
+        text-decoration: none;
+        transition: color 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $sg-color-white-dark;
+        }
+    }
+
+    /**
+     * Legal
+     */
+
+    .sg-footer__legal {
+        color: $sg-color-white-dark;
+        font-family: $sg-font-secondary;
+        font-size: 0.875em; /* 14 / 16 */
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-footer {
+        margin-left: -4em;
+        margin-bottom: -4em;
+        margin-right: -4em;
+        padding: 3em;
+    }
+}
