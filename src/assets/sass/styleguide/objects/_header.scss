@@ -12,14 +12,56 @@
      */
 
     .hN {
-        margin-bottom: 0;
+        margin-bottom: 0.25em;
+    }
+
+    /**
+     * List
+     */
+
+    .sg-list {
+        color: $sg-color-gray-dark;
+        font-family: $sg-font-secondary;
+
+        li {
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-xs) {
+
+    .sg-header {
+
+        .sg-list {
+            @include sg-clearfix();
+
+            li {
+                float: left;
+                margin-left: 1em;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
     }
 }
 
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-header {
+        @include sg-clearfix();
         border-bottom-width: 0.25em;
         margin-bottom: 2em;
+
+        .hN {
+            float: left;
+        }
+
+        .sg-list {
+            float: right;
+            margin-top: 0.5625em;
+        }
     }
 }
