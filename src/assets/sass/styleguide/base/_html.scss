@@ -1,7 +1,7 @@
 /* -------------------------------------------------------------------------- *\
-   #BASE
+   #HTML
 \* -------------------------------------------------------------------------- */
 
-@import "base/html";
-@import "base/main";
-@import "base/lists";
+.sg-html {
+    background-color: $sg-color-white-dark;
+}

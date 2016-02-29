@@ -1,0 +1,28 @@
+/* -------------------------------------------------------------------------- *\
+   #HEADER
+\* -------------------------------------------------------------------------- */
+
+.sg-header {
+    border-bottom: 0.125em solid $sg-color-white-dark;
+    padding-bottom: 1em;
+
+    /**
+     * Heading
+     */
+
+    .hN {
+        font-size: 1.25em; /* 20 / 16 */
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-header {
+        border-bottom-width: 0.25em;
+
+        .hN {
+            font-size: 2em; /* 32 / 16 */
+        }
+    }
+}

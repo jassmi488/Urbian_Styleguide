@@ -3,13 +3,16 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-main {
-
+    background-color: $sg-color-white;
+    margin: 2em 1em;
+    padding: 1em;
 }
 
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-main {
-        margin-left: 20em; /* 320 / 16 */
-        width: calc(100% - 20em);
+        margin-left: 22em;
+        padding: 4em;
+        width: calc(100% - 24em);
     }
 }
