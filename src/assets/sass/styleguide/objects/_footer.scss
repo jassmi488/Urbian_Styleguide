@@ -80,3 +80,11 @@
         padding: 3em;
     }
 }
+
+@media all and (min-width: $sg-bp-large) {
+
+    .sg-footer {
+        margin-left: -4em;
+        margin-right: -4em;
+    }
+}
