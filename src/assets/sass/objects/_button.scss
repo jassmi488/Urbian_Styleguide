@@ -135,7 +135,7 @@
          */
 
         .dropdown__list {
-            @include reset-list();
+            @include list();
 
             .is-separator {
                 border-bottom: 1px solid $color-silver;

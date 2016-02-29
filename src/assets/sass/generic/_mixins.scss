@@ -7,8 +7,53 @@
 \* -------------------------------------------------------------------------- */
 
 /**
+ * BLOCKQUOTE
  * CLEARFIX
+ * FIGURE
+ * HEADING
+ * HORIZONTAL RULE
+ * LIST
  */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #BLOCKQUOTE
+\* -------------------------------------------------------------------------- */
+
+@mixin blockquote() {
+    border-left: 4px $color-gray solid;
+    margin: 0 0 1.5rem 0;
+    padding: 0 1.5rem;
+
+    p {
+        quotes: "\201C""\201D""\2018""\2019";
+
+        &:before {
+            content: open-quote;
+        }
+
+        &:after {
+            content: close-quote;
+        }
+    }
+
+    cite {
+
+        a {
+            color: $color-gray-dark;
+            text-decoration: underline;
+            transition: color 0.25s;
+
+            &:focus,
+            &:hover {
+                color: $color-blue;
+            }
+        }
+    }
+}
 
 
 
@@ -39,5 +84,94 @@
 
     &:after {
         clear: both;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #FIGURE
+\* -------------------------------------------------------------------------- */
+
+@mixin figure() {
+    margin: 0 0 1.5rem 0;
+
+    img {
+        margin-bottom: 0.5em;
+    }
+
+    figcaption {
+        color: $color-gray;
+        font-size: 1.125em; /* 18 / 16 */
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #HEADING
+\* -------------------------------------------------------------------------- */
+
+@mixin heading($font-size, $percentage) {
+    font-family: $font-secondary;
+    font-size: $font-size;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+    @media all and (min-width: $bp-small) {
+        font-size: $font-size / $percentage; /* Increase the font size by a percentage */
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #HORIZONTAL RULE
+\* -------------------------------------------------------------------------- */
+
+@mixin hr() {
+    border: 0;
+    border-top: 4px solid $color-gray;
+    display: block;
+    height: 1px;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #LIST
+\* -------------------------------------------------------------------------- */
+
+@mixin list() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    dl,
+    ol,
+    ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    dd,
+    li {
+        margin-bottom: 1rem;
+        margin-left: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
