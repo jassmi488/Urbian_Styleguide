@@ -4,6 +4,7 @@
 
 .sg-header {
     border-bottom: 0.125em solid $sg-color-white-dark;
+    margin-bottom: 1em;
     padding-bottom: 1em;
 
     /**
@@ -12,7 +13,9 @@
 
     .hN {
         font-size: 1.25em; /* 20 / 16 */
+        letter-spacing: 0.125em;
         margin-bottom: 0;
+        text-transform: uppercase;
     }
 }
 
@@ -20,6 +23,7 @@
 
     .sg-header {
         border-bottom-width: 0.25em;
+        margin-bottom: 2em;
 
         .hN {
             font-size: 2em; /* 32 / 16 */
