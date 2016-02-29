@@ -19,7 +19,7 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-list {
-    @include sg-reset-list();
+    @include sg-list();
 
     /**
      * Inline
@@ -44,6 +44,6 @@
      */
 
     &.sg-list--unstyled {
-        @include sg-reset-list();
+        @include sg-list();
     }
 }

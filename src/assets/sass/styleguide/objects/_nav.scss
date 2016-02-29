@@ -24,7 +24,7 @@
      */
 
     .sg-nav__list {
-        @include sg-reset-list();
+        @include sg-list();
 
         /**
          * Item
