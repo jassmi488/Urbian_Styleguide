@@ -4,6 +4,10 @@
 
 .sg-footer {
     background-color: $sg-color-gray-dark;
+    margin-left: -1em;
+    margin-bottom: -2em;
+    margin-right: -1em;
+    padding: 3em;
     text-align: center;
 
     /**
@@ -71,9 +75,8 @@
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-footer {
-        margin-left: -4em;
-        margin-bottom: -4em;
-        margin-right: -4em;
+        margin-left: -2em;
+        margin-right: -2em;
         padding: 3em;
     }
 }
