@@ -25,6 +25,10 @@
     .sg-nav__list {
         @include sg-list();
 
+        .sg-nav__list {
+            margin-left: 1em;
+        }
+
         /**
          * Item
          */
@@ -33,13 +37,23 @@
             font-family: $sg-font-secondary;
             font-weight: $sg-weight-bold;
             letter-spacing: 0.125em;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.5em;
             text-transform: uppercase;
+
+            .sg-nav__item {
+                font-weight: $sg-weight-normal;
+                margin-bottom: 1em;
+                text-transform: none;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .is-active {
 
-            .sg-nav__link {
+            > .sg-nav__link {
                 border-bottom-color: $sg-color-secondary;
             }
         }
@@ -52,7 +66,7 @@
     .sg-nav__link {
         border-bottom: 0.125em solid transparent;
         color: $sg-color-secondary;
-        padding-bottom: 0.25em;
+        padding-bottom: 0.125em;
         text-decoration: none;
         transition: border-color 0.25s;
 
