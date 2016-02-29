@@ -26,6 +26,7 @@
         @include sg-list();
 
         .sg-nav__list {
+            margin-top: 1.5rem;
             margin-left: 1em;
         }
 
@@ -37,13 +38,13 @@
             font-family: $sg-font-secondary;
             font-weight: $sg-weight-bold;
             letter-spacing: 0.125em;
-            margin-bottom: 1.5em;
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
 
             .sg-nav__item {
+                font-size: 0.875em; /* 14 / 16 */
                 font-weight: $sg-weight-normal;
-                margin-bottom: 1em;
-                text-transform: none;
+                margin-bottom: 1rem;
 
                 &:last-child {
                     margin-bottom: 0;
