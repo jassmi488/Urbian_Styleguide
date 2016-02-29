@@ -2,26 +2,26 @@
    #HEADINGS
 \* -------------------------------------------------------------------------- */
 
-h1, .h1 {
+.sg-h1 {
     @include sg-heading($sg-h1-font-size, 0.75);
 }
 
-h2, .h2 {
+.sg-h2 {
     @include sg-heading($sg-h2-font-size, 0.75);
 }
 
-h3, .h3 {
+.sg-h3 {
     @include sg-heading($sg-h3-font-size, 1.00);
 }
 
-h4, .h4 {
+.sg-h4 {
     @include sg-heading($sg-h4-font-size, 1.00);
 }
 
-h5, .h5 {
+.sg-h5 {
     @include sg-heading($sg-h5-font-size, 1.00);
 }
 
-h6, .h6 {
+.sg-h6 {
     @include sg-heading($sg-h6-font-size, 1.00);
 }
