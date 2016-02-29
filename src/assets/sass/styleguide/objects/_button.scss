@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------------------- *\
+   #BUTTON
+\* -------------------------------------------------------------------------- */
+
+.sg-btn {
+    background-color: $color-black;
+    border: 1px solid transparent;
+    color: $color-white;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: $weight-bold;
+    height: auto;
+    line-height: 1;
+    padding: 0.6875em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &.is-active,
+    &:focus,
+    &:hover {
+        background-color: $color-white;
+        border-color: $color-black;
+        color: $color-black;
+        outline: 0;
+    }
+
+    /**
+     * Secondary
+     */
+
+    &.sg-btn--secondary {
+        background-color: $color-gray;
+
+        &.is-active,
+        &:focus,
+        &:hover {
+            background-color: $color-white;
+            border-color: $color-gray;
+            color: $color-gray;
+        }
+    }
+}
