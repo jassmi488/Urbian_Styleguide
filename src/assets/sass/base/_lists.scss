@@ -7,41 +7,9 @@
 \* -------------------------------------------------------------------------- */
 
 /**
- * MIXIN
  * DESCRIPTION
  * CUSTOM
  */
-
-
-
-
-
-/* -------------------------------------------------------------------------- *\
-   #MIXIN
-\* -------------------------------------------------------------------------- */
-
-@mixin reset-list() {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    dl,
-    ol,
-    ul {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    dd,
-    li {
-        margin-bottom: 1rem;
-        margin-left: 0;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
 
 
 
@@ -52,7 +20,7 @@
 \* -------------------------------------------------------------------------- */
 
 dl {
-    @include reset-list();
+    @include list();
 
     dt {
         font-weight: $weight-bold;
@@ -68,7 +36,7 @@ dl {
 \* -------------------------------------------------------------------------- */
 
 .list {
-    @include reset-list();
+    @include list();
 
     /**
      * Inline
@@ -111,6 +79,6 @@ dl {
      */
 
     &.list--unstyled {
-        @include reset-list();
+        @include list();
     }
 }

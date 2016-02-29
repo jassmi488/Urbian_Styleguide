@@ -2,26 +2,6 @@
    #HEADINGS
 \* -------------------------------------------------------------------------- */
 
-/**
- * Mixin
- */
-
-@mixin heading($font-size, $percentage) {
-    font-family: $font-secondary;
-    font-size: $font-size;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-
-    @media all and (min-width: $bp-small) {
-        font-size: $font-size / $percentage; /* Increase the font size by a percentage */
-    }
-}
-
-/**
- * Headings
- */
-
 h1, .alpha {
     @include heading($h1-font-size, 0.75);
 }

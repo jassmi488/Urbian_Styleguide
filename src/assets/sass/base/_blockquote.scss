@@ -15,46 +15,6 @@
  *
  */
 
-/**
- * Mixin
- */
-
-@mixin blockquote() {
-    border-left: 4px $color-gray solid;
-    margin: 0 0 1.5rem 0;
-    padding: 0 1.5rem;
-
-    p {
-        quotes: "\201C""\201D""\2018""\2019";
-
-        &:before {
-            content: open-quote;
-        }
-
-        &:after {
-            content: close-quote;
-        }
-    }
-
-    cite {
-
-        a {
-            color: $color-gray-dark;
-            text-decoration: underline;
-            transition: color 0.25s;
-
-            &:focus,
-            &:hover {
-                color: $color-blue;
-            }
-        }
-    }
-}
-
-/**
- * Blockquote
- */
-
 .blockquote {
     @include blockquote();
 }

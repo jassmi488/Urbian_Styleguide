@@ -16,27 +16,6 @@
  *
  */
 
-/**
- * Mixin
- */
-
-@mixin figure() {
-    margin: 0 0 1.5rem 0;
-
-    img {
-        margin-bottom: 0.5em;
-    }
-
-    figcaption {
-        color: $color-gray;
-        font-size: 1.125em; /* 18 / 16 */
-    }
-}
-
-/**
- * Figure
- */
-
 .figure {
     @include figure();
 }
