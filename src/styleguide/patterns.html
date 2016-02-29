@@ -57,6 +57,7 @@
                             <option value="sg-alert">Alert</option>
                             <option value="sg-card">Card</option>
                             <option value="sg-carousel">Carousel</option>
+                            <option value="sg-collapse">Collapse</option>
                             <option value="sg-modal">Modal</option>
                             <option value="sg-pagination">Pagination</option>
                             <option value="sg-social">Social</option>
@@ -346,6 +347,29 @@
                 </div>
             </section>
 
+            <section class="sg-l-section" id="sg-collapse">
+                <header class="sg-header sg-header--section">
+                    <h1 class="sg-hN">Collapse</h1>
+                </header>
+
+                <p><a href="#sg-collapse" class="btn btn--secondary js-collapse" data-collapse-id="collapse-1" data-collapse-toggle="true">Toggle</a></p>
+
+                <div class="collapse" id="collapse-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                </div>
+
+                <div class="sg-code-wrapper js-sg-code">
+                    <button class="sg-btn sg-btn--white-dark js-sg-toggle-code">View Code</button>
+                    <code class="sg-code prettyprint"><a href="#" class="btn btn--secondary js-collapse" data-collapse-id="collapse-1" data-collapse-toggle="true">Toggle</a>
+
+<div class="collapse" id="collapse-a">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div></code>
+                </div>
+            </section>
+
             <section class="sg-l-section" id="sg-modal">
                 <header class="sg-header sg-header--section">
                     <h1 class="sg-hN">Modal</h1>
@@ -372,7 +396,7 @@
 
                             <div class="modal-footer">
                                 <div class="btn-group">
-                                    <a class="btn" href="#sg-modal" data-dismiss="modal">Close</a>
+                                    <a class="btn btn--secondary" href="#sg-modal" data-dismiss="modal">Close</a>
                                     <a class="btn" href="#sg-modal">Save</a>
                                 </div>
                             </div>
@@ -489,30 +513,18 @@
                     </ol>
 
                     <div class="tab-panel is-selected" id="panel-1" aria-labelledby="tab-1" aria-hidden="false" role="tabpanel">
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                        </p>
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                     </div>
 
                     <div class="tab-panel" id="panel-2" aria-labelledby="tab-2" aria-hidden="true" role="tabpanel">
-                        <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                        </p>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </div>
 
                     <div class="tab-panel" id="panel-3" aria-labelledby="tab-3" aria-hidden="true" role="tabpanel">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p>
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <p>
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
                     </div>
                 </div>
 
@@ -529,15 +541,11 @@
     </ol>
 
     <div class="tab-panel is-active" id="panel-a" aria-labelledby="tab-a" aria-hidden="false" role="tabpanel">
-        <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam…
-        </p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam…</p>
     </div>
 
     <div class="tab-panel" id="panel-b" aria-labelledby="tab-b" aria-hidden="true" role="tabpanel">
-        <p>
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia…
-        </p>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia…</p>
     </div>
 </div></code>
                 </div>
