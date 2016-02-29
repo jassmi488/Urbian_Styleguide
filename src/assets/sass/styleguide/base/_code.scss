@@ -1,10 +1,10 @@
 /* -------------------------------------------------------------------------- *\
-   #BASE
+   #CODE
 \* -------------------------------------------------------------------------- */
 
-@import "base/html";
-@import "base/article";
-@import "base/code";
-@import "base/headings";
-@import "base/lists";
-@import "base/paragraph";
+.sg-code {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre;
+}
