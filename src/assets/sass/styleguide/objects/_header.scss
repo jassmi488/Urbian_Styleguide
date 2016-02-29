@@ -32,6 +32,15 @@
             }
         }
     }
+
+    /**
+     * Section
+     */
+
+    &.sg-header--section {
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media all and (min-width: $sg-bp-xs) {
