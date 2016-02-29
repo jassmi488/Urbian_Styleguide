@@ -22,9 +22,14 @@
     .sg-list {
         color: $sg-color-gray-dark;
         font-family: $sg-font-secondary;
+        font-size: 0.875em; /* 14 / 16 */
 
         li {
             margin-bottom: 0.5em;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
@@ -38,6 +43,7 @@
 
             li {
                 float: left;
+                margin-bottom: 0;
                 margin-left: 1em;
 
                 &:first-child {
@@ -61,7 +67,7 @@
 
         .sg-list {
             float: right;
-            margin-top: 0.5625em;
+            margin-top: 0.875em;
         }
     }
 }
