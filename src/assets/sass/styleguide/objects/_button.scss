@@ -3,44 +3,28 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-btn {
-    background-color: $color-black;
-    border: 1px solid transparent;
-    color: $color-white;
+    background-color: $sg-color-gray-dark;
+    border: 2px solid transparent;
+    color: $sg-color-white-dark;
     display: inline-block;
     font-size: 1em;
-    font-weight: $weight-bold;
+    font-weight: $sg-weight-bold;
     height: auto;
+    letter-spacing: 0.125em;
     line-height: 1;
     padding: 0.6875em 1em;
     position: relative;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+    text-transform: uppercase;
+    transition: background-color 0.25s, color 0.25s;
     vertical-align: middle;
     white-space: nowrap;
 
-    &.is-active,
     &:focus,
     &:hover {
-        background-color: $color-white;
-        border-color: $color-black;
-        color: $color-black;
+        background-color: $sg-color-black;
+        color: $sg-color-white;
         outline: 0;
-    }
-
-    /**
-     * Secondary
-     */
-
-    &.sg-btn--secondary {
-        background-color: $color-gray;
-
-        &.is-active,
-        &:focus,
-        &:hover {
-            background-color: $color-white;
-            border-color: $color-gray;
-            color: $color-gray;
-        }
     }
 }
