@@ -64,9 +64,13 @@
 @media all and (min-width: $sg-bp-large) {
 
     .sg-l-main {
+        margin-top: 4em;
+        margin-bottom: 4em;
+        margin-left: 21.75em;
         padding-top: 4em;
         padding-right: 4em;
         padding-left: 4em;
+        width: calc(100% - 25.75em);
     }
 }
 
