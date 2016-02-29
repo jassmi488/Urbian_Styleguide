@@ -8,6 +8,7 @@
 
 /**
  * CLEARFIX
+ * RESET LIST
  */
 
 
@@ -39,5 +40,36 @@
 
     &:after {
         clear: both;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #RESET LIST
+\* -------------------------------------------------------------------------- */
+
+@mixin sg-reset-list() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    dl,
+    ol,
+    ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    dd,
+    li {
+        margin-bottom: 1rem;
+        margin-left: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
