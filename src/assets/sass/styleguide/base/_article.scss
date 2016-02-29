@@ -1,0 +1,35 @@
+/* -------------------------------------------------------------------------- *\
+   #ARTICLE
+\* -------------------------------------------------------------------------- */
+
+.sg-article {
+
+    /**
+     * Lists
+     */
+
+    dl,
+    ol,
+    ul {
+        @include sg-list();
+        margin-bottom: 1.5rem;
+    }
+
+    /**
+     * Ordered
+     */
+
+    ol {
+        list-style: decimal;
+        margin-left: 1.5rem;
+    }
+
+    /**
+     * Unordered
+     */
+
+    ul {
+        list-style: square;
+        margin-left: 1.5rem;
+    }
+}
