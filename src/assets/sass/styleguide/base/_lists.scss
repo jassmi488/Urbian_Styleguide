@@ -51,14 +51,14 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-list {
-    @include reset-list();
+    @include sg-reset-list();
 
     /**
      * Inline
      */
 
     &.sg-list--inline {
-        @include clearfix();
+        @include sg-clearfix();
 
         li {
             float: left;

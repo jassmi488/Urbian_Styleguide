@@ -3,5 +3,80 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-nav {
+    background-color: $sg-color-primary;
+    padding: 1em;
 
+    /**
+     * Logo
+     */
+    
+    .sg-nav__logo {
+        display: block;
+        margin-bottom: 1em;
+        
+        img {
+            display: block;
+        }
+    }
+
+    /**
+     * List
+     */
+
+    .sg-nav__list {
+        @include sg-reset-list();
+
+        /**
+         * Item
+         */
+
+        .sg-nav__item {
+            font-family: $sg-font;
+            font-weight: $sg-weight-semi-bold;
+            letter-spacing: 0.125em;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .is-active {
+
+            .sg-nav__link {
+                border-bottom-color: $sg-color-secondary;
+            }
+        }
+    }
+
+    /**
+     * Link
+     */
+
+    .sg-nav__link {
+        border-bottom: 0.125em solid transparent;
+        color: $sg-color-secondary;
+        padding-bottom: 0.25em;
+        text-decoration: none;
+        transition: border-color 0.25s;
+
+        &:focus,
+        &:hover {
+            border-bottom-color: $sg-color-secondary;
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-nav {
+        height: 100%;
+        left: 0;
+        overflow-y: auto;
+        padding: 2em;
+        position: fixed;
+        top: 0;
+        width: 20em; /* 320 / 16 */
+
+        .sg-nav__logo {
+            margin-bottom: 2em;
+        }
+    }
 }
