@@ -4,14 +4,13 @@
 
 .sg-main {
     background-color: $sg-color-white;
-    margin: 2em 1em;
-    padding: 1em;
+    padding: 2em 1em;
 }
 
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-main {
-        margin-left: 22em;
+        margin: 2em 1em 2em 22em;
         padding: 4em;
         width: calc(100% - 24em);
     }

@@ -2,22 +2,26 @@
    #PARAGRAPH
 \* -------------------------------------------------------------------------- */
 
-.sg-paragraph {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+p {
 
-    /**
-     * Anchor
-     */
+    &.sg-paragraph {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
 
-    a {
-        border-bottom: 1px solid transparent;
-        color: $sg-color-primary;
-        transition: border-color 0.25s, color 0.25s;
+        /**
+         * Anchor
+         */
 
-        &:focus,
-        &:hover {
-            border-bottom-color: $sg-color-primary;
+        a {
+            border-bottom: 1px solid $sg-color-silver;
+            color: $sg-color-gray-dark;
+            text-decoration: none;
+            transition: border-color 0.25s;
+
+            &:focus,
+            &:hover {
+                border-bottom-color: $sg-color-gray-dark;
+            }
         }
     }
 }

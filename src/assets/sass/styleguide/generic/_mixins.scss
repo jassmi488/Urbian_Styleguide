@@ -58,10 +58,6 @@
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 1.5rem;
-
-    @media all and (min-width: $sg-bp-small) {
-        font-size: $font-size / $percentage; /* Increase the font size by a percentage */
-    }
 }
 
 
