@@ -75,7 +75,7 @@ dl {
      */
 
     &.list--inline {
-        @include sg-clearfix();
+        @include clearfix();
 
         li {
             float: left;
