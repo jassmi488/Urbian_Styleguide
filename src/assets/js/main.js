@@ -27,7 +27,7 @@
             $dismiss_alert.on('click', function (e) {
                 e.preventDefault();
 
-                $alert.fadeOut();
+                $alert.fadeOut(250);
             });
         });
     }
@@ -58,31 +58,31 @@
     var $collapse_component = $('.js-collapse');
 
     if ($collapse_component.length > 0) {
-        $carousel_component.each(function () {
+        $collapse_component.each(function () {
             var $collapse = $(this);
             var collapse_id = $collapse.data('collapse-id');
 
-            if (typeof collapse_id !== 'undefined') {
-                var $el = $('#' + collapse_id);
+            $collapse.on('click', function (e) {
+                e.preventDefault();
 
-                if ($el.length > 0) {
-                    $el.toggleClass('is-open');
+                if (typeof collapse_id !== 'undefined') {
+                    var $el = $('#' + collapse_id);
 
-                    var collapse_toggle = $collapse.data('collapse-toggle');
+                    if ($el.length > 0) {
+                        $el.toggleClass('is-open');
 
-                    if (typeof collapse_toggle !== 'undefined') {
-                        if (collapse_toggle) {
-                            $collapse.toggleClass('is-active');
+                        var collapse_toggle = $collapse.data('collapse-toggle');
+
+                        if (typeof collapse_toggle !== 'undefined') {
+                            if (collapse_toggle) {
+                                $collapse.toggleClass('is-active');
+                            }
                         }
                     }
                 }
-            }
+            });
         });
     }
-
-    $(document).on('click', '.js-collapse', function (e) {
-        e.preventDefault();
-    });
 
     /* ==========================================================================
      * Map
