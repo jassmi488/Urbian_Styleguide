@@ -101,7 +101,7 @@
 }
 
 .slick-dots {
-    @include reset-list();
+    @include list();
     bottom: 0;
     display: block;
     margin-bottom: 16px;

@@ -12,7 +12,7 @@
 
     .pagination__list {
         @include clearfix();
-        @include reset-list();
+        @include list();
 
         /**
          * Item

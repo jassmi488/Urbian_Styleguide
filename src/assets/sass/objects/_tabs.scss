@@ -10,7 +10,7 @@
      */
 
     .tab-list {
-        @include reset-list();
+        @include list();
         margin-bottom: 1em;
 
         /**

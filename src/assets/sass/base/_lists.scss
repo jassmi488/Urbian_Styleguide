@@ -20,7 +20,7 @@
 \* -------------------------------------------------------------------------- */
 
 dl {
-    @include reset-list();
+    @include list();
 
     dt {
         font-weight: $weight-bold;
@@ -36,7 +36,7 @@ dl {
 \* -------------------------------------------------------------------------- */
 
 .list {
-    @include reset-list();
+    @include list();
 
     /**
      * Inline
@@ -79,6 +79,6 @@ dl {
      */
 
     &.list--unstyled {
-        @include reset-list();
+        @include list();
     }
 }

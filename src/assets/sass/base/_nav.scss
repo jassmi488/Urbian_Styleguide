@@ -11,7 +11,7 @@
 
     .nav__list {
         @include clearfix();
-        @include reset-list();
+        @include list();
         white-space: nowrap;
 
         /**
