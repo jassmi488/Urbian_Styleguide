@@ -81,3 +81,10 @@
 .sg-l-section {
     padding-bottom: 2em;
 }
+
+@media all and (min-width: $sg-bp-large) {
+
+    .sg-l-section {
+        padding-bottom: 4em;
+    }
+}
