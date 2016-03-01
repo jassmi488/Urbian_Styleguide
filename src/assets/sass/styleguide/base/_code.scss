@@ -3,9 +3,16 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-code {
-    display: block;
+    display: none;
     margin-top: 1em;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: pre;
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-code {
+        display: block;
+    }
 }
