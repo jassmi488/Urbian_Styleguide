@@ -46,6 +46,10 @@
 
     &.sg-header--section {
         padding-top: 2em;
+
+        .sg-h2 {
+            text-transform: none;
+        }
     }
 
     /**
@@ -57,7 +61,6 @@
 
         .sg-h3 {
             font-weight: $sg-weight-normal;
-            text-transform: none;
         }
     }
 }
@@ -103,6 +106,10 @@
 
         &.sg-header--section {
             padding-top: 4em;
+        }
+
+        &.sg-header--subsection {
+            margin-top: 4em;
         }
     }
 }
