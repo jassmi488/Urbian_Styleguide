@@ -41,12 +41,22 @@
     }
 
     /**
+     * Section
+     */
+
+    &.sg-header--section {
+        padding-top: 2em;
+    }
+
+    /**
      * Subsection
      */
 
     &.sg-header--subsection {
+        margin-top: 2em;
 
         .sg-h3 {
+            font-weight: $sg-weight-normal;
             text-transform: none;
         }
     }
@@ -89,6 +99,10 @@
                 float: right;
                 margin-top: 0.875em;
             }
+        }
+
+        &.sg-header--section {
+            padding-top: 4em;
         }
     }
 }
