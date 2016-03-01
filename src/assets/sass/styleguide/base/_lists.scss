@@ -46,4 +46,38 @@
     &.sg-list--unstyled {
         @include sg-list();
     }
+
+    /**
+     * Palette
+     */
+
+    &.sg-list--palette {
+        @include sg-clearfix();
+
+        li {
+            float: left;
+            height: 5em;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-xs) {
+
+    .sg-list {
+
+        &.sg-list--palette {
+            margin-right: -1em;
+            margin-bottom: -2em;
+            margin-left: -1em;
+
+            li {
+                margin-right: 1em;
+                margin-bottom: 2em;
+                margin-left: 1em;
+                width: 12em;
+            }
+        }
+    }
 }
