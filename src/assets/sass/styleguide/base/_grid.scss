@@ -1,0 +1,31 @@
+/* -------------------------------------------------------------------------- *\
+   #GRID
+\* -------------------------------------------------------------------------- */
+
+/**
+ * Row
+ */
+
+.sg-row {
+    background-color: $sg-color-white-dark;
+
+    /**
+     * Column
+     */
+
+    .sg-col {
+        background-color: $sg-color-gray-dark;
+    }
+
+    /**
+     * Code
+     */
+
+    .sg-code {
+        margin-top: 0.375em;
+        margin-right: 0.375em;
+        margin-left: 0.375em;
+        padding-right: 0.25em;
+        padding-left: 0.25em;
+    }
+}
