@@ -5,33 +5,12 @@
 .sg-header {
     position: relative;
 
-    &:focus,
-    &:hover {
-
-        .sg-anchor {
-            opacity: 1;
-        }
-    }
-
     /**
      * Anchor
      */
 
     .sg-anchor {
-        bottom: 0;
-        color: $sg-color-silver;
-        left: -1em;
-        opacity: 0;
-        padding-right: 0.25em;
-        padding-left: 0.25em;
-        position: absolute;
-        text-decoration: none;
-        transition: color 0.25s, opacity 0.25s;
-
-        &:focus,
-        &:hover {
-            color: $sg-color-gray-dark;
-        }
+        display: none;
     }
 
     /**
@@ -77,6 +56,7 @@
 
     &.sg-header--section {
         padding-top: 2em;
+        z-index: $sg-z-index-header-section;
 
         .sg-h2 {
             text-transform: none;
@@ -93,6 +73,7 @@
 
     &.sg-header--subsection {
         padding-top: 2em;
+        z-index: $sg-z-index-header-subsection;
     }
 }
 
@@ -119,6 +100,32 @@
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-header {
+
+        &:focus,
+        &:hover {
+
+            .sg-anchor {
+                opacity: 1;
+            }
+        }
+
+        .sg-anchor {
+            bottom: 0;
+            color: $sg-color-silver;
+            display: block;
+            left: -1em;
+            opacity: 0;
+            padding-right: 0.25em;
+            padding-left: 0.25em;
+            position: absolute;
+            text-decoration: none;
+            transition: color 0.25s, opacity 0.25s;
+
+            &:focus,
+            &:hover {
+                color: $sg-color-gray-dark;
+            }
+        }
 
         &.sg-header--main {
             @include sg-clearfix();
