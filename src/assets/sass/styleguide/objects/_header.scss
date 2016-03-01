@@ -3,17 +3,6 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-header {
-    border-bottom: 0.125em solid $sg-color-white-dark;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
-
-    /**
-     * Heading
-     */
-
-    .sg-h1 {
-        margin-bottom: 0.25em;
-    }
 
     /**
      * List
@@ -34,12 +23,32 @@
     }
 
     /**
-     * Section
+     * Main
      */
 
-    &.sg-header--section {
-        border-bottom: 0;
-        margin-bottom: 0;
+    &.sg-header--main {
+        border-bottom: 0.125em solid $sg-color-white-dark;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+
+        /**
+         * Heading
+         */
+
+        .sg-h1 {
+            margin-bottom: 0;
+        }
+    }
+
+    /**
+     * Subsection
+     */
+
+    &.sg-header--subsection {
+
+        .sg-h3 {
+            text-transform: none;
+        }
     }
 }
 
@@ -66,17 +75,20 @@
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-header {
-        @include sg-clearfix();
-        border-bottom-width: 0.25em;
-        margin-bottom: 2em;
 
-        .sg-h1 {
-            float: left;
-        }
+        &.sg-header--main {
+            @include sg-clearfix();
+            border-bottom-width: 0.25em;
+            margin-bottom: 2em;
 
-        .sg-list {
-            float: right;
-            margin-top: 0.875em;
+            .sg-h1 {
+                float: left;
+            }
+
+            .sg-list {
+                float: right;
+                margin-top: 0.875em;
+            }
         }
     }
 }
