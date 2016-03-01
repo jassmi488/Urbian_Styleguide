@@ -2,9 +2,15 @@
    #CODE
 \* -------------------------------------------------------------------------- */
 
+.js-sg-code {
+
+    .sg-code {
+        margin-top: 1em;
+    }
+}
+
 .sg-code {
     display: none;
-    margin-top: 1em;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: pre;
