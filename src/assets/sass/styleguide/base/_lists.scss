@@ -48,6 +48,31 @@
     }
 
     /**
+     * Icons
+     */
+
+    &.sg-list--icons {
+        @include sg-clearfix();
+
+        li {
+            float: left;
+            margin-right: 1em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            /**
+             * Icon
+             */
+
+            .sg-icon {
+                font-size: 1.5em; /* 24 / 16 */
+            }
+        }
+    }
+
+    /**
      * Palette
      */
 

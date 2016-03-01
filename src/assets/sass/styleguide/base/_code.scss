@@ -5,12 +5,12 @@
 .js-sg-code {
 
     .sg-code {
+        display: none;
         margin-top: 1em;
     }
 }
 
 .sg-code {
-    display: none;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: pre;
@@ -18,7 +18,10 @@
 
 @media all and (min-width: $sg-bp-medium) {
 
-    .sg-code {
-        display: block;
+    .js-sg-code {
+
+        .sg-code {
+            display: block;
+        }
     }
 }
