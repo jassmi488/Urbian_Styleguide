@@ -20,8 +20,10 @@
     .sg-anchor {
         bottom: 0;
         color: $sg-color-silver;
-        left: -0.75em;
+        left: -1em;
         opacity: 0;
+        padding-right: 0.25em;
+        padding-left: 0.25em;
         position: absolute;
         text-decoration: none;
         transition: color 0.25s, opacity 0.25s;
