@@ -78,6 +78,10 @@
         .sg-h2 {
             text-transform: none;
         }
+
+        & + .sg-header--subsection {
+            margin-top: -2em;
+        }
     }
 
     /**
@@ -135,6 +139,10 @@
 
         &.sg-header--section {
             padding-top: 4em;
+
+            & + .sg-header--subsection {
+                margin-top: -4em;
+            }
         }
 
         &.sg-header--subsection {
