@@ -55,7 +55,7 @@
         .is-active {
 
             > .sg-nav__link {
-                border-bottom-color: $sg-color-secondary;
+                border-bottom-color: $sg-color-black;
             }
         }
     }
@@ -66,14 +66,14 @@
 
     .sg-nav__link {
         border-bottom: 0.125em solid transparent;
-        color: $sg-color-secondary;
+        color: $sg-color-black;
         padding-bottom: 0.125em;
         text-decoration: none;
         transition: border-color 0.25s;
 
         &:focus,
         &:hover {
-            border-bottom-color: $sg-color-secondary;
+            border-bottom-color: $sg-color-black;
         }
     }
 }
