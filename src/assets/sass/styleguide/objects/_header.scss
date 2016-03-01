@@ -3,6 +3,34 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-header {
+    position: relative;
+
+    &:focus,
+    &:hover {
+
+        .sg-anchor {
+            opacity: 1;
+        }
+    }
+
+    /**
+     * Anchor
+     */
+
+    .sg-anchor {
+        bottom: 0;
+        color: $sg-color-silver;
+        left: -0.75em;
+        opacity: 0;
+        position: absolute;
+        text-decoration: none;
+        transition: color 0.25s, opacity 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $sg-color-gray-dark;
+        }
+    }
 
     /**
      * List
@@ -57,10 +85,11 @@
      */
 
     &.sg-header--subsection {
-        margin-top: 2em;
+        padding-top: 2em;
 
         .sg-h3 {
             font-weight: $sg-weight-normal;
+            text-transform: none;
         }
     }
 }
@@ -109,7 +138,7 @@
         }
 
         &.sg-header--subsection {
-            margin-top: 4em;
+            padding-top: 4em;
         }
     }
 }
