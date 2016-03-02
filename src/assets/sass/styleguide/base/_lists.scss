@@ -122,6 +122,52 @@
             }
         }
     }
+
+    /**
+     * Templates
+     */
+
+    &.sg-list--templates {
+
+        .sg-list {
+            counter-reset: item;
+            margin-bottom: 0;
+            margin-left: 1em;
+            padding-left: 1em;
+        }
+
+        li {
+            font-family: $sg-font-secondary;
+            font-weight: $sg-weight-semi-bold;
+            letter-spacing: 0.125em;
+            text-transform: uppercase;
+
+            a {
+                border-bottom: 0.125em solid transparent;
+                color: $sg-color-gray-dark;
+                text-decoration: none;
+                transition: border-color 0.25s;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $sg-color-gray-dark;
+                }
+            }
+
+            li {
+
+                &:before {
+                    content: counters(item, ".") ". ";
+                    counter-increment: item
+                }
+
+                li {
+                    font-weight: $sg-weight-normal;
+                    text-transform: none;
+                }
+            }
+        }
+    }
 }
 
 @media all and (min-width: $sg-bp-xs) {
