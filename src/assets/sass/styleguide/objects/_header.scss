@@ -37,16 +37,8 @@
 
     &.sg-header--main {
         border-bottom: 0.125em solid $sg-color-white-dark;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
         padding-bottom: 1em;
-
-        /**
-         * Heading
-         */
-
-        .sg-h1 {
-            margin-bottom: 0;
-        }
     }
 
     /**
@@ -133,10 +125,10 @@
         &.sg-header--main {
             @include sg-clearfix();
             border-bottom-width: 0.25em;
-            margin-bottom: 2em;
 
             .sg-h1 {
                 float: left;
+                margin-bottom: 0;
             }
 
             .sg-list {
