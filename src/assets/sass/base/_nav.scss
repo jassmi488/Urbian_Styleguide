@@ -133,7 +133,8 @@
 
             &:focus,
             &:hover {
-                background-color: $color-silver;
+                background-color: $color-gray-dark;
+                color: $color-white;
             }
         }
     }
