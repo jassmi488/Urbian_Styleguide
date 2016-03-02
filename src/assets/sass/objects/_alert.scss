@@ -32,8 +32,10 @@
          */
 
         a {
+            border-bottom: 1px solid transparent;
             font-weight: $weight-bold;
-            text-decoration: underline;
+            text-decoration: none;
+            transition: border-color 0.25s;
         }
     }
 
@@ -73,6 +75,11 @@
 
             a {
                 color: $color-green;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $color-green;
+                }
             }
         }
     }
@@ -92,6 +99,11 @@
 
             a {
                 color: $color-blue;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $color-blue;
+                }
             }
         }
     }
@@ -111,6 +123,11 @@
 
             a {
                 color: $color-orange;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $color-orange;
+                }
             }
         }
     }
@@ -130,6 +147,11 @@
 
             a {
                 color: $color-red;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $color-red;
+                }
             }
         }
     }
