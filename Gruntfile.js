@@ -166,9 +166,15 @@ module.exports = function (grunt) {
                         version: version
                     }
                 },
-                files: {
-                    'build/styleguide/index.html': ['src/styleguide/index.html']
-                }
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['styleguide/*.html'],
+                        dest: 'build',
+                        ext: '.html'
+                    }
+                ]
             },
             dist: {
                 options: {
@@ -178,9 +184,15 @@ module.exports = function (grunt) {
                         version: version
                     }
                 },
-                files: {
-                    'dist/styleguide/index.html': ['src/styleguide/index.html']
-                }
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['styleguide/*.html'],
+                        dest: 'dist',
+                        ext: '.html'
+                    }
+                ]
             }
         },
         sass: {
