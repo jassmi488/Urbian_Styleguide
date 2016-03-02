@@ -115,7 +115,6 @@
             font-family: $sg-font-secondary;
             font-weight: $sg-weight-semi-bold;
             letter-spacing: 0.125em;
-            text-transform: uppercase;
 
             a {
                 border-bottom: 0.125em solid transparent;
@@ -138,7 +137,6 @@
 
                 li {
                     font-weight: $sg-weight-normal;
-                    text-transform: none;
                 }
             }
         }
