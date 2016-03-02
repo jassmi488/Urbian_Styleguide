@@ -11,11 +11,14 @@ p {
      */
 
     a {
+        border-bottom: 1px solid $color-silver;
         color: $color-gray-dark;
-        transition: color 0.25s;
+        text-decoration: none;
+        transition: border-color 0.25s, color 0.25s;
 
         &:focus,
         &:hover {
+            border-bottom-color: $color-blue;
             color: $color-blue;
         }
     }
