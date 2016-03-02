@@ -20,7 +20,6 @@
         .breadcrumbs__item {
             color: $color-gray;
             float: left;
-            font-size: 0.875em; /* 14 / 16 */
             font-weight: $weight-bold;
             margin-right: 1.5em;
             margin-bottom: 0;
@@ -58,15 +57,16 @@
      */
 
     .breadcrumbs__link {
+        border-bottom: 1px solid transparent;
         color: $color-gray-dark;
         display: block;
         text-decoration: none;
-        transition: color 0.25s;
+        transition: border-color 0.25s, color 0.25s;
 
         &:focus,
         &:hover {
+            border-bottom-color: $color-black;
             color: $color-black;
-            text-decoration: underline;
         }
     }
 }
