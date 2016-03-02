@@ -27,6 +27,7 @@
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-l-aside {
+        box-shadow: 0 0.5em 0.5em $sg-color-silver;
         height: 100%;
         left: 0;
         overflow-y: auto;
@@ -50,13 +51,21 @@
     padding: 2em 1em;
 }
 
+@media all and (min-width: $sg-bp-xs) {
+
+    .sg-l-main {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+}
+
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-l-main {
         margin-top: 2em;
         margin-bottom: 2em;
         margin-left: 19.75em;
-        padding: 2em 2em 0 2em;
+        padding-bottom: 0;
         width: calc(100% - 21.75em);
     }
 }

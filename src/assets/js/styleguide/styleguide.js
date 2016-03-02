@@ -7,12 +7,8 @@
     'use strict';
 
     /* ==========================================================================
-     * Code View
+     * Code
      * ========================================================================== */
-
-    /*
-     * Encode
-     */
 
     var $code = $('.js-sg-code');
 
@@ -39,5 +35,25 @@
 
         /*global prettyPrint*/
         prettyPrint();
+    }
+
+    /* ==========================================================================
+     * Navigation Toggle
+     * ========================================================================== */
+
+    var $nav_toggle = $('.js-sg-nav-toggle');
+
+    if ($nav_toggle.length > 0) {
+
+        $nav_toggle.on('click', function (e) {
+            e.preventDefault();
+
+            var $nav = $('.js-sg-nav');
+
+            if ($nav.length > 0) {
+                $nav.toggleClass('is-open');
+                $nav_toggle.toggleClass('is-active');
+            }
+        });
     }
 })();

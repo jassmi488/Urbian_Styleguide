@@ -1,9 +1,29 @@
+/**
+ * NAVIGATION
+ */
+
 /* -------------------------------------------------------------------------- *\
-   #NAVIGATION
+   #TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * NAV
+ * NAV TOGGLE
+ */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #NAV
 \* -------------------------------------------------------------------------- */
 
 .sg-nav {
+    @include sg-clearfix();
+    box-shadow: 0 0 0.5em $sg-color-silver;
     padding: 1em;
+    position: relative;
 
     /**
      * Logo
@@ -11,7 +31,7 @@
     
     .sg-nav__logo {
         display: block;
-        margin-bottom: 1em;
+        float: left;
         
         img {
             display: block;
@@ -24,8 +44,11 @@
 
     .sg-nav__list {
         @include sg-list();
+        clear: both;
+        display: none;
 
         .sg-nav__list {
+            display: block;
             margin-top: 1.5rem;
             margin-left: 0.75em;
         }
@@ -59,6 +82,11 @@
                 border-bottom-color: $sg-color-gray-dark;
             }
         }
+
+        &.is-open {
+            display: block;
+            padding-top: 2em;
+        }
     }
 
     /**
@@ -82,9 +110,99 @@
 @media all and (min-width: $sg-bp-medium) {
 
     .sg-nav {
+        box-shadow: none;
 
         .sg-nav__logo {
             margin-bottom: 2em;
         }
+
+        .sg-nav__list {
+            display: block;
+
+            &.is-open {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #NAV TOGGLE
+\* -------------------------------------------------------------------------- */
+
+.sg-nav-toggle {
+    display: inline-block;
+    line-height: 1;
+    position: absolute;
+    right: 1em;
+    top: 1.25em;
+
+    /**
+     * Bar
+     */
+
+    .sg-nav-toggle__bar {
+        background-color: $sg-color-gray;
+        display: inline-block;
+        height: 0.1875em;
+        position: relative;
+        transition: background-color 0.25s;
+        width: 2em;
+
+        &:before {
+            background-color: $sg-color-gray;
+            content: "";
+            display: inline-block;
+            height: 0.1875em;
+            position: absolute;
+            top: -0.5em;
+            transition: background-color 0.25s, transform 0.25s;
+            width: 2em;
+        }
+
+        &:after {
+            background-color: $sg-color-gray;
+            bottom: -0.5em;
+            content: "";
+            display: inline-block;
+            height: 0.1875em;
+            position: absolute;
+            transition: background-color 0.25s, transform 0.25s;
+            width: 2em;
+        }
+    }
+
+    /**
+     * Active
+     */
+
+    &.is-active {
+
+        .sg-nav-toggle__bar {
+            background-color: transparent;
+
+            &:before {
+                background-color: $sg-color-gray-dark;
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                background-color: $sg-color-gray-dark;
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-nav-toggle {
+        display: none;
     }
 }
