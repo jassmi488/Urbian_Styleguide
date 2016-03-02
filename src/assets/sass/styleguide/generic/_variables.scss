@@ -23,12 +23,12 @@
    #BREAKPOINTS
 \* -------------------------------------------------------------------------- */
 
-$sg-bp-xs:      30.00em; /*  30.00 x 16 =  480px */
-$sg-bp-small:   46.25em; /*  46.25 x 16 =  740px */
-$sg-bp-medium:  61.25em; /*  61.25 x 16 =  980px */
-$sg-bp-large:   75.00em; /*  75.00 x 16 = 1200px */
-$sg-bp-xl:      87.50em; /*  87.50 x 16 = 1400px */
-$sg-bp-xxl:    100.00em; /* 105.00 x 16 = 1600px */
+$sg-bp-xs:      30.00em; /*  480 / 16 */
+$sg-bp-small:   46.25em; /*  740 / 16 */
+$sg-bp-medium:  61.25em; /*  980 / 16 */
+$sg-bp-large:   75.00em; /* 1200 / 16 */
+$sg-bp-xl:      87.50em; /* 1400 / 16 */
+$sg-bp-xxl:    100.00em; /* 1600 / 16 */
 
 
 
@@ -42,7 +42,8 @@ $sg-bp-xxl:    100.00em; /* 105.00 x 16 = 1600px */
  * Brand
  */
 
-$sg-color-primary:    #001f3f;
+$sg-color-primary:    #fff;
+$sg-color-secondary:  #4a4a4a;
 
 /**
  * Grayscale
@@ -67,7 +68,23 @@ $sg-color-white:      #fff;
    #Family
    ========================================================================== */
 
-$sg-font: "Source Sans Pro", sans-serif;
+$sg-font:           Arial, sans-serif;
+$sg-font-secondary: "Source Sans Pro", sans-serif;
+
+
+
+
+
+/* ==========================================================================
+   #Size
+   ========================================================================== */
+
+$sg-h1-font-size: 2.250em; /* 36 / 16 */
+$sg-h2-font-size: 1.875em; /* 30 / 16 */
+$sg-h3-font-size: 1.500em; /* 24 / 16 */
+$sg-h4-font-size: 1.125em; /* 18 / 16 */
+$sg-h5-font-size: 0.875em; /* 14 / 16 */
+$sg-h6-font-size: 0.750em; /* 12 / 16 */
 
 
 
@@ -93,4 +110,5 @@ $sg-weight-normal:    400;
  * Header
  */
 
-$sg-z-index-header: 1020;
+$sg-z-index-header-section:    1010;
+$sg-z-index-header-subsection: 1000;

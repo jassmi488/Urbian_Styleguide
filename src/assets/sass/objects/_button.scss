@@ -21,8 +21,8 @@
 \* -------------------------------------------------------------------------- */
 
 .btn {
-    background-color: $color-black;
-    border: 1px solid transparent;
+    background-color: $color-gray-dark;
+    border: 2px solid transparent;
     color: $color-white;
     display: inline-block;
     font-size: 1em;
@@ -51,11 +51,14 @@
      */
 
     &[disabled] {
+        background-color: $color-silver;
+        border-color: $color-silver;
+        color: $color-white;
 
         &.is-active,
         &:focus,
         &:hover {
-            background-color: $color-black;
+            background-color: $color-silver;
             border-color: $color-silver;
             color: $color-white;
         }
@@ -87,14 +90,15 @@
      */
 
     &.btn--secondary {
-        background-color: $color-gray;
+        background-color: $color-white;
+        border-color: $color-gray;
+        color: $color-gray;
 
         &.is-active,
         &:focus,
         &:hover {
-            background-color: $color-white;
-            border-color: $color-gray;
-            color: $color-gray;
+            background-color: $color-gray;
+            color: $color-white;
         }
     }
 }
@@ -117,7 +121,6 @@
 
     .dropdown {
         background-color: $color-white-dark;
-        border: 1px solid $color-silver;
         display: none;
         left: 0;
         min-width: 10em; /* 160 / 16 */
@@ -138,7 +141,7 @@
             @include list();
 
             .is-separator {
-                border-bottom: 1px solid $color-silver;
+                border-bottom: 2px solid $color-white;
             }
 
             /**
@@ -164,8 +167,8 @@
 
             &:focus,
             &:hover {
-                background-color: $color-white;
-                color: $color-black;
+                background-color: $color-gray-dark;
+                color: $color-white;
             }
         }
     }
@@ -215,7 +218,7 @@
             width: auto;
 
             & + .btn {
-                margin-left: 1px;
+                margin-left: 2px;
             }
         }
     }

@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var today = '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>';
-    var package_version = '<%= pkg.version %>';
+    var version = '<%= pkg.version %>';
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -163,24 +163,36 @@ module.exports = function (grunt) {
                     process: true,
                     data: {
                         today: today,
-                        package_version: package_version
+                        version: version
                     }
                 },
-                files: {
-                    'build/styleguide/index.html': ['src/styleguide/index.html']
-                }
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['styleguide/*.html'],
+                        dest: 'build',
+                        ext: '.html'
+                    }
+                ]
             },
             dist: {
                 options: {
                     process: true,
                     data: {
                         today: today,
-                        package_version: package_version
+                        version: version
                     }
                 },
-                files: {
-                    'dist/styleguide/index.html': ['src/styleguide/index.html']
-                }
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'src',
+                        src: ['styleguide/*.html'],
+                        dest: 'dist',
+                        ext: '.html'
+                    }
+                ]
             }
         },
         sass: {

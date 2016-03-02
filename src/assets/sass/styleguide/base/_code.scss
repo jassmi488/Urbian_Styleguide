@@ -1,0 +1,28 @@
+/* -------------------------------------------------------------------------- *\
+   #CODE
+\* -------------------------------------------------------------------------- */
+
+.js-sg-code {
+
+    .sg-code {
+        display: none;
+    }
+}
+
+.sg-code {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre;
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .js-sg-code {
+
+        .sg-code {
+            display: block;
+            margin-top: 2em;
+            margin-bottom: 4em;
+        }
+    }
+}

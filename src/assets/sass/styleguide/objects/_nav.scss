@@ -1,0 +1,206 @@
+/**
+ * NAVIGATION
+ */
+
+/* -------------------------------------------------------------------------- *\
+   #TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * NAV
+ * NAV TOGGLE
+ */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #NAV
+\* -------------------------------------------------------------------------- */
+
+.sg-nav {
+    @include sg-clearfix();
+    box-shadow: 0 0 0.5em $sg-color-silver;
+    padding: 1em;
+    position: relative;
+
+    /**
+     * Logo
+     */
+    
+    .sg-nav__logo {
+        display: block;
+        float: left;
+        
+        img {
+            display: block;
+        }
+    }
+
+    /**
+     * List
+     */
+
+    .sg-nav__list {
+        @include sg-list();
+        clear: both;
+        display: none;
+
+        .sg-nav__list {
+            display: block;
+            margin-top: 1.5rem;
+            margin-left: 0.75em;
+        }
+
+        /**
+         * Item
+         */
+
+        .sg-nav__item {
+            font-family: $sg-font-secondary;
+            font-weight: $sg-weight-semi-bold;
+            letter-spacing: 0.125em;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+
+            .sg-nav__item {
+                font-size: 0.875em; /* 14 / 16 */
+                font-weight: $sg-weight-normal;
+                margin-bottom: 1rem;
+                text-transform: none;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .is-active {
+
+            > .sg-nav__link {
+                border-bottom-color: $sg-color-secondary;
+            }
+        }
+
+        &.is-open {
+            display: block;
+            padding-top: 2em;
+        }
+    }
+
+    /**
+     * Link
+     */
+
+    .sg-nav__link {
+        border-bottom: 0.125em solid transparent;
+        color: $sg-color-secondary;
+        padding-bottom: 0.125em;
+        text-decoration: none;
+        transition: border-color 0.25s;
+
+        &:focus,
+        &:hover {
+            border-bottom-color: $sg-color-secondary;
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-nav {
+        box-shadow: none;
+
+        .sg-nav__logo {
+            margin-bottom: 2em;
+        }
+
+        .sg-nav__list {
+            display: block;
+
+            &.is-open {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #NAV TOGGLE
+\* -------------------------------------------------------------------------- */
+
+.sg-nav-toggle {
+    display: inline-block;
+    line-height: 1;
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+
+    /**
+     * Bar
+     */
+
+    .sg-nav-toggle__bar {
+        background-color: $sg-color-secondary;
+        display: inline-block;
+        height: 0.1875em;
+        position: relative;
+        transition: background-color 0.25s;
+        width: 2em;
+
+        &:before {
+            background-color: $sg-color-secondary;
+            content: "";
+            display: inline-block;
+            height: 0.1875em;
+            position: absolute;
+            top: -0.5em;
+            transition: background-color 0.25s, transform 0.25s;
+            width: 2em;
+        }
+
+        &:after {
+            background-color: $sg-color-secondary;
+            bottom: -0.5em;
+            content: "";
+            display: inline-block;
+            height: 0.1875em;
+            position: absolute;
+            transition: background-color 0.25s, transform 0.25s;
+            width: 2em;
+        }
+    }
+
+    /**
+     * Active
+     */
+
+    &.is-active {
+
+        .sg-nav-toggle__bar {
+            background-color: transparent;
+
+            &:before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-nav-toggle {
+        display: none;
+    }
+}

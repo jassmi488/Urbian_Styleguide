@@ -3,7 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .table {
-    border: 1px solid $color-silver;
+    border: 2px solid $color-silver;
     margin-bottom: 1em;
     width: 100%;
 
@@ -78,14 +78,7 @@
         }
 
         a {
-            color: $color-gray-dark;
-            text-decoration: underline;
-            transition: color 0.25s;
-
-            &:focus,
-            &:hover {
-                color: $color-blue;
-            }
+            @include anchor();
         }
     }
 }

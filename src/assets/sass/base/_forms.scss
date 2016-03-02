@@ -128,7 +128,7 @@
     .legend {
         color: $color-gray-dark;
         font-weight: $weight-bold;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
 
     /**
@@ -136,8 +136,7 @@
      */
 
     &.fieldset--bordered {
-        border: 1px solid $color-silver;
-        margin-bottom: 1em;
+        border: 2px solid $color-silver;
         padding: 0.5em 1.5em 0 1.5em;
 
         .legend {
@@ -168,17 +167,11 @@
      */
 
     .label__link {
-        color: $color-gray-dark;
+        @include anchor();
         float: right;
         font-size: 0.875em; /* 14 / 16 */
         font-weight: $weight-normal;
         margin-top: 0.125em;
-        transition: color 0.25s;
-
-        &:focus,
-        &:hover {
-            color: $color-black;
-        }
     }
 
     /**
@@ -280,14 +273,14 @@ select,
 textarea {
 
     &.input {
-        border: 1px solid $color-silver;
+        border: 2px solid $color-silver;
         border-radius: 0;
         color: $color-gray-dark;
         font-family: $font;
         font-weight: $weight-normal;
-        height: 2.5em; /* 40 / 16 */
+        height: 2.625em; /* 42 / 16 */
         margin-top: 0.375em;
-        padding: 0.5em 0.75em 0.5625em 0.75em;
+        padding: 0.625em 0.75em;
         transition: border-color 0.25s;
         width: 100%;
 

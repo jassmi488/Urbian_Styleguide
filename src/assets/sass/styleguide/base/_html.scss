@@ -1,8 +1,7 @@
 /* -------------------------------------------------------------------------- *\
-   #STYLEGUIDE
+   #HTML
 \* -------------------------------------------------------------------------- */
 
-@import "generic";
-@import "vendor";
-@import "base";
-@import "objects";
+.sg-html {
+    background-color: $sg-color-white-dark;
+}

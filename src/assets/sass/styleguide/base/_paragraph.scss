@@ -1,0 +1,29 @@
+/* -------------------------------------------------------------------------- *\
+   #PARAGRAPH
+\* -------------------------------------------------------------------------- */
+
+p {
+
+    &.sg-paragraph {
+        color: $sg-color-gray-dark;
+        font-family: $sg-font;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+
+        /**
+         * Anchor
+         */
+
+        a {
+            border-bottom: 1px solid $sg-color-silver;
+            color: $sg-color-gray-dark;
+            text-decoration: none;
+            transition: border-color 0.25s;
+
+            &:focus,
+            &:hover {
+                border-bottom-color: $sg-color-gray-dark;
+            }
+        }
+    }
+}

@@ -48,7 +48,7 @@
              */
 
             .nav__link {
-                padding: 0.5em 1em;
+                padding: 0.75em 1em;
                 transition: background-color 0.25s, color 0.25s;
 
                 &:focus,
@@ -133,7 +133,8 @@
 
             &:focus,
             &:hover {
-                background-color: $color-silver;
+                background-color: $color-gray-dark;
+                color: $color-white;
             }
         }
     }

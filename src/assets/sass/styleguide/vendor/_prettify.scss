@@ -2,79 +2,82 @@
    code-prettify | https://github.com/google/code-prettify
 \* -------------------------------------------------------------------------- */
 
-/* GitHub Theme */
+/* Tomorrow Night Eighties Theme */
+/* https://github.com/chriskempson/tomorrow-theme */
+
 .prettyprint {
-    background: $sg-color-white-dark;
-    border: 1px solid $sg-color-silver;
-    border-radius: 4px;
+    background: #2d2d2d;
+    font-family: Monaco, Consolas, monospace;
     font-size: 0.875em; /* 14 / 16 */
     line-height: 1.5;
-    padding: 1em 1.5em;
+    padding: 1em 1.25em;
 }
 
 .pln {
-    color: #333333;
+    color: #cccccc;
 }
 
 @media screen {
+
     .str {
-        color: #dd1144;
+        color: #99cc99;
     }
 
     .kwd {
-        color: #333333;
+        color: #cc99cc;
     }
 
     .com {
-        color: #999988;
+        color: #999999;
     }
 
     .typ {
-        color: #445588;
+        color: #6699cc;
     }
 
     .lit {
-        color: #445588;
+        color: #f99157;
     }
 
     .pun {
-        color: #333333;
+        color: #cccccc;
     }
 
     .opn {
-        color: #333333;
+        color: #cccccc;
     }
 
     .clo {
-        color: #333333;
+        color: #cccccc;
     }
 
     .tag {
-        color: navy;
+        color: #f2777a;
     }
 
     .atn {
-        color: teal;
+        color: #f99157;
     }
 
     .atv {
-        color: #dd1144;
+        color: #66cccc;
     }
 
     .dec {
-        color: #333333;
+        color: #f99157;
     }
 
     .var {
-        color: teal;
+        color: #f2777a;
     }
 
     .fun {
-        color: #990000;
+        color: #6699cc;
     }
 }
 
 @media print, projection {
+
     .str {
         color: #006600;
     }
@@ -114,33 +117,4 @@
     .atv {
         color: #006600;
     }
-}
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L4,
-li.L5,
-li.L6,
-li.L7,
-li.L8,
-li.L9 {
-    /* */
-}
-
-/* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
-    /* */
 }

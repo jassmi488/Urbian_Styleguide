@@ -7,12 +7,8 @@
     'use strict';
 
     /* ==========================================================================
-     * Code View
+     * Code
      * ========================================================================== */
-
-    /*
-     * Encode
-     */
 
     var $code = $('.js-sg-code');
 
@@ -41,58 +37,23 @@
         prettyPrint();
     }
 
-    /*
-     * Toggle
-     */
+    /* ==========================================================================
+     * Navigation Toggle
+     * ========================================================================== */
 
-    var $toggle_code = $('.js-sg-toggle-code');
+    var $nav_toggle = $('.js-sg-nav-toggle');
 
-    if ($toggle_code.length > 0) {
-        $toggle_code.each(function () {
-            var $toggle = $(this);
-            var $toggle_wrapper = $toggle.parent();
-            var $code = $('code', $toggle_wrapper);
+    if ($nav_toggle.length > 0) {
 
-            $toggle.on('click', function () {
-                $code.toggleClass('is-visible');
-                $toggle.toggleClass('is-active');
+        $nav_toggle.on('click', function (e) {
+            e.preventDefault();
 
-                /*
-                 * Toggle the label of the button
-                 */
+            var $nav = $('.js-sg-nav');
 
-                if ($(this).hasClass('is-active')) {
-                    $(this).html('Hide Code');
-                }
-                else {
-                    $(this).html('View Code');
-                }
-            });
+            if ($nav.length > 0) {
+                $nav.toggleClass('is-open');
+                $nav_toggle.toggleClass('is-active');
+            }
         });
     }
-
-    /* ==========================================================================
-     * Jump to Section
-     * ========================================================================== */
-
-    var $jump_action = $('.js-sg-jump');
-
-    $jump_action.on('change', function () {
-        var section = $(this).find('option:selected')[0].value;
-
-        if (section !== '') {
-            location.hash = '#' + section;
-        }
-    });
-
-    /* ==========================================================================
-     * Toggle Navigation
-     * ========================================================================== */
-
-    var $toggle_nav = $('.js-sg-toggle-nav');
-
-    $toggle_nav.on('click', function () {
-        $('.sg-nav--primary').toggleClass('is-open');
-        $toggle_nav.toggleClass('is-active');
-    });
 })();

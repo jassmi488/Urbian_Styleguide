@@ -1,0 +1,159 @@
+/**
+ * LISTS
+ */
+
+/* -------------------------------------------------------------------------- *\
+   #TABLE OF CONTENTS
+\* -------------------------------------------------------------------------- */
+
+/**
+ * CUSTOM
+ */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #CUSTOM
+\* -------------------------------------------------------------------------- */
+
+.sg-list {
+    @include sg-list();
+
+    /**
+     * Inline
+     */
+
+    &.sg-list--inline {
+        @include sg-clearfix();
+
+        li {
+            float: left;
+            margin-left: 1rem;
+            margin-bottom: 0;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    /**
+     * Unstyled
+     */
+
+    &.sg-list--unstyled {
+        @include sg-list();
+    }
+
+    /**
+     * Palette
+     */
+
+    &.sg-list--palette {
+        @include sg-clearfix();
+
+        li {
+            float: left;
+            height: 4em;
+            margin-bottom: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /**
+         * Color
+         */
+
+        .sg-list--palette__color {
+            height: 100%;
+            margin-bottom: 0.5em;
+
+            &:focus,
+            &:hover {
+
+                .sg-code {
+                    display: none;
+
+                    &:last-child {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .sg-code {
+                background-color: $sg-color-white;
+                color: $sg-color-black;
+                display: inline-block;
+                padding-right: 0.25em;
+                padding-left: 0.25em;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /**
+     * Templates
+     */
+
+    &.sg-list--templates {
+
+        .sg-list {
+            counter-reset: item;
+            margin-bottom: 0;
+            margin-left: 1em;
+            padding-left: 1em;
+        }
+
+        li {
+            font-family: $sg-font-secondary;
+            font-weight: $sg-weight-semi-bold;
+            letter-spacing: 0.125em;
+
+            a {
+                border-bottom: 0.125em solid transparent;
+                color: $sg-color-gray-dark;
+                text-decoration: none;
+                transition: border-color 0.25s;
+
+                &:focus,
+                &:hover {
+                    border-bottom-color: $sg-color-gray-dark;
+                }
+            }
+
+            li {
+
+                &:before {
+                    content: counters(item, ".") ". ";
+                    counter-increment: item
+                }
+
+                li {
+                    font-weight: $sg-weight-normal;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: $sg-bp-xs) {
+
+    .sg-list {
+
+        &.sg-list--palette {
+
+            li {
+                height: 6em;
+                width: 12em;
+            }
+        }
+    }
+}

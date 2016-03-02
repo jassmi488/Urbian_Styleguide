@@ -1,0 +1,104 @@
+/* -------------------------------------------------------------------------- *\
+   #FOOTER
+\* -------------------------------------------------------------------------- */
+
+.sg-footer {
+    background-color: $sg-color-gray-dark;
+    margin-left: -1em;
+    margin-bottom: -2em;
+    margin-right: -1em;
+    padding: 3em;
+    text-align: center;
+
+    /**
+     * Logo
+     */
+
+    .sg-footer__logo {
+        display: inline-block;
+        margin-bottom: 1.5em;
+    }
+
+    /**
+     * List
+     */
+
+    .sg-footer__list {
+        @include sg-clearfix();
+        @include sg-list();
+        margin-bottom: 3em;
+
+        /**
+         * Item
+         */
+
+        .sg-footer__item {
+            display: inline-block;
+            font-family: $sg-font-secondary;
+            margin-bottom: 0;
+            margin-left: 1.5em;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    /**
+     * Link
+     */
+
+    .sg-footer__link {
+        color: $sg-color-gray;
+        font-size: 1em;
+        text-decoration: none;
+        transition: color 0.25s;
+
+        &:focus,
+        &:hover {
+            color: $sg-color-white-dark;
+        }
+    }
+
+    /**
+     * Legal
+     */
+
+    .sg-footer__legal {
+        color: $sg-color-white-dark;
+        font-family: $sg-font-secondary;
+        font-size: 0.875em; /* 14 / 16 */
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width: $sg-bp-xs) {
+
+    .sg-footer {
+        margin-left: -2em;
+        margin-right: -2em;
+    }
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-footer {
+        padding: 3em;
+    }
+}
+
+@media all and (min-width: $sg-bp-large) {
+
+    .sg-footer {
+        margin-left: -4em;
+        margin-right: -4em;
+    }
+}
+
+@media all and (min-width: $sg-bp-xxl) {
+
+    .sg-footer {
+        margin-left: -6em;
+        margin-right: -6em;
+    }
+}

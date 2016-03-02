@@ -32,7 +32,7 @@
  */
 
 .modal-content {
-    border-color: $color-black;
+    border: 0;
     border-radius: 0;
 }
 
@@ -41,7 +41,7 @@
  */
 
 .modal-header {
-    border-bottom-color: $color-silver;
+    border-bottom: 0;
     padding: 1em;
     position: relative;
 
@@ -80,6 +80,11 @@
  */
 
 .modal-footer {
-    border-top-color: $color-silver;
-    padding: 1em 1em 0 1em;
+    background-color: $color-white-dark;
+    border-top: 0;
+    padding: 1em;
+
+    .btn-group {
+        margin-bottom: 0;
+    }
 }

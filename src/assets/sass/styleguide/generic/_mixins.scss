@@ -8,6 +8,8 @@
 
 /**
  * CLEARFIX
+ * HEADING
+ * LIST
  */
 
 
@@ -30,7 +32,7 @@
  *    `:before` to contain the top-margins of child elements.
  */
 
-@mixin clearfix() {
+@mixin sg-clearfix() {
     &:before,
     &:after {
         content: " "; /* 1 */
@@ -39,5 +41,56 @@
 
     &:after {
         clear: both;
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #HEADING
+\* -------------------------------------------------------------------------- */
+
+@mixin sg-heading($font-size, $percentage) {
+    color: $sg-color-gray-dark;
+    font-family: $sg-font-secondary;
+    font-size: $font-size;
+    font-weight: $sg-weight-semi-bold;
+    letter-spacing: 0.125em;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #LIST
+\* -------------------------------------------------------------------------- */
+
+@mixin sg-list() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    dl,
+    ol,
+    ul {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    dd,
+    li {
+        margin-bottom: 1rem;
+        margin-left: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

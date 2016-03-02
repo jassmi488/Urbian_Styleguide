@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="sg-html" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,7 +17,7 @@
     <script>
         WebFontConfig = {
             google: {
-                families: ['Roboto:400,700', 'Source+Sans+Pro:400,700']
+                families: ['Roboto:400,700', 'Source+Sans+Pro:400,600,700']
             }
         };
     </script>
@@ -34,81 +34,102 @@
     <p class="upgrade">You are using an <strong>outdated</strong> browser. Please <a class="upgrade__link" href="http://browsehappy.com/?locale=en">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="sg-header sg-header--primary" role="banner">
-        <div class="sg-l-wrapper">
-            <a class="sg-logo" href="index.html">
-                <img src="//placehold.it/128x72" srcset="//placehold.it/256x144 2x" width="128" height="72" alt="Name of Project logo">
+    <aside class="sg-l-aside">
+        <nav class="sg-nav" role="navigation">
+            <a class="sg-nav__logo" href="index.html">
+                <img src="http://placehold.it/160x40" srcset="http://placehold.it/320x80 2x" width="150" height="50" alt="Name of Project Style Guide">
             </a>
 
-            <nav class="sg-nav sg-nav--primary">
-                <ol class="sg-list">
-                    <li><a href="elements.html">Elements</a></li>
-                    <li><a href="patterns.html">Patterns</a></li>
-                    <li><a href="forms.html">Forms</a></li>
-                    <li><a class="is-active" href="templates.html">Templates</a></li>
-                </ol>
-            </nav>
+            <a class="sg-nav-toggle js-sg-nav-toggle" href="index.html">
+                <span class="sg-nav-toggle__bar"></span>
+            </a>
 
-            <button class="sg-btn js-sg-toggle-nav">Menu</button>
-        </div>
-    </header>
+            <ol class="sg-nav__list js-sg-nav">
+                <li class="sg-nav__item"><a class="sg-nav__link" href="elements.html">Elements</a></li>
+                <li class="sg-nav__item"><a class="sg-nav__link" href="patterns.html">Patterns</a></li>
+                <li class="sg-nav__item"><a class="sg-nav__link" href="forms.html">Forms</a></li>
+                <li class="sg-nav__item is-active"><a class="sg-nav__link" href="templates.html">Templates</a></li>
+            </ol>
+        </nav>
+    </aside>
 
     <main class="sg-l-main" role="main">
-        <div class="sg-l-wrapper">
-            <section class="sg-l-section">
-                <header class="sg-header sg-header--section">
-                    <h1 class="sg-hN">Table of Contents</h1>
-                </header>
+        <header class="sg-header sg-header--main">
+            <h1 class="sg-h1">Templates</h1>
+            <ul class="sg-list">
+                <li><strong>Version</strong> <%= version %></li>
+                <li><strong>Updated</strong> <%= today %></li>
+            </ul>
+        </header>
 
-                <ol class="sg-list sg-list--templates">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                    <li>
-                        Errors
-                        <ol class="sg-list">
-                            <li><a href="../404.html">404</a></li>
-                            <li><a href="../500.html">500</a></li>
-                        </ol>
-                    </li>
-                </ol>
-            </section>
-        </div>
-    </main>
+        <section class="sg-l-section" id="sg-toc">
+            <header class="sg-header sg-header--section">
+                <h2 class="sg-h2"><a class="sg-anchor" href="#sg-toc">#</a>Table of Contents</h2>
+            </header>
 
-    <footer class="sg-footer" role="contentinfo">
-        <div class="sg-l-wrapper">
-            <a class="sg-logo" href="http://www.wearenext.co.za">
+            <ol class="sg-list sg-list--templates">
+                <li>
+                    <a href="../index.html">Home</a>
+                    <ol class="sg-list">
+                        <li>
+                            <a href="templates.html">Products</a>
+                            <ol class="sg-list">
+                                <li><a href="templates.html">Detail</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="templates.html">About</a></li>
+                        <li><a href="templates.html">FAQ</a></li>
+                        <li>
+                            <a href="templates.html">Contact Us</a>
+                            <ol class="sg-list">
+                                <li><a href="templates.html">Confirmation</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="templates.html">Legal</a></li>
+                        <li>
+                            Errors
+                            <ol class="sg-list">
+                                <li><a href="../404.html">404</a></li>
+                                <li><a href="../500.html">500</a></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="typography.html">Typography</a></li>
+            </ol>
+        </section>
+
+        <footer class="sg-footer" role="contentinfo">
+            <a class="sg-footer__logo" href="http://www.wearenext.co.za">
                 <img src="http://www.wearenext.co.za/assets/images/logos/logo-next-light-57x22.png" srcset="http://www.wearenext.co.za/assets/images/logos/logo-next-light-114x44.png 2x" width="57" height="22" alt="Next">
             </a>
 
-            <div class="sg-social">
-                <ol class="sg-list">
-                    <li>
-                        <a href="mailto:hello@wearenext.co.za" title="Email us">
-                            <span class="sg-icon next-envelope" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/we-are-next" title="Follow us on GitHub">
-                            <span class="sg-icon next-github" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/next-cape-town-" title="Follow us on LinkedIn">
-                            <span class="sg-icon next-linkedin" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/nextct" title="Follow us on Twitter">
-                            <span class="sg-icon next-twitter" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                </ol>
-            </div>
+            <ol class="sg-footer__list">
+                <li class="sg-footer__item">
+                    <a class="sg-footer__link" href="mailto:hello@wearenext.co.za" title="Email us">
+                        <span class="sg-icon next-envelope" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="sg-footer__item">
+                    <a class="sg-footer__link" href="https://github.com/we-are-next" title="Follow us on GitHub">
+                        <span class="sg-icon next-github" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="sg-footer__item">
+                    <a class="sg-footer__link" href="https://www.linkedin.com/company/next-cape-town-" title="Follow us on LinkedIn">
+                        <span class="sg-icon next-linkedin" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="sg-footer__item">
+                    <a class="sg-footer__link" href="https://www.twitter.com/nextct" title="Follow us on Twitter">
+                        <span class="sg-icon next-twitter" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ol>
 
-            <small class="sg-copyright">© 2015 Next</small>
-        </div>
-    </footer>
+            <p class="sg-footer__legal">© 2015 Next</p>
+        </footer>
+    </main>
 
     <!-- JavaScript -->
     <script src="../assets/js/script.js"></script>

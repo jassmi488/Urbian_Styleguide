@@ -7,6 +7,7 @@
 \* -------------------------------------------------------------------------- */
 
 /**
+ * ANCHOR
  * BLOCKQUOTE
  * CLEARFIX
  * FIGURE
@@ -14,6 +15,27 @@
  * HORIZONTAL RULE
  * LIST
  */
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #ANCHOR
+\* -------------------------------------------------------------------------- */
+
+@mixin anchor() {
+    border-bottom: 1px solid $color-silver;
+    color: $color-gray-dark;
+    text-decoration: none;
+    transition: border-color 0.25s, color 0.25s;
+
+    &:focus,
+    &:hover {
+        border-bottom-color: $color-blue;
+        color: $color-blue;
+    }
+}
 
 
 
@@ -43,14 +65,7 @@
     cite {
 
         a {
-            color: $color-gray-dark;
-            text-decoration: underline;
-            transition: color 0.25s;
-
-            &:focus,
-            &:hover {
-                color: $color-blue;
-            }
+            @include anchor();
         }
     }
 }
@@ -103,8 +118,7 @@
     }
 
     figcaption {
-        color: $color-gray;
-        font-size: 1.125em; /* 18 / 16 */
+        color: $color-gray-dark;
     }
 }
 

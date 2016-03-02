@@ -1,8 +1,10 @@
 /* -------------------------------------------------------------------------- *\
-   #STYLEGUIDE
+   #OBJECTS
 \* -------------------------------------------------------------------------- */
 
-@import "generic";
-@import "vendor";
-@import "base";
-@import "objects";
+@import "objects/button";
+@import "objects/footer";
+@import "objects/header";
+@import "objects/icon";
+@import "objects/layout";
+@import "objects/nav";

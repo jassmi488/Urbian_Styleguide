@@ -1,0 +1,27 @@
+/* -------------------------------------------------------------------------- *\
+   #HEADINGS
+\* -------------------------------------------------------------------------- */
+
+.sg-h1 {
+    @include sg-heading($sg-h1-font-size, 0.75);
+}
+
+.sg-h2 {
+    @include sg-heading($sg-h2-font-size, 0.75);
+}
+
+.sg-h3 {
+    @include sg-heading($sg-h3-font-size, 1.00);
+}
+
+.sg-h4 {
+    @include sg-heading($sg-h4-font-size, 1.00);
+}
+
+.sg-h5 {
+    @include sg-heading($sg-h5-font-size, 1.00);
+}
+
+.sg-h6 {
+    @include sg-heading($sg-h6-font-size, 1.00);
+}
