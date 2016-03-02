@@ -56,7 +56,8 @@
 
         li {
             float: left;
-            height: 6em;
+            height: 4em;
+            margin-bottom: 0;
             text-align: center;
             width: 100%;
         }
@@ -148,14 +149,9 @@
     .sg-list {
 
         &.sg-list--palette {
-            margin-right: -1em;
-            margin-bottom: -2em;
-            margin-left: -1em;
 
             li {
-                margin-right: 1em;
-                margin-bottom: 2em;
-                margin-left: 1em;
+                height: 6em;
                 width: 12em;
             }
         }
