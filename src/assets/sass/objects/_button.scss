@@ -21,7 +21,7 @@
 \* -------------------------------------------------------------------------- */
 
 .btn {
-    background-color: $color-black;
+    background-color: $color-gray-dark;
     border: 2px solid transparent;
     color: $color-white;
     display: inline-block;
@@ -51,11 +51,14 @@
      */
 
     &[disabled] {
+        background-color: $color-silver;
+        border-color: $color-silver;
+        color: $color-white;
 
         &.is-active,
         &:focus,
         &:hover {
-            background-color: $color-black;
+            background-color: $color-silver;
             border-color: $color-silver;
             color: $color-white;
         }
