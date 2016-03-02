@@ -2,7 +2,11 @@
    code-prettify | https://github.com/google/code-prettify
 \* -------------------------------------------------------------------------- */
 
-/* GitHub Theme */
+/**
+ * GitHub Theme
+ * https://github.com/jmblog/color-themes-for-google-code-prettify
+ */
+
 .prettyprint {
     background: $sg-color-white;
     border: 1px solid $sg-color-white-dark;
@@ -116,33 +120,4 @@
     .atv {
         color: #006600;
     }
-}
-
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* IE indents via margin-left */
-li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L4,
-li.L5,
-li.L6,
-li.L7,
-li.L8,
-li.L9 {
-    /* */
-}
-
-/* Alternate shading for lines */
-li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 {
-    /* */
 }
