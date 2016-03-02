@@ -114,3 +114,10 @@
         padding-bottom: 4em;
     }
 }
+
+@media all and (min-width: $sg-bp-xxl) {
+
+    .sg-l-section {
+        padding-bottom: 6em;
+    }
+}
