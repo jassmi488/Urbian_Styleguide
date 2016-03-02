@@ -1,10 +1,7 @@
 /* -------------------------------------------------------------------------- *\
-   #OBJECTS
+   #ICON
 \* -------------------------------------------------------------------------- */
 
-@import "objects/button";
-@import "objects/footer";
-@import "objects/header";
-@import "objects/icon";
-@import "objects/layout";
-@import "objects/nav";
+.sg-icon {
+    font-size: 1.5em; /* 24 / 16 */
+}
