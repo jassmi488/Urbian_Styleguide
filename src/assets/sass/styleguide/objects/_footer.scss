@@ -94,3 +94,11 @@
         margin-right: -4em;
     }
 }
+
+@media all and (min-width: $sg-bp-xxl) {
+
+    .sg-footer {
+        margin-left: -6em;
+        margin-right: -6em;
+    }
+}
