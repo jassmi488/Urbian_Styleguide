@@ -167,17 +167,11 @@
      */
 
     .label__link {
-        color: $color-gray-dark;
+        @include anchor();
         float: right;
         font-size: 0.875em; /* 14 / 16 */
         font-weight: $weight-normal;
         margin-top: 0.125em;
-        transition: color 0.25s;
-
-        &:focus,
-        &:hover {
-            color: $color-black;
-        }
     }
 
     /**

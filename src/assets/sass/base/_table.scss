@@ -78,16 +78,7 @@
         }
 
         a {
-            border-bottom: 1px solid $color-silver;
-            color: $color-gray-dark;
-            text-decoration: none;
-            transition: border-color 0.25s, color 0.25s;
-
-            &:focus,
-            &:hover {
-                border-bottom-color: $color-blue;
-                color: $color-blue;
-            }
+            @include anchor();
         }
     }
 }
