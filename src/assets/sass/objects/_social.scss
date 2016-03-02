@@ -33,14 +33,14 @@
      */
 
     .social__link {
-        color: $color-gray;
+        color: $color-silver;
         font-size: 1.875em; /* 30 / 16 */
         text-decoration: none;
         transition: color 0.25s;
 
         &:focus,
         &:hover {
-            color: $color-black;
+            color: $color-gray-dark;
         }
     }
 }

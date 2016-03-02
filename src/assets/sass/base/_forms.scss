@@ -136,7 +136,7 @@
      */
 
     &.fieldset--bordered {
-        border: 1px solid $color-silver;
+        border: 2px solid $color-silver;
         padding: 0.5em 1.5em 0 1.5em;
 
         .legend {
@@ -279,14 +279,14 @@ select,
 textarea {
 
     &.input {
-        border: 1px solid $color-silver;
+        border: 2px solid $color-silver;
         border-radius: 0;
         color: $color-gray-dark;
         font-family: $font;
         font-weight: $weight-normal;
-        height: 2.5em; /* 40 / 16 */
+        height: 2.625em; /* 42 / 16 */
         margin-top: 0.375em;
-        padding: 0.5em 0.75em 0.5625em 0.75em;
+        padding: 0.625em 0.75em;
         transition: border-color 0.25s;
         width: 100%;
 
