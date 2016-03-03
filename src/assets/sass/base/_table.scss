@@ -43,7 +43,7 @@
 
     td {
         @include clearfix();
-        border-bottom: 1px solid $color-silver;
+        border-bottom: 2px solid $color-silver;
         display: block;
         padding: 0.5em 1em;
         text-align: right;
@@ -92,7 +92,7 @@
 
             th {
                 background-color: $color-white;
-                border-right: 1px solid $color-silver;
+                border-right: 2px solid $color-silver;
                 border-bottom: 2px solid $color-gray;
                 padding: 0.5em 1em;
                 text-align: left;
@@ -100,7 +100,7 @@
         }
 
         td {
-            border-right: 1px solid $color-silver;
+            border-right: 2px solid $color-silver;
             display: table-cell;
             text-align: left;
 
