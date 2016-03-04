@@ -14,6 +14,7 @@
  * FIGURE
  * HEADING
  * HORIZONTAL RULE
+ * KEYFRAMES
  * LIST
  */
 
@@ -210,5 +211,32 @@
         &:last-child {
             margin-bottom: 0;
         }
+    }
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+   #KEYFRAMES
+\* -------------------------------------------------------------------------- */
+
+/**
+ * The @keyframes CSS at-rule lets authors control the intermediate steps in a CSS animation sequence by establishing
+ * keyframes (or waypoints) along the animation sequence that must be reached by certain points during the animation.
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
+ *
+ * E.g.
+ *
+   @include keyframes(<identifier>) {
+       from { <properties> }
+         to { <properties> }
+   }
+ */
+
+@mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} {
+        @content;
     }
 }
