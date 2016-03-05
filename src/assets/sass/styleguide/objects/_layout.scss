@@ -22,6 +22,11 @@
 
 .sg-l-aside {
     background-color: $sg-color-primary;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: $sg-z-index-aside;
 }
 
 @media all and (min-width: $sg-bp-medium) {
@@ -29,11 +34,8 @@
     .sg-l-aside {
         box-shadow: 0 0.75em 0.75em rgba($sg-color-black, 0.1);
         height: 100%;
-        left: 0;
         overflow-y: auto;
         padding: 1em;
-        position: fixed;
-        top: 0;
         width: 14.5em; /* 232 / 16 */
     }
 }
@@ -48,6 +50,7 @@
 
 .sg-l-main {
     background-color: $sg-color-white;
+    margin-top: 4.375em; /* 70 / 16 */
     padding: 2em 1em;
 }
 
