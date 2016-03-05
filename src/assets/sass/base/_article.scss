@@ -37,6 +37,14 @@
     ul {
         @include list();
         margin-bottom: 1.5rem;
+
+        dd,
+        li {
+
+            a {
+                @include anchor();
+            }
+        }
     }
 
     /**
