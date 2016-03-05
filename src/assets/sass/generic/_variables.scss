@@ -123,10 +123,10 @@ $weight-normal:    400;
 \* -------------------------------------------------------------------------- */
 
 /**
- * Button Dropdown
+ * Tooltips
  */
 
-$z-index-btn-dropdown:   1000;
+$z-index-tooltips:       1100;
 
 /**
  * Modal
@@ -136,13 +136,13 @@ $z-index-modal:          1050;
 $z-index-modal-backdrop: 1040;
 
 /**
+ * Button Dropdown
+ */
+
+$z-index-btn-dropdown:   1000;
+
+/**
  * Nav Dropdown
  */
 
 $z-index-nav-dropdown:   1010;
-
-/**
- * Tooltips
- */
-
-$z-index-tooltips:       1100;
