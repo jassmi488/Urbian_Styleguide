@@ -25,33 +25,24 @@
 
         tr {
 
-            &:last-child {
-
-                td {
-
-                    &:last-child {
-                        border-bottom: 0;
-                    }
-                }
-            }
-
             &:nth-child(odd) {
                 background-color: $color-white-dark;
             }
-        }
-    }
 
-    td {
-        @include clearfix();
-        border-bottom: 2px solid $color-silver;
-        display: block;
-        padding: 0.5em 1em;
-        text-align: right;
+            td {
+                @include clearfix();
+                border-bottom: 2px solid $color-silver;
+                border-right: 2px solid $color-silver;
+                display: block;
+                padding: 0.5em 1em;
+                text-align: right;
 
-        &:before {
-            content: attr(data-label);
-            float: left;
-            font-weight: $weight-bold;
+                &:before {
+                    content: attr(data-label);
+                    float: left;
+                    font-weight: $weight-bold;
+                }
+            }
         }
     }
 
@@ -61,24 +52,17 @@
 
         tr {
 
-            &:first-child {
-
-                td {
-                    border-top: 2px solid $color-gray;
-                }
-            }
-
             &:nth-child(odd) {
                 background-color: inherit;
             }
         }
 
         td {
-            border-bottom: 0;
-        }
+            padding: 0.5em 1em;
 
-        a {
-            @include anchor();
+            a {
+                @include anchor();
+            }
         }
     }
 }
@@ -93,30 +77,22 @@
             th {
                 background-color: $color-white;
                 border-right: 2px solid $color-silver;
-                border-bottom: 2px solid $color-gray;
+                border-bottom: 2px solid $color-silver;
                 padding: 0.5em 1em;
                 text-align: left;
             }
         }
 
-        td {
-            border-right: 2px solid $color-silver;
-            display: table-cell;
-            text-align: left;
-
-            &:before {
-                display: none;
-            }
-        }
-
-        tfoot {
+        tbody {
 
             tr {
 
-                &:first-child {
+                td {
+                    display: table-cell;
+                    text-align: left;
 
-                    td {
-                        border-top: 0;
+                    &:before {
+                        display: none;
                     }
                 }
             }
