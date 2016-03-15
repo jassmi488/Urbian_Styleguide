@@ -28,13 +28,17 @@
     /**
      * Logo
      */
-    
+
     .sg-nav__logo {
         display: block;
         float: left;
-        
+        height: 2.5em; /* 40 / 16 */
+
         img {
             display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
