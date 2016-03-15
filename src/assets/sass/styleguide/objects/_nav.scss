@@ -118,6 +118,12 @@
 
         .sg-nav__logo {
             margin-bottom: 2em;
+            height: auto;
+
+            img {
+                top: auto;
+                transform: none;
+            }
         }
 
         .sg-nav__list {
