@@ -157,12 +157,12 @@
 @mixin heading($font-size, $percentage) {
     font-family: $font-secondary;
     font-size: $font-size;
-    line-height: 1.2;
+    line-height: 1;
     margin-top: 0;
     margin-bottom: 1.5rem;
 
     @media all and (min-width: $bp-small) {
-        font-size: $font-size / $percentage; /* Increase the font size by a percentage */
+        font-size: ($font-size / $percentage) * 100; /* Increase the font size by a percentage */
     }
 }
 

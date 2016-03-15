@@ -3,25 +3,25 @@
 \* -------------------------------------------------------------------------- */
 
 h1, .h1 {
-    @include heading($h1-font-size, 0.75);
+    @include heading($h1-font-size, 60.0000); /* 60 */
 }
 
 h2, .h2 {
-    @include heading($h2-font-size, 0.75);
+    @include heading($h2-font-size, 50.0000); /* 48 */
 }
 
 h3, .h3 {
-    @include heading($h3-font-size, 1.00);
+    @include heading($h3-font-size, 58.3333); /* 36 */
 }
 
 h4, .h4 {
-    @include heading($h4-font-size, 1.00);
+    @include heading($h4-font-size, 75.0000); /* 24 */
 }
 
 h5, .h5 {
-    @include heading($h5-font-size, 1.00);
+    @include heading($h5-font-size, 76.1904); /* 21 */
 }
 
 h6, .h6 {
-    @include heading($h6-font-size, 1.00);
+    @include heading($h6-font-size, 77.7777); /* 18 */
 }
