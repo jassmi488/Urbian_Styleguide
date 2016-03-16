@@ -278,16 +278,28 @@
     }
 
     /* ==========================================================================
-     * Toggle Password
+     * Tooltips
      * ========================================================================== */
 
-    var $toggle_password = $('.js-toggle-password');
+    var $tooltips = $('.js-tooltip');
 
-    if ($toggle_password.length > 0 && isModernBrowser) {
-        $toggle_password.each(function () {
+    if ($tooltips.length > 0) {
+        $tooltips.each(function () {
+            $(this).tooltip();
+        });
+    }
+
+    /* ==========================================================================
+     * Password Toggle
+     * ========================================================================== */
+
+    var $password = $('.js-password');
+
+    if ($password.length > 0 && isModernBrowser) {
+        $password.each(function () {
             var $form = $(this);
             var $input = $('input[type="password"]', $form);
-            var $toggle = $('.js-toggle', $form);
+            var $toggle = $('.js-password-toggle', $form);
 
             $toggle.removeClass('u-hidden'); // Show the toggle button
 
@@ -317,18 +329,6 @@
             $form.on('submit', function () {
                 $input.attr('type', 'password');
             });
-        });
-    }
-
-    /* ==========================================================================
-     * Tooltips
-     * ========================================================================== */
-
-    var $tooltips = $('.js-tooltip');
-
-    if ($tooltips.length > 0) {
-        $tooltips.each(function () {
-            $(this).tooltip();
         });
     }
 
