@@ -33,6 +33,56 @@
     }
 
     /* ==========================================================================
+     * Button Dropdown
+     * ========================================================================== */
+
+    var $button_dropdown = $('.js-btn-dropdown');
+
+    if ($button_dropdown.length > 0) {
+        $button_dropdown.each(function () {
+            var $button = $('.btn', $(this));
+
+            $button.on('click', function () {
+
+                /*
+                 * Open the current dropdown
+                 */
+
+                $(this).toggleClass('is-active');
+
+                var dropdown_id = $(this).data('dropdown-id');
+                var $dropdown = $('#' + dropdown_id);
+
+                if ($dropdown.length > 0) {
+                    $dropdown.toggleClass('is-open');
+
+                    /*
+                     * Toggle ARIA attributes
+                     */
+
+                    if ($dropdown.hasClass('is-open')) {
+                        $dropdown.attr('aria-hidden', 'false');
+                    }
+                    else {
+                        $dropdown.attr('aria-hidden', 'true');
+                    }
+
+                    /*
+                     * Close all other dropdowns
+                     */
+
+                    var $dropdowns = $('.dropdown', $button_dropdown);
+
+                    $dropdowns.not($dropdown).each(function () {
+                        $(this).removeClass('is-open');
+                        $(this).attr('aria-hidden', 'true');
+                    });
+                }
+            });
+        });
+    }
+
+    /* ==========================================================================
      * Carousel
      * ========================================================================== */
 
@@ -222,56 +272,6 @@
                     $tab.addClass('is-selected');
                     $tab_panel.addClass('is-selected');
                     $tab_panel.attr('aria-hidden', 'false');
-                }
-            });
-        });
-    }
-
-    /* ==========================================================================
-     * Toggle Dropdown Buttons
-     * ========================================================================== */
-
-    var $toggle_dropdown_buttons = $('.js-toggle-dropdown-btn');
-
-    if ($toggle_dropdown_buttons.length > 0) {
-        $toggle_dropdown_buttons.each(function () {
-            var $button = $('.btn', $(this));
-
-            $button.on('click', function () {
-
-                /*
-                 * Open the current dropdown
-                 */
-
-                $(this).toggleClass('is-active');
-
-                var dropdown_id = $(this).data('dropdown-id');
-                var $dropdown = $('#' + dropdown_id);
-
-                if ($dropdown.length > 0) {
-                    $dropdown.toggleClass('is-open');
-
-                    /*
-                     * Toggle ARIA attributes
-                     */
-
-                    if ($dropdown.hasClass('is-open')) {
-                        $dropdown.attr('aria-hidden', 'false');
-                    }
-                    else {
-                        $dropdown.attr('aria-hidden', 'true');
-                    }
-
-                    /*
-                     * Close all other dropdowns
-                     */
-
-                    var $dropdowns = $('.dropdown', $toggle_dropdown_buttons);
-
-                    $dropdowns.not($dropdown).each(function () {
-                        $(this).removeClass('is-open');
-                        $(this).attr('aria-hidden', 'true');
-                    });
                 }
             });
         });
