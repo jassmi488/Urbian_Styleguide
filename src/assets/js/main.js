@@ -231,6 +231,49 @@
     }
 
     /* ==========================================================================
+     * Password Toggle
+     * ========================================================================== */
+
+    var $password = $('.js-password');
+
+    if ($password.length > 0 && isModernBrowser) {
+        $password.each(function () {
+            var $form = $(this);
+            var $input = $('input[type="password"]', $form);
+            var $toggle = $('.js-password-toggle', $form);
+
+            $toggle.removeClass('u-hidden'); // Show the toggle button
+
+            /*
+             * Switch the input type
+             */
+
+            $toggle.on('click', function (e) {
+                e.preventDefault();
+
+                if ($input.attr('type') === 'password') {
+                    $toggle.html('Hide');
+                    $input.attr('type', 'text');
+                }
+                else {
+                    $toggle.html('Show');
+                    $input.attr('type', 'password');
+                }
+
+                $input.focus(); // Keep keyboard active on touchscreen devices
+            });
+
+            /*
+             * Reset the input type
+             */
+
+            $form.on('submit', function () {
+                $input.attr('type', 'password');
+            });
+        });
+    }
+
+    /* ==========================================================================
      * Tabs
      * ========================================================================== */
 
@@ -280,49 +323,6 @@
     if ($tooltips.length > 0) {
         $tooltips.each(function () {
             $(this).tooltip();
-        });
-    }
-
-    /* ==========================================================================
-     * Password Toggle
-     * ========================================================================== */
-
-    var $password = $('.js-password');
-
-    if ($password.length > 0 && isModernBrowser) {
-        $password.each(function () {
-            var $form = $(this);
-            var $input = $('input[type="password"]', $form);
-            var $toggle = $('.js-password-toggle', $form);
-
-            $toggle.removeClass('u-hidden'); // Show the toggle button
-
-            /*
-             * Switch the input type
-             */
-
-            $toggle.on('click', function (e) {
-                e.preventDefault();
-
-                if ($input.attr('type') === 'password') {
-                    $toggle.html('Hide');
-                    $input.attr('type', 'text');
-                }
-                else {
-                    $toggle.html('Show');
-                    $input.attr('type', 'password');
-                }
-
-                $input.focus(); // Keep keyboard active on touchscreen devices
-            });
-
-            /*
-             * Reset the input type
-             */
-
-            $form.on('submit', function () {
-                $input.attr('type', 'password');
-            });
         });
     }
 
