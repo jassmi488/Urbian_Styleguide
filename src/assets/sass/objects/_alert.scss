@@ -26,17 +26,6 @@
 
     .alert__message {
         margin-bottom: 0;
-
-        /**
-         * Anchor
-         */
-
-        a {
-            border-bottom: 1px solid transparent;
-            font-weight: $weight-bold;
-            text-decoration: none;
-            transition: border-color 0.25s;
-        }
     }
 
     /**
