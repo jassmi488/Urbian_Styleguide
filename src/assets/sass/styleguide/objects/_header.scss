@@ -51,7 +51,6 @@
 
     &.sg-header--section {
         padding-top: 2em;
-        z-index: $sg-z-index-header-section;
 
         .sg-h2 {
             text-transform: none;
@@ -68,7 +67,6 @@
 
     &.sg-header--subsection {
         padding-top: 4em;
-        z-index: $sg-z-index-header-subsection;
 
         .sg-h4 {
             color: $sg-color-gray;
