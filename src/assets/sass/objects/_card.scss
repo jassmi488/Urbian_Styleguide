@@ -63,9 +63,9 @@
      */
 
     .card-content {
+        @include clearfix();
         border: 2px solid $color-silver;
         border-top: 0;
-        @include clearfix();
         padding: 1.25em 1em 1em 1em;
     }
 }
