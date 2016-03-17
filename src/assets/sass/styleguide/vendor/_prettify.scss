@@ -2,77 +2,77 @@
    code-prettify | https://github.com/google/code-prettify
 \* -------------------------------------------------------------------------- */
 
-/* Tomorrow | https://github.com/chriskempson/tomorrow-theme */
+/* GitHub | https://github.com/jmblog/color-themes-for-google-code-prettify */
 
 .prettyprint {
-    background: $sg-color-white-dark;
-    box-shadow: inset 0 0 6px rgba($sg-color-black, 0.1);
+    background: $sg-color-white;
     font-family: monospace;
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 14px 18px;
+    font-size: 1em;
+    line-height: 1.3;
+    border: 1px solid $sg-color-silver;
+    padding: 1em;
 }
 
 .pln {
-    color: #4d4d4c;
+    color: $sg-color-black;
 }
 
 @media screen {
 
     .str {
-        color: #718c00;
+        color: #dd1144;
     }
 
     .kwd {
-        color: #8959a8;
+        color: #333333;
     }
 
     .com {
-        color: #8e908c;
+        color: #999988;
     }
 
     .typ {
-        color: #4271ae;
+        color: #445588;
     }
 
     .lit {
-        color: #f5871f;
+        color: #445588;
     }
 
     .pun {
-        color: #4d4d4c;
+        color: #333333;
     }
 
     .opn {
-        color: #4d4d4c;
+        color: #333333;
     }
 
     .clo {
-        color: #4d4d4c;
+        color: #333333;
     }
 
     .tag {
-        color: #c82829;
+        color: navy;
     }
 
     .atn {
-        color: #f5871f;
+        color: teal;
     }
 
     .atv {
-        color: #3e999f;
+        color: #dd1144;
     }
 
     .dec {
-        color: #f5871f;
+        color: #333333;
     }
 
     .var {
-        color: #c82829;
+        color: teal;
     }
 
     .fun {
-        color: #4271ae;
+        color: #990000;
     }
 }
 
