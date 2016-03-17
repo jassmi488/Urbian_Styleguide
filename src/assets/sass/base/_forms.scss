@@ -331,14 +331,6 @@ textarea {
         height: inherit;
         min-height: 6em;
     }
-
-    /**
-     * Placeholder
-     */
-
-    &.placeholder {
-        color: $color-gray;
-    }
 }
 
 input[type="checkbox"],
