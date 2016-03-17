@@ -62,7 +62,7 @@
      * Content
      */
 
-    .card-content {
+    .card__content {
         @include clearfix();
         border: 2px solid $color-silver;
         border-top: 0;
