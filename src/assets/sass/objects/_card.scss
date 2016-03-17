@@ -6,12 +6,23 @@
     max-width: 18.75em; /* 300 / 16 */
 
     /**
+     * Content
+     */
+
+    .card__content {
+        @include clearfix();
+        border-right: 2px solid $color-silver;
+        border-bottom: 2px solid $color-silver;
+        border-left: 2px solid $color-silver;
+        padding: 1.25em 1em 1em 1em;
+    }
+
+    /**
      * Link
      */
 
     .card__link {
         display: block;
-        text-decoration: none;
     }
 
     /**
@@ -27,19 +38,20 @@
      */
 
     .card__title {
-        font-size: 1.125em; /* 18 / 16 */
-        margin-bottom: 0.125em;
-    }
-
-    /**
-     * Time
-     */
-
-    .card__time {
         color: $color-gray-dark;
-        display: block;
-        font-size: 0.9375em; /* 15 / 16 */
-        margin-bottom: 0.9375em;
+        font-size: 1.125em; /* 18 / 16 */
+        margin-bottom: 0.25em;
+
+        a {
+            color: $color-gray-dark;
+            text-decoration: none;
+            transition: color 0.25s;
+
+            &:focus,
+            &:hover {
+                color: $color-black;
+            }
+        }
     }
 
     /**
@@ -47,25 +59,17 @@
      */
 
     .card__synopsis {
+        color: $color-gray-dark;
         margin-bottom: 1em;
     }
 
     /**
-     * Button
+     * Time
      */
 
-    .btn {
-        float: right;
-    }
-
-    /**
-     * Content
-     */
-
-    .card__content {
-        @include clearfix();
-        border: 2px solid $color-silver;
-        border-top: 0;
-        padding: 1.25em 1em 1em 1em;
+    .card__time {
+        color: $color-gray;
+        display: block;
+        font-size: 0.9375em; /* 15 / 16 */
     }
 }
