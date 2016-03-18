@@ -39,7 +39,6 @@ Ensure that the following is installed on your computer:
 - [jQuery](http://jquery.com)
 - [Font Awesome](http://fontawesome.io)
 - [Modal](http://getbootstrap.com/javascript/#modals)
-- [Placeholder](http://mths.be/placeholder)
 - [Slick](http://github.com/kenwheeler/slick)
 - [Tooltip](http://getbootstrap.com/javascript/#tooltip)
 
