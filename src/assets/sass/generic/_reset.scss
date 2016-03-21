@@ -15,3 +15,12 @@ svg,
 video {
     vertical-align: middle;
 }
+
+/**
+ * Correct the `line-height` of placeholder text in Chrome.
+ * http://stackoverflow.com/a/17681447/648203
+ */
+
+::-webkit-input-placeholder {
+    line-height: normal;
+}
