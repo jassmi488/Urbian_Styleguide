@@ -17,19 +17,10 @@ video {
 }
 
 /**
- * Remove default fieldset styles
+ * Correct the `line-height` of placeholder text in Chrome.
+ * http://stackoverflow.com/a/17681447/648203
  */
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/**
- * Allow only vertical resizing of textareas
- */
-
-textarea {
-    resize: vertical;
+::-webkit-input-placeholder {
+    line-height: normal;
 }
