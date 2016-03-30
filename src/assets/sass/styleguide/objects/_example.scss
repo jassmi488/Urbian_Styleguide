@@ -4,4 +4,8 @@
 
 .sg-example {
     padding: 1em;
+
+    & + .sg-example {
+        margin-top: 1em;
+    }
 }
