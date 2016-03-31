@@ -5,11 +5,9 @@
 .card {
     max-width: 18.75em; /* 300 / 16 */
 
-    /**
-     * Content
-     */
+    /* Body */
 
-    .card__content {
+    .card__body {
         @include clearfix();
         border-right: 2px solid $color-silver;
         border-bottom: 2px solid $color-silver;
@@ -17,25 +15,19 @@
         padding: 1.25em 1em 1em 1em;
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .card__link {
         display: block;
     }
 
-    /**
-     * Image
-     */
+    /* Image */
 
     .card__img {
         display: block;
     }
 
-    /**
-     * Title
-     */
+    /* Title */
 
     .card__title {
         color: $color-gray-dark;
@@ -54,18 +46,14 @@
         }
     }
 
-    /**
-     * Synopsis
-     */
+    /* Synopsis */
 
     .card__synopsis {
         color: $color-gray-dark;
         margin-bottom: 1em;
     }
 
-    /**
-     * Time
-     */
+    /* Time */
 
     .card__time {
         color: $color-gray;

@@ -10,27 +10,21 @@
     padding: 3em;
     text-align: center;
 
-    /**
-     * Logo
-     */
+    /* Logo */
 
     .sg-footer__logo {
         display: inline-block;
         margin-bottom: 1.5em;
     }
 
-    /**
-     * List
-     */
+    /* List */
 
     .sg-footer__list {
         @include sg-clearfix();
         @include sg-list();
         margin-bottom: 3em;
 
-        /**
-         * Item
-         */
+        /* Item */
 
         .sg-footer__item {
             display: inline-block;
@@ -44,9 +38,7 @@
         }
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .sg-footer__link {
         color: $sg-color-gray;
@@ -60,9 +52,7 @@
         }
     }
 
-    /**
-     * Legal
-     */
+    /* Legal */
 
     .sg-footer__legal {
         color: $sg-color-white-dark;

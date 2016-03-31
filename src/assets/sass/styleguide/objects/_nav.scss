@@ -25,9 +25,7 @@
     padding: 1em;
     position: relative;
 
-    /**
-     * Logo
-     */
+    /* Logo */
 
     .sg-nav__logo {
         display: block;
@@ -42,9 +40,7 @@
         }
     }
 
-    /**
-     * List
-     */
+    /* List */
 
     .sg-nav__list {
         @include sg-list();
@@ -57,9 +53,7 @@
             margin-left: 0.75em;
         }
 
-        /**
-         * Item
-         */
+        /* Item */
 
         .sg-nav__item {
             font-family: $sg-font-secondary;
@@ -80,6 +74,10 @@
             }
         }
 
+        /**
+         * Active
+         */
+
         .is-active {
 
             > .sg-nav__link {
@@ -87,15 +85,17 @@
             }
         }
 
+        /**
+         * Open
+         */
+
         &.is-open {
             display: block;
             padding-top: 2em;
         }
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .sg-nav__link {
         border-bottom: 0.125em solid transparent;
@@ -152,9 +152,7 @@
     right: 0.5em;
     top: 1em;
 
-    /**
-     * Bar
-     */
+    /* Bar */
 
     .sg-nav-toggle__bar {
         background-color: $sg-color-secondary;

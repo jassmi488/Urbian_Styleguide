@@ -115,9 +115,7 @@
     display: inline-block;
     position: relative;
 
-    /**
-     * Dropdown
-     */
+    /* Dropdown */
 
     .dropdown {
         background-color: $color-white-dark;
@@ -133,9 +131,7 @@
             display: block;
         }
 
-        /**
-         * List
-         */
+        /* List */
 
         .dropdown__list {
             @include list();
@@ -144,9 +140,7 @@
                 border-bottom: 2px solid $color-white;
             }
 
-            /**
-             * Item
-             */
+            /* Item */
 
             .dropdown__item {
                 font-weight: $weight-bold;
@@ -154,9 +148,7 @@
             }
         }
 
-        /**
-         * Link
-         */
+        /* Link */
 
         .dropdown__link {
             color: $color-gray-dark;
@@ -187,9 +179,7 @@
     margin-bottom: 1em;
     width: 100%;
 
-    /**
-     * Button
-     */
+    /* Button */
 
     .btn {
         margin-bottom: 1em;
@@ -200,9 +190,7 @@
         }
     }
 
-    /**
-     * Dropdown
-     */
+    /* Dropdown */
 
     .btn-dropdown {
         margin-bottom: 1em;

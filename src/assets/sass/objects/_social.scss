@@ -5,17 +5,13 @@
 .social {
     margin-bottom: 1em;
 
-    /**
-     * List
-     */
+    /* List */
 
     .social__list {
         @include clearfix();
         @include list();
 
-        /**
-         * Item
-         */
+        /* Item */
 
         .social__item {
             float: left;
@@ -28,9 +24,7 @@
         }
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .social__link {
         color: $color-silver;

@@ -4,9 +4,7 @@
 
 .sg-article {
 
-    /**
-     * Lists
-     */
+    /* Lists */
 
     dl,
     ol,
@@ -15,18 +13,14 @@
         margin-bottom: 1.5rem;
     }
 
-    /**
-     * Ordered
-     */
+    /* Ordered */
 
     ol {
         list-style: decimal;
         margin-left: 1.5rem;
     }
 
-    /**
-     * Unordered
-     */
+    /* Unordered */
 
     ul {
         list-style: square;
