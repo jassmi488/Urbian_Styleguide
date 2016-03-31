@@ -5,17 +5,13 @@
 .breadcrumbs {
     margin-bottom: 1em;
 
-    /**
-     * List
-     */
+    /* List */
 
     .breadcrumbs__list {
         @include clearfix();
         @include list();
 
-        /**
-         * Item
-         */
+        /* Item */
 
         .breadcrumbs__item {
             color: $color-gray;
@@ -52,9 +48,7 @@
         }
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .breadcrumbs__link {
         border-bottom: 1px solid transparent;

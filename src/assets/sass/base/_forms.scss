@@ -124,9 +124,7 @@
     margin: 0;
     padding: 0;
 
-    /**
-     * Legend
-     */
+    /* Legend */
 
     .legend {
         color: $color-gray-dark;
@@ -134,9 +132,7 @@
         margin-bottom: 1em;
     }
 
-    /**
-     * Bordered
-     */
+    /* Bordered */
 
     &.fieldset--bordered {
         border: 2px solid $color-silver;
@@ -165,9 +161,7 @@
     margin-bottom: 1.5em;
     width: 100%;
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .label__link {
         @include anchor();
@@ -391,9 +385,7 @@ textarea {
 .toggle-password {
     position: relative;
 
-    /**
-     * Button
-     */
+    /* Button */
 
     .btn {
         position: absolute;
