@@ -5,17 +5,13 @@
 .tabs {
     margin-bottom: 1em;
 
-    /**
-     * List
-     */
+    /* List */
 
     .tab-list {
         @include list();
         margin-bottom: 1em;
 
-        /**
-         * Tab
-         */
+        /* Tab */
 
         .tab-list__tab {
             margin-bottom: 0.25em;
@@ -23,6 +19,10 @@
             &:last-child {
                 margin-bottom: 0;
             }
+
+            /**
+             * Selected
+             */
 
             &.is-selected {
 
@@ -33,9 +33,7 @@
             }
         }
 
-        /**
-         * Link
-         */
+        /* Link */
 
         .tab-list__link {
             background-color: $color-white-dark;
@@ -54,12 +52,14 @@
         }
     }
 
-    /**
-     * Panel
-     */
+    /* Panel */
 
     .tab-panel {
         display: none;
+
+        /**
+         * Selected
+         */
 
         &.is-selected {
             display: block;

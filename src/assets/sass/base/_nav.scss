@@ -5,9 +5,7 @@
 .nav {
     width: 100%;
 
-    /**
-     * List
-     */
+    /* List */
 
     .nav__list {
         @include clearfix();
@@ -25,13 +23,7 @@
             margin-bottom: 0;
             margin-left: 0;
 
-            &.is-open {
-                display: block;
-            }
-
-            /**
-             * Item
-             */
+            /* Item */
 
             .nav__item {
                 border-bottom: 2px solid $color-white;
@@ -43,9 +35,7 @@
                 }
             }
 
-            /**
-             * Link
-             */
+            /* Link */
 
             .nav__link {
                 padding: 0.75em 1em;
@@ -57,15 +47,23 @@
                     color: $color-white;
                 }
             }
+
+            /* Open */
+
+            &.is-open {
+                display: block;
+            }
         }
     }
 
-    /**
-     * Item
-     */
+    /* Item */
 
     .nav__item {
         position: relative;
+
+        /**
+         * Active
+         */
 
         &.is-active {
 
@@ -75,9 +73,7 @@
         }
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .nav__link {
         color: $color-gray-dark;
@@ -91,9 +87,7 @@
             color: $color-black;
         }
 
-        /**
-         * Icon
-         */
+        /* Icon */
 
         .icon {
             float: right;
@@ -106,6 +100,8 @@
 
     &.nav--primary {
 
+        /* Item */
+
         .nav__item {
             margin-bottom: 1em;
         }
@@ -117,6 +113,8 @@
 
     &.nav--secondary {
 
+        /* Item */
+
         .nav__item {
             border-bottom: 2px solid $color-white;
             margin-bottom: 0;
@@ -125,6 +123,8 @@
                 border-bottom: 0;
             }
         }
+
+        /* Link */
 
         .nav__link {
             background-color: $color-white-dark;

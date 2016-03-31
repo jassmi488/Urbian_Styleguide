@@ -4,33 +4,25 @@
 
 .article {
 
-    /**
-     * Block Quote
-     */
+    /* Block Quote */
 
     blockquote {
         @include blockquote();
     }
 
-    /**
-     * Figure
-     */
+    /* Figure */
 
     figure {
         @include figure();
     }
 
-    /**
-     * Horizontal Rule
-     */
+    /* Horizontal Rule */
 
     hr {
         @include hr();
     }
 
-    /**
-     * Lists
-     */
+    /* Lists */
 
     dl,
     ol,
@@ -47,18 +39,14 @@
         }
     }
 
-    /**
-     * Ordered
-     */
+    /* Ordered */
 
     ol {
         list-style: decimal;
         margin-left: 1.5rem;
     }
 
-    /**
-     * Unordered
-     */
+    /* Unordered */
 
     ul {
         list-style: square;

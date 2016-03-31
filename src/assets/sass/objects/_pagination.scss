@@ -6,17 +6,13 @@
     margin-bottom: 1em;
     width: 100%;
 
-    /**
-     * List
-     */
+    /* List */
 
     .pagination__list {
         @include clearfix();
         @include list();
 
-        /**
-         * Item
-         */
+        /* Item */
 
         .pagination__item {
             display: none;
@@ -77,9 +73,7 @@
         }
     }
 
-    /**
-     * Link
-     */
+    /* Link */
 
     .pagination__link {
         background-color: $color-white-dark;
@@ -95,9 +89,7 @@
             background-color: $color-silver;
         }
 
-        /**
-         * Icon
-         */
+        /* Icon */
 
         .icon {
             font-size: 0.875em; /* 14 / 16 */

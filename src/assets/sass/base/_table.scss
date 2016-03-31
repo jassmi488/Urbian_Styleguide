@@ -7,9 +7,7 @@
     margin-bottom: 1em;
     width: 100%;
 
-    /**
-     * Caption
-     */
+    /* Caption */
 
     .table__caption {
         font-weight: $weight-bold;
@@ -17,9 +15,13 @@
         text-align: left;
     }
 
+    /* Head */
+
     thead {
         display: none;
     }
+
+    /* Body */
 
     tbody {
 
@@ -45,6 +47,8 @@
             }
         }
     }
+
+    /* Foot */
 
     tfoot {
         font-style: italic;
