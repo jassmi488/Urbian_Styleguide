@@ -20,6 +20,8 @@
             margin-right: 0.125em;
             margin-bottom: 0;
 
+            /* Previous */
+
             &:first-child {
                 display: block;
 
@@ -28,8 +30,11 @@
                 }
             }
 
+            /* Next */
+
             &:last-child {
                 display: block;
+                float: right;
 
                 .icon {
                     margin-left: 0.5em;
@@ -105,6 +110,10 @@
 
             .pagination__item {
                 display: block;
+
+                &:last-child {
+                    float: left;
+                }
             }
         }
     }
