@@ -12,43 +12,15 @@
         @include list();
         white-space: nowrap;
 
-        /**
-         * Menu
-         */
+        /* Menu */
 
-        &.nav__list--menu {
-            background-color: $color-white-dark;
+        .menu {
             display: none;
-            margin-top: 1em;
-            margin-bottom: 0;
-            margin-left: 0;
 
-            /* Item */
-
-            .nav__item {
-                border-bottom: 2px solid $color-white;
+            .menu__list {
+                margin-top: 0;
                 margin-bottom: 0;
-                margin-left: 0;
-
-                &:last-child {
-                    border-bottom: 0;
-                }
             }
-
-            /* Link */
-
-            .nav__link {
-                padding: 0.75em 1em;
-                transition: background-color 0.25s, color 0.25s;
-
-                &:focus,
-                &:hover {
-                    background-color: $color-gray-dark;
-                    color: $color-white;
-                }
-            }
-
-            /* Open */
 
             &.is-open {
                 display: block;
@@ -156,15 +128,11 @@
 
             .nav__list {
 
-                &.nav__list--menu {
+                .menu {
                     left: 0;
                     position: absolute;
                     top: 100%;
                     z-index: $z-index-nav-dropdown;
-
-                    .nav__item {
-                        display: block;
-                    }
                 }
             }
 
