@@ -179,18 +179,18 @@
     }
 
     /* ==========================================================================
-     * Navigation Dropdown
+     * Menu Dropdown
      * ========================================================================== */
 
-    var $nav_dropdown = $('.js-nav-dropdown');
+    var $menu_dropdown = $('.js-menu-dropdown');
 
-    if ($nav_dropdown.length > 0) {
-        $('a', $nav_dropdown).each(function () {
+    if ($menu_dropdown.length > 0) {
+        $('a', $menu_dropdown).each(function () {
             var $anchor = $(this);
             var $anchor_icon = $('.icon', $anchor);
             var $menu = $anchor.next('.js-menu');
-            var icon_up = $nav_dropdown.data('icon-up');
-            var icon_down = $nav_dropdown.data('icon-down');
+            var icon_up = $menu_dropdown.data('icon-up');
+            var icon_down = $menu_dropdown.data('icon-down');
 
             $anchor.on('click', function (e) {
 
@@ -217,7 +217,7 @@
                  * Close all other open menus
                  */
 
-                var $menu_other = $('.js-menu', $nav_dropdown).not($menu);
+                var $menu_other = $('.js-menu', $menu_dropdown).not($menu);
                 $menu_other.removeClass('is-open').attr('aria-hidden', 'true');
 
                 /*
