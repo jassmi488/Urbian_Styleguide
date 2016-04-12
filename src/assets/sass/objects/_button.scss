@@ -136,15 +136,15 @@
         .dropdown__list {
             @include list();
 
-            .is-separator {
-                border-bottom: 2px solid $color-white;
-            }
-
             /* Item */
 
             .dropdown__item {
                 font-weight: $weight-bold;
                 margin-bottom: 0;
+
+                &.is-separator {
+                    border-bottom: 2px solid $color-white;
+                }
             }
         }
 
