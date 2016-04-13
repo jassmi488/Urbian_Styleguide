@@ -34,4 +34,13 @@
         color: $sg-color-gray-dark;
         outline: 0;
     }
+
+    /**
+     * Small
+     */
+
+    &.sg-btn--small {
+        font-size: 0.75em; /* 12 / 16 */
+        padding: 0.5em 0.75em;
+    }
 }

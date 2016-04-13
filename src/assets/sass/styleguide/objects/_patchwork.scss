@@ -1,0 +1,34 @@
+/* -------------------------------------------------------------------------- *\
+   #PATCHWORK
+\* -------------------------------------------------------------------------- */
+
+.sg-patchwork {
+
+    /* Aside */
+
+    .sg-l-aside {
+        display: none;
+    }
+
+    /* Main */
+
+    .sg-l-main {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 2em;
+        width: 100%;
+    }
+
+    /* Code */
+
+    .sg-code {
+        display: none;
+    }
+
+    /* Footer */
+
+    .sg-footer {
+        display: none;
+    }
+}

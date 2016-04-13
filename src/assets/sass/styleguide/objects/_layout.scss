@@ -50,6 +50,10 @@
 .sg-l-main {
     background-color: $sg-color-white;
     padding: 2em 1em;
+
+    > .sg-btn {
+        display: none;
+    }
 }
 
 @media all and (min-width: $sg-bp-xs) {
@@ -68,6 +72,11 @@
         margin-left: 16.5em;
         padding-bottom: 0;
         width: calc(100% - 18.5em);
+
+        > .sg-btn {
+            display: block;
+            float: right;
+        }
     }
 }
 
@@ -107,6 +116,13 @@
 
 .sg-l-section {
     padding-bottom: 2em;
+}
+
+@media all and (min-width: $sg-bp-medium) {
+
+    .sg-l-section {
+        clear: both;
+    }
 }
 
 @media all and (min-width: $sg-bp-large) {

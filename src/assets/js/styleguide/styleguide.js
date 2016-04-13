@@ -56,4 +56,29 @@
             }
         });
     }
+
+    /* ==========================================================================
+     * Patchwork
+     * ========================================================================== */
+
+    var $patchwork = $('.js-sg-patchwork');
+
+    if ($patchwork.length > 0) {
+
+        $patchwork.on('click', function (e) {
+            e.preventDefault();
+
+            var label_default = $patchwork.data('label-default');
+            var label_alt = $patchwork.data('label-alt');
+
+            $('.sg-html').toggleClass('sg-patchwork');
+
+            if ($patchwork.text() === label_default) {
+                $patchwork.text(label_alt);
+            }
+            else if ($patchwork.text() === label_alt) {
+                $patchwork.text(label_default);
+            }
+        });
+    }
 })();
