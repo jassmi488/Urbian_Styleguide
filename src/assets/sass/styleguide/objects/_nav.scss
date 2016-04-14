@@ -51,6 +51,11 @@
             display: block;
             margin-top: 1.5rem;
             margin-left: 0.75em;
+
+            .sg-nav__list {
+                margin-top: 1rem;
+                margin-left: 1rem;
+            }
         }
 
         /* Item */
@@ -70,6 +75,10 @@
 
                 &:last-child {
                     margin-bottom: 0;
+                }
+
+                .sg-nav__item {
+                    font-size: 1em;
                 }
             }
         }
