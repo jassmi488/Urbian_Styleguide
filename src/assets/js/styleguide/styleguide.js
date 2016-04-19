@@ -35,6 +35,12 @@
 
         /*global prettyPrint*/
         prettyPrint();
+
+        /*
+         * Display the code
+         */
+
+        $code.toggle();
     }
 
     /* ==========================================================================
