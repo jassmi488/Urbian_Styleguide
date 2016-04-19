@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------------------- *\
-   Font Awesome | 4.5.0 | http://fontawesome.io
+   Font Awesome | 4.6.1 | http://fontawesome.io
 \* -------------------------------------------------------------------------- */
 
 @font-face {
     font-family: "FontAwesome";
-        src: url("../fonts/fontawesome.eot?v=4.5.0");
-        src: url("../fonts/fontawesome.eot?#iefix&v=4.5.0") format("embedded-opentype"),
-             url("../fonts/fontawesome.woff2?v=4.5.0") format("woff2"),
-             url("../fonts/fontawesome.woff?v=4.5.0") format("woff"),
-             url("../fonts/fontawesome.ttf?v=4.5.0") format("truetype"),
-             url("../fonts/fontawesome.svg?v=4.5.0#fontawesomeregular") format("svg");
+        src: url("../fonts/fontawesome.eot?v=4.6.1");
+        src: url("../fonts/fontawesome.eot?#iefix&v=4.6.1") format("embedded-opentype"),
+             url("../fonts/fontawesome.woff2?v=4.6.1") format("woff2"),
+             url("../fonts/fontawesome.woff?v=4.6.1") format("woff"),
+             url("../fonts/fontawesome.ttf?v=4.6.1") format("truetype"),
+             url("../fonts/fontawesome.svg?v=4.6.1#fontawesomeregular") format("svg");
     font-style: normal;
     font-weight: normal;
 }
@@ -75,7 +75,7 @@
 
 .fa-border {
     padding: .2em .25em .15em;
-    border: solid 0.08em #eeeeee;
+    border: solid 0.08em #eee;
     border-radius: .1em;
 }
 
@@ -145,35 +145,35 @@
 }
 
 .fa-rotate-90 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .fa-rotate-180 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
 
 .fa-rotate-270 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
     -webkit-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
 }
 
 .fa-flip-horizontal {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
     -webkit-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
 
 .fa-flip-vertical {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
     -webkit-transform: scale(1, -1);
     -ms-transform: scale(1, -1);
     transform: scale(1, -1);
@@ -213,7 +213,7 @@
 }
 
 .fa-inverse {
-    color: #ffffff;
+    color: #fff;
 }
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
@@ -2725,4 +2725,100 @@
 
 .fa-percent:before {
     content: "\f295";
+}
+
+.fa-gitlab:before {
+    content: "\f296";
+}
+
+.fa-wpbeginner:before {
+    content: "\f297";
+}
+
+.fa-wpforms:before {
+    content: "\f298";
+}
+
+.fa-envira:before {
+    content: "\f299";
+}
+
+.fa-universal-access:before {
+    content: "\f29a";
+}
+
+.fa-wheelchair-alt:before {
+    content: "\f29b";
+}
+
+.fa-question-circle-o:before {
+    content: "\f29c";
+}
+
+.fa-blind:before {
+    content: "\f29d";
+}
+
+.fa-audio-description:before {
+    content: "\f29e";
+}
+
+.fa-volume-control-phone:before {
+    content: "\f2a0";
+}
+
+.fa-braille:before {
+    content: "\f2a1";
+}
+
+.fa-assistive-listening-systems:before {
+    content: "\f2a2";
+}
+
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+    content: "\f2a3";
+}
+
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+    content: "\f2a4";
+}
+
+.fa-glide:before {
+    content: "\f2a5";
+}
+
+.fa-glide-g:before {
+    content: "\f2a6";
+}
+
+.fa-signing:before,
+.fa-sign-language:before {
+    content: "\f2a7";
+}
+
+.fa-low-vision:before {
+    content: "\f2a8";
+}
+
+.fa-viadeo:before {
+    content: "\f2a9";
+}
+
+.fa-viadeo-square:before {
+    content: "\f2aa";
+}
+
+.fa-snapchat:before {
+    content: "\f2ab";
+}
+
+.fa-snapchat-ghost:before {
+    content: "\f2ac";
+}
+
+.fa-snapchat-square:before {
+    content: "\f2ad";
 }
