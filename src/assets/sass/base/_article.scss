@@ -3,54 +3,60 @@
 \* -------------------------------------------------------------------------- */
 
 .article {
+    padding-bottom: 1em;
 
-    /* Block Quote */
+    /* Body */
 
-    blockquote {
-        @include blockquote();
-    }
+    .article__body {
 
-    /* Figure */
+        /* Block Quote */
 
-    figure {
-        @include figure();
-    }
+        blockquote {
+            @include blockquote();
+        }
 
-    /* Horizontal Rule */
+        /* Figure */
 
-    hr {
-        @include hr();
-    }
+        figure {
+            @include figure();
+        }
 
-    /* Lists */
+        /* Horizontal Rule */
 
-    dl,
-    ol,
-    ul {
-        @include list();
-        margin-bottom: 1.5rem;
+        hr {
+            @include hr();
+        }
 
-        dd,
-        li {
+        /* Lists */
 
-            a {
-                @include anchor();
+        dl,
+        ol,
+        ul {
+            @include list();
+            margin-bottom: 1.5rem;
+
+            dd,
+            li {
+
+                a {
+                    @include anchor();
+                }
             }
         }
-    }
 
-    /* Ordered */
+        /* Ordered */
 
-    ol {
-        list-style: decimal;
-        margin-left: 1.5rem;
-    }
+        ol {
+            list-style: decimal;
+            margin-left: 1.5rem;
+        }
 
-    /* Unordered */
+        /* Unordered */
 
-    ul {
-        list-style: square;
-        margin-left: 1.5rem;
+        ul {
+            list-style: square;
+            margin-left: 1.5rem;
+        }
     }
 }
 
@@ -58,12 +64,25 @@
 
     .article {
 
-        .u-pull--right {
-            margin-left: 2em;
-        }
+        .article__body {
 
-        .u-pull--left {
-            margin-right: 2em;
+            dl,
+            ol,
+            ul {
+                font-size: 1.125em; /* 18 / 16 */
+            }
+
+            p {
+                font-size: 1.125em; /* 18 / 16 */
+            }
+
+            .u-pull--right {
+                margin-left: 2em;
+            }
+
+            .u-pull--left {
+                margin-right: 2em;
+            }
         }
     }
 }
