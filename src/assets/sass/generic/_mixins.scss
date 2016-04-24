@@ -143,6 +143,10 @@
 
     figcaption {
         color: $color-gray-dark;
+
+        a {
+            @include anchor();
+        }
     }
 }
 
