@@ -55,11 +55,11 @@
 
 .slick-prev:before,
 .slick-next:before {
-    color: $color-black;
+    color: $color-white;
     font-family: "FontAwesome";
     font-size: 24px;
     line-height: 1;
-    opacity: 0.25;
+    opacity: 0.5;
     transition: opacity 0.25s;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -150,14 +150,14 @@
 }
 
 .slick-dots li button:before {
-    color: $color-black;
+    color: $color-white;
     content: "\f111";
     font-family: "FontAwesome";
     font-size: 16px;
     height: 24px;
     left: 0;
     line-height: 24px;
-    opacity: 0.25;
+    opacity: 0.5;
     position: absolute;
     text-align: center;
     top: 0;
@@ -168,6 +168,6 @@
 }
 
 .slick-dots .slick-active button:before {
-    color: $color-black;
-    opacity: 0.75;
+    color: $color-white;
+    opacity: 1;
 }
