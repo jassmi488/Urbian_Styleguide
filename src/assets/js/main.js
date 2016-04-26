@@ -231,6 +231,32 @@
     }
 
     /* ==========================================================================
+     * Modal
+     * ========================================================================== */
+
+    var $modal = $('.js-modal');
+
+    if ($modal.length > 0) {
+        $modal.each(function () {
+            var $trigger = $(this);
+
+            $trigger.on('click', function (e) {
+                e.preventDefault();
+
+                var modal_id = $(this).data('modal-id');
+
+                if (typeof modal_id !== 'undefined') {
+                    var $modal = $('#' + modal_id);
+
+                    if ($modal.length > 0) {
+                        $modal.modal('show');
+                    }
+                }
+            });
+        });
+    }
+
+    /* ==========================================================================
      * Password Toggle
      * ========================================================================== */
 
