@@ -4,6 +4,7 @@
 
 .sg-example {
     padding: 1em;
+    position: relative;
 
     & + .sg-example {
         margin-top: 1em;
