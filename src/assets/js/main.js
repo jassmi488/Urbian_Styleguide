@@ -199,7 +199,7 @@
                  */
 
                 if ($(this).next().hasClass('js-menu')) {
-                    e.preventDefault(); // Prevent click on dropdown anchor
+                    e.preventDefault();
 
                     $menu.toggleClass('is-open');
 
