@@ -223,26 +223,31 @@
    #EMBED
 \* -------------------------------------------------------------------------- */
 
-/**
- * Embed Responsively, as per: http://embedresponsively.com
- */
+.u-embed {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 
-.u-fluid-embed {
-    height: auto;
-    max-width: 100%;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
+    /**
+     * Embed Responsively, as per: http://embedresponsively.com
+     */
 
-    embed,
-    iframe,
-    object {
-        border: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
+    &.u-embed--fluid {
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        embed,
+        iframe,
+        object {
+            border: 0;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
     }
 }
 
