@@ -71,7 +71,7 @@
 
 @mixin blockquote() {
     border-left: 4px $color-gray solid;
-    margin: 0 0 1.5rem 0;
+    margin: 1.5rem 0;
     padding: 0 1.5rem;
 
     p {
@@ -135,7 +135,7 @@
 \* -------------------------------------------------------------------------- */
 
 @mixin figure() {
-    margin: 0 0 1.5rem 0;
+    margin: 1.5rem 0;
 
     img {
         margin-bottom: 0.5em;
@@ -182,7 +182,7 @@
     border: 0;
     border-top: 4px solid $color-gray;
     display: block;
-    margin: 0 0 1.5rem 0;
+    margin: 1.5rem 0;
     padding: 0;
 }
 
