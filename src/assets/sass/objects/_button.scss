@@ -22,7 +22,7 @@
 
 .btn {
     background-color: $color-gray-dark;
-    border: 2px solid transparent;
+    border: 0.125em solid transparent;
     color: $color-white;
     cursor: pointer;
     display: inline-block;
@@ -144,7 +144,7 @@
                 margin-bottom: 0;
 
                 &.is-separator {
-                    border-bottom: 2px solid $color-white;
+                    border-bottom: 0.125em solid $color-white;
                 }
             }
         }
@@ -207,7 +207,7 @@
             width: auto;
 
             & + .btn {
-                margin-left: 2px;
+                margin-left: 0.125em;
             }
         }
     }

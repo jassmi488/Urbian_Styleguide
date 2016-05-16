@@ -3,7 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .table {
-    border: 2px solid $color-silver;
+    border: 0.125em solid $color-silver;
     border-collapse: collapse;
     margin-bottom: 1em;
     width: 100%;
@@ -34,8 +34,8 @@
 
             td {
                 @include clearfix();
-                border-bottom: 2px solid $color-silver;
-                border-right: 2px solid $color-silver;
+                border-bottom: 0.125em solid $color-silver;
+                border-right: 0.125em solid $color-silver;
                 display: block;
                 padding: 0.5em 1em;
                 text-align: right;
@@ -81,8 +81,8 @@
 
             th {
                 background-color: $color-white;
-                border-right: 2px solid $color-silver;
-                border-bottom: 2px solid $color-silver;
+                border-right: 0.125em solid $color-silver;
+                border-bottom: 0.125em solid $color-silver;
                 padding: 0.5em 1em;
                 text-align: left;
             }
