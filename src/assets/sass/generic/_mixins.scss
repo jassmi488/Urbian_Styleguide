@@ -27,7 +27,7 @@
 \* -------------------------------------------------------------------------- */
 
 @mixin anchor() {
-    border-bottom: 1px solid $color-silver;
+    border-bottom: 0.0625em solid $color-silver;
     color: $color-gray-dark;
     text-decoration: none;
     transition: border-color 0.25s, color 0.25s;
@@ -70,7 +70,7 @@
 \* -------------------------------------------------------------------------- */
 
 @mixin blockquote() {
-    border-left: 4px $color-gray solid;
+    border-left: 0.25em $color-gray solid;
     margin: 1.5rem 0;
     padding: 0 1.5rem;
 
@@ -180,7 +180,7 @@
 
 @mixin hr() {
     border: 0;
-    border-top: 4px solid $color-gray;
+    border-top: 0.25em solid $color-gray;
     display: block;
     margin: 1.5rem 0;
     padding: 0;

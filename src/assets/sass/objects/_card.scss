@@ -9,9 +9,9 @@
 
     .card__body {
         @include clearfix();
-        border-right: 2px solid $color-silver;
-        border-bottom: 2px solid $color-silver;
-        border-left: 2px solid $color-silver;
+        border-right: 0.125em solid $color-silver;
+        border-bottom: 0.125em solid $color-silver;
+        border-left: 0.125em solid $color-silver;
         padding: 1.25em 1em 1em 1em;
     }
 
