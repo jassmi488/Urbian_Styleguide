@@ -35,10 +35,17 @@
             &:last-child {
                 display: block;
                 float: right;
+                margin-right: 0;
 
                 .icon {
                     margin-left: 0.5em;
                 }
+            }
+
+            /* Icon */
+
+            .icon {
+                font-size: 0.875em; /* 14 / 16 */
             }
 
             /**
@@ -92,12 +99,6 @@
         &:focus,
         &:hover {
             background-color: $color-silver;
-        }
-
-        /* Icon */
-
-        .icon {
-            font-size: 0.875em; /* 14 / 16 */
         }
     }
 }
