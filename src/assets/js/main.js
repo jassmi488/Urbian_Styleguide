@@ -112,8 +112,7 @@
             var $collapse = $(this);
             var collapse_id = $collapse.data('collapse-id');
 
-            $collapse.on('click', function (e) {
-                e.preventDefault();
+            $collapse.on('click', function () {
 
                 if (typeof collapse_id !== 'undefined') {
                     var $el = $('#' + collapse_id);
