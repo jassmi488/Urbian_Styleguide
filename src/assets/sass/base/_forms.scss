@@ -33,10 +33,7 @@
     &.form--inline {
 
         .label {
-
-            &.label--checkbox {
-                margin-bottom: 0.5em;
-            }
+            margin-bottom: 1em;
         }
 
         .input {
@@ -80,11 +77,6 @@
                 &.label--checkbox {
                     margin-bottom: 0;
                     padding-top: 0.5em;
-
-                    .input {
-                        float: none;
-                        margin-right: 0.25em;
-                    }
                 }
             }
 
