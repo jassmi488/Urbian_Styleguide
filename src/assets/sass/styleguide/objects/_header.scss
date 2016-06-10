@@ -122,7 +122,6 @@
 
         &.sg-header--main {
             @include sg-clearfix();
-            border-bottom-width: 0.25em;
 
             .sg-h1 {
                 float: left;
