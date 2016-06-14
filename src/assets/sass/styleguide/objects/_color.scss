@@ -1,0 +1,22 @@
+/* -------------------------------------------------------------------------- *\
+   #COLOR
+\* -------------------------------------------------------------------------- */
+
+.sg-color {
+    padding: 1em;
+
+    /* Value */
+
+    .sg-color__value {
+        color: $sg-color-black;
+
+        &:first-child {
+            font-family: monospace, monospace;
+            font-weight: $sg-weight-bold;
+        }
+
+        &.sg-color__value--light {
+            color: $sg-color-white-dark;
+        }
+    }
+}
