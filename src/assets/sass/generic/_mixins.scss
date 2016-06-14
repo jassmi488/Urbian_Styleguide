@@ -74,6 +74,8 @@
     margin: 1.5rem 0;
     padding: 0 1.5rem;
 
+    /* Paragraph */
+
     p {
         quotes: "\201C""\201D""\2018""\2019";
 
@@ -85,6 +87,8 @@
             content: close-quote;
         }
     }
+
+    /* Cite */
 
     cite {
 
@@ -137,9 +141,13 @@
 @mixin figure() {
     margin: 1.5rem 0;
 
+    /* Image */
+
     img {
         margin-bottom: 0.5em;
     }
+
+    /* Caption */
 
     figcaption {
         color: $color-gray-dark;
@@ -199,12 +207,16 @@
     margin: 0;
     padding: 0;
 
+    /* Lists */
+
     dl,
     ol,
     ul {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
+    /* Items */
 
     dd,
     li {
