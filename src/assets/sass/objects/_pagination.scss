@@ -3,8 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .pagination {
-    margin-bottom: 1em;
-    width: 100%;
+    text-align: center;
 
     /* List */
 
@@ -16,14 +15,13 @@
 
         .pagination__item {
             display: none;
-            float: left;
-            margin-right: 0.125em;
             margin-bottom: 0;
 
             /* Previous */
 
             &:first-child {
                 display: block;
+                float: left;
 
                 .icon {
                     margin-right: 0.5em;
@@ -35,7 +33,6 @@
             &:last-child {
                 display: block;
                 float: right;
-                margin-right: 0;
 
                 .icon {
                     margin-left: 0.5em;
@@ -110,10 +107,12 @@
         .pagination__list {
 
             .pagination__item {
-                display: block;
+                display: inline-block;
 
+                &:first-child,
                 &:last-child {
-                    float: left;
+                    display: inline-block;
+                    float: none;
                 }
             }
         }
