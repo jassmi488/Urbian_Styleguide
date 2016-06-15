@@ -356,8 +356,8 @@
      * ========================================================================== */
 
     $(window).on('resize', function () {
-        if ($map_embed.length > 0) {
-            renderMapEmbed();
+        if ($map.length > 0) {
+            renderMap();
         }
     });
 })();
