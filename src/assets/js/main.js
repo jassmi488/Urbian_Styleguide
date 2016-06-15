@@ -138,43 +138,43 @@
      * ========================================================================== */
 
     /*
-     * Render the static map image or embedded iframe depending on the screen width
+     * Render a static image or embedded iframe depending on the screen width
      */
 
-    var $map_embed = $('.js-map-embed');
+    var $map = $('.js-map');
 
-    function renderMapEmbed () {
+    function renderMap () {
         var screen_width = document.body.clientWidth;
         var breakpoint_xs = 480; // This is the equivalent of `$bp-xs`
-        var url_embed = $map_embed.data('url-embed');
-        var $map_embed_img = $('.map-embed__img', $map_embed);
-        var $map_embed_canvas = $('.map-embed__canvas', $map_embed);
-        var $map_embed_button = $('.btn', $map_embed);
+        var url_embed = $map.data('url-embed');
+        var $map_img = $('.map__img', $map);
+        var $map_canvas = $('.map__canvas', $map);
+        var $map_button = $('.btn', $map);
 
         if (screen_width >= breakpoint_xs) {
             /*
-             * Display the interactive embedded map
+             * Display the embedded map
              */
 
-            $map_embed_img.addClass('is-hidden');
-            $map_embed_button.addClass('is-hidden');
-            $map_embed_canvas.attr('src', url_embed);
-            $map_embed_canvas.removeClass('is-hidden');
+            $map_img.addClass('is-hidden');
+            $map_button.addClass('is-hidden');
+            $map_canvas.attr('src', url_embed);
+            $map_canvas.removeClass('is-hidden');
         }
         else {
             /*
-             * Display a static image of the map
+             * Display the static map image
              */
 
-            $map_embed_img.removeClass('is-hidden');
-            $map_embed_button.removeClass('is-hidden');
-            $map_embed_canvas.attr('src', '');
-            $map_embed_canvas.addClass('is-hidden');
+            $map_img.removeClass('is-hidden');
+            $map_button.removeClass('is-hidden');
+            $map_canvas.attr('src', '');
+            $map_canvas.addClass('is-hidden');
         }
     }
 
-    if ($map_embed.length > 0) {
-        renderMapEmbed();
+    if ($map.length > 0) {
+        renderMap();
     }
 
     /* ==========================================================================
@@ -356,7 +356,7 @@
      * ========================================================================== */
 
     $(window).on('resize', function () {
-        if ($map_embed.length > 0) {
+        if ($map.length > 0) {
             renderMapEmbed();
         }
     });
