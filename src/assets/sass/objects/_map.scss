@@ -2,14 +2,14 @@
    #MAP
 \* -------------------------------------------------------------------------- */
 
-.map-embed {
+.map {
     height: 100%;
     margin-bottom: 1em;
     width: 100%;
 
     /* Image */
 
-    .map-embed__img {
+    .map__img {
         margin-bottom: 1em;
         width: 100%;
 
@@ -20,7 +20,7 @@
 
     /* Canvas */
 
-    .map-embed__canvas {
+    .map__canvas {
         border: 0;
         display: block;
         height: 100%;
@@ -44,17 +44,17 @@
 
 @media all and (min-width: $bp-small) {
 
-    .map-embed {
+    .map {
         background-color: $color-white-dark;
         height: auto;
         padding-bottom: 56.25%;
         position: relative;
 
-        .map-embed__img {
+        .map__img {
             margin-bottom: 0;
         }
 
-        .map-embed__canvas {
+        .map__canvas {
             height: 100%;
             left: 0;
             position: absolute;
