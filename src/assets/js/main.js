@@ -356,7 +356,7 @@
      * ========================================================================== */
 
     $(window).on('resize', function () {
-        if ($map.length > 0) {
+        if ($map_embed.length > 0) {
             renderMapEmbed();
         }
     });
