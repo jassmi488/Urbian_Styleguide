@@ -154,10 +154,15 @@
     margin-bottom: 1.5em;
     width: 100%;
 
+    /* Anchor */
+
+    a {
+        @include anchor();
+    }
+
     /* Link */
 
     .label__link {
-        @include anchor();
         float: right;
         font-size: 0.875em; /* 14 / 16 */
         font-weight: $weight-normal;
