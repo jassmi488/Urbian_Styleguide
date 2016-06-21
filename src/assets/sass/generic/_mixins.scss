@@ -166,10 +166,10 @@
    #HEADING
 \* -------------------------------------------------------------------------- */
 
-@mixin heading($font-size, $percentage) {
+@mixin heading($font-size, $percentage, $line-height: 1.2) {
     font-family: $font-secondary;
     font-size: $font-size;
-    line-height: 1;
+    line-height: $line-height;
     margin-top: 0;
     margin-bottom: 1.5rem;
 
