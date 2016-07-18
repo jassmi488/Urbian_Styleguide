@@ -197,7 +197,7 @@
  * Medium Screens
  */
 
-@media all and (min-width: $bp-small) and (max-width: $bp-large) {
+@media all and (min-width: $bp-small) and (max-width: $bp-medium) {
 
     .u-hide--medium {
         display: none !important;
@@ -208,7 +208,7 @@
  * Large Screens
  */
 
-@media all and (min-width: $bp-large) {
+@media all and (min-width: $bp-medium) {
 
     .u-hide--large {
         display: none !important;

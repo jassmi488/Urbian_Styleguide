@@ -74,7 +74,7 @@
                 margin-right: 0.5em;
                 width: auto;
 
-                &.label--checkbox {
+                &.label--inline {
                     margin-bottom: 0;
                     padding-top: 0.5em;
                 }
@@ -136,6 +136,29 @@
             padding-left: 0.5em;
         }
     }
+
+    /* Inline */
+
+    &.fieldset--inline {
+        @include clearfix();
+
+        /* Label */
+
+        .label {
+            clear: none;
+            float: left;
+            margin-right: 1.5em;
+            width: auto;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .input {
+                margin-top: 0;
+            }
+        }
+    }
 }
 
 
@@ -154,10 +177,15 @@
     margin-bottom: 1.5em;
     width: 100%;
 
+    /* Anchor */
+
+    a {
+        @include anchor();
+    }
+
     /* Link */
 
     .label__link {
-        @include anchor();
         float: right;
         font-size: 0.875em; /* 14 / 16 */
         font-weight: $weight-normal;
@@ -165,11 +193,10 @@
     }
 
     /**
-     * Checkbox | Radio Button
+     * Inline
      */
 
-    &.label--checkbox,
-    &.label--radio {
+    &.label--inline {
         font-weight: $weight-normal;
     }
 
@@ -180,17 +207,6 @@
     &.label--disabled {
         color: $color-gray;
         cursor: not-allowed;
-    }
-
-    /**
-     * Inline
-     */
-
-    &.label--inline {
-        clear: none;
-        float: left;
-        margin-right: 1.5em;
-        width: auto;
     }
 
     /**
