@@ -250,58 +250,58 @@
    #INPUT
 \* -------------------------------------------------------------------------- */
 
-input[type="email"],
-input[type="file"],
-input[type="number"],
-input[type="password"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-select,
-textarea {
+.input {
+    border: 0.125em solid $color-silver;
+    border-radius: 0;
+    color: $color-gray-dark;
+    font-family: $font;
+    font-weight: $weight-normal;
+    height: 2.625em; /* 42 / 16 */
+    line-height: 1;
+    margin-top: 0.375em;
+    padding: 0.625em 0.75em;
+    transition: border-color 0.25s;
+    width: 100%;
 
-    &.input {
-        border: 0.125em solid $color-silver;
-        border-radius: 0;
-        color: $color-gray-dark;
-        font-family: $font;
-        font-weight: $weight-normal;
-        height: 2.625em; /* 42 / 16 */
-        line-height: 1;
-        margin-top: 0.375em;
-        padding: 0.625em 0.75em;
-        transition: border-color 0.25s;
-        width: 100%;
+    &:focus,
+    &:hover {
+        border-color: $color-gray-dark;
+    }
+
+    /**
+     * Checkbox | Radio
+     */
+
+    &[type="checkbox"],
+    &[type="radio"] {
+        height: auto;
+        margin-right: 0.375em;
+        width: auto;
+    }
+
+    /**
+     * Disabled
+     */
+
+    &[disabled] {
+        background-color: $color-white-dark;
+        border-color: $color-white-dark;
+        color: $color-gray;
+        cursor: not-allowed;
 
         &:focus,
         &:hover {
-            border-color: $color-gray-dark;
-        }
-
-        /**
-         * Disabled
-         */
-
-        &[disabled] {
-            background-color: $color-white-dark;
             border-color: $color-white-dark;
-            color: $color-gray;
-            cursor: not-allowed;
-
-            &:focus,
-            &:hover {
-                border-color: $color-white-dark;
-            }
         }
+    }
 
-        /**
-         * Readonly
-         */
+    /**
+     * Readonly
+     */
 
-        &[readonly] {
-            background-color: $color-white-dark;
-            cursor: not-allowed;
-        }
+    &[readonly] {
+        background-color: $color-white-dark;
+        cursor: not-allowed;
     }
 
     /**
