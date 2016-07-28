@@ -291,7 +291,7 @@
     &[type="checkbox"],
     &[type="radio"] {
         height: auto;
-        margin-right: 0.375em;
+        margin-right: 0.25em;
         width: auto;
     }
 
@@ -345,11 +345,6 @@
         min-height: 6em;
         resize: vertical;
     }
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-    margin-right: 0.375em;
 }
 
 /**
