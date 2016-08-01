@@ -2,6 +2,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     var today = '<%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %>';
+    var tracking_id = 'UA-81706063-1'; // DO NOT MODIFY! This is used for internal Google Analytics tracking of static sites.
     var version = '<%= pkg.version %>';
 
     grunt.initConfig({
@@ -163,6 +164,7 @@ module.exports = function (grunt) {
                     process: true,
                     data: {
                         today: today,
+                        tracking_id: tracking_id,
                         version: version
                     }
                 },
@@ -170,7 +172,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'src',
-                        src: ['styleguide/*.html'],
+                        src: ['**/*.html'],
                         dest: 'build',
                         ext: '.html'
                     }
@@ -181,6 +183,7 @@ module.exports = function (grunt) {
                     process: true,
                     data: {
                         today: today,
+                        tracking_id: tracking_id,
                         version: version
                     }
                 },
@@ -188,7 +191,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'src',
-                        src: ['styleguide/*.html'],
+                        src: ['**/*.html'],
                         dest: 'dist',
                         ext: '.html'
                     }
