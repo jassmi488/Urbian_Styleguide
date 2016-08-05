@@ -34,6 +34,13 @@
 
         .label {
             margin-bottom: 1em;
+
+            &.label--inline {
+
+                .input {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .input {
@@ -75,8 +82,11 @@
                 width: auto;
 
                 &.label--inline {
-                    margin-bottom: 0;
-                    padding-top: 0.5em;
+                    padding-top: 0.5625em;
+
+                    .input {
+                        margin-top: 0.25em;
+                    }
                 }
             }
 
