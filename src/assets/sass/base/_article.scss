@@ -70,6 +70,12 @@
             ol,
             ul {
                 font-size: 1.125em; /* 18 / 16 */
+
+                dl,
+                ol,
+                ul {
+                    font-size: 1em;
+                }
             }
 
             p {
