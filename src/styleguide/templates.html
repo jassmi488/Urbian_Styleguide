@@ -133,7 +133,15 @@
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
     <!-- JavaScript -->
+    <!-- build:template -->
+    <% if (environment === 'dist') { %>
     <script src="../assets/js/script.js"></script>
+    <% } else { %>
+    <script src="../assets/js/vendor/jquery.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <% } %>
+    <!-- /build -->
     <script src="../assets/js/styleguide/plugins.js"></script>
     <script src="../assets/js/styleguide/styleguide.js"></script>
 </body>

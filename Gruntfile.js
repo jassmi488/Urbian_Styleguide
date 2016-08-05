@@ -216,15 +216,6 @@ module.exports = function (grunt) {
             }
         },
         uglify: {
-            build: {
-                files: {
-                    'build/assets/js/script.js': [
-                        'src/assets/js/vendor/jquery.js',
-                        'src/assets/js/plugins.js',
-                        'src/assets/js/main.js'
-                    ]
-                }
-            },
             dist: {
                 files: {
                     'dist/assets/js/script.js': [
@@ -240,7 +231,7 @@ module.exports = function (grunt) {
                 files: [
                     'src/**'
                 ],
-                tasks: ['sass:build', 'copy:build', 'uglify:build', 'processhtml:build'],
+                tasks: ['sass:build', 'copy:build', 'processhtml:build'],
                 options: {
                     livereload: true
                 }
@@ -250,10 +241,10 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build', ['clean:build', 'sass:build', 'copy:build', 'uglify:build', 'processhtml:build']);
+    grunt.registerTask('build', ['clean:build', 'sass:build', 'copy:build', 'processhtml:build']);
     grunt.registerTask('default', ['build']);
     grunt.registerTask('deploy', ['dist', 'ftp']);
-    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'cssmin:dist', 'uglify:dist', 'processhtml:dist', 'htmlmin']);
+    grunt.registerTask('dist', ['clean:dist', 'sass:dist', 'copy:dist', 'cssmin:dist', 'uglify:dist', 'processhtml:dist', 'htmlmin:dist']);
     grunt.registerTask('ftp', ['ftp-deploy']);
     grunt.registerTask('serve', ['build', 'connect', 'watch']);
     grunt.registerTask('test', ['csslint', 'eslint']);
