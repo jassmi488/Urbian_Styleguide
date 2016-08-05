@@ -193,20 +193,20 @@
     }
 
     /**
-     * Inline
-     */
-
-    &.label--inline {
-        font-weight: $weight-normal;
-    }
-
-    /**
      * Disabled
      */
 
     &.label--disabled {
         color: $color-gray;
         cursor: not-allowed;
+    }
+
+    /**
+     * Inline
+     */
+
+    &.label--inline {
+        font-weight: $weight-normal;
     }
 
     /**
