@@ -26,16 +26,19 @@
    #ANCHOR
 \* -------------------------------------------------------------------------- */
 
-@mixin anchor() {
-    border-bottom: 0.0625em solid $color-silver;
-    color: $color-gray-dark;
+@mixin anchor($border-bottom-color: $color-silver,
+              $border-bottom-color-hover: $color-blue,
+              $color: $color-gray-dark,
+              $color-hover: $color-blue) {
+    border-bottom: 0.0625em solid $border-bottom-color;
+    color: $color;
     text-decoration: none;
     transition: border-color 0.25s, color 0.25s;
 
     &:focus,
     &:hover {
-        border-bottom-color: $color-blue;
-        color: $color-blue;
+        border-bottom-color: $border-bottom-color-hover;
+        color: $color-hover;
     }
 }
 
