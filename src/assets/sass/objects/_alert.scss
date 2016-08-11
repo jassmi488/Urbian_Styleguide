@@ -58,7 +58,7 @@
         .alert__message {
 
             a {
-                @include anchor($color-gray, $color-green, $color-black, $color-green);
+                @include anchor($border-bottom-color-hover: $color-green, $color-hover: $color-green);
             }
         }
     }
@@ -77,7 +77,7 @@
         .alert__message {
 
             a {
-                @include anchor($color-gray, $color-blue, $color-black, $color-blue);
+                @include anchor($border-bottom-color-hover: $color-blue, $color-hover: $color-blue);
             }
         }
     }
@@ -96,7 +96,7 @@
         .alert__message {
 
             a {
-                @include anchor($color-gray, $color-orange, $color-black, $color-orange);
+                @include anchor($border-bottom-color-hover: $color-orange, $color-hover: $color-orange);
             }
         }
     }
@@ -115,7 +115,7 @@
         .alert__message {
 
             a {
-                @include anchor($color-gray, $color-red, $color-black, $color-red);
+                @include anchor($border-bottom-color-hover: $color-red, $color-hover: $color-red);
             }
         }
     }

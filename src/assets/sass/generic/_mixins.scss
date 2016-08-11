@@ -26,9 +26,9 @@
    #ANCHOR
 \* -------------------------------------------------------------------------- */
 
-@mixin anchor($border-bottom-color: $color-silver,
+@mixin anchor($border-bottom-color: $color-gray,
               $border-bottom-color-hover: $color-blue,
-              $color: $color-gray-dark,
+              $color: $color-black,
               $color-hover: $color-blue) {
     border-bottom: 0.0625em solid $border-bottom-color;
     color: $color;
