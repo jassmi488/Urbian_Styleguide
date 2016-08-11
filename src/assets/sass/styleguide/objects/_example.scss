@@ -3,6 +3,7 @@
 \* -------------------------------------------------------------------------- */
 
 .sg-example {
+    @include clearfix();
     padding: 1em;
     position: relative;
 
