@@ -58,12 +58,7 @@
         .alert__message {
 
             a {
-                color: $color-green;
-
-                &:focus,
-                &:hover {
-                    border-bottom-color: $color-green;
-                }
+                @include anchor($color-gray, $color-green, $color-black, $color-green);
             }
         }
     }
@@ -82,12 +77,7 @@
         .alert__message {
 
             a {
-                color: $color-blue;
-
-                &:focus,
-                &:hover {
-                    border-bottom-color: $color-blue;
-                }
+                @include anchor($color-gray, $color-blue, $color-black, $color-blue);
             }
         }
     }
@@ -106,12 +96,7 @@
         .alert__message {
 
             a {
-                color: $color-orange;
-
-                &:focus,
-                &:hover {
-                    border-bottom-color: $color-orange;
-                }
+                @include anchor($color-gray, $color-orange, $color-black, $color-orange);
             }
         }
     }
@@ -130,12 +115,7 @@
         .alert__message {
 
             a {
-                color: $color-red;
-
-                &:focus,
-                &:hover {
-                    border-bottom-color: $color-red;
-                }
+                @include anchor($color-gray, $color-red, $color-black, $color-red);
             }
         }
     }
