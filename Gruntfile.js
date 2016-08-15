@@ -37,12 +37,6 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: 'src',
-                        src: ['**/*.html'],
-                        dest: 'build'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'src',
                         src: ['*.*', '.*'],
                         dest: 'build'
                     }
@@ -67,12 +61,6 @@ module.exports = function (grunt) {
                         cwd: 'src/assets',
                         src: ['js/styleguide/**'],
                         dest: 'dist/assets'
-                    },
-                    {
-                        expand: true,
-                        cwd: 'src',
-                        src: '**/*.html',
-                        dest: 'dist'
                     },
                     {
                         expand: true,
