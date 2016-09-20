@@ -1,15 +1,15 @@
 /* -------------------------------------------------------------------------- *\
-   Slick | 1.5.9 | http://github.com/kenwheeler/slick
+   Slick | 1.6.0 | http://github.com/kenwheeler/slick
 \* -------------------------------------------------------------------------- */
 
 /* Slider */
 .slick-slider {
     display: block;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
     user-select: none;
 }
 
