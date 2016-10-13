@@ -177,6 +177,8 @@
 
 .btn-group {
     @include clearfix();
+    margin-top: 2em;
+    margin-bottom: -1em;
     width: 100%;
 
     /* Button */
@@ -184,10 +186,6 @@
     .btn {
         margin-bottom: 1em;
         width: 100%;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
 
     /* Dropdown */
@@ -202,13 +200,22 @@
 
         .btn {
             float: left;
+            margin-right: 0;
             margin-bottom: 0;
             width: auto;
 
             & + .btn {
-                margin-left: 0.125em;
+                margin-left: 0.0625em;
             }
         }
+    }
+
+    /**
+     * Flat
+     */
+
+    &.btn-group--flat {
+        margin-top: 0;
     }
 
     /**
@@ -218,7 +225,7 @@
     &.btn-group--right {
 
         .btn-dropdown {
-            margin-right: 0.9375em;
+            margin-right: 1em;
             margin-left: 0;
 
             &:last-child {
@@ -232,23 +239,23 @@
     }
 }
 
-@media all and (min-width: $bp-xs) {
+@media all and (min-width: $bp-small) {
 
     .btn-group {
+        margin-top: 4em;
 
         .btn {
-            margin-bottom: 0;
-            margin-left: 0.9375em;
+            margin-right: 1em;
             width: auto;
 
-            &:first-child {
-                margin-left: 0;
+            &:last-child {
+                margin-right: 0;
             }
         }
 
         .btn-dropdown {
             margin-bottom: 0;
-            margin-left: 0.9375em;
+            margin-left: 1em;
             width: auto;
 
             &:first-child {
@@ -264,11 +271,11 @@
             text-align: right;
 
             .btn {
-                margin-right: 0.9375em;
-                margin-left: 0;
+                margin-right: 0;
+                margin-left: 1em;
 
-                &:last-child {
-                    margin-right: 0;
+                &:first-child {
+                    margin-left: 0;
                 }
             }
         }
