@@ -185,12 +185,13 @@
     var $menu_dropdown = $('.js-menu-dropdown');
 
     if ($menu_dropdown.length > 0) {
+        var icon_up = $menu_dropdown.data('icon-up');
+        var icon_down = $menu_dropdown.data('icon-down');
+
         $('a', $menu_dropdown).each(function () {
             var $anchor = $(this);
             var $anchor_icon = $('.icon', $anchor);
             var $menu = $anchor.next('.js-menu');
-            var icon_up = $menu_dropdown.data('icon-up');
-            var icon_down = $menu_dropdown.data('icon-down');
 
             $anchor.on('click', function (e) {
 
@@ -227,6 +228,22 @@
                 var $anchor_other_icon = $('.icon', $menu_other.prev());
                 $anchor_other_icon.removeClass(icon_up).addClass(icon_down);
             });
+        });
+
+        /*
+         * Close all open menus on click outside of menu
+         */
+
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest($menu_dropdown).length > 0) {
+                var $menus = $('.js-menu', $menu_dropdown);
+
+                if ($menus.hasClass('is-open')) {
+                    var $menu_icons = $('.icon', $menu_dropdown);
+                    $menus.removeClass('is-open').attr('aria-hidden', 'true');
+                    $menu_icons.removeClass(icon_up).addClass(icon_down);
+                }
+            }
         });
     }
 
