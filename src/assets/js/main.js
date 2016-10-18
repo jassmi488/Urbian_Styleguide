@@ -112,22 +112,66 @@
             var $collapse = $(this);
             var collapse_id = $collapse.data('collapse-id');
 
+            /*
+             * Show the toggle
+             */
+
+            $collapse.removeClass('u-hidden');
+
+            /*
+             * Collapse all elements
+             */
+
+            if (typeof collapse_id !== 'undefined') {
+                var $el = $('#' + collapse_id);
+
+                if ($el.length > 0) {
+                    $el.addClass('collapse');
+                }
+
+                /*
+                 * Open the collapsed element by default
+                 */
+
+                var collapse_open = $collapse.data('collapse-open');
+
+                if (typeof collapse_open !== 'undefined') {
+                    if (collapse_open) {
+                        $el.addClass('is-open');
+                    }
+                }
+            }
+
             $collapse.on('click', function (e) {
                 e.preventDefault();
 
-                if (typeof collapse_id !== 'undefined') {
-                    var $el = $('#' + collapse_id);
+                /*
+                 * Toggle the display of the element
+                 */
 
-                    if ($el.length > 0) {
-                        $el.toggleClass('is-open');
+                $el.toggleClass('is-open');
 
-                        var collapse_toggle = $collapse.data('collapse-toggle');
+                /*
+                 * Set the active class on the toggle
+                 */
 
-                        if (typeof collapse_toggle !== 'undefined') {
-                            if (collapse_toggle) {
-                                $collapse.toggleClass('is-active');
-                            }
-                        }
+                var collapse_toggle = $collapse.data('collapse-toggle');
+
+                if (typeof collapse_toggle !== 'undefined') {
+                    if (collapse_toggle) {
+                        $collapse.toggleClass('is-active');
+                    }
+                }
+
+                /*
+                 * Hide the toggle after the element display has been toggled
+                 */
+
+                var hide_toggle = $collapse.data('hide-toggle');
+
+                if (typeof hide_toggle !== 'undefined') {
+                    if (hide_toggle) {
+                        $collapse.hide();
                     }
                 }
             });
