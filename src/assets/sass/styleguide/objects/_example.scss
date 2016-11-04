@@ -10,4 +10,13 @@
     & + .sg-example {
         margin-top: 1em;
     }
+
+    /**
+     * Flat
+     */
+
+    &.sg-example--flat {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
