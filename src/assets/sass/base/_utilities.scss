@@ -142,6 +142,7 @@
     padding: 0;
     position: absolute;
     width: 1px;
+    white-space: nowrap; /* 1 */
 }
 
 /**
@@ -158,6 +159,7 @@
     overflow: visible;
     position: static;
     width: auto;
+    white-space: inherit;
 }
 
 
