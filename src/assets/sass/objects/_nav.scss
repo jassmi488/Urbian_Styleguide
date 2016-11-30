@@ -11,6 +11,23 @@
         @include list();
         white-space: nowrap;
 
+        /* Item */
+
+        .nav__item {
+            position: relative;
+
+            /**
+             * Active
+             */
+
+            &.is-active {
+
+                .nav__link {
+                    color: $color-black;
+                }
+            }
+        }
+
         /* Menu */
 
         .menu {
@@ -23,23 +40,6 @@
 
             &.is-open {
                 display: block;
-            }
-        }
-    }
-
-    /* Item */
-
-    .nav__item {
-        position: relative;
-
-        /**
-         * Active
-         */
-
-        &.is-active {
-
-            .nav__link {
-                color: $color-black;
             }
         }
     }
@@ -71,10 +71,15 @@
 
     &.nav--primary {
 
-        /* Item */
+        /* List */
 
-        .nav__item {
-            margin-bottom: 1em;
+        .nav__list {
+
+            /* Item */
+
+            .nav__item {
+                margin-bottom: 1em;
+            }
         }
     }
 
@@ -84,14 +89,19 @@
 
     &.nav--secondary {
 
-        /* Item */
+        /* List */
 
-        .nav__item {
-            border-bottom: 0.125em solid $color-white;
-            margin-bottom: 0;
+        .nav__list {
 
-            &:last-child {
-                border-bottom: 0;
+            /* Item */
+
+            .nav__item {
+                border-bottom: 0.125em solid $color-white;
+                margin-bottom: 0;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
             }
         }
 
@@ -127,21 +137,21 @@
 
             .nav__list {
 
+                .nav__item {
+                    display: inline-block;
+                    margin-bottom: 0;
+                    margin-left: 1.5em;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+
                 .menu {
                     left: 0;
                     position: absolute;
                     top: 100%;
                     z-index: $z-index-menu-dropdown;
-                }
-            }
-
-            .nav__item {
-                display: inline-block;
-                margin-bottom: 0;
-                margin-left: 1.5em;
-
-                &:first-child {
-                    margin-left: 0;
                 }
             }
         }
