@@ -25,6 +25,21 @@
     & + .row {
         margin-top: 5%;
     }
+
+    /**
+     * Flat
+     */
+
+    &.row--flat {
+
+        .col {
+            margin-bottom: 0;
+        }
+
+        & + .row--flat {
+            margin-top: 0;
+        }
+    }
 }
 
 @media all and (min-width: $bp-small) {
