@@ -74,12 +74,13 @@
 
 @mixin blockquote() {
     border-left: 0.25em $color-gray solid;
-    margin: 2em 0;
+    margin: 2em 0 2em 2em;
     padding: 0 2em;
 
     /* Paragraph */
 
     p {
+        font-weight: $weight-bold;
         quotes: "\201C""\201D""\2018""\2019";
         margin-bottom: 0;
 
