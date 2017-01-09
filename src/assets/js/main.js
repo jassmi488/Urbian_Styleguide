@@ -14,6 +14,44 @@
     var isModernBrowser = ('addEventListener' in window);
 
     /* ==========================================================================
+     * Accordion
+     * ========================================================================== */
+
+    var $accordion_component = $('.js-accordion');
+
+    if ($accordion_component.length > 0) {
+        $accordion_component.each(function () {
+            var $accordion = $(this);
+            var $accordion_link = $('.accordion-item__link', $accordion);
+
+            $accordion_link.on('click', function (e) {
+                e.preventDefault();
+
+                var $link = $(this);
+                var $item = $link.parents('.accordion-item');
+                var $icon = $('.icon', $link);
+                var icon_up = $accordion_component.data('icon-up');
+                var icon_down = $accordion_component.data('icon-down');
+
+                /*
+                 * Update the selected accordion item
+                 */
+
+                if ($item.hasClass('is-selected')) {
+                    $item.removeClass('is-selected');
+                    $item.attr('aria-hidden', 'true').attr('aria-selected', 'false');
+                    $icon.removeClass(icon_up).addClass(icon_down);
+                }
+                else {
+                    $item.addClass('is-selected');
+                    $item.attr('aria-hidden', 'false').attr('aria-selected', 'true');
+                    $icon.removeClass(icon_down).addClass(icon_up);
+                }
+            });
+        });
+    }
+
+    /* ==========================================================================
      * Alert
      * ========================================================================== */
 

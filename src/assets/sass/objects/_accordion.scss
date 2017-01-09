@@ -1,0 +1,69 @@
+/* -------------------------------------------------------------------------- *\
+   #ACCORDION
+\* -------------------------------------------------------------------------- */
+
+.accordion {
+    margin-bottom: 1em;
+
+    /**
+     * Item
+     */
+
+    .accordion-item {
+        margin-bottom: 0.25em;
+
+        &.is-selected {
+
+            .accordion-item__body {
+                display: block;
+            }
+        }
+
+        /**
+         * Title
+         */
+
+        .accordion-item__title {
+            color: $color-gray-dark;
+            font-weight: $weight-bold;
+
+            /**
+             * Icon
+             */
+
+            .icon {
+                float: right;
+                font-size: 1.25em; /* 20 / 16 */
+                margin-top: 0.125em;
+            }
+        }
+
+        /**
+         * Link
+         */
+
+        .accordion-item__link {
+            background-color: $color-white-dark;
+            color: $color-gray-dark;
+            display: block;
+            padding: 0.5em 0.875em 0.4375em 0.875em;
+            text-decoration: none;
+            transition: background-color 0.25s, color 0.25s;
+
+            &:focus,
+            &:hover {
+                background-color: $color-silver;
+                color: $color-black;
+            }
+        }
+
+        /**
+         * Body
+         */
+
+        .accordion-item__body {
+            display: none;
+            padding-top: 0.75em;
+        }
+    }
+}
