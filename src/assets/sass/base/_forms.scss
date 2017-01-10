@@ -135,7 +135,9 @@
         margin-bottom: 1em;
     }
 
-    /* Bordered */
+    /**
+     * Bordered
+     */
 
     &.fieldset--bordered {
         border: 0.125em solid $color-silver;
@@ -148,7 +150,9 @@
         }
     }
 
-    /* Inline */
+    /**
+     * Inline
+     */
 
     &.fieldset--inline {
         @include clearfix();
