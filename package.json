@@ -26,7 +26,7 @@
     "grunt-eslint": "^19.0.0",
     "grunt-ftp-deploy": "^0.1.10",
     "grunt-processhtml": "^0.4.1",
-    "grunt-sass": "^1.2.1",
+    "grunt-sass": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
     "time-grunt": "^1.4.0"
   }
