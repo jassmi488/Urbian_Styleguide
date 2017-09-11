@@ -42,17 +42,17 @@ $bp-xxl:    100.00em; /* 1600 / 16 */
  * Brand
  */
 
-$color-primary:     #001f3f;
-$color-secondary:   #7fdbff;
+$color-primary:     #fff200;
+$color-secondary:   #0033ff;
 
 /**
  * Grayscale
  */
 
 $color-black:       #222;
-$color-gray-dark:   #555;
-$color-gray:        #aaa;
-$color-silver:      #ddd;
+$color-gray-dark:   #666666;
+$color-gray:        #6e6e6e;
+$color-silver:      #d7dbe2;
 $color-white-dark:  #f6f6f6;
 $color-white:       #fff;
 
@@ -85,8 +85,8 @@ $color-twitter:     #55acee;
    #Family
    ========================================================================== */
 
-$font:           Arial, sans-serif;
-$font-secondary: "Roboto", sans-serif;
+$font:           "DroidSerif_regular";
+$font-secondary: "HelveticaNeue_medium";
 
 
 

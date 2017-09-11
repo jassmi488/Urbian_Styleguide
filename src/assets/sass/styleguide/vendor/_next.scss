@@ -10,6 +10,26 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'DroidSerif_regular';
+    src: url('../../fonts/droidserif-regular.woff2') format('woff2'),
+         url('../../fonts/droidserif-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'HelveticaNeue_medium';
+  src: url('../../fonts/HelveticaNeueLTCom-Md.woff2') format('woff2'),
+       url('../../fonts/HelveticaNeueLTCom-Md.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 [class^="next-"], [class*=" next-"] {
     font-family: "Next";
     speak: none;
